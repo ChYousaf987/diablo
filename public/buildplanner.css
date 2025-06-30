@@ -1,0 +1,2567 @@
+#d4-build-planner-parent-container {
+    background-repeat: repeat-y;
+    background-size: 100%;
+    margin: 10px -10px 0;
+    padding-top: 10px;
+    position: relative
+}
+
+:root {
+    --d4BuildPlanner-marginHeader: 0 50px 10px 50px;
+    --d4BuildPlanner-sizeIcon: 50px;
+    --d4BuildPlanner-classSelectorColumns: 1 / span 8;
+    --d4BuildPlanner-headingRightMargin: 30px
+}
+
+:root .d4-build-planner-parent-title {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap
+}
+
+:root .d4-build-planner-parent-title .heading-size-1 {
+    margin-right: var(--d4BuildPlanner-headingRightMargin)
+}
+
+#d4-build-planner-parent-container[data-layout-mode] {
+    --d4BuildPlanner-marginHeader: 0 10px 10px;
+    --d4BuildPlanner-sizeIcon: 35px
+}
+
+#d4-build-planner-parent-container[data-layout-mode] .d4-build-planner-parent-title .heading-size-1 {
+    font-size: 21px
+}
+
+#d4-build-planner-parent-container[data-layout-mode] .d4-build-planner-tabs-button {
+    flex: 1 0 auto
+}
+
+#d4-build-planner-parent-container[data-layout-mode="small"] {
+    --d4BuildPlanner-classSelectorColumns: 1 / span 12;
+    --d4BuildPlanner-headingRightMargin: 5px;
+    --d4ItemSlotBox-slotWidth: 96px;
+    --d4ItemSlotBox-labelInset: 0;
+    --d4ItemSlotBox-labelFontSize: 15px
+}
+
+body[data-wh-webp="false"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="0"] .d4-build-planner-parent-title h1:before {
+    background-image: url(/images/nav/feature-cutouts/d4-class-sorcerer-icon.png)
+}
+
+body[data-wh-webp="true"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="0"] .d4-build-planner-parent-title h1:before {
+    background-image: url(/images/nav/feature-cutouts/d4-class-sorcerer-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="0"] .d4-build-planner-parent-title h1:before {
+        background-image:url(/images/nav/feature-cutouts/d4-class-sorcerer-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="0"] .d4-build-planner-parent-title h1:before {
+        background-image: url(/images/nav/feature-cutouts/d4-class-sorcerer-icon@2x.webp)
+    }
+}
+
+body[data-wh-webp="false"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="1"] .d4-build-planner-parent-title h1:before {
+    background-image: url(/images/nav/feature-cutouts/d4-class-druid-icon.png)
+}
+
+body[data-wh-webp="true"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="1"] .d4-build-planner-parent-title h1:before {
+    background-image: url(/images/nav/feature-cutouts/d4-class-druid-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="1"] .d4-build-planner-parent-title h1:before {
+        background-image:url(/images/nav/feature-cutouts/d4-class-druid-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="1"] .d4-build-planner-parent-title h1:before {
+        background-image: url(/images/nav/feature-cutouts/d4-class-druid-icon@2x.webp)
+    }
+}
+
+body[data-wh-webp="false"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="2"] .d4-build-planner-parent-title h1:before {
+    background-image: url(/images/nav/feature-cutouts/d4-class-barbarian-icon.png)
+}
+
+body[data-wh-webp="true"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="2"] .d4-build-planner-parent-title h1:before {
+    background-image: url(/images/nav/feature-cutouts/d4-class-barbarian-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="2"] .d4-build-planner-parent-title h1:before {
+        background-image:url(/images/nav/feature-cutouts/d4-class-barbarian-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="2"] .d4-build-planner-parent-title h1:before {
+        background-image: url(/images/nav/feature-cutouts/d4-class-barbarian-icon@2x.webp)
+    }
+}
+
+body[data-wh-webp="false"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="3"] .d4-build-planner-parent-title h1:before {
+    background-image: url(/images/nav/feature-cutouts/d4-class-rogue-icon.png)
+}
+
+body[data-wh-webp="true"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="3"] .d4-build-planner-parent-title h1:before {
+    background-image: url(/images/nav/feature-cutouts/d4-class-rogue-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="3"] .d4-build-planner-parent-title h1:before {
+        background-image:url(/images/nav/feature-cutouts/d4-class-rogue-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="3"] .d4-build-planner-parent-title h1:before {
+        background-image: url(/images/nav/feature-cutouts/d4-class-rogue-icon@2x.webp)
+    }
+}
+
+body[data-wh-webp="false"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="4"] .d4-build-planner-parent-title h1:before {
+    background-image: url(/images/nav/feature-cutouts/d4-class-necromancer-icon.png)
+}
+
+body[data-wh-webp="true"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="4"] .d4-build-planner-parent-title h1:before {
+    background-image: url(/images/nav/feature-cutouts/d4-class-necromancer-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="4"] .d4-build-planner-parent-title h1:before {
+        background-image:url(/images/nav/feature-cutouts/d4-class-necromancer-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] #d4-build-planner-parent-container[data-editable="false"][data-active-class="4"] .d4-build-planner-parent-title h1:before {
+        background-image: url(/images/nav/feature-cutouts/d4-class-necromancer-icon@2x.webp)
+    }
+}
+
+#d4-build-planner-parent-container[data-editable="false"][data-active-class] .d4-build-planner-parent-title .heading-size-1 {
+    align-items: center;
+    display: flex
+}
+
+#d4-build-planner-parent-container[data-editable="false"][data-active-class] .d4-build-planner-parent-title .heading-size-1:before {
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    flex: 0 0 auto;
+    height: var(--d4BuildPlanner-sizeIcon);
+    margin-right: 10px;
+    width: var(--d4BuildPlanner-sizeIcon)
+}
+
+body[data-wh-webp="false"] #d4-build-planner-parent-container {
+    background-image: url(/images/di/build-tool/page-background-grunge-texture.png)
+}
+
+body[data-wh-webp="true"] #d4-build-planner-parent-container {
+    background-image: url(/images/di/build-tool/page-background-grunge-texture.webp)
+}
+
+#d4-build-planner-parent-container .d4-build-planner-parent-header {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: var(--d4BuildPlanner-marginHeader)
+}
+
+#d4-build-planner-parent-container .d4-build-planner-parent-header .heading-size-1 {
+    color: #bf9c5a;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.d4-build-planner {
+    color: #98948d;
+    font-size: 20px;
+    transform: translate3d(0, 0, 0)
+}
+
+:root {
+    --d4BuildPlanner-toolPadding: 50px;
+    --d4BuildPlanner-backgroundPosition: 0 top;
+    --d4BuildPlanner-equipmentBgZIndex: -1;
+    --d4BuildPlanner-portraitBorder: #454240;
+    --d4BuildPlanner-portraitText: #bf9c5a;
+    --d4BuildPlanner-portraitSize: 160px;
+    --d4BuildPlanner-buttonGridColumns: 1 / span 12;
+    --d4BuildPlanner-buttonGridGap: 20px;
+    --d4BuildCard-classSelectorSeoFontSize: 17px;
+    --d4BuildCard-introMaxWidth: calc( 5 * var(--d4BuildPlanner-portraitSize) + 4 * var(--d4BuildPlanner-buttonGridGap) )
+}
+
+.d4-build-planner[data-editable="true"] .d4-build-planner-gear-frames li[draggable] {
+    align-items: center;
+    cursor: grab;
+    display: flex
+}
+
+.d4-build-planner[data-editable="true"] .d4-build-planner-gear-frames li.dragging {
+    background-color: #292727
+}
+
+.d4-build-planner[data-editable="false"] .d4-build-planner-header {
+    display: none
+}
+
+.d4-build-planner[data-layout="ordered"] {
+    --d4BuildPlanner-backgroundPosition: center top;
+    --d4BuildPlanner-equipmentBgZIndex: 1
+}
+
+.d4-build-planner[data-layout="ordered"]:not([data-show-skill-tree]) .d4-build-planner-skill-calc {
+    display: none
+}
+
+.d4-build-planner[data-layout="ordered"] .d4-build-planner-tabs {
+    display: none
+}
+
+.d4-build-planner[data-layout="ordered"] .d4-build-planner-equip {
+    max-width: 755px
+}
+
+.d4-build-planner[data-layout="ordered"] .d4-build-planner-action-bar,.d4-build-planner[data-layout="ordered"] .d4-build-planner-equipment,.d4-build-planner[data-layout="ordered"] .d4-build-planner-gem-frames,.d4-build-planner[data-layout="ordered"] .d4-build-planner-gear-frames,.d4-build-planner[data-layout="ordered"] .d4-build-planner-main,.d4-build-planner[data-layout="ordered"] .d4-build-planner-paragon-calc,.d4-build-planner[data-layout="ordered"] .d4-build-planner-skill-calc,.d4-build-planner[data-layout="ordered"] .d4-build-planner-vampiric-powers,.d4-build-planner[data-layout="ordered"] .d4-build-planner-seneschal-companion {
+    grid-column: 1 / span 12;
+    grid-row: span 1;
+    z-index: 2
+}
+
+.d4-build-planner[data-layout="ordered"] .d4-build-planner-paragon-calc {
+    display: block
+}
+
+.d4-build-planner[data-class-selected]:after {
+    background-image: linear-gradient(transparent 25%, #121110 50%);
+    content: "";
+    inset: 0;
+    position: absolute
+}
+
+.d4-build-planner[data-class-selected] .d4-build-planner-intro {
+    display: none
+}
+
+.d4-build-planner:not([data-class-selected]) .d4-build-planner-content,.d4-build-planner:not([data-class-selected]) .d4-build-planner-tabs {
+    display: none
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class="0"] .d4-build-planner-equipment {
+    background-image: url(/images/d4/tools/build-tool/sorcerer.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class="0"] .d4-build-planner-equipment {
+    background-image: url(/images/d4/tools/build-tool/sorcerer.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class="1"] .d4-build-planner-equipment {
+    background-image: url(/images/d4/tools/build-tool/druid.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class="1"] .d4-build-planner-equipment {
+    background-image: url(/images/d4/tools/build-tool/druid.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class="2"] .d4-build-planner-equipment {
+    background-image: url(/images/d4/tools/build-tool/barbarian.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class="2"] .d4-build-planner-equipment {
+    background-image: url(/images/d4/tools/build-tool/barbarian.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class="3"] .d4-build-planner-equipment {
+    background-image: url(/images/d4/tools/build-tool/rogue.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class="3"] .d4-build-planner-equipment {
+    background-image: url(/images/d4/tools/build-tool/rogue.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class="4"] .d4-build-planner-equipment {
+    background-image: url(/images/d4/tools/build-tool/necromancer.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class="4"] .d4-build-planner-equipment {
+    background-image: url(/images/d4/tools/build-tool/necromancer.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class][data-bg="1"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-1.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class][data-bg="1"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-1.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class][data-bg="2"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-2.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class][data-bg="2"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-2.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class][data-bg="3"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-3.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class][data-bg="3"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-3.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class][data-bg="4"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-4.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class][data-bg="4"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-4.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class][data-bg="5"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-5.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class][data-bg="5"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-5.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class][data-bg="6"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-6.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class][data-bg="6"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-6.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class][data-bg="7"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-7.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class][data-bg="7"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-7.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class][data-bg="8"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-8.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class][data-bg="8"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-8.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class][data-bg="9"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-9.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class][data-bg="9"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-9.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner[data-active-class][data-bg="10"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-10.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner[data-active-class][data-bg="10"] .d4-build-planner-equipment-background {
+    background-image: url(/images/d4/tools/build-tool/background-10.webp)
+}
+
+.d4-build-planner:not([data-active-class]) .d4-build-planner-header {
+    display: none
+}
+
+.d4-build-planner[data-layout-mode="small"] {
+    --d4BuildPlanner-classSelectorColumns: 1 / span 12;
+    --d4BuildPlanner-buttonGridColumns: 1 / span 12;
+    --d4BuildPlanner-portraitSize: 100px;
+    --d4BuildPlanner-toolPadding: 15px;
+    --d4BuildPlanner-buttonGridGap: 10px
+}
+
+.d4-build-planner[data-layout-mode="small"] .d4-build-planner-equip {
+    grid-template-areas: "helm    torso      hands" "legs    feet       ." "neck    leftFinger rightFinger" "arsenal arsenal    arsenal" "weapon  offHand    ." "weapons weapons    weapons"
+}
+
+.d4-build-planner[data-layout-mode="small"] .d4-build-planner-equip-slot[data-slot] {
+    justify-self: start
+}
+
+.d4-build-planner[data-layout-mode="small"] .d4-build-planner-equip-slot[data-slot="weapons"] {
+    grid-area: weapons
+}
+
+body[data-wh-webp] .d4-build-planner[data-layout-mode="small"][data-active-class] .d4-build-planner-equipment-background {
+    background-image: unset
+}
+
+body[data-wh-webp] .d4-build-planner[data-layout-mode="small"][data-active-class] .d4-build-planner-equipment {
+    background-image: unset;
+    justify-self: center
+}
+
+.d4-build-planner[data-layout-mode="small"][data-active-class] .d4-build-planner-content {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 1468px 948px;
+    grid-gap: 0
+}
+
+.d4-build-planner[data-layout-mode="small"][data-active-class] .d4-build-planner-equipment,.d4-build-planner[data-layout-mode="small"][data-active-class] .d4-build-planner-main,.d4-build-planner[data-layout-mode="small"][data-active-class] .d4-build-planner-aside {
+    grid-column: 1 / span 12
+}
+
+.d4-build-planner[data-layout-mode="small"][data-active-class] .d4-build-planner-equipment {
+    grid-row: 1 / span 1
+}
+
+.d4-build-planner[data-layout-mode="small"][data-active-class] .d4-build-planner-equipment-background {
+    background-position: center;
+    grid-row: 1 / span 3
+}
+
+.d4-build-planner[data-layout-mode="small"][data-active-class] .d4-build-planner-aside {
+    padding-top: 0
+}
+
+.d4-build-planner[data-layout-mode="medium"] {
+    --d4BuildPlanner-buttonGridColumns: 1 / span 12;
+    --d4BuildPlanner-toolPadding: 30px
+}
+
+.d4-build-planner[data-layout-mode="medium"][data-active-class] .d4-build-planner-content {
+    grid-gap: 0
+}
+
+.d4-build-planner[data-layout-mode="medium"][data-active-class] .d4-build-planner-equipment,.d4-build-planner[data-layout-mode="medium"][data-active-class] .d4-build-planner-main,.d4-build-planner[data-layout-mode="medium"][data-active-class] .d4-build-planner-equipment-background,.d4-build-planner[data-layout-mode="medium"][data-active-class] .d4-build-planner-equipment,.d4-build-planner[data-layout-mode="medium"][data-active-class] .d4-build-planner-aside {
+    grid-column: 1 / span 12
+}
+
+.d4-build-planner[data-layout-mode="medium"][data-active-class] .d4-build-planner-equipment-background,.d4-build-planner[data-layout-mode="medium"][data-active-class] .d4-build-planner-equipment {
+    grid-row: 1 / span 1
+}
+
+.d4-build-planner[data-layout-mode="medium"][data-active-class] .d4-build-planner-equipment-background {
+    background-position: center
+}
+
+.d4-build-planner:not([data-layout-mode]) .d4-build-planner-aside .d4-build-planner-section-heading#gemsHeading {
+    display: none
+}
+
+.d4-build-planner-updated {
+    margin-left: 5px
+}
+
+.d4-build-planner-tags-content {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 30px 20px 30px
+}
+
+.d4-build-planner-tag {
+    border-radius: 2px;
+    border: 1px solid #805b30;
+    color: #bf9c5a;
+    font-size: 15px;
+    font-weight: 900;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: background-color 75ms,color 75ms
+}
+
+.d4-build-planner-tag:hover {
+    background-color: #805b30
+}
+
+.d4-build-planner-tags-title {
+    color: #bf9c5a;
+    font-family: mrs-eaves-roman-lining,"Times New Roman",Times,serif;
+    font-size: 1.4em;
+    margin-right: 10px
+}
+
+.d4-build-planner-equipment {
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 893px;
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+    z-index: 2
+}
+
+.d4-build-planner-utility-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-end;
+    margin: 5px 0;
+    position: relative;
+    z-index: 20
+}
+
+:root {
+    --d4BuildPlanner-embedHeaderHeight: 70px;
+    --d4BuildPlanner-embedHeaderPadding: 0 15px;
+    --d4BuildPlanner-embedHeaderGap: 10px;
+    --d4BuildPlanner-embedPortraitBorderWidth: 5px;
+    --d4BuildPlanner-embedPortraitWidth: 100px;
+    --d4BuildPlanner-embedportraitContainerColumns: 110px max-content;
+    --d4BuildPlanner-embedColumns: 110px min-content 1fr min-content;
+    --d4BuildPlanner-embedRows: 60px 1fr;
+    --d4BuildPlanner-tabsBg: transparent;
+    --d4BuildPlanner-tabsJustification: flex-end
+}
+
+.d4-build-planner[data-layout-mode] {
+    --d4BuildPlanner-embedHeaderPadding: 0;
+    --d4BuildPlanner-embedHeaderGap: 0;
+    --d4BuildPlanner-embedPortraitWidth: 90px;
+    --d4BuildPlanner-embedportraitContainerColumns: 100px max-content;
+    --d4BuildPlanner-embedColumns: 100px min-content 1fr min-content;
+    --d4BuildPlanner-tabsBg: #1e1c1c;
+    --d4BuildPlanner-tabsJustification: flex-start
+}
+
+.d4-build-planner[data-layout-mode] .d4-build-planner-embed-header {
+    grid-template-rows: var(--d4BuildPlanner-embedRows);
+    height: unset;
+    min-height: var(--d4BuildPlanner-embedHeaderHeight)
+}
+
+.d4-build-planner[data-layout-mode] .d4-build-planner-embed-tabs {
+    border-radius: 0 0 2px;
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    padding: 5px
+}
+
+.d4-build-planner[data-layout-mode] .d4-build-planner-embed-buttons {
+    background: #292727;
+    border-radius: 0 2px 2px 0;
+    grid-column: 3 / span 2;
+    padding-right: 5px
+}
+
+.d4-build-planner[data-layout-mode] .d4-build-planner-embed-button {
+    grid-column: 3 / span 2
+}
+
+.d4-build-planner[data-layout-mode] .d4-build-planner-embed-button[data-id="view"] {
+    aspect-ratio: 1
+}
+
+.d4-build-planner[data-layout-mode] .d4-build-planner-embed-button[data-id="view"]:before {
+    margin-right: 0
+}
+
+.d4-build-planner[data-layout-mode] .d4-build-planner-embed-button-text {
+    display: none
+}
+
+.d4-build-planner-embed-header {
+    background: #292727;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: var(--d4BuildPlanner-embedHeaderGap);
+    grid-template-columns: var(--d4BuildPlanner-embedColumns);
+    height: var(--d4BuildPlanner-embedHeaderHeight);
+    margin-bottom: 5px;
+    padding: var(--d4BuildPlanner-embedHeaderPadding)
+}
+
+body[data-wh-webp="false"] .d4-build-planner-embed-header[data-active-class="sorcerer"] .d4-build-planner-embed-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-sorcerer.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-embed-header[data-active-class="sorcerer"] .d4-build-planner-embed-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-sorcerer.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner-embed-header[data-active-class="druid"] .d4-build-planner-embed-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-druid.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-embed-header[data-active-class="druid"] .d4-build-planner-embed-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-druid.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner-embed-header[data-active-class="barbarian"] .d4-build-planner-embed-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-barbarian.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-embed-header[data-active-class="barbarian"] .d4-build-planner-embed-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-barbarian.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner-embed-header[data-active-class="rogue"] .d4-build-planner-embed-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-rogue.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-embed-header[data-active-class="rogue"] .d4-build-planner-embed-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-rogue.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner-embed-header[data-active-class="necromancer"] .d4-build-planner-embed-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-necromancer.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-embed-header[data-active-class="necromancer"] .d4-build-planner-embed-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-necromancer.webp)
+}
+
+.d4-build-planner-embed-portrait {
+    aspect-ratio: 1;
+    background-size: contain;
+    border-radius: 50%;
+    border: 5px solid #454240;
+    box-shadow: inset 0 0 0 5px #000,0 0 5px 0 #000;
+    box-sizing: border-box;
+    grid-column: 1 / span 1;
+    inset: -25% 0;
+    position: absolute;
+    width: var(--d4BuildPlanner-embedPortraitWidth);
+    z-index: 255
+}
+
+body[data-wh-webp="false"] .d4-build-planner-embed-portrait {
+    background-image: url(/d4/texture/hash/6/191663366.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-embed-portrait {
+    background-image: url(/d4/texture/hash/6/191663366.webp)
+}
+
+.d4-build-planner-embed-portrait-container {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-template-columns: var(--d4BuildPlanner-embedportraitContainerColumns);
+    position: relative
+}
+
+.d4-build-planner-embed-brand {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / span 1;
+    justify-content: center
+}
+
+.d4-build-planner-embed-brand-class {
+    color: #f2ebde;
+    font-family: mrs-eaves-roman-lining,"Times New Roman",Times,serif;
+    font-size: 28px;
+    line-height: 1em
+}
+
+.d4-build-planner-embed-brand-logo {
+    aspect-ratio: 1;
+    background-color: #121110;
+    background-image: url("/images/logos/wh-logo-thumbnail.png");
+    background-size: contain;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    height: 20px;
+    margin-right: 5px
+}
+
+.d4-build-planner-embed-brand-name {
+    font-size: 15px;
+    font-weight: 900
+}
+
+.d4-build-planner-embed-text {
+    color: #98948d;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 5px
+}
+
+.d4-build-planner-embed-tabs {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: var(--d4BuildPlanner-tabsJustification)
+}
+
+.d4-build-planner-embed-tab {
+    background: none;
+    border-radius: 4px;
+    border: 2px solid #454240;
+    color: #bf9c5a;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 75ms;
+    text-transform: uppercase;
+    text-transform: none
+}
+
+.d4-build-planner-embed-tab:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-build-planner-embed-tab:before {
+    color: #bf9c5a !important;
+    transition: 75ms
+}
+
+.d4-build-planner-embed-tab:hover,.d4-build-planner-embed-tab.focus-visible {
+    box-shadow: none;
+    background-color: #bf9c5a;
+    border-color: #bf9c5a;
+    color: #f2ebde
+}
+
+.d4-build-planner-embed-tab:hover:before,.d4-build-planner-embed-tab.focus-visible:before {
+    color: #f2ebde !important
+}
+
+.d4-build-planner-embed-tab:hover,.d4-build-planner-embed-tab.focus-visible {
+    background-color: #454240;
+    border-radius: 4px;
+    border: none;
+    color: #f2ebde;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 75ms;
+    border: 2px solid #454240;
+    text-transform: none
+}
+
+.d4-build-planner-embed-tab:hover:empty:before,.d4-build-planner-embed-tab.focus-visible:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-build-planner-embed-tab:hover:before,.d4-build-planner-embed-tab.focus-visible:before {
+    color: #f2ebde !important;
+    transition: 75ms
+}
+
+.d4-build-planner-embed-tab:hover:hover,.d4-build-planner-embed-tab:hover.focus-visible,.d4-build-planner-embed-tab.focus-visible:hover,.d4-build-planner-embed-tab.focus-visible.focus-visible {
+    box-shadow: none;
+    background-color: #5a5753 !important;
+    border-color: #5a5753 !important
+}
+
+.d4-build-planner-embed-tab[data-active="true"] {
+    background-color: #805b30;
+    border-radius: 4px;
+    border: none;
+    color: #f2ebde;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 75ms;
+    border: 2px solid #805b30;
+    text-transform: none
+}
+
+.d4-build-planner-embed-tab[data-active="true"]:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-build-planner-embed-tab[data-active="true"]:before {
+    color: #f2ebde !important;
+    transition: 75ms
+}
+
+.d4-build-planner-embed-tab[data-active="true"]:hover,.d4-build-planner-embed-tab[data-active="true"].focus-visible {
+    box-shadow: none;
+    background-color: #876033 !important;
+    border-color: #876033 !important
+}
+
+.d4-build-planner-embed-buttons {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end
+}
+
+.d4-build-planner-embed-button {
+    background-color: #731b14;
+    border-radius: 4px;
+    border: none;
+    color: #f2ebde;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 75ms;
+    align-items: center;
+    background-image: unset;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 15px;
+    height: 38px;
+    justify-content: center;
+    white-space: nowrap
+}
+
+.d4-build-planner-embed-button:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-build-planner-embed-button:before {
+    color: #f2ebde !important;
+    transition: 75ms
+}
+
+.d4-build-planner-embed-button:hover,.d4-build-planner-embed-button.focus-visible {
+    box-shadow: none;
+    background-color: #bf2517 !important;
+    border-color: #bf2517 !important
+}
+
+.d4-build-planner-embed-button:hover,.d4-build-planner-embed-button.focus-visible {
+    background-image: unset
+}
+
+.d4-build-planner-embed-button[data-id="view"] {
+    background-color: #941f14;
+    border-radius: 4px;
+    border: none;
+    color: #f2ebde;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 75ms
+}
+
+.d4-build-planner-embed-button[data-id="view"]:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-build-planner-embed-button[data-id="view"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    margin-right: 10px;
+    color: #f2ebde !important;
+    transition: 75ms
+}
+
+.d4-build-planner-embed-button[data-id="view"]:hover,.d4-build-planner-embed-button[data-id="view"].focus-visible {
+    box-shadow: none;
+    background-color: #b31b1b !important;
+    border-color: #b31b1b !important
+}
+
+.d4-build-planner-header,.d4-build-planner-tabs {
+    align-items: center;
+    background-color: #121110;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(min-content, 1fr));
+    grid-template-rows: repeat(1, minmax(min-content, 1fr));
+    height: 5.35em;
+    justify-content: space-evenly;
+    padding: 0.4em var(--d4BuildPlanner-toolPadding) 0.4em var(--d4BuildPlanner-toolPadding);
+    position: relative;
+    z-index: 51
+}
+
+.d4-build-planner-header[data-type="sub"],.d4-build-planner-tabs[data-type="sub"] {
+    height: 4em
+}
+
+.d4-build-planner-header:after,.d4-build-planner-header:before,.d4-build-planner-tabs:after,.d4-build-planner-tabs:before {
+    background-position: left 120%,33% 120%,66% 120%;
+    background-repeat: no-repeat;
+    background-size: 35% 105%,35% 105%,35% 105%;
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0
+}
+
+body[data-wh-webp="false"] .d4-build-planner-header:after,body[data-wh-webp="false"] .d4-build-planner-header:before,body[data-wh-webp="false"] .d4-build-planner-tabs:after,body[data-wh-webp="false"] .d4-build-planner-tabs:before {
+    background-image: url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-header:after,body[data-wh-webp="true"] .d4-build-planner-header:before,body[data-wh-webp="true"] .d4-build-planner-tabs:after,body[data-wh-webp="true"] .d4-build-planner-tabs:before {
+    background-image: url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp")
+}
+
+@media only screen and (min-width: 2555px) {
+    .d4-build-planner-header:after,.d4-build-planner-header:before,.d4-build-planner-tabs:after,.d4-build-planner-tabs:before {
+        background-position:left center,25% center,50% center,75% center;
+        background-repeat: no-repeat;
+        background-size: 28% 100%,28% 100%,28% 100%,28% 100%
+    }
+
+    body[data-wh-webp="false"] .d4-build-planner-header:after,body[data-wh-webp="false"] .d4-build-planner-header:before,body[data-wh-webp="false"] .d4-build-planner-tabs:after,body[data-wh-webp="false"] .d4-build-planner-tabs:before {
+        background-image: url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png")
+    }
+
+    body[data-wh-webp="true"] .d4-build-planner-header:after,body[data-wh-webp="true"] .d4-build-planner-header:before,body[data-wh-webp="true"] .d4-build-planner-tabs:after,body[data-wh-webp="true"] .d4-build-planner-tabs:before {
+        background-image: url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp")
+    }
+}
+
+.d4-build-planner-header:after,.d4-build-planner-tabs:after {
+    transform: scaleX(-1)
+}
+
+.d4-build-planner-header,.d4-build-planner-tabs {
+    box-shadow: 0 0 20px 20px rgba(0,0,0,0.2)
+}
+
+.d4-build-planner-header[data-type="sub"],.d4-build-planner-tabs[data-type="sub"] {
+    display: none;
+    margin-top: -0.7em;
+    min-height: 3.5em;
+    z-index: 50
+}
+
+.d4-build-planner-tabs {
+    display: block;
+    height: auto;
+    margin-top: -0.25em;
+    padding-bottom: calc(0.5em + 5px)
+}
+
+.d4-build-planner-tabs-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0 10px;
+    overflow: auto;
+    position: relative;
+    z-index: 20
+}
+
+.d4-build-planner-tabs-buttons[data-has-scroll]:before,.d4-build-planner-tabs-buttons[data-has-scroll]:after {
+    content: "";
+    height: 50px;
+    position: fixed;
+    width: calc(var(--d4BuildPlanner-toolPadding) + 50px);
+    z-index: 1
+}
+
+.d4-build-planner-tabs-buttons[data-has-scroll]:before {
+    background: linear-gradient(to right, #292727 50%, transparent);
+    left: 0
+}
+
+.d4-build-planner-tabs-buttons[data-has-scroll]:after {
+    background: linear-gradient(to left, #292727 50%, transparent);
+    right: 0
+}
+
+.d4-build-planner-tabs-buttons[data-has-scroll="right"]:before {
+    display: none
+}
+
+.d4-build-planner-tabs-buttons[data-has-scroll="left"]:after {
+    display: none
+}
+
+.d4-build-planner-tabs-button {
+    align-items: center;
+    background-color: unset;
+    box-sizing: border-box;
+    display: flex;
+    font-weight: bold;
+    height: 50px;
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: unset;
+    color: #bf9c5a;
+    font-family: mrs-eaves,"Times New Roman",Times,serif;
+    font-size: 21px;
+    padding: 0 20px;
+    position: relative;
+    text-transform: uppercase;
+    flex: 0 0 auto
+}
+
+.d4-build-planner-tabs-button[data-active] {
+    cursor: default
+}
+
+.d4-build-planner-tabs-button[data-active],.d4-build-planner-tabs-button:hover,.d4-build-planner-tabs-button.focus-visible {
+    color: #f2ebde
+}
+
+.d4-build-planner-tabs-button[data-active]:after {
+    filter: unset
+}
+
+.d4-build-planner-tabs-button:after {
+    background-position: center top,left top,right top;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 24.3902439024px) 50px,24.3902439024px 50px,24.3902439024px 50px;
+    content: "";
+    filter: grayscale(1);
+    inset: 0;
+    position: absolute;
+    z-index: -1
+}
+
+body[data-wh-webp="false"] .d4-build-planner-tabs-button:after {
+    background-image: url("/images/d4/tools/shared/button-alternate-middle.png"),url("/images/d4/tools/shared/button-alternate-left.png"),url("/images/d4/tools/shared/button-alternate-right.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-tabs-button:after {
+    background-image: url("/images/d4/tools/shared/button-alternate-middle.webp"),url("/images/d4/tools/shared/button-alternate-left.webp"),url("/images/d4/tools/shared/button-alternate-right.webp")
+}
+
+.d4-build-planner-tabs-section:not(.d4-build-planner-content) {
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 50
+}
+
+.d4-build-planner-tabs-section:not([data-tab-active]) {
+    display: none
+}
+
+.d4-build-planner-class-selector {
+    display: flex;
+    gap: 5px;
+    grid-column: var(--d4BuildPlanner-classSelectorColumns);
+    z-index: 20
+}
+
+.d4-build-planner-class-button {
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: filter 75ms
+}
+
+.d4-build-planner-class-button:focus-visible {
+    box-shadow: none
+}
+
+.d4-build-planner-class-button:not([data-type="intro"]) {
+    aspect-ratio: 1;
+    filter: grayscale(1) opacity(0.6);
+    max-width: 3em;
+    width: 100%
+}
+
+.d4-build-planner-class-button:not([data-type="intro"]):hover,.d4-build-planner-class-button:not([data-type="intro"]):focus-visible {
+    filter: grayscale(0)
+}
+
+.d4-build-planner-class-button:not([data-type="intro"])[data-active] {
+    filter: grayscale(0) brightness(1.35)
+}
+
+body[data-wh-webp="false"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="sorcerer"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-sorcerer-icon.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="sorcerer"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-sorcerer-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="sorcerer"] {
+        background-image:url(/images/nav/feature-cutouts/d4-class-sorcerer-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="sorcerer"] {
+        background-image: url(/images/nav/feature-cutouts/d4-class-sorcerer-icon@2x.webp)
+    }
+}
+
+body[data-wh-webp="false"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="druid"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-druid-icon.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="druid"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-druid-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="druid"] {
+        background-image:url(/images/nav/feature-cutouts/d4-class-druid-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="druid"] {
+        background-image: url(/images/nav/feature-cutouts/d4-class-druid-icon@2x.webp)
+    }
+}
+
+body[data-wh-webp="false"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="barbarian"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-barbarian-icon.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="barbarian"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-barbarian-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="barbarian"] {
+        background-image:url(/images/nav/feature-cutouts/d4-class-barbarian-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="barbarian"] {
+        background-image: url(/images/nav/feature-cutouts/d4-class-barbarian-icon@2x.webp)
+    }
+}
+
+body[data-wh-webp="false"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="rogue"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-rogue-icon.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="rogue"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-rogue-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="rogue"] {
+        background-image:url(/images/nav/feature-cutouts/d4-class-rogue-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="rogue"] {
+        background-image: url(/images/nav/feature-cutouts/d4-class-rogue-icon@2x.webp)
+    }
+}
+
+body[data-wh-webp="false"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="necromancer"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-necromancer-icon.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="necromancer"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-necromancer-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="necromancer"] {
+        background-image:url(/images/nav/feature-cutouts/d4-class-necromancer-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] .d4-build-planner-class-button:not([data-type="intro"])[data-player-class="necromancer"] {
+        background-image: url(/images/nav/feature-cutouts/d4-class-necromancer-icon@2x.webp)
+    }
+}
+
+.d4-build-planner-class-button[data-type="intro"] {
+    align-items: center;
+    display: flex;
+    flex-direction: column
+}
+
+body[data-wh-webp="false"] .d4-build-planner-class-button[data-type="intro"][data-player-class="sorcerer"] .d4-build-planner-class-button-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-sorcerer.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-class-button[data-type="intro"][data-player-class="sorcerer"] .d4-build-planner-class-button-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-sorcerer.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner-class-button[data-type="intro"][data-player-class="druid"] .d4-build-planner-class-button-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-druid.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-class-button[data-type="intro"][data-player-class="druid"] .d4-build-planner-class-button-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-druid.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner-class-button[data-type="intro"][data-player-class="barbarian"] .d4-build-planner-class-button-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-barbarian.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-class-button[data-type="intro"][data-player-class="barbarian"] .d4-build-planner-class-button-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-barbarian.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner-class-button[data-type="intro"][data-player-class="rogue"] .d4-build-planner-class-button-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-rogue.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-class-button[data-type="intro"][data-player-class="rogue"] .d4-build-planner-class-button-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-rogue.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner-class-button[data-type="intro"][data-player-class="necromancer"] .d4-build-planner-class-button-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-necromancer.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-class-button[data-type="intro"][data-player-class="necromancer"] .d4-build-planner-class-button-portrait {
+    background-image: url(/images/d4/tools/shared/portraits/portrait-necromancer.webp)
+}
+
+.d4-build-planner-class-button[data-type="intro"]:hover,.d4-build-planner-class-button[data-type="intro"].focus-visible {
+    --d4BuildPlanner-portraitBorder: #5a5753;
+    --d4BuildPlanner-portraitText: #f2ebde
+}
+
+.d4-build-planner-class-button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--d4BuildPlanner-buttonGridGap);
+    grid-column: var(--d4BuildPlanner-buttonGridColumns);
+    justify-content: center;
+    margin: 20px 0
+}
+
+.d4-build-planner-class-button-portrait {
+    aspect-ratio: 1;
+    background-size: contain;
+    border-radius: 2px;
+    border: 1.5px solid var(--d4BuildPlanner-portraitBorder);
+    box-shadow: inset 0 0 0 1.5px #000,0 0 10px 0 #000;
+    box-sizing: border-box;
+    height: var(--d4BuildPlanner-portraitSize)
+}
+
+.d4-build-planner-class-button-label {
+    color: var(--d4BuildPlanner-portraitText);
+    font-family: mrs-eaves,"Times New Roman",Times,serif;
+    font-size: 21px;
+    text-align: center
+}
+
+.d4-build-planner[data-editable="false"] .d4-build-planner-class-button:not([data-active]) {
+    cursor: not-allowed
+}
+
+.d4-build-planner-border {
+    background-position: center calc(-10px / 1.89);
+    background-repeat: no-repeat;
+    background-size: 191.534391534px 152.91005291px;
+    background-repeat: repeat-x;
+    height: 28.0423280423px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    z-index: 20
+}
+
+body[data-wh-webp="false"] .d4-build-planner-border {
+    background-image: url("/d4/texture/hash/234/3622899946.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-border {
+    background-image: url("/d4/texture/hash/234/3622899946.webp")
+}
+
+.d4-build-planner-border[data-style="fancy"] {
+    background-position: center top,center calc(-10px / 1.89);
+    background-repeat: no-repeat;
+    background-size: 173.544973545px 28.0423280423px,191.534391534px 152.91005291px;
+    background-repeat: no-repeat, repeat-x
+}
+
+body[data-wh-webp="false"] .d4-build-planner-border[data-style="fancy"] {
+    background-image: url("/d4/texture/hash/167/3300941223.png"),url("/d4/texture/hash/234/3622899946.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-border[data-style="fancy"] {
+    background-image: url("/d4/texture/hash/167/3300941223.webp"),url("/d4/texture/hash/234/3622899946.webp")
+}
+
+.d4-build-planner-border[data-position="bottom"] {
+    bottom: -10px;
+    top: unset
+}
+
+.d4-build-planner-intro {
+    color: #f2ebde;
+    display: grid;
+    font-size: 1.5em;
+    font-weight: 400;
+    grid-gap: 0 20px;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 10px;
+    padding-right: var(--d4BuildPlanner-toolPadding);
+    padding-bottom: var(--d4BuildPlanner-toolPadding);
+    padding-left: var(--d4BuildPlanner-toolPadding)
+}
+
+.d4-build-planner-intro-text,.d4-build-planner-intro-description {
+    grid-column: var(--d4BuildPlanner-buttonGridColumns);
+    margin: auto;
+    max-width: calc(5 * var(--d4BuildPlanner-portraitSize) + 4 * 20px)
+}
+
+.d4-build-planner-intro-text {
+    grid-row: 1 / span 1;
+    text-align: center
+}
+
+.d4-build-planner-intro-description {
+    color: #98948d;
+    font-size: var(--d4BuildCard-classSelectorSeoFontSize);
+    font-weight: 400;
+    grid-row: 3 / span 1;
+    line-height: 1.5em
+}
+
+.d4-build-planner-content {
+    background-image: url("/images/d4/tools/build-tool/distressed-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: grid;
+    grid-gap: 0 20px;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 0 var(--d4BuildPlanner-toolPadding) var(--d4BuildPlanner-toolPadding) var(--d4BuildPlanner-toolPadding);
+    position: relative
+}
+
+.d4-build-planner-main {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+    z-index: 2
+}
+
+.d4-build-planner-aside {
+    grid-column: 7 / span 6;
+    grid-row: span 1;
+    padding-top: var(--d4BuildPlanner-toolPadding);
+    position: relative;
+    z-index: 51
+}
+
+.d4-build-planner-gem-frames {
+    grid-gap: 5px
+}
+
+.d4-build-planner-gem-frames[data-layout-mode="small"] {
+    --d4FrameBox-gemIconSize: 4.33em;
+    grid-template-columns: repeat(1, 1fr)
+}
+
+.d4-build-planner-gear-frames {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative
+}
+
+.d4-build-planner-gear-frames[data-layout-mode="small"] {
+    grid-template-columns: repeat(1, 1fr)
+}
+
+.d4-build-planner-gear-frames[data-layout-mode="medium"] {
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.d4-build-planner-gem-frames {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr)
+}
+
+.d4-build-planner-gem-frames [data-box-id="jewelry"] {
+    grid-column: span 6
+}
+
+.d4-build-planner-gem-frames :not([data-box-id="jewelry"]) {
+    grid-column: span 3
+}
+
+.d4-build-planner-gem-frames .d4-build-planner-section-heading {
+    grid-column: 1 / -1
+}
+
+.d4-build-planner-gem-frames[data-layout-mode="small"] [data-box-id] {
+    grid-column: span 1
+}
+
+.d4-build-planner-picker-item {
+    color: #98948d;
+    padding: 5px
+}
+
+.d4-build-planner-picker-item-icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 25px;
+    vertical-align: bottom;
+    width: 25px
+}
+
+body[data-wh-webp="false"] .d4-build-planner-picker-item-icon[data-icon-type="unequip"] {
+    background-image: url(/d4/texture/hash/17/442678289.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-picker-item-icon[data-icon-type="unequip"] {
+    background-image: url(/d4/texture/hash/17/442678289.webp)
+}
+
+.d4-build-planner-picker-item-name {
+    display: inline-block;
+    margin-left: 5px
+}
+
+.d4-build-planner-picker-item[data-match="false"] {
+    display: none
+}
+
+.d4-build-planner-picker-item:hover,.d4-build-planner-picker-item.focus-visible {
+    box-shadow: none;
+    background: rgba(41,39,39,0.5);
+    cursor: pointer
+}
+
+.d4-build-planner-picker-item[data-id-string="axe"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="axe"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 512 512'><path xmlns='http://www.w3.org/2000/svg' d='m198.14 20.357c-27.556 70.838-71.542 133.96-121.28 190.54a5112 5112 0 0 0-5.5566-4.2988c-1.2444-0.40066-2.5022-0.66998-3.7441-0.76172-0.41381-0.03099-0.82773-0.04149-1.2363-0.03125-1.7459 0.04796-3.4269 0.42456-4.9473 1.127-1.5205 0.70257-2.8796 1.734-3.9707 3.0859l-22.389 27.748c-1.091 1.3519-1.8101 2.8946-2.1758 4.5293-0.36552 1.6344-0.37716 3.3576-0.054688 5.0742 0.3221 1.7166 0.97922 3.4274 1.9512 5.0254 0.97219 1.5979 2.2554 3.083 3.8398 4.3613l0.003906 0.00391c-5.5125 6.6836-4.6078 16.502 2.0527 22.061l17.645 14.729c6.6616 5.5608 16.481 4.6797 22.072-1.9414l36.955-49.047c24.959-51.017 87.221-80.077 142.24-64.316 27.856 7.269 52.901 24.69 69.404 48.279 11.281-8.9222 24.316-15.605 38.127-19.607-43.689-72.234-101.39-135.93-168.94-186.55h-0.0039zm-62.627 236.67-0.00196 0.00391-36.523 48.477 18.346 14.805a5051.3 5051.3 0 0 1 2.2695 1.832 5051.3 5051.3 0 0 1 221.69 189.86h89.721a5112 5112 0 0 0-20.559-19.053h-0.00195a5112 5112 0 0 0-170.33-150.13l-0.0039 0.00391a5112 5112 0 0 0-104.6-85.797z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="bow"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="bow"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 512 512'><path xmlns='http://www.w3.org/2000/svg' d='M145.78 287.03l45.26-45.25-90.58-90.58C128.24 136.08 159.49 128 192 128c32.03 0 62.86 7.79 90.33 22.47l46.61-46.61C288.35 78.03 241.3 64 192 64c-49.78 0-97.29 14.27-138.16 40.59l-3.9-3.9c-6.25-6.25-16.38-6.25-22.63 0L4.69 123.31c-6.25 6.25-6.25 16.38 0 22.63l141.09 141.09zm262.36-104.64L361.53 229c14.68 27.47 22.47 58.3 22.47 90.33 0 32.51-8.08 63.77-23.2 91.55l-90.58-90.58-45.26 45.26 141.76 141.76c6.25 6.25 16.38 6.25 22.63 0l22.63-22.63c6.25-6.25 6.25-16.38 0-22.63l-4.57-4.57C433.74 416.63 448 369.11 448 319.33c0-49.29-14.03-96.35-39.86-136.94zM493.22.31L364.63 26.03c-12.29 2.46-16.88 17.62-8.02 26.49l34.47 34.47-250.64 250.63-49.7-16.57a20.578 20.578 0 0 0-21.04 4.96L6.03 389.69c-10.8 10.8-6.46 29.2 8.04 34.04l55.66 18.55 18.55 55.65c4.83 14.5 23.23 18.84 34.04 8.04l63.67-63.67a20.56 20.56 0 0 0 4.97-21.04l-16.57-49.7 250.64-250.64 34.47 34.47c8.86 8.86 24.03 4.27 26.49-8.02l25.72-128.59C513.88 7.8 504.2-1.88 493.22.31z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="crossbow"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="crossbow"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 512 512'><path xmlns='http://www.w3.org/2000/svg' d='m256 17.053c-4.978 0.0018-9.9548 2.33-13.062 6.9863l-40.232 109.12c-6.9509 10.43 0.52359 24.395 13.061 24.402h40.234 40.234c12.537-0.00707 20.011-13.973 13.061-24.402l-40.232-109.12c-3.1077-4.6563-8.0845-6.9845-13.062-6.9863zm-0.51367 160.09c-121.24 0.25441-224.06 89.141-241.84 209.07-4.6639 2.7959-7.7949 7.8844-7.7949 13.719v32.648c0 8.8388 7.1631 16.002 16.002 16.002h61.74l96.082 20.744v-63.998l-95.098-20.533c14.065-64.541 63.188-115.71 127.1-132.4v259.61h44.32 44.32v-259.61c63.913 16.687 113.04 67.858 127.1 132.4l-95.098 20.533v63.998l96.082-20.744h61.74c8.8388 0 16.002-7.1631 16.002-16.002v-32.648c0-5.8344-3.131-10.923-7.7949-13.719-17.783-119.93-120.6-208.81-241.84-209.07-0.17122-1.8e-4 -0.34245-1.8e-4 -0.51367 0-0.17122-1.8e-4 -0.34245-1.8e-4 -0.51367 0z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="dagger"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="dagger"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 384 512'><path xmlns='http://www.w3.org/2000/svg' d='M336 128H224V16c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v112H48c-26.51 0-48 21.49-48 48s21.49 48 48 48c20.87 0 38.45-13.4 45.06-32h197.88c6.61 18.6 24.19 32 45.06 32 26.51 0 48-21.49 48-48s-21.49-48-48-48zM128 428.84l50.69 76.03c6.33 9.5 20.29 9.5 26.63 0L256 428.84V224H128v204.84z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="focus"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="focus"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 576 512'><path xmlns='http://www.w3.org/2000/svg' d='M224 224c52.94 0 96-43.06 96-96 0 0-32 32-96 32-17.72 0-32-17.5-32-32V96c0-17.64 14.36-32 32-32h128c17.64 0 32 14.36 32 32v32c0 34.3-17.51 66.54-42.09 90.8L288 272l17.81-1.01c77.05-4.36 141.58-65.27 142.18-141.43 0-.52.01-1.04.01-1.56V96c0-52.94-43.06-96-96-96H224c-52.94 0-96 43.06-96 96v32c0 51.14 44.86 96 96 96zm341.28 104.1c-11.83-10.69-30.18-9.96-42.63 0l-92.34 73.87A64.004 64.004 0 0 1 390.33 416H272c-8.84 0-16-7.16-16-16s7.16-16 16-16h78.28c15.94 0 30.72-10.89 33.28-26.63C386.82 337.32 371.43 320 352 320H192c-26.97 0-53.11 9.27-74.06 26.27L71.44 384H16c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h356.77c14.53 0 28.63-4.95 39.98-14.03l151.23-120.99c15.19-12.13 16.38-35.27 1.3-48.88z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="hand-crossbow"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="hand-crossbow"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 512 512'><path xmlns='http://www.w3.org/2000/svg' d='M145.78 287.03l45.26-45.25-90.58-90.58C128.24 136.08 159.49 128 192 128c32.03 0 62.86 7.79 90.33 22.47l46.61-46.61C288.35 78.03 241.3 64 192 64c-49.78 0-97.29 14.27-138.16 40.59l-3.9-3.9c-6.25-6.25-16.38-6.25-22.63 0L4.69 123.31c-6.25 6.25-6.25 16.38 0 22.63l141.09 141.09zm262.36-104.64L361.53 229c14.68 27.47 22.47 58.3 22.47 90.33 0 32.51-8.08 63.77-23.2 91.55l-90.58-90.58-45.26 45.26 141.76 141.76c6.25 6.25 16.38 6.25 22.63 0l22.63-22.63c6.25-6.25 6.25-16.38 0-22.63l-4.57-4.57C433.74 416.63 448 369.11 448 319.33c0-49.29-14.03-96.35-39.86-136.94zM493.22.31L364.63 26.03c-12.29 2.46-16.88 17.62-8.02 26.49l34.47 34.47-250.64 250.63-49.7-16.57a20.578 20.578 0 0 0-21.04 4.96L6.03 389.69c-10.8 10.8-6.46 29.2 8.04 34.04l55.66 18.55 18.55 55.65c4.83 14.5 23.23 18.84 34.04 8.04l63.67-63.67a20.56 20.56 0 0 0 4.97-21.04l-16.57-49.7 250.64-250.64 34.47 34.47c8.86 8.86 24.03 4.27 26.49-8.02l25.72-128.59C513.88 7.8 504.2-1.88 493.22.31z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="mace"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="mace"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 512 512'><path xmlns='http://www.w3.org/2000/svg' d='M170.65 296.09L4.69 462.06c-6.25 6.25-6.25 16.38 0 22.63l22.63 22.63c6.25 6.25 16.38 6.25 22.63 0l165.97-165.97a161.122 161.122 0 0 1-45.27-45.26zm330.33-101.12l-74.99-23.77c-12.6-41.73-45.59-74.19-87.67-85.95L313.05 10.8c-4.92-14.5-17.46-14.37-22.08.22l-23.77 75c-41.73 12.6-74.19 45.59-85.96 87.67l-74.44 25.26c-14.5 4.92-14.37 17.46.22 22.08l74.99 23.77c12.6 41.73 45.59 74.19 87.67 85.96l25.26 74.44c4.92 14.5 17.46 14.37 22.08-.22l23.77-74.99c41.73-12.6 74.19-45.59 85.95-87.67l74.44-25.26c14.52-4.93 14.39-17.47-.2-22.09zM304 240c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="polearm"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="polearm"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 512 512'><path xmlns='http://www.w3.org/2000/svg' d='M 512 0.001953125 C 461.5815 5.6856931 400.70732 35.703351 336.98242 82.425781 A 108.34884 205.42281 45 0 1 274.03125 166.43164 A 108.34884 205.42281 45 0 1 161.36328 242.40039 L 86.585938 317.1875 L 171.64258 339.97852 L 171.64258 340.39258 L 171.64453 340.39648 L 181.10352 375.70117 L 194.52344 425.78516 L 269.63086 350.66797 A 108.34884 205.42281 45 0 1 345.59961 238 A 108.34884 205.42281 45 0 1 429.55664 175.07422 C 476.29254 111.32701 506.3198 50.433593 512 0.001953125 z M 119.66016 347.82617 L 97.941406 369.56641 L 37.603516 429.91992 L 37.625 429.91992 L 7.0566406 460.51758 A 16 16 0 0 0 9.8125 484.98438 L 36.111328 502.23047 A 16 16 0 0 0 56.386719 499.97852 L 83.582031 472.83008 L 83.582031 472.88281 L 163.86328 392.64062 L 154.34766 357.11914 L 119.66016 347.82617 z '/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="scythe"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="scythe"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 512 512'><path xmlns='http://www.w3.org/2000/svg' d='M129.94 308.69a16 16 0 0 0-22.63 0l-22.62 22.62a16 16 0 0 0 0 22.63l2.74 2.75-82.74 82.74a16 16 0 0 0 0 22.63L50 507.31a16 16 0 0 0 22.63 0l82.75-82.75 2.74 2.74a16 16 0 0 0 22.63 0l22.62-22.62a16 16 0 0 0 0-22.63zM320 0c-96 0-166.25 69.31-184.12 151.44-13.74 63.14 10.71 128.65 56.41 174.34L224 355.87l35.42-35.42c-38.53-64.2-23.88-151.27 46.88-196 43.09-27.24 99.58-28.9 144.05-4a148.11 148.11 0 0 1 47.33 41.42c5.08 6.9 15.79 1.93 14.14-6.48C501.17 100.72 448 0 320 0z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="shield"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="shield"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 448 512'><path xmlns='http://www.w3.org/2000/svg' d='M420.43 83.69l-179.2-80c-11.03-4.92-23.43-4.92-34.46 0l-179.2 80C10.88 91.14 0 108.62 0 128c0 198.49 106.86 335.71 206.77 380.31 11.03 4.92 23.43 4.92 34.46 0C321.13 472.64 448 349.28 448 128c0-19.38-10.88-36.86-27.57-44.31zM374.09 224H256v200.27c-11.34 8.92-22.26 16.12-32.07 21.3-10.68-5.51-21.36-12.66-31.93-20.81V224H74.8c-4.39-20.25-7.37-41.58-8.9-64H192V80.37l32-14.29 32 14.29V160h126.74c-1.47 22.72-4.4 44.07-8.65 64z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="staff"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="staff"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 512 512'><path xmlns='http://www.w3.org/2000/svg' d='M432 0h-76.23c-30.3 0-58 17.12-71.55 44.22l-16 32c-3.95 7.9-.75 17.51 7.15 21.46l57.25 28.63c7.9 3.95 17.51.75 21.47-7.16L365.67 96H416v75.8l-157.29 44.94a176.122 176.122 0 0 0-76.11 44.78L156.12 288H112c-8.84 0-16 7.16-16 16v44.12L7.03 437.1c-9.37 9.37-9.37 24.57 0 33.94l33.93 33.93c9.37 9.37 24.57 9.37 33.94 0l175.55-175.55a80.111 80.111 0 0 1 34.62-20.37l84.82-24.24 32.25 18.62c7.65 4.42 17.44 1.79 21.86-5.86l19.51-33.8 10.46-2.99c34.34-9.81 58.02-41.21 58.02-76.92V80C512 35.82 476.18 0 432 0z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="sword"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="sword"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 512 512'><path xmlns='http://www.w3.org/2000/svg' d='M110.11 227.59c-6.25-6.25-16.38-6.25-22.63 0l-18.79 18.8a16.005 16.005 0 0 0-2 20.19l53.39 80.09-53.43 53.43-29.26-14.63a13.902 13.902 0 0 0-16.04 2.6L4.07 405.36c-5.42 5.43-5.42 14.22 0 19.64L87 507.93c5.42 5.42 14.22 5.42 19.64 0l17.29-17.29a13.873 13.873 0 0 0 2.6-16.03l-14.63-29.26 53.43-53.43 80.09 53.39c6.35 4.23 14.8 3.39 20.19-2l18.8-18.79c6.25-6.25 6.25-16.38 0-22.63l-174.3-174.3zM493.73.16L400 16 171.89 244.11l96 96L496 112l15.83-93.73c1.51-10.56-7.54-19.61-18.1-18.11z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="totem"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="totem"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 320 512'><path xmlns='http://www.w3.org/2000/svg' d='M296 256h-44.62C272.46 222.01 288 181.65 288 144 288 55.63 230.69 0 160 0S32 55.63 32 144c0 37.65 15.54 78.01 36.62 112H24c-13.25 0-24 10.74-24 24v32c0 13.25 10.75 24 24 24h96v152c0 13.25 10.75 24 24 24h32c13.25 0 24-10.75 24-24V336h96c13.25 0 24-10.75 24-24v-32c0-13.26-10.75-24-24-24zM160 80c29.61 0 48 24.52 48 64 0 34.66-27.14 78.14-48 100.87-20.86-22.72-48-66.21-48-100.87 0-39.48 18.39-64 48-64z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="two-handed-axe"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="two-handed-axe"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 512 512'><path xmlns='http://www.w3.org/2000/svg' d='M512 160.92C505.16 99.16 478.4 44.29 438.94 4.7c-9.21-9.25-23.89-4.12-27.06 8.96-12.03 49.67-47.25 88.27-91.88 101.23v154.22c44.63 12.96 79.85 51.56 91.88 101.23 3.17 13.08 17.85 18.21 27.06 8.96 39.46-39.59 66.22-94.45 73.06-156.22L449.24 192 512 160.92zM101 13.66C97.86.58 83.32-4.54 74.2 4.7 28.67 50.83 0 117.62 0 192c0 74.38 28.67 141.17 74.2 187.3 9.13 9.25 23.66 4.12 26.8-8.96 11.92-49.67 46.79-88.27 91-101.23V114.89c-44.21-12.96-79.08-51.56-91-101.23zM272 64h-32c-8.84 0-16 7.16-16 16v416c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V80c0-8.84-7.16-16-16-16z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="two-handed-mace"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="two-handed-mace"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 384 512'><path xmlns='http://www.w3.org/2000/svg' d='M346.74 32.44L224 52.9V16c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v36.9L37.26 32.44C17.76 29.19 0 44.23 0 64.01v191.98c0 19.77 17.76 34.81 37.26 31.56L192 261.77l154.74 25.79C366.25 290.81 384 275.77 384 256V64.01c0-19.78-17.76-34.82-37.26-31.57zM160 299.54V496c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V299.54l-32-5.33-32 5.33z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="two-handed-scythe"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="two-handed-scythe"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 640 512'><path xmlns='http://www.w3.org/2000/svg' d='M608 0h-25.45l-59.74 288H400a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h109.54l-29.26 141.05A16 16 0 0 0 496 512h31.45a16 16 0 0 0 15.72-13l96.27-461A32 32 0 0 0 608 0zm-58.13 0h-211C192 0 64 64 0 192h510z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="two-handed-sword"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="two-handed-sword"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 512 512'><path xmlns='http://www.w3.org/2000/svg' d='m236.71 0c-6.4262 0-12.79 5.2849-11.598 11.6l8.3633 44.291v165.54l-126.83 33.986c-6.2073 1.6632-9.8645 7.9958-8.2012 14.203l6.1465 22.945c1.6635 6.2074 8.0001 9.8665 14.207 8.2031l137.2-36.762 137.2 36.762c6.2074 1.6632 12.543-1.9959 14.207-8.2031l6.1484-22.945c1.6633-6.2073-1.9958-12.54-8.2031-14.203l-126.83-33.986v-165.54l8.3652-44.291c1.1927-6.3147-5.1734-11.6-11.6-11.6h-38.562zm19.283 281.84-66.918 17.932v212.21h61.445v-193.96l5.4746-1.4668 5.4746 1.4668v193.96h61.445v-212.21l-66.922-17.932z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker-item[data-id-string="wand"] {
+    padding-left: 25px;
+    position: relative
+}
+
+.d4-build-planner-picker-item[data-id-string="wand"]:after {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' style='fill: rgb(242, 235, 222)' viewBox='0 0 512 512'><path xmlns='http://www.w3.org/2000/svg' d='M400 192c8.84 0 16-7.16 16-16v-27.96l91.87-101.83c5.72-6.32 5.48-16.02-.55-22.05L487.84 4.69c-6.03-6.03-15.73-6.27-22.05-.55L186.6 256H144c-8.84 0-16 7.16-16 16v36.87L10.53 414.84c-13.57 12.28-14.1 33.42-1.16 46.36l41.43 41.43c12.94 12.94 34.08 12.41 46.36-1.16L376.34 192H400z'/></svg>") center no-repeat;
+    display: inline-block;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px)
+}
+
+.d4-build-planner-picker .d4-build-planner-picker-list {
+    list-style: none;
+    margin: unset;
+    max-height: 280px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 0
+}
+
+.d4-build-planner-picker-closer {
+    cursor: pointer;
+    display: block;
+    height: 48px;
+    position: absolute;
+    right: calc(-12px);
+    top: calc(-12px);
+    width: 48px;
+    background-image: url("/images/d4/tools/shared/d4-closer-hover.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0
+}
+
+.d4-build-planner-picker-closer:hover,.d4-build-planner-picker-closer.focus-visible {
+    box-shadow: none;
+    filter: brightness(1.35)
+}
+
+.d4-build-planner-search {
+    margin-bottom: 10px;
+    width: 100%
+}
+
+.d4-build-planner-search::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    filter: sepia(1);
+    height: 25px;
+    margin-right: -10px;
+    width: 25px
+}
+
+body[data-wh-webp="false"] .d4-build-planner-search::-webkit-search-cancel-button {
+    background-image: url(/d4/texture/hash/17/442678289.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-search::-webkit-search-cancel-button {
+    background-image: url(/d4/texture/hash/17/442678289.webp)
+}
+
+.d4-build-planner-search::-webkit-search-cancel-button:hover {
+    cursor: pointer;
+    filter: sepia(1) brightness(1.35)
+}
+
+.d4-build-planner-affix-remover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    filter: sepia(1);
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 30px / 2);
+    width: 30px
+}
+
+body[data-wh-webp="false"] .d4-build-planner-affix-remover {
+    background-image: url(/d4/texture/hash/17/442678289.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-affix-remover {
+    background-image: url(/d4/texture/hash/17/442678289.webp)
+}
+
+.d4-build-planner-affix-remover:hover {
+    cursor: pointer;
+    filter: sepia(1) brightness(1.35)
+}
+
+.d4-build-planner-section-heading {
+    grid-column: 1 / -1;
+    margin: 10px
+}
+
+.d4-build-planner-equipment-background {
+    background-position: var(--d4BuildPlanner-backgroundPosition);
+    background-repeat: no-repeat;
+    background-size: 1155px;
+    grid-column: 1 / span 12;
+    grid-gap: 5px;
+    grid-row: 1 / span 1;
+    inset: 0;
+    margin: 0 calc(var(--d4BuildPlanner-toolPadding) * -1);
+    position: absolute;
+    z-index: var(--d4BuildPlanner-equipmentBgZIndex)
+}
+
+.d4-build-planner-equip {
+    background-image: linear-gradient(transparent 80%, #121110);
+    display: grid;
+    grid-template-areas: "helm  .      . .       .       . .       neck" "torso .      . .       .       . .       rightFinger" "hands .      . .       .       . .       leftFinger" "legs  .      . arsenal arsenal . .       weapon" "feet  .      . arsenal arsenal . weapons offHand";
+    margin: auto;
+    padding-top: var(--d4BuildPlanner-toolPadding);
+    position: relative
+}
+
+.d4-build-planner-equip-slot[data-slot="helm"] {
+    grid-area: helm
+}
+
+.d4-build-planner-equip-slot[data-slot="torso"] {
+    grid-area: torso
+}
+
+.d4-build-planner-equip-slot[data-slot="hands"] {
+    grid-area: hands
+}
+
+.d4-build-planner-equip-slot[data-slot="legs"] {
+    grid-area: legs
+}
+
+.d4-build-planner-equip-slot[data-slot="feet"] {
+    grid-area: feet
+}
+
+.d4-build-planner-equip-slot[data-slot="neck"] {
+    grid-area: neck;
+    justify-self: end
+}
+
+.d4-build-planner-equip-slot[data-slot="finger-left"] {
+    grid-area: leftFinger;
+    justify-self: end
+}
+
+.d4-build-planner-equip-slot[data-slot="finger-right"] {
+    grid-area: rightFinger;
+    justify-self: end
+}
+
+.d4-build-planner-equip-slot[data-slot="weapons"] {
+    grid-area: weapons-start/weapons-end/offHand-end;
+    justify-self: end;
+    align-self: end
+}
+
+.d4-build-planner-equip-slot[data-slot="arsenal"] {
+    grid-area: arsenal;
+    justify-self: center;
+    align-self: end
+}
+
+.d4-build-planner-equip-slot[data-slot="main-hand"] {
+    grid-area: weapon;
+    justify-self: end;
+    align-self: end
+}
+
+.d4-build-planner-equip-slot[data-slot="off-hand"] {
+    grid-area: offHand;
+    justify-self: end;
+    align-self: end
+}
+
+.d4-build-planner-equip-slot[data-slot="weapon"] {
+    grid-area: weapon;
+    justify-self: end;
+    align-self: end
+}
+
+.d4-build-planner-equip-modal,.d4-build-planner-import-modal {
+    background-image: linear-gradient(#292727 33%, transparent),url("/images/d4/tools/build-tool/distressed-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -10px;
+    padding: 30px 80px
+}
+
+@media only screen and (max-width: 767px) {
+    .d4-build-planner-equip-modal,.d4-build-planner-import-modal {
+        background-image:unset;
+        padding: 10px
+    }
+}
+
+.d4-build-planner-equip-picker {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    position: relative
+}
+
+@media only screen and (max-width: 767px) {
+    .d4-build-planner-equip-picker {
+        gap:5px
+    }
+}
+
+.d4-build-planner-equip-picker-title {
+    color: #bf9c5a
+}
+
+.d4-build-planner-equip-picker-search {
+    margin-left: 1em;
+    vertical-align: middle
+}
+
+.d4-build-planner-equip-picker-item {
+    border: 2px solid #454240;
+    box-sizing: border-box;
+    min-width: 12em;
+    font-size: 17px;
+    padding: 20px;
+    width: 20%;
+    position: relative;
+    z-index: 0
+}
+
+.d4-build-planner-equip-picker-item:hover,.d4-build-planner-equip-picker-item.focus-visible {
+    border-color: #e3e0d9
+}
+
+.d4-build-planner-equip-picker-item:hover .d4-build-planner-equip-picker-item-icon,.d4-build-planner-equip-picker-item:hover:after,.d4-build-planner-equip-picker-item.focus-visible .d4-build-planner-equip-picker-item-icon,.d4-build-planner-equip-picker-item.focus-visible:after {
+    filter: unset
+}
+
+.d4-build-planner-equip-picker-item:hover .d4-build-planner-equip-picker-item-name,.d4-build-planner-equip-picker-item.focus-visible .d4-build-planner-equip-picker-item-name {
+    color: #e3e0d9
+}
+
+.d4-build-planner-equip-picker-item:hover .d4-build-planner-equip-picker-item-description,.d4-build-planner-equip-picker-item.focus-visible .d4-build-planner-equip-picker-item-description {
+    color: #bf9c5a
+}
+
+.d4-build-planner-equip-picker-item:after {
+    background-position: left 66.7px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 66.7px,66.7px,right 2.7px top 66.7px,left 66.7px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px,left 35.2px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 35.2px,35.2px,right 2.7px top 35.2px,left 35.2px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 133.4px) 64px,64px,64px,64px calc(100% - 133.4px),calc(100% - 133.4px) calc(100% - 133.4px),64px calc(100% - 133.4px),calc(100% - 133.4px) 64px,64px,64px,calc(100% - 70.4px) 33px,33px,33px,33px calc(100% - 70.4px),calc(100% - 70.4px) calc(100% - 70.4px),33px calc(100% - 70.4px),calc(100% - 70.4px) 33px,33px,33px;
+    content: "";
+    filter: opacity(.5);
+    inset: 0;
+    position: absolute;
+    z-index: -1
+}
+
+body[data-wh-webp="false"] .d4-build-planner-equip-picker-item:after {
+    background-image: url("/d4/texture/hash/34/612567842.png"),url("/d4/texture/hash/45/2007184429.png"),url("/d4/texture/hash/128/1819836800.png"),url("/d4/texture/hash/88/3333552728.png"),url("/d4/texture/hash/124/1035349116.png"),url("/d4/texture/hash/11/2640317707.png"),url("/d4/texture/hash/192/2443735232.png"),url("/d4/texture/hash/203/505297099.png"),url("/d4/texture/hash/222/3797162462.png"),url("/d4/texture/hash/218/1505111514.png"),url("/d4/texture/hash/229/2191061733.png"),url("/d4/texture/hash/56/3592820536.png"),url("/d4/texture/hash/16/147656464.png"),url("/d4/texture/hash/52/1927892788.png"),url("/d4/texture/hash/195/584956099.png"),url("/d4/texture/hash/120/1305988728.png"),url("/d4/texture/hash/131/4189434499.png"),url("/d4/texture/hash/150/819645078.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-equip-picker-item:after {
+    background-image: url("/d4/texture/hash/34/612567842.webp"),url("/d4/texture/hash/45/2007184429.webp"),url("/d4/texture/hash/128/1819836800.webp"),url("/d4/texture/hash/88/3333552728.webp"),url("/d4/texture/hash/124/1035349116.webp"),url("/d4/texture/hash/11/2640317707.webp"),url("/d4/texture/hash/192/2443735232.webp"),url("/d4/texture/hash/203/505297099.webp"),url("/d4/texture/hash/222/3797162462.webp"),url("/d4/texture/hash/218/1505111514.webp"),url("/d4/texture/hash/229/2191061733.webp"),url("/d4/texture/hash/56/3592820536.webp"),url("/d4/texture/hash/16/147656464.webp"),url("/d4/texture/hash/52/1927892788.webp"),url("/d4/texture/hash/195/584956099.webp"),url("/d4/texture/hash/120/1305988728.webp"),url("/d4/texture/hash/131/4189434499.webp"),url("/d4/texture/hash/150/819645078.webp")
+}
+
+.d4-build-planner-equip-picker-item-icon {
+    filter: opacity(.5);
+    float: left;
+    width: 33%
+}
+
+.d4-build-planner-equip-picker-item-name {
+    color: #e3e0d9;
+    font-weight: 500
+}
+
+.d4-build-planner-equip-picker-item-type {
+    color: #98948d;
+    font-weight: 600
+}
+
+.d4-build-planner-equip-picker-item-description {
+    clear: left;
+    font-style: italic
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="0"]:after {
+    background-position: left 66.7px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 66.7px,66.7px,right 2.7px top 66.7px,left 66.7px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px,left 35.2px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 35.2px,35.2px,right 2.7px top 35.2px,left 35.2px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 133.4px) 64px,64px,64px,64px calc(100% - 133.4px),calc(100% - 133.4px) calc(100% - 133.4px),64px calc(100% - 133.4px),calc(100% - 133.4px) 64px,64px,64px,calc(100% - 70.4px) 33px,33px,33px,33px calc(100% - 70.4px),calc(100% - 70.4px) calc(100% - 70.4px),33px calc(100% - 70.4px),calc(100% - 70.4px) 33px,33px,33px
+}
+
+body[data-wh-webp="false"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="0"]:after {
+    background-image: url("/d4/texture/hash/34/612567842.png"),url("/d4/texture/hash/45/2007184429.png"),url("/d4/texture/hash/128/1819836800.png"),url("/d4/texture/hash/88/3333552728.png"),url("/d4/texture/hash/124/1035349116.png"),url("/d4/texture/hash/11/2640317707.png"),url("/d4/texture/hash/192/2443735232.png"),url("/d4/texture/hash/203/505297099.png"),url("/d4/texture/hash/222/3797162462.png"),url("/d4/texture/hash/218/1505111514.png"),url("/d4/texture/hash/229/2191061733.png"),url("/d4/texture/hash/56/3592820536.png"),url("/d4/texture/hash/16/147656464.png"),url("/d4/texture/hash/52/1927892788.png"),url("/d4/texture/hash/195/584956099.png"),url("/d4/texture/hash/120/1305988728.png"),url("/d4/texture/hash/131/4189434499.png"),url("/d4/texture/hash/150/819645078.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="0"]:after {
+    background-image: url("/d4/texture/hash/34/612567842.webp"),url("/d4/texture/hash/45/2007184429.webp"),url("/d4/texture/hash/128/1819836800.webp"),url("/d4/texture/hash/88/3333552728.webp"),url("/d4/texture/hash/124/1035349116.webp"),url("/d4/texture/hash/11/2640317707.webp"),url("/d4/texture/hash/192/2443735232.webp"),url("/d4/texture/hash/203/505297099.webp"),url("/d4/texture/hash/222/3797162462.webp"),url("/d4/texture/hash/218/1505111514.webp"),url("/d4/texture/hash/229/2191061733.webp"),url("/d4/texture/hash/56/3592820536.webp"),url("/d4/texture/hash/16/147656464.webp"),url("/d4/texture/hash/52/1927892788.webp"),url("/d4/texture/hash/195/584956099.webp"),url("/d4/texture/hash/120/1305988728.webp"),url("/d4/texture/hash/131/4189434499.webp"),url("/d4/texture/hash/150/819645078.webp")
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="0"]:hover,.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="0"].focus-visible {
+    border-color: #e3e0d9
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="0"] .d4-build-planner-equip-picker-item-name {
+    color: #e3e0d9
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="1"]:after {
+    background-position: left 66.7px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 66.7px,66.7px,right 2.7px top 66.7px,left 66.7px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px,left 35.2px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 35.2px,35.2px,right 2.7px top 35.2px,left 35.2px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 133.4px) 64px,64px,64px,64px calc(100% - 133.4px),calc(100% - 133.4px) calc(100% - 133.4px),64px calc(100% - 133.4px),calc(100% - 133.4px) 64px,64px,64px,calc(100% - 70.4px) 33px,33px,33px,33px calc(100% - 70.4px),calc(100% - 70.4px) calc(100% - 70.4px),33px calc(100% - 70.4px),calc(100% - 70.4px) 33px,33px,33px
+}
+
+body[data-wh-webp="false"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="1"]:after {
+    background-image: url("/d4/texture/hash/90/2051834202.png"),url("/d4/texture/hash/101/3844933221.png"),url("/d4/texture/hash/184/2336004792.png"),url("/d4/texture/hash/144/2159575696.png"),url("/d4/texture/hash/180/2474615476.png"),url("/d4/texture/hash/67/2553781315.png"),url("/d4/texture/hash/248/4100116984.png"),url("/d4/texture/hash/3/756446723.png"),url("/d4/texture/hash/22/3495165462.png"),url("/d4/texture/hash/218/1505111514.png"),url("/d4/texture/hash/229/2191061733.png"),url("/d4/texture/hash/56/3592820536.png"),url("/d4/texture/hash/16/147656464.png"),url("/d4/texture/hash/52/1927892788.png"),url("/d4/texture/hash/195/584956099.png"),url("/d4/texture/hash/120/1305988728.png"),url("/d4/texture/hash/131/4189434499.png"),url("/d4/texture/hash/150/819645078.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="1"]:after {
+    background-image: url("/d4/texture/hash/90/2051834202.webp"),url("/d4/texture/hash/101/3844933221.webp"),url("/d4/texture/hash/184/2336004792.webp"),url("/d4/texture/hash/144/2159575696.webp"),url("/d4/texture/hash/180/2474615476.webp"),url("/d4/texture/hash/67/2553781315.webp"),url("/d4/texture/hash/248/4100116984.webp"),url("/d4/texture/hash/3/756446723.webp"),url("/d4/texture/hash/22/3495165462.webp"),url("/d4/texture/hash/218/1505111514.webp"),url("/d4/texture/hash/229/2191061733.webp"),url("/d4/texture/hash/56/3592820536.webp"),url("/d4/texture/hash/16/147656464.webp"),url("/d4/texture/hash/52/1927892788.webp"),url("/d4/texture/hash/195/584956099.webp"),url("/d4/texture/hash/120/1305988728.webp"),url("/d4/texture/hash/131/4189434499.webp"),url("/d4/texture/hash/150/819645078.webp")
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="1"]:hover,.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="1"].focus-visible {
+    border-color: #7c7cfb
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="1"] .d4-build-planner-equip-picker-item-name {
+    color: #7c7cfb
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="2"]:after {
+    background-position: left 66.7px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 66.7px,66.7px,right 2.7px top 66.7px,left 66.7px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px,left 35.2px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 35.2px,35.2px,right 2.7px top 35.2px,left 35.2px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 133.4px) 64px,64px,64px,64px calc(100% - 133.4px),calc(100% - 133.4px) calc(100% - 133.4px),64px calc(100% - 133.4px),calc(100% - 133.4px) 64px,64px,64px,calc(100% - 70.4px) 33px,33px,33px,33px calc(100% - 70.4px),calc(100% - 70.4px) calc(100% - 70.4px),33px calc(100% - 70.4px),calc(100% - 70.4px) 33px,33px,33px
+}
+
+body[data-wh-webp="false"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="2"]:after {
+    background-image: url("/d4/texture/hash/90/2051834202.png"),url("/d4/texture/hash/101/3844933221.png"),url("/d4/texture/hash/184/2336004792.png"),url("/d4/texture/hash/144/2159575696.png"),url("/d4/texture/hash/180/2474615476.png"),url("/d4/texture/hash/67/2553781315.png"),url("/d4/texture/hash/248/4100116984.png"),url("/d4/texture/hash/3/756446723.png"),url("/d4/texture/hash/22/3495165462.png"),url("/d4/texture/hash/218/1505111514.png"),url("/d4/texture/hash/229/2191061733.png"),url("/d4/texture/hash/56/3592820536.png"),url("/d4/texture/hash/16/147656464.png"),url("/d4/texture/hash/52/1927892788.png"),url("/d4/texture/hash/195/584956099.png"),url("/d4/texture/hash/120/1305988728.png"),url("/d4/texture/hash/131/4189434499.png"),url("/d4/texture/hash/150/819645078.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="2"]:after {
+    background-image: url("/d4/texture/hash/90/2051834202.webp"),url("/d4/texture/hash/101/3844933221.webp"),url("/d4/texture/hash/184/2336004792.webp"),url("/d4/texture/hash/144/2159575696.webp"),url("/d4/texture/hash/180/2474615476.webp"),url("/d4/texture/hash/67/2553781315.webp"),url("/d4/texture/hash/248/4100116984.webp"),url("/d4/texture/hash/3/756446723.webp"),url("/d4/texture/hash/22/3495165462.webp"),url("/d4/texture/hash/218/1505111514.webp"),url("/d4/texture/hash/229/2191061733.webp"),url("/d4/texture/hash/56/3592820536.webp"),url("/d4/texture/hash/16/147656464.webp"),url("/d4/texture/hash/52/1927892788.webp"),url("/d4/texture/hash/195/584956099.webp"),url("/d4/texture/hash/120/1305988728.webp"),url("/d4/texture/hash/131/4189434499.webp"),url("/d4/texture/hash/150/819645078.webp")
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="2"]:hover,.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="2"].focus-visible {
+    border-color: #7c7cfb
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="2"] .d4-build-planner-equip-picker-item-name {
+    color: #7c7cfb
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="3"]:after {
+    background-position: left 66.7px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 66.7px,66.7px,right 2.7px top 66.7px,left 66.7px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px,left 35.2px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 35.2px,35.2px,right 2.7px top 35.2px,left 35.2px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 133.4px) 64px,64px,64px,64px calc(100% - 133.4px),calc(100% - 133.4px) calc(100% - 133.4px),64px calc(100% - 133.4px),calc(100% - 133.4px) 64px,64px,64px,calc(100% - 70.4px) 33px,33px,33px,33px calc(100% - 70.4px),calc(100% - 70.4px) calc(100% - 70.4px),33px calc(100% - 70.4px),calc(100% - 70.4px) 33px,33px,33px
+}
+
+body[data-wh-webp="false"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="3"]:after {
+    background-image: url("/d4/texture/hash/195/232597443.png"),url("/d4/texture/hash/78/2215426382.png"),url("/d4/texture/hash/193/101886657.png"),url("/d4/texture/hash/185/2146073273.png"),url("/d4/texture/hash/29/655378717.png"),url("/d4/texture/hash/140/2108201356.png"),url("/d4/texture/hash/1/1236396289.png"),url("/d4/texture/hash/140/851175820.png"),url("/d4/texture/hash/191/2326258367.png"),url("/d4/texture/hash/218/1505111514.png"),url("/d4/texture/hash/229/2191061733.png"),url("/d4/texture/hash/56/3592820536.png"),url("/d4/texture/hash/16/147656464.png"),url("/d4/texture/hash/52/1927892788.png"),url("/d4/texture/hash/195/584956099.png"),url("/d4/texture/hash/120/1305988728.png"),url("/d4/texture/hash/131/4189434499.png"),url("/d4/texture/hash/150/819645078.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="3"]:after {
+    background-image: url("/d4/texture/hash/195/232597443.webp"),url("/d4/texture/hash/78/2215426382.webp"),url("/d4/texture/hash/193/101886657.webp"),url("/d4/texture/hash/185/2146073273.webp"),url("/d4/texture/hash/29/655378717.webp"),url("/d4/texture/hash/140/2108201356.webp"),url("/d4/texture/hash/1/1236396289.webp"),url("/d4/texture/hash/140/851175820.webp"),url("/d4/texture/hash/191/2326258367.webp"),url("/d4/texture/hash/218/1505111514.webp"),url("/d4/texture/hash/229/2191061733.webp"),url("/d4/texture/hash/56/3592820536.webp"),url("/d4/texture/hash/16/147656464.webp"),url("/d4/texture/hash/52/1927892788.webp"),url("/d4/texture/hash/195/584956099.webp"),url("/d4/texture/hash/120/1305988728.webp"),url("/d4/texture/hash/131/4189434499.webp"),url("/d4/texture/hash/150/819645078.webp")
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="3"]:hover,.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="3"].focus-visible {
+    border-color: #ff0
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="3"] .d4-build-planner-equip-picker-item-name {
+    color: #ff0
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="4"]:after {
+    background-position: left 66.7px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 66.7px,66.7px,right 2.7px top 66.7px,left 66.7px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px,left 35.2px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 35.2px,35.2px,right 2.7px top 35.2px,left 35.2px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 133.4px) 64px,64px,64px,64px calc(100% - 133.4px),calc(100% - 133.4px) calc(100% - 133.4px),64px calc(100% - 133.4px),calc(100% - 133.4px) 64px,64px,64px,calc(100% - 70.4px) 33px,33px,33px,33px calc(100% - 70.4px),calc(100% - 70.4px) calc(100% - 70.4px),33px calc(100% - 70.4px),calc(100% - 70.4px) 33px,33px,33px
+}
+
+body[data-wh-webp="false"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="4"]:after {
+    background-image: url("/d4/texture/hash/195/232597443.png"),url("/d4/texture/hash/78/2215426382.png"),url("/d4/texture/hash/193/101886657.png"),url("/d4/texture/hash/185/2146073273.png"),url("/d4/texture/hash/29/655378717.png"),url("/d4/texture/hash/140/2108201356.png"),url("/d4/texture/hash/1/1236396289.png"),url("/d4/texture/hash/140/851175820.png"),url("/d4/texture/hash/191/2326258367.png"),url("/d4/texture/hash/218/1505111514.png"),url("/d4/texture/hash/229/2191061733.png"),url("/d4/texture/hash/56/3592820536.png"),url("/d4/texture/hash/16/147656464.png"),url("/d4/texture/hash/52/1927892788.png"),url("/d4/texture/hash/195/584956099.png"),url("/d4/texture/hash/120/1305988728.png"),url("/d4/texture/hash/131/4189434499.png"),url("/d4/texture/hash/150/819645078.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="4"]:after {
+    background-image: url("/d4/texture/hash/195/232597443.webp"),url("/d4/texture/hash/78/2215426382.webp"),url("/d4/texture/hash/193/101886657.webp"),url("/d4/texture/hash/185/2146073273.webp"),url("/d4/texture/hash/29/655378717.webp"),url("/d4/texture/hash/140/2108201356.webp"),url("/d4/texture/hash/1/1236396289.webp"),url("/d4/texture/hash/140/851175820.webp"),url("/d4/texture/hash/191/2326258367.webp"),url("/d4/texture/hash/218/1505111514.webp"),url("/d4/texture/hash/229/2191061733.webp"),url("/d4/texture/hash/56/3592820536.webp"),url("/d4/texture/hash/16/147656464.webp"),url("/d4/texture/hash/52/1927892788.webp"),url("/d4/texture/hash/195/584956099.webp"),url("/d4/texture/hash/120/1305988728.webp"),url("/d4/texture/hash/131/4189434499.webp"),url("/d4/texture/hash/150/819645078.webp")
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="4"]:hover,.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="4"].focus-visible {
+    border-color: #ff0
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="4"] .d4-build-planner-equip-picker-item-name {
+    color: #ff0
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="5"]:after {
+    background-position: left 66.7px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 66.7px,66.7px,right 2.7px top 66.7px,left 66.7px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px,left 35.2px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 35.2px,35.2px,right 2.7px top 35.2px,left 35.2px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 133.4px) 64px,64px,64px,64px calc(100% - 133.4px),calc(100% - 133.4px) calc(100% - 133.4px),64px calc(100% - 133.4px),calc(100% - 133.4px) 64px,64px,64px,calc(100% - 70.4px) 33px,33px,33px,33px calc(100% - 70.4px),calc(100% - 70.4px) calc(100% - 70.4px),33px calc(100% - 70.4px),calc(100% - 70.4px) 33px,33px,33px
+}
+
+body[data-wh-webp="false"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="5"]:after {
+    background-image: url("/d4/texture/hash/84/2627685972.png"),url("/d4/texture/hash/95/1571930207.png"),url("/d4/texture/hash/242/341349362.png"),url("/d4/texture/hash/10/740280586.png"),url("/d4/texture/hash/174/3050467246.png"),url("/d4/texture/hash/253/2961682941.png"),url("/d4/texture/hash/50/543043890.png"),url("/d4/texture/hash/61/2579685949.png"),url("/d4/texture/hash/144/3532517776.png"),url("/d4/texture/hash/218/1505111514.png"),url("/d4/texture/hash/229/2191061733.png"),url("/d4/texture/hash/56/3592820536.png"),url("/d4/texture/hash/16/147656464.png"),url("/d4/texture/hash/52/1927892788.png"),url("/d4/texture/hash/195/584956099.png"),url("/d4/texture/hash/120/1305988728.png"),url("/d4/texture/hash/131/4189434499.png"),url("/d4/texture/hash/150/819645078.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="5"]:after {
+    background-image: url("/d4/texture/hash/84/2627685972.webp"),url("/d4/texture/hash/95/1571930207.webp"),url("/d4/texture/hash/242/341349362.webp"),url("/d4/texture/hash/10/740280586.webp"),url("/d4/texture/hash/174/3050467246.webp"),url("/d4/texture/hash/253/2961682941.webp"),url("/d4/texture/hash/50/543043890.webp"),url("/d4/texture/hash/61/2579685949.webp"),url("/d4/texture/hash/144/3532517776.webp"),url("/d4/texture/hash/218/1505111514.webp"),url("/d4/texture/hash/229/2191061733.webp"),url("/d4/texture/hash/56/3592820536.webp"),url("/d4/texture/hash/16/147656464.webp"),url("/d4/texture/hash/52/1927892788.webp"),url("/d4/texture/hash/195/584956099.webp"),url("/d4/texture/hash/120/1305988728.webp"),url("/d4/texture/hash/131/4189434499.webp"),url("/d4/texture/hash/150/819645078.webp")
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="5"]:hover,.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="5"].focus-visible {
+    border-color: #ff8000
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="5"] .d4-build-planner-equip-picker-item-name {
+    color: #ff8000
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="6"]:after {
+    background-position: left 66.7px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 66.7px,66.7px,right 2.7px top 66.7px,left 66.7px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px,left 35.2px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 35.2px,35.2px,right 2.7px top 35.2px,left 35.2px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 133.4px) 64px,64px,64px,64px calc(100% - 133.4px),calc(100% - 133.4px) calc(100% - 133.4px),64px calc(100% - 133.4px),calc(100% - 133.4px) 64px,64px,64px,calc(100% - 70.4px) 33px,33px,33px,33px calc(100% - 70.4px),calc(100% - 70.4px) calc(100% - 70.4px),33px calc(100% - 70.4px),calc(100% - 70.4px) 33px,33px,33px
+}
+
+body[data-wh-webp="false"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="6"]:after {
+    background-image: url("/d4/texture/hash/112/4019188336.png"),url("/d4/texture/hash/123/1112478331.png"),url("/d4/texture/hash/142/2359306638.png"),url("/d4/texture/hash/38/3139483174.png"),url("/d4/texture/hash/202/147002314.png"),url("/d4/texture/hash/153/530989721.png"),url("/d4/texture/hash/206/4129811150.png"),url("/d4/texture/hash/217/1254623705.png"),url("/d4/texture/hash/172/2755136684.png"),url("/d4/texture/hash/218/1505111514.png"),url("/d4/texture/hash/229/2191061733.png"),url("/d4/texture/hash/56/3592820536.png"),url("/d4/texture/hash/16/147656464.png"),url("/d4/texture/hash/52/1927892788.png"),url("/d4/texture/hash/195/584956099.png"),url("/d4/texture/hash/120/1305988728.png"),url("/d4/texture/hash/131/4189434499.png"),url("/d4/texture/hash/150/819645078.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="6"]:after {
+    background-image: url("/d4/texture/hash/112/4019188336.webp"),url("/d4/texture/hash/123/1112478331.webp"),url("/d4/texture/hash/142/2359306638.webp"),url("/d4/texture/hash/38/3139483174.webp"),url("/d4/texture/hash/202/147002314.webp"),url("/d4/texture/hash/153/530989721.webp"),url("/d4/texture/hash/206/4129811150.webp"),url("/d4/texture/hash/217/1254623705.webp"),url("/d4/texture/hash/172/2755136684.webp"),url("/d4/texture/hash/218/1505111514.webp"),url("/d4/texture/hash/229/2191061733.webp"),url("/d4/texture/hash/56/3592820536.webp"),url("/d4/texture/hash/16/147656464.webp"),url("/d4/texture/hash/52/1927892788.webp"),url("/d4/texture/hash/195/584956099.webp"),url("/d4/texture/hash/120/1305988728.webp"),url("/d4/texture/hash/131/4189434499.webp"),url("/d4/texture/hash/150/819645078.webp")
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="6"]:hover,.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="6"].focus-visible {
+    border-color: #dca779
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="6"] .d4-build-planner-equip-picker-item-name {
+    color: #dca779
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="7"]:after {
+    background-position: left 66.7px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 66.7px,66.7px,right 2.7px top 66.7px,left 66.7px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px,left 35.2px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 35.2px,35.2px,right 2.7px top 35.2px,left 35.2px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 133.4px) 64px,64px,64px,64px calc(100% - 133.4px),calc(100% - 133.4px) calc(100% - 133.4px),64px calc(100% - 133.4px),calc(100% - 133.4px) 64px,64px,64px,calc(100% - 70.4px) 33px,33px,33px,33px calc(100% - 70.4px),calc(100% - 70.4px) calc(100% - 70.4px),33px calc(100% - 70.4px),calc(100% - 70.4px) 33px,33px,33px
+}
+
+body[data-wh-webp="false"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="7"]:after {
+    background-image: url("/d4/texture/hash/165/481859749.png"),url("/d4/texture/hash/48/2199505712.png"),url("/d4/texture/hash/227/3871471843.png"),url("/d4/texture/hash/27/1846561563.png"),url("/d4/texture/hash/255/904641023.png"),url("/d4/texture/hash/46/814249518.png"),url("/d4/texture/hash/35/3830330659.png"),url("/d4/texture/hash/174/486897326.png"),url("/d4/texture/hash/33/3189969953.png"),url("/d4/texture/hash/218/1505111514.png"),url("/d4/texture/hash/229/2191061733.png"),url("/d4/texture/hash/56/3592820536.png"),url("/d4/texture/hash/16/147656464.png"),url("/d4/texture/hash/52/1927892788.png"),url("/d4/texture/hash/195/584956099.png"),url("/d4/texture/hash/120/1305988728.png"),url("/d4/texture/hash/131/4189434499.png"),url("/d4/texture/hash/150/819645078.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="7"]:after {
+    background-image: url("/d4/texture/hash/165/481859749.webp"),url("/d4/texture/hash/48/2199505712.webp"),url("/d4/texture/hash/227/3871471843.webp"),url("/d4/texture/hash/27/1846561563.webp"),url("/d4/texture/hash/255/904641023.webp"),url("/d4/texture/hash/46/814249518.webp"),url("/d4/texture/hash/35/3830330659.webp"),url("/d4/texture/hash/174/486897326.webp"),url("/d4/texture/hash/33/3189969953.webp"),url("/d4/texture/hash/218/1505111514.webp"),url("/d4/texture/hash/229/2191061733.webp"),url("/d4/texture/hash/56/3592820536.webp"),url("/d4/texture/hash/16/147656464.webp"),url("/d4/texture/hash/52/1927892788.webp"),url("/d4/texture/hash/195/584956099.webp"),url("/d4/texture/hash/120/1305988728.webp"),url("/d4/texture/hash/131/4189434499.webp"),url("/d4/texture/hash/150/819645078.webp")
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="7"]:hover,.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="7"].focus-visible {
+    border-color: lime
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="7"] .d4-build-planner-equip-picker-item-name {
+    color: lime
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="8"]:after {
+    background-position: left 66.7px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 66.7px,66.7px,right 2.7px top 66.7px,left 66.7px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px,left 35.2px bottom 2.7px,left 2.7px bottom 2.7px,right 2.7px bottom 2.7px,left 2.7px top 35.2px,35.2px,right 2.7px top 35.2px,left 35.2px top 2.7px,left 2.7px top 2.7px,right 2.7px top 2.7px;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 133.4px) 64px,64px,64px,64px calc(100% - 133.4px),calc(100% - 133.4px) calc(100% - 133.4px),64px calc(100% - 133.4px),calc(100% - 133.4px) 64px,64px,64px,calc(100% - 70.4px) 33px,33px,33px,33px calc(100% - 70.4px),calc(100% - 70.4px) calc(100% - 70.4px),33px calc(100% - 70.4px),calc(100% - 70.4px) 33px,33px,33px
+}
+
+body[data-wh-webp="false"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="8"]:after {
+    background-image: url("/d4/texture/hash/103/3612369767.png"),url("/d4/texture/hash/242/104670962.png"),url("/d4/texture/hash/229/3461401829.png"),url("/d4/texture/hash/93/3478289757.png"),url("/d4/texture/hash/193/4035151041.png"),url("/d4/texture/hash/176/3121672368.png"),url("/d4/texture/hash/37/756164389.png"),url("/d4/texture/hash/176/714512816.png"),url("/d4/texture/hash/99/2111346531.png"),url("/d4/texture/hash/218/1505111514.png"),url("/d4/texture/hash/229/2191061733.png"),url("/d4/texture/hash/56/3592820536.png"),url("/d4/texture/hash/16/147656464.png"),url("/d4/texture/hash/52/1927892788.png"),url("/d4/texture/hash/195/584956099.png"),url("/d4/texture/hash/120/1305988728.png"),url("/d4/texture/hash/131/4189434499.png"),url("/d4/texture/hash/150/819645078.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="8"]:after {
+    background-image: url("/d4/texture/hash/103/3612369767.webp"),url("/d4/texture/hash/242/104670962.webp"),url("/d4/texture/hash/229/3461401829.webp"),url("/d4/texture/hash/93/3478289757.webp"),url("/d4/texture/hash/193/4035151041.webp"),url("/d4/texture/hash/176/3121672368.webp"),url("/d4/texture/hash/37/756164389.webp"),url("/d4/texture/hash/176/714512816.webp"),url("/d4/texture/hash/99/2111346531.webp"),url("/d4/texture/hash/218/1505111514.webp"),url("/d4/texture/hash/229/2191061733.webp"),url("/d4/texture/hash/56/3592820536.webp"),url("/d4/texture/hash/16/147656464.webp"),url("/d4/texture/hash/52/1927892788.webp"),url("/d4/texture/hash/195/584956099.webp"),url("/d4/texture/hash/120/1305988728.webp"),url("/d4/texture/hash/131/4189434499.webp"),url("/d4/texture/hash/150/819645078.webp")
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="8"]:hover,.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="8"].focus-visible {
+    border-color: #cda1d8
+}
+
+.d4-build-planner-equip-picker-item:not([data-item-type="empty"])[data-quality="8"] .d4-build-planner-equip-picker-item-name {
+    color: #cda1d8
+}
+
+.d4-build-planner-equip-picker-item[data-match="false"] {
+    filter: blur(2px) brightness(0.33);
+    order: 1
+}
+
+.d4-build-planner-equip-picker-item[data-item-type="empty"] img {
+    inset: 0;
+    margin: auto;
+    position: absolute
+}
+
+.d4-build-planner-equip-picker-closer,.d4-build-planner-equip-picker-closer:hover {
+    background-color: transparent !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 48px;
+    width: 48px
+}
+
+.d4-build-planner-equip-picker-closer {
+    position: absolute;
+    right: 0;
+    top: 10px
+}
+
+body[data-wh-webp="false"] .d4-build-planner-equip-picker-closer {
+    background-image: url(/d4/texture/hash/141/3277043853.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-equip-picker-closer {
+    background-image: url(/d4/texture/hash/141/3277043853.webp)
+}
+
+body[data-wh-webp="false"] .d4-build-planner-equip-picker-closer:hover {
+    background-image: url(/d4/texture/hash/224/3877292256.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-equip-picker-closer:hover {
+    background-image: url(/d4/texture/hash/224/3877292256.webp)
+}
+
+.d4-build-planner-import-modal {
+    padding: 30px
+}
+
+.d4-build-planner-import-modal-title {
+    color: #bf9c5a
+}
+
+.d4-build-planner-import-modal-checks {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    font-size: 20px;
+    margin: 10px
+}
+
+.d4-build-planner-import-modal-checks label {
+    margin: 0.25em 0
+}
+
+.d4-build-planner-import-modal-buttons {
+    text-align: right
+}
+
+.d4-build-planner-form {
+    display: flex;
+    flex-direction: column;
+    font-family: mrs-eaves,"Times New Roman",Times,serif;
+    gap: 5px
+}
+
+.d4-build-planner-form input[type="text"],.d4-build-planner-form .imitation-select,.d4-build-planner-form select {
+    background: rgba(41,39,39,0.75);
+    border-radius: 0;
+    border: 1.5px solid #454240;
+    box-shadow: inset 0 0 15px 0 #000;
+    color: #98948d;
+    font-size: 21px
+}
+
+.d4-build-planner-form input[type="text"]:hover,.d4-build-planner-form input[type="text"].focus-visible,.d4-build-planner-form .imitation-select:hover,.d4-build-planner-form .imitation-select.focus-visible,.d4-build-planner-form select:hover,.d4-build-planner-form select.focus-visible {
+    border-color: #5a5753
+}
+
+.d4-build-planner-form input[type="text"],.d4-build-planner-form .imitation-select {
+    height: 50px;
+    padding-left: 15px
+}
+
+.d4-build-planner-form input[type="text"][data-field-filled="true"],.d4-build-planner-form .imitation-select[data-field-filled="true"] {
+    color: #f2ebde
+}
+
+.d4-build-planner-form label {
+    color: #bf9c5a;
+    font-size: 18px;
+    margin-top: 5px
+}
+
+.d4-build-planner-form .imitation-select {
+    align-items: center;
+    display: flex
+}
+
+.d4-build-planner-form .imitation-select:after {
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    content: "";
+    height: 50px;
+    right: 0;
+    top: 0;
+    width: 50px
+}
+
+body[data-wh-webp="false"] .d4-build-planner-form .imitation-select:after {
+    background-image: url(/images/d4/tools/shared/button-dropdown.png)
+}
+
+body[data-wh-webp="true"] .d4-build-planner-form .imitation-select:after {
+    background-image: url(/images/d4/tools/shared/button-dropdown.webp)
+}
+
+.d4-build-planner-form select[multiple] option {
+    color: #98948d;
+    cursor: pointer;
+    padding-left: 15px
+}
+
+.d4-build-planner-form select[multiple] option:first-of-type {
+    border-radius: 0
+}
+
+.d4-build-planner-form select[multiple] option:checked {
+    background-color: #805b30;
+    color: #f2ebde
+}
+
+.d4-build-planner-form-guide,.d4-build-planner-form-owner,.d4-build-planner-form-draft {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap
+}
+
+body[data-theme-type="standard"] .d4-build-planner-form-guide input[type="checkbox"],body[data-theme-type="standard"] .d4-build-planner-form-owner input[type="checkbox"],body[data-theme-type="standard"] .d4-build-planner-form-draft input[type="checkbox"] {
+    position: relative;
+    top: -0.6em !important
+}
+
+.d4-build-planner-form-guide input[type="text"],.d4-build-planner-form-owner input[type="text"],.d4-build-planner-form-draft input[type="text"] {
+    height: auto;
+    font-size: 18px;
+    margin-left: 1em;
+    width: 8em
+}
+
+.d4-build-planner-form-guide[data-disabled],.d4-build-planner-form-owner[data-disabled],.d4-build-planner-form-draft[data-disabled] {
+    opacity: 50%
+}
+
+.d4-build-planner-form-owner input[type="text"] {
+    width: 12em
+}
+
+.d4-build-planner-form-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px
+}
+
+.d4-build-planner-form-button {
+    align-items: center;
+    background-color: unset;
+    box-sizing: border-box;
+    display: flex;
+    font-weight: bold;
+    height: 50px;
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-position: left top,right top,center top;
+    background-repeat: no-repeat;
+    background-size: 24.3902439024px 50px,24.3902439024px 50px,calc(100% - 24.3902439024px) 50px;
+    color: #f2ebde;
+    font-size: 17px;
+    padding: 20px;
+    transition: background 75ms;
+    flex: 0 0 auto;
+    font-family: franklin-gothic-urw,Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    width: 150px
+}
+
+.d4-build-planner-form-button[data-active] {
+    cursor: default
+}
+
+body[data-wh-webp="false"] .d4-build-planner-form-button {
+    background-image: url("/images/d4/tools/shared/button-left.png"),url("/images/d4/tools/shared/button-right.png"),url("/images/d4/tools/shared/button-middle.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-form-button {
+    background-image: url("/images/d4/tools/shared/button-left.webp"),url("/images/d4/tools/shared/button-right.webp"),url("/images/d4/tools/shared/button-middle.webp")
+}
+
+.d4-build-planner-form-button:hover,.d4-build-planner-form-button.focus-visible {
+    background-position: left top,right top,center top;
+    background-repeat: no-repeat;
+    background-size: 24.3902439024px 50px,24.3902439024px 50px,calc(100% - 24.3902439024px) 50px;
+    color: #f2ebde
+}
+
+body[data-wh-webp="false"] .d4-build-planner-form-button:hover,body[data-wh-webp="false"] .d4-build-planner-form-button.focus-visible {
+    background-image: url("/images/d4/tools/shared/button-left-hover.png"),url("/images/d4/tools/shared/button-right-hover.png"),url("/images/d4/tools/shared/button-middle-hover.png")
+}
+
+body[data-wh-webp="true"] .d4-build-planner-form-button:hover,body[data-wh-webp="true"] .d4-build-planner-form-button.focus-visible {
+    background-image: url("/images/d4/tools/shared/button-left-hover.webp"),url("/images/d4/tools/shared/button-right-hover.webp"),url("/images/d4/tools/shared/button-middle-hover.webp")
+}
+
+.d4-build-planner-form-button:hover {
+    background-color: transparent
+}
+
+.d4-build-planner-sort {
+    display: inline-flex;
+    gap: 5px;
+    margin-right: 5px
+}
+
+.d4-build-planner-sort-control {
+    align-items: center;
+    display: inline-flex;
+    height: 35px;
+    justify-content: center;
+    width: 35px
+}
+
+.d4-build-planner-sort-control[data-direction="up"] {
+    background-color: #292727;
+    border-radius: 4px;
+    border: none;
+    color: #f2ebde;
+    font-weight: 600;
+    transition: 75ms
+}
+
+.d4-build-planner-sort-control[data-direction="up"]:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-build-planner-sort-control[data-direction="up"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    margin-right: 10px;
+    color: #f2ebde !important;
+    transition: 75ms
+}
+
+.d4-build-planner-sort-control[data-direction="up"]:hover,.d4-build-planner-sort-control[data-direction="up"].focus-visible {
+    box-shadow: none;
+    background-color: #454240 !important;
+    border-color: #454240 !important
+}
+
+.d4-build-planner-sort-control[data-direction="down"] {
+    background-color: #292727;
+    border-radius: 4px;
+    border: none;
+    color: #f2ebde;
+    font-weight: 600;
+    transition: 75ms
+}
+
+.d4-build-planner-sort-control[data-direction="down"]:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-build-planner-sort-control[data-direction="down"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    margin-right: 10px;
+    color: #f2ebde !important;
+    transition: 75ms
+}
+
+.d4-build-planner-sort-control[data-direction="down"]:hover,.d4-build-planner-sort-control[data-direction="down"].focus-visible {
+    box-shadow: none;
+    background-color: #454240 !important;
+    border-color: #454240 !important
+}
+
+.d4-build-planner-sort-control[data-direction]:before {
+    font-size: 17px
+}
+
+.d4-build-planner-cta-container {
+    grid-column: 1 / -1;
+    z-index: 1
+}
+
+.lightbox-outer[data-frame="saveBuild"] .lightbox-frame,.lightbox-outer[data-frame="importBuild"] .lightbox-frame {
+    background: transparent;
+    box-shadow: unset
+}
+
+.lightbox-outer[data-frame="buildToolItemPicker"] .lightbox-inner .lightbox-frame {
+    overflow-y: auto
+}
+
+.lightbox-outer[data-frame="buildToolItemPicker"] .lightbox-inner:after,.lightbox-outer[data-frame="buildToolItemPicker"] .lightbox-inner:before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: "";
+    height: 20px;
+    left: -25px;
+    position: absolute;
+    right: -25px;
+    z-index: 255
+}
+
+body[data-wh-webp="false"] .lightbox-outer[data-frame="buildToolItemPicker"] .lightbox-inner:after,body[data-wh-webp="false"] .lightbox-outer[data-frame="buildToolItemPicker"] .lightbox-inner:before {
+    background-image: url(/images/d4/tools/build-tool/modal-border.png)
+}
+
+body[data-wh-webp="true"] .lightbox-outer[data-frame="buildToolItemPicker"] .lightbox-inner:after,body[data-wh-webp="true"] .lightbox-outer[data-frame="buildToolItemPicker"] .lightbox-inner:before {
+    background-image: url(/images/d4/tools/build-tool/modal-border.webp)
+}
+
+@media only screen and (max-width: 767px) {
+    .lightbox-outer[data-frame="buildToolItemPicker"] .lightbox-inner:after,.lightbox-outer[data-frame="buildToolItemPicker"] .lightbox-inner:before {
+        display:none
+    }
+}
+
+.lightbox-outer[data-frame="buildToolItemPicker"] .lightbox-inner:after {
+    top: -10px
+}
+
+.lightbox-outer[data-frame="buildToolItemPicker"] .lightbox-inner:before {
+    bottom: -10px;
+    transform: scale(-1)
+}

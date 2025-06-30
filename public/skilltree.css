@@ -1,0 +1,3711 @@
+#d4-skill-planner-parent-container {
+    background-repeat: repeat-y;
+    background-size: 100%;
+    margin: 10px -10px 0;
+    padding-top: 10px;
+    position: relative
+}
+
+body[data-wh-webp="false"] #d4-skill-planner-parent-container {
+    background-image: url(/images/di/build-tool/page-background-grunge-texture.png)
+}
+
+body[data-wh-webp="true"] #d4-skill-planner-parent-container {
+    background-image: url(/images/di/build-tool/page-background-grunge-texture.webp)
+}
+
+#d4-skill-planner-parent-container .d4-skill-planner-parent-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px
+}
+
+#d4-skill-planner-parent-container .d4-skill-planner-parent-header .heading-size-1 {
+    color: #bf9c5a;
+    margin-bottom: 20px
+}
+
+#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-parent-header,#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-parent-header {
+    margin: 0 10px
+}
+
+#d4-skill-planner-parent-container[data-layout-mode="small"] {
+    margin-top: -10px;
+    padding-top: 0
+}
+
+#d4-skill-planner-parent-container[data-layout-mode="small"] .heading-size-1 {
+    font-size: 1.2em;
+    margin: 0.5em 0
+}
+
+#d4-skill-planner-parent-container[data-layout-mode="small"]>.d4-skill-planner-border[data-style="fancy"] {
+    display: none
+}
+
+#d4-build-planner-link.d4-image-card-container .d4-image-card {
+    height: 170px
+}
+
+#d4-build-planner-link.d4-image-card-container .d4-image-card[data-layout="small"] {
+    --d4BuildCard-gridTemplateRows: 80px repeat(2, minmax(min-content, max-content)) 1fr
+}
+
+.d4-skill-planner {
+    color: #98948d;
+    font-size: 20px
+}
+
+:root {
+    --d4SkillPlanner-embedPanelMarginTop: 0
+}
+
+.d4-skill-planner-embed-header {
+    background: #292727;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 110px min-content 1fr min-content;
+    height: 70px;
+    margin-bottom: 5px;
+    padding: 0 15px
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-embed-header {
+    background: #1e1c1c;
+    grid-gap: 0;
+    grid-template-columns: 100px min-content 1fr min-content;
+    grid-template-rows: 60px 1fr;
+    height: unset;
+    min-height: 70px;
+    padding: 0
+}
+
+.d4-skill-planner-embed-portrait {
+    aspect-ratio: 1;
+    background-size: contain;
+    border-radius: 50%;
+    border: 5px solid #454240;
+    box-shadow: inset 0 0 0 5px #000,0 0 5px 0 #000;
+    box-sizing: border-box;
+    grid-column: 1 / span 1;
+    inset: -25% 0;
+    position: absolute;
+    width: 100px;
+    z-index: 255
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-embed-portrait {
+    background-image: url(/d4/texture/hash/6/191663366.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-embed-portrait {
+    background-image: url(/d4/texture/hash/6/191663366.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-embed-header[data-active-class="sorcerer"] .d4-skill-planner-embed-portrait {
+    background-image: url(/d4/texture/hash//131/2167708547.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-embed-header[data-active-class="sorcerer"] .d4-skill-planner-embed-portrait {
+    background-image: url(/d4/texture/hash//131/2167708547.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-embed-header[data-active-class="druid"] .d4-skill-planner-embed-portrait {
+    background-image: url(/d4/texture/hash//199/2456693447.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-embed-header[data-active-class="druid"] .d4-skill-planner-embed-portrait {
+    background-image: url(/d4/texture/hash//199/2456693447.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-embed-header[data-active-class="barbarian"] .d4-skill-planner-embed-portrait {
+    background-image: url(/d4/texture/hash//50/666424370.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-embed-header[data-active-class="barbarian"] .d4-skill-planner-embed-portrait {
+    background-image: url(/d4/texture/hash//50/666424370.webp)
+}
+
+.d4-skill-planner-embed-header[data-active-class="rogue"] .d4-skill-planner-embed-portrait {
+    background-image: url("/images/d4/tools/skill-planner/rogue-portrait.jpg")
+}
+
+.d4-skill-planner-embed-header[data-active-class="necromancer"] .d4-skill-planner-embed-portrait {
+    background-image: url("/images/d4/tools/skill-planner/necromancer-portrait-alt.jpg")
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-embed-portrait {
+    inset: -45% 0;
+    width: 90px
+}
+
+.d4-skill-planner-embed-portrait-container {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-template-columns: 110px max-content;
+    position: relative
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-embed-portrait-container {
+    background: #292727;
+    border-radius: 2px 0 0 2px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    grid-template-columns: 100px max-content
+}
+
+.d4-skill-planner-embed-brand {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / span 1;
+    justify-content: center
+}
+
+.d4-skill-planner-embed-brand-class {
+    color: #f2ebde;
+    font-family: mrs-eaves-roman-lining,"Times New Roman",Times,serif;
+    font-size: 28px;
+    line-height: 1em
+}
+
+.d4-skill-planner-embed-brand-logo {
+    aspect-ratio: 1;
+    background-color: #121110;
+    background-image: url("/images/logos/wh-logo-thumbnail.png");
+    background-size: contain;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    height: 20px;
+    margin-right: 5px
+}
+
+.d4-skill-planner-embed-brand-name {
+    font-size: 15px;
+    font-weight: 900
+}
+
+.d4-skill-planner-embed-text {
+    color: #98948d;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 5px
+}
+
+.d4-skill-planner-embed-tabs {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-embed-tabs {
+    background: #1e1c1c;
+    border-radius: 0 0 2px;
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    justify-content: flex-start;
+    padding: 5px 0 0 0
+}
+
+.d4-skill-planner-embed-tab {
+    background: none;
+    border-radius: 4px;
+    border: 2px solid #454240;
+    color: #bf9c5a;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 75ms;
+    text-transform: uppercase;
+    text-transform: none
+}
+
+.d4-skill-planner-embed-tab:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-skill-planner-embed-tab:before {
+    color: #bf9c5a !important;
+    transition: 75ms
+}
+
+.d4-skill-planner-embed-tab:hover,.d4-skill-planner-embed-tab.focus-visible {
+    box-shadow: none;
+    background-color: #bf9c5a;
+    border-color: #bf9c5a;
+    color: #f2ebde
+}
+
+.d4-skill-planner-embed-tab:hover:before,.d4-skill-planner-embed-tab.focus-visible:before {
+    color: #f2ebde !important
+}
+
+.d4-skill-planner-embed-tab:hover,.d4-skill-planner-embed-tab.focus-visible {
+    background-color: #454240;
+    border-radius: 4px;
+    border: none;
+    color: #f2ebde;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 75ms;
+    border: 2px solid #454240;
+    text-transform: none
+}
+
+.d4-skill-planner-embed-tab:hover:empty:before,.d4-skill-planner-embed-tab.focus-visible:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-skill-planner-embed-tab:hover:before,.d4-skill-planner-embed-tab.focus-visible:before {
+    color: #f2ebde !important;
+    transition: 75ms
+}
+
+.d4-skill-planner-embed-tab:hover:hover,.d4-skill-planner-embed-tab:hover.focus-visible,.d4-skill-planner-embed-tab.focus-visible:hover,.d4-skill-planner-embed-tab.focus-visible.focus-visible {
+    box-shadow: none;
+    background-color: #5a5753 !important;
+    border-color: #5a5753 !important
+}
+
+.d4-skill-planner-embed-tab[data-active="true"] {
+    background-color: #805b30;
+    border-radius: 4px;
+    border: none;
+    color: #f2ebde;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 75ms;
+    border: 2px solid #805b30;
+    text-transform: none
+}
+
+.d4-skill-planner-embed-tab[data-active="true"]:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-skill-planner-embed-tab[data-active="true"]:before {
+    color: #f2ebde !important;
+    transition: 75ms
+}
+
+.d4-skill-planner-embed-tab[data-active="true"]:hover,.d4-skill-planner-embed-tab[data-active="true"].focus-visible {
+    box-shadow: none;
+    background-color: #876033 !important;
+    border-color: #876033 !important
+}
+
+.d4-skill-planner-embed-buttons {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-embed-buttons {
+    background: #292727;
+    border-radius: 0 2px 2px 0;
+    grid-column: 3 / span 2;
+    padding-right: 5px
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-embed-buttons .d4-skill-planner-tree-button[data-id="view"] {
+    aspect-ratio: 1
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-embed-buttons .d4-skill-planner-tree-button[data-id="view"]:before {
+    margin-right: 0
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-embed-buttons .d4-skill-planner-tree-button-text {
+    display: none
+}
+
+.d4-skill-planner-header,.d4-skill-planner-footer {
+    align-items: center;
+    background-color: #121110;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(min-content, 1fr));
+    grid-template-rows: repeat(1, minmax(min-content, 1fr));
+    height: 5.35em;
+    justify-content: space-evenly;
+    padding: .5em .5em 0.4em .5em;
+    position: relative;
+    z-index: 51
+}
+
+.d4-skill-planner-header[data-type="sub"],.d4-skill-planner-footer[data-type="sub"] {
+    height: 4em
+}
+
+.d4-skill-planner-header:after,.d4-skill-planner-header:before,.d4-skill-planner-footer:after,.d4-skill-planner-footer:before {
+    background-position: left 120%,33% 120%,66% 120%;
+    background-repeat: no-repeat;
+    background-size: 35% 105%,35% 105%,35% 105%;
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-header:after,body[data-wh-webp="false"] .d4-skill-planner-header:before,body[data-wh-webp="false"] .d4-skill-planner-footer:after,body[data-wh-webp="false"] .d4-skill-planner-footer:before {
+    background-image: url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png")
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-header:after,body[data-wh-webp="true"] .d4-skill-planner-header:before,body[data-wh-webp="true"] .d4-skill-planner-footer:after,body[data-wh-webp="true"] .d4-skill-planner-footer:before {
+    background-image: url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp")
+}
+
+@media only screen and (min-width: 2555px) {
+    .d4-skill-planner-header:after,.d4-skill-planner-header:before,.d4-skill-planner-footer:after,.d4-skill-planner-footer:before {
+        background-position:left center,25% center,50% center,75% center;
+        background-repeat: no-repeat;
+        background-size: 28% 100%,28% 100%,28% 100%,28% 100%
+    }
+
+    body[data-wh-webp="false"] .d4-skill-planner-header:after,body[data-wh-webp="false"] .d4-skill-planner-header:before,body[data-wh-webp="false"] .d4-skill-planner-footer:after,body[data-wh-webp="false"] .d4-skill-planner-footer:before {
+        background-image: url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png")
+    }
+
+    body[data-wh-webp="true"] .d4-skill-planner-header:after,body[data-wh-webp="true"] .d4-skill-planner-header:before,body[data-wh-webp="true"] .d4-skill-planner-footer:after,body[data-wh-webp="true"] .d4-skill-planner-footer:before {
+        background-image: url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp"),url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp")
+    }
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-header:after,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-header:after,.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-header:before,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-header:before,.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-footer:after,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-footer:after,.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-footer:before,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-footer:before {
+    background-position: left 100%;
+    background-repeat: no-repeat;
+    background-size: 65% 105%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-header:after,body[data-wh-webp="false"] #d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-header:after,body[data-wh-webp="false"] .d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-header:before,body[data-wh-webp="false"] #d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-header:before,body[data-wh-webp="false"] .d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-footer:after,body[data-wh-webp="false"] #d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-footer:after,body[data-wh-webp="false"] .d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-footer:before,body[data-wh-webp="false"] #d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-footer:before {
+    background-image: url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.png")
+}
+
+body[data-wh-webp="true"] .d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-header:after,body[data-wh-webp="true"] #d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-header:after,body[data-wh-webp="true"] .d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-header:before,body[data-wh-webp="true"] #d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-header:before,body[data-wh-webp="true"] .d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-footer:after,body[data-wh-webp="true"] #d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-footer:after,body[data-wh-webp="true"] .d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-footer:before,body[data-wh-webp="true"] #d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-footer:before {
+    background-image: url("/images/d4/tools/skill-planner/2dui-listbanner-10-enlarged.webp")
+}
+
+.d4-skill-planner-header:after,.d4-skill-planner-footer:after {
+    transform: scaleX(-1)
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-header:not([data-type="sub"]),#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-header:not([data-type="sub"]),.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-footer:not([data-type="sub"]),#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-footer:not([data-type="sub"]) {
+    height: max-content
+}
+
+.d4-skill-planner-header {
+    box-shadow: 0 0 20px 20px rgba(0,0,0,0.2)
+}
+
+.d4-skill-planner-header[data-type="sub"] {
+    display: none;
+    margin-top: -0.7em;
+    min-height: 3.5em;
+    z-index: 50
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-header[data-type="sub"],#d4-skill-planner-parent-container[data-layout-mode] .d4-skill-planner-header[data-type="sub"] {
+    display: grid
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-header:not([data-type="sub"]),#d4-skill-planner-parent-container[data-layout-mode] .d4-skill-planner-header:not([data-type="sub"]) {
+    box-shadow: 0 1px 6px 2px rgba(0,0,0,0.6)
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-header:not([data-type="sub"]) .d4-skill-planner-border[data-position="bottom"],#d4-skill-planner-parent-container[data-layout-mode] .d4-skill-planner-header:not([data-type="sub"]) .d4-skill-planner-border[data-position="bottom"] {
+    display: none
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-header:not([data-type="sub"]) .d4-skill-planner-points-display,#d4-skill-planner-parent-container[data-layout-mode] .d4-skill-planner-header:not([data-type="sub"]) .d4-skill-planner-points-display {
+    display: none
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-header:not([data-type="sub"]) .d4-skill-planner-class-selector,#d4-skill-planner-parent-container[data-layout-mode] .d4-skill-planner-header:not([data-type="sub"]) .d4-skill-planner-class-selector {
+    grid-column: 1 / span 8;
+    justify-content: start
+}
+
+.d4-skill-planner-points-display {
+    display: flex;
+    grid-column: span 4;
+    z-index: 20
+}
+
+.d4-skill-planner-points-display[data-is-sticky="true"] {
+    height: 5em;
+    margin-top: -5em;
+    pointer-events: none;
+    position: sticky;
+    top: 132px;
+    z-index: 49
+}
+
+.d4-skill-planner-points-display[data-is-sticky="true"] .d4-skill-planner-points-current {
+    margin: 5px 0 0 5px;
+    padding: 10px
+}
+
+.d4-skill-planner-points-display[data-is-sticky="true"] .d4-skill-planner-points-total {
+    padding-right: 5px
+}
+
+.d4-skill-planner-points-display[data-is-sticky="true"] .d4-skill-planner-points-label {
+    margin-right: 10px
+}
+
+body[data-zul-bar="true"] .d4-skill-planner-points-display {
+    padding: 5px 0
+}
+
+body[data-zul-bar="true"] .d4-skill-planner-points-display[data-is-sticky="true"] {
+    top: 40px;
+    transform: scale(0.75);
+    transform-origin: 0 center
+}
+
+.d4-skill-planner-points-modifier {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.d4-skill-planner-points-current {
+    align-items: center;
+    display: grid;
+    grid-template-columns: min-content min-content minmax(min-content, 1fr);
+    grid-template-rows: repeat(2, 1fr)
+}
+
+.d4-skill-planner-points-current:before {
+    aspect-ratio: 1;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    height: 3em
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-points-current:before {
+    background-image: url(/d4/texture/hash/39/1657811495.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-points-current:before {
+    background-image: url(/d4/texture/hash/39/1657811495.webp)
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-points-current:before,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-points-current:before,.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-points-current:before,#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-points-current:before {
+    height: 2em
+}
+
+.d4-skill-planner-points-total {
+    align-self: center;
+    color: #bf9c5a;
+    font-family: mrs-eaves-roman-lining,"Times New Roman",Times,serif;
+    font-size: 1.9em;
+    font-weight: 700;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    padding-right: 20px;
+    text-align: center
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-points-total,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-points-total {
+    font-size: 1.5em;
+    padding-right: 5px
+}
+
+.d4-skill-planner-points-available,.d4-skill-planner-points-spent {
+    grid-column: 3 / span 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.d4-skill-planner-points-available {
+    align-self: end
+}
+
+.d4-skill-planner-points-spent {
+    align-self: start
+}
+
+.d4-skill-planner-points-label {
+    font-size: 0.9em;
+    font-weight: 600
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-points-label,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-points-label {
+    font-size: 0.75em
+}
+
+.d4-skill-planner-points-value {
+    color: #bf9c5a
+}
+
+.d4-skill-planner-class-selector {
+    display: flex;
+    gap: 5px;
+    grid-column: 5 / span 4;
+    justify-content: center;
+    z-index: 20
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-class-selector,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-class-selector {
+    gap: 0;
+    padding: 5px 0
+}
+
+.d4-skill-planner-class-button {
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    filter: grayscale(1) opacity(0.6);
+    max-width: 3em;
+    transition: filter 75ms;
+    width: 100%
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-class-button,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-class-button {
+    max-width: 2.2em
+}
+
+.d4-skill-planner-class-button:hover,.d4-skill-planner-class-button:focus-visible {
+    filter: grayscale(0)
+}
+
+.d4-skill-planner-class-button[data-active] {
+    filter: grayscale(0) brightness(1.35)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-button[data-player-class="sorcerer"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-sorcerer-icon.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-button[data-player-class="sorcerer"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-sorcerer-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] .d4-skill-planner-class-button[data-player-class="sorcerer"] {
+        background-image:url(/images/nav/feature-cutouts/d4-class-sorcerer-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] .d4-skill-planner-class-button[data-player-class="sorcerer"] {
+        background-image: url(/images/nav/feature-cutouts/d4-class-sorcerer-icon@2x.webp)
+    }
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-button[data-player-class="druid"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-druid-icon.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-button[data-player-class="druid"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-druid-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] .d4-skill-planner-class-button[data-player-class="druid"] {
+        background-image:url(/images/nav/feature-cutouts/d4-class-druid-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] .d4-skill-planner-class-button[data-player-class="druid"] {
+        background-image: url(/images/nav/feature-cutouts/d4-class-druid-icon@2x.webp)
+    }
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-button[data-player-class="barbarian"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-barbarian-icon.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-button[data-player-class="barbarian"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-barbarian-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] .d4-skill-planner-class-button[data-player-class="barbarian"] {
+        background-image:url(/images/nav/feature-cutouts/d4-class-barbarian-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] .d4-skill-planner-class-button[data-player-class="barbarian"] {
+        background-image: url(/images/nav/feature-cutouts/d4-class-barbarian-icon@2x.webp)
+    }
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-button[data-player-class="rogue"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-rogue-icon.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-button[data-player-class="rogue"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-rogue-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] .d4-skill-planner-class-button[data-player-class="rogue"] {
+        background-image:url(/images/nav/feature-cutouts/d4-class-rogue-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] .d4-skill-planner-class-button[data-player-class="rogue"] {
+        background-image: url(/images/nav/feature-cutouts/d4-class-rogue-icon@2x.webp)
+    }
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-button[data-player-class="necromancer"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-necromancer-icon.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-button[data-player-class="necromancer"] {
+    background-image: url(/images/nav/feature-cutouts/d4-class-necromancer-icon.webp)
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    body[data-wh-webp="false"] .d4-skill-planner-class-button[data-player-class="necromancer"] {
+        background-image:url(/images/nav/feature-cutouts/d4-class-necromancer-icon@2x.png)
+    }
+
+    body[data-wh-webp="true"] .d4-skill-planner-class-button[data-player-class="necromancer"] {
+        background-image: url(/images/nav/feature-cutouts/d4-class-necromancer-icon@2x.webp)
+    }
+}
+
+.d4-skill-planner-utilities {
+    display: flex;
+    grid-column: span 4;
+    justify-self: end;
+    z-index: 20
+}
+
+.d4-skill-planner-tooltip-checkbox {
+    font-size: 0.8em
+}
+
+.d4-skill-planner-border {
+    background-position: center calc(-10px / 1.89);
+    background-repeat: no-repeat;
+    background-size: 191.534391534px 152.91005291px;
+    background-repeat: repeat-x;
+    height: 28.0423280423px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    z-index: 20
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-border {
+    background-image: url("/d4/texture/hash/234/3622899946.png")
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-border {
+    background-image: url("/d4/texture/hash/234/3622899946.webp")
+}
+
+.d4-skill-planner-border[data-style="fancy"] {
+    background-position: center top,center calc(-10px / 1.89);
+    background-repeat: no-repeat;
+    background-size: 173.544973545px 28.0423280423px,191.534391534px 152.91005291px;
+    background-repeat: no-repeat, repeat-x
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-border[data-style="fancy"] {
+    background-image: url("/d4/texture/hash/167/3300941223.png"),url("/d4/texture/hash/234/3622899946.png")
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-border[data-style="fancy"] {
+    background-image: url("/d4/texture/hash/167/3300941223.webp"),url("/d4/texture/hash/234/3622899946.webp")
+}
+
+.d4-skill-planner-border[data-position="bottom"] {
+    bottom: -10px;
+    top: unset
+}
+
+.d4-skill-planner-tree-container-screen {
+    background-color: #000;
+    content: "";
+    display: none;
+    inset: 0;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 49
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-tree-container,.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-tree-container,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-tree-container,#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-tree-container {
+    overflow-x: auto
+}
+
+.d4-skill-planner-tree-container[data-inactive] {
+    z-index: 0
+}
+
+.d4-skill-planner-tree-container[data-inactive] .d4-skill-planner-tree-container-screen {
+    display: block
+}
+
+.d4-skill-planner-tree-container[data-zoomed="in"] {
+    overflow: auto
+}
+
+.d4-skill-planner-tree-container[data-zoomed="out"] {
+    overflow: auto
+}
+
+.d4-skill-planner-tree-container[data-zoomed="out"] .d4-skill-planner-tree-space {
+    border: 2px solid #292727;
+    border-radius: 2px;
+    box-shadow: 0 0 80px #000;
+    transform-origin: center center
+}
+
+.d4-skill-planner-tree-text {
+    color: #f2ebde;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 2em;
+    text-align: center
+}
+
+.d4-skill-planner-tree-space {
+    background-position: 50% 43%;
+    background-repeat: no-repeat;
+    background-size: 160%;
+    position: relative;
+    transform-origin: 0 0
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-space {
+    background-image: url(/images/d4/tools/skill-planner/2dui-skilltreebackgroundmiddle-cropped.jpg)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-space {
+    background-image: url(./2dui-skilltreebackgroundmiddle-cropped.webp)
+}
+
+.d4-skill-planner-tree-node {
+    display: block;
+    position: absolute;
+    z-index: 20
+}
+
+.d4-skill-planner-tree-node a {
+    display: block;
+    inset: 0;
+    position: absolute
+}
+
+.d4-skill-planner-tree-node a[href="javascript:"] {
+    cursor: default
+}
+
+.d4-skill-planner-tree-node:after {
+    aspect-ratio: 1;
+    content: "";
+    position: absolute;
+    z-index: -1
+}
+
+.d4-skill-planner-tree-node-icon {
+    background-position: center;
+    background-size: contain;
+    display: block;
+    inset: 0;
+    position: absolute
+}
+
+.d4-skill-planner-tree-node[data-crest-style="unavailable"] a {
+    filter: brightness(0.5) grayscale(0.25)
+}
+
+.d4-skill-planner-tree-node[data-type="active"]:after {
+    background-size: contain;
+    height: 142%;
+    left: -21%;
+    top: -21%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="active"]:after {
+    background-image: url(/d4/texture/hash/200/3823351240.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="active"]:after {
+    background-image: url(/d4/texture/hash/200/3823351240.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="active"][data-crest-style="available"]:after {
+    background-image: url(/d4/texture/hash/229/1943708133.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="active"][data-crest-style="available"]:after {
+    background-image: url(/d4/texture/hash/229/1943708133.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="active"][data-crest-style="purchased"]:after {
+    background-image: url(/d4/texture/hash/147/1171883667.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="active"][data-crest-style="purchased"]:after {
+    background-image: url(/d4/texture/hash/147/1171883667.webp)
+}
+
+.d4-skill-planner-tree-node[data-type="active"] a:after {
+    border-radius: 35%;
+    display: block;
+    content: "";
+    inset: -7%;
+    position: absolute
+}
+
+.d4-skill-planner-tree-node[data-type="active"] .d4-skill-planner-tree-node-icon {
+    inset: 10%
+}
+
+.d4-skill-planner-tree-node[data-type="mod"] .d4-skill-planner-tree-node-points {
+    display: none
+}
+
+.d4-skill-planner-tree-node[data-type="mod"]:after {
+    background-size: contain;
+    height: 90%;
+    left: 5%;
+    top: 5%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="mod"]:after {
+    background-image: url(/d4/texture/hash/144/3849685904.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="mod"]:after {
+    background-image: url(./3849685904.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="mod"][data-crest-style="available"]:after {
+    background-image: url(/d4/texture/hash/173/2850842029.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="mod"][data-crest-style="available"]:after {
+    background-image: url(/d4/texture/hash/173/2850842029.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="mod"][data-crest-style="purchased"]:after {
+    background-image: url(/d4/texture/hash/91/328710235.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="mod"][data-crest-style="purchased"]:after {
+    background-image: url(/d4/texture/hash/91/328710235.webp)
+}
+
+.d4-skill-planner-tree-node[data-type="mod"] a {
+    clip-path: polygon(50% 12%, 88% 50%, 50% 88%, 12% 50%)
+}
+
+.d4-skill-planner-tree-node[data-type="mod"] .d4-skill-planner-tree-node-icon {
+    clip-path: polygon(50% 7%, 93% 50%, 50% 93%, 7% 50%);
+    inset: 25%
+}
+
+.d4-skill-planner-tree-node[data-type="passive"]:after {
+    background-size: contain;
+    height: 100%;
+    left: 1%;
+    top: -1%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="passive"]:after {
+    background-image: url(/d4/texture/hash/81/1859833681.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="passive"]:after {
+    background-image: url(/d4/texture/hash/81/1859833681.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="passive"][data-crest-style="available"]:after {
+    background-image: url(/d4/texture/hash/46/4059809070.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="passive"][data-crest-style="available"]:after {
+    background-image: url(/d4/texture/hash/46/4059809070.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="passive"][data-crest-style="purchased"]:after {
+    background-image: url(/d4/texture/hash/156/3717677980.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="passive"][data-crest-style="purchased"]:after {
+    background-image: url(/d4/texture/hash/156/3717677980.webp)
+}
+
+.d4-skill-planner-tree-node[data-type="passive"] a {
+    inset: 18%
+}
+
+.d4-skill-planner-tree-node[data-type="passive"] .d4-skill-planner-tree-node-icon {
+    inset: 3%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="passive"][data-key-passive="true"]:after {
+    background-image: url(/d4/texture/hash/194/2373131714.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="passive"][data-key-passive="true"]:after {
+    background-image: url(/d4/texture/hash/194/2373131714.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="passive"][data-key-passive="true"][data-crest-style="available"]:after {
+    background-image: url(/d4/texture/hash/95/3902522207.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="passive"][data-key-passive="true"][data-crest-style="available"]:after {
+    background-image: url(/d4/texture/hash/95/3902522207.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="passive"][data-key-passive="true"][data-crest-style="purchased"]:after {
+    background-image: url(/d4/texture/hash/141/2467299725.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="passive"][data-key-passive="true"][data-crest-style="purchased"]:after {
+    background-image: url(/d4/texture/hash/141/2467299725.webp)
+}
+
+.d4-skill-planner-tree-node-points {
+    background: linear-gradient(to right, transparent, rgba(0,0,0,0.5));
+    color: #bbb;
+    font-size: 80%;
+    left: 0;
+    line-height: 1;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: calc(100% - 10px)
+}
+
+.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-tree-node-points,#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-tree-node-points {
+    font-size: 65%
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-tree-node-points,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-tree-node-points {
+    font-size: 40%
+}
+
+.d4-skill-planner-tree-node-points-spent {
+    color: #bf9c5a
+}
+
+.d4-skill-planner-tree-node:not([data-showing-points]) .d4-skill-planner-tree-node-points {
+    display: none
+}
+
+.d4-skill-planner-tree-node-required {
+    text-shadow: 1px 1px 0 #000,0 1px 0 #000,-1px 1px 0 #000,-1px 0 0 #000,-2px 0 #000,-1px 0 #000,0px 0 #000,1px 0 0 #000;
+    align-items: center;
+    color: #da2020;
+    display: flex;
+    font-family: mrs-eaves-roman-lining,"Times New Roman",Times,serif;
+    font-size: 200%;
+    font-weight: 700;
+    gap: 2%;
+    justify-content: center;
+    line-height: 1
+}
+
+.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-tree-node-required,#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-tree-node-required,.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-tree-node-required,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-tree-node-required {
+    font-size: 100%
+}
+
+.d4-skill-planner-tree-node-required:empty {
+    display: none
+}
+
+.d4-skill-planner-tree-node[data-type="hub"] a {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    pointer-events: none
+}
+
+.d4-skill-planner-tree-node[data-type="hub"] a:before {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    content: "";
+    display: block;
+    pointer-events: auto;
+    position: absolute;
+    inset: -26%
+}
+
+.d4-skill-planner-tree-node[data-type="hub"] a:after {
+    aspect-ratio: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 200%;
+    left: -50%;
+    pointer-events: none;
+    position: absolute;
+    top: -50%;
+    z-index: -1
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="hub"] a:after {
+    background-image: url(/d4/texture/hash/148/3285020564.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="hub"] a:after {
+    background-image: url(/d4/texture/hash/148/3285020564.webp)
+}
+
+.d4-skill-planner-tree-node[data-type="hub"][data-icon-visibility="hidden"] .d4-skill-planner-tree-node-icon {
+    background-image: none !important
+}
+
+.d4-skill-planner-tree-node[data-type="hub"][data-icon-visibility="hidden"] .d4-skill-planner-tree-node-required:before {
+    aspect-ratio: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 50%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="hub"][data-icon-visibility="hidden"] .d4-skill-planner-tree-node-required:before {
+    background-image: url(/d4/texture/hash/39/1657811495.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="hub"][data-icon-visibility="hidden"] .d4-skill-planner-tree-node-required:before {
+    background-image: url(/d4/texture/hash/39/1657811495.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-node[data-type="hub"][data-crest-style="purchased"] a:after {
+    background-image: url(/d4/texture/hash/177/716658097.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-node[data-type="hub"][data-crest-style="purchased"] a:after {
+    background-image: url(/d4/texture/hash/177/716658097.webp)
+}
+
+.d4-skill-planner-tree-connection {
+    display: block;
+    padding: 0.2% 0;
+    position: absolute;
+    transform-origin: left center;
+    z-index: 10
+}
+
+.d4-skill-planner-tree-connection[data-type="hub"] {
+    background-position: left center;
+    background-size: contain;
+    z-index: 8
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-connection[data-type="hub"] {
+    background-image: url(/images/d4/tools/skill-planner/hub-connector-bg.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-connection[data-type="hub"] {
+    background-image: url(./hub-connector-bg.webp)
+}
+
+.d4-skill-planner-tree-connection-fill {
+    background-position: left center;
+    background-size: contain;
+    filter: brightness(1.5);
+    height: 48%;
+    left: 0;
+    position: absolute;
+    top: 26%;
+    transition: width 0.5s ease-out
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-connection-fill {
+    background-image: url(/images/d4/tools/skill-planner/tree-connector-fill.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-connection-fill {
+    background-image: url(/images/d4/tools/skill-planner/tree-connector-fill.webp)
+}
+
+.d4-skill-planner-tree-connection-fill-container {
+    inset: 0;
+    position: absolute
+}
+
+.d4-skill-planner-tree-connection[data-type="spoke"][data-fill-style]:before {
+    background-repeat: repeat-x;
+    background-size: contain;
+    bottom: 0;
+    content: "";
+    filter: brightness(1.5);
+    height: 35%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 35%;
+    z-index: 1
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-connection[data-type="spoke"][data-fill-style="purchased"]:before {
+    background-image: url(/images/d4/tools/skill-planner/tree-connector-fill.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-connection[data-type="spoke"][data-fill-style="purchased"]:before {
+    background-image: url(/images/d4/tools/skill-planner/tree-connector-fill.webp)
+}
+
+.d4-skill-planner-tree-connection[data-type="spoke"][data-fill-style="available"]:before {
+    filter: brightness(1)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-connection[data-type="spoke"][data-fill-style="available"]:before {
+    background-image: url(/images/d4/tools/skill-planner/tree-connector-fill-available.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-connection[data-type="spoke"][data-fill-style="available"]:before {
+    background-image: url(./tree-connector-fill-available.webp)
+}
+
+.d4-skill-planner-tree-connection[data-type="spoke"]:after {
+    background-repeat: repeat-x;
+    background-size: contain;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-tree-connection[data-type="spoke"]:after {
+    background-image: url(/images/d4/tools/skill-planner/tree-connector.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-tree-connection[data-type="spoke"]:after {
+    background-image: url(/images/d4/tools/skill-planner/tree-connector.webp)
+}
+
+.d4-skill-planner-tree-remove-points {
+    align-items: center;
+    aspect-ratio: 1;
+    background-color: #941f14;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    font-size: 36%;
+    height: 40%;
+    justify-content: center;
+    position: absolute;
+    right: -10%;
+    top: -10%;
+    z-index: 255
+}
+
+.d4-skill-planner-tree-remove-points:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    color: #f2ebde;
+    margin-right: 0
+}
+
+.d4-skill-planner-tree-node[data-crest-style="purchased"][data-focused="true"] .d4-skill-planner-tree-remove-points {
+    display: flex
+}
+
+.d4-skill-planner-tree-node[data-type="mod"] .d4-skill-planner-tree-remove-points {
+    top: 0;
+    right: 0
+}
+
+.d4-skill-planner-tree-remove-points:hover {
+    background-color: #bf2517
+}
+
+.d4-skill-planner-tree-remove-points:hover:before {
+    color: #f2ebde
+}
+
+.d4-skill-planner-footer {
+    background-color: transparent;
+    background-image: linear-gradient(to top, #121110, transparent);
+    bottom: 0;
+    display: none;
+    position: sticky;
+    z-index: 52
+}
+
+.d4-skill-planner[data-class-selected="true"] .d4-skill-planner-footer:not([data-type="sub"]) {
+    display: grid
+}
+
+.d4-skill-planner-footer[data-type="sub"] {
+    background-color: #121110
+}
+
+.d4-skill-planner-footer:not([data-type="sub"]) {
+    box-shadow: 0 10px 20px 15px rgba(0,0,0,0.5)
+}
+
+.d4-skill-planner[data-class-selected="true"][data-layout-mode="small"] .d4-skill-planner-footer,.d4-skill-planner[data-class-selected="true"][data-layout-mode="medium"] .d4-skill-planner-footer,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner[data-class-selected="true"] .d4-skill-planner-footer,#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner[data-class-selected="true"] .d4-skill-planner-footer {
+    display: grid
+}
+
+.d4-skill-planner[data-class-selected="true"][data-layout-mode="small"] .d4-skill-planner-footer:not([data-type="sub"]),.d4-skill-planner[data-class-selected="true"][data-layout-mode="medium"] .d4-skill-planner-footer:not([data-type="sub"]),#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner[data-class-selected="true"] .d4-skill-planner-footer:not([data-type="sub"]),#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner[data-class-selected="true"] .d4-skill-planner-footer:not([data-type="sub"]) {
+    bottom: 3.5em
+}
+
+.d4-skill-planner[data-class-selected="true"][data-layout-mode="small"] .d4-skill-planner-footer:not([data-type="sub"]) .d4-skill-planner-border,.d4-skill-planner[data-class-selected="true"][data-layout-mode="medium"] .d4-skill-planner-footer:not([data-type="sub"]) .d4-skill-planner-border,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner[data-class-selected="true"] .d4-skill-planner-footer:not([data-type="sub"]) .d4-skill-planner-border,#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner[data-class-selected="true"] .d4-skill-planner-footer:not([data-type="sub"]) .d4-skill-planner-border {
+    display: none
+}
+
+.d4-skill-planner[data-class-selected="true"][data-layout-mode="small"] .d4-skill-planner-footer[data-type="sub"],.d4-skill-planner[data-class-selected="true"][data-layout-mode="medium"] .d4-skill-planner-footer[data-type="sub"],#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner[data-class-selected="true"] .d4-skill-planner-footer[data-type="sub"],#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner[data-class-selected="true"] .d4-skill-planner-footer[data-type="sub"] {
+    display: flex;
+    justify-content: center
+}
+
+.d4-skill-planner[data-class-selected="true"][data-layout-mode="small"] .d4-skill-planner-footer[data-mobile-footer="true"],.d4-skill-planner[data-class-selected="true"][data-layout-mode="medium"] .d4-skill-planner-footer[data-mobile-footer="true"],#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner[data-class-selected="true"] .d4-skill-planner-footer[data-mobile-footer="true"],#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner[data-class-selected="true"] .d4-skill-planner-footer[data-mobile-footer="true"] {
+    bottom: 50px
+}
+
+.d4-skill-planner[data-class-selected="true"][data-layout-mode="small"] .d4-skill-planner-footer[data-mobile-footer="true"]:not([data-type="sub"]),.d4-skill-planner[data-class-selected="true"][data-layout-mode="medium"] .d4-skill-planner-footer[data-mobile-footer="true"]:not([data-type="sub"]),#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner[data-class-selected="true"] .d4-skill-planner-footer[data-mobile-footer="true"]:not([data-type="sub"]),#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner[data-class-selected="true"] .d4-skill-planner-footer[data-mobile-footer="true"]:not([data-type="sub"]) {
+    bottom: calc(4em - .5em + 50px)
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-footer,#d4-skill-planner-parent-container[data-layout-mode] .d4-skill-planner-footer {
+    height: 3.4775em;
+    padding: 0 5px
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-footer:not([data-type="sub"]),#d4-skill-planner-parent-container[data-layout-mode] .d4-skill-planner-footer:not([data-type="sub"]) {
+    bottom: 3.4775em
+}
+
+.d4-skill-planner-skill {
+    aspect-ratio: 1;
+    background-color: #454240;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: not-allowed;
+    filter: grayscale(1) brightness(0.5);
+    flex-shrink: 0;
+    position: relative;
+    transition: filter 75ms;
+    width: 3.5em
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-skill,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-skill,.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-skill,#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-skill {
+    width: 2.4em
+}
+
+.d4-skill-planner-skill[data-active="true"]:hover {
+    filter: brightness(1.5)
+}
+
+.d4-skill-planner-skill[data-active="true"] {
+    cursor: pointer;
+    filter: brightness(1)
+}
+
+.d4-skill-planner-skill[data-assigned="true"] {
+    filter: brightness(1.5)
+}
+
+.d4-skill-planner-skill[data-assigned="true"]:before,.d4-skill-planner-skill[data-assigned="true"]:after {
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    pointer-events: none;
+    position: absolute
+}
+
+.d4-skill-planner-skill[data-assigned="true"]:after {
+    aspect-ratio: 1;
+    background-size: 140%;
+    left: -5%;
+    top: -5%;
+    width: 110%;
+    z-index: 0
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-skill[data-assigned="true"]:after {
+    background-image: url(/d4/texture/hash/67/1088779843.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-skill[data-assigned="true"]:after {
+    background-image: url(/d4/texture/hash/67/1088779843.webp)
+}
+
+.d4-skill-planner-skill[data-assigned="true"]:before {
+    background-size: 1.25em;
+    background-position: calc(50% + .2em) center;
+    bottom: -.625em;
+    height: 1.25em;
+    left: 0;
+    margin: auto;
+    right: 0;
+    width: 100%;
+    z-index: 1
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-skill[data-assigned="true"]:before {
+    background-image: url(/d4/texture/hash/67/2636597059.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-skill[data-assigned="true"]:before {
+    background-image: url(/d4/texture/hash/67/2636597059.webp)
+}
+
+.d4-skill-planner-skill-hub {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 0 1em 0.5em 1em;
+    position: relative;
+    z-index: 1
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-skill-hub,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-skill-hub {
+    gap: 0.1em;
+    margin: 0 0.5em 0.1em 0.5em
+}
+
+.d4-skill-planner-skill-hub-icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    width: 3.5em
+}
+
+.d4-skill-planner-skill-hub-icon:before {
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 3.5em;
+    z-index: -1
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-skill-hub-icon:before {
+    background-image: url(/d4/texture/hash/44/2142468908.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-skill-hub-icon:before {
+    background-image: url(/d4/texture/hash/44/2142468908.webp)
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-skill-hub-icon,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-skill-hub-icon {
+    background-size: contain;
+    width: 1.5em
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-skill-hub-icon:before,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-skill-hub-icon:before {
+    display: none
+}
+
+.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-skill-hub-icon,#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-skill-hub-icon {
+    width: 2.4em
+}
+
+.d4-skill-planner-window {
+    background-repeat: no-repeat;
+    display: none;
+    left: 0;
+    margin: auto;
+    padding: 0.2em;
+    position: absolute;
+    right: 0;
+    transform-origin: bottom;
+    width: max-content;
+    z-index: 255
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-window,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-window {
+    max-width: 90vw
+}
+
+.d4-skill-planner-window[data-window-type="feature"] {
+    aspect-ratio: unset;
+    min-width: 30vw;
+    max-width: 90vw
+}
+
+.d4-skill-planner-window[data-open="true"] {
+    display: block
+}
+
+.d4-skill-planner-window:before {
+    background-position: left bottom,right bottom,left top,right top,center bottom,center top,right center,left center;
+    background-repeat: no-repeat;
+    background-size: 128px,128px,128px,128px,90% 110px,90% 110px,128px 90%,128px 90%;
+    background-repeat: no-repeat;
+    content: "";
+    inset: -17px;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window:before {
+    background-image: url("/d4/texture/hash/23/3301228823.png"),url("/d4/texture/hash/170/1573628842.png"),url("/d4/texture/hash/245/2595151349.png"),url("/d4/texture/hash/72/4042875976.png"),url("/d4/texture/hash/12/2107552524.png"),url("/d4/texture/hash/234/3622899946.png"),url("/d4/texture/hash/181/2555469749.png"),url("/d4/texture/hash/194/3591282626.png")
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window:before {
+    background-image: url("/d4/texture/hash/23/3301228823.webp"),url("/d4/texture/hash/170/1573628842.webp"),url("/d4/texture/hash/245/2595151349.webp"),url("/d4/texture/hash/72/4042875976.webp"),url("/d4/texture/hash/12/2107552524.webp"),url("/d4/texture/hash/234/3622899946.webp"),url("/d4/texture/hash/181/2555469749.webp"),url("/d4/texture/hash/194/3591282626.webp")
+}
+
+.d4-skill-planner-window-inner:after {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 94% 94%;
+    content: "";
+    height: 106%;
+    left: -3%;
+    pointer-events: none;
+    position: absolute;
+    top: -3%;
+    width: 106%;
+    z-index: -1
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window-inner:after {
+    background-image: url(/d4/texture/name/2d/2duitiled_hellgothicchill.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window-inner:after {
+    background-image: url(/d4/texture/name/2d/2duitiled_hellgothicchill.webp)
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-window-inner:after,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-window-inner:after {
+    background-size: 94% 97%
+}
+
+.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-window-inner:after,#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-window-inner:after {
+    background-size: 94% 96%
+}
+
+.d4-skill-planner-window-header {
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f2ebde;
+    display: flex;
+    font-family: mrs-eaves-roman-lining,"Times New Roman",Times,serif;
+    font-size: 1.4em;
+    height: 50px;
+    justify-content: center;
+    margin-bottom: 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window-header {
+    background-image: url(/d4/texture/hash/208/1059795408.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window-header {
+    background-image: url(/d4/texture/hash/208/1059795408.webp)
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-window-header,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-window-header {
+    font-size: 1em;
+    margin-bottom: 0.1em
+}
+
+.d4-skill-planner-window[data-window-type="order"] .d4-skill-planner-window-header {
+    position: relative
+}
+
+.d4-skill-planner-closer {
+    z-index: 50;
+    cursor: pointer;
+    display: block;
+    height: 2.4em;
+    position: absolute;
+    right: calc(-.6em);
+    top: calc(-.6em);
+    width: 2.4em;
+    right: calc(-2.4em / 2);
+    top: calc(-2.4em / 2);
+    background-image: url("/images/d4/tools/shared/d4-closer-hover.png");
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-closer,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-closer {
+    right: calc(-2.4em / 6);
+    top: calc(-2.4em / 4)
+}
+
+.d4-skill-planner-closer:hover,.d4-skill-planner-closer.focus-visible {
+    box-shadow: none;
+    filter: brightness(1.35)
+}
+
+.d4-skill-planner-closer:hover,.d4-skill-planner-closer.focus-visible {
+    box-shadow: none;
+    filter: brightness(1.35)
+}
+
+.d4-skill-planner-utility-buttons {
+    display: flex;
+    gap: 5px;
+    grid-column: span 8;
+    justify-content: flex-end;
+    z-index: 20
+}
+
+.d4-skill-planner-button,.d4-skill-planner-tree-button {
+    background: unset;
+    cursor: pointer
+}
+
+.d4-skill-planner-button:hover,.d4-skill-planner-tree-button:hover {
+    background: unset
+}
+
+.d4-skill-planner-button[data-button-type="icon"],.d4-skill-planner-tree-button[data-button-type="icon"] {
+    align-items: center;
+    aspect-ratio: 1;
+    background-position: center center;
+    background-size: 120% 120%;
+    display: none;
+    height: 2.4em;
+    justify-content: center;
+    pointer-events: auto
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-button[data-button-type="icon"],body[data-wh-webp="false"] .d4-skill-planner-tree-button[data-button-type="icon"] {
+    background-image: url(/d4/texture/hash/161/6426785.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-button[data-button-type="icon"],body[data-wh-webp="true"] .d4-skill-planner-tree-button[data-button-type="icon"] {
+    background-image: url(/d4/texture/hash/161/6426785.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-button[data-button-type="icon"]:hover,body[data-wh-webp="false"] .d4-skill-planner-button[data-button-type="icon"].focus-visible,body[data-wh-webp="false"] .d4-skill-planner-tree-button[data-button-type="icon"]:hover,body[data-wh-webp="false"] .d4-skill-planner-tree-button[data-button-type="icon"].focus-visible {
+    background-image: url(/d4/texture/hash/152/2703595928.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-button[data-button-type="icon"]:hover,body[data-wh-webp="true"] .d4-skill-planner-button[data-button-type="icon"].focus-visible,body[data-wh-webp="true"] .d4-skill-planner-tree-button[data-button-type="icon"]:hover,body[data-wh-webp="true"] .d4-skill-planner-tree-button[data-button-type="icon"].focus-visible {
+    background-image: url(/d4/texture/hash/152/2703595928.webp)
+}
+
+.d4-skill-planner-button[data-button-type="icon"][data-id="link"]:before,.d4-skill-planner-tree-button[data-button-type="icon"][data-id="link"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    color: #f2ebde;
+    margin-right: 0
+}
+
+.d4-skill-planner-button[data-button-type="icon"][data-id="order"]:before,.d4-skill-planner-tree-button[data-button-type="icon"][data-id="order"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    color: #f2ebde;
+    margin-right: 0
+}
+
+.d4-skill-planner-button[data-button-type="icon"][data-id="refund"]:before,.d4-skill-planner-tree-button[data-button-type="icon"][data-id="refund"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    color: #f2ebde;
+    margin-right: 0
+}
+
+.d4-skill-planner-button[data-button-type="icon"][data-id="trash"]:before,.d4-skill-planner-tree-button[data-button-type="icon"][data-id="trash"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    color: #f2ebde;
+    margin-right: 0
+}
+
+.d4-skill-planner-button[data-button-type="icon"][data-id="zoom-in"],.d4-skill-planner-tree-button[data-button-type="icon"][data-id="zoom-in"] {
+    display: flex
+}
+
+.d4-skill-planner-button[data-button-type="icon"][data-id="zoom-in"]:before,.d4-skill-planner-tree-button[data-button-type="icon"][data-id="zoom-in"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    color: #f2ebde;
+    margin-right: 0
+}
+
+.d4-skill-planner-button[data-button-type="icon"][data-id="zoom-out"],.d4-skill-planner-tree-button[data-button-type="icon"][data-id="zoom-out"] {
+    display: flex
+}
+
+.d4-skill-planner-button[data-button-type="icon"][data-id="zoom-out"]:before,.d4-skill-planner-tree-button[data-button-type="icon"][data-id="zoom-out"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    color: #f2ebde;
+    margin-right: 0
+}
+
+.d4-skill-planner-button[data-button-type="icon"][data-id="height"],.d4-skill-planner-tree-button[data-button-type="icon"][data-id="height"] {
+    display: flex
+}
+
+.d4-skill-planner-button[data-button-type="icon"][data-id="height"]:before,.d4-skill-planner-tree-button[data-button-type="icon"][data-id="height"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    color: #f2ebde;
+    margin-right: 0
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-button[data-button-type="icon"][data-disabled="true"],body[data-wh-webp="false"] .d4-skill-planner-tree-button[data-button-type="icon"][data-disabled="true"] {
+    background-image: url(/d4/texture/hash/84/2536216660.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-button[data-button-type="icon"][data-disabled="true"],body[data-wh-webp="true"] .d4-skill-planner-tree-button[data-button-type="icon"][data-disabled="true"] {
+    background-image: url(/d4/texture/hash/84/2536216660.webp)
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-button[data-button-type="icon"],.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-button[data-button-type="icon"],#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-button[data-button-type="icon"],#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-button[data-button-type="icon"],.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-tree-button[data-button-type="icon"],.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-tree-button[data-button-type="icon"],#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-tree-button[data-button-type="icon"],#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-tree-button[data-button-type="icon"] {
+    display: flex
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-button[data-button-type="icon"],#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-button[data-button-type="icon"],.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-tree-button[data-button-type="icon"],#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-tree-button[data-button-type="icon"] {
+    height: 2em
+}
+
+.d4-skill-planner-button[data-button-type="text"],.d4-skill-planner-tree-button[data-button-type="text"] {
+    align-items: center;
+    background-image: url(/images/di/general/button-texture-red.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 8px 5px rgba(148,31,20,0.5);
+    box-sizing: border-box;
+    color: #f2ebde;
+    display: flex;
+    font-size: 0.9em;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 1em;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.d4-skill-planner-button[data-button-type="text"]:hover,.d4-skill-planner-button[data-button-type="text"].focus-visible,.d4-skill-planner-tree-button[data-button-type="text"]:hover,.d4-skill-planner-tree-button[data-button-type="text"].focus-visible {
+    filter: brightness(1.35)
+}
+
+.d4-skill-planner-button[data-button-type="text"][data-id="link"]:before,.d4-skill-planner-tree-button[data-button-type="text"][data-id="link"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    color: #f2ebde;
+    margin-right: 3px
+}
+
+.d4-skill-planner-button[data-button-type="text"][data-id="link"]:before,.d4-skill-planner-tree-button[data-button-type="text"][data-id="link"]:before {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.d4-skill-planner-button[data-button-type="text"][data-id="order"]:before,.d4-skill-planner-tree-button[data-button-type="text"][data-id="order"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    color: #f2ebde;
+    margin-right: 3px
+}
+
+.d4-skill-planner-button[data-button-type="text"][data-id="order"]:before,.d4-skill-planner-tree-button[data-button-type="text"][data-id="order"]:before {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.d4-skill-planner-button[data-button-type="text"][data-id="refund"]:before,.d4-skill-planner-tree-button[data-button-type="text"][data-id="refund"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    color: #f2ebde;
+    margin-right: 3px
+}
+
+.d4-skill-planner-button[data-button-type="text"][data-id="refund"]:before,.d4-skill-planner-tree-button[data-button-type="text"][data-id="refund"]:before {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.d4-skill-planner-button[data-button-type="text"][data-id="trash"]:before,.d4-skill-planner-tree-button[data-button-type="text"][data-id="trash"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    color: #f2ebde;
+    margin-right: 3px
+}
+
+.d4-skill-planner-button[data-button-type="text"][data-id="trash"]:before,.d4-skill-planner-tree-button[data-button-type="text"][data-id="trash"]:before {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-button[data-button-type="text"],.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-button[data-button-type="text"],#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-button[data-button-type="text"],#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-button[data-button-type="text"],.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-tree-button[data-button-type="text"],.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-tree-button[data-button-type="text"],#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-tree-button[data-button-type="text"],#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-tree-button[data-button-type="text"] {
+    display: none
+}
+
+.d4-skill-planner-tree-root {
+    height: 0;
+    padding: 5px 0 0 10px;
+    pointer-events: none;
+    position: sticky;
+    top: calc(142px + 5em);
+    z-index: 49;
+    margin-bottom: 0
+}
+
+body[data-zul-bar="true"] .d4-skill-planner-tree-root {
+    top: calc(40px + 5em)
+}
+
+.d4-skill-planner-tree-root[data-scrolling="true"] {
+    visibility: hidden
+}
+
+.d4-skill-planner-tree-button-container {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    pointer-events: none
+}
+
+.d4-skill-planner-action-bar {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    grid-column: 4 / span 6;
+    justify-content: center;
+    z-index: 20
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-action-bar,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-action-bar {
+    grid-column: 1 / span 12;
+    padding: 5px 0
+}
+
+.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-action-bar,#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-action-bar {
+    grid-column: 2 / span 9
+}
+
+.d4-skill-planner-slot {
+    aspect-ratio: 1;
+    background-position: 50% 42%;
+    background-repeat: no-repeat;
+    background-size: 68%;
+    cursor: pointer;
+    max-width: 4.5em;
+    min-width: 2.4em;
+    position: relative;
+    transition: filter 75ms;
+    width: 100%
+}
+
+.d4-skill-planner-slot[data-assigned="true"]:after {
+    content: unset
+}
+
+.d4-skill-planner-slot:before,.d4-skill-planner-slot:after {
+    background-repeat: no-repeat;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.d4-skill-planner-slot:before {
+    background-size: 100% 100%;
+    z-index: -1
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-slot:before {
+    background-image: url(/d4/texture/hash/210/1762742226.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-slot:before {
+    background-image: url(/d4/texture/hash/210/1762742226.webp)
+}
+
+.d4-skill-planner-slot[data-slot-type="feature"] {
+    background-position: 50% 30%;
+    background-size: 75%
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-slot[data-slot-type="feature"],#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-slot[data-slot-type="feature"],.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-slot[data-slot-type="feature"],#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-slot[data-slot-type="feature"] {
+    max-width: 3em
+}
+
+.d4-skill-planner-slot[data-slot-type="feature"]:not([data-skill]):after {
+    background-image: unset
+}
+
+.d4-skill-planner-class-feature[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"]:hover,.d4-skill-planner-class-feature[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"].focus-visible {
+    filter: unset
+}
+
+.d4-skill-planner-class-feature[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"]:hover:before,.d4-skill-planner-class-feature[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"]:hover:after,.d4-skill-planner-class-feature[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"].focus-visible:before,.d4-skill-planner-class-feature[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"].focus-visible:after {
+    filter: brightness(1.35)
+}
+
+.d4-skill-planner-class-feature[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-size: 100%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-feature[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-image: url(/d4/texture/hash/45/2222757421.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-feature[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-image: url(/d4/texture/hash/45/2222757421.webp)
+}
+
+.d4-skill-planner-class-feature[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"]:after {
+    background-position: center 40%;
+    background-size: 62% 62%;
+    z-index: -1
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-feature[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"]:after {
+    background-image: url(/d4/texture/hash/53/2626051637.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-feature[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"]:after {
+    background-image: url(/d4/texture/hash/53/2626051637.webp)
+}
+
+.d4-skill-planner-window[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-size: 100%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-image: url(/d4/texture/hash/45/2222757421.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="rogue"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-image: url(/d4/texture/hash/45/2222757421.webp)
+}
+
+.d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot[data-slot-type="feature"] {
+    background-position: center;
+    background-size: 65%
+}
+
+.d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot[data-slot-type="feature"]:hover,.d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot[data-slot-type="feature"].focus-visible {
+    filter: unset
+}
+
+.d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot[data-slot-type="feature"]:hover:before,.d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot[data-slot-type="feature"].focus-visible:before {
+    filter: brightness(1.35)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot[data-slot-type="feature"][data-assigned="true"]:before {
+    background-image: url(/d4/texture/hash/90/4166634074.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot[data-slot-type="feature"][data-assigned="true"]:before {
+    background-image: url(/d4/texture/hash/90/4166634074.webp)
+}
+
+.d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-position: center;
+    background-size: 85%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-image: url(/d4/texture/hash/17/4194663697.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-image: url(/d4/texture/hash/17/4194663697.webp)
+}
+
+.d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot[data-slot-type="feature"]:after {
+    background: unset
+}
+
+.d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-slot[data-slot-type="feature"] {
+    background-position: center;
+    background-size: 80%
+}
+
+.d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-slot[data-slot-type="feature"][data-category="label"] {
+    cursor: default
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-slot[data-slot-type="feature"][data-category="label"]:before {
+    background-image: url(/d4/texture/hash/233/2504595433.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-slot[data-slot-type="feature"][data-category="label"]:before {
+    background-image: url(/d4/texture/hash/233/2504595433.webp)
+}
+
+.d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-slot[data-slot-type="feature"][data-category="label"]:hover:before {
+    filter: unset
+}
+
+.d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-position: center -100%,center;
+    background-repeat: no-repeat;
+    background-size: 90%,80%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-image: url("/d4/texture/hash/12/771355660.png"),url("/d4/texture/hash/68/299538756.png")
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-image: url("/d4/texture/hash/12/771355660.webp"),url("/d4/texture/hash/68/299538756.webp")
+}
+
+.d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-slot[data-slot-type="feature"]:hover {
+    filter: unset
+}
+
+.d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-slot[data-slot-type="feature"]:hover:before {
+    filter: brightness(1.35)
+}
+
+.d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-slot[data-slot-type="feature"][data-druid-group="snake"]:before {
+    background-position: center,center;
+    background-repeat: no-repeat;
+    background-size: contain,80%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-slot[data-slot-type="feature"][data-druid-group="snake"]:before {
+    background-image: url("/d4/texture/hash/96/3991846496.png"),url("/d4/texture/hash/53/2626051637.png")
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-slot[data-slot-type="feature"][data-druid-group="snake"]:before {
+    background-image: url("/d4/texture/hash/96/3991846496.webp"),url("/d4/texture/hash/53/2626051637.webp")
+}
+
+.d4-skill-planner-slot[data-slot-type="feature"][data-druid-group] {
+    background-position: center
+}
+
+.d4-skill-planner-slot[data-slot-type="feature"][data-druid-group]:hover {
+    filter: unset
+}
+
+.d4-skill-planner-slot[data-slot-type="feature"][data-druid-group]:hover:before {
+    filter: brightness(1.35)
+}
+
+.d4-skill-planner-slot[data-slot-type="feature"][data-druid-group]:before {
+    background-position: center;
+    background-size: contain;
+    pointer-events: none
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-slot[data-slot-type="feature"][data-druid-group]:before {
+    background-image: url(/d4/texture/hash/233/2504595433.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-slot[data-slot-type="feature"][data-druid-group]:before {
+    background-image: url(/d4/texture/hash/233/2504595433.webp)
+}
+
+.d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot[data-slot-type="feature"] {
+    z-index: -1
+}
+
+.d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot[data-slot-type="feature"]:hover,.d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot[data-slot-type="feature"].focus-visible {
+    filter: unset
+}
+
+.d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot[data-slot-type="feature"]:hover:before,.d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot[data-slot-type="feature"]:hover:after,.d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot[data-slot-type="feature"].focus-visible:before,.d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot[data-slot-type="feature"].focus-visible:after {
+    filter: brightness(1.35)
+}
+
+.d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-position: center 30%,center -100%;
+    background-repeat: no-repeat;
+    background-size: 95%,85%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-image: url("/d4/texture/hash/103/2417668967.png"),url("/d4/texture/hash/45/2222757421.png")
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-image: url("/d4/texture/hash/103/2417668967.webp"),url("/d4/texture/hash/45/2222757421.webp")
+}
+
+.d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot[data-slot-type="feature"]:not([data-wowhead]):after {
+    background-position: center 40%;
+    background-size: 62% 62%;
+    z-index: -1
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot[data-slot-type="feature"]:not([data-wowhead]):after {
+    background-image: url(/d4/texture/hash/53/2626051637.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot[data-slot-type="feature"]:not([data-wowhead]):after {
+    background-image: url(/d4/texture/hash/53/2626051637.webp)
+}
+
+.d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"] {
+    background-position: 50% 66%;
+    background-size: 50%
+}
+
+.d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"]:hover,.d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"].focus-visible {
+    filter: unset
+}
+
+.d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"]:hover:before,.d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"]:hover:after,.d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"].focus-visible:before,.d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"].focus-visible:after {
+    filter: brightness(1.35)
+}
+
+.d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-position: center;
+    background-size: 80%;
+    z-index: 0
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-image: url(/d4/texture/name/2d/2dui_necromancerarmy/53.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"]:before {
+    background-image: url(/d4/texture/name/2d/2dui_necromancerarmy/53.webp)
+}
+
+.d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"]:after {
+    background-position: center 66%;
+    background-size: 48% 48%;
+    z-index: -1
+}
+
+.d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"][data-wowhead]:after {
+    background: inherit;
+    filter: blur(4px) brightness(0.5) hue-rotate(326deg) saturate(30)
+}
+
+.d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"]:not([data-wowhead]):after {
+    filter: brightness(0.75)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"]:not([data-wowhead]):after {
+    background-image: url(/d4/texture/name/2d/2dui_necromancerarmy/58.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-slot-type="feature"]:not([data-wowhead]):after {
+    background-image: url(/d4/texture/name/2d/2dui_necromancerarmy/58.webp)
+}
+
+.d4-skill-planner-slot[data-slot-type="key-passive"] {
+    background-size: 0;
+    grid-column: span 1;
+    justify-self: center;
+    z-index: 1
+}
+
+.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-slot[data-slot-type="key-passive"],#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-slot[data-slot-type="key-passive"] {
+    justify-self: start;
+    grid-column: span 2
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-slot[data-slot-type="key-passive"],#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-slot[data-slot-type="key-passive"] {
+    justify-self: center;
+    order: 1;
+    transform: scale(0.75)
+}
+
+.d4-skill-planner-slot[data-slot-type="key-passive"]:after {
+    background-image: inherit;
+    background-size: 50%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-slot[data-slot-type="key-passive"]:before {
+    background-image: url(/d4/texture/hash/141/2467299725.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-slot[data-slot-type="key-passive"]:before {
+    background-image: url(/d4/texture/hash/141/2467299725.webp)
+}
+
+.d4-skill-planner-slot:after {
+    background-position: center;
+    z-index: 0
+}
+
+.d4-skill-planner-slot[data-skill]:not([data-slot-type])[data-active="true"]:after,.d4-skill-planner-slot[data-skill]:not([data-slot-type]):hover:after,.d4-skill-planner-slot[data-skill]:not([data-slot-type]).focus-visible:after {
+    background-position: 17% 80%,80% 80%,17% center,80% center,17% 17%,80% 17%,center 80%,center 17%;
+    background-repeat: no-repeat;
+    background-size: 1em,1em,1em calc(100% - 2em),1em calc(100% - 2em),1em,1em,calc(100% - 2em) 1em,calc(100% - 2em) 1em;
+    content: ""
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-slot[data-skill]:not([data-slot-type])[data-active="true"]:after,body[data-wh-webp="false"] .d4-skill-planner-slot[data-skill]:not([data-slot-type]):hover:after,body[data-wh-webp="false"] .d4-skill-planner-slot[data-skill]:not([data-slot-type]).focus-visible:after {
+    background-image: url("/d4/texture/hash/186/2982282938.png"),url("/d4/texture/hash/173/3933316525.png"),url("/d4/texture/hash/37/2109548325.png"),url("/d4/texture/hash/120/902878072.png"),url("/d4/texture/hash/120/2514112120.png"),url("/d4/texture/hash/43/1368581419.png"),url("/d4/texture/hash/47/3406602031.png"),url("/d4/texture/hash/237/1886042093.png")
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-slot[data-skill]:not([data-slot-type])[data-active="true"]:after,body[data-wh-webp="true"] .d4-skill-planner-slot[data-skill]:not([data-slot-type]):hover:after,body[data-wh-webp="true"] .d4-skill-planner-slot[data-skill]:not([data-slot-type]).focus-visible:after {
+    background-image: url("/d4/texture/hash/186/2982282938.webp"),url("/d4/texture/hash/173/3933316525.webp"),url("/d4/texture/hash/37/2109548325.webp"),url("/d4/texture/hash/120/902878072.webp"),url("/d4/texture/hash/120/2514112120.webp"),url("/d4/texture/hash/43/1368581419.webp"),url("/d4/texture/hash/47/3406602031.webp"),url("/d4/texture/hash/237/1886042093.webp")
+}
+
+.d4-skill-planner-slot [data-active="true"] {
+    filter: brightness(1.45)
+}
+
+.d4-skill-planner-slot :hover:after,.d4-skill-planner-slot :hover:before,.d4-skill-planner-slot .focus-visible:after,.d4-skill-planner-slot .focus-visible:before {
+    filter: brightness(1.35)
+}
+
+.d4-skill-planner-slot :after {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-size: 70% 70%
+}
+
+.d4-skill-planner[data-layout-mode] .d4-skill-planner-slot,#d4-skill-planner-parent-container[data-layout-mode] .d4-skill-planner-slot {
+    max-width: 2.782em
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-slot:not([data-slot-type]),#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-slot:not([data-slot-type]) {
+    background-position: 55% 55%;
+    background-size: 80%
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-slot:not([data-slot-type]):before,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-slot:not([data-slot-type]):before {
+    background-position: center;
+    background-size: 155%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-slot:not([data-slot-type]):before,body[data-wh-webp="false"] #d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-slot:not([data-slot-type]):before {
+    background-image: url(/d4/texture/hash/200/3823351240.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-slot:not([data-slot-type]):before,body[data-wh-webp="true"] #d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-slot:not([data-slot-type]):before {
+    background-image: url(/d4/texture/hash/200/3823351240.webp)
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-slot:not([data-slot-type]):after,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-slot:not([data-slot-type]):after {
+    background-image: unset
+}
+
+.d4-skill-planner-slot-indicator {
+    align-items: center;
+    aspect-ratio: 1;
+    background-position: center;
+    background-size: 240%;
+    bottom: 0;
+    color: #000;
+    display: flex;
+    font-family: mrs-eaves-roman-lining,"Times New Roman",Times,serif;
+    font-size: 0.7em;
+    font-weight: 900;
+    justify-content: center;
+    line-height: 0;
+    padding: 5px;
+    position: absolute;
+    width: 25%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-slot-indicator {
+    background-image: url(/d4/texture/hash/164/3624996772.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-slot-indicator {
+    background-image: url(/d4/texture/hash/164/3624996772.webp)
+}
+
+.d4-skill-planner-slot-indicator:after {
+    background-position: center;
+    background-size: contain;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-slot-indicator:after {
+    background-image: url(/d4/texture/hash/232/701650664.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-slot-indicator:after {
+    background-image: url(/d4/texture/hash/232/701650664.webp)
+}
+
+.d4-skill-planner-slot-indicator:empty {
+    display: none
+}
+
+.d4-skill-planner-slot-indicator[data-side="right"] {
+    right: 0
+}
+
+.d4-skill-planner-icon {
+    aspect-ratio: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border-radius: 50% 50%;
+    height: 100%;
+    margin: auto;
+    transform-origin: center 40%;
+    transform: scale(0.55)
+}
+
+.d4-skill-planner-class-feature {
+    display: flex;
+    flex-flow: row nowrap;
+    grid-column: 1 / span 3;
+    z-index: 20
+}
+
+.d4-skill-planner-footer[data-type="sub"] .d4-skill-planner-class-feature {
+    justify-content: center;
+    order: 2
+}
+
+.d4-skill-planner-class-feature-type {
+    display: none
+}
+
+.d4-skill-planner-class-feature-options {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    gap: 1em;
+    justify-content: space-around;
+    padding: 0 0.5em 0.5em;
+    position: relative;
+    width: 100%;
+    z-index: 0
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-feature-options[data-assigned="true"] .d4-skill-planner-class-feature-options-label {
+    background-image: url(/d4/texture/hash/123/4141105531.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-feature-options[data-assigned="true"] .d4-skill-planner-class-feature-options-label {
+    background-image: url(/d4/texture/hash/123/4141105531.webp)
+}
+
+.d4-skill-planner-class-feature-options-label {
+    aspect-ratio: 1;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 100% 130%;
+    margin-left: 2%;
+    margin-right: 6%;
+    width: 75%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-class-feature-options-label {
+    background-image: url(/d4/texture/hash/23/3170942743.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-class-feature-options-label {
+    background-image: url(/d4/texture/hash/23/3170942743.webp)
+}
+
+.d4-skill-planner-class-feature-options-label-icon {
+    aspect-ratio: 2 / 2.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform-origin: center;
+    transform: scale(0.75);
+    width: 100%
+}
+
+.d4-skill-planner-window[data-player-class="barbarian"] .d4-skill-planner-class-feature-options {
+    flex-flow: row wrap;
+    max-width: 32em
+}
+
+.d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-class-feature-options {
+    background-position: center 40%,center 60%;
+    background-repeat: no-repeat;
+    background-size: 90% 11%,90% 11%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-class-feature-options {
+    background-image: url("/d4/texture/hash/89/3670411353.png"),url("/d4/texture/hash/89/3670411353.png")
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-class-feature-options {
+    background-image: url("/d4/texture/hash/89/3670411353.webp"),url("/d4/texture/hash/89/3670411353.webp")
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-class-feature-options,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-class-feature-options {
+    background-image: unset
+}
+
+.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options {
+    background-size: 100% 100%;
+    background-position: center;
+    gap: 0;
+    padding: 3%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options {
+    background-image: url(/d4/texture/sno/81/442449/65.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options {
+    background-image: url(/d4/texture/sno/81/442449/65.webp)
+}
+
+.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:last-of-type .d4-skill-planner-slot:after {
+    background-size: 80%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:last-of-type .d4-skill-planner-slot:after {
+    background-image: url(/d4/texture/hash/121/2192941945.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:last-of-type .d4-skill-planner-slot:after {
+    background-image: url(/d4/texture/hash/121/2192941945.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:last-of-type .d4-skill-planner-slot:hover:after {
+    background-image: url(/d4/texture/hash/221/3561585885.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:last-of-type .d4-skill-planner-slot:hover:after {
+    background-image: url(/d4/texture/hash/221/3561585885.webp)
+}
+
+.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(2) .d4-skill-planner-slot:after,.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(3) .d4-skill-planner-slot:after {
+    background-position: 54% center;
+    background-size: 60%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(2) .d4-skill-planner-slot:after,body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(3) .d4-skill-planner-slot:after {
+    background-image: url(/d4/texture/hash/48/1206385456.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(2) .d4-skill-planner-slot:after,body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(3) .d4-skill-planner-slot:after {
+    background-image: url(/d4/texture/hash/48/1206385456.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(2) .d4-skill-planner-slot:hover:after,body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(2) .d4-skill-planner-slot.focus-visible:after,body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(3) .d4-skill-planner-slot:hover:after,body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(3) .d4-skill-planner-slot.focus-visible:after {
+    background-image: url(/d4/texture/hash/212/1206787796.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(2) .d4-skill-planner-slot:hover:after,body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(2) .d4-skill-planner-slot.focus-visible:after,body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(3) .d4-skill-planner-slot:hover:after,body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(3) .d4-skill-planner-slot.focus-visible:after {
+    background-image: url(/d4/texture/hash/212/1206787796.webp)
+}
+
+.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options:hover .d4-skill-planner-class-feature-options-option:nth-of-type(3) .d4-skill-planner-slot:after {
+    background-position: 40% center
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options[data-assigned] {
+    background-image: url(/d4/texture/hash/210/1081803986.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options[data-assigned] {
+    background-image: url(/d4/texture/hash/210/1081803986.webp)
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-class-feature-options,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-class-feature-options {
+    padding: 0 0.2em 1em;
+    gap: 0
+}
+
+.d4-skill-planner-class-feature-options-option {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: mrs-eaves-roman-lining,"Times New Roman",Times,serif;
+    line-height: 1em;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    width: 100%
+}
+
+.d4-skill-planner-class-feature-options-option:hover {
+    filter: brightness(1.35)
+}
+
+.d4-skill-planner-window[data-player-class="rogue"] .d4-skill-planner-class-feature-options-option {
+    width: 33%
+}
+
+.d4-skill-planner-window[data-player-class="barbarian"] .d4-skill-planner-class-feature-options-option {
+    width: 7em
+}
+
+.d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot[data-assigned]:after {
+    background-size: 95%;
+    content: ""
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot[data-assigned]:after {
+    background-image: url(/d4/texture/hash/41/198748201.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="druid"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot[data-assigned]:after {
+    background-image: url(/d4/texture/hash/41/198748201.webp)
+}
+
+.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option {
+    transform: scale(0.75);
+    transform-origin: left
+}
+
+.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot {
+    background-position: 42% center;
+    background-size: 60%;
+    max-width: 100%
+}
+
+.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot:after {
+    background-image: unset
+}
+
+.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot:hover,.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot.focus-visible {
+    filter: unset
+}
+
+.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot:before {
+    background-size: 100%;
+    background-position: center;
+    z-index: -1
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot:before {
+    background-image: url(/images/d4/tools/skill-planner/2dui-necromancerarmy-option-2-alt.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot:before {
+    background-image: url(/images/d4/tools/skill-planner/2dui-necromancerarmy-option-2-alt.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option:nth-of-type(2) .d4-skill-planner-slot[data-assigned],body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option:nth-of-type(3) .d4-skill-planner-slot[data-assigned] {
+    background-image: url(/d4/texture/hash/221/596645597.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option:nth-of-type(2) .d4-skill-planner-slot[data-assigned],body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option:nth-of-type(3) .d4-skill-planner-slot[data-assigned] {
+    background-image: url(/d4/texture/hash/221/596645597.webp)
+}
+
+.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option:nth-of-type(2) {
+    background-position: center;
+    transform-origin: right
+}
+
+.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option:nth-of-type(2) .d4-skill-planner-slot {
+    background-position: 54% center
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option:nth-of-type(2) .d4-skill-planner-slot:before {
+    background-image: url(/images/d4/tools/skill-planner/2dui-necromancerarmy-option-1-alt.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option:nth-of-type(2) .d4-skill-planner-slot:before {
+    background-image: url(/images/d4/tools/skill-planner/2dui-necromancerarmy-option-1-alt.webp)
+}
+
+.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option:last-of-type {
+    transform-origin: -75% center
+}
+
+.d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option:last-of-type .d4-skill-planner-slot {
+    background-image: unset;
+    background-position: center;
+    background-size: 80%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option:last-of-type .d4-skill-planner-slot:before {
+    background-image: url(/images/d4/tools/skill-planner/2dui-necromancerarmy-option-3-alt.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option:last-of-type .d4-skill-planner-slot:before {
+    background-image: url(/images/d4/tools/skill-planner/2dui-necromancerarmy-option-3-alt.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option:last-of-type .d4-skill-planner-slot[data-assigned] {
+    background-image: url(/d4/texture/hash/87/672737879.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="necromancer"] .d4-skill-planner-class-feature-options-option:last-of-type .d4-skill-planner-slot[data-assigned] {
+    background-image: url(/d4/texture/hash/87/672737879.webp)
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="barbarian"] .d4-skill-planner-class-feature-options-option:hover .d4-skill-planner-slot:before {
+    background-image: url(/d4/texture/hash/31/105494303.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="barbarian"] .d4-skill-planner-class-feature-options-option:hover .d4-skill-planner-slot:before {
+    background-image: url(/d4/texture/hash/31/105494303.webp)
+}
+
+.d4-skill-planner-window[data-player-class="barbarian"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot:hover,.d4-skill-planner-window[data-player-class="barbarian"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot.focus-visible {
+    filter: unset
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="barbarian"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot[data-assigned="true"]:before {
+    background-image: url(/d4/texture/hash/90/4166634074.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="barbarian"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot[data-assigned="true"]:before {
+    background-image: url(/d4/texture/hash/90/4166634074.webp)
+}
+
+.d4-skill-planner-window[data-player-class="barbarian"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot:before {
+    background-position: center bottom;
+    background-size: 90%
+}
+
+body[data-wh-webp="false"] .d4-skill-planner-window[data-player-class="barbarian"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot:before {
+    background-image: url(/d4/texture/hash/17/4194663697.png)
+}
+
+body[data-wh-webp="true"] .d4-skill-planner-window[data-player-class="barbarian"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot:before {
+    background-image: url(/d4/texture/hash/17/4194663697.webp)
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-class-feature-options-option,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-class-feature-options-option {
+    display: inline-block;
+    font-size: 0.75em
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-class-feature-options-option .d4-skill-planner-slot {
+    margin: auto
+}
+
+.d4-skill-planner-skill-order-window-trash.d4-skill-planner-tree-button {
+    display: block;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    text-align: center;
+    top: 10%
+}
+
+.d4-skill-planner-skill-order-window-list {
+    columns: 3;
+    column-gap: 1em
+}
+
+.d4-skill-planner[data-layout-mode="small"] .d4-skill-planner-skill-order-window-list,#d4-skill-planner-parent-container[data-layout-mode="small"] .d4-skill-planner-skill-order-window-list,.d4-skill-planner[data-layout-mode="medium"] .d4-skill-planner-skill-order-window-list,#d4-skill-planner-parent-container[data-layout-mode="medium"] .d4-skill-planner-skill-order-window-list {
+    columns: unset;
+    max-height: 300px;
+    overflow-y: auto
+}
+
+.d4-skill-planner-skill-order-window-list-entry>* {
+    margin-left: 5px
+}
+
+.d4-skill-planner-skill-order-window-list-entry>*:first-child {
+    margin-left: 0
+}
+
+.d4-skill-planner-skill-order-window-list-entry-number {
+    display: inline-block;
+    text-align: right;
+    width: 2em
+}
+
+.d4-skill-planner-skill-order-window-list-entry-hub,.d4-skill-planner-skill-order-window-list-entry-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 1.25em;
+    vertical-align: bottom;
+    width: 1.25em
+}
+
+.d4-skill-planner[data-markup="true"] {
+    background-color: #1e1c1c;
+    margin: 10px auto;
+    padding: 5px
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-footer {
+    border-radius: 2px;
+    height: unset;
+    margin-top: var(--d4SkillPlanner-embedPanelMarginTop);
+    padding: 5px
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-footer:not([data-type="sub"]) {
+    bottom: unset !important;
+    display: flex
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-footer[data-type="sub"] {
+    margin-top: 5px
+}
+
+.d4-skill-planner[data-markup="true"][data-layout-mode] {
+    margin-top: 20px
+}
+
+.d4-skill-planner[data-markup="true"][data-shown] .d4-skill-planner-tree-button-container {
+    display: none
+}
+
+.d4-skill-planner[data-markup="true"][data-shown] .d4-skill-planner-tree-container {
+    display: none
+}
+
+.d4-skill-planner[data-markup="true"][data-shown] .d4-skill-planner-footer,.d4-skill-planner[data-markup="true"][data-shown] .d4-skill-planner-footer[data-type="sub"] {
+    display: none
+}
+
+.d4-skill-planner[data-markup="true"][data-shown~="tree"] .d4-skill-planner-tree-container {
+    display: block
+}
+
+.d4-skill-planner[data-markup="true"][data-shown~="tree"] .d4-skill-planner-tree-button-container {
+    display: flex
+}
+
+.d4-skill-planner[data-markup="true"][data-shown~="summary"] {
+    --d4SkillPlanner-embedPanelMarginTop: 5px
+}
+
+.d4-skill-planner[data-markup="true"][data-shown~="summary"] .d4-skill-planner-footer:not([data-type="sub"]) {
+    display: flex
+}
+
+.d4-skill-planner[data-markup="true"][data-shown~="summary"][data-layout-mode] .d4-skill-planner-footer[data-type="sub"] {
+    display: flex
+}
+
+.d4-skill-planner[data-markup="true"][data-nested="true"] {
+    --d4SkillPlanner-embedPanelMarginTop: 0
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-slot,.d4-skill-planner[data-markup="true"] .d4-skill-planner-icon {
+    background-position: center;
+    background-size: 100%;
+    border-radius: 0;
+    transform-origin: unset;
+    transform: unset
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-footer {
+    box-shadow: unset;
+    gap: 5px;
+    justify-content: center;
+    position: relative
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-footer[data-type="sub"] .d4-skill-planner-class-feature:before {
+    display: none
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-slot {
+    box-sizing: border-box;
+    width: 60px
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-footer,.d4-skill-planner[data-markup="true"] .d4-skill-planner-footer[data-type="sub"] {
+    background-image: unset !important
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-footer:after,.d4-skill-planner[data-markup="true"] .d4-skill-planner-footer:before,.d4-skill-planner[data-markup="true"] .d4-skill-planner-footer[data-type="sub"]:after,.d4-skill-planner[data-markup="true"] .d4-skill-planner-footer[data-type="sub"]:before {
+    background-color: #292727;
+    background-image: unset !important;
+    border-radius: 2px
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-icon {
+    border-radius: 50%;
+    box-shadow: inset #000 0 0 0 3px,#bf9c5a 0 0 0 2px
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-container {
+    background: #292727;
+    border-radius: 2px;
+    border: 5px solid #292727;
+    height: 418px;
+    overflow: auto;
+    position: relative;
+    transition: height 333ms
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-container[data-expanded] {
+    height: 75vh
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-root {
+    padding: unset;
+    position: relative;
+    top: unset
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-summary .d4-skill-planner-tree-root {
+    position: sticky
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button-container {
+    inset: auto auto 15px 10px;
+    margin-top: unset;
+    position: absolute
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 15px;
+    height: 38px;
+    justify-content: center;
+    white-space: nowrap;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.5)
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-button-type="icon"] {
+    background-image: unset
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-button-type="icon"]:hover,.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-button-type="icon"].focus-visible {
+    background-image: unset
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-button-type="icon"][data-disabled="true"] {
+    background-image: unset
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="zoom-in"] {
+    background-color: #731b14;
+    border-radius: 4px;
+    border: none;
+    color: #f2ebde;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 75ms;
+    aspect-ratio: 1
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="zoom-in"]:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="zoom-in"]:before {
+    color: #f2ebde !important;
+    transition: 75ms
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="zoom-in"]:hover,.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="zoom-in"].focus-visible {
+    box-shadow: none;
+    background-color: #bf2517 !important;
+    border-color: #bf2517 !important
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="zoom-out"] {
+    background-color: #731b14;
+    border-radius: 4px;
+    border: none;
+    color: #f2ebde;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 75ms;
+    aspect-ratio: 1
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="zoom-out"]:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="zoom-out"]:before {
+    color: #f2ebde !important;
+    transition: 75ms
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="zoom-out"]:hover,.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="zoom-out"].focus-visible {
+    box-shadow: none;
+    background-color: #bf2517 !important;
+    border-color: #bf2517 !important
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="height"] {
+    background-color: #731b14;
+    border-radius: 4px;
+    border: none;
+    color: #f2ebde;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 75ms;
+    aspect-ratio: 1
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="height"]:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="height"]:before {
+    color: #f2ebde !important;
+    transition: 75ms
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="height"]:hover,.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="height"].focus-visible {
+    box-shadow: none;
+    background-color: #bf2517 !important;
+    border-color: #bf2517 !important
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="view"] {
+    background-color: #731b14;
+    border-radius: 4px;
+    border: none;
+    color: #f2ebde;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 75ms;
+    box-shadow: unset
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="view"]:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="view"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    margin-right: 10px;
+    color: #f2ebde !important;
+    transition: 75ms
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="view"]:hover,.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-id="view"].focus-visible {
+    box-shadow: none;
+    background-color: #bf2517 !important;
+    border-color: #bf2517 !important
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-disabled],.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-disabled].focus-visible,.d4-skill-planner[data-markup="true"] .d4-skill-planner-tree-button[data-disabled]:hover {
+    background-color: #731b14 !important;
+    border-color: #731b14 !important;
+    cursor: not-allowed;
+    filter: brightness(0.5)
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature {
+    gap: 7px;
+    margin-left: 25px;
+    order: 2;
+    position: relative
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature:before {
+    border-left: 2px solid #000;
+    box-shadow: inset 1px 0 0 0 #fff;
+    content: "";
+    inset: -5px;
+    left: -17px;
+    opacity: 0.1;
+    position: absolute
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class] .d4-skill-planner-slot:before {
+    background-size: 100%
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="druid"] .d4-skill-planner-slot,.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot {
+    background-size: 100%
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="druid"] .d4-skill-planner-slot:before,.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot:before {
+    background-size: 200%;
+    border-radius: 50%;
+    box-shadow: inset #000 0 0 0 3px,#454240 0 0 0 2px
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="druid"] .d4-skill-planner-slot-indicator,.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot-indicator {
+    background-image: unset;
+    bottom: 0;
+    transform: scale(0.8);
+    z-index: 255
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="druid"] .d4-skill-planner-slot-indicator[data-side="right"],.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot-indicator[data-side="right"] {
+    right: -2px
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="druid"] .d4-skill-planner-slot-indicator[data-side="left"],.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot-indicator[data-side="left"] {
+    left: -2px
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="druid"] .d4-skill-planner-slot-indicator:after,.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="barbarian"] .d4-skill-planner-slot-indicator:after {
+    background-image: radial-gradient(#98948d, #454240);
+    border: 2px solid #000;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    box-shadow: #454240 0 0 0 2px,#000 0 0 5px 0
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="rogue"] .d4-skill-planner-slot {
+    background-size: 120%;
+    border-radius: 50%;
+    box-shadow: inset #000 0 0 0 3px,#454240 0 0 0 2px
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="rogue"] .d4-skill-planner-slot:before {
+    display: none
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot {
+    aspect-ratio: 2 / 3;
+    background-color: #000;
+    border: 2px solid #454240;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: unset;
+    min-width: unset;
+    padding: 3px;
+    width: 70px
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot:before {
+    background-image: unset !important
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot-icon {
+    aspect-ratio: 1;
+    background-color: #731b14;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    display: flex;
+    position: relative
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot-icon:after,.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot-icon:before {
+    background: inherit;
+    background-color: unset;
+    content: "";
+    inset: 0;
+    position: absolute
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot-icon:before {
+    filter: blur(4px) brightness(0.5) hue-rotate(326deg) saturate(30)
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot-indicators {
+    align-items: center;
+    aspect-ratio: 2 / 1;
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+    justify-content: center
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot-indicator[data-type="pet-power"],.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot-indicator[data-type="pet-power"]:empty {
+    background: #1e1c1c;
+    border-radius: 50%;
+    border: 2px solid #454240;
+    box-shadow: inset 0 0 0 2px #000;
+    display: block;
+    height: 20px;
+    padding: 0;
+    position: relative;
+    width: 20px
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot-indicator[data-type="pet-power"]:after,.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot-indicator[data-type="pet-power"]:empty:after {
+    background-image: unset !important
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-choice="0"] .d4-skill-planner-slot-indicator:first-of-type {
+    background: radial-gradient(#da2020, #731b14)
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-choice="1"] .d4-skill-planner-slot-indicator:last-of-type {
+    background: radial-gradient(#da2020, #731b14)
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-choice="2"] .d4-skill-planner-slot-indicator:first-of-type {
+    background: radial-gradient(#da2020, #731b14);
+    border-radius: 0;
+    transform: rotate(45deg)
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="necromancer"] .d4-skill-planner-slot[data-choice="2"] .d4-skill-planner-slot-indicator:last-of-type {
+    display: none
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot {
+    z-index: 255
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot:before,.d4-skill-planner[data-markup="true"] .d4-skill-planner-class-feature[data-player-class="sorcerer"] .d4-skill-planner-slot:after {
+    background-image: unset !important
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-action-bar .d4-skill-planner-slot[data-assigned]:hover:after {
+    display: none
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-action-bar .d4-skill-planner-slot:not([data-assigned]) {
+    border: 2px solid #454240;
+    box-shadow: inset #000 0 0 0 4px
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-action-bar .d4-skill-planner-slot:not([data-assigned]):before {
+    display: none
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-action-bar .d4-skill-planner-slot:not([data-assigned]):after {
+    background-size: 100%
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-slot[data-slot-type="key-passive"] {
+    background-color: #000
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-slot[data-slot-type="key-passive"]:before {
+    background-image: unset;
+    box-shadow: inset 0 0 0 3px #454240
+}
+
+.d4-skill-planner[data-markup="true"] .d4-skill-planner-slot[data-slot-type="key-passive"]:after {
+    background-size: 100%;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px #454240,inset 0 0 0 5px #000
+}
+
+.d4-skill-planner[data-markup="true"][data-layout-mode="small"] .d4-skill-planner-tree-button {
+    font-size: 11px;
+    height: 30px
+}
+
+.d4-skill-planner[data-markup="true"][data-layout-mode="small"] .d4-skill-planner-class-feature {
+    margin-left: 0
+}
+
+.d4-skill-planner[data-markup="true"][data-layout-mode="small"] .d4-skill-planner-slot {
+    background-position: center;
+    background-size: 100%;
+    min-width: unset;
+    width: 40px
+}
+
+.d4-skill-planner[data-markup="true"][data-layout-mode="small"] .d4-skill-planner-slot:not([data-slot-type="feature"]):before {
+    display: none
+}
+
+.d4-skill-planner[data-markup="true"][data-layout-mode="small"] .d4-skill-planner-slot[data-slot-type="key-passive"] {
+    transform: unset
+}
+
+.d4-skill-planner[data-markup="true"][data-layout-mode="small"] .d4-skill-planner-slot[data-slot-type="key-passive"]:before {
+    display: unset
+}
+
+.d4-skill-planner[data-markup="false"][data-embedded="true"] .d4-skill-planner-header {
+    display: none
+}
+
+.d4-skill-planner[data-markup="false"][data-embedded="true"] .d4-skill-planner-points-display[data-is-sticky="true"] {
+    margin-bottom: -5em;
+    margin-top: 0
+}
+
+.d4-skill-planner-summary {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    gap: 5px;
+    height: 418px;
+    margin-top: var(--d4SkillPlanner-embedPanelMarginTop);
+    overflow: hidden auto;
+    position: relative
+}
+
+.d4-skill-planner-summary[data-requires-order="false"] {
+    gap: 0
+}
+
+.d4-skill-planner-summary[data-requires-order="false"] .d4-skill-planner-summary-progression {
+    border-radius: unset;
+    margin-right: 0
+}
+
+.d4-skill-planner-summary[data-requires-order="false"] .d4-skill-planner-summary-progression:first-of-type {
+    border-radius: 2px 2px 0 0
+}
+
+.d4-skill-planner-summary[data-requires-order="false"] .d4-skill-planner-summary-progression:last-of-type {
+    border-radius: 0 0 2px 2px
+}
+
+.d4-skill-planner-summary[data-requires-order="false"] .d4-skill-planner-summary-progression .d4-skill-planner-summary-tree {
+    border-right: unset;
+    border-bottom: unset;
+    flex-basis: 100%
+}
+
+.d4-skill-planner-summary[data-expanded="true"] {
+    height: unset;
+    overflow: unset
+}
+
+.d4-skill-planner-summary[data-expanded="true"] .d4-skill-planner-summary-progression {
+    margin-right: 0
+}
+
+.d4-skill-planner-summary .d4-skill-planner-tree-root {
+    bottom: 0;
+    margin-top: -5px
+}
+
+.d4-skill-planner-summary .d4-skill-planner-tree-button[data-id="points-height"] {
+    background-color: #731b14;
+    border-radius: 4px;
+    border: none;
+    color: #f2ebde;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 75ms;
+    aspect-ratio: 1;
+    left: 5px;
+    position: absolute;
+    top: -43px;
+    width: 38px;
+    z-index: 255
+}
+
+.d4-skill-planner-summary .d4-skill-planner-tree-button[data-id="points-height"]:empty:before {
+    margin: 0;
+    padding: 0
+}
+
+.d4-skill-planner-summary .d4-skill-planner-tree-button[data-id="points-height"]:before {
+    display: inline-block;
+    font: normal normal normal 14px FontAwesome;
+    font-size: .75em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    text-rendering: auto;
+    content: "";
+    margin-right: 10px;
+    color: #f2ebde !important;
+    transition: 75ms
+}
+
+.d4-skill-planner-summary .d4-skill-planner-tree-button[data-id="points-height"]:hover,.d4-skill-planner-summary .d4-skill-planner-tree-button[data-id="points-height"].focus-visible {
+    box-shadow: none;
+    background-color: #bf2517 !important;
+    border-color: #bf2517 !important
+}
+
+.d4-skill-planner-summary-progression {
+    background-color: #292727;
+    border-radius: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5px
+}
+
+.d4-skill-planner-summary-progression[data-layout="small"] .d4-skill-planner-summary-tree,.d4-skill-planner-summary-progression[data-layout="small"] .d4-skill-planner-summary-list,.d4-skill-planner-summary-progression[data-layout="tiny"] .d4-skill-planner-summary-tree,.d4-skill-planner-summary-progression[data-layout="tiny"] .d4-skill-planner-summary-list {
+    box-sizing: content-box;
+    padding: 10px
+}
+
+.d4-skill-planner-summary-progression[data-layout="small"] .d4-skill-planner-summary-tree,.d4-skill-planner-summary-progression[data-layout="tiny"] .d4-skill-planner-summary-tree {
+    border-bottom: 1px solid black;
+    border-right: unset
+}
+
+.d4-skill-planner-summary-progression[data-layout="small"] .d4-skill-planner-summary-list,.d4-skill-planner-summary-progression[data-layout="tiny"] .d4-skill-planner-summary-list {
+    border-left: unset;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    grid-gap: 5px
+}
+
+.d4-skill-planner-summary-progression[data-layout="tiny"] .d4-skill-planner-summary-tree,.d4-skill-planner-summary-progression[data-layout="tiny"] .d4-skill-planner-summary-list {
+    overflow: auto hidden
+}
+
+.d4-skill-planner-summary-progression[data-layout="tiny"] .d4-skill-planner-summary-tree {
+    gap: 0;
+    padding: 10px
+}
+
+.d4-skill-planner-summary-progression[data-layout="tiny"] .d4-skill-planner-summary-list {
+    padding: 10px
+}
+
+.d4-skill-planner-summary-progression[data-layout="tiny"] .d4-skill-planner-summary-list-label,.d4-skill-planner-summary-progression[data-layout="tiny"] .d4-skill-planner-summary-list-entry-skill {
+    font-size: 13px
+}
+
+.d4-skill-planner-summary-progression[data-layout="tiny"] .d4-skill-planner-summary-list-icon {
+    margin-right: 5px
+}
+
+.d4-skill-planner-summary-progression[data-layout="tiny"] .d4-skill-planner-summary-tree-skills {
+    gap: 0;
+    overflow: auto hidden
+}
+
+.d4-skill-planner-summary-skill-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.35em
+}
+
+.d4-skill-planner-summary-skill-container[data-container-type="skill-root"] {
+    align-items: flex-start;
+    flex-direction: column
+}
+
+.d4-skill-planner-summary-skill-container[data-container-type="passive"],.d4-skill-planner-summary-skill-container[data-container-type="mods"] {
+    flex-direction: row-reverse
+}
+
+.d4-skill-planner-summary-skill-container[data-container-type="passive"] {
+    gap: 0.25em
+}
+
+.d4-skill-planner-summary-skill-container[data-container-type="mods"] {
+    gap: 0.5em
+}
+
+.d4-skill-planner-summary .d4-skill-planner-summary-tree-title,.d4-skill-planner-summary .d4-skill-planner-summary-title {
+    color: #bf9c5a;
+    font-family: mrs-eaves,"Times New Roman",Times,serif;
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1em;
+    text-align: left;
+    text-transform: capitalize
+}
+
+.d4-skill-planner-summary-tree,.d4-skill-planner-summary-list {
+    align-content: flex-start;
+    box-sizing: border-box;
+    flex: 1 0 50%;
+    padding: 15px 30px
+}
+
+.d4-skill-planner-summary-tree {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-right: 1px solid black
+}
+
+.d4-skill-planner-summary-tree-skills {
+    align-items: center;
+    display: flex;
+    gap: 10px 1em;
+    position: relative
+}
+
+.d4-skill-planner-summary-tree-title {
+    order: -1
+}
+
+.d4-skill-planner-summary-list {
+    align-items: center;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    display: grid;
+    font-size: 17px;
+    font-weight: 600;
+    grid-auto-rows: max-content;
+    grid-gap: 5px 10px;
+    grid-template-columns: max-content minmax(max-content, 1fr);
+    width: 100%
+}
+
+.d4-skill-planner-summary-list-entry-skill {
+    align-items: center;
+    color: #bf9c5a;
+    display: flex;
+    line-height: 1em;
+    width: fit-content
+}
+
+.d4-skill-planner-summary-list-icon {
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 20px;
+    margin-right: 10px
+}
+
+.d4-skill-planner-summary-list-label {
+    color: #98948d;
+    line-height: 1em;
+    text-align: left;
+    text-transform: capitalize;
+    text-wrap: nowrap
+}
+
+.d4-skill-planner-summary-title {
+    grid-column: span 2
+}
+
+.d4-skill-planner-summary-skill-points {
+    background: #292727;
+    border: 2px solid #454240;
+    bottom: -11px;
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    left: 0;
+    line-height: 1em;
+    margin: auto;
+    padding: 0 2px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: fit-content;
+    z-index: 255
+}
+
+.d4-skill-planner-summary-node {
+    font-size: 40px;
+    aspect-ratio: 1;
+    height: 1em;
+    margin: 10px 0.25em;
+    position: relative
+}
+
+.d4-skill-planner-summary-node-icon {
+    background-color: #5a5753;
+    background-size: contain;
+    inset: 0;
+    position: absolute;
+    z-index: 3
+}
+
+.d4-skill-planner-summary-node-contents {
+    inset: 0;
+    position: absolute
+}
+
+.d4-skill-planner-summary-node[data-node-type="active"][data-active="true"] .d4-skill-planner-summary-node-contents:after {
+    box-shadow: inset 0 0 0 .0625em #941f14
+}
+
+.d4-skill-planner-summary-node[data-node-type="active"] .d4-skill-planner-summary-node-contents:before {
+    background-color: #000;
+    border-radius: 50%;
+    border: .0625em solid #454240;
+    content: "";
+    inset: calc(-.25em);
+    position: absolute;
+    transform-origin: center center;
+    transform: rotate(0deg);
+    z-index: 1
+}
+
+.d4-skill-planner-summary-node[data-node-type="active"] .d4-skill-planner-summary-node-contents:after {
+    background-color: #000;
+    border-radius: 50%;
+    border: .0625em solid #454240;
+    content: "";
+    inset: calc(-.25em);
+    position: absolute;
+    transform-origin: center center;
+    transform: rotate(0deg);
+    z-index: 1;
+    border-radius: unset;
+    border: unset;
+    box-shadow: inset 0 0 0 .0625em #454240;
+    inset: calc(-.125em);
+    z-index: 2
+}
+
+.d4-skill-planner-summary-node[data-node-type="hub"] .d4-skill-planner-summary-node-contents .d4-skill-planner-summary-node-icon {
+    background-color: unset
+}
+
+.d4-skill-planner-summary-node[data-node-type="hub"] .d4-skill-planner-summary-node-contents:before {
+    background-color: #000;
+    border-radius: 50%;
+    border: .0625em solid #454240;
+    content: "";
+    inset: calc(-.25em);
+    position: absolute;
+    transform-origin: center center;
+    transform: rotate(45deg);
+    z-index: 1;
+    border-radius: unset;
+    border: unset;
+    box-shadow: inset 0 0 0 .0625em #454240;
+    inset: calc(-.125em);
+    z-index: 2;
+    background-color: #292727;
+    border: .0625em solid #454240;
+    box-shadow: inset 0 0 0 .0625em #941f14;
+    z-index: 3
+}
+
+.d4-skill-planner-summary-node[data-node-type="hub"] .d4-skill-planner-summary-node-contents:after {
+    background-color: #000;
+    border-radius: 50%;
+    border: .0625em solid #454240;
+    content: "";
+    inset: calc(-.25em);
+    position: absolute;
+    transform-origin: center center;
+    transform: rotate(0deg);
+    z-index: 1;
+    border-radius: unset;
+    border: unset;
+    box-shadow: inset 0 0 0 .0625em #454240;
+    inset: calc(-.125em);
+    z-index: 2
+}
+
+.d4-skill-planner-summary-node[data-node-type="mod"] {
+    grid-column: 2;
+    grid-row: 1;
+    height: 0.8375em;
+    justify-self: center;
+    margin: 0
+}
+
+.d4-skill-planner-summary-node[data-node-type="mod"][data-mod-type="enhancement"] {
+    grid-column: 1;
+    grid-row: 2
+}
+
+.d4-skill-planner-summary-node[data-node-type="mod"][data-active="true"] .d4-skill-planner-summary-node-contents:after {
+    box-shadow: inset 0 0 0 .0625em #941f14
+}
+
+.d4-skill-planner-summary-node[data-node-type="mod"] .d4-skill-planner-summary-node-contents {
+    background-color: #454240;
+    transform-origin: center center;
+    transform: rotate(45deg);
+    z-index: 255
+}
+
+.d4-skill-planner-summary-node[data-node-type="mod"] .d4-skill-planner-summary-node-contents:after {
+    background-color: #000;
+    border-radius: 50%;
+    border: .0625em solid #454240;
+    content: "";
+    inset: calc(-.25em);
+    position: absolute;
+    transform-origin: center center;
+    transform: rotate(0deg);
+    z-index: 1;
+    border-radius: unset;
+    border: unset;
+    box-shadow: inset 0 0 0 .0625em #454240;
+    inset: calc(-.125em);
+    z-index: 2;
+    inset: .0625em
+}
+
+.d4-skill-planner-summary-node[data-node-type="mod"] .d4-skill-planner-summary-node-contents .d4-skill-planner-summary-node-icon {
+    background-size: contain;
+    clip-path: polygon(50% 10%, 90% 50%, 50% 90%, 10% 50%);
+    display: inline-block;
+    position: absolute;
+    transform-origin: center center;
+    transform: rotate(-45deg)
+}
+
+.d4-skill-planner-summary-node[data-node-type="passive"] .d4-skill-planner-summary-node-icon {
+    background-color: unset
+}
+
+.d4-skill-planner-summary-node[data-node-type="passive"] .d4-skill-planner-summary-node-contents:after {
+    background-color: #000;
+    border-radius: 50%;
+    border: .0625em solid #454240;
+    content: "";
+    inset: calc(-.25em);
+    position: absolute;
+    transform-origin: center center;
+    transform: rotate(0deg);
+    z-index: 1;
+    inset: -.125em
+}
+
+.d4-skill-planner-summary-node[data-node-type="passive"][data-active="true"] .d4-skill-planner-summary-node-contents:after {
+    border: .0625em solid #941f14
+}
+
+.d4-skill-planner-summary-node[data-node-type="key-passive"][data-active="true"] .d4-skill-planner-summary-node-contents:after {
+    background-color: #941f14
+}
+
+.d4-skill-planner-summary-node[data-node-type="key-passive"] .d4-skill-planner-summary-node-contents:after {
+    background-color: #000;
+    border-radius: 50%;
+    border: .0625em solid #454240;
+    content: "";
+    inset: calc(-.25em);
+    position: absolute;
+    transform-origin: center center;
+    transform: rotate(45deg);
+    z-index: 1;
+    border-radius: unset;
+    border: unset;
+    box-shadow: inset 0 0 0 .0625em #454240;
+    inset: calc(-.125em);
+    z-index: 2;
+    background-color: #454240;
+    inset: -.125em
+}
+
+.d4-skill-planner-summary-node[data-node-type="key-passive"] .d4-skill-planner-summary-node-contents:before {
+    background-color: #000;
+    border-radius: 50%;
+    border: .0625em solid #454240;
+    content: "";
+    inset: calc(-.25em);
+    position: absolute;
+    transform-origin: center center;
+    transform: rotate(0deg);
+    z-index: 1;
+    border-radius: unset;
+    border: unset;
+    box-shadow: inset 0 0 0 .0625em #454240;
+    inset: calc(-.125em);
+    z-index: 2;
+    background-color: unset;
+    inset: -.125em
+}
+
+.d4-skill-planner-summary-node[data-node-type="key-passive"] .d4-skill-planner-summary-node-icon {
+    border-radius: 50%;
+    box-shadow: 0 0 0 .0625em #000,0 0 0 calc(2 * .0625em) #454240
+}
+
+.d4-skill-planner-summary-node-connector {
+    font-size: inherit;
+    background: #941f14;
+    border-bottom: 2.5px solid #454240;
+    border-top: 2.5px solid #454240;
+    box-sizing: border-box;
+    display: block;
+    height: 7.5px;
+    inset: 0;
+    margin: auto;
+    pointer-events: none;
+    position: absolute;
+    transform: translateX(-100%);
+    width: 1em;
+    z-index: 0
+}
+
+.d4-skill-planner-summary-node-connector[data-node-type="hub"] {
+    border: 2.5px solid #454240;
+    height: 1em;
+    inset: 0;
+    transform: unset;
+    width: 7.5px
+}

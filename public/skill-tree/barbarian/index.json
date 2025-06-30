@@ -1,0 +1,237 @@
+{
+    "optiontechs": [
+      {
+        "image": "/skill-tech/1h_axe.png",
+        "id": 1,
+        "label": "One-Handed Axe Expertise",
+        "code": "1h Axe",
+        "details": "+ [10.0%] increased Critical Strike Chance against Injured enemies. Double this amount when using two Axes."
+      },
+      {
+        "image": "/skill-tech/1h_axe.png",
+        "id": 2,
+        "label": "One-Handed Axe Mastery",
+        "code": "1h Axe",
+        "details": "+ [15.0%] increased Damage against Injured enemies. Triple this amount when using two Axes."
+      },
+      {
+        "image": "/skill-tech/1h_axe.png",
+        "id": 3,
+        "label": "One-Handed Axe Proficiency",
+        "code": "1h Axe",
+        "details": "+ [20.0%] increased Attack Speed against Injured enemies. Quadruple this amount when using two Axes."
+      }
+    ],
+    "optionSkills": [
+      {
+        "image": "/skill-tree/barbarian/Basic/category_basic.png",
+        "id": 1,
+        "next_id": 2,
+        "label": "Basic",
+        "top": "9.16945%",
+        "left": "47.4826%",
+        "options": [
+          {
+            "id": "basic_1",
+            "image": "/skill-tree/barbarian/Basic/bash.png",
+            "label": "Bash",
+            "details": [
+              "Fury Generate: 15",
+              "Lucky Hit: 50%",
+              "<span class='text-gray-500'>Bash the enemy with your weapon, dealing<span class='text-yellow-500'> [33%] </span>damage. After bashing enemies 4 times, your next Bash will Stun for 1.25 seconds, this increases to 2 seconds if using a Two-Handed weapon.</span>"
+            ],
+            "footer": "Physical Damage"
+          },
+          {
+            "id": "basic_2",
+            "image": "/skill-tree/barbarian/Basic/flay.png",
+            "label": "Flay",
+            "details": [
+              "Fury Generate: 15",
+              "Lucky Hit: 50%",
+              "<span class='text-gray-500'>Flay the enemy, dealing <span class='text-yellow-500'> [5%]</span> damage and inflicting <span class='text-yellow-500'> [44%] </span>  Bleeding damage over 5 seconds.</span>"
+            ],
+            "footer": "Physical Damage <br/> Requires a Slashing weapon"
+          },
+          {
+            "id": "basic_3",
+            "image": "/skill-tree/barbarian/Basic/frenzy.png",
+            "label": "Frenzy",
+            "details": [
+              "Fury Generate: 4",
+              "Lucky Hit: 30%",
+              "<span class='text-gray-500'>Unleash a rapid flurry of blows, dealing <span class='text-yellow-500'>[24%]</span> damage with each pair of hits.</span>",
+              "<span class='text-gray-500'>If Frenzy hits an enemy, its Attack Speed is increased by +20% for 3 seconds, up to +60%.</span>"
+            ],
+            "footer": "Physical Damage <br/> Requires Dual Wielded weapons"
+          }
+        ]
+      },
+      {
+        "image": "/skill-tree/barbarian/Core/category_core.png",
+        "id": 2,
+        "next_id": 3,
+        "label": "Core",
+        "top": "19.7813%",
+        "left": "24.2791%",
+        "options": [
+          {
+            "id": "core_1",
+            "image": "/skill-tree/barbarian/Core/double_swing.png",
+            "label": "Double Swing",
+            "details": [
+              "Fury Cost: 25",
+              "Lucky Hit: 30%",
+              "Sweep your weapons from opposite directions, dealing [50%] damage with each weapon. Enemies caught in the center are damaged by both."
+            ],
+            "footer": "Physical Damage"
+          },
+          {
+            "id": "core_2",
+            "image": "/skill-tree/barbarian/Core/hammer_of_the_ancients.png",
+            "label": "Hammer of the Ancients",
+            "details": [
+              "Mana Cost: 25",
+              "Lucky Hit: 35%",
+              "<span class='text-gray-500'>Release a series of charged bolts that deal <span class='text-yellow-500'> [50%]</span> damage each.</span>"
+            ],
+            "footer": "Lightning Damage"
+          },
+          {
+            "id": "core_3",
+            "image": "/skill-tree/barbarian/Core/rend.png",
+            "label": "Rend",
+            "details": [
+              "Mana Cost: 30",
+              "Lucky Hit: 40%",
+              "<span class='text-gray-500'>Launch a fiery projectile that explodes on impact, dealing <span class='text-yellow-500'> [100%]</span> damage to all nearby enemies.</span>"
+            ],
+            "footer": "Fire Damage"
+          },
+          {
+            "id": "core_4",
+            "image": "/skill-tree/barbarian/Core/upheaval.png",
+            "label": "Upheaval",
+            "details": [
+              "Mana Cost: 30",
+              "Lucky Hit: 40%",
+              "<span class='text-gray-500'>Launch a fiery projectile that explodes on impact, dealing <span class='text-yellow-500'> [100%]</span> damage to all nearby enemies.</span>"
+            ],
+            "footer": "Fire Damage"
+          },
+          {
+            "id": "core_5",
+            "image": "/skill-tree/barbarian/Core/whirlwind.png",
+            "label": "whirlwind",
+            "details": [
+              "Mana Cost: 30",
+              "Lucky Hit: 40%",
+              "<span class='text-gray-500'>Launch a fiery projectile that explodes on impact, dealing <span class='text-yellow-500'> [100%]</span> damage to all nearby enemies.</span>"
+            ],
+            "footer": "Fire Damage"
+          }
+        ]
+      },
+      {
+        "image": "/skill-tree/barbarian/Defensive/category_defensive.png",
+        "id": 3,
+        "next_id": 4,
+        "label": "Defensive",
+        "top": "35.2723%",
+        "left": "57.3472%",
+        "options": [
+          {
+            "id": "defensive_1",
+            "image": "/skill-tree/barbarian/Defensive/challenging_shout.png",
+            "label": "Challenging Shout",
+            "details": [
+              "Cooldown: 30 seconds",
+              "<span class='text-gray-500'>Raise a wall of shields, reducing incoming damage by <span class='text-yellow-500'> [50%]</span> for 5 seconds.</span>"
+            ],
+            "footer": "Defensive Skill"
+          },
+          {
+            "id": "defensive_2",
+            "image": "/skill-tree/barbarian/Defensive/ground_stomp.png",
+            "label": "Ground Stomp",
+            "details": [
+              "Cooldown: 20 seconds",
+              "<span class='text-gray-500'>Temporarily harden your skin, reducing damage taken by <span class='text-yellow-500'> [30%]</span> for 8 seconds.</span>"
+            ],
+            "footer": "Defensive Skill"
+          },
+          {
+            "id": "defensive_3",
+            "image": "/skill-tree/barbarian/Defensive/iron_skin.png",
+            "label": "Iron Skin",
+            "details": [
+              "Cooldown: 25 seconds",
+              "<span class='text-gray-500'>Create a protective barrier around you that absorbs <span class='text-yellow-500'> [200%]</span> of your maximum health in damage for 6 seconds.</span>"
+            ],
+            "footer": "Defensive Skill"
+          },
+          {
+            "id": "defensive_4",
+            "image": "/skill-tree/barbarian/Defensive/rallying_cry.png",
+            "label": "Rallying Cry",
+            "details": [
+              "Cooldown: 25 seconds",
+              "<span class='text-gray-500'>Create a protective barrier around you that absorbs <span class='text-yellow-500'> [200%]</span> of your maximum health in damage for 6 seconds.</span>"
+            ],
+            "footer": "Defensive Skill"
+          }
+        ]
+      },
+      {
+        "image": "/skill-tree/barbarian/Brawling/category_brawling.png",
+        "id": 4,
+        "next_id": null,
+        "label": "Brawling",
+        "top": "50.9357%",
+        "left": "24.2668%",
+        "options": [
+          {
+            "id": "brawling_1",
+            "image": "/skill-tree/barbarian/Brawling/charge.png",
+            "label": "Charge",
+            "details": [
+              "Cooldown: 30 seconds",
+              "<span class='text-gray-500'>Raise a wall of shields, reducing incoming damage by <span class='text-yellow-500'> [50%]</span> for 5 seconds.</span>"
+            ],
+            "footer": "Defensive Skill"
+          },
+          {
+            "id": "brawling_2",
+            "image": "/skill-tree/barbarian/Brawling/kick.png",
+            "label": "Kick",
+            "details": [
+              "Cooldown: 20 seconds",
+              "<span class='text-gray-500'>Temporarily harden your skin, reducing damage taken by <span class='text-yellow-500'> [30%]</span> for 8 seconds.</span>"
+            ],
+            "footer": "Defensive Skill"
+          },
+          {
+            "id": "brawling_3",
+            "image": "/skill-tree/barbarian/Brawling/leap.png",
+            "label": "Leap",
+            "details": [
+              "Cooldown: 25 seconds",
+              "<span class='text-gray-500'>Create a protective barrier around you that absorbs <span class='text-yellow-500'> [200%]</span> of your maximum health in damage for 6 seconds.</span>"
+            ],
+            "footer": "Defensive Skill"
+          },
+          {
+            "id": "brawling_4", 
+            "image": "/skill-tree/barbarian/Brawling/war_cry.png",
+            "label": "War Cry",
+            "details": [
+              "Cooldown: 25 seconds",
+              "<span class='text-gray-500'>Create a protective barrier around you that absorbs <span class='text-yellow-500'> [200%]</span> of your maximum health in damage for 6 seconds.</span>"
+            ],
+            "footer": "Defensive Skill"
+          }
+        ]
+      }
+    ]
+  }
+  
