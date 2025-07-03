@@ -2465,7 +2465,7 @@ export const optionSkillsRogue = [
         max_rank: 5,
         rank: 0,
         powers: ["Combat", "Mobilité"],
-        image: "/skill-tree/barbarian/Basic/bash.png",
+        image: "/skill-tree/rogue/one/blade_shift.png",
         label: "Coup",
         top: "5.1185%",
         left: "45.4826%",
@@ -2517,7 +2517,7 @@ export const optionSkillsRogue = [
         max_rank: 5,
         rank: 0,
         id: "basic_2",
-        image: "/skill-tree/barbarian/Basic/flay.png",
+        image: "/skill-tree/rogue/one/qwe.png",
         label: "Écorcher",
         details: [
           "Génération de Furie : 15",
@@ -2567,7 +2567,7 @@ export const optionSkillsRogue = [
         max_rank: 5,
         rank: 0,
         id: "basic_3",
-        image: "/skill-tree/barbarian/Basic/frenzy.png",
+        image: "/skill-tree/rogue/one/puncture.png",
         label: "Frénésie",
         details: [
           "Génération de Furie : 4",
@@ -2618,7 +2618,7 @@ export const optionSkillsRogue = [
         max_rank: 5,
         rank: 0,
         id: "basic_4",
-        image: "/skill-tree/barbarian/Basic/lunging_strike.png",
+        image: "/skill-tree/rogue/one/heartseeker.png",
         label: "Frappe plongeante",
         details: [
           "Génération de Furie : 4",
@@ -2680,7 +2680,7 @@ export const optionSkillsRogue = [
         max_rank: 5,
         rank: 0,
         id: "core_1",
-        image: "/skill-tree/barbarian/Core/double_swing.png",
+        image: "/skill-tree/rogue/two/barrage.png",
         label: "Double Balancement",
         details: [
           "Coût en Furie : 25",
@@ -2730,7 +2730,7 @@ export const optionSkillsRogue = [
         id: "core_2",
         max_rank: 5,
         rank: 0,
-        image: "/skill-tree/barbarian/Core/hammer_of_the_ancients.png",
+        image: "/skill-tree/rogue/two/twisting_blades.png",
         label: "Marteau des Anciens",
         details: [
           "Coût en Mana : 25",
@@ -2780,7 +2780,7 @@ export const optionSkillsRogue = [
         max_rank: 5,
         rank: 0,
         id: "core_3",
-        image: "/skill-tree/barbarian/Core/rend.png",
+        image: "/skill-tree/rogue/two/flurry.png",
         label: "Déchirer",
         details: [
           "Coût en Mana : 30",
@@ -2830,7 +2830,7 @@ export const optionSkillsRogue = [
         max_rank: 5,
         rank: 0,
         id: "core_4",
-        image: "/skill-tree/barbarian/Core/upheaval.png",
+        image: "/skill-tree/rogue/two/penetrating_shot.png",
         label: "Soulèvement",
         details: [
           "Coût en Mana : 30",
@@ -2880,7 +2880,7 @@ export const optionSkillsRogue = [
         max_rank: 5,
         rank: 0,
         id: "core_5",
-        image: "/skill-tree/barbarian/Core/whirlwind.png",
+        image: "/skill-tree/rogue/two/rapid_fire.png",
         label: "Tourbillon",
         details: [
           "Coût en Mana : 30",
@@ -2965,7 +2965,7 @@ export const optionSkillsRogue = [
         left: "57.4377%",
         top: "30.031%",
         id: "defensive_1",
-        image: "/skill-tree/barbarian/Defensive/challenging_shout.png",
+        image: "/skill-tree/rogue/three/asd.png",
         label: "Cri de Défi",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3014,7 +3014,7 @@ export const optionSkillsRogue = [
         left: "68.4068%",
         top: "33.4418%",
         id: "defensive_2",
-        image: "/skill-tree/barbarian/Defensive/ground_stomp.png",
+        image: "/skill-tree/rogue/three/caltrops.png",
         label: "Piétinement",
         details: [
           "Temps de recharge : 20 secondes",
@@ -3063,7 +3063,7 @@ export const optionSkillsRogue = [
         left: "68.4404%",
         top: "37.4188%",
         id: "defensive_3",
-        image: "/skill-tree/barbarian/Defensive/iron_skin.png",
+        image: "/skill-tree/rogue/three/dash.png",
         label: "Peau de Fer",
         details: [
           "Temps de recharge : 25 secondes",
@@ -3112,7 +3112,7 @@ export const optionSkillsRogue = [
         left: "57.4377%",
         top: "40.5776%",
         id: "defensive_4",
-        image: "/skill-tree/barbarian/Defensive/rallying_cry.png",
+        image: "/skill-tree/rogue/three/qwe.png",
         label: "Cri de Ralliement",
         details: [
           "Temps de recharge : 25 secondes",
@@ -3194,7 +3194,7 @@ export const optionSkillsRogue = [
         top: "46.192%",
         left: "24.2048%",
         id: "brawling_1",
-        image: "/skill-tree/barbarian/Brawling/charge.png",
+        image: "/skill-tree/rogue/four/qwe.png",
         label: "Charge",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3243,7 +3243,7 @@ export const optionSkillsRogue = [
         top: "47.3276%",
         left: "16.4904%",
         id: "brawling_2",
-        image: "/skill-tree/barbarian/Brawling/kick.png",
+        image: "/skill-tree/rogue/four/asd.png",
         label: "Coup de Pied",
         details: [
           "Temps de recharge : 20 secondes",
@@ -3292,7 +3292,7 @@ export const optionSkillsRogue = [
         top: "53.6447%",
         left: "11.6365%",
         id: "brawling_3",
-        image: "/skill-tree/barbarian/Brawling/leap.png",
+        image: "/skill-tree/rogue/four/zxc.png",
         label: "Bond",
         details: [
           "Temps de recharge : 25 secondes",
@@ -3341,7 +3341,7 @@ export const optionSkillsRogue = [
         top: "56.192%",
         left: "16.4904%",
         id: "brawling_4",
-        image: "/skill-tree/barbarian/Brawling/war_cry.png",
+        image: "/skill-tree/rogue/four/poi.png",
         label: "Cri de Guerre",
         details: [
           "Temps de recharge : 25 secondes",
@@ -3423,7 +3423,7 @@ export const optionSkillsRogue = [
         top: "66.4738%",
         left: "47.0431%",
         id: "weapon_mastery_1",
-        image: "/skill-tree/barbarian/WeaponMastery/death_blow.png",
+        image: "/skill-tree/rogue/five/asd.png",
         label: "Coup Mortel",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3472,7 +3472,7 @@ export const optionSkillsRogue = [
         top: "62.6871%",
         left: "65.1668%",
         id: "weapon_mastery_2",
-        image: "/skill-tree/barbarian/WeaponMastery/rupture.png",
+        image: "/skill-tree/rogue/five/zxc.png",
         label: "Rupture",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3521,7 +3521,7 @@ export const optionSkillsRogue = [
         left: "65.3227%",
         top: "70.2345%",
         id: "weapon_mastery_3",
-        image: "/skill-tree/barbarian/WeaponMastery/steel_grasp.png",
+        image: "/skill-tree/rogue/five/qwe.png",
         label: "Poigne d'Acier",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3612,7 +3612,7 @@ export const optionSkillsRogue = [
         top: "77.2501%",
         left: "24.1219%",
         id: "ultimate_1",
-        image: "/skill-tree/barbarian/Ultimate/call_of_the_ancients.png",
+        image: "/skill-tree/rogue/six/asd.png",
         label: "Appel des Anciens",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3650,7 +3650,7 @@ export const optionSkillsRogue = [
         top: "82.0058%",
         left: "13.735%",
         id: "ultimate_2",
-        image: "/skill-tree/barbarian/Ultimate/iron_maelstrom.png",
+        image: "/skill-tree/rogue/six/qwe.png",
         label: "Maelström de Fer",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3688,7 +3688,7 @@ export const optionSkillsRogue = [
         top: "86.7843%",
         left: "24.2647%",
         id: "ultimate_3",
-        image: "/skill-tree/barbarian/Ultimate/wrath_of_the_berserker.png",
+        image: "/skill-tree/rogue/six/zxc.png",
         label: "Colère du Berserker",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3701,7 +3701,7 @@ export const optionSkillsRogue = [
             parent_id: "ultimate_3",
             max_rank: 1,
             rank: 0,
-            top: "89.7%",
+            top: "91.7%",
             left: "24.3%",
             notes:
               "Tant que Courroux du berserker est actif, votre vitesse de déplacement est augmentée de 20%[+] et votre génération de fureur de 30%[x].",
@@ -3712,7 +3712,7 @@ export const optionSkillsRogue = [
             parent_id: "ultimate_3_1",
             max_rank: 1,
             rank: 0,
-            top: "92.7%",
+            top: "93.7%",
             left: "24.3%",
             notes:
               "Tant que Courroux du berserker est actif, le bonus aux dégâts de l’effet de Rage du berserker est augmenté de 25%[x] chaque fois que vous dépensez 50 points de fureur, jusqu’à un maximum de 100%[x].",
@@ -3773,14 +3773,14 @@ export const optionSkillsRogue = [
     label: "Secondaire",
     left: "47.2953%",
     top: "90.4803%",
-    secondOptions: [
+    options: [
       {
         max_rank: 1,
         rank: 0,
         top: "90.4809%",
         left: "34.3868%",
         id: "second_1",
-        image: "/skill-tree/barbarian/second/unconstrained.png",
+        image: "/skill-tree/rogue/seven/mnb.png",
         label: "Sans Contrainte",
         details: ["Temps de recharge : 30 secondes"],
       },
@@ -3790,7 +3790,7 @@ export const optionSkillsRogue = [
         top: "90.4809%",
         left: "60.1901%",
         id: "second_2",
-        image: "/skill-tree/barbarian/second/gushing_wounds.png",
+        image: "/skill-tree/rogue/seven/asd.png",
         label: "Blessures Jaillissantes",
         details: ["Temps de recharge : 30 secondes"],
       },
@@ -3800,7 +3800,7 @@ export const optionSkillsRogue = [
         top: "95.2156%",
         left: "55.3384%",
         id: "second_3",
-        image: "/skill-tree/barbarian/second/unbridled_rage.png",
+        image: "/skill-tree/rogue/seven/qaz.png",
         label: "Rage Débridée",
         details: ["Temps de recharge : 30 secondes"],
       },
@@ -3810,8 +3810,28 @@ export const optionSkillsRogue = [
         top: "95.3286%",
         left: "39.0589%",
         id: "second_4",
-        image: "/skill-tree/barbarian/second/walking_arsenal.png",
+        image: "/skill-tree/rogue/seven/zxc.png",
         label: "Arsenal Ambulant",
+        details: ["Temps de recharge : 30 secondes"],
+      },
+      {
+        max_rank: 1,
+        rank: 0,
+        top: "84.4809%",
+        left: "47.1901%",
+        id: "second_5",
+        image: "/skill-tree/rogue/seven/qwe.png",
+        label: "Blessures Jaillissantes",
+        details: ["Temps de recharge : 30 secondes"],
+      },
+      {
+        max_rank: 1,
+        rank: 0,
+        top: "95.4809%",
+        left: "47.1901%",
+        id: "second_6",
+        image: "/skill-tree/rogue/seven/poi.png",
+        label: "Blessures Jaillissantes",
         details: ["Temps de recharge : 30 secondes"],
       },
     ],

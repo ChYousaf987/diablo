@@ -61,25 +61,42 @@ const slice = createSlice({
       state.notes = action.payload;
     },
     updateCategory: (state, action) => {
-      state.category = action.payload;
-
-      state.gearLeft = data[action.payload].gearLeft;
-      state.gearRight = data[action.payload].gearRight;
-      state.gems = data[action.payload].gems;
-      state.skills = data[action.payload].skills;
-      state.techniques = data[action.payload].techniques;
-      state.optionSkills = data[action.payload].optionSkills;
-      state.paragon_builds = data[action.payload].paragon_builds;
-      state.optionTechs = data[action.payload].optiontechs;
-
+      const newCategory = action.payload;
+      state.category = newCategory;
+      state.gearLeft = data[newCategory].gearLeft;
+      state.gearRight = data[newCategory].gearRight;
+      state.gems = data[newCategory].gems;
+      state.skills = data[newCategory].skills;
+      state.techniques = data[newCategory].techniques;
+      state.optionSkills = data[newCategory].optionSkills;
+      state.optionTechs = data[newCategory].optiontechs;
+      // Reset paragon_builds to the new class's default Paragon boards
+      state.paragon_builds = data[newCategory].paragon_builds.map(
+        (paragon) => ({
+          ...paragon,
+          is_active: paragon.is_active || false,
+          top: paragon.top || 0,
+          left: paragon.left || 0,
+          bord: paragon.bord.map((row) =>
+            row.map((node) => ({
+              ...node,
+              active: node.active || false,
+            }))
+          ),
+        })
+      );
+      console.log(
+        `Updated paragon_builds for category: ${newCategory}`,
+        state.paragon_builds
+      );
       state.variants = [
         {
           name: "",
-          gearLeft: data[action.payload].gearLeft,
-          gearRight: data[action.payload].gearRight,
-          gems: data[action.payload].gems,
-          skills: data[action.payload].skills,
-          techniques: data[action.payload].techniques,
+          gearLeft: data[newCategory].gearLeft,
+          gearRight: data[newCategory].gearRight,
+          gems: data[newCategory].gems,
+          skills: data[newCategory].skills,
+          techniques: data[newCategory].techniques,
         },
       ];
     },
@@ -209,11 +226,8 @@ const slice = createSlice({
       };
       state.optionSkills = updateSkillsScore(state.optionSkills);
     },
-
-    // selectParagonBuilds
     updateParagonBuildDemansion: (state, action) => {
       const { id, newDemansion } = action.payload;
-      // find in paragon_builds by id
       const newParagonBuilds = state.paragon_builds.map((paragon) => {
         if (paragon.id === id) {
           return {
@@ -225,12 +239,11 @@ const slice = createSlice({
         }
         return paragon;
       });
-      // console.log(id, newDemansion);
       state.paragon_builds = newParagonBuilds;
+      console.log(`Updated demansion for id: ${id}`, state.paragon_builds);
     },
     updateBordItem: (state, action) => {
       const { id, active } = action.payload;
-
       const newParagonBuilds = state.paragon_builds.map((paragon) => {
         return {
           ...paragon,
@@ -241,10 +254,8 @@ const slice = createSlice({
           ),
         };
       });
-
       state.paragon_builds = newParagonBuilds;
     },
-
     initailizeGear: (state, action) => {
       const { build, variants } = action.payload;
       const paragons = build.paragons;
@@ -356,7 +367,6 @@ export const selectId = (state) => state.gear.id;
 export const selectOptionSkills = (state) => state.gear.optionSkills;
 export const selectMaxLevel = (state) => state.gear.maxLevel;
 export const selectParagonBuilds = (state) => state.gear.paragon_builds;
-// maxLevelParagon
 export const selectMaxLevelParagon = (state) => state.gear.maxLevelParagon;
 export const selectBossPowers = (state) => state.gear.bossPowers;
 export const selectOptionTechs = (state) => state.gear.optionTechs;

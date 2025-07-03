@@ -2110,7 +2110,7 @@ export const optionSkillsSpiritborn = [
         max_rank: 5,
         rank: 0,
         powers: ["Combat", "Mobilité"],
-        image: "/skill-tree/barbarian/Basic/bash.png",
+        image: "/skill-tree/stiritbon/one/zxc.png",
         label: "Coup",
         top: "5.1185%",
         left: "45.4826%",
@@ -2162,7 +2162,7 @@ export const optionSkillsSpiritborn = [
         max_rank: 5,
         rank: 0,
         id: "basic_2",
-        image: "/skill-tree/barbarian/Basic/flay.png",
+        image: "/skill-tree/stiritbon/one/asd.png",
         label: "Écorcher",
         details: [
           "Génération de Furie : 15",
@@ -2212,7 +2212,7 @@ export const optionSkillsSpiritborn = [
         max_rank: 5,
         rank: 0,
         id: "basic_3",
-        image: "/skill-tree/barbarian/Basic/frenzy.png",
+        image: "/skill-tree/stiritbon/one/qwe.png",
         label: "Frénésie",
         details: [
           "Génération de Furie : 4",
@@ -2263,7 +2263,7 @@ export const optionSkillsSpiritborn = [
         max_rank: 5,
         rank: 0,
         id: "basic_4",
-        image: "/skill-tree/barbarian/Basic/lunging_strike.png",
+        image: "/skill-tree/stiritbon/one/qaz.png",
         label: "Frappe plongeante",
         details: [
           "Génération de Furie : 4",
@@ -2325,7 +2325,7 @@ export const optionSkillsSpiritborn = [
         max_rank: 5,
         rank: 0,
         id: "core_1",
-        image: "/skill-tree/barbarian/Core/double_swing.png",
+        image: "/skill-tree/stiritbon/two/qwe.png",
         label: "Double Balancement",
         details: [
           "Coût en Furie : 25",
@@ -2375,7 +2375,7 @@ export const optionSkillsSpiritborn = [
         id: "core_2",
         max_rank: 5,
         rank: 0,
-        image: "/skill-tree/barbarian/Core/hammer_of_the_ancients.png",
+        image: "/skill-tree/stiritbon/two/zxc.png",
         label: "Marteau des Anciens",
         details: [
           "Coût en Mana : 25",
@@ -2425,7 +2425,7 @@ export const optionSkillsSpiritborn = [
         max_rank: 5,
         rank: 0,
         id: "core_3",
-        image: "/skill-tree/barbarian/Core/rend.png",
+        image: "/skill-tree/stiritbon/two/rake.png",
         label: "Déchirer",
         details: [
           "Coût en Mana : 30",
@@ -2475,7 +2475,7 @@ export const optionSkillsSpiritborn = [
         max_rank: 5,
         rank: 0,
         id: "core_4",
-        image: "/skill-tree/barbarian/Core/upheaval.png",
+        image: "/skill-tree/stiritbon/two/asd.png",
         label: "Soulèvement",
         details: [
           "Coût en Mana : 30",
@@ -2587,7 +2587,7 @@ export const optionSkillsSpiritborn = [
         left: "57.4377%",
         top: "30.031%",
         id: "defensive_1",
-        image: "/skill-tree/barbarian/Defensive/challenging_shout.png",
+        image: "/skill-tree/stiritbon/three/zaq.png",
         label: "Cri de Défi",
         details: [
           "Temps de recharge : 30 secondes",
@@ -2636,7 +2636,7 @@ export const optionSkillsSpiritborn = [
         left: "63.4068%",
         top: "33.4418%",
         id: "defensive_2",
-        image: "/skill-tree/barbarian/Defensive/ground_stomp.png",
+        image: "/skill-tree/stiritbon/three/zxc.png",
         label: "Piétinement",
         details: [
           "Temps de recharge : 20 secondes",
@@ -2685,7 +2685,7 @@ export const optionSkillsSpiritborn = [
         left: "66.4404%",
         top: "39.4188%",
         id: "defensive_3",
-        image: "/skill-tree/barbarian/Defensive/iron_skin.png",
+        image: "/skill-tree/stiritbon/three/asd.png",
         label: "Peau de Fer",
         details: [
           "Temps de recharge : 25 secondes",
@@ -2734,7 +2734,7 @@ export const optionSkillsSpiritborn = [
         left: "57.4377%",
         top: "40.5776%",
         id: "defensive_4",
-        image: "/skill-tree/barbarian/Defensive/rallying_cry.png",
+        image: "/skill-tree/stiritbon/three/qwe.png",
         label: "Cri de Ralliement",
         details: [
           "Temps de recharge : 25 secondes",
@@ -2868,7 +2868,7 @@ export const optionSkillsSpiritborn = [
         top: "46.192%",
         left: "24.2048%",
         id: "brawling_1",
-        image: "/skill-tree/barbarian/Brawling/charge.png",
+        image: "/skill-tree/stiritbon/four/poi.png",
         label: "Charge",
         details: [
           "Temps de recharge : 30 secondes",
@@ -2917,7 +2917,7 @@ export const optionSkillsSpiritborn = [
         top: "47.3276%",
         left: "16.4904%",
         id: "brawling_2",
-        image: "/skill-tree/barbarian/Brawling/kick.png",
+        image: "/skill-tree/stiritbon/four/qwe.png",
         label: "Coup de Pied",
         details: [
           "Temps de recharge : 20 secondes",
@@ -2966,7 +2966,7 @@ export const optionSkillsSpiritborn = [
         top: "53.6447%",
         left: "11.6365%",
         id: "brawling_3",
-        image: "/skill-tree/barbarian/Brawling/leap.png",
+        image: "/skill-tree/stiritbon/four/asd.png",
         label: "Bond",
         details: [
           "Temps de recharge : 25 secondes",
@@ -3015,7 +3015,7 @@ export const optionSkillsSpiritborn = [
         top: "56.192%",
         left: "16.4904%",
         id: "brawling_4",
-        image: "/skill-tree/barbarian/Brawling/war_cry.png",
+        image: "/skill-tree/stiritbon/four/zxc.png",
         label: "Cri de Guerre",
         details: [
           "Temps de recharge : 25 secondes",
@@ -3175,7 +3175,7 @@ export const optionSkillsSpiritborn = [
         top: "66.4738%",
         left: "47.0431%",
         id: "weapon_mastery_1",
-        image: "/skill-tree/barbarian/WeaponMastery/death_blow.png",
+        image: "/skill-tree/stiritbon/five/qaz.png",
         label: "Coup Mortel",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3224,7 +3224,7 @@ export const optionSkillsSpiritborn = [
         top: "62.6871%",
         left: "65.1668%",
         id: "weapon_mastery_2",
-        image: "/skill-tree/barbarian/WeaponMastery/rupture.png",
+        image: "/skill-tree/stiritbon/five/zxc.png",
         label: "Rupture",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3273,7 +3273,7 @@ export const optionSkillsSpiritborn = [
         top: "72.6871%",
         left: "58.4668%",
         id: "weapon_mastery_4",
-        image: "/skill-tree/barbarian/WeaponMastery/rupture.png",
+        image: "/skill-tree/stiritbon/five/asd.png",
         label: "Élevez",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3322,7 +3322,7 @@ export const optionSkillsSpiritborn = [
         left: "65.3227%",
         top: "71.2345%",
         id: "weapon_mastery_3",
-        image: "/skill-tree/barbarian/WeaponMastery/steel_grasp.png",
+        image: "/skill-tree/stiritbon/five/qwe.png",
         label: "Poigne d'Acier",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3407,7 +3407,7 @@ export const optionSkillsSpiritborn = [
         top: "77.2501%",
         left: "24.1219%",
         id: "ultimate_1",
-        image: "/skill-tree/barbarian/Ultimate/call_of_the_ancients.png",
+        image: "/skill-tree/stiritbon/six/poi.png",
         label: "Appel des Anciens",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3445,7 +3445,7 @@ export const optionSkillsSpiritborn = [
         top: "82.0058%",
         left: "13.735%",
         id: "ultimate_2",
-        image: "/skill-tree/barbarian/Ultimate/iron_maelstrom.png",
+        image: "/skill-tree/stiritbon/six/zxc.png",
         label: "Maelström de Fer",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3483,7 +3483,7 @@ export const optionSkillsSpiritborn = [
         top: "86.7843%",
         left: "25.4647%",
         id: "ultimate_3",
-        image: "/skill-tree/barbarian/Ultimate/wrath_of_the_berserker.png",
+        image: "/skill-tree/stiritbon/six/qwe.png",
         label: "Colère du Berserker",
         details: [
           "Temps de recharge : 30 secondes",
@@ -3517,6 +3517,46 @@ export const optionSkillsSpiritborn = [
           },
         ],
       },
+      {
+        max_rank: 5,
+        rank: 0,
+        top: "86.7843%",
+        left: "20.4647%",
+        id: "ultimate_4",
+        image: "/skill-tree/stiritbon/six/asd.png",
+        label: "Colère du Berserker",
+        details: [
+          "Temps de recharge : 30 secondes",
+          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+        ],
+        footer: "Compétence Défensive",
+        children: [
+          {
+            id: "ultimate_4_1",
+            parent_id: "ultimate_4",
+            max_rank: 1,
+            rank: 0,
+            top: "91.1%",
+            label: "Colère du Berserker 1",
+            left: "20.3%",
+            notes:
+              "Tant que Courroux du berserker est actif, votre vitesse de déplacement est augmentée de 20%[+] et votre génération de fureur de 30%[x].",
+            isChild: true,
+          },
+          {
+            id: "ultimate_4_2",
+            parent_id: "ultimate_4_1",
+            max_rank: 1,
+            rank: 0,
+            top: "94.7%",
+            left: "20.3%",
+            label: "Colère du Berserker 2",
+            notes:
+              "Tant que Courroux du berserker est actif, le bonus aux dégâts de l’effet de Rage du berserker est augmenté de 25%[x] chaque fois que vous dépensez 50 points de fureur, jusqu’à un maximum de 100%[x].",
+            isChild: true,
+          },
+        ],
+      },
     ],
     secondOptions: [
       {
@@ -3539,14 +3579,14 @@ export const optionSkillsSpiritborn = [
     label: "Secondaire",
     left: "47.2953%",
     top: "90.4803%",
-    secondOptions: [
+    options: [
       {
         max_rank: 1,
         rank: 0,
         top: "94.6286%",
         left: "47.2953%",
         id: "second_1",
-        image: "/skill-tree/barbarian/second/unconstrained.png",
+        image: "/skill-tree/stiritbon/seven/qaz.png",
         label: "Sans Contrainte",
         details: ["Temps de recharge : 30 secondes"],
       },
@@ -3556,7 +3596,7 @@ export const optionSkillsSpiritborn = [
         top: "87.4809%",
         left: "50.3868%",
         id: "second_5",
-        image: "/skill-tree/barbarian/second/unconstrained.png",
+        image: "/skill-tree/stiritbon/seven/zxc.png",
         label: "Sans Certa",
         details: ["Temps de recharge : 30 secondes"],
       },
@@ -3566,7 +3606,7 @@ export const optionSkillsSpiritborn = [
         top: "90.4809%",
         left: "57.1901%",
         id: "second_2",
-        image: "/skill-tree/barbarian/second/gushing_wounds.png",
+        image: "/skill-tree/stiritbon/seven/asd.png",
         label: "Blessures Jaillissantes",
         details: ["Temps de recharge : 30 secondes"],
       },
@@ -3576,7 +3616,7 @@ export const optionSkillsSpiritborn = [
         top: "95.2156%",
         left: "53.3384%",
         id: "second_3",
-        image: "/skill-tree/barbarian/second/unbridled_rage.png",
+        image: "/skill-tree/stiritbon/seven/qwe.png",
         label: "Rage Débridée",
         details: ["Temps de recharge : 30 secondes"],
       },

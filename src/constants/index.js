@@ -117,7 +117,10 @@ export const socialLinks = [
   { route: "https://linkedin.com/in/vercel", label: "LinkedIn" },
 ];
 
-export const seasons = [{ value: "Season 8", label: "Saison 8" }];
+export const seasons = [
+  { value: "Season 8", label: "Saison 8" },
+  { value: "Season 9", label: "Saison 9" },
+];
 
 export const categories = [
   {
@@ -141,6 +144,7 @@ export const categories = [
     image: "necromancer.png",
     description: "Calculateur de planification de construction pour Diablo 4",
   },
+
   {
     value: "rogue",
     label: "Voleur",

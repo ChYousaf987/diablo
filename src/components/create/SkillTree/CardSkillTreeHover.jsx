@@ -234,9 +234,9 @@ export default function CardSkillTreeHover({
             </span>
           )}
         </HoverCardTrigger>
-        <HoverCardContent className="bg-[#15161a] text-white max-w-[300px] w-full p-1">
+        <HoverCardContent className="bg-[#15161a] bg-opacity-100 text-white max-w-[300px] w-full p-2 border border-[#2c2d31] shadow-xl rounded-md z-[999]">
           <div>
-            <div className="flex justify-center gap-2">
+            <div className="flex justify-center gap-2 ">
               <Image
                 src={`${item.image}`}
                 className="transition-all hover:scale-105"
