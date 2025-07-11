@@ -48,10 +48,7 @@ const slice = createSlice({
       const { id, newBossPowers } = action.payload;
       const newBossPowersList = state.bossPowers.map((bossPower) => {
         if (bossPower.id === id) {
-          return {
-            ...bossPower,
-            powers: newBossPowers,
-          };
+          return { ...bossPower, powers: newBossPowers };
         }
         return bossPower;
       });
@@ -70,7 +67,6 @@ const slice = createSlice({
       state.techniques = data[newCategory].techniques;
       state.optionSkills = data[newCategory].optionSkills;
       state.optionTechs = data[newCategory].optiontechs;
-      // Reset paragon_builds to the new class's default Paragon boards
       state.paragon_builds = data[newCategory].paragon_builds.map(
         (paragon) => ({
           ...paragon,
@@ -78,16 +74,9 @@ const slice = createSlice({
           top: paragon.top || 0,
           left: paragon.left || 0,
           bord: paragon.bord.map((row) =>
-            row.map((node) => ({
-              ...node,
-              active: node.active || false,
-            }))
+            row.map((node) => ({ ...node, active: node.active || false }))
           ),
         })
-      );
-      console.log(
-        `Updated paragon_builds for category: ${newCategory}`,
-        state.paragon_builds
       );
       state.variants = [
         {
@@ -193,35 +182,54 @@ const slice = createSlice({
       const { skillId, newScore } = action.payload;
       const updateSkillsScore = (skills) => {
         return skills.map((skill) => {
+          let updatedSkill = { ...skill };
+
           if (skill.id === skillId) {
             return { ...skill, rank: newScore };
           }
 
-          if (skill.secondOptions && skill.secondOptions.length > 0) {
-            for (let i = 0; i < skill.secondOptions?.length; i++) {
-              if (skill.secondOptions[i].id === skillId) {
-                skill.secondOptions[i].rank = newScore;
-                return skill;
-              }
-            }
-          }
-
           if (skill.options && skill.options.length > 0) {
-            for (let i = 0; i < skill.options?.length; i++) {
-              if (skill.options[i].id === skillId) {
-                skill.options[i].rank = newScore;
-                return skill;
+            const updatedOptions = skill.options.map((option) => {
+              if (option.id === skillId) {
+                return { ...option, rank: newScore };
               }
-              for (let j = 0; j < skill.options[i].children?.length; j++) {
-                if (skill.options[i].children[j].id === skillId) {
-                  skill.options[i].children[j].rank = newScore;
-                  return skill;
-                }
+              if (option.children && option.children.length > 0) {
+                const updatedChildren = option.children.map((child) => {
+                  if (child.id === skillId) {
+                    return { ...child, rank: newScore };
+                  }
+                  return child;
+                });
+                return { ...option, children: updatedChildren };
               }
-            }
+              return option;
+            });
+            updatedSkill = { ...updatedSkill, options: updatedOptions };
           }
 
-          return skill;
+          if (skill.secondOptions && skill.secondOptions.length > 0) {
+            const updatedSecondOptions = skill.secondOptions.map((option) => {
+              if (option.id === skillId) {
+                return { ...option, rank: newScore };
+              }
+              if (option.children && option.children.length > 0) {
+                const updatedChildren = option.children.map((child) => {
+                  if (child.id === skillId) {
+                    return { ...child, rank: newScore };
+                  }
+                  return child;
+                });
+                return { ...option, children: updatedChildren };
+              }
+              return option;
+            });
+            updatedSkill = {
+              ...updatedSkill,
+              secondOptions: updatedSecondOptions,
+            };
+          }
+
+          return updatedSkill;
         });
       };
       state.optionSkills = updateSkillsScore(state.optionSkills);
@@ -240,7 +248,6 @@ const slice = createSlice({
         return paragon;
       });
       state.paragon_builds = newParagonBuilds;
-      console.log(`Updated demansion for id: ${id}`, state.paragon_builds);
     },
     updateBordItem: (state, action) => {
       const { id, active } = action.payload;
@@ -313,7 +320,20 @@ const slice = createSlice({
                 secondOptions: skill.secondOptions
                   ? skill.secondOptions?.map((option) => {
                       const update = skill_tree.find((s) => s.id === option.id);
-                      return update ? { ...option, rank: update.rank } : option;
+                      const children =
+                        option.children && option.children.length > 0
+                          ? option.children.map((child) => {
+                              const update = skill_tree.find(
+                                (s) => s.id === child.id
+                              );
+                              return update
+                                ? { ...child, rank: update.rank }
+                                : child;
+                            })
+                          : [];
+                      return update
+                        ? { ...option, rank: update.rank, children }
+                        : { ...option, children };
                     })
                   : [],
               };
@@ -351,6 +371,7 @@ export const {
   handleCopyVariant,
   updateBossPowers,
 } = slice.actions;
+
 export const selectGearLeft = (state) => state.gear.gearLeft;
 export const selectGearRight = (state) => state.gear.gearRight;
 export const selectGems = (state) => state.gear.gems;
@@ -370,4 +391,5 @@ export const selectParagonBuilds = (state) => state.gear.paragon_builds;
 export const selectMaxLevelParagon = (state) => state.gear.maxLevelParagon;
 export const selectBossPowers = (state) => state.gear.bossPowers;
 export const selectOptionTechs = (state) => state.gear.optionTechs;
+
 export default slice.reducer;

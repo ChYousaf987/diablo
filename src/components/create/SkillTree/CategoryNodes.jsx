@@ -41,7 +41,6 @@ const CategoryNodes = ({ category }) => (
             />
           );
         })}
-        {/* Add connections to linked secondOptions */}
         {option.linkedSecondOptions?.map((secondOptionId) => {
           const secondOption = category.secondOptions?.find(
             (so) => so.id === secondOptionId
@@ -89,7 +88,7 @@ const CategoryNodes = ({ category }) => (
               top={child.top}
               left={child.left}
               item={itemChild}
-              size={30} // Maintain the same size as parent
+              size={30}
               children={secondOption.children}
               min_score={category.min_score}
               type="secondOptionChild"
@@ -98,7 +97,6 @@ const CategoryNodes = ({ category }) => (
         })}
       </React.Fragment>
     ))}
-  
   </>
 );
 

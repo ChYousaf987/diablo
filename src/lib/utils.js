@@ -1,4 +1,3 @@
-// import { data } from "autoprefixer";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -18,18 +17,15 @@ export function sumScores(skills) {
 }
 
 export const generateConnections = (skillsData) => {
-  // Initialize all connection arrays
   let connections = [];
   let connectionChild = [];
   let ConectionOptions = [];
   let ConectionSecondOptions = [];
   let SecondOptionChild = [];
 
-  // Iterate through each category in skillsData
   skillsData.forEach((category) => {
     const fromNodeId = category.id.toString();
 
-    // Handle main category connections
     if (category.next_id) {
       const toNodeId = category.next_id.toString();
       const connectionId = `connection_${fromNodeId}_${toNodeId}`;
@@ -41,12 +37,10 @@ export const generateConnections = (skillsData) => {
       });
     }
 
-    // Handle main options and their connections
     category.options?.forEach((option) => {
       const optionNodeId = option.id.toString();
       const optionConnectionId = `connection_${fromNodeId}_${optionNodeId}`;
 
-      // Add connection from category to option
       ConectionOptions.push({
         from: `node${fromNodeId}`,
         to: `node${optionNodeId}`,
@@ -54,11 +48,9 @@ export const generateConnections = (skillsData) => {
         child: true,
       });
 
-      // Handle option's next connections if they exist
       if (option.next_id) {
         const nextNodeId = option.next_id.toString();
         const nextConnectionId = `connection_${optionNodeId}_${nextNodeId}`;
-
         ConectionOptions.push({
           from: `node${optionNodeId}`,
           to: `node${nextNodeId}`,
@@ -66,27 +58,21 @@ export const generateConnections = (skillsData) => {
         });
       }
 
-      // Handle option's children connections
       option.children?.forEach((child) => {
         const childParentId = child.parent_id.toString();
         const childNodeId = child.id.toString();
         const childConnectionId = `connection_${childParentId}_${childNodeId}`;
-
         connectionChild.push({
           from: `node${childParentId}`,
           to: `node${childNodeId}`,
           id: childConnectionId,
         });
       });
-
-      // Handle option's connections to secondOptions
     });
 
-    // Handle secondOptions and their connections
     category.secondOptions?.forEach((secondOption) => {
       const secondOptionId = secondOption.id.toString();
 
-      // 1. Connect category to secondOption
       if (!secondOption.parent_id) {
         const secondOptionConnectionId = `connection_${fromNodeId}_${secondOptionId}`;
         ConectionOptions.push({
@@ -97,44 +83,21 @@ export const generateConnections = (skillsData) => {
         });
       }
 
-      // 2. Handle secondOption children
       secondOption.children?.forEach((child) => {
         const childNodeId = child.id.toString();
-        const childParentId = child.parent_id.toString();
-
-        // a) Connect child to its secondOption parent
-        // const childConnectionId = `second_child_connection_${childParentId}_${childNodeId}`;
-        // SecondOptionChild.push({
-        //   from: `node${childParentId}`,
-        //   to: `node${childNodeId}`,
-        //   id: childConnectionId,
-        //   isSecondOptionChild: true,
-        // });
-        // a) Connect child to its secondOption parent if can have multiple parents, check if it's a string then use already implemented connection otherwise get parent_id as array
-        if (typeof child.parent_id === "string") {
-          const childConnectionId = `second_child_connection_${childParentId}_${childNodeId}`;
+        const parentIds = Array.isArray(child.parent_id)
+          ? child.parent_id.map((id) => id.toString())
+          : [child.parent_id.toString()];
+        parentIds.forEach((parentId) => {
+          const childConnectionId = `second_child_connection_${parentId}_${childNodeId}`;
           SecondOptionChild.push({
-            from: `node${childParentId}`,
+            from: `node${parentId}`,
             to: `node${childNodeId}`,
             id: childConnectionId,
             isSecondOptionChild: true,
           });
-        } else {
-          const parentIds = Array.isArray(child.parent_id)
-            ? child.parent_id
-            : [child.parent_id];
-          parentIds.forEach((parentId) => {
-            const childConnectionId = `second_child_connection_${parentId}_${childNodeId}`;
-            SecondOptionChild.push({
-              from: `node${parentId}`,
-              to: `node${childNodeId}`,
-              id: childConnectionId,
-              isSecondOptionChild: true,
-            });
-          });
-        }
+        });
 
-        // b) Connect child to another option (if linkedOptionId exists)
         if (Array.isArray(child.linkedOptionId)) {
           const linkedOptionIds = child.linkedOptionId.map((id) =>
             id.toString()
@@ -161,6 +124,7 @@ export const generateConnections = (skillsData) => {
             });
           });
         }
+
         if (Array.isArray(child.linkedSecondOptionIds)) {
           child.linkedSecondOptionIds.forEach((linkedSecondOptionId) => {
             if (linkedSecondOptionId) {
@@ -176,7 +140,6 @@ export const generateConnections = (skillsData) => {
         }
       });
 
-      // 3. Connect secondOption to its next option (if exists)
       if (secondOption.next_id) {
         const nextNodeId = secondOption.next_id.toString();
         const nextConnectionId = `connection_${secondOptionId}_${nextNodeId}`;
@@ -189,19 +152,17 @@ export const generateConnections = (skillsData) => {
     });
   });
 
-  // Return all connection types
   return {
-    connections: connections, // Category to category connections
-    Child: connectionChild, // Option children connections
-    Options: ConectionOptions, // Category to option connections
-    SecondOptions: ConectionSecondOptions, // Option to secondOption connections
-    SecondOptionChild: SecondOptionChild, // SecondOption children connections
+    connections,
+    Child: connectionChild,
+    Options: ConectionOptions,
+    SecondOptions: ConectionSecondOptions,
+    SecondOptionChild,
   };
 };
 
 export const findItemsInBordByIds = (optionSParagon, ids) => {
   const foundItems = [];
-
   for (const id of ids) {
     for (const item of optionSParagon) {
       for (const row of item.bord) {
@@ -213,7 +174,6 @@ export const findItemsInBordByIds = (optionSParagon, ids) => {
       }
     }
   }
-
   return foundItems;
 };
 
@@ -228,21 +188,19 @@ export const countActiveAndInactive = (paragons) => {
         if (node.active === true) {
           activeCount++;
         } else if (node.active === false) {
-          return;
+          inactiveCount++;
         } else {
-          return;
+          nullCount++;
         }
       });
     });
   });
-  activeCount = activeCount;
 
   return { activeCount, inactiveCount, nullCount };
 };
 
 export const extractActiveDataParagon = (data) => {
   const result = [];
-
   data.forEach((item) => {
     if (item.is_active) {
       item.bord.forEach((row) => {
@@ -253,33 +211,25 @@ export const extractActiveDataParagon = (data) => {
       });
     }
   });
-
   return result;
 };
 
 export const extractIdAndRankSkillTree = (items) => {
   let results = [];
-
   items.forEach((item) => {
-    // Check if rank is defined and not null
     if (item.rank !== undefined && item.rank !== null && item.rank > 0) {
       results.push({ id: item.id, rank: item.rank });
     }
-
-    // Recursively process children, options, and secondOptions if they exist
     if (item.children && item.children.length > 0) {
       results = results.concat(extractIdAndRankSkillTree(item.children));
     }
-
     if (item.options && item.options.length > 0) {
       results = results.concat(extractIdAndRankSkillTree(item.options));
     }
-
     if (item.secondOptions && item.secondOptions.length > 0) {
       results = results.concat(extractIdAndRankSkillTree(item.secondOptions));
     }
   });
-
   return results;
 };
 
@@ -296,32 +246,33 @@ export function debounce(fn, delay) {
 }
 
 export function hasParentRank(skills, item) {
-  if (!item.parent_id) return true; // No parent, assume clickable (e.g., root nodes)
+  if (!item.parent_id) return true;
+
+  const parentIds = Array.isArray(item.parent_id)
+    ? item.parent_id
+    : [item.parent_id];
+
   for (const skill of skills) {
-    if (skill.id === item.parent_id && skill.rank > 0) return true;
-    if (skill.options) {
-      const parent = skill.options.find((opt) => opt.id === item.parent_id);
-      if (parent && parent.rank > 0) return true;
-      for (const opt of skill.options) {
-        if (opt.children) {
-          const parentChild = opt.children.find(
-            (ch) => ch.id === item.parent_id
-          );
-          if (parentChild && parentChild.rank > 0) return true;
+    for (const parentId of parentIds) {
+      if (skill.id === parentId && skill.rank > 0) return true;
+      if (skill.options) {
+        const parent = skill.options.find((opt) => opt.id === parentId);
+        if (parent && parent.rank > 0) return true;
+        for (const opt of skill.options) {
+          if (opt.children) {
+            const parentChild = opt.children.find((ch) => ch.id === parentId);
+            if (parentChild && parentChild.rank > 0) return true;
+          }
         }
       }
-    }
-    if (skill.secondOptions) {
-      const parent = skill.secondOptions.find(
-        (opt) => opt.id === item.parent_id
-      );
-      if (parent && parent.rank > 0) return true;
-      for (const opt of skill.secondOptions) {
-        if (opt.children) {
-          const parentChild = opt.children.find(
-            (ch) => ch.id === item.parent_id
-          );
-          if (parentChild && parentChild.rank > 0) return true;
+      if (skill.secondOptions) {
+        const parent = skill.secondOptions.find((opt) => opt.id === parentId);
+        if (parent && parent.rank > 0) return true;
+        for (const opt of skill.secondOptions) {
+          if (opt.children) {
+            const parentChild = opt.children.find((ch) => ch.id === parentId);
+            if (parentChild && parentChild.rank > 0) return true;
+          }
         }
       }
     }

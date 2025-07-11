@@ -152,13 +152,13 @@ const SkillTree = () => {
               className="connection_second_options pt-[3px] z-0"
             />
           ))}
-          {/* {connectionsData.SecondOptionChild?.map((connection) => (
+          {connectionsData.SecondOptionChild?.map((connection) => (
             <Connection
               key={connection.id}
               id={connection.id}
-              className="connection_second_option_child pt-[3px] z-0"
+              className="connection_child pt-[3px] z-0"
             />
-          ))} */}
+          ))}
         </div>
       </div>
     </>
