@@ -1641,3 +1641,43 @@ export const bossPowers = [
     image: "/gears/charge.png",
   },
 ];
+export const bossPowers9 = [
+  { id: 1, label: "Bottled Wind", image: "/gears/bot.png" },
+  { id: 2, label: "Invigorating Helix", image: "/gears/invi.png" },
+  { id: 3, label: "Jagged Bramble", image: "/gears/jag.png" },
+  { id: 4, label: "Luminous Gem", image: "/gears/lumi.png" },
+  { id: 5, label: "Murky Essence", image: "/gears/mur.png" },
+  { id: 6, label: "Reactive Ooze", image: "/gears/rea.png" },
+  { id: 7, label: "Shifting Powder", image: "/gears/shif.png" },
+  { id: 8, label: "Tendrilous Bundle", image: "/gears/tend.png" },
+  {
+    id: 9,
+    label: "Thunderous Particle",
+    image: "/gears/tra.png",
+  },
+  {
+    id: 10,
+    label: "Thunderous Particle",
+    image: "/gears/vola.png",
+  },
+  { id: 11, label: "Potent Alloy", image: "/gears/fras.png" },
+  { id: 12, label: "Sapping Crux", image: "/gears/pot.png" },
+  { id: 13, label: "Sharpening Gizmo", image: "/gears/sap.png" },
+  { id: 14, label: "Bloody Charm", image: "/gears/sha.png" },
+  { id: 15, label: "Floaty Bobble", image: "/gears/blo.png" },
+  { id: 16, label: "Frigid Heart", image: "/gears/floa.png" },
+  { id: 17, label: "Nightmare Orb", image: "/gears/fri.png" },
+  { id: 18, label: "Pressurized Steam", image: "/gears/nig.png" },
+];
+
+export const bossPowers9main = [
+  { id: 1, label: "Corrosive Vapor", image: "/gears/vapor.png" },
+  { id: 2, label: "Glacial Nimbus", image: "/gears/nimbus.png" },
+  { id: 3, label: "Nebulous Extract", image: "/gears/extract.png" },
+  { id: 4, label: "Smoldering Ember", image: "/gears/ember.png" },
+  {
+    id: 5,
+    label: "Thunderous Particle",
+    image: "/gears/particle5.png",
+  },
+];

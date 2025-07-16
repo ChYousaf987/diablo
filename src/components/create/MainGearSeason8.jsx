@@ -6,7 +6,7 @@ import { selectGems, selectCategory } from "@/lib/redux/slice";
 import { categories } from "@/constants";
 import HoverPowers from "./HoverPowers";
 
-export default function MainGear({ mode = "create" }) {
+export default function MainGearSeason8({ mode = "create" }) {
   const [hoveredImage, setHoveredImage] = useState({
     top: false,
     left: false,

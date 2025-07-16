@@ -8,7 +8,9 @@ import {
   itemState,
   skills,
   techniques,
-  bossPowers,
+  bossPowers as initialBossPowers,
+  bossPowers9,
+  bossPowers9main,
 } from "@/constants";
 
 const slice = createSlice({
@@ -22,8 +24,16 @@ const slice = createSlice({
     maxLevelParagon: 328,
     url: "",
     name: "",
-    bossPowers: bossPowers,
+    bossPowers: [
+      { id: 1, label: "", image: "", slot: "top", season: "Season 8" }, // Main slot
+      { id: 2, label: "", image: "", slot: "bottom", season: "Season 8" },
+      { id: 3, label: "", image: "", slot: "left", season: "Season 8" },
+      { id: 4, label: "", image: "", slot: "right", season: "Season 8" },
+      { id: 5, label: "", image: "", slot: "catalyst1", season: "Season 8" },
+      { id: 6, label: "", image: "", slot: "catalyst2", season: "Season 8" },
+    ],
     category: category || "barbarian",
+    season: "Season 8",
     gearLeft: data[category || "barbarian"].gearLeft,
     gearRight: data[category || "barbarian"].gearRight,
     gems: data[category || "barbarian"].gems,
@@ -45,14 +55,23 @@ const slice = createSlice({
   }),
   reducers: {
     updateBossPowers: (state, action) => {
-      const { id, newBossPowers } = action.payload;
+      const { id, newBossPowers, slot } = action.payload;
       const newBossPowersList = state.bossPowers.map((bossPower) => {
-        if (bossPower.id === id) {
-          return { ...bossPower, powers: newBossPowers };
+        if (bossPower.id === id && bossPower.slot === slot) {
+          return { ...bossPower, ...newBossPowers };
         }
         return bossPower;
       });
       state.bossPowers = newBossPowersList;
+    },
+    updateSeason: (state, action) => {
+      state.season = action.payload;
+      state.bossPowers = state.bossPowers.map((bp) => ({
+        ...bp,
+        label: "",
+        image: "",
+        season: action.payload,
+      }));
     },
     updateNotes: (state, action) => {
       state.notes = action.payload;
@@ -60,6 +79,7 @@ const slice = createSlice({
     updateCategory: (state, action) => {
       const newCategory = action.payload;
       state.category = newCategory;
+      state.season = "Season 8"; // Reset to Season 8 when category changes
       state.gearLeft = data[newCategory].gearLeft;
       state.gearRight = data[newCategory].gearRight;
       state.gems = data[newCategory].gems;
@@ -88,6 +108,9 @@ const slice = createSlice({
           techniques: data[newCategory].techniques,
         },
       ];
+    },
+    updateSeason: (state, action) => {
+      state.season = action.payload;
     },
     updateNameVariant: (state, action) => {
       const { newName, index } = action.payload;
@@ -274,6 +297,7 @@ const slice = createSlice({
       state.id = build._id ?? build.id;
       state.maxLevel = build.maxLevel ?? 58;
       state.category = build.category;
+      state.season = build.season ?? "Season 8"; // Initialize season from build if available
       state.optionTechs = build.optionTechs ?? data[build.category].optiontechs;
       state.optionSkills =
         build.optionSkills ?? data[build.category].optionSkills;
@@ -355,7 +379,6 @@ export const {
   updateGearRight,
   updateNameVariant,
   updateDefaultIndex,
-  updateNotes,
   updateName,
   updateLevel,
   updateUrl,
@@ -363,13 +386,15 @@ export const {
   updateGems,
   updateSkills,
   updateTechnique,
-  updateCategory,
   initailizeGear,
   updateOptionSkillScore,
   updateParagonBuildDemansion,
   updateBordItem,
   handleCopyVariant,
   updateBossPowers,
+  updateNotes,
+  updateCategory,
+  updateSeason,
 } = slice.actions;
 
 export const selectGearLeft = (state) => state.gear.gearLeft;
@@ -391,5 +416,5 @@ export const selectParagonBuilds = (state) => state.gear.paragon_builds;
 export const selectMaxLevelParagon = (state) => state.gear.maxLevelParagon;
 export const selectBossPowers = (state) => state.gear.bossPowers;
 export const selectOptionTechs = (state) => state.gear.optionTechs;
-
+export const selectSeason = (state) => state.gear.season;
 export default slice.reducer;

@@ -1,8 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { aspects, aspectsRight } from "@/constants";
 import GearItem from "./GearItem";
-import MainGear from "./MainGear";
+import MainGearSeason8 from "./MainGearSeason8";
+import MainGearSeason9 from "./MainGearSeason9";
 import SkillTech from "./Skill";
 import GearStats from "./GearStats";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
@@ -11,17 +12,14 @@ import {
   updateGearRight,
   selectGearLeft,
   selectGearRight,
+  selectSeason,
 } from "@/lib/redux/slice";
 import SeasonsDropdown from "../SeasonsDropdown";
 
 export default function Gear({ mode = "create" }) {
-  // Initialize state
   const gearLeft = useAppSelector(selectGearLeft);
   const gearRight = useAppSelector(selectGearRight);
-
-  // console.log("Gear Left: ", gearLeft);
-  // console.log("Gear Right: ", gearRight);
-
+  const season = useAppSelector(selectSeason);
   const dispatch = useAppDispatch();
 
   const onUpdateGearLeft = (index, newGear) =>
@@ -31,7 +29,7 @@ export default function Gear({ mode = "create" }) {
 
   return (
     <div>
-      <div className=" grid sm:flex justify-between items-stretch">
+      <div className="grid sm:flex justify-between items-stretch">
         <div className="sm:hidden">
           <SeasonsDropdown mode={mode} />
         </div>
@@ -48,7 +46,7 @@ export default function Gear({ mode = "create" }) {
             return (
               <GearItem
                 key={index}
-                position={index}
+                position={index} 
                 gear={gear}
                 aspects={aspects}
                 mode={mode}
@@ -57,8 +55,12 @@ export default function Gear({ mode = "create" }) {
             );
           })}
         </div>
-        <div className="grow  justify-stretch items-stretch hidden sm:flex">
-          <MainGear mode={mode} />
+        <div className="grow justify-stretch items-stretch hidden sm:flex">
+          {season === "Season 9" ? (
+            <MainGearSeason9 mode={mode} />
+          ) : (
+            <MainGearSeason8 mode={mode} />
+          )}
         </div>
         <div className="h-full flex flex-col justify-start sm:items-end gap-3 mx-6 sm:mx-0 sm:w-[20%]">
           {gearRight.map((gear, index) => {
@@ -83,8 +85,12 @@ export default function Gear({ mode = "create" }) {
             );
           })}
         </div>
-        <div className="grow  justify-stretch items-stretch  sm:hidden mx-6 sm:mx-0">
-          <MainGear mode={mode} />
+        <div className="grow justify-stretch items-stretch sm:hidden mx-6 sm:mx-0">
+          {season === "Season 9" ? (
+            <MainGearSeason9 mode={mode} />
+          ) : (
+            <MainGearSeason8 mode={mode} />
+          )}
         </div>
       </div>
       <SkillTech mode={mode} />
