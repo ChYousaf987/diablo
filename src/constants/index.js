@@ -267,6 +267,8 @@ export const gearLeft = [
     label: "Casque",
     description: "Vide",
     aspect_id: null,
+    aspect_power_id: null, // Added
+    aspect_power_id_2: null, // Added
     details: {
       selects1: [],
       selects2: [
@@ -285,6 +287,8 @@ export const gearLeft = [
     label: "Armure de Torse",
     description: "Vide",
     aspect_id: null,
+    aspect_power_id: null, // Added
+    aspect_power_id_2: null, // Added
     details: {
       selects1: [],
       selects2: [
@@ -303,6 +307,8 @@ export const gearLeft = [
     label: "Gants",
     description: "Vide",
     aspect_id: null,
+    aspect_power_id: null, // Added
+    aspect_power_id_2: null, // Added
     details: {
       selects1: [],
       selects2: [
@@ -321,6 +327,8 @@ export const gearLeft = [
     label: "Pantalon",
     description: "Vide",
     aspect_id: null,
+    aspect_power_id: null, // Added
+    aspect_power_id_2: null, // Added
     details: {
       selects1: [],
       selects2: [
@@ -339,6 +347,8 @@ export const gearLeft = [
     label: "Bottes",
     description: "Vide",
     aspect_id: null,
+    aspect_power_id: null, // Added
+    aspect_power_id_2: null, // Added
     details: {
       selects1: [],
       selects2: [
@@ -357,6 +367,8 @@ export const gearLeft = [
     label: "Arme Contondante",
     description: "Vide",
     aspect_id: null,
+    aspect_power_id: null, // Added
+    aspect_power_id_2: null, // Added
     details: {
       selects1: [],
       selects2: [
@@ -375,6 +387,8 @@ export const gearLeft = [
     label: "Arme Double 1",
     description: "Vide",
     aspect_id: null,
+    aspect_power_id: null, // Added
+    aspect_power_id_2: null, // Added
     details: {
       selects1: [],
       selects2: [
@@ -396,6 +410,8 @@ export const gearRight = [
     label: "",
     description: "",
     aspect_id: null,
+    aspect_power_id: null, // Added
+    aspect_power_id_2: null, // Added
     details: {
       selects1: [],
       selects2: [
@@ -414,6 +430,8 @@ export const gearRight = [
     label: "Amulette",
     description: "Vide",
     aspect_id: null,
+    aspect_power_id: null, // Added
+    aspect_power_id_2: null, // Added
     details: {
       selects1: [],
       selects2: [
@@ -432,6 +450,8 @@ export const gearRight = [
     label: "Anneau 1",
     description: "Vide",
     aspect_id: null,
+    aspect_power_id: null, // Added
+    aspect_power_id_2: null, // Added
     details: {
       selects1: [],
       selects2: [
@@ -450,6 +470,8 @@ export const gearRight = [
     label: "Anneau 2",
     description: "Vide",
     aspect_id: null,
+    aspect_power_id: null, // Added
+    aspect_power_id_2: null, // Added
     details: {
       selects1: [],
       selects2: [
@@ -468,6 +490,8 @@ export const gearRight = [
     label: "",
     description: "",
     aspect_id: null,
+    aspect_power_id: null, // Added
+    aspect_power_id_2: null, // Added
     details: {
       selects1: [],
       selects2: [
@@ -486,6 +510,8 @@ export const gearRight = [
     label: "Arme Tranchante",
     description: "Vide",
     aspect_id: null,
+    aspect_power_id: null, // Added
+    aspect_power_id_2: null, // Added
     details: {
       selects1: [],
       selects2: [
@@ -504,6 +530,8 @@ export const gearRight = [
     label: "Arme Double 2",
     description: "Vide",
     aspect_id: null,
+    aspect_power_id: null, // Added
+    aspect_power_id_2: null, // Added
     details: {
       selects1: [],
       selects2: [
@@ -610,105 +638,105 @@ export const GemsOptions = [
 export const aspects = [
   {
     id: 1,
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     label: "Visage d'Andariel",
     description: "Mythic Unique Helm",
     features: ["Unique", "Barre"],
   },
   {
     id: 2,
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     label: "Aspect de l'anémie",
     description: "Description de l'Arme",
     features: ["Utilitaire", "Légendaire"],
   },
   {
     id: 3,
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     label: "Aspect de l'assistance",
     description: "Description de l'Arme",
     features: ["Utilitaire", "Légendaire"],
   },
   {
     id: 4,
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     label: "Aspect de l'audace",
     description: "Description de l'Arme",
     features: ["Défensive", "Légendaire"],
   },
   {
     id: 5,
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     label: "Aspect des bul-kathos",
     description: "Description de l'Arme",
     features: ["Utilitaire", "Légendaire"],
   },
   {
     id: 40,
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     label: "Aspect des bul-kathos",
     description: "Description de l'Arme",
     features: ["Utilitaire", "Légendaire"],
   },
   {
     id: 6,
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     label: "Aspect des frappes commotionnelles",
     description: "Description de l'Arme",
     features: ["Défensive", "Légendaire"],
   },
   {
     id: 7,
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     label: "Aspect des foulées glaciales",
     description: "Description de l'Arme",
     features: ["Utilitaire", "Légendaire"],
   },
   {
     id: 8,
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     label: "Aspect de la saisie du tourbillon",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Barre"],
   },
   {
     id: 9,
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     label: "Aspect de la puissance",
     description: "Description de l'Arme",
     features: ["Défensive", "Légendaire"],
   },
   {
     id: 10,
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     label: "Aspect de la colère engourdissante",
     description: "Description de l'Arme",
     features: ["Utilitaire", "Légendaire"],
   },
   {
     id: 11,
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     label: "Aspect de la misère partagée",
     description: "Description de l'Arme",
     features: ["Utilitaire", "Légendaire"],
   },
   {
     id: 12,
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     label: "Aspect des étapes sournoises",
     description: "Description de l'Arme",
     features: ["Défensive", "Légendaire"],
   },
   {
     id: 13,
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     label: "Aspect des coups",
     description: "Description de l'Arme",
     features: ["Défensive", "Légendaire"],
   },
   {
     id: 14,
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     label: "Aspect de la sauge bondée",
     description: "Description de l'Arme",
     features: ["Défensive", "Légendaire"],
@@ -716,170 +744,179 @@ export const aspects = [
   {
     id: 14,
     label: "Aspect de la barrière de déviation",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
     id: 15,
     label: "Aspect de la forteresse",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
     id: 16,
     label: "Aspect du Fron Warrior",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
     id: 17,
     label: "Aspect du protecteur",
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
     id: 18,
     label: "Aspect du cœur prudent",
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
     id: 19,
     label: "Aspect de l'assimilation",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
     id: 20,
     label: "Couronne de Lucion",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Unique", "Barre"],
   },
   {
     id: 21,
     label: "Aspect échappé",
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Utilitaire", "Légendaire"],
   },
   {
     id: 22,
     label: "Couronne de la gueule",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Unique", "Barre"],
   },
   {
     id: 23,
     label: "Crête arlequin",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Unique", "Barre"],
   },
   {
     id: 24,
     label: "Aspect mouvementé",
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Utilitaire", "Barre"],
   },
   {
     id: 25,
     label: "Héritier de la perdition",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Unique", "Barre"],
   },
   {
     id: 26,
     label: "Aspect sanguin de fer",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Barre"],
   },
   {
     id: 27,
     label: "Aspect de Juggernaut",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
     id: 28,
     label: "Aspect Luckbringer",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Utilitaire", "Légendaire"],
   },
   {
     id: 29,
     label: "PROTÉRER ASPECT",
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
     id: 30,
     label: "Aspect de Berserker implacable",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Utilitaire", "Légendaire"],
   },
   {
     id: 31,
     label: "Aspect de Berserker constant",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     features: ["Unique", "Barre"],
   },
   {
     id: 32,
     label: "Aspect d'autocollant",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Utilitaire", "Légendaire"],
   },
   {
     id: 33,
     label: "Tushkhelm de jortiz le puissant",
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Unique", "Barre"],
   },
   {
     id: 34,
     label: "Laid de bâtard",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Unique", "Barre"],
   },
   {
     id: 35,
     label: "Aspect éternel",
-    image: "/gears/charge.png",
+    image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
     id: 36,
     label: "Aspect du maître d'arme",
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Utilitaire", "Légendaire"],
   },
   {
     id: 37,
     label: "Aspect sauvage",
-    image: "/gears/charge.png",
+    image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Utilitaire", "Légendaire"],
   },
+];
+
+export const aspectspower = [
+  { id: 1, label: "Amethyst", image: "/gears/grand.png" },
+  { id: 2, label: "emerald", image: "/gears/erald.png" },
+  { id: 3, label: "Ruby", image: "/gears/ruby.png" },
+  { id: 4, label: "Topaz", image: "/gears/graq.png" },
+  { id: 5, label: "Sapphier", image: "/gears/gra.png" },
+  { id: 6, label: "Diamand", image: "/gears/gran.png" },
 ];
 
 export const aspectsRight = [

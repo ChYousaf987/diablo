@@ -46,11 +46,12 @@ export default function Gear({ mode = "create" }) {
             return (
               <GearItem
                 key={index}
-                position={index} 
+                position={index}
                 gear={gear}
                 aspects={aspects}
                 mode={mode}
                 onUpdate={(newGear) => onUpdateGearLeft(index, newGear)}
+                side="left"
               />
             );
           })}
@@ -81,6 +82,7 @@ export default function Gear({ mode = "create" }) {
                 aspects={aspectsRight}
                 mode={mode}
                 onUpdate={(newGear) => onUpdateGearRight(index, newGear)}
+                side="right"
               />
             );
           })}

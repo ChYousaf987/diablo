@@ -25,7 +25,7 @@ const slice = createSlice({
     url: "",
     name: "",
     bossPowers: [
-      { id: 1, label: "", image: "", slot: "top", season: "Season 8" }, // Main slot
+      { id: 1, label: "", image: "", slot: "top", season: "Season 8" },
       { id: 2, label: "", image: "", slot: "bottom", season: "Season 8" },
       { id: 3, label: "", image: "", slot: "left", season: "Season 8" },
       { id: 4, label: "", image: "", slot: "right", season: "Season 8" },
@@ -54,6 +54,14 @@ const slice = createSlice({
     ],
   }),
   reducers: {
+    updateGearLeft: (state, action) => {
+      const { index, newGear } = action.payload;
+      state.gearLeft[index] = { ...state.gearLeft[index], ...newGear };
+    },
+    updateGearRight: (state, action) => {
+      const { index, newGear } = action.payload;
+      state.gearRight[index] = { ...state.gearRight[index], ...newGear };
+    },
     updateBossPowers: (state, action) => {
       const { id, newBossPowers, slot } = action.payload;
       const newBossPowersList = state.bossPowers.map((bossPower) => {
@@ -72,6 +80,16 @@ const slice = createSlice({
         image: "",
         season: action.payload,
       }));
+    },
+    updateAspectPower: (state, action) => {
+      const { index, side, aspect_power_id } = action.payload;
+      const gearArray = side === "left" ? state.gearLeft : state.gearRight;
+      gearArray[index] = { ...gearArray[index], aspect_power_id };
+    },
+    updateAspectPower2: (state, action) => {
+      const { index, side, aspect_power_id_2 } = action.payload;
+      const gearArray = side === "left" ? state.gearLeft : state.gearRight;
+      gearArray[index] = { ...gearArray[index], aspect_power_id_2 };
     },
     updateNotes: (state, action) => {
       state.notes = action.payload;
@@ -395,6 +413,8 @@ export const {
   updateNotes,
   updateCategory,
   updateSeason,
+  updateAspectPower,
+  updateAspectPower2, // Added
 } = slice.actions;
 
 export const selectGearLeft = (state) => state.gear.gearLeft;

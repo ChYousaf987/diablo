@@ -57,6 +57,17 @@ export default function MainGearSeason9({ mode = "create" }) {
     return power?.label || "";
   };
 
+  const getOpacityClass = (slot) => {
+    const power = bossPowers.find((bp) => bp.slot === slot);
+    const isSelected = !!power?.image; // True if an image is selected
+    const isHovered = hoveredImage[slot];
+
+    if (isSelected) {
+      return isHovered ? "opacity-100" : "opacity-100"; // 100% opacity when selected, hover doesn't change it
+    }
+    return isHovered ? "opacity-100" : "opacity-50"; // 50% when not selected, 100% on hover
+  };
+
   return (
     <div
       className="flex flex-col justify-between items-center grow"
@@ -100,9 +111,9 @@ export default function MainGearSeason9({ mode = "create" }) {
           <img
             src={getBossPowerImage("top")}
             alt={getBossPowerLabel("top") || "boss-power-main"}
-            className={`w-[85%] h-[85%] object-contain cursor-pointer ${
-              hoveredImage.top ? "opacity-100" : "opacity-50"
-            }`}
+            className={`w-[85%] h-[85%] object-contain cursor-pointer ${getOpacityClass(
+              "top"
+            )}`}
           />
         </div>
         <div className="absolute top-[25%] flex justify-center items-center rounded-full">
@@ -121,9 +132,9 @@ export default function MainGearSeason9({ mode = "create" }) {
           <img
             src={getBossPowerImage("bottom")}
             alt={getBossPowerLabel("bottom") || "boss-power"}
-            className={`w-[100%] h-[100%] object-contain cursor-pointer ${
-              hoveredImage.bottom ? "opacity-100" : "opacity-50"
-            }`}
+            className={`w-[100%] h-[100%] object-contain cursor-pointer ${getOpacityClass(
+              "bottom"
+            )}`}
           />
         </div>
         <div
@@ -135,9 +146,9 @@ export default function MainGearSeason9({ mode = "create" }) {
           <img
             src={getBossPowerImage("left")}
             alt={getBossPowerLabel("left") || "boss-power"}
-            className={`w-[100%] h-[100%] object-contain cursor-pointer ${
-              hoveredImage.left ? "opacity-100" : "opacity-50"
-            }`}
+            className={`w-[100%] h-[100%] object-contain cursor-pointer ${getOpacityClass(
+              "left"
+            )}`}
           />
         </div>
         <div
@@ -151,9 +162,9 @@ export default function MainGearSeason9({ mode = "create" }) {
           <img
             src={getBossPowerImage("right")}
             alt={getBossPowerLabel("right") || "boss-power"}
-            className={`w-[100%] h-[100%] object-contain cursor-pointer ${
-              hoveredImage.right ? "opacity-100" : "opacity-50"
-            }`}
+            className={`w-[100%] h-[100%] object-contain cursor-pointer ${getOpacityClass(
+              "right"
+            )}`}
           />
         </div>
         <div className="absolute top-[65%] flex justify-center items-center rounded-full">

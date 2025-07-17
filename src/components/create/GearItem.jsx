@@ -28,6 +28,8 @@ export default function GearItem({
   reverse = false,
   onUpdate,
   mode = "create",
+  position,
+  side = "left",
 }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredAspects, setFilteredAspects] = useState(aspects);
@@ -48,17 +50,32 @@ export default function GearItem({
   };
 
   const handleUnequip = () => {
-    onUpdate({ ...gear, aspect_id: null });
+    onUpdate({
+      ...gear,
+      aspect_id: null,
+      aspect_power_id: null,
+      aspect_power_id_2: null,
+    });
   };
 
   return (
     <>
       {mode === "guest" ? (
-        <GearItemTrigger gear={gear} reverse={reverse} />
+        <GearItemTrigger
+          gear={gear}
+          reverse={reverse}
+          position={position}
+          side={side}
+        />
       ) : (
         <Dialog>
           <DialogTrigger>
-            <GearItemTrigger gear={gear} reverse={reverse} />
+            <GearItemTrigger
+              gear={gear}
+              reverse={reverse}
+              position={position}
+              side={side}
+            />
           </DialogTrigger>
           <DialogContent className="bg-[#1f2025] p-0 dailog-content">
             <DialogHeader className="w-full ">
@@ -128,10 +145,6 @@ export default function GearItem({
                         className="flex justify-between items-center gap-2 border-b-[.5px] border-[#424243] mb-1 pb-2 cursor-pointer"
                       >
                         <GearItemTrigger gear={aspect} size={45} />
-                        {/* <Star
-                          className="text-[#444757] hover:text-[#6973b2]"
-                          size={35}
-                        /> */}
                         <GiRoundStar
                           className={`text-[#444757] hover:text-[#6973b2] text-2xl ${
                             aspect.rarity === "legendary"
