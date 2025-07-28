@@ -168,6 +168,32 @@ export const categories = [
   },
 ];
 
+export const glyphs = [
+  {
+    id: 1,
+    label: "Glyph of Strength",
+    image: "/paragon/barbarian/Dex_active.png",
+    code: "Glyph",
+    radius: 3,
+    effects: [
+      "For every 5 Strength purchased within range, you gain +2% increased damage.",
+      "Bonus: +10% increased damage to Elites.",
+    ],
+  },
+  {
+    id: 2,
+    label: "Glyph of Dexterity",
+    image: "/glyphs/dexterity.png",
+    code: "Glyph",
+    radius: 3,
+    effects: [
+      "For every 5 Dexterity purchased within range, you gain +1% increased critical strike chance.",
+      "Bonus: +5% critical strike damage.",
+    ],
+  },
+  // Add more glyphs as needed
+];
+
 export const data = {
   barbarian: {
     gearLeft: gearLeftBarbrian,
@@ -183,6 +209,7 @@ export const data = {
     techniques: techniquesBarbrian,
     optionSkills: optionSkillsBarbrian,
     paragon_builds: optionSParagonBarbrian,
+    glyphs: glyphs,
   },
   spiritborn: {
     gearLeft: gearLeftSpiritborn,
@@ -198,6 +225,7 @@ export const data = {
     techniques: techniquesSpiritborn,
     optionSkills: optionSkillsSpiritborn,
     paragon_builds: optionSParagonSpiritborn,
+    glyphs: glyphs,
   },
   druid: {
     gearLeft: gearLeftDruid,
@@ -213,6 +241,7 @@ export const data = {
     techniques: techniquesDruid,
     optionSkills: optionSkillsDruid,
     paragon_builds: optionSParagonDruid,
+    glyphs: glyphs,
   },
   necromancer: {
     gearLeft: gearLeftNecromancer,
@@ -228,6 +257,7 @@ export const data = {
     techniques: techniquesNecromancer,
     optionSkills: optionSkillsNecromancer,
     paragon_builds: optionSParagonNecromancer,
+    glyphs: glyphs,
   },
   rogue: {
     gearLeft: gearLeftRogue,
@@ -243,6 +273,7 @@ export const data = {
     techniques: techniquesRogue,
     optionSkills: optionSkillsRogue,
     paragon_builds: optionSParagonRogue,
+    glyphs: glyphs,
   },
   sorcerer: {
     gearLeft: gearLeftSorcerer,
@@ -258,6 +289,7 @@ export const data = {
     techniques: techniquesSorcerer,
     optionSkills: optionSkillsSorcerer,
     paragon_builds: optionSParagonSorcerer,
+    glyphs: glyphs,
   },
 };
 
