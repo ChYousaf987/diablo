@@ -2,8 +2,12 @@ import React from "react";
 import CardParagonHover from "./CardParagonHover";
 import CardParagonModal from "./CardParagonModal";
 import CardGlyphModal from "./CardGlyphModal";
+import { useAppSelector } from "@/lib/hooks";
+import { selectGlyphs } from "@/lib/redux/slice";
 
 const ParagonBoard = ({ item, style }) => {
+  const glyphs = useAppSelector(selectGlyphs);
+  
   const findItemIndex = (items, index) => {
     return items.find((item) => item.index === index) || null;
   };
@@ -46,7 +50,7 @@ const ParagonBoard = ({ item, style }) => {
                 return <div key={`empty_${rowIndex}_${colIndex}`} />;
               }
               if (bord.link === true) {
-                if (bord.id === "barbrian_1_1") {
+                if (bord.id === "barbarian_1_1") {
                   return (
                     <CardParagonModal
                       key={`modal_${bord.id}`}
@@ -56,15 +60,32 @@ const ParagonBoard = ({ item, style }) => {
                     />
                   );
                 }
-                if (bord.id === "barbrian_1_23") {
+                if (bord.id === "barbarian_1_23") {
+                  // Add special styling to make the glyph node more visible
+                  const glyphItem = {
+                    ...bord,
+                    label: bord.label || "Glyph Socket",
+                    // Add a special class or property to identify this as a glyph socket
+                    is_glyph_socket: true,
+                    // Pass the glyph_id if it exists
+                    glyph_id: bord.glyph_id || null
+                  };
+                  
+                  // Determine if a glyph is selected for this node
+                  const hasSelectedGlyph = glyphItem.glyph_id !== undefined && glyphItem.glyph_id !== null;
+                  
                   return (
-                    <CardGlyphModal
-                      key={`glyph_${bord.id}`}
-                      item={bord}
-                      size={30}
-                      baseDemansions={demansions}
-                      paragonId={item.id}
-                    />
+                    <div className="relative" key={`glyph_${bord.id}`}>
+                      {/* Add a pulsing effect or highlight to draw attention */}
+                      <div className={`absolute inset-0 ${hasSelectedGlyph ? 'bg-red-500' : 'bg-yellow-500'} opacity-20 animate-pulse rounded-full z-0`}></div>
+                      <CardGlyphModal
+                        key={`glyph_${bord.id}`}
+                        item={glyphItem}
+                        size={30}
+                        baseDemansions={demansions}
+                        paragonId={item.id}
+                      />
+                    </div>
                   );
                 }
               }

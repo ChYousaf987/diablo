@@ -76,6 +76,11 @@
     }
   }
 
+
+  .green{
+    background-color: #264728;
+  }
+
 .primary-bg-gradient {
   background: linear-gradient(152deg, #3b37ff 0%, #6973b2 80%);
   transition: all ease-in 300ms;
@@ -267,6 +272,15 @@
 
 .tile-bg {
   background-image: url(../../public/paragon/tile_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card-board-red-bg {
+  background-image: url(../../public/paragon/board_red_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

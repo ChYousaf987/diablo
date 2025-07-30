@@ -21,6 +21,28 @@ export default function CardParagonHover({ item, size = 30 }) {
 
   useEffect(() => {
     console.log("State updated:", { paragon_builds, glyphs });
+
+    // Debug specific node and glyph status
+    const specificNode = paragon_builds.flatMap((paragon) =>
+      paragon.bord.flatMap((row) =>
+        row.filter((node) => node && node.id === "barbarian_1_23")
+      )
+    )[0];
+
+    if (specificNode) {
+      console.log("Specific node barbarian_1_23:", specificNode);
+      console.log("Has glyph_id:", specificNode.glyph_id);
+
+      // Find if Glyph of Strength or Dexterity is assigned to this node
+      const strengthGlyph = glyphs.find(
+        (glyph) => glyph.id === 1 && glyph.node_id === "barbarian_1_23"
+      );
+      const dexterityGlyph = glyphs.find(
+        (glyph) => glyph.id === 2 && glyph.node_id === "barbarian_1_23"
+      );
+      console.log("Strength glyph assigned to node:", strengthGlyph);
+      console.log("Dexterity glyph assigned to node:", dexterityGlyph);
+    }
   }, [paragon_builds, glyphs]);
 
   const filterStyle =
@@ -29,7 +51,7 @@ export default function CardParagonHover({ item, size = 30 }) {
   const tile_bg = !item.bg
     ? "card-board"
     : item.bg === "magic"
-    ? "card-board-magic "
+    ? "card-board-magic"
     : "card-board-rare";
 
   const parent_of_item = item.activable_ids
@@ -57,43 +79,80 @@ export default function CardParagonHover({ item, size = 30 }) {
     }
   };
 
-  const isGlyphSelected = glyphs.some((glyph) => {
-    console.log("Checking glyph:", glyph.id, glyph.node_id);
-    return glyph.id === 1 && glyph.node_id !== null;
+  // Find the glyph assigned to the glyph socket (barbarian_1_23)
+  const glyphSocketNode = paragon_builds.flatMap((paragon) =>
+    paragon.bord.flatMap((row) =>
+      row.filter((node) => node && node.id === "barbarian_1_23")
+    )
+  )[0];
+  const selectedGlyphId = glyphSocketNode?.glyph_id || null;
+
+  // Debug item properties and glyphs
+  console.log("Current node:", {
+    id: item.id,
+    glyph_id: item.glyph_id,
+    active: item.active,
+    is_glyph_socket: item.is_glyph_socket,
   });
+  console.log("Selected glyph ID in socket:", selectedGlyphId);
+  console.log("All glyphs:", glyphs);
 
-  const allNodes = paragon_builds.flatMap((paragon) => paragon.bord.flat());
-  const nodesWithGlyphId2 = allNodes.filter((node) => node.glyph_id === 2);
+  // Determine highlighting class based on glyph_id and node type
+  let highlightClass = "";
+  let bgClass = "";
 
-  console.log("Glyphs State:", glyphs);
-  console.log("Paragon Builds State:", paragon_builds);
-  console.log("All Nodes:", allNodes);
-  console.log("Nodes with glyph_id: 2:", nodesWithGlyphId2);
-  console.log("Rendered Item:", item);
-  console.log("Is Glyph Selected:", isGlyphSelected);
-  console.log("Item glyph_id:", item.glyph_id);
-
-  // Only highlight if glyph_id matches 2 and Glyph of Strength is selected
-  const highlightGlyph2 =
-    isGlyphSelected && item.glyph_id === 2 ? "border-4 border-blue-500" : "";
+  if (item.is_glyph_socket) {
+    if (item.glyph_id !== undefined && item.glyph_id !== null) {
+      highlightClass =
+        "border-4 border-yellow-500 shadow-lg shadow-yellow-500/50 hover:shadow-yellow-500/70 hover:scale-105 transition-all";
+      bgClass = "card-board-red-bg";
+      console.log(
+        "Applying yellow border and red background to glyph socket:",
+        item.id
+      );
+    } else {
+      highlightClass =
+        "border-4 border-yellow-500 bg-yellow-900 bg-opacity-30 shadow-lg shadow-yellow-500/50 hover:shadow-yellow-500/70 hover:bg-opacity-50 hover:scale-105 transition-all";
+      console.log("Applying yellow border to empty glyph socket:", item.id);
+    }
+  } else if (selectedGlyphId !== null && item.glyph_id === selectedGlyphId) {
+    highlightClass =
+      "green  hover:scale-105 transition-all";
+    bgClass = "card-board-green-bg";
+    console.log(
+      "Applying green border and background to node with glyph_id:",
+      item.id
+    );
+  } else {
+    highlightClass = item.active
+      ? "border-4 border-green-500 text-green-500 shadow-lg shadow-green-500/50"
+      : "bg-opacity-30 shadow-lg shadow-gray-500/50 hover:shadow-gray-500/70 hover:bg-opacity-50 hover:scale-105 transition-all";
+    bgClass = item.active ? "card-board-green-bg" : "";
+    console.log(
+      `Applying ${item.active ? "green" : "gray"} border to node:`,
+      item.id
+    );
+  }
 
   return (
     <div className="flex">
       <HoverCard closeDelay="200" openDelay={200} className="bg-[#1a1b1f]">
         <HoverCardTrigger
-          className={`flex flex-col justify-center bg-[#1a1b1f] items-center text-white ${tile_bg} p-1 ${highlightGlyph2}`}
+          className={`flex flex-col justify-center bg-[#1a1b1f] items-center text-white ${
+            bgClass || tile_bg
+          } p-1 ${highlightClass}`}
         >
           {!item.is_icon ? (
             <div
-              onClick={item.link == false ? handleUpdate : null}
-              onContextMenu={item.link == false ? handleUpdate : null}
+              onClick={(e) => {
+                if (item.link === false && !item.is_glyph_socket) {
+                  handleUpdate(e);
+                }
+              }}
+              onContextMenu={item.link === false ? handleUpdate : null}
               className={`${item.link ? "card-board-legendary" : tile_bg} ${
-                (is_active || item.activable_ids == null) &&
-                !item.link &&
-                item.active == false
-                  ? "rounded-full border-2 border-red-500"
-                  : ""
-              } w-full h-full opacity-70 hover:opacity-100`}
+                is_active || item.activable_ids == null ? "" : ""
+              } w-full h-full opacity-70 hover:opacity-100 cursor-pointer`}
             >
               <img
                 src={`${item.image}`}
@@ -103,7 +162,11 @@ export default function CardParagonHover({ item, size = 30 }) {
               />
             </div>
           ) : (
-            <img src={`${item.image}`} className={`w-full z-0`} alt="logo" />
+            <img
+              src={`${item.image}`}
+              className={`w-full z-0 cursor-pointer`}
+              alt="logo"
+            />
           )}
         </HoverCardTrigger>
         <HoverCardContent className="bg-[#26272d] z-[9999] text-white max-w-[400px] w-full p-1">

@@ -48,8 +48,8 @@ const slice = createSlice({
           row.map((node) => ({
             ...node,
             active: node.active || false,
-            is_glyph_socket: node.id === "barbrian_1_23" || false,
-            glyph_id: null,
+            is_glyph_socket: node.id === "barbarian_1_23" || false,
+            glyph_id: node.glyph_id || null, // Preserve glyph_id from data
           }))
         ),
       })
@@ -77,8 +77,8 @@ const slice = createSlice({
               row.map((node) => ({
                 ...node,
                 active: node.active || false,
-                is_glyph_socket: node.id === "barbrian_1_23" || false,
-                glyph_id: null,
+                is_glyph_socket: node.id === "barbarian_1_23" || false,
+                glyph_id: node.glyph_id || null, // Preserve glyph_id from data
               }))
             ),
           })
@@ -159,8 +159,8 @@ const slice = createSlice({
             row.map((node) => ({
               ...node,
               active: node.active || false,
-              is_glyph_socket: node.id === "barbrian_1_23" || false,
-              glyph_id: null,
+              is_glyph_socket: node.id === "barbarian_1_23" || false,
+              glyph_id: node.glyph_id || null, // Preserve glyph_id from data
             }))
           ),
         })
@@ -187,8 +187,8 @@ const slice = createSlice({
               row.map((node) => ({
                 ...node,
                 active: node.active || false,
-                is_glyph_socket: node.id === "barbrian_1_23" || false,
-                glyph_id: null,
+                is_glyph_socket: node.id === "barbarian_1_23" || false,
+                glyph_id: node.glyph_id || null, // Preserve glyph_id from data
               }))
             ),
           })),
@@ -278,8 +278,8 @@ const slice = createSlice({
             row.map((node) => ({
               ...node,
               active: node.active || false,
-              is_glyph_socket: node.id === "barbrian_1_23" || false,
-              glyph_id: null,
+              is_glyph_socket: node.id === "barbarian_1_23" || false,
+              glyph_id: node.glyph_id || null, // Preserve glyph_id from data
             }))
           ),
         })),
@@ -401,7 +401,9 @@ const slice = createSlice({
       });
       // Sync with variants
       state.variants[state.defaultIndex].glyphs = [...state.glyphs];
-      state.variants[state.defaultIndex].paragon_builds = [...state.paragon_builds];
+      state.variants[state.defaultIndex].paragon_builds = [
+        ...state.paragon_builds,
+      ];
     },
     initailizeGear: (state, action) => {
       const { build, variants } = action.payload;
@@ -435,9 +437,9 @@ const slice = createSlice({
                       ? {
                           ...node,
                           active: update.active,
-                          glyph_id: update.glyph_id || null,
+                          glyph_id: update.glyph_id || node.glyph_id || null, // Preserve glyph_id from data
                         }
-                      : node;
+                      : { ...node, glyph_id: node.glyph_id || null }; // Preserve glyph_id from data
                   })
                 ),
               };
@@ -448,8 +450,8 @@ const slice = createSlice({
                 row.map((node) => ({
                   ...node,
                   active: node.active || false,
-                  is_glyph_socket: node.id === "barbrian_1_23" || false,
-                  glyph_id: null,
+                  is_glyph_socket: node.id === "barbarian_1_23" || false,
+                  glyph_id: node.glyph_id || null, // Preserve glyph_id from data
                 }))
               ),
             }));
@@ -522,8 +524,8 @@ const slice = createSlice({
               row.map((node) => ({
                 ...node,
                 active: node.active || false,
-                is_glyph_socket: node.id === "barbrian_1_23" || false,
-                glyph_id: null,
+                is_glyph_socket: node.id === "barbarian_1_23" || false,
+                glyph_id: node.glyph_id || null, // Preserve glyph_id from data
               }))
             ),
           })),

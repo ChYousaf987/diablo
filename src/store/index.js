@@ -1,3 +1,4 @@
+// src/store/index.js
 import { configureStore } from '@reduxjs/toolkit'
 import gearReducer  from '@/lib/redux/slice'
 

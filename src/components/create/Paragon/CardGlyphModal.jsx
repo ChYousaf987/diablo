@@ -17,8 +17,19 @@ const CardGlyphModal = ({ item, size, baseDemansions, paragonId }) => {
   const glyphs = useAppSelector(selectGlyphs);
   const dispatch = useAppDispatch();
   const [open, setOpen] = useState(false);
+  const [selectedGlyph, setSelectedGlyph] = useState(null);
+
+  // Check if this node already has a glyph assigned
+  const hasGlyph = item.glyph_id !== undefined && item.glyph_id !== null;
 
   const handleSelectGlyph = (glyph) => {
+    console.log("Selecting glyph:", glyph);
+    console.log("For node:", item);
+    console.log("Paragon ID:", paragonId);
+    
+    // Set the selected glyph for UI updates
+    setSelectedGlyph(glyph);
+    
     dispatch(
       updateGlyph({
         node_id: item.id,
@@ -26,13 +37,19 @@ const CardGlyphModal = ({ item, size, baseDemansions, paragonId }) => {
         paragon_id: paragonId,
       })
     );
+    
+    // Log after dispatch
+    console.log("Dispatched updateGlyph action");
+    
     setOpen(false);
   };
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger>
-        <CardParagonHover item={item} size={size} />
+      <DialogTrigger asChild>
+        <div className="cursor-pointer">
+          <CardParagonHover item={item} size={size} />
+        </div>
       </DialogTrigger>
       <DialogContent className="bg-[#1f2025] dailog-content">
         <DialogHeader>
