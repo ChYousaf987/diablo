@@ -171,38 +171,52 @@ export const categories = [
 export const glyphs = [
   {
     id: 1,
-    label: "Glyph of Strength",
-    image: "/paragon/barbarian/Dex_active.png",
+    label: "Ambidextrous",
+    image: "/paragon/barbarian/glyph1.png",
     code: "Glyph",
     radius: 3,
-    effects: [
-      "For every 5 Strength purchased within range, you gain +2% increased damage.",
-      "Bonus: +10% increased damage to Elites.",
-    ],
+    effects: ["Rare Glyph"],
   },
   {
     id: 2,
-    label: "Glyph of Dexterity",
-    image: "/glyphs/dexterity.png",
+    label: "Bloodfeeder",
+    image: "/paragon/barbarian/glyph2.png.png",
     code: "Glyph",
     radius: 3,
-    effects: [
-      "For every 5 Dexterity purchased within range, you gain +1% increased critical strike chance.",
-      "Bonus: +5% critical strike damage.",
-    ],
+    effects: ["Rare Glyph"],
   },
   {
     id: 3,
-    label: "Glyph of sort",
-    image: "/glyphs/dexterity.png",
+    label: "Brawl",
+    image: "/paragon/barbarian/glyph3.png",
     code: "Glyph",
     radius: 3,
-    effects: [
-      "For every 5 Dexterity purchased within range, you gain +1% increased critical strike chance.",
-      "Bonus: +15% critical strike damage.",
-    ],
+    effects: ["Rare Glyph"],
   },
-  // Add more glyphs as needed
+  {
+    id: 4,
+    label: "Challenger",
+    image: "/paragon/barbarian/glyph4.png",
+    code: "Glyph",
+    radius: 3,
+    effects: ["Rare Glyph"],
+  },
+  {
+    id: 5,
+    label: "Cleaver",
+    image: "/paragon/barbarian/glyph5.png",
+    code: "Glyph",
+    radius: 3,
+    effects: ["Rare Glyph"],
+  },
+  {
+    id: 6,
+    label: "Crusher",
+    image: "/paragon/barbarian/glyph6.png",
+    code: "Glyph",
+    radius: 3,
+    effects: ["Rare Glyph"],
+  },
 ];
 
 export const data = {
