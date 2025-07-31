@@ -102,7 +102,7 @@ const ParagonBoard = ({ item, style }) => {
                         {/* Add a pulsing effect or highlight to draw attention */}
                         <div
                           className={`absolute inset-0 ${
-                            hasSelectedGlyph ? "bg-red-500" : "bg-yellow-500"
+                            hasSelectedGlyph ? "bg-gray-600" : "bg-gray-800"
                           } opacity-20 animate-pulse rounded-full z-0`}
                         ></div>
                         <CardGlyphModal

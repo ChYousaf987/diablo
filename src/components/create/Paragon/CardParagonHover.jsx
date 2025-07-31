@@ -104,7 +104,7 @@ export default function CardParagonHover({ item, size = 30 }) {
   if (item.is_glyph_socket) {
     if (item.glyph_id !== undefined && item.glyph_id !== null) {
       highlightClass =
-        "border-4 border-yellow-500 shadow-lg shadow-yellow-500/50 hover:shadow-yellow-500/70 hover:scale-105 transition-all";
+        " shadow-lg  hover:scale-105 transition-all";
       bgClass = "card-board-red-bg";
       console.log(
         "Applying yellow border and red background to glyph socket:",
@@ -112,7 +112,7 @@ export default function CardParagonHover({ item, size = 30 }) {
       );
     } else {
       highlightClass =
-        "border-4 border-yellow-500 bg-yellow-900 bg-opacity-30 shadow-lg shadow-yellow-500/50 hover:shadow-yellow-500/70 hover:bg-opacity-50 hover:scale-105 transition-all";
+        "bg-opacity-30 shadow-lg  hover:bg-opacity-50 hover:scale-105 transition-all";
       console.log("Applying yellow border to empty glyph socket:", item.id);
     }
   } else if (selectedGlyphId !== null && item.glyph_id === selectedGlyphId) {

@@ -202,7 +202,7 @@ export const glyphs = [
     effects: ["Rare Glyph"],
   },
   {
-    id: 5,
+    id: 1,
     label: "Cleaver",
     image: "/paragon/barbarian/glyph5.png",
     code: "Glyph",
@@ -210,7 +210,7 @@ export const glyphs = [
     effects: ["Rare Glyph"],
   },
   {
-    id: 6,
+    id: 1,
     label: "Crusher",
     image: "/paragon/barbarian/glyph6.png",
     code: "Glyph",
