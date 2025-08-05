@@ -8,7 +8,7 @@ import {
   selectBossPowers,
   updateBossPowers,
 } from "@/lib/redux/slice";
-import { categories } from "@/constants";
+import { categories, catalystPowers } from "@/constants"; // Import catalystPowers
 import HoverPowersSeason9 from "./HoverPowersSeason9";
 
 export default function MainGearSeason9({ mode = "create" }) {
@@ -47,9 +47,10 @@ export default function MainGearSeason9({ mode = "create" }) {
 
   const getBossPowerImage = (slot) => {
     const power = bossPowers.find((bp) => bp.slot === slot);
-    return (
-      power?.image || (slot === "top" ? "/boss-season-9.png" : "/season-9.png")
-    );
+    if (power?.image) return power.image;
+    if (slot === "top") return "/boss-season-9.png";
+    if (slot === "catalyst1" || slot === "catalyst2") return "/empty_skill.png";
+    return "/season-9.png";
   };
 
   const getBossPowerLabel = (slot) => {
@@ -59,13 +60,13 @@ export default function MainGearSeason9({ mode = "create" }) {
 
   const getOpacityClass = (slot) => {
     const power = bossPowers.find((bp) => bp.slot === slot);
-    const isSelected = !!power?.image; // True if an image is selected
+    const isSelected = !!power?.image;
     const isHovered = hoveredImage[slot];
 
     if (isSelected) {
-      return isHovered ? "opacity-100" : "opacity-100"; // 100% opacity when selected, hover doesn't change it
+      return isHovered ? "opacity-100" : "opacity-100";
     }
-    return isHovered ? "opacity-100" : "opacity-50"; // 50% when not selected, 100% on hover
+    return isHovered ? "opacity-100" : "opacity-50";
   };
 
   return (
@@ -81,7 +82,13 @@ export default function MainGearSeason9({ mode = "create" }) {
       <HoverPowersSeason9
         open={showHoverPowersSeason9}
         onClose={() => setShowHoverPowersSeason9(false)}
-        powerType={selectedSlot === "top" ? "boss-power-main" : "boss-power"}
+        powerType={
+          selectedSlot === "top"
+            ? "boss-power-main"
+            : selectedSlot === "catalyst1" || selectedSlot === "catalyst2"
+            ? "catalyst-power"
+            : "boss-power"
+        }
         slot={selectedSlot}
         onSelectPower={(power) => {
           if (selectedSlot) {
@@ -178,14 +185,14 @@ export default function MainGearSeason9({ mode = "create" }) {
           onMouseLeave={() =>
             setHoveredImage({ ...hoveredImage, catalyst1: false })
           }
-          onClick={() => handleHoverPowersSeason9("boss-power")}
+          onClick={() => handleHoverPowersSeason9("catalyst1")}
         >
           <img
-            src="/empty_skill.png"
-            alt="boss-power"
-            className={`w-[100%] h-[100%] object-contain cursor-pointer ${
-              hoveredImage.catalyst1 ? "opacity-100" : "opacity-50"
-            }`}
+            src={getBossPowerImage("catalyst1")}
+            alt={getBossPowerLabel("catalyst1") || "catalyst-power"}
+            className={`w-[100%] h-[100%] object-contain cursor-pointer ${getOpacityClass(
+              "catalyst1"
+            )}`}
           />
         </div>
         <div
@@ -196,14 +203,14 @@ export default function MainGearSeason9({ mode = "create" }) {
           onMouseLeave={() =>
             setHoveredImage({ ...hoveredImage, catalyst2: false })
           }
-          onClick={() => handleHoverPowersSeason9("boss-power")}
+          onClick={() => handleHoverPowersSeason9("catalyst2")}
         >
           <img
-            src="/empty_skill.png"
-            alt="boss-power"
-            className={`w-[100%] h-[100%] object-contain cursor-pointer ${
-              hoveredImage.catalyst2 ? "opacity-100" : "opacity-50"
-            }`}
+            src={getBossPowerImage("catalyst2")}
+            alt={getBossPowerLabel("catalyst2") || "catalyst-power"}
+            className={`w-[100%] h-[100%] object-contain cursor-pointer ${getOpacityClass(
+              "catalyst2"
+            )}`}
           />
         </div>
       </div>

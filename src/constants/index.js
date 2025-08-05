@@ -1,5 +1,3 @@
-// index.js
-
 import {
   aspectsBarbarian,
   aspectsFilterBarbarian,
@@ -144,7 +142,6 @@ export const categories = [
     image: "necromancer.png",
     description: "Calculateur de planification de construction pour Diablo 4",
   },
-
   {
     value: "rogue",
     label: "Voleur",
@@ -180,7 +177,7 @@ export const glyphs = [
   {
     id: 2,
     label: "Bloodfeeder",
-    image: "/paragon/barbarian/glyph2.png.png",
+    image: "/paragon/barbarian/glyph2.png",
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
@@ -202,7 +199,7 @@ export const glyphs = [
     effects: ["Rare Glyph"],
   },
   {
-    id: 1,
+    id: 5,
     label: "Cleaver",
     image: "/paragon/barbarian/glyph5.png",
     code: "Glyph",
@@ -210,7 +207,7 @@ export const glyphs = [
     effects: ["Rare Glyph"],
   },
   {
-    id: 1,
+    id: 6,
     label: "Crusher",
     image: "/paragon/barbarian/glyph6.png",
     code: "Glyph",
@@ -324,8 +321,8 @@ export const gearLeft = [
     label: "Casque",
     description: "Vide",
     aspect_id: null,
-    aspect_power_id: null, // Added
-    aspect_power_id_2: null, // Added
+    aspect_power_id: null,
+    aspect_power_id_2: null,
     details: {
       selects1: [],
       selects2: [
@@ -344,8 +341,8 @@ export const gearLeft = [
     label: "Armure de Torse",
     description: "Vide",
     aspect_id: null,
-    aspect_power_id: null, // Added
-    aspect_power_id_2: null, // Added
+    aspect_power_id: null,
+    aspect_power_id_2: null,
     details: {
       selects1: [],
       selects2: [
@@ -364,8 +361,8 @@ export const gearLeft = [
     label: "Gants",
     description: "Vide",
     aspect_id: null,
-    aspect_power_id: null, // Added
-    aspect_power_id_2: null, // Added
+    aspect_power_id: null,
+    aspect_power_id_2: null,
     details: {
       selects1: [],
       selects2: [
@@ -384,8 +381,8 @@ export const gearLeft = [
     label: "Pantalon",
     description: "Vide",
     aspect_id: null,
-    aspect_power_id: null, // Added
-    aspect_power_id_2: null, // Added
+    aspect_power_id: null,
+    aspect_power_id_2: null,
     details: {
       selects1: [],
       selects2: [
@@ -404,8 +401,8 @@ export const gearLeft = [
     label: "Bottes",
     description: "Vide",
     aspect_id: null,
-    aspect_power_id: null, // Added
-    aspect_power_id_2: null, // Added
+    aspect_power_id: null,
+    aspect_power_id_2: null,
     details: {
       selects1: [],
       selects2: [
@@ -424,8 +421,8 @@ export const gearLeft = [
     label: "Arme Contondante",
     description: "Vide",
     aspect_id: null,
-    aspect_power_id: null, // Added
-    aspect_power_id_2: null, // Added
+    aspect_power_id: null,
+    aspect_power_id_2: null,
     details: {
       selects1: [],
       selects2: [
@@ -444,8 +441,8 @@ export const gearLeft = [
     label: "Arme Double 1",
     description: "Vide",
     aspect_id: null,
-    aspect_power_id: null, // Added
-    aspect_power_id_2: null, // Added
+    aspect_power_id: null,
+    aspect_power_id_2: null,
     details: {
       selects1: [],
       selects2: [
@@ -467,8 +464,8 @@ export const gearRight = [
     label: "",
     description: "",
     aspect_id: null,
-    aspect_power_id: null, // Added
-    aspect_power_id_2: null, // Added
+    aspect_power_id: null,
+    aspect_power_id_2: null,
     details: {
       selects1: [],
       selects2: [
@@ -487,8 +484,8 @@ export const gearRight = [
     label: "Amulette",
     description: "Vide",
     aspect_id: null,
-    aspect_power_id: null, // Added
-    aspect_power_id_2: null, // Added
+    aspect_power_id: null,
+    aspect_power_id_2: null,
     details: {
       selects1: [],
       selects2: [
@@ -507,8 +504,8 @@ export const gearRight = [
     label: "Anneau 1",
     description: "Vide",
     aspect_id: null,
-    aspect_power_id: null, // Added
-    aspect_power_id_2: null, // Added
+    aspect_power_id: null,
+    aspect_power_id_2: null,
     details: {
       selects1: [],
       selects2: [
@@ -527,8 +524,8 @@ export const gearRight = [
     label: "Anneau 2",
     description: "Vide",
     aspect_id: null,
-    aspect_power_id: null, // Added
-    aspect_power_id_2: null, // Added
+    aspect_power_id: null,
+    aspect_power_id_2: null,
     details: {
       selects1: [],
       selects2: [
@@ -547,8 +544,8 @@ export const gearRight = [
     label: "",
     description: "",
     aspect_id: null,
-    aspect_power_id: null, // Added
-    aspect_power_id_2: null, // Added
+    aspect_power_id: null,
+    aspect_power_id_2: null,
     details: {
       selects1: [],
       selects2: [
@@ -567,8 +564,8 @@ export const gearRight = [
     label: "Arme Tranchante",
     description: "Vide",
     aspect_id: null,
-    aspect_power_id: null, // Added
-    aspect_power_id_2: null, // Added
+    aspect_power_id: null,
+    aspect_power_id_2: null,
     details: {
       selects1: [],
       selects2: [
@@ -587,8 +584,8 @@ export const gearRight = [
     label: "Arme Double 2",
     description: "Vide",
     aspect_id: null,
-    aspect_power_id: null, // Added
-    aspect_power_id_2: null, // Added
+    aspect_power_id: null,
+    aspect_power_id_2: null,
     details: {
       selects1: [],
       selects2: [
@@ -729,13 +726,6 @@ export const aspects = [
     features: ["Utilitaire", "Légendaire"],
   },
   {
-    id: 40,
-    image: "/gears/defensive.png",
-    label: "Aspect des bul-kathos",
-    description: "Description de l'Arme",
-    features: ["Utilitaire", "Légendaire"],
-  },
-  {
     id: 6,
     image: "/gears/utility.png",
     label: "Aspect des frappes commotionnelles",
@@ -799,168 +789,161 @@ export const aspects = [
     features: ["Défensive", "Légendaire"],
   },
   {
-    id: 14,
+    id: 15,
     label: "Aspect de la barrière de déviation",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
-    id: 15,
+    id: 16,
     label: "Aspect de la forteresse",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
-    id: 16,
+    id: 17,
     label: "Aspect du Fron Warrior",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
-    id: 17,
+    id: 18,
     label: "Aspect du protecteur",
     image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
-    id: 18,
+    id: 19,
     label: "Aspect du cœur prudent",
     image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
-    id: 19,
+    id: 20,
     label: "Aspect de l'assimilation",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
-    id: 20,
+    id: 21,
     label: "Couronne de Lucion",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Unique", "Barre"],
   },
   {
-    id: 21,
+    id: 22,
     label: "Aspect échappé",
     image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Utilitaire", "Légendaire"],
   },
   {
-    id: 22,
+    id: 23,
     label: "Couronne de la gueule",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Unique", "Barre"],
   },
   {
-    id: 23,
+    id: 24,
     label: "Crête arlequin",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Unique", "Barre"],
   },
   {
-    id: 24,
+    id: 25,
     label: "Aspect mouvementé",
     image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Utilitaire", "Barre"],
   },
   {
-    id: 25,
+    id: 26,
     label: "Héritier de la perdition",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Unique", "Barre"],
   },
   {
-    id: 26,
+    id: 27,
     label: "Aspect sanguin de fer",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Barre"],
   },
   {
-    id: 27,
+    id: 28,
     label: "Aspect de Juggernaut",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
-    id: 28,
+    id: 29,
     label: "Aspect Luckbringer",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Utilitaire", "Légendaire"],
   },
   {
-    id: 29,
+    id: 30,
     label: "PROTÉRER ASPECT",
     image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
-    id: 30,
+    id: 31,
     label: "Aspect de Berserker implacable",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Utilitaire", "Légendaire"],
   },
   {
-    id: 31,
+    id: 32,
     label: "Aspect de Berserker constant",
     image: "/gears/defensive.png",
     features: ["Unique", "Barre"],
   },
   {
-    id: 32,
+    id: 33,
     label: "Aspect d'autocollant",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Utilitaire", "Légendaire"],
   },
   {
-    id: 33,
+    id: 34,
     label: "Tushkhelm de jortiz le puissant",
     image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Unique", "Barre"],
   },
   {
-    id: 34,
+    id: 35,
     label: "Laid de bâtard",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Unique", "Barre"],
   },
   {
-    id: 35,
+    id: 36,
     label: "Aspect éternel",
     image: "/gears/defensive.png",
     description: "Mythic Unique Helm",
     features: ["Défensive", "Légendaire"],
   },
   {
-    id: 36,
-    label: "Aspect du maître d'arme",
-    image: "/gears/utility.png",
-    description: "Mythic Unique Helm",
-    features: ["Utilitaire", "Légendaire"],
-  },
-  {
     id: 37,
-    label: "Aspect sauvage",
+    label: "Aspect du maître d'arme",
     image: "/gears/utility.png",
     description: "Mythic Unique Helm",
     features: ["Utilitaire", "Légendaire"],
@@ -1735,6 +1718,7 @@ export const bossPowers = [
     image: "/gears/charge.png",
   },
 ];
+
 export const bossPowers9 = [
   { id: 1, label: "Bottled Wind", image: "/gears/bot.png" },
   { id: 2, label: "Invigorating Helix", image: "/gears/invi.png" },
@@ -1744,16 +1728,8 @@ export const bossPowers9 = [
   { id: 6, label: "Reactive Ooze", image: "/gears/rea.png" },
   { id: 7, label: "Shifting Powder", image: "/gears/shif.png" },
   { id: 8, label: "Tendrilous Bundle", image: "/gears/tend.png" },
-  {
-    id: 9,
-    label: "Thunderous Particle",
-    image: "/gears/tra.png",
-  },
-  {
-    id: 10,
-    label: "Thunderous Particle",
-    image: "/gears/vola.png",
-  },
+  { id: 9, label: "Thunderous Particle", image: "/gears/tra.png" },
+  { id: 10, label: "Volatile Spark", image: "/gears/vola.png" },
   { id: 11, label: "Potent Alloy", image: "/gears/fras.png" },
   { id: 12, label: "Sapping Crux", image: "/gears/pot.png" },
   { id: 13, label: "Sharpening Gizmo", image: "/gears/sap.png" },
@@ -1769,9 +1745,38 @@ export const bossPowers9main = [
   { id: 2, label: "Glacial Nimbus", image: "/gears/nimbus.png" },
   { id: 3, label: "Nebulous Extract", image: "/gears/extract.png" },
   { id: 4, label: "Smoldering Ember", image: "/gears/ember.png" },
+  { id: 5, label: "Thunderous Particle", image: "/gears/particle5.png" },
+];
+
+export const catalystPowers = [
+  {
+    id: 1,
+    label: "Astral Pillar",
+    image: "/gears/astr.png",
+    description: "Increases Strength by 10%",
+  },
+  {
+    id: 2,
+    label: "Celestial Surge",
+    image: "/gears/celes.png",
+    description: "Increases Agility by 10%",
+  },
+  {
+    id: 3,
+    label: "Cosmic Anomaly",
+    image: "/gears/cos.png",
+    description: "Increases Intelligence by 10%",
+  },
+  {
+    id: 4,
+    label: "Disintegrate",
+    image: "/gears/dis.png",
+    description: "Increases Intelligence by 10%",
+  },
   {
     id: 5,
-    label: "Thunderous Particle",
-    image: "/gears/particle5.png",
+    label: "Propulsion",
+    image: "/gears/pro.png",
+    description: "Increases Intelligence by 10%",
   },
 ];

@@ -11,6 +11,7 @@ import {
   bossPowers as initialBossPowers,
   bossPowers9,
   bossPowers9main,
+  catalystPowers, // Added import
 } from "@/constants";
 
 const slice = createSlice({
@@ -48,8 +49,9 @@ const slice = createSlice({
           row.map((node) => ({
             ...node,
             active: node.active || false,
-            is_glyph_socket: node.id === "barbarian_1_23" || false,
-            glyph_id: node.glyph_id || null, // Preserve glyph_id from data
+            is_glyph_socket:
+              node.id === "barbarian_1_23" || node.id === "barbarian_2_173",
+            glyph_id: node.glyph_id || null,
           }))
         ),
       })
@@ -66,6 +68,27 @@ const slice = createSlice({
         gems: data[category || "barbarian"].gems,
         skills: data[category || "barbarian"].skills,
         techniques: data[category || "barbarian"].techniques,
+        bossPowers: [
+          // Added bossPowers to variants
+          { id: 1, label: "", image: "", slot: "top", season: "Season 8" },
+          { id: 2, label: "", image: "", slot: "bottom", season: "Season 8" },
+          { id: 3, label: "", image: "", slot: "left", season: "Season 8" },
+          { id: 4, label: "", image: "", slot: "right", season: "Season 8" },
+          {
+            id: 5,
+            label: "",
+            image: "",
+            slot: "catalyst1",
+            season: "Season 8",
+          },
+          {
+            id: 6,
+            label: "",
+            image: "",
+            slot: "catalyst2",
+            season: "Season 8",
+          },
+        ],
         glyphs: data[category || "barbarian"].glyphs.map((glyph) => ({
           ...glyph,
           node_id: null,
@@ -77,8 +100,9 @@ const slice = createSlice({
               row.map((node) => ({
                 ...node,
                 active: node.active || false,
-                is_glyph_socket: node.id === "barbarian_1_23" || false,
-                glyph_id: node.glyph_id || null, // Preserve glyph_id from data
+                is_glyph_socket:
+                  node.id === "barbarian_1_23" || node.id === "barbarian_2_173",
+                glyph_id: node.glyph_id || null,
               }))
             ),
           })
@@ -101,10 +125,11 @@ const slice = createSlice({
       const { id, newBossPowers, slot } = action.payload;
       state.bossPowers = state.bossPowers.map((bossPower) => {
         if (bossPower.id === id && bossPower.slot === slot) {
-          return { ...bossPower, ...newBossPowers };
+          return { ...bossPower, ...newBossPowers, slot, season: state.season };
         }
         return bossPower;
       });
+      state.variants[state.defaultIndex].bossPowers = [...state.bossPowers]; // Sync with variants
     },
     updateSeason: (state, action) => {
       state.season = action.payload;
@@ -114,6 +139,7 @@ const slice = createSlice({
         image: "",
         season: action.payload,
       }));
+      state.variants[state.defaultIndex].bossPowers = [...state.bossPowers]; // Sync with variants
     },
     updateAspectPower: (state, action) => {
       const { index, side, aspect_power_id } = action.payload;
@@ -159,8 +185,10 @@ const slice = createSlice({
             row.map((node) => ({
               ...node,
               active: node.active || false,
-              is_glyph_socket: node.id === "barbarian_1_23" || false,
-              glyph_id: node.glyph_id || null, // Preserve glyph_id from data
+              is_glyph_socket:
+                node.id === `${newCategory}_1_23` ||
+                node.id === `${newCategory}_2_173`,
+              glyph_id: node.glyph_id || null,
             }))
           ),
         })
@@ -169,6 +197,14 @@ const slice = createSlice({
         ...glyph,
         node_id: null,
       }));
+      state.bossPowers = [
+        { id: 1, label: "", image: "", slot: "top", season: "Season 8" },
+        { id: 2, label: "", image: "", slot: "bottom", season: "Season 8" },
+        { id: 3, label: "", image: "", slot: "left", season: "Season 8" },
+        { id: 4, label: "", image: "", slot: "right", season: "Season 8" },
+        { id: 5, label: "", image: "", slot: "catalyst1", season: "Season 8" },
+        { id: 6, label: "", image: "", slot: "catalyst2", season: "Season 8" },
+      ];
       state.variants = [
         {
           name: "",
@@ -177,6 +213,26 @@ const slice = createSlice({
           gems: data[newCategory].gems,
           skills: data[newCategory].skills,
           techniques: data[newCategory].techniques,
+          bossPowers: [
+            { id: 1, label: "", image: "", slot: "top", season: "Season 8" },
+            { id: 2, label: "", image: "", slot: "bottom", season: "Season 8" },
+            { id: 3, label: "", image: "", slot: "left", season: "Season 8" },
+            { id: 4, label: "", image: "", slot: "right", season: "Season 8" },
+            {
+              id: 5,
+              label: "",
+              image: "",
+              slot: "catalyst1",
+              season: "Season 8",
+            },
+            {
+              id: 6,
+              label: "",
+              image: "",
+              slot: "catalyst2",
+              season: "Season 8",
+            },
+          ],
           glyphs: data[newCategory].glyphs.map((glyph) => ({
             ...glyph,
             node_id: null,
@@ -187,8 +243,10 @@ const slice = createSlice({
               row.map((node) => ({
                 ...node,
                 active: node.active || false,
-                is_glyph_socket: node.id === "barbarian_1_23" || false,
-                glyph_id: node.glyph_id || null, // Preserve glyph_id from data
+                is_glyph_socket:
+                  node.id === `${newCategory}_1_23` ||
+                  node.id === `${newCategory}_2_173`,
+                glyph_id: node.glyph_id || null,
               }))
             ),
           })),
@@ -230,44 +288,72 @@ const slice = createSlice({
     updateDefaultIndex: (state, action) => {
       const index = action.payload;
       state.defaultIndex = index;
-      state.gearLeft = state.variants[index].gearLeft;
-      state.gearRight = state.variants[index].gearRight;
-      state.gems = state.variants[index].gems;
-      state.skills = state.variants[index].skills;
-      state.techniques = state.variants[index].techniques;
-      state.glyphs = state.variants[index].glyphs;
-      state.paragon_builds = state.variants[index].paragon_builds;
+      state.gearLeft = [...state.variants[index].gearLeft];
+      state.gearRight = [...state.variants[index].gearRight];
+      state.gems = [...state.variants[index].gems];
+      state.skills = [...state.variants[index].skills];
+      state.techniques = [...state.variants[index].techniques];
+      state.bossPowers = [...state.variants[index].bossPowers]; // Sync bossPowers
+      state.glyphs = [...state.variants[index].glyphs];
+      state.paragon_builds = [...state.variants[index].paragon_builds];
     },
     handleCopyVariant: (state, action) => {
       const index = action.payload;
-      state.variants[index].gearLeft = [
-        ...state.variants[state.defaultIndex].gearLeft,
-      ];
-      state.variants[index].gearRight = [
-        ...state.variants[state.defaultIndex].gearRight,
-      ];
-      state.variants[index].gems = [...state.variants[state.defaultIndex].gems];
-      state.variants[index].skills = [
-        ...state.variants[state.defaultIndex].skills,
-      ];
-      state.variants[index].techniques = [
-        ...state.variants[state.defaultIndex].techniques,
-      ];
-      state.variants[index].glyphs = [
-        ...state.variants[state.defaultIndex].glyphs,
-      ];
-      state.variants[index].paragon_builds = [
-        ...state.variants[state.defaultIndex].paragon_builds,
-      ];
+      const newVariant = {
+        ...state.variants[index],
+        name: `${state.variants[index].name} (Copy)`,
+        gearLeft: [...state.variants[index].gearLeft],
+        gearRight: [...state.variants[index].gearRight],
+        gems: [...state.variants[index].gems],
+        skills: [...state.variants[index].skills],
+        techniques: [...state.variants[index].techniques],
+        bossPowers: [...state.variants[index].bossPowers], // Include bossPowers
+        glyphs: [...state.variants[index].glyphs],
+        paragon_builds: state.variants[index].paragon_builds.map((paragon) => ({
+          ...paragon,
+          bord: paragon.bord.map((row) => [...row]),
+        })),
+      };
+      state.variants.push(newVariant);
+      state.defaultIndex = state.variants.length - 1;
+      state.gearLeft = [...newVariant.gearLeft];
+      state.gearRight = [...newVariant.gearRight];
+      state.gems = [...newVariant.gems];
+      state.skills = [...newVariant.skills];
+      state.techniques = [...newVariant.techniques];
+      state.bossPowers = [...newVariant.bossPowers]; // Sync bossPowers
+      state.glyphs = [...newVariant.glyphs];
+      state.paragon_builds = [...newVariant.paragon_builds];
     },
     addNewVariant: (state, action) => {
-      state.variants.push({
-        name: "",
+      const newVariant = {
+        name: `Variant ${state.variants.length + 1}`,
         gearLeft: [...data[state.category].gearLeft],
         gearRight: [...data[state.category].gearRight],
         gems: [...data[state.category].gems],
         skills: [...data[state.category].skills],
         techniques: [...data[state.category].techniques],
+        bossPowers: [
+          // Include bossPowers
+          { id: 1, label: "", image: "", slot: "top", season: state.season },
+          { id: 2, label: "", image: "", slot: "bottom", season: state.season },
+          { id: 3, label: "", image: "", slot: "left", season: state.season },
+          { id: 4, label: "", image: "", slot: "right", season: state.season },
+          {
+            id: 5,
+            label: "",
+            image: "",
+            slot: "catalyst1",
+            season: state.season,
+          },
+          {
+            id: 6,
+            label: "",
+            image: "",
+            slot: "catalyst2",
+            season: state.season,
+          },
+        ],
         glyphs: data[state.category].glyphs.map((glyph) => ({
           ...glyph,
           node_id: null,
@@ -278,21 +364,24 @@ const slice = createSlice({
             row.map((node) => ({
               ...node,
               active: node.active || false,
-              is_glyph_socket: node.id === "barbarian_1_23" || false,
-              glyph_id: node.glyph_id || null, // Preserve glyph_id from data
+              is_glyph_socket:
+                node.id === `${state.category}_1_23` ||
+                node.id === `${state.category}_2_173`,
+              glyph_id: node.glyph_id || null,
             }))
           ),
         })),
-      });
-      const index = state.variants.length - 1;
-      state.defaultIndex = index;
-      state.gearLeft = state.variants[index].gearLeft;
-      state.gearRight = state.variants[index].gearRight;
-      state.gems = state.variants[index].gems;
-      state.skills = state.variants[index].skills;
-      state.techniques = state.variants[index].techniques;
-      state.glyphs = state.variants[index].glyphs;
-      state.paragon_builds = state.variants[index].paragon_builds;
+      };
+      state.variants.push(newVariant);
+      state.defaultIndex = state.variants.length - 1;
+      state.gearLeft = [...newVariant.gearLeft];
+      state.gearRight = [...newVariant.gearRight];
+      state.gems = [...newVariant.gems];
+      state.skills = [...newVariant.skills];
+      state.techniques = [...newVariant.techniques];
+      state.bossPowers = [...newVariant.bossPowers]; // Sync bossPowers
+      state.glyphs = [...newVariant.glyphs];
+      state.paragon_builds = [...newVariant.paragon_builds];
     },
     updateOptionSkillScore: (state, action) => {
       const { skillId, newScore } = action.payload;
@@ -345,6 +434,7 @@ const slice = createSlice({
         });
       };
       state.optionSkills = updateSkillsScore(state.optionSkills);
+      state.variants[state.defaultIndex].optionSkills = [...state.optionSkills]; // Sync with variants
     },
     updateParagonBuildDemansion: (state, action) => {
       const { id, newDemansion } = action.payload;
@@ -377,7 +467,6 @@ const slice = createSlice({
     },
     updateGlyph: (state, action) => {
       const { node_id, glyph_id, paragon_id } = action.payload;
-      // Update the glyph's node_id
       state.glyphs = state.glyphs.map((glyph) =>
         glyph.id === glyph_id
           ? { ...glyph, node_id }
@@ -385,7 +474,6 @@ const slice = createSlice({
           ? { ...glyph, node_id: null }
           : glyph
       );
-      // Update only the specific node_id in paragon_builds
       state.paragon_builds = state.paragon_builds.map((paragon) => {
         if (paragon.id === paragon_id) {
           return {
@@ -399,7 +487,6 @@ const slice = createSlice({
         }
         return paragon;
       });
-      // Sync with variants
       state.variants[state.defaultIndex].glyphs = [...state.glyphs];
       state.variants[state.defaultIndex].paragon_builds = [
         ...state.paragon_builds,
@@ -437,9 +524,9 @@ const slice = createSlice({
                       ? {
                           ...node,
                           active: update.active,
-                          glyph_id: update.glyph_id || node.glyph_id || null, // Preserve glyph_id from data
+                          glyph_id: update.glyph_id || node.glyph_id || null,
                         }
-                      : { ...node, glyph_id: node.glyph_id || null }; // Preserve glyph_id from data
+                      : { ...node, glyph_id: node.glyph_id || null };
                   })
                 ),
               };
@@ -450,8 +537,10 @@ const slice = createSlice({
                 row.map((node) => ({
                   ...node,
                   active: node.active || false,
-                  is_glyph_socket: node.id === "barbarian_1_23" || false,
-                  glyph_id: node.glyph_id || null, // Preserve glyph_id from data
+                  is_glyph_socket:
+                    node.id === `${build.category}_1_23` ||
+                    node.id === `${build.category}_2_173`,
+                  glyph_id: node.glyph_id || null,
                 }))
               ),
             }));
@@ -510,6 +599,27 @@ const slice = createSlice({
         gems: variant.gems || data[build.category].gems,
         skills: variant.skills || data[build.category].skills,
         techniques: variant.techniques || data[build.category].techniques,
+        bossPowers: variant.bossPowers || [
+          // Include bossPowers
+          { id: 1, label: "", image: "", slot: "top", season: state.season },
+          { id: 2, label: "", image: "", slot: "bottom", season: state.season },
+          { id: 3, label: "", image: "", slot: "left", season: state.season },
+          { id: 4, label: "", image: "", slot: "right", season: state.season },
+          {
+            id: 5,
+            label: "",
+            image: "",
+            slot: "catalyst1",
+            season: state.season,
+          },
+          {
+            id: 6,
+            label: "",
+            image: "",
+            slot: "catalyst2",
+            season: state.season,
+          },
+        ],
         glyphs:
           variant.glyphs ||
           data[build.category].glyphs.map((glyph) => ({
@@ -524,8 +634,10 @@ const slice = createSlice({
               row.map((node) => ({
                 ...node,
                 active: node.active || false,
-                is_glyph_socket: node.id === "barbarian_1_23" || false,
-                glyph_id: node.glyph_id || null, // Preserve glyph_id from data
+                is_glyph_socket:
+                  node.id === `${build.category}_1_23` ||
+                  node.id === `${build.category}_2_173`,
+                glyph_id: node.glyph_id || null,
               }))
             ),
           })),
@@ -536,6 +648,7 @@ const slice = createSlice({
       state.gems = state.variants[0].gems;
       state.skills = state.variants[0].skills;
       state.techniques = state.variants[0].techniques;
+      state.bossPowers = state.variants[0].bossPowers; // Sync bossPowers
       state.glyphs = state.variants[0].glyphs;
       state.paragon_builds = state.variants[0].paragon_builds;
     },

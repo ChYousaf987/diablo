@@ -11,15 +11,58 @@ const ParagonBoard = ({ item, style }) => {
   const paragon_builds = useAppSelector(selectParagonBuilds);
 
   const findItemIndex = (items, index) => {
-    return items.find((item) => item.index === index) || null;
+    return items.find((item) => item && item.index === index) || null;
   };
 
-  // Find the glyph socket node (barbarian_1_23)
-  const glyphSocketNode = paragon_builds.flatMap((paragon) =>
-    paragon.bord.flatMap((row) =>
-      row.filter((node) => node && node.id === "barbarian_1_23")
-    )
-  )[0];
+  // Extract board number from item.id
+  const boardNumber =
+    typeof item.id === "number"
+      ? item.id
+      : typeof item.id === "string" && item.id.includes("_")
+      ? parseInt(item.id.split("_")[1], 10)
+      : 1;
+
+  // Define glyph socket IDs for each board
+  const glyphSocketIds = {
+    1: "barbarian_1_23",
+    2: "barbarian_2_173",
+  };
+
+  // Get the glyph socket ID for the current board
+  const glyphSocketId =
+    glyphSocketIds[boardNumber] || `barbarian_${boardNumber}_23`;
+
+  // Normalize item.id to match imagePositions keys
+  const normalizedId =
+    typeof item.id === "number"
+      ? `barbarian_${item.id}`
+      : typeof item.id === "string"
+      ? item.id.toLowerCase()
+      : "barbarian_1";
+
+  // Define image positions for each Paragon board
+  const imagePositions = {
+    barbarian_1: { top: "-1%", left: "14.2%" },
+    barbarian_2: { top: "27.7%", left: "23.7%" },
+    barbarian_3: { top: "-2%", left: "12%" },
+    barbarian_4: { top: "-1%", left: "15%" },
+    barbarian_5: { top: "0%", left: "13%" },
+    barbarian_6: { top: "-1.5%", left: "11%" },
+    barbarian_7: { top: "-2.5%", left: "14.5%" },
+    barbarian_8: { top: "0%", left: "12.5%" },
+    barbarian_9: { top: "-1%", left: "13.5%" },
+    barbarian_10: { top: "-2%", left: "11.5%" },
+  };
+
+  const imagePosition = imagePositions[normalizedId] || {
+    top: "0%",
+    left: "0%",
+  };
+
+  // Find the glyph socket node for the current board
+  const glyphSocketNode = item.bord
+    .flat()
+    .find((node) => node && node.id === glyphSocketId);
   const hasSelectedGlyph =
     glyphSocketNode?.glyph_id !== undefined &&
     glyphSocketNode?.glyph_id !== null;
@@ -50,7 +93,8 @@ const ParagonBoard = ({ item, style }) => {
       <div className="w-[100%] relative">
         {hasSelectedGlyph && (
           <Image
-            className="absolute -top-[1%] left-[14.2%] h-[112vh]"
+            className="absolute h-[112vh]"
+            style={{ top: imagePosition.top, left: imagePosition.left }}
             src="/paragon/boards.png"
             alt="Paragon Board Background"
             width={840}
@@ -73,7 +117,7 @@ const ParagonBoard = ({ item, style }) => {
                   return <div key={`empty_${rowIndex}_${colIndex}`} />;
                 }
                 if (bord.link === true) {
-                  if (bord.id === "barbarian_1_1") {
+                  if (bord.id === `barbarian_${boardNumber}_1`) {
                     return (
                       <CardParagonModal
                         key={`modal_${bord.id}`}
@@ -83,26 +127,18 @@ const ParagonBoard = ({ item, style }) => {
                       />
                     );
                   }
-                  if (bord.id === "barbarian_1_23") {
-                    // Add special styling to make the glyph node more visible
+                  if (bord.is_glyph_socket || bord.id === glyphSocketId) {
                     const glyphItem = {
                       ...bord,
                       label: bord.label || "Glyph Socket",
                       is_glyph_socket: true,
                       glyph_id: bord.glyph_id || null,
                     };
-
-                    // Determine if a glyph is selected for this node
-                    const hasSelectedGlyph =
-                      glyphItem.glyph_id !== undefined &&
-                      glyphItem.glyph_id !== null;
-
                     return (
                       <div className="relative" key={`glyph_${bord.id}`}>
-                        {/* Add a pulsing effect or highlight to draw attention */}
                         <div
                           className={`absolute inset-0 ${
-                            hasSelectedGlyph ? "bg-gray-600" : "bg-gray-800"
+                            glyphItem.glyph_id ? "bg-red-500" : "bg-yellow-500"
                           } opacity-20 animate-pulse rounded-full z-0`}
                         ></div>
                         <CardGlyphModal

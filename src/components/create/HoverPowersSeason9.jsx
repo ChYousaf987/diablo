@@ -1,9 +1,9 @@
 import React from "react";
-import { bossPowers9, bossPowers9main } from "@/constants";
+import { bossPowers9, bossPowers9main, catalystPowers } from "@/constants";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
-import { useAppDispatch } from "@/lib/hooks";
-import { updateBossPowers } from "@/lib/redux/slice";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
+import { selectBossPowers, updateBossPowers } from "@/lib/redux/slice";
 
 const HoverPowersSeason9 = ({
   open,
@@ -13,15 +13,24 @@ const HoverPowersSeason9 = ({
   onSelectPower,
 }) => {
   const dispatch = useAppDispatch();
+  const bossPowers = useAppSelector(selectBossPowers);
   const [searchTerm, setSearchTerm] = React.useState("");
   const [filteredPowers, setFilteredPowers] = React.useState(
-    powerType === "boss-power-main" ? bossPowers9main : bossPowers9
+    powerType === "boss-power-main"
+      ? bossPowers9main
+      : powerType === "catalyst-power"
+      ? catalystPowers
+      : bossPowers9
   );
 
   const handleSearch = (value) => {
     setSearchTerm(value);
     const powers =
-      powerType === "boss-power-main" ? bossPowers9main : bossPowers9;
+      powerType === "boss-power-main"
+        ? bossPowers9main
+        : powerType === "catalyst-power"
+        ? catalystPowers
+        : bossPowers9;
     setFilteredPowers(
       value
         ? powers.filter((power) =>
@@ -33,7 +42,11 @@ const HoverPowersSeason9 = ({
 
   React.useEffect(() => {
     const powers =
-      powerType === "boss-power-main" ? bossPowers9main : bossPowers9;
+      powerType === "boss-power-main"
+        ? bossPowers9main
+        : powerType === "catalyst-power"
+        ? catalystPowers
+        : bossPowers9;
     setSearchTerm("");
     setFilteredPowers(powers);
   }, [open, powerType]);
@@ -41,7 +54,28 @@ const HoverPowersSeason9 = ({
   const handleSelectPower = (power) => {
     if (slot && onSelectPower) {
       onSelectPower(power);
-      dispatch(updateBossPowers({ id: 1, newBossPowers: power, slot }));
+      const bossPowerId = bossPowers.find((bp) => bp.slot === slot)?.id || 1;
+      dispatch(
+        updateBossPowers({
+          id: bossPowerId,
+          newBossPowers: power,
+          slot,
+        })
+      );
+    }
+    onClose();
+  };
+
+  const handleUniquip = () => {
+    if (slot) {
+      const bossPowerId = bossPowers.find((bp) => bp.slot === slot)?.id || 1;
+      dispatch(
+        updateBossPowers({
+          id: bossPowerId,
+          newBossPowers: { label: "", image: "", season: "Season 9" },
+          slot,
+        })
+      );
     }
     onClose();
   };
@@ -60,14 +94,16 @@ const HoverPowersSeason9 = ({
             <Search size={18} className="text-white opacity-80" />
             <Input
               className="bg-transparent border-none text-white placeholder:text-[#a0a3b1] focus:ring-0 focus:outline-none"
-              placeholder="Search boss power..."
+              placeholder={`Search ${
+                powerType === "catalyst-power" ? "catalyst" : "boss"
+              } power...`}
               value={searchTerm}
               onChange={(e) => handleSearch(e.target.value)}
             />
           </div>
           <div className="flex items-center gap-3">
             <button
-              onClick={onClose}
+              onClick={handleUniquip}
               className="bg-[#4f5365] hover:bg-[#5b5f73] transition text-white text-sm px-4 py-1.5 rounded-md"
             >
               Uniquip
@@ -113,7 +149,8 @@ const HoverPowersSeason9 = ({
         </div>
         <div className="h-[5vh] mt-36 bg-[#282a36] border-t border-[#444757] flex items-center justify-center">
           <p className="text-[#a0a3b1] text-sm">
-            Showing {filteredPowers.length} Boss Power Result
+            Showing {filteredPowers.length}{" "}
+            {powerType === "catalyst-power" ? "Catalyst" : "Boss"} Power Result
             {filteredPowers.length !== 1 && "s"}
           </p>
         </div>

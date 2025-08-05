@@ -10,44 +10,44 @@ import {
   selectGlyphs,
   updateBordItem,
 } from "@/lib/redux/slice";
-import { useAppSelector } from "@/lib/hooks";
+import { useAppSelector, useAppDispatch } from "@/lib/hooks";
 import { findItemsInBordByIds } from "@/lib/utils";
-import { useDispatch } from "react-redux";
 
 export default function CardParagonHover({ item, size = 30 }) {
+  const dispatch = useAppDispatch();
   const paragon_builds = useAppSelector(selectParagonBuilds);
   const glyphs = useAppSelector(selectGlyphs);
-  const dispatch = useDispatch();
 
-  useEffect(() => {
-    console.log("State updated:", { paragon_builds, glyphs });
+  // Extract board number from item.id (assuming item.id is like "barbarian_X_Y")
+  const boardNumber =
+    item.id && typeof item.id === "string" && item.id.includes("_")
+      ? parseInt(item.id.split("_")[1], 10)
+      : 1;
 
-    // Debug specific node and glyph status
-    const specificNode = paragon_builds.flatMap((paragon) =>
-      paragon.bord.flatMap((row) =>
-        row.filter((node) => node && node.id === "barbarian_1_23")
-      )
-    )[0];
+  // Define glyph socket IDs for each board
+  const glyphSocketIds = {
+    1: "barbarian_1_23",
+    2: "barbarian_2_173",
+    // Add more boards as needed
+  };
 
-    if (specificNode) {
-      console.log("Specific node barbarian_1_23:", specificNode);
-      console.log("Has glyph_id:", specificNode.glyph_id);
+  // Find the glyph socket node for the current board
+  const currentBoard = paragon_builds.find((board) => board.id === boardNumber);
+  const glyphSocketId =
+    glyphSocketIds[boardNumber] || `barbarian_${boardNumber}_23`;
+  const glyphSocketNode = currentBoard?.bord
+    .flat()
+    .find((node) => node && node.id === glyphSocketId);
+  const selectedGlyphId = glyphSocketNode?.glyph_id;
 
-      // Find if Glyph of Strength or Dexterity is assigned to this node
-      const strengthGlyph = glyphs.find(
-        (glyph) => glyph.id === 1 && glyph.node_id === "barbarian_1_23"
-      );
-      const dexterityGlyph = glyphs.find(
-        (glyph) => glyph.id === 2 && glyph.node_id === "barbarian_1_23"
-      );
-      console.log("Strength glyph assigned to node:", strengthGlyph);
-      console.log("Dexterity glyph assigned to node:", dexterityGlyph);
-    }
-  }, [paragon_builds, glyphs]);
+  // Find the glyph assigned to this node, if any (for glyph sockets)
+  const selectedGlyph =
+    item.is_glyph_socket && item.glyph_id
+      ? glyphs.find((glyph) => glyph.id === item.glyph_id)
+      : null;
 
   const filterStyle =
     item.link || item.active ? "grayscale(0%)" : "grayscale(100%)";
-
   const tile_bg = !item.bg
     ? "card-board"
     : item.bg === "magic"
@@ -57,7 +57,6 @@ export default function CardParagonHover({ item, size = 30 }) {
   const parent_of_item = item.activable_ids
     ? findItemsInBordByIds(paragon_builds, item.activable_ids)
     : null;
-
   const is_active = parent_of_item
     ? parent_of_item.some((item) => item.active)
     : false;
@@ -65,10 +64,8 @@ export default function CardParagonHover({ item, size = 30 }) {
   const handleUpdate = (event) => {
     event.preventDefault();
     event.stopPropagation();
-
     const isLeftClick = event.button === 0;
     const isRightClick = event.button === 2;
-
     const cannotActivateOrDeactivate =
       (is_active || !item.activable_ids) && !item.link && item.active === false;
 
@@ -79,59 +76,35 @@ export default function CardParagonHover({ item, size = 30 }) {
     }
   };
 
-  // Find the glyph assigned to the glyph socket (barbarian_1_23)
-  const glyphSocketNode = paragon_builds.flatMap((paragon) =>
-    paragon.bord.flatMap((row) =>
-      row.filter((node) => node && node.id === "barbarian_1_23")
-    )
-  )[0];
-  const selectedGlyphId = glyphSocketNode?.glyph_id || null;
-
-  // Debug item properties and glyphs
-  console.log("Current node:", {
-    id: item.id,
-    glyph_id: item.glyph_id,
-    active: item.active,
-    is_glyph_socket: item.is_glyph_socket,
-  });
-  console.log("Selected glyph ID in socket:", selectedGlyphId);
-  console.log("All glyphs:", glyphs);
-
-  // Determine highlighting class based on glyph_id and node type
+  // Determine highlighting and background classes
   let highlightClass = "";
   let bgClass = "";
 
   if (item.is_glyph_socket) {
     if (item.glyph_id !== undefined && item.glyph_id !== null) {
       highlightClass =
-        " shadow-lg  hover:scale-105 transition-all";
-      bgClass = "card-board-red-bg";
-      console.log(
-        "Applying yellow border and red background to glyph socket:",
-        item.id
-      );
+        " shadow-lg hover:scale-105 transition-all";
+      bgClass = ""; // Red background for glyph socket with glyph
     } else {
       highlightClass =
-        "bg-opacity-30 shadow-lg  hover:bg-opacity-50 hover:scale-105 transition-all";
-      console.log("Applying yellow border to empty glyph socket:", item.id);
+        " bg-opacity-30 shadow-lg hover:bg-opacity-50 hover:scale-105 transition-all";
     }
-  } else if (selectedGlyphId !== null && item.glyph_id === selectedGlyphId) {
-    highlightClass =
-      "green  hover:scale-105 transition-all";
-    bgClass = "card-board-green-bg";
-    console.log(
-      "Applying green border and background to node with glyph_id:",
-      item.id
-    );
   } else {
-    highlightClass = item.active
-      ? "border-4 border-green-500 text-green-500 shadow-lg shadow-green-500/50"
-      : "bg-opacity-30 shadow-lg shadow-gray-500/50 hover:shadow-gray-500/70 hover:bg-opacity-50 hover:scale-105 transition-all";
-    bgClass = item.active ? "card-board-green-bg" : "";
-    console.log(
-      `Applying ${item.active ? "green" : "gray"} border to node:`,
-      item.id
-    );
+    // Apply green background to nodes with matching glyph_id
+    if (
+      item.glyph_id !== undefined &&
+      item.glyph_id !== null &&
+      item.glyph_id === selectedGlyphId
+    ) {
+      highlightClass =
+        "green shadow-green-500/50";
+      bgClass = "card-board-green-bg";
+    } else {
+      highlightClass = item.active
+        ? "border-4 border-green-500 text-green-500 shadow-lg shadow-green-500/50"
+        : "bg-opacity-30 shadow-lg shadow-gray-500/50 hover:shadow-gray-500/70 hover:bg-opacity-50 hover:scale-105 transition-all";
+      bgClass = item.active ? "card-board-green-bg" : "";
+    }
   }
 
   return (
@@ -155,7 +128,7 @@ export default function CardParagonHover({ item, size = 30 }) {
               } w-full h-full opacity-70 hover:opacity-100 cursor-pointer`}
             >
               <img
-                src={`${item.image}`}
+                src={selectedGlyph?.image || item.image}
                 style={{ filter: filterStyle }}
                 className={`w-full z-0`}
                 alt="logo"
@@ -163,7 +136,7 @@ export default function CardParagonHover({ item, size = 30 }) {
             </div>
           ) : (
             <img
-              src={`${item.image}`}
+              src={selectedGlyph?.image || item.image}
               className={`w-full z-0 cursor-pointer`}
               alt="logo"
             />
@@ -174,7 +147,7 @@ export default function CardParagonHover({ item, size = 30 }) {
             <div>
               <div className="flex justify-center items-center gap-3 border-b-[.5px] py-2">
                 <Image
-                  src={`${item.image}`}
+                  src={selectedGlyph?.image || item.image}
                   className="transition-all bg-[#1f2025] hover:scale-105 rounded-sm"
                   alt="logo"
                   width={40}
