@@ -1,4 +1,3 @@
-"use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { aspects, aspectspower } from "@/constants";
@@ -145,6 +144,12 @@ export default function GearItemTrigger({
         <span className="text-[#a3a4a5]">
           {isAspectID ? aspect?.label : gear?.label}
         </span>
+        <span className="text-[#5f6060]">
+          {isAspectID ? aspect?.description : gear?.description}
+        </span>
+        {isAspectID && aspect?.description && (
+          <span className="text-[#a3a4a5] text-sm">{aspect.description}</span>
+        )}
         <span
           className={`${
             gear?.description === "Empty" ? "text-[#444757]" : "text-[#b87939]"
