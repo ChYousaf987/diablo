@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+"use client";
+import React, { useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -14,7 +15,7 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
-import { Search, SlidersHorizontal } from "lucide-react";
+import { Search, SlidersHorizontal, Star } from "lucide-react";
 import { Button } from "../ui/button";
 import GearItemTrigger from "./GearItemTrigger";
 import GearStatsRow from "./GearStatsRow";
@@ -31,27 +32,20 @@ export default function GearItem({
   side = "left",
 }) {
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredAspects, setFilteredAspects] = useState([]);
-
-  // Filter aspects based on gear type
-  useEffect(() => {
-    const gearSpecificAspects = aspects.filter((aspect) =>
-      aspect.allowedGear.includes(gear.label)
-    );
-    setFilteredAspects(gearSpecificAspects);
-  }, [gear.label, aspects]);
+  const [filteredAspects, setFilteredAspects] = useState(
+    aspects.filter((aspect) => aspect.allowedGear.includes(gear.label))
+  );
 
   const handleSearch = (value) => {
     setSearchTerm(value);
-    const gearSpecificAspects = aspects.filter((aspect) =>
-      aspect.allowedGear.includes(gear.label)
-    );
     setFilteredAspects(
       value
-        ? gearSpecificAspects.filter((aspect) =>
-            aspect.label.toLowerCase().includes(value.toLowerCase())
-          )
-        : gearSpecificAspects
+        ? aspects
+            .filter((aspect) => aspect.allowedGear.includes(gear.label))
+            .filter((aspect) =>
+              aspect.label.toLowerCase().includes(value.toLowerCase())
+            )
+        : aspects.filter((aspect) => aspect.allowedGear.includes(gear.label))
     );
   };
 
@@ -148,27 +142,28 @@ export default function GearItem({
                 </TabsList>
                 <TabsContent value="aspect">
                   <div className="flex flex-col max-h-96 overflow-y-auto pr-2">
-                    {filteredAspects.map((aspect, index) => (
-                      <div
-                        key={index}
-                        onClick={() => handleUpdate(aspect)}
-                        className="flex justify-between items-center gap-2 border-b-[.5px] border-[#424243] mb-1 pb-2 cursor-pointer"
-                      >
-                        <div className="flex items-center gap-3">
+                    {filteredAspects.length === 0 ? (
+                      <p className="text-white text-center">
+                        No aspects available for {gear.label}
+                      </p>
+                    ) : (
+                      filteredAspects.map((aspect, index) => (
+                        <div
+                          key={index}
+                          onClick={() => handleUpdate(aspect)}
+                          className="flex justify-between items-center gap-2 border-b-[.5px] border-[#424243] mb-1 pb-2 cursor-pointer"
+                        >
                           <GearItemTrigger gear={aspect} size={45} />
-                          <div className="flex flex-col">
-                            
-                          </div>
+                          <GiRoundStar
+                            className={`text-[#444757] hover:text-[#6973b2] text-2xl ${
+                              aspect.rarity === "legendary"
+                                ? "text-yellow-400"
+                                : ""
+                            }`}
+                          />
                         </div>
-                        <GiRoundStar
-                          className={`text-[#444757] hover:text-[#6973b2] text-2xl ${
-                            aspect.rarity === "legendary"
-                              ? "text-yellow-400"
-                              : ""
-                          }`}
-                        />
-                      </div>
-                    ))}
+                      ))
+                    )}
                   </div>
                 </TabsContent>
                 <TabsContent value="item" className="flex flex-col gap-2">

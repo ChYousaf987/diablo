@@ -147,9 +147,7 @@ export default function GearItemTrigger({
         <span className="text-[#5f6060]">
           {isAspectID ? aspect?.description : gear?.description}
         </span>
-        {isAspectID && aspect?.description && (
-          <span className="text-[#a3a4a5] text-sm">{aspect.description}</span>
-        )}
+        
         <span
           className={`${
             gear?.description === "Empty" ? "text-[#444757]" : "text-[#b87939]"
