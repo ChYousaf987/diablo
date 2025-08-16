@@ -1,5 +1,71 @@
 export const siteTitle = "Next.js Starter Blog";
 
+
+
+
+
+export const aspectsDruidSeason8 = [
+  {
+    id: 1,
+    image: "/aspects/druid/aspect_of_the_umbral.png",
+    label: "Aspect of the Umbral",
+    description: "Restore 1-4 Spirit when you Crowd Control an enemy.",
+    category: "Resource",
+    allowedGear: ["Barre", "Anneau"],
+    season: "Season 8",
+  },
+  // Add 7 more for Season 8
+  {
+    id: 2,
+    image: "/aspects/druid/aspect_of_the_changeling.png",
+    label: "Aspect of the Changeling",
+    description:
+      "When you cast a Shapeshifting skill, gain 3-5% increased damage for 5 seconds, stacking up to 15-25%.",
+    category: "Offensive",
+    allowedGear: ["Barre", "Gants", "Arme à double usage 1"],
+    season: "Season 8",
+  },
+  // ... continue up to id: 8
+];
+
+export const aspectsDruidSeason9 = [
+  {
+    id: 1,
+    image: "/aspects/druid/aspect_of_the_umbral.png",
+    label: "Aspect of the Umbral",
+    description: "Restore 1-4 Spirit when you Crowd Control an enemy.",
+    category: "Resource",
+    allowedGear: ["Barre", "Anneau"],
+    season: "Season 9",
+  },
+  {
+    id: 2,
+    image: "/aspects/druid/aspect_of_the_tempest.png",
+    label: "Aspect of the Tempest",
+    description:
+      "Hurricane damage is increased by 7-15% each second while active.",
+    category: "Offensive",
+    allowedGear: ["Barre", "Gants", "Arme à double usage 1"],
+    season: "Season 9",
+  },
+  // Add 41 more for Season 9 (total 43 aspects)
+  {
+    id: 3,
+    image: "/aspects/druid/aspect_of_natures_savagery.png",
+    label: "Aspect of Nature’s Savagery",
+    description:
+      "Your Werewolf Skills function as Storm Skills and your Werebear Skills function as Earth Skills for the purposes of synergistic effects.",
+    category: "Offensive",
+    allowedGear: ["Barre", "Plastron"],
+    season: "Season 9",
+  },
+  // ... continue up to id: 43
+];
+
+export const aspectsRightDruidSeason8 = aspectsDruidSeason8;
+export const aspectsRightDruidSeason9 = aspectsDruidSeason9;
+
+
 export const gearLeftDruid = [
   {
     image: "/gears/helm.png",

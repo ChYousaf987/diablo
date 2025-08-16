@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Dialog,
   DialogContent,
@@ -21,6 +21,12 @@ import GearItemTrigger from "./GearItemTrigger";
 import GearStatsRow from "./GearStatsRow";
 import { aspectsFilter } from "@/constants";
 import { GiRoundStar } from "react-icons/gi";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
+import {
+  updateAspectPower,
+  updateAspectPower2,
+  selectCategory,
+} from "@/lib/redux/slice";
 
 export default function GearItem({
   gear,
@@ -32,25 +38,46 @@ export default function GearItem({
   side = "left",
 }) {
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredAspects, setFilteredAspects] = useState(
-    aspects.filter((aspect) => aspect.allowedGear.includes(gear.label))
-  );
+  const [filteredAspects, setFilteredAspects] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const dispatch = useAppDispatch();
+  const category = useAppSelector(selectCategory);
+
+  // Update filtered aspects when gear, aspects, searchTerm, or selectedCategory changes
+  useEffect(() => {
+    let filtered = aspects.filter((aspect) =>
+      aspect.allowedGear.includes(gear.label)
+    );
+    if (searchTerm) {
+      filtered = filtered.filter((aspect) =>
+        aspect.label.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+    if (selectedCategory) {
+      filtered = filtered.filter(
+        (aspect) => aspect.category === selectedCategory
+      );
+    }
+    setFilteredAspects(filtered);
+    console.log(
+      `Gear: ${gear.label}, Category: ${category}, Filtered Aspects:`,
+      filtered
+    );
+  }, [aspects, gear.label, searchTerm, selectedCategory, category]);
 
   const handleSearch = (value) => {
     setSearchTerm(value);
-    setFilteredAspects(
-      value
-        ? aspects
-            .filter((aspect) => aspect.allowedGear.includes(gear.label))
-            .filter((aspect) =>
-              aspect.label.toLowerCase().includes(value.toLowerCase())
-            )
-        : aspects.filter((aspect) => aspect.allowedGear.includes(gear.label))
-    );
+  };
+
+  const handleFilterCategory = (category) => {
+    setSelectedCategory(category === selectedCategory ? null : category);
   };
 
   const handleUpdate = (aspect) => {
     onUpdate({ ...gear, aspect_id: aspect.id });
+    dispatch(
+      updateAspectPower({ index: position, side, aspect_power_id: aspect.id })
+    );
   };
 
   const handleUnequip = () => {
@@ -60,6 +87,12 @@ export default function GearItem({
       aspect_power_id: null,
       aspect_power_id_2: null,
     });
+    dispatch(
+      updateAspectPower({ index: position, side, aspect_power_id: null })
+    );
+    dispatch(
+      updateAspectPower2({ index: position, side, aspect_power_id_2: null })
+    );
   };
 
   return (
@@ -110,6 +143,10 @@ export default function GearItem({
                           <Checkbox
                             className="text-[#717690] border-[#717690]"
                             id={filter.label}
+                            checked={selectedCategory === filter.label}
+                            onCheckedChange={() =>
+                              handleFilterCategory(filter.label)
+                            }
                           />
                           <label
                             htmlFor={filter.label}
@@ -144,7 +181,8 @@ export default function GearItem({
                   <div className="flex flex-col max-h-96 overflow-y-auto pr-2">
                     {filteredAspects.length === 0 ? (
                       <p className="text-white text-center">
-                        No aspects available for {gear.label}
+                        No aspects available for {gear.label} (Category:{" "}
+                        {category})
                       </p>
                     ) : (
                       filteredAspects.map((aspect, index) => (
@@ -153,7 +191,10 @@ export default function GearItem({
                           onClick={() => handleUpdate(aspect)}
                           className="flex justify-between items-center gap-2 border-b-[.5px] border-[#424243] mb-1 pb-2 cursor-pointer"
                         >
-                          <GearItemTrigger gear={aspect} size={45} />
+                          <div className="flex flex-col">
+                            <GearItemTrigger gear={aspect} size={45} />
+                            
+                          </div>
                           <GiRoundStar
                             className={`text-[#444757] hover:text-[#6973b2] text-2xl ${
                               aspect.rarity === "legendary"

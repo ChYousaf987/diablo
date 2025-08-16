@@ -1,6 +1,5 @@
 "use client";
-import React from "react";
-import { aspects, aspectsRight } from "@/constants";
+import React, { useEffect } from "react";
 import GearItem from "./GearItem";
 import MainGearSeason8 from "./MainGearSeason8";
 import MainGearSeason9 from "./MainGearSeason9";
@@ -13,6 +12,10 @@ import {
   selectGearLeft,
   selectGearRight,
   selectSeason,
+  selectCategory,
+  selectAspects,
+  selectAspectsRight,
+  updateAspects,
 } from "@/lib/redux/slice";
 import SeasonsDropdown from "../SeasonsDropdown";
 
@@ -20,7 +23,21 @@ export default function Gear({ mode = "create" }) {
   const gearLeft = useAppSelector(selectGearLeft);
   const gearRight = useAppSelector(selectGearRight);
   const season = useAppSelector(selectSeason);
+  const category = useAppSelector(selectCategory);
+  const aspects = useAppSelector(selectAspects);
+  const aspectsRight = useAppSelector(selectAspectsRight);
   const dispatch = useAppDispatch();
+
+  // Debug: Log aspects to verify correct class-specific list
+  useEffect(() => {
+    console.log(`Category: ${category}, Season: ${season}, Aspects:`, aspects);
+    console.log(`AspectsRight:`, aspectsRight);
+  }, [category, season, aspects, aspectsRight]);
+
+  // Ensure aspects update when category or season changes
+  useEffect(() => {
+    dispatch(updateAspects({ category, season }));
+  }, [category, season, dispatch]);
 
   const onUpdateGearLeft = (index, newGear) =>
     dispatch(updateGearLeft({ index, newGear }));
@@ -99,9 +116,11 @@ export default function Gear({ mode = "create" }) {
       <GearStats
         mode={mode}
         onUpdateGearRight={(index, newGear) =>
-          onUpdateGearRight(index, newGear)
+          dispatch(updateGearRight({ index, newGear }))
         }
-        onUpdateGearLeft={(index, newGear) => onUpdateGearLeft(index, newGear)}
+        onUpdateGearLeft={(index, newGear) =>
+          dispatch(updateGearLeft({ index, newGear }))
+        }
       />
     </div>
   );
