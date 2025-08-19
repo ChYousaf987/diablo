@@ -892,7 +892,7 @@ export const gearLeftDruid = [
     },
   },
   {
-    image: "/gears/bludgeoning_weapon.png",
+    image: "/gears/weapon.png",
     label: "Arme",
     description: "Vide",
     type: "Weapon",
@@ -1756,7 +1756,7 @@ export const gearRightDruid = [
     details: { selects1: [], selects2: [], selects3: [] },
   },
   {
-    image: "/gears/slashing_weapon.png",
+    image: "/gears/offhand.png",
     label: "Offhand",
     description: "Vide",
     aspect_id: null,
