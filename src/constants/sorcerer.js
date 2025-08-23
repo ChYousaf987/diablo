@@ -894,7 +894,7 @@ export const gearLeftSorcerer = [
     },
   },
   {
-    image: "/gears/bludgeoning_weapon.png",
+    image: "/gears/weapon.png",
     label: "Arme",
     description: "Vide",
     type: "Weapon",

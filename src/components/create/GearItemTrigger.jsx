@@ -1,15 +1,18 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { aspects, aspectspower } from "@/constants";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import {
   selectGearLeft,
   selectGearRight,
+  selectAspects,
+  selectAspectsRight,
   updateAspectPower,
   updateAspectPower2,
 } from "@/lib/redux/slice";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
+import { aspectspower } from "@/constants";
 
 export default function GearItemTrigger({
   gear,
@@ -21,23 +24,39 @@ export default function GearItemTrigger({
   const dispatch = useAppDispatch();
   const gearLeft = useAppSelector(selectGearLeft);
   const gearRight = useAppSelector(selectGearRight);
+  const aspects = useAppSelector(
+    side === "left" ? selectAspects : selectAspectsRight
+  );
   const currentGear =
     side === "left" ? gearLeft[position] : gearRight[position];
-  const aspect = gear.aspect_id
-    ? aspects.find((a) => a.id === gear.aspect_id)
-    : null;
+  const aspect =
+    gear.aspect_id && Array.isArray(aspects)
+      ? aspects.find((a) => a.id === gear.aspect_id)
+      : null;
   const aspectPower1 = currentGear?.aspect_power_id
     ? aspectspower.find((ap) => ap.id === currentGear.aspect_power_id)
     : null;
   const aspectPower2 = currentGear?.aspect_power_id_2
     ? aspectspower.find((ap) => ap.id === currentGear.aspect_power_id_2)
     : null;
-  const isAspectID = gear.aspect_id ? true : false;
+  const isAspectID = !!gear.aspect_id;
 
   const [dialogOpen, setDialogOpen] = useState(false);
   const [selectedCircle, setSelectedCircle] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredPowers, setFilteredPowers] = useState(aspectspower);
+
+  // Debug when aspect_power_id is set
+  useEffect(() => {
+    if (currentGear?.aspect_power_id) {
+      console.log(
+        `GearItemTrigger: aspect_power_id for ${side} gear[${position}] set to:`,
+        currentGear.aspect_power_id,
+        `when aspect_id is:`,
+        gear.aspect_id
+      );
+    }
+  }, [currentGear, side, position, gear.aspect_id]);
 
   const handleCircleClick = (circle) => (e) => {
     e.stopPropagation();
@@ -96,18 +115,19 @@ export default function GearItemTrigger({
       ) : (
         <div className="relative w-[65px] bg-[#26272D] rounded-lg border border-gray-700 h-[65px] text-center">
           <Image
-            src={isAspectID ? aspect.image : gear.image}
+            src={isAspectID ? aspect?.image || gear.image : gear.image}
             className="object-contain rounded-sm m-auto mt-3"
-            alt={isAspectID ? aspect.label : gear.label}
+            alt={isAspectID ? aspect?.label || gear.label : gear.label}
             width={size}
             height={size}
           />
           {isAspectID && (
             <>
-              {/* First black circle for aspect power 1 */}
               <div
                 className="absolute bottom-0 left-0 w-8 h-8 border border-gray-600 bg-[#131416] rounded-full flex items-center justify-center cursor-pointer opacity-80 hover:opacity-100"
                 onClick={handleCircleClick("power1")}
+                role="button"
+                aria-label="Select first aspect power"
               >
                 {aspectPower1 && (
                   <Image
@@ -119,10 +139,11 @@ export default function GearItemTrigger({
                   />
                 )}
               </div>
-              {/* Second black circle for aspect power 2 */}
               <div
                 className="absolute bottom-0 right-0 w-8 h-8 border border-gray-600 bg-[#131416] rounded-full flex items-center justify-center cursor-pointer opacity-80 hover:opacity-100"
                 onClick={handleCircleClick("power2")}
+                role="button"
+                aria-label="Select second aspect power"
               >
                 {aspectPower2 && (
                   <Image
@@ -142,15 +163,16 @@ export default function GearItemTrigger({
         className={`flex flex-col ${reverse ? "sm:items-end " : "items-start"}`}
       >
         <span className="text-[#a3a4a5]">
-          {isAspectID ? aspect?.label : gear?.label}
+          {isAspectID ? aspect?.label || gear.label : gear.label}
         </span>
         <span className="text-[#5f6060]">
-          {isAspectID ? aspect?.description : gear?.description}
+          {isAspectID
+            ? aspect?.description || gear.description
+            : gear.description}
         </span>
-        
         <span
           className={`${
-            gear?.description === "Empty" ? "text-[#444757]" : "text-[#b87939]"
+            gear.description === "Empty" ? "text-[#444757]" : "text-[#b87939]"
           }`}
         >
           {gear.features?.map((feature, index) => (
