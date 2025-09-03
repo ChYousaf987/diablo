@@ -15,8 +15,6 @@ const SkillNode = ({ id, image, top, left, size = 60 }) => (
       width={size}
       height={size}
     />
-
-
   </div>
 );
 

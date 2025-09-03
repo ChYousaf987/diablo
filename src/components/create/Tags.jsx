@@ -4,13 +4,20 @@ import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { Pen, Plus, Unlock } from "lucide-react";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
-import { addNewVariant, selectDefaultIndex, selectVariants , updateDefaultIndex, updateNameVariant} from "@/lib/redux/slice";
+import {
+  addNewVariant,
+  selectDefaultIndex,
+  selectVariants,
+  updateDefaultIndex,
+  updateNameVariant,
+} from "@/lib/redux/slice";
 
 export default function Tags({ mode = "guest" }) {
   const variants = useAppSelector(selectVariants);
   const activeTag = useAppSelector(selectDefaultIndex);
   const dispatch = useAppDispatch();
-  const onUpdateNameVariant = (index, newName) => dispatch(updateNameVariant({ index, newName }));
+  const onUpdateNameVariant = (index, newName) =>
+    dispatch(updateNameVariant({ index, newName }));
   const onUpdateDefaultIndex = (index) => dispatch(updateDefaultIndex(index));
   const onAddNewVariant = () => dispatch(addNewVariant());
 
@@ -25,7 +32,6 @@ export default function Tags({ mode = "guest" }) {
       return;
     }
     onUpdateNameVariant(index, e.target.value);
-
   };
 
   const AddTag = () => {
@@ -39,10 +45,13 @@ export default function Tags({ mode = "guest" }) {
             key={index}
             className="flex justify-start items-center bg-[#1a1b1f] px-2"
             onClick={(e) => changeStateTag(index)}
-
           >
             <Input
-              className={`placeholder:text-white w-auto border-none disabled:bg-[#1a1b1f] bg-[#76788b] bg-transparent text-white focus:ring-0 focus:border-0 active:border-0 active:ring-0 focus:border-transparent focus-visible:ring-0 ${activeTag === index ? "border-[#f5a623] border-2" : "border-none"}`}
+              className={`placeholder:text-white w-auto border-none disabled:bg-[#1a1b1f] bg-[#76788b] bg-transparent text-white focus:ring-0 focus:border-0 active:border-0 active:ring-0 focus:border-transparent focus-visible:ring-0 ${
+                activeTag === index
+                  ? "border-[#f5a623] border-2"
+                  : "border-none"
+              }`}
               placeholder="Add Tags"
               value={tag.name}
               disabled={mode === "guest"}
@@ -62,12 +71,12 @@ export default function Tags({ mode = "guest" }) {
         ))}
       </div>
       {(mode === "edit" || mode === "create") && (
-      <Button
-        className="bg-transparent hover:bg-transparent w-fit"
-        onClick={(e) => AddTag()}
-      >
-        <Plus size={20} />
-      </Button>
+        <Button
+          className="bg-transparent hover:bg-transparent w-fit"
+          onClick={(e) => AddTag()}
+        >
+          <Plus size={20} />
+        </Button>
       )}
     </div>
   );

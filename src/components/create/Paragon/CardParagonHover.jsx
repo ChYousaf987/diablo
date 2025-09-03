@@ -28,6 +28,14 @@ export default function CardParagonHover({ item, size = 30 }) {
   const glyphSocketIds = {
     1: "barbarian_1_23",
     2: "barbarian_2_173",
+    3: "barbrian_3_145", // Fix: was "barbrian_3_145"
+    4: "barbrian_4_79",
+    5: "barbrian_5_37",
+    6: "barbrian_6_133",
+    7: "barbrian_7_39",
+    8: "barbrian_8_41",
+    9: "barbrian_9_118",
+    10: "barbrian_10_38",
     // Add more boards as needed
   };
 

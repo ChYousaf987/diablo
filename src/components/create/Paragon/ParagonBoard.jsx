@@ -26,6 +26,14 @@ const ParagonBoard = ({ item, style }) => {
   const glyphSocketIds = {
     1: "barbarian_1_23",
     2: "barbarian_2_173",
+    3: "barbrian_3_145",
+    4: "barbrian_4_79",
+    5: "barbrian_5_37",
+    6: "barbrian_6_133",
+    7: "barbrian_7_39",
+    8: "barbrian_8_41",
+    9: "barbrian_9_118",
+    10: "barbrian_10_38",
   };
 
   // Get the glyph socket ID for the current board
@@ -44,14 +52,14 @@ const ParagonBoard = ({ item, style }) => {
   const imagePositions = {
     barbarian_1: { top: "-1%", left: "14.2%" },
     barbarian_2: { top: "27.7%", left: "23.7%" },
-    barbarian_3: { top: "-2%", left: "12%" },
-    barbarian_4: { top: "-1%", left: "15%" },
-    barbarian_5: { top: "0%", left: "13%" },
-    barbarian_6: { top: "-1.5%", left: "11%" },
-    barbarian_7: { top: "-2.5%", left: "14.5%" },
-    barbarian_8: { top: "0%", left: "12.5%" },
-    barbarian_9: { top: "-1%", left: "13.5%" },
-    barbarian_10: { top: "-2%", left: "11.5%" },
+    barbarian_3: { top: "42%", left: "-9.7%" },
+    barbarian_4: { top: "18.4%", left: "23.7%" },
+    barbarian_5: { top: "8.7%", left: "14.2%" },
+    barbarian_6: { top: "27.8%", left: "14.2%" },
+    barbarian_7: { top: "-0.9%", left: "14.2%" },
+    barbarian_8: { top: "-5.64%", left: "38.2%" },
+    barbarian_9: { top: "42%", left: "-9.8%" },
+    barbarian_10: { top: "-5.6%", left: "-9.8%" },
   };
 
   const imagePosition = imagePositions[normalizedId] || {
