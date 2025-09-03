@@ -22,27 +22,16 @@ export default function HoverSkill({
   };
 
   return (
-    <div className="flex ">
-      <HoverCard closeDelay="200" openDelay={200}>
-        <HoverCardTrigger className="flex flex-col justify-center items-center">
-          <Image
-            src={`${item.image}`}
-            className="object-contain transition-all bg-[#1f2025] hover:scale-105 rounded-sm builder"
-            alt="logo"
-            width={60}
-            height={60}
-          />
-        </HoverCardTrigger>
-        <HoverCardContent className="bg-[#15161a] text-white w-fit p-1">
-          {item.label}
-        </HoverCardContent>
-      </HoverCard>
-      <div className="flex  ml-3 gap-2">
+    <div className="flex flex-col">
+      <h3 className="text-white font-semibold text-lg ml-3 mt-2">
+        {item.label}
+      </h3>
+      <div className="flex flex-wrap gap-2 ml-3">
         {item.options &&
           item.options.map((detail, index) => (
             <HoverCard key={index} closeDelay="200" openDelay={200}>
               <HoverCardTrigger
-                className={`flex flex-col justify-center items-center ${
+                className={`flex flex-col justify-center items-center cursor-pointer ${
                   skill.skill_id === detail.id ? "opacity-30" : ""
                 }`}
                 onClick={() => updateSkillTech(item.id, detail.id)}
@@ -50,17 +39,18 @@ export default function HoverSkill({
                 <Image
                   src={`${detail.image}`}
                   className="object-contain transition-all bg-[#1f2025] hover:scale-105 rounded-sm"
-                  alt="logo"
+                  alt={detail.label}
                   width={50}
                   height={50}
                 />
+                <span className="text-white text-xs mt-1">{detail.label}</span>
               </HoverCardTrigger>
-              <HoverCardContent className="bg-[#26272d] z-[9999] text-white min-w-[300px]  p-1">
+              <HoverCardContent className="bg-[#26272d] z-[9999] text-white min-w-[300px] p-3">
                 <div>
-                  <div className="flex justify-center gap-2">
+                  <div className="flex justify-center gap-2 border-b-[.5px] border-[#1f2025] pb-2">
                     <Image
                       src={`${detail.image}`}
-                      className="transition-all hover:scale-105"
+                      className="transition-all hover:scale-105 rounded-sm"
                       alt={detail.label}
                       width={50}
                       height={50}
@@ -86,19 +76,18 @@ export default function HoverSkill({
                       </Button>
                     ))}
                   </div>
-                  <div className="border-t-2 border-[#1f2025]" />
-                  <ul className=" px-3 my-2">
+                  <ul className="px-3 my-2">
                     {detail.details &&
-                      detail.details.map((detail, index) => (
+                      detail.details.map((detailText, idx) => (
                         <li
-                          key={index}
-                          className="text-sm"
-                          dangerouslySetInnerHTML={{ __html: detail }}
+                          key={idx}
+                          className="text-sm text-white text-start"
+                          dangerouslySetInnerHTML={{ __html: detailText }}
                         />
                       ))}
                   </ul>
                   {detail.footer && (
-                    <div className="flex justify-end items-center gap-2  border-t-[.5px] py-2">
+                    <div className="flex justify-end items-center gap-2 border-t-[.5px] border-[#1f2025] py-2">
                       <span
                         className="text-gray-400 text-xs mr-5"
                         dangerouslySetInnerHTML={{ __html: detail.footer }}

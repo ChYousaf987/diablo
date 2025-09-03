@@ -42,6 +42,7 @@ export default function GearItem({
   const [selectedCategory, setSelectedCategory] = useState(null);
   const dispatch = useAppDispatch();
   const category = useAppSelector(selectCategory);
+  const [hoveredAspect, setHoveredAspect] = useState(null); // State for tracking hovered aspect
 
   // Update filtered aspects when gear, aspects, searchTerm, or selectedCategory changes
   useEffect(() => {
@@ -115,11 +116,11 @@ export default function GearItem({
             />
           </DialogTrigger>
           <DialogContent className="bg-[#1f2025] p-0 dailog-content">
-            <DialogHeader className="w-full ">
+            <DialogHeader className="w-full">
               <DialogTitle className="flex justify-between items-center gap-3 px-3 py-2">
                 <div className="flex items-center gap-2">
                   <div className="flex items-center bg-[#444757] w-[280px] px-2 rounded-sm">
-                    <Search size={18} className="text-white " />
+                    <Search size={18} className="text-white" />
                     <Input
                       className="placeholder:text-[#76788b] font-normal w-auto border-none focus:outline-none bg-[#76788b] bg-transparent text-white focus:ring-0 focus:border-0"
                       placeholder="Rechercher par nom, compétence, etc..."
@@ -165,7 +166,7 @@ export default function GearItem({
                   </Button>
                 </div>
               </DialogTitle>
-              <Tabs defaultValue="aspect" className="h-full ">
+              <Tabs defaultValue="aspect" className="h-full">
                 <TabsList className="bg-[#1f2025] border-y-[0.5px] shadow-none border-white rounded-none text-white my-0 p-0 w-full flex h-[40px] justify-between">
                   <TabsTrigger
                     value="aspect"
@@ -189,11 +190,12 @@ export default function GearItem({
                         <div
                           key={index}
                           onClick={() => handleUpdate(aspect)}
-                          className="flex justify-between items-center gap-2 border-b-[.5px] border-[#424243] mb-1 pb-2 cursor-pointer"
+                          className="flex justify-between items-center gap-2 border-b-[.5px] border-[#424243] mb-1 pb-2 cursor-pointer relative"
+                          onMouseEnter={() => setHoveredAspect(aspect)}
+                          onMouseLeave={() => setHoveredAspect(null)}
                         >
                           <div className="flex flex-col">
                             <GearItemTrigger gear={aspect} size={45} />
-                            
                           </div>
                           <GiRoundStar
                             className={`text-[#444757] hover:text-[#6973b2] text-2xl ${
@@ -202,6 +204,25 @@ export default function GearItem({
                                 : ""
                             }`}
                           />
+                          {/* Hover Popup */}
+                          {hoveredAspect === aspect && (
+                            <div className="absolute z-50 w-64 bg-[#1f2025] border border-[#424243] rounded-md p-3 shadow-lg left-1/2 -translate-x-1/2 top-full mt-2 text-white">
+                              <img
+                                src={aspect.image}
+                                alt={aspect.label}
+                                className="w-12 h-12 object-contain mb-2"
+                              />
+                              <h4 className="font-bold text-lg">
+                                {aspect.label}
+                              </h4>
+                              <p className="text-sm text-[#a3a4a5]">
+                                {aspect.description}
+                              </p>
+                              <p className="text-sm text-[#a3a4a5] mt-1">
+                                Category: {aspect.category}
+                              </p>
+                            </div>
+                          )}
                         </div>
                       ))
                     )}
