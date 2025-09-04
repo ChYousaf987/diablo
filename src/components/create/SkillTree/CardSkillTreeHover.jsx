@@ -1,9 +1,5 @@
-import React, { useEffect } from "react";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
+
+import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -14,7 +10,7 @@ import {
 import { useAppSelector } from "@/lib/hooks";
 import { generateConnections, sumScores, hasParentRank } from "@/lib/utils";
 import { levelRanges } from "@/constants";
-import { Button } from "@/components/ui/button";
+import ReactDOM from "react-dom";
 
 export default function CardSkillTreeHover({
   item,
@@ -27,6 +23,9 @@ export default function CardSkillTreeHover({
   const optionSkills = useAppSelector(selectOptionSkills);
   const level = sumScores(optionSkills);
   const isClickable = type !== "child" || hasParentRank(optionSkills, item);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [popupPosition, setPopupPosition] = useState({ top: 0, left: 0 });
+  const triggerRef = useRef(null);
 
   useEffect(() => {
     console.log("Rendered item:", {
@@ -188,103 +187,101 @@ export default function CardSkillTreeHover({
     }
   };
 
+  const handleMouseEnter = (event) => {
+    if (triggerRef.current) {
+      const rect = triggerRef.current.getBoundingClientRect();
+      const scrollX = window.scrollX || window.pageXOffset;
+      const scrollY = window.scrollY || window.pageYOffset;
+      setPopupPosition({
+        top: rect.bottom + scrollY + 4,
+        left: rect.left + scrollX - 96, // Center by offsetting half the popup width (192px / 2)
+      });
+      setIsPopupVisible(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setIsPopupVisible(false);
+  };
+
   return (
-    <div className="flex">
-      <HoverCard closeDelay="200" openDelay={200}>
-        <HoverCardTrigger
-          className={`flex flex-col justify-center items-center text-white ${
-            (item.rank === 0 && size === 20) ||
-            level < min_score ||
-            !isClickable
-              ? "opacity-50"
-              : ""
+    <div className="flex relative" onMouseLeave={handleMouseLeave}>
+      <div
+        ref={triggerRef}
+        className={`flex flex-col justify-center items-center text-white ${
+          (item.rank === 0 && size === 20) ||
+          level < min_score ||
+          !isClickable
+            ? "opacity-50"
+            : ""
+        }`}
+        onMouseEnter={handleMouseEnter}
+      >
+        <div
+          className={`${size === 40 ? "builder" : ""} ${
+            isClickable ? "cursor-pointer" : "cursor-not-allowed"
           }`}
+          onClick={isClickable ? handleScoreUpdate : undefined}
+          onContextMenu={isClickable ? handleScoreUpdate : undefined}
         >
-          <div
-            className={`${size === 40 ? "builder" : ""} ${
-              isClickable ? "cursor-pointer" : "cursor-not-allowed"
-            }`}
-            onClick={isClickable ? handleScoreUpdate : undefined}
-            onContextMenu={isClickable ? handleScoreUpdate : undefined}
+          <Image
+            src={`${item.image}`}
+            className="object-contain transition-all bg-[#1f2025] hover:scale-105 rounded-sm"
+            alt="logo"
+            width={size}
+            height={size}
+          />
+        </div>
+        {size === 20 && item.rank > 0 && (
+          <span
+            className={`${
+              size === 40 ? "-mt-5" : ""
+            } text-[8px] bg-red-500 px-0.5`}
           >
-            <Image
-              src={`${item.image}`}
-              className="object-contain transition-all bg-[#1f2025] hover:scale-105 rounded-sm"
-              alt="logo"
-              width={size}
-              height={size}
+            {item.rank} / {item.max_rank}
+          </span>
+        )}
+        {(size === 40 || size === 30) && (
+          <span
+            className={`${
+              size === 40 ? "-mt-5" : ""
+            } text-[8px] bg-red-500 px-0.5`}
+          >
+            {item.rank} / {item.max_rank}
+          </span>
+        )}
+      </div>
+      {isPopupVisible &&
+        ReactDOM.createPortal(
+          <div
+            className="absolute bg-[#1f2025] border border-[#424243] rounded-md p-3 shadow-lg text-white w-64"
+            style={{
+              top: `${popupPosition.top}px`,
+              left: `${popupPosition.left}px`,
+              zIndex: 2000, // Higher z-index to ensure it stays on top
+            }}
+          >
+            <img
+              src={item.image}
+              alt={item.label}
+              className="w-12 h-12 object-contain mb-2"
             />
-          </div>
-          {size === 20 && item.rank > 0 && (
-            <span
-              className={`${
-                size === 40 ? "-mt-5" : ""
-              } text-[8px] bg-red-500 px-0.5`}
-            >
-              {item.rank} / {item.max_rank}
-            </span>
-          )}
-          {(size === 40 || size === 30) && (
-            <span
-              className={`${
-                size === 40 ? "-mt-5" : ""
-              } text-[8px] bg-red-500 px-0.5`}
-            >
-              {item.rank} / {item.max_rank}
-            </span>
-          )}
-        </HoverCardTrigger>
-        <HoverCardContent className="bg-[#15161a] bg-opacity-100 text-white max-w-[300px] w-full p-2 border border-[#2c2d31] shadow-xl rounded-md z-[999]">
-          <div>
-            <div className="flex justify-center gap-2 ">
-              <Image
-                src={`${item.image}`}
-                className="transition-all hover:scale-105"
-                alt={item.label}
-                width={50}
-                height={50}
-              />
-              <div className="flex flex-col justify-center">
-                <h2 className="mt-0 text-md font-bold text-yellow-400">
-                  {item.label}
-                </h2>
-                {item.rank > 0 && (
-                  <p className="mt-0 text-sm font-light">Rank: {item.rank}</p>
-                )}
-              </div>
-            </div>
-            <div className="flex justify-center items-center gap-2 my-3">
-              {item.powers?.map((subPower) => (
-                <Button
-                  key={subPower}
-                  className="bg-[#1f2025] hover:bg-slate-300 text-white hover:text-black h-6 px-4 text-sm"
-                >
-                  {subPower}
-                </Button>
-              ))}
-            </div>
-            <div className="border-t-2 border-[#1f2025]" />
-            <ul className="px-3 my-2">
-              {item.details &&
-                item.details.map((detail, index) => (
-                  <li
-                    key={index}
-                    className="text-sm"
-                    dangerouslySetInnerHTML={{ __html: detail }}
-                  />
+            <h4 className="font-bold text-lg">{item.label}</h4>
+            <p className="text-sm text-[#a3a4a5]">
+              Power: {item.rank || (item.powers && item.powers.join(", ")) || "N/A"}
+            </p>
+            {item.details && item.details.length > 0 && (
+              <div className="text-sm text-[#a3a4a5] mt-1">
+                {item.details.map((detail, index) => (
+                  <p key={index} dangerouslySetInnerHTML={{ __html: detail }} />
                 ))}
-            </ul>
-            {item.footer && (
-              <div className="flex justify-end items-center gap-2 border-t-[.5px] py-2">
-                <span
-                  className="text-gray-400 text-xs mr-5"
-                  dangerouslySetInnerHTML={{ __html: item.footer }}
-                />
               </div>
             )}
-          </div>
-        </HoverCardContent>
-      </HoverCard>
+            <p className="text-sm text-[#a3a4a5] mt-1">Detail: N/A</p>
+            <p className="text-sm text-[#a3a4a5] mt-1">Footer: {item.footer || "N/A"}</p>
+          </div>,
+          document.body
+        )}
     </div>
   );
 }
