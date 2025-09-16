@@ -25,13 +25,7 @@ export default function HoverTech({ item, onUpdate, tech }) {
               }`}
               onClick={() => updateTech(item.id)}
             >
-              <Image
-                src={`${item.image}`}
-                className="object-contain transition-all  hover:scale-105 rounded-sm"
-                alt="logo"
-                width={50}
-                height={50}
-              />
+              
               <div className={`flex flex-col  items-start`}>
                 <span className="font-bold text-yellow-600">{item.label}</span>
               </div>
@@ -39,13 +33,7 @@ export default function HoverTech({ item, onUpdate, tech }) {
             <HoverCardContent className="bg-[#15161a] text-white max-w-[500px] w-full p-1">
               <div>
                 <div className="flex justify-center items-center gap-3 border-b-[.5px] py-2">
-                  <Image
-                    src={`${item.image}`}
-                    className="transition-all bg-[#1f2025] hover:scale-105 rounded-sm "
-                    alt="logo"
-                    width={40}
-                    height={40}
-                  />
+                  
                   <span className="font-bold !text-white">{item.code}</span>
                 </div>
                 <ul className=" px-3 my-2">

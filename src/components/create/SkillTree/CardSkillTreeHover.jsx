@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
@@ -209,9 +208,7 @@ export default function CardSkillTreeHover({
       <div
         ref={triggerRef}
         className={`flex flex-col justify-center items-center text-white ${
-          (item.rank === 0 && size === 20) ||
-          level < min_score ||
-          !isClickable
+          (item.rank === 0 && size === 20) || level < min_score || !isClickable
             ? "opacity-50"
             : ""
         }`}
@@ -254,22 +251,25 @@ export default function CardSkillTreeHover({
       {isPopupVisible &&
         ReactDOM.createPortal(
           <div
-            className="absolute bg-[#1f2025] border border-[#424243] rounded-md p-3 shadow-lg text-white w-64"
+            className="absolute bg-[#1f2025] border border-[#424243] rounded-md p-3 shadow-lg text-white w-72"
             style={{
               top: `${popupPosition.top}px`,
               left: `${popupPosition.left}px`,
               zIndex: 2000, // Higher z-index to ensure it stays on top
             }}
           >
-            <img
-              src={item.image}
-              alt={item.label}
-              className="w-12 h-12 object-contain mb-2"
-            />
-            <h4 className="font-bold text-lg">{item.label}</h4>
+            <div className="flex gap-4 items-center mb-2">
+              <img
+                src={item.image}
+                alt={item.label}
+                className="w-12 h-12 object-contain mb-2"
+              />
+              <h4 className="font-bold text-lg">{item.label}</h4>
+            </div>
             <p className="text-sm text-[#a3a4a5]">
-              Power: {item.rank || (item.powers && item.powers.join(", ")) || "N/A"}
+              Power: {item.rank || (item.powers && item.powers.join(", "))}
             </p>
+
             {item.details && item.details.length > 0 && (
               <div className="text-sm text-[#a3a4a5] mt-1">
                 {item.details.map((detail, index) => (
@@ -277,8 +277,15 @@ export default function CardSkillTreeHover({
                 ))}
               </div>
             )}
-            <p className="text-sm text-[#a3a4a5] mt-1">Detail: N/A</p>
-            <p className="text-sm text-[#a3a4a5] mt-1">Footer: {item.footer || "N/A"}</p>
+            <hr />
+            <p className="text-sm text-end text-[#a3a4a5] mt-1">
+              {" "}
+              {item.detail}
+            </p>
+            <p className="text-sm text-end text-[#a3a4a5] mt-1">
+              {" "}
+              {item.footer}
+            </p>
           </div>,
           document.body
         )}

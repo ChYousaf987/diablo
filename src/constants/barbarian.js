@@ -11,7 +11,6 @@ export const gearLeftBarbarian = [
     details: {
       selects1: [],
       selects2: [
-        
         { value: "Dextérité", selectedValue: "Dextérité" },
         { value: "Enery par seconde", selectedValue: "Enery par seconde" },
         { value: "Résistance au feu", selectedValue: "Résistance au feu" },
@@ -498,7 +497,6 @@ export const gearLeftBarbarian = [
     details: {
       selects1: [],
       selects2: [
-       
         {
           value: "Réduction de temps de temps",
           selectedValue: "Réduction de temps de temps",
@@ -3396,13 +3394,13 @@ export const optionSkillsBarbarian = [
         rank: 0,
         powers: ["Combat", "Mobilité"],
         image: "/skill-tree/barbarian/Basic/bash.png",
-        label: "Coup",
+        label: "Raclée",
         top: "5.1185%",
         left: "45.4826%",
         details: [
-          "Génération de Furie : 15",
-          "Coup de chance : 50%",
-          "<span class='text-gray-500'>Frappez l'ennemi avec votre arme, infligeant<span class='text-yellow-500'> [33%] </span>de dégâts. Après avoir frappé les ennemis 4 fois, votre prochain Coup les étourdira pendant 1,25 secondes, passant à 2 secondes si vous utilisez une arme à deux mains.</span>",
+          "Fureur générée : 15",
+          "Chances d’obtenir un coup de chance : 50%",
+          "<span class='text-gray-500'>Vous frappez l’adversaire avec votre arme et lui infligez <span class='text-yellow-500'> 90% </span>points de dégâts. Après avoir frappé des adversaires 4 fois, votre prochaine raclée infligera une volée de coups et étourdira vos cibles pendant 1.5 s. Vous infligez une volée de coups deux fois plus souvent avec une arme à deux mains.</span>",
         ],
         footer: "Dégâts Physiques",
         children: [
@@ -3413,6 +3411,7 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "2.92081%",
             left: "42.0622%",
+            label: "Raclée renforcée",
             notes:
               "Lorsque vous infligez une volée de coups à une cible adverse, vous recevez 20% de votre maximum de points de vie (1) sous forme de points de fortification.",
             isChild: true,
@@ -3424,6 +3423,7 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "1.0783463%",
             left: "39.2167%",
+            label: "Raclée guerrière",
             notes:
               "Lorsque vous infligez une volée de coups à une cible adverse, vous générez 10 points de fureur supplémentaires.",
             isChild: true,
@@ -3435,6 +3435,7 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "1.0783463%",
             left: "44.3187%",
+            label: "Raclée martiale",
             notes:
               "Lorsque vous réalisez 4 coups critiques avec Raclée en utilisant une arme à deux mains, votre prochaine compétence principale ou de maîtrise d’arme accablera les adversaires.",
             isChild: true,
@@ -3448,13 +3449,15 @@ export const optionSkillsBarbarian = [
         rank: 0,
         id: "basic_2",
         image: "/skill-tree/barbarian/Basic/lunging_strike.png",
-        label: "Écorcher",
+        label: "Fente",
         details: [
-          "Génération de Furie : 15",
-          "Coup de chance : 50%",
-          "<span class='text-gray-500'>Écorchez l'ennemi, infligeant <span class='text-yellow-500'> [5%]</span> de dégâts et infligeant <span class='text-yellow-500'> [44%] </span> de dégâts de Saignement sur 5 secondes.</span>",
+          "Fureur générée : 12",
+          "Chances d’obtenir un coup de chance : 50%",
+          "<span class='text-gray-500'>Vous vous fendez et frappez votre adversaire, ce qui lui inflige<span class='text-yellow-500'> 90%</span>points de dégâts.</span>",
         ],
-        footer: "Dégâts Physiques <br/> Nécessite une arme tranchante",
+        Detail: "Dégâts physiques",
+        footer:
+          "Dégâts Physiques <br/> Nécessite d’avoir un arsenal d’armes au complet",
         children: [
           {
             id: "basic_2_1",
@@ -3463,8 +3466,9 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "6.81331%",
             left: "38.1172%",
+            label: "Fente renforcée",
             notes:
-              "Écorchement a 15% de chances de rendre l’adversaire vulnérable pendant 5 s. Ces chances sont doublées lorsque vous utilisez une arme à deux mains.",
+              "Fente inflige 30%[x] de dégâts supplémentaires et vous rend 2% de votre maximum de points de vie (8) lorsqu’elle blesse une cible en bonne santé.",
             isChild: true,
           },
           {
@@ -3474,8 +3478,9 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "3.67796%",
             left: "36.21%",
+            label: "Fente guerrière",
             notes:
-              "Lorsqu’Écorchement inflige des dégâts directs à une cible, celle-ci subit 15%[x] de dégâts de saignement supplémentaires de votre part pendant les 3 s qui suivent.",
+              "Fente inflige aussi 40% points de dégâts de saignement en 5 s.",
             isChild: true,
           },
           {
@@ -3485,8 +3490,9 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "6.586%",
             left: "32.5524%",
+            label: "Fente martiale",
             notes:
-              "Lorsqu’Écorchement inflige des dégâts directs à une cible adverse, vous obtenez 4 % de réduction des dégâts et 40 points de dégâts d’épines pendant 6 s. Cet effet peut se cumuler jusqu’à 5 fois.",
+              "Infliger des coups critiques avec Fente vous confère Rage du berserker pendant 3.0 s.",
             isChild: true,
           },
         ],
@@ -3500,12 +3506,13 @@ export const optionSkillsBarbarian = [
         image: "/skill-tree/barbarian/Basic/frenzy.png",
         label: "Frénésie",
         details: [
-          "Génération de Furie : 4",
-          "Coup de chance : 30%",
-          "<span class='text-gray-500'>Déchaînez une rafale rapide de coups, infligeant <span class='text-yellow-500'>[24%]</span> de dégâts avec chaque paire de coups.</span>",
-          "<span class='text-gray-500'>Si Frénésie touche un ennemi, sa Vitesse d'Attaque est augmentée de +20% pendant 3 secondes, jusqu'à +60%.</span>",
+          "Fureur générée : 7",
+          "Chances d’obtenir un coup de chance : 30%",
+          "<span class='text-gray-500'>Vous déclenchez une rafale de coups rapides qui inflige<span class='text-yellow-500'>70%</span> points de dégâts tous les deux coups portés.</span>",
+          "<span class='text-gray-500'>Si Frénésie touche une cible, sa vitesse d’attaque est augmentée de 20%[+] pendant 3 s, jusqu’à un maximum de 60%[+].</span>",
         ],
-        footer: "Dégâts Physiques <br/> Nécessite des armes doubles",
+        detail: "Dégâts Physiques",
+        footer: "Nécessite des armes doubles",
         children: [
           {
             id: "basic_3_1",
@@ -3514,6 +3521,7 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "2.92081%",
             left: "52.5%",
+            label: "Fury Reduction",
             notes:
               "Tant que Frénésie augmente votre vitesse d’attaque de 60%[+], le coût en fureur de vos compétences principales est réduit de 25%.",
             isChild: true,
@@ -3525,6 +3533,7 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "1.0783463%",
             left: "50.2296%",
+            label: "Berserker Rage",
             notes:
               "Sous l’effet de Rage du berserker, la vitesse d’attaque de vos autres compétences est augmentée de 6%[+] pour chaque cumul de Frénésie que vous avez.",
             isChild: true,
@@ -3536,6 +3545,7 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "1.0783463%",
             left: "55.8456%",
+            label: "Mobility Boost",
             notes:
               "Chaque cumul de Frénésie que vous possédez vous confère 5% de réduction des dégâts et 5% de vitesse de déplacement.",
             isChild: true,
@@ -3565,6 +3575,7 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "6.82835%",
             left: "61.3759%",
+            label: "Life Steal",
             notes:
               "Fente inflige 30%[x] de dégâts supplémentaires et vous rend 2% de votre maximum de points de vie (8) lorsqu’elle blesse une cible en bonne santé.",
             isChild: true,
@@ -3576,6 +3587,7 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "3.7317%",
             left: "59.7804%",
+            label: "Bleed Damage",
             notes:
               "Fente inflige aussi 20% points de dégâts de saignement en 5 s.",
             isChild: true,
@@ -3587,6 +3599,7 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "4.86376%",
             left: "65.7311%",
+            label: "Berserker Fury",
             notes:
               "Infliger des coups critiques avec Fente vous confère Rage du berserker pendant 3.0 s.",
             isChild: true,
@@ -3611,23 +3624,25 @@ export const optionSkillsBarbarian = [
         rank: 0,
         id: "core_1",
         image: "/skill-tree/barbarian/Core/whirlwind.png",
-        label: "Double Balancement",
+        label: "Tourbillon",
         details: [
-          "Coût en Furie : 25",
-          "Coup de chance : 30%",
-          "Balancez vos armes dans des directions opposées, infligeant [50%] de dégâts avec chaque arme. Les ennemis pris au centre subissent les dégâts des deux armes.",
+          "Coût en fureur : 25 par seconde",
+          "Chances d’obtenir un coup de chance : 20%",
+          "Vous attaquez rapidement les adversaires à proximité et leur infligez 76% points de dégâts.",
         ],
-        footer: "Dégâts Physiques",
+        detail: " Dégâts physiques",
+        footer: "Nécessite d’avoir un arsenal d’armes au complet.",
         children: [
           {
             id: "core_1_1",
             parent_id: "core_1",
             max_rank: 1,
             rank: 0,
+            label: "Tourbillon renforcé",
             top: "12%",
             left: "24%",
             notes:
-              "Si Coup double blesse une cible étourdie ou renversée, vous obtenez 25 points de fureur.",
+              "Vous gagnez 1 point de fureur chaque fois que Tourbillon inflige des dégâts directs à une cible, ou 4 points de fureur si la cible est une élite.",
             isChild: true,
           },
           {
@@ -3635,21 +3650,24 @@ export const optionSkillsBarbarian = [
             parent_id: "core_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Tourbillon furieux",
+
             top: "10%",
             left: "26%",
             notes:
-              "Lancer Coup double sous l’effet de Rage du berserker vous confère 2 s supplémentaires de Rage du berserker.",
+              "Lorsque vous maniez une arme tranchante, Tourbillon inflige aussi 120% points de dégâts de saignement en 5 s.",
             isChild: true,
           },
           {
             id: "core_1_3",
             parent_id: "core_1_1",
             max_rank: 1,
+            label: "Tourbillon violent",
             rank: 0,
             top: "10%",
             left: "22%",
             notes:
-              "Les cibles touchées par les deux coups de Coup double deviennent vulnérables pendant 2 s.",
+              "La canalisation de Tourbillon pendant 2 s augmente les dégâts infligés par votre prochaine compétence de maîtrise d’arme de 35%[x] si elle est utilisée tout de suite après la fin de Tourbillon.",
             isChild: true,
           },
         ],
@@ -3659,20 +3677,22 @@ export const optionSkillsBarbarian = [
         left: "16.176%",
         id: "core_2",
         max_rank: 5,
+        label: "Marteau des Anciens",
         rank: 0,
         image: "/skill-tree/barbarian/Core/hammer_of_the_ancients.png",
-        label: "Marteau des Anciens",
         details: [
-          "Coût en Mana : 25",
-          "Coup de chance : 35%",
-          "<span class='text-gray-500'>Libérez une série de projectiles chargés qui infligent <span class='text-yellow-500'> [50%]</span> de dégâts chacun.</span>",
+          "Coût en fureur : 30",
+          "Chances d’obtenir un coup de chance : 50%",
+          "Vous abattez votre marteau avec la fureur des Anciens et infligez 175% points de dégâts dans une zone précise.",
         ],
-        footer: "Dégâts de Foudre",
+        detail: " Dégâts physiques",
+        footer: "Nécessite une arme contondante à deux mains.",
         children: [
           {
             id: "core_2_1",
             parent_id: "core_2",
             max_rank: 1,
+            label: "Marteau des anciens renforcé",
             rank: 0,
             top: "13%",
             left: "16%",
@@ -3684,17 +3704,19 @@ export const optionSkillsBarbarian = [
             id: "core_2_2",
             parent_id: "core_2_1",
             max_rank: 1,
+            label: "Marteau des Anciens furieux",
             rank: 0,
             top: "11%",
             left: "18%",
             notes:
-              "Marteau des Anciens obtient 2.0%[+] de chances d’infliger un coup critique tous les 10 points de fureur dont vous disposiez à l’utilisation. Ses coups critiques renversent les adversaires pendant 2 s.",
+              "Marteau des Anciens obtient 5%[x] de dégâts critiques et de chances d’infliger un coup critique tous les 10 points de fureur dont vous disposiez à l’utilisation. Ses coups critiques renversent les adversaires pendant 2 s.",
             isChild: true,
           },
           {
             id: "core_2_3",
             parent_id: "core_2_1",
             max_rank: 1,
+            label: "Marteau des Anciens violent",
             rank: 0,
             top: "11%",
             left: "14%",
@@ -3711,23 +3733,25 @@ export const optionSkillsBarbarian = [
         rank: 0,
         id: "core_3",
         image: "/skill-tree/barbarian/Core/upheaval.png",
-        label: "Déchirer",
+        label: "Soulèvement",
         details: [
-          "Coût en Mana : 30",
-          "Coup de chance : 40%",
-          "<span class='text-gray-500'>Lancez un projectile enflammé qui explose à l'impact, infligeant <span class='text-yellow-500'> [100%]</span> de dégâts à tous les ennemis proches.</span>",
+          "Coût en fureur : 35",
+          "Chances d’obtenir un coup de chance : 30%",
+          "Vous déchirez le sol avec votre arme et projetez des débris vers l’avant, ce qui inflige 200% points de dégâts.",
         ],
-        footer: "Dégâts de Feu",
+        detail: "Dégâts physiques",
+        footer: "Nécessite une arme à deux mains.",
         children: [
           {
             id: "core_3_1",
             parent_id: "core_3",
             max_rank: 1,
             rank: 0,
+            label: "Soulèvement renforcé",
             top: "22%",
             left: "10%",
             notes:
-              "Infliger des dégâts directs avec Déchirure prolonge la vulnérabilité des adversaires de 2 s.",
+              "Soulèvement a 45% de chances d’étourdir pendant 3.0 s toutes les cibles auxquelles il inflige des dégâts.",
             isChild: true,
           },
           {
@@ -3735,21 +3759,23 @@ export const optionSkillsBarbarian = [
             parent_id: "core_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Soulèvement furieux",
             top: "20%",
             left: "8%",
             notes:
-              "Infliger des dégâts directs avec Déchirure vous octroie 5 points de fureur par cible touchée, jusqu’à un maximum de 25 points.",
+              "Infliger des dégâts directs à une cible avec une autre compétence que Soulèvement augmente de 20%[x] les dégâts de votre prochaine utilisation de Soulèvement, cet effet pouvant se cumuler jusqu’à 10 fois.",
             isChild: true,
           },
           {
             id: "core_3_3",
             parent_id: "core_3_1",
             max_rank: 1,
+            label: "Soulèvement violent",
             rank: 0,
             top: "24%",
             left: "8%",
             notes:
-              "Déchirure inflige 30%[x] de dégâts supplémentaires aux adversaires vulnérables.",
+              "Vous obtenez l’effet de Rage du berserker pendant 3 s si Soulèvement inflige des dégâts à au moins 2 adversaires ou à un ou une boss, et pendant 5 s s’il inflige des dégâts à au moins 4 adversaires.",
             isChild: true,
           },
         ],
@@ -3761,23 +3787,25 @@ export const optionSkillsBarbarian = [
         rank: 0,
         id: "core_4",
         image: "/skill-tree/barbarian/Core/double_swing.png",
-        label: "Soulèvement",
+        label: "Coup double",
         details: [
-          "Coût en Mana : 30",
-          "Coup de chance : 40%",
-          "<span class='text-gray-500'>Lancez un projectile enflammé qui explose à l'impact, infligeant <span class='text-yellow-500'> [100%]</span> de dégâts à tous les ennemis proches.</span>",
+          "Coût en fureur : 20",
+          "Chances d’obtenir un coup de chance : 30%",
+          "Vous frappez avec vos armes des deux côtés et infligez 85% points de dégâts avec chacune d’elles. Les cibles ainsi prises en tenaille sont blessées par les deux armes.",
         ],
-        footer: "Dégâts de Feu",
+        detail: " Dégâts physiques",
+        footer: "Nécessite deux armes.",
         children: [
           {
             id: "core_4_1",
             parent_id: "core_4",
             max_rank: 1,
+            label: "Coup double renforcé",
             rank: 0,
             top: "29%",
             left: "19%",
             notes:
-              "Soulèvement a 35% de chances d’étourdir pendant 3.0 s toutes les cibles auxquelles il inflige des dégâts.",
+              "Les cibles touchées par les deux coups de Coup double deviennent vulnérables pendant 2 s.",
             isChild: true,
           },
           {
@@ -3785,10 +3813,12 @@ export const optionSkillsBarbarian = [
             parent_id: "core_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Coup double furieux",
+
             top: "32%",
             left: "17%",
             notes:
-              "Infliger des dégâts directs à une cible avec une autre compétence que Soulèvement augmente de 15%[x] les dégâts de votre prochaine utilisation de Soulèvement, cet effet pouvant se cumuler jusqu’à 8 fois.",
+              "Lancer Coup double sous l’effet de Rage du berserker vous confère 2 s supplémentaires de Rage du berserker.",
             isChild: true,
           },
           {
@@ -3796,10 +3826,12 @@ export const optionSkillsBarbarian = [
             parent_id: "core_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Coup double violent",
+
             top: "32%",
             left: "21%",
             notes:
-              "Vous obtenez l’effet de Rage du berserker pendant 3 s si Soulèvement inflige des dégâts à au moins 2 adversaires ou à un ou une boss, et pendant 5 s s’il inflige des dégâts à au moins 4 adversaires.",
+              "Si Coup double blesse une cible étourdie ou renversée, vous obtenez 25 points de fureur.",
             isChild: true,
           },
         ],
@@ -3811,23 +3843,25 @@ export const optionSkillsBarbarian = [
         rank: 0,
         id: "core_5",
         image: "/skill-tree/barbarian/Core/rend.png",
-        label: "Tourbillon",
+        label: "Déchirure",
         details: [
-          "Coût en Mana : 30",
-          "Coup de chance : 40%",
-          "<span class='text-gray-500'>Lancez un projectile enflammé qui explose à l'impact, infligeant <span class='text-yellow-500'> [100%]</span> de dégâts à tous les ennemis proches.</span>",
+          "Coût en fureur : 30",
+          "Chances d’obtenir un coup de chance : 33%",
+          "Vous frappez les adversaires devant vous, ce qui leur inflige 25% points de dégâts à l’impact et 135% points de dégâts de saignement en 5 s.",
         ],
-        footer: "Dégâts de Feu",
+        detail: " Dégâts physiques",
+        footer: "Nécessite une arme tranchante.",
         children: [
           {
             id: "core_5_1",
             parent_id: "core_5",
             max_rank: 1,
+            label: "Déchirure renforcée",
             rank: 0,
             top: "21%",
             left: "40%",
             notes:
-              "Vous gagnez 1 point de fureur chaque fois que Tourbillon inflige des dégâts directs à une cible, ou 4 points de fureur si la cible est une élite.",
+              "Infliger des dégâts directs avec Déchirure prolonge la vulnérabilité des adversaires de 2 s.",
             isChild: true,
           },
           {
@@ -3835,21 +3869,23 @@ export const optionSkillsBarbarian = [
             parent_id: "core_5_1",
             max_rank: 1,
             rank: 0,
+            label: "Déchirure furieuse",
             top: "19%",
             left: "42%",
             notes:
-              "Lorsque vous maniez une arme tranchante, Tourbillon inflige aussi 40% de ses dégâts de base sous forme de dégâts de saignement en 5 s.",
+              "Infliger des dégâts directs avec Déchirure vous octroie 5 points de fureur par cible touchée, jusqu’à un maximum de 25 points.",
             isChild: true,
           },
           {
             id: "core_5_3",
             parent_id: "core_5_1",
             max_rank: 1,
+            label: "Déchirure violente",
             rank: 0,
             top: "23%",
             left: "42%",
             notes:
-              "Après avoir utilisé Tourbillon pendant 2 s, Tourbillon inflige 35%[x] de dégâts supplémentaires jusqu’à son annulation.",
+              "Déchirure inflige 30%[x] de dégâts supplémentaires aux adversaires vulnérables.",
             isChild: true,
           },
         ],
@@ -3890,8 +3926,11 @@ export const optionSkillsBarbarian = [
         left: "31.7011%",
         id: "secondCore_2",
         image: "/skill-tree/barbarian/Defensive/endless_fury.png",
-        label: "Furie Sans Fin",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Fureur éternelle",
+        details: [
+          "Les compétences de base génèrent 12%[x] de fureur supplémentaire.",
+        ],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 3,
@@ -3900,8 +3939,9 @@ export const optionSkillsBarbarian = [
         left: "26.7011%",
         id: "secondCore_3",
         image: "/skill-tree/barbarian/Defensive/tempered_fury.png",
-        label: "Furie Sans",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Fureur mesurée",
+        details: ["Augmente votre fureur maximum de 5."],
+        detail: " Dégâts physiques",
       },
     ],
   },
@@ -3921,45 +3961,51 @@ export const optionSkillsBarbarian = [
         top: "30.031%",
         id: "defensive_1",
         image: "/skill-tree/barbarian/Defensive/ground_stomp.png",
-        // image: "/skill-tree/barbarian/Defensive/challenging_shout.png",
-        label: "Cri de Défi",
+        label: "Choc terrestre",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 16 s",
+          "Chances d’obtenir un coup de chance : 33%",
+          "Vous frappez le sol, ce qui étourdit les adversaires à proximité pendant 3 s et leur inflige 140% points de dégâts.",
         ],
-        footer: "Compétence Défensive",
+        footer: " Dégâts physiques",
         children: [
           {
             id: "defensive_1_1",
             parent_id: "defensive_1",
             max_rank: 1,
             rank: 0,
+            label: "Choc terrestre renforcé",
+
             top: "28%",
             left: "57%",
             notes:
-              "Lorsque Cri provocateur est actif, vous obtenez un bonus de 20%[x] à votre maximum de points de vie.",
+              "Choc terrestre génère 60 points de fureur et dispose d’une durée d’étourdissement augmentée de 2 s.",
             isChild: true,
           },
           {
             id: "defensive_1_2",
             parent_id: "defensive_1_1",
             max_rank: 1,
+            label: "Choc terrestre stratégique",
+
             rank: 0,
             top: "26%",
             left: "59%",
             notes:
-              "Lorsque Cri provocateur est actif, vous gagnez un montant de dégâts d’épines égal à 30% de votre maximum de points de vie.",
+              "Le temps de recharge de votre compétence ultime est réduit de 5 s par cible blessée par Choc terrestre, jusqu’à un maximum de 15 s.",
             isChild: true,
           },
           {
             id: "defensive_1_3",
             parent_id: "defensive_1_1",
             max_rank: 1,
+            label: "Choc terrestre tactique",
+
             rank: 0,
             top: "26%",
             left: "55%",
             notes:
-              "Lorsque Cri provocateur est actif, vous gagnez 6 points de fureur chaque fois que vous subissez des dégâts.",
+              "Choc terrestre est désormais aussi une compétence de combat et inflige 100%[x] de dégâts supplémentaires. Elle rend également la cible vulnérable pendant 4 s.",
             isChild: true,
           },
         ],
@@ -3972,44 +4018,50 @@ export const optionSkillsBarbarian = [
         id: "defensive_2",
         image: "/skill-tree/barbarian/Defensive/rallying_cry.png",
         // image: "/skill-tree/barbarian/Defensive/ground_stomp.png",
-        label: "Piétinement",
+        label: "Galvanisation",
         details: [
-          "Temps de recharge : 20 secondes",
-          "<span class='text-gray-500'>Durcissez temporairement votre peau, réduisant les dégâts subis de <span class='text-yellow-500'> [30%]</span> pendant 8 secondes.</span>",
+          "Temps de recharge : 12 s",
+          "Vous vous galvanisez, ce qui vous octroie une barrière absorbant 50% de vos points de vie manquants pendant 5 s.",
         ],
-        footer: "Compétence Défensive",
+        footer: " Dégâts physiques",
         children: [
           {
             id: "defensive_2_1",
             parent_id: "defensive_2",
             max_rank: 1,
+            label: "Galvanisation renforcée",
+
             rank: 0,
             top: "31.5%",
             left: "71%",
             notes:
-              "Choc terrestre génère 60 points de fureur et dispose d’une durée d’étourdissement augmentée de 2 s.",
+              "Galvanisation vous permet de vous mouvoir librement pendant 5 s et sa barrière absorbe 30% de votre maximum de points de vie en plus.",
             isChild: true,
           },
           {
             id: "defensive_2_2",
             parent_id: "defensive_2_1",
             max_rank: 1,
+            label: "Galvanisation stratégique",
+
             rank: 0,
             top: "29%",
             left: "70%",
             notes:
-              "Le temps de recharge de votre compétence ultime est réduit de 4 s par cible blessée par Choc terrestre, jusqu’à un maximum de 12 s.",
+              "Galvanisation confère aussi un montant de fortification égal à 30% de votre maximum de vie (0). Ce montant est doublé si vous avez moins de 50% de points de vie au moment de son utilisation.",
             isChild: true,
           },
           {
             id: "defensive_2_3",
             parent_id: "defensive_2_1",
             max_rank: 1,
+            label: "Galvanisation tactique",
+
             rank: 0,
             top: "29%",
             left: "74%",
             notes:
-              "Choc terrestre est désormais aussi une compétence de combat et inflige 900%[x] de dégâts supplémentaires. Elle rend également la cible vulnérable pendant 4 s.",
+              "Cri de ralliement génère 20 points de fureur et augmente votre génération de ressources de 20%[x] supplémentaires.",
             isChild: true,
           },
         ],
@@ -4021,22 +4073,23 @@ export const optionSkillsBarbarian = [
         top: "37.4188%",
         id: "defensive_3",
         image: "/skill-tree/barbarian/Defensive/iron_skin.png",
-        label: "Peau de Fer",
+        label: "Galvanisation",
         details: [
-          "Temps de recharge : 25 secondes",
-          "<span class='text-gray-500'>Créez une barrière protectrice autour de vous qui absorbe <span class='text-yellow-500'> [200%]</span> de votre santé maximale en dégâts pendant 6 secondes.</span>",
+          "Temps de recharge : 12 s",
+          "Vous vous galvanisez, ce qui vous octroie une barrière absorbant 50% de vos points de vie manquants pendant 5 s.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "defensive_3_1",
             parent_id: "defensive_3",
+            label: "Galvanisation renforcée",
             max_rank: 1,
             rank: 0,
             top: "37.5%",
             left: "73.5%",
             notes:
-              "La barrière de Galvanisation absorbe 25% de votre maximum de points de vie en plus.",
+              "Galvanisation vous permet de vous mouvoir librement pendant 5 s et sa barrière absorbe 30% de votre maximum de points de vie en plus.",
             isChild: true,
           },
           {
@@ -4044,10 +4097,11 @@ export const optionSkillsBarbarian = [
             parent_id: "defensive_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Galvanisation stratégique",
             top: "39.5%",
             left: "77.5%",
             notes:
-              "Galvanisation confère aussi un montant de fortification égal à 20% de votre maximum de vie (0). Ce montant est doublé si vous avez moins de 50% de points de vie au moment de son utilisation.",
+              "Galvanisation confère aussi un montant de fortification égal à 30% de votre maximum de vie (0). Ce montant est doublé si vous avez moins de 50% de points de vie au moment de son utilisation.",
             isChild: true,
           },
           {
@@ -4055,10 +4109,11 @@ export const optionSkillsBarbarian = [
             parent_id: "defensive_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Galvanisation tactique",
             top: "35.5%",
             left: "77.5%",
             notes:
-              "Tant que Galvanisation est active, vous récupérez chaque seconde un montant de points de vie égal à 10% du montant initial de la barrière.",
+              "Tant que Galvanisation est active, vous récupérez chaque seconde un montant de points de vie égal à 20% du montant initial de la barrière.",
             isChild: true,
           },
         ],
@@ -4073,16 +4128,18 @@ export const optionSkillsBarbarian = [
         // image: "/skill-tree/barbarian/Defensive/rallying_cry.png",
         label: "Cri de Ralliement",
         details: [
-          "Temps de recharge : 25 secondes",
-          "<span class='text-gray-500'>Créez une barrière protectrice autour de vous qui absorbe <span class='text-yellow-500'> [200%]</span> de votre santé maximale en dégâts pendant 6 secondes.</span>",
+          "Temps de recharge : 25 s",
+          "Vous poussez un cri de ralliement, ce qui augmente votre vitesse de déplacement de 30%[+] et votre génération de ressources de 40%[x] pendant 6 s, et celles des forces alliées à proximité pendant 3 s.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "defensive_4_1",
             parent_id: "defensive_4",
             max_rank: 1,
             rank: 0,
+            label: "Cri de ralliement renforcé",
+
             top: "45%",
             left: "57.5%",
             notes:
@@ -4093,6 +4150,8 @@ export const optionSkillsBarbarian = [
             id: "defensive_4_2",
             parent_id: "defensive_4_1",
             max_rank: 1,
+            label: "Cri de ralliement stratégique",
+
             rank: 0,
             top: "47%",
             left: "54%",
@@ -4104,6 +4163,8 @@ export const optionSkillsBarbarian = [
             id: "defensive_4_3",
             parent_id: "defensive_4_1",
             max_rank: 1,
+            label: "Cri de ralliement tactique",
+
             rank: 0,
             top: "47%",
             left: "60%",
@@ -4122,8 +4183,10 @@ export const optionSkillsBarbarian = [
         left: "63.355%",
         id: "secondDefensive_1",
         image: "/skill-tree/barbarian/Defensive/imposing_presence.png",
-        label: "Présence Imposante",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Présence imposante",
+        details: ["Votre maximum de points de vie est augmenté de 5%[x]."],
+        detail: " Dégâts physiques",
+
         children: [
           {
             id: "secondDefensive_1_1",
@@ -4131,10 +4194,11 @@ export const optionSkillsBarbarian = [
             linkedOptionId: ["defensive_1", "defensive_2"],
             max_rank: 3,
             rank: 0,
+            label: "Vigueur martiale",
             top: "29.6225%",
             left: "65.355%",
             notes:
-              "Les adversaires touchés par Cri de défi subissent 15% de dégâts supplémentaires de votre part pendant 5 s.",
+              "La réduction de dégâts contre les élites est augmentée de 5%.",
             isChild: true,
             labels: "Présence Imposante 1",
           },
@@ -4147,8 +4211,11 @@ export const optionSkillsBarbarian = [
         left: "64.2644%",
         id: "secondDefensive_2",
         image: "/skill-tree/barbarian/Defensive/outburst.png",
-        label: "Explosion",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Accès de colère",
+        details: [
+          "Vous gagnez 16 points de dégâts d’épines. Vous gagnez également 8 points de dégâts d’épines pour chaque bonus de 40 points à votre maximum de points de vie.",
+        ],
+        detail: " Dégâts physiques",
         children: [
           {
             id: "secondDefensive_2_1",
@@ -4159,9 +4226,9 @@ export const optionSkillsBarbarian = [
             top: "44.0472%",
             left: "69.2044%",
             notes:
-              "Les adversaires touchés par Piétinement subissent 15% de dégâts supplémentaires de votre part pendant 5 s.",
+              "Augmente vos dégâts d’épines de 3%[+]. Lorsque des forces adverses vous touchent, elles subissent aussi 15 % de vos dégâts d’épines sous forme de saignement en 5 s.",
             isChild: true,
-            labels: "Explosion 1",
+            label: "Robustesse",
           },
         ],
       },
@@ -4183,22 +4250,24 @@ export const optionSkillsBarbarian = [
         left: "24.2048%",
         id: "brawling_1",
         image: "/skill-tree/barbarian/Brawling/kick.png",
-        label: "Charge",
+        label: "Coup de pied",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Charges : 2",
+          "Chances d’obtenir un coup de chance : 40%",
+          "Vous donnez un puissant coup de pied qui inflige 60% points de dégâts et repousse les adversaires devant vous. Les cibles repoussées qui percutent des obstacles subissent 105% points de dégâts supplémentaires et sont étourdies pendant 3 s.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "brawling_1_1",
             parent_id: "brawling_1",
             max_rank: 1,
             rank: 0,
+            label: "Coup de pied renforcé",
             top: "42%",
             left: "24.5%",
             notes:
-              "Les cibles repoussées par Charge et qui percutent des obstacles subissent 150% points de dégâts et sont étourdies pendant 3 s.",
+              "Les cibles blessées par Coup de pied deviennent vulnérables pendant 4 s.",
             isChild: true,
           },
           {
@@ -4206,21 +4275,23 @@ export const optionSkillsBarbarian = [
             parent_id: "brawling_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Coup de pied puissant",
             top: "39%",
             left: "21%",
             notes:
-              "Les cibles blessées par Charge deviennent vulnérables pendant 4 s.",
+              "Les cibles repoussées par Coup de pied infligent 54% points de dégâts aux adversaires qu’elles percutent. Les adversaires ainsi blessés sont renversés pendant 4 s.",
             isChild: true,
           },
           {
             id: "brawling_1_3",
             parent_id: "brawling_1_1",
             max_rank: 1,
+            label: "Coup de pied énergique",
             rank: 0,
             top: "39%",
             left: "27%",
             notes:
-              "Réduit le temps de recharge de Charge de 2 s par adversaire touché par la compétence, jusqu’à 6 s. Si vous chargez un boss, réduit le temps de recharge de 4 s.",
+              "Désormais, Coup de pied est également une compétence principale. Si Coup de pied blesse une cible adverse, il consomme tous vos points de fureur et inflige 25% points de dégâts supplémentaires par tranche de 10 points de fureur consommés. Coup de pied ne repousse plus les adversaires.",
             isChild: true,
           },
         ],
@@ -4232,10 +4303,10 @@ export const optionSkillsBarbarian = [
         left: "16.4904%",
         id: "brawling_2",
         image: "/skill-tree/barbarian/Brawling/war_cry.png",
-        label: "Coup de Pied",
+        label: "Cri de guerre",
         details: [
-          "Temps de recharge : 20 secondes",
-          "<span class='text-gray-500'>Durcissez temporairement votre peau, réduisant les dégâts subis de <span class='text-yellow-500'> [30%]</span> pendant 8 secondes.</span>",
+          "Temps de recharge : 25 s",
+          "Vous poussez un puissant cri de guerre, ce qui augmente vos dégâts de 15.0%[x] pendant 6.0 s, et ceux des personnages alliés pendant 3.0 s.",
         ],
         footer: "Compétence Défensive",
         children: [
@@ -4244,10 +4315,12 @@ export const optionSkillsBarbarian = [
             parent_id: "brawling_2",
             max_rank: 1,
             rank: 0,
+            label: "Cri de guerre renforcé",
+
             top: "44%",
             left: "16.5%",
             notes:
-              "Les cibles blessées par Coup de pied deviennent vulnérables pendant 4 s.",
+              "Cri de guerre vous confère l’effet de Rage du berserker pendant 4 s.",
             isChild: true,
           },
           {
@@ -4255,10 +4328,12 @@ export const optionSkillsBarbarian = [
             parent_id: "brawling_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Cri de guerre puissant",
+
             top: "41%",
             left: "19%",
             notes:
-              "Les cibles repoussées par Coup de pied infligent 54% points de dégâts aux adversaires qu’elles percutent. Les adversaires ainsi blessés sont renversés pendant 2 s.",
+              "Cri de guerre vous confère un montant de fortification égal à 15% de votre maximum de vie (1).",
             isChild: true,
           },
           {
@@ -4266,10 +4341,12 @@ export const optionSkillsBarbarian = [
             parent_id: "brawling_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Cri de guerre énergique",
+
             top: "41%",
             left: "13%",
             notes:
-              "Désormais, Coup de pied est également une compétence principale. Si Coup de pied blesse une cible adverse, il consomme tous vos points de fureur et inflige 25% points de dégâts supplémentaires par tranche de 10 points de fureur consommés. Coup de pied ne repousse plus les adversaires.",
+              "Si au moins 6 adversaires sont à proximité lorsque vous lancez Cri de guerre, votre bonus aux dégâts est augmenté de 10%[x] supplémentaires.",
             isChild: true,
           },
         ],
@@ -4282,22 +4359,25 @@ export const optionSkillsBarbarian = [
         id: "brawling_3",
         image: "/skill-tree/barbarian/Brawling/charge.png",
         // image: "/skill-tree/barbarian/Brawling/leap.png",
-        label: "Bond",
+        label: "Charge",
         details: [
-          "Temps de recharge : 25 secondes",
-          "<span class='text-gray-500'>Créez une barrière protectrice autour de vous qui absorbe <span class='text-yellow-500'> [200%]</span> de votre santé maximale en dégâts pendant 6 secondes.</span>",
+          "Temps de recharge : 17 s",
+          "Chances d’obtenir un coup de chance : 100%",
+          "Vous devenez inarrêtable et vous vous précipitez en avant en poussant les adversaires dans votre élan, puis vous les frappez en leur infligeant 180% points de dégâts et en les repoussant.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
+        footer: "Nécessite d’avoir un arsenal d’armes au complet.",
         children: [
           {
             id: "brawling_3_1",
             parent_id: "brawling_3",
             max_rank: 1,
             rank: 0,
+            label: "Charge renforcée",
             top: "53.6%",
             left: "8%",
             notes:
-              "Si Bond ne blesse aucune cible, son temps de recharge est réduit de 4 s.",
+              "Les cibles repoussées par Charge et qui percutent des obstacles subissent 150% points de dégâts et sont étourdies pendant 3 s.",
             isChild: true,
           },
           {
@@ -4305,10 +4385,12 @@ export const optionSkillsBarbarian = [
             parent_id: "brawling_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Charge puissante",
+
             top: "50.5%",
             left: "6%",
             notes:
-              "Les cibles blessées par Bond sont ralenties de 70% pendant 5 s.",
+              "Les cibles blessées par Charge deviennent vulnérables pendant 4 s.",
             isChild: true,
           },
           {
@@ -4316,10 +4398,12 @@ export const optionSkillsBarbarian = [
             parent_id: "brawling_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Charge énergique",
+
             top: "56%",
             left: "6%",
             notes:
-              "Si Bond inflige des dégâts à au moins une cible, vous gagnez 40 points de fureur.",
+              "Réduit le temps de recharge de Charge de 2 s par adversaire touché par la compétence, jusqu’à 6 s. Si vous chargez un boss, réduit le temps de recharge de 6 s.",
             isChild: true,
           },
         ],
@@ -4331,22 +4415,25 @@ export const optionSkillsBarbarian = [
         left: "16.4904%",
         id: "brawling_4",
         image: "/skill-tree/barbarian/Brawling/leap.png",
-        label: "Cri de Guerre",
+        label: "Bond",
         details: [
-          "Temps de recharge : 25 secondes",
-          "<span class='text-gray-500'>Créez une barrière protectrice autour de vous qui absorbe <span class='text-yellow-500'> [200%]</span> de votre santé maximale en dégâts pendant 6 secondes.</span>",
+          "Temps de recharge : 17 s",
+          "Chances d’obtenir un coup de chance : 66%",
+          "Vous bondissez vers l’avant et frappez le sol, ce qui inflige 77% points de dégâts et ralentit les adversaires à proximité de 70% pendant 5 s.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
+        footer: "Nécessite d’avoir un arsenal d’armes au complet.",
         children: [
           {
             id: "brawling_4_1",
             parent_id: "brawling_4",
             max_rank: 1,
             rank: 0,
+            label: "Bond renforcé",
             top: "59.6%",
             left: "16.5%",
             notes:
-              "Cri de guerre vous confère l’effet de Rage du berserker pendant 4 s.",
+              "Si Bond ne blesse aucune cible, son temps de recharge est réduit de 4 s.",
             isChild: true,
           },
           {
@@ -4354,10 +4441,11 @@ export const optionSkillsBarbarian = [
             parent_id: "brawling_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Bond puissant",
             top: "61.5%",
             left: "18.5%",
             notes:
-              "Cri de guerre vous confère un montant de fortification égal à 15% de votre maximum de vie (1).",
+              "Bond inflige 40%[x] de dégâts supplémentaires et les cibles adverses à proximité sont repoussées à l’impact.",
             isChild: true,
           },
           {
@@ -4365,10 +4453,11 @@ export const optionSkillsBarbarian = [
             parent_id: "brawling_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Bond énergique",
             top: "61.5%",
             left: "14.5%",
             notes:
-              "Si au moins 6 adversaires sont à proximité lorsque vous lancez Cri de guerre, votre bonus aux dégâts est augmenté de 10%[x] supplémentaires.",
+              "Si Bond inflige des dégâts à au moins une cible, vous gagnez 40 points de fureur.",
             isChild: true,
           },
         ],
@@ -4382,21 +4471,27 @@ export const optionSkillsBarbarian = [
         left: "11.5059%",
         id: "secondBrawling_1",
         image: "/skill-tree/barbarian/Brawling/booming_voice.png",
-        label: "Voix Tonitruante",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Voix tonitruante",
+        details: [
+          "La durée des effets de vos compétences de cri est augmentée de 8%[x].",
+        ],
+        footer: " Dégâts physiques",
+
         children: [
           {
             id: "secondBrawling_1_1",
             parent_id: "secondBrawling_1",
             linkedOptionId: ["brawling_2"],
             max_rank: 1,
+            label: "Hurlement guttural",
             rank: 0,
             top: "46.8539%",
             left: "12.5059%",
             notes:
-              "Les adversaires touchés par Bond subissent 15% de dégâts supplémentaires de votre part pendant 5 s.",
+              "Vos compétences de cri réduisent les dégâts que les adversaires infligent de 4% pendant 5 s.",
             isChild: true,
             labels: "Voix Tonitruante 1",
+            detail: " Dégâts physiques",
             connectedChildIds: ["secondBrawling_1_2"],
           },
           {
@@ -4404,11 +4499,14 @@ export const optionSkillsBarbarian = [
             parent_id: "secondBrawling_1",
             max_rank: 1,
             rank: 0,
+            label: "Commandement d’assaut",
             top: "46.8539%",
             left: "8.5059%",
             notes:
-              "Les adversaires touchés par Bond subissent 15% de dégâts supplémentaires de votre part pendant 5 s.",
+              "Vos cris soignent également les personnages alliés à hauteur de 1% de leur maximum de points de vie par seconde.",
             isChild: true,
+            detail: " Dégâts physiques",
+
             labels: "Voix Tonitruante 1",
           },
         ],
@@ -4420,19 +4518,22 @@ export const optionSkillsBarbarian = [
         left: "34.5059%",
         id: "secondBrawling_3",
         image: "/skill-tree/barbarian/Brawling/swiftness.png",
-        label: "Voix Tor",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Vivacité",
+        details: ["Votre vitesse de déplacement est augmentée de 4%[+]."],
+        detail: " Dégâts physiques",
         children: [
           {
             id: "secondBrawling_3_2",
             parent_id: "secondBrawling_3",
             max_rank: 1,
             rank: 0,
+            label: "Impulsions rapides",
             top: "52.8539%",
             left: "39.5059%",
             notes:
-              "Les adversaires touchés par Bond subissent 15% de dégâts supplémentaires de votre part pendant 5 s.",
+              "La durée des effets affectant le contrôle est réduite de 6%.",
             isChild: true,
+            detail: " Dégâts physiques",
             label: "Voix Tor 1",
           },
         ],
@@ -4444,18 +4545,23 @@ export const optionSkillsBarbarian = [
         left: "24.2593%",
         id: "secondBrawling_2",
         image: "/skill-tree/barbarian/Brawling/aggressive_resistance.png",
-        label: "Résistance Agressive",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Résistance agressive",
+        details: [
+          "Vous obtenez 4% de réduction des dégâts quand vous êtes sous l’effet de Rage du berserker.",
+        ],
+        detail: " Dégâts physiques",
         children: [
           {
             id: "secondBrawling_2_1",
             parent_id: "secondBrawling_2",
             max_rank: 1,
             rank: 0,
+            label: "Ferveur du combat",
+
             top: "59.3042%",
             left: "23.2593%",
             notes:
-              "Les adversaires touchés par Charge subissent 15% de dégâts supplémentaires de votre part pendant 5 s.",
+              "Lorsqu’une compétence de combat inflige des dégâts à au moins une cible ennemie, vous obtenez l’effet de Rage du berserker pendant 1 s.",
             isChild: true,
             labels: "Résistance Agressive 1",
           },
@@ -4464,10 +4570,12 @@ export const optionSkillsBarbarian = [
             parent_id: "secondBrawling_2",
             max_rank: 1,
             rank: 0,
+            label: "Fureur prolifique",
+
             top: "59.3042%",
             left: "27.2593%",
             notes:
-              "Les adversaires touchés par Charge subissent 15% de dégâts supplémentaires de votre part pendant 5 s.",
+              "Sous l’effet de Rage du berserker, votre génération de fureur est augmentée de 6%[x].",
             isChild: true,
             labels: "Résistance Agressive 1",
           },
@@ -4491,22 +4599,26 @@ export const optionSkillsBarbarian = [
         left: "48.0431%",
         id: "weapon_mastery_1",
         image: "/skill-tree/barbarian/WeaponMastery/death_blow.png",
-        label: "Coup Mortel",
+        label: "Coup de grâce",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 15 s",
+          "Chances d’obtenir un coup de chance : 50%",
+          "Vous tentez un coup mortel qui inflige 140% points de dégâts aux cibles devant vous.",
+          "Si ce coup tue une cible, son temps de recharge est remis à zéro.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
+        footer: "Nécessite d’avoir un arsenal d’armes au complet.",
         children: [
           {
             id: "weapon_mastery_1_1",
             parent_id: "weapon_mastery_1",
             max_rank: 1,
             rank: 0,
+            label: "Coup de grâce renforcé",
             top: "68%",
             left: "45%",
             notes:
-              "Coup de grâce inflige 150%[x] de dégâts supplémentaires aux boss.",
+              "Coup de grâce inflige 200%[x] de dégâts supplémentaires aux boss.",
             isChild: true,
           },
           {
@@ -4514,6 +4626,7 @@ export const optionSkillsBarbarian = [
             parent_id: "weapon_mastery_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Coup de grâce de duelliste",
             top: "65%",
             left: "41%",
             notes:
@@ -4525,6 +4638,7 @@ export const optionSkillsBarbarian = [
             parent_id: "weapon_mastery_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Coup de grâce de belliciste",
             top: "71%",
             left: "41%",
             notes:
@@ -4542,20 +4656,23 @@ export const optionSkillsBarbarian = [
         image: "/skill-tree/barbarian/WeaponMastery/rupture.png",
         label: "Rupture",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 10 s",
+          "Chances d’obtenir un coup de chance : 50%",
+          "Vous embrochez les adversaires devant vous et leur infligez 25% points de dégâts qui accablent à coup sûr, puis vous arrachez votre arme de leur corps, ce qui les blesse d’un montant égal à celui de leur saignement total et fait disparaître le saignement.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
+        footer: "Nécessite une arme tranchante.",
         children: [
           {
             id: "weapon_mastery_2_1",
             parent_id: "weapon_mastery_2",
             max_rank: 1,
             rank: 0,
+            label: "Rupture renforcée",
             top: "60.6%",
             left: "69%",
             notes:
-              "Arracher votre arme du corps d’une cible pendant Rupture déclenche une explosion qui inflige 70% points de dégâts de saignement en 5 s. Ces dégâts augmentent de 20%[x] pour chaque tranche de 50 points de force dont vous disposez. Bonus actuel : 0%[x]",
+              "Arracher votre arme du corps d’une cible pendant Rupture déclenche une explosion qui inflige 70% points de dégâts de saignement en 5 s. Ces dégâts augmentent de 35%[x] pour chaque tranche de 50 points de force dont vous disposez.",
             isChild: true,
           },
           {
@@ -4563,6 +4680,7 @@ export const optionSkillsBarbarian = [
             parent_id: "weapon_mastery_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Rupture de duelliste",
             top: "57.5%",
             left: "72%",
             notes:
@@ -4574,6 +4692,7 @@ export const optionSkillsBarbarian = [
             parent_id: "weapon_mastery_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Rupture de belliciste",
             top: "57.5%",
             left: "66%",
             notes:
@@ -4589,44 +4708,51 @@ export const optionSkillsBarbarian = [
         left: "59.4668%",
         id: "weapon_mastery_4",
         image: "/skill-tree/barbarian/WeaponMastery/steel_grasp.png",
-        label: "Rupture",
+        label: "Poigne de fer",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Charges : 2",
+          "Temps de recharge des charges : 11 s",
+          "Chances d’obtenir un coup de chance : 25%",
+          "Vous lancez un trio de chaînes qui inflige 80% points de dégâts aux adversaires et les attire vers vous.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "weapon_mastery_4_1",
             parent_id: "weapon_mastery_4",
             max_rank: 1,
+            label: "Poigne de fer renforcée",
+
             rank: 0,
             top: "78.6%",
             left: "61.4668%",
             notes:
-              "Arracher votre arme du corps d’une cible pendant Rupture déclenche une explosion qui inflige 70% points de dégâts de saignement en 5 s. Ces dégâts augmentent de 20%[x] pour chaque tranche de 50 points de force dont vous disposez. Bonus actuel : 0%[x]",
+              "Poigne de fer rend aussi les adversaires vulnérables pendant 3.0 s.",
             isChild: true,
           },
           {
             id: "weapon_mastery_4_2",
             parent_id: "weapon_mastery_4_1",
             max_rank: 1,
+            label: "Poigne de fer de duelliste",
+
             rank: 0,
             top: "81.5%",
             left: "65%",
             notes:
-              "Toucher au moins 1 adversaire avec Rupture vous rend 22% de votre maximum de points de vie (88).",
+              "Les dégâts de Poigne de fer sont augmentés de 200% et si la compétence blesse une cible, vous obtenez l’effet de Rage du berserker pendant 2 s.",
             isChild: true,
           },
           {
             id: "weapon_mastery_4_3",
             parent_id: "weapon_mastery_4_1",
             max_rank: 1,
+            label: "Poigne de fer de belliciste",
+
             rank: 0,
             top: "81.5%",
             left: "59%",
-            notes:
-              "Toucher des adversaires avec Rupture augmente votre vitesse d’attaque de 40%[+] pendant 5 s.",
+            notes: "Poigne de fer gagne 2 charges supplémentaires.",
             isChild: true,
           },
         ],
@@ -4638,22 +4764,25 @@ export const optionSkillsBarbarian = [
         top: "73.2345%",
         id: "weapon_mastery_3",
         image: "/skill-tree/barbarian/WeaponMastery/image.png",
-        label: "Poigne d'Acier",
+        label: "Jet puissant",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 12 s",
+          "Chances d’obtenir un coup de chance : 15%",
+          "Vous projetez votre arme qui inflige 105% points de dégâts à l’impact et se plante dans le sol. Tant qu’elle reste figée dans le sol, votre arme produit des impulsions infligeant 50% points de dégâts chaque seconde pendant 4.02 s.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
+        footer: "Nécessite d’avoir un arsenal d’armes au complet.",
         children: [
           {
             id: "weapon_mastery_3_1",
             parent_id: "weapon_mastery_3_3",
             max_rank: 1,
             rank: 0,
+            label: "Jet puissant renforcé",
             top: "77%",
             left: "78%",
             notes:
-              "Poigne de fer rend aussi les adversaires vulnérables pendant 3.0 s.",
+              "Jet puissant octroie 25%[+] de vitesse d’attaque supplémentaire pendant 6.02 s.",
             isChild: true,
           },
           {
@@ -4661,10 +4790,13 @@ export const optionSkillsBarbarian = [
             parent_id: "weapon_mastery_3_3",
             max_rank: 1,
             rank: 0,
+            label: "Jet puissant de combat",
             top: "72%",
             left: "78%",
-            notes:
-              "Si Poigne de fer blesse une cible, vous obtenez l’effet de Rage du berserker pendant 2 s.",
+            notes: [
+              "Lorsque vous changez d’arme près d’une arme que vous avez lancée, vous générez une autre impulsion.",
+              "Jet puissant vous octroie une barrière d’un montant égal à 20% de votre maximum de points de vie (1) pendant 6 s.",
+            ],
             isChild: true,
           },
           {
@@ -4672,9 +4804,11 @@ export const optionSkillsBarbarian = [
             parent_id: "weapon_mastery_3",
             max_rank: 1,
             rank: 0,
+            label: "Jet puissant de guerre",
             top: "74.2345%",
             left: "73.5%",
-            notes: "Poigne de fer gagne 1 charge supplémentaire.",
+            notes:
+              "À l’impact, Jet puissant inflige 50%[x] de dégâts supplémentaires et étourdit les adversaires pendant 2 s.",
             isChild: true,
           },
         ],
@@ -4688,18 +4822,22 @@ export const optionSkillsBarbarian = [
         left: "54.2703%",
         id: "secondWeaponMastery_1",
         image: "/skill-tree/barbarian/WeaponMastery/pit_fighter.png",
-        label: "Combattant de Fosse",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Combat de fosse",
+        details: [
+          "Vous infligez 3%[x] de dégâts supplémentaires aux cibles à proximité et obtenez 2% de réduction des dégâts.",
+        ],
+        detail: " Dégâts physiques",
         children: [
           {
             id: "secondWeaponMastery_1_1",
             parent_id: "secondWeaponMastery_1",
             max_rank: 1,
             rank: 0,
+            label: "Sans pitié",
             top: "57.6676%",
             left: "54.2703%",
             notes:
-              "Les adversaires touchés par Coup Mortel subissent 15% de dégâts supplémentaires de votre part pendant 5 s.",
+              "Vous avez 3%[+] de chances supplémentaires d’infliger un coup critique.",
             isChild: true,
             labels: "Combattant de Fosse 1",
           },
@@ -4708,11 +4846,13 @@ export const optionSkillsBarbarian = [
             parent_id: "secondWeaponMastery_1",
             max_rank: 1,
             rank: 0,
+            label: "Frappe fatale",
             top: "57.6676%",
             left: "58.2703%",
             notes:
-              "Les adversaires touchés par Coup Mortel subissent 15% de dégâts supplémentaires de votre part pendant 5 s.",
+              "Vous infligez 5%[x] de dégâts supplémentaires aux cibles blessées et en bonne santé.",
             isChild: true,
+            detail: " Dégâts physiques",
             labels: "Combattant de Fosse 1",
           },
           {
@@ -4720,11 +4860,13 @@ export const optionSkillsBarbarian = [
             parent_id: "secondWeaponMastery_1",
             max_rank: 1,
             rank: 0,
+            label: "Perce-vulnérabilité",
             top: "57.6676%",
             left: "50.2703%",
             notes:
-              "Les adversaires touchés par Coup Mortel subissent 15% de dégâts supplémentaires de votre part pendant 5 s.",
+              "Lorsque vous infligez des dégâts directs avec une compétence de maîtrise d’arme, la prochaine compétence principale que vous utilisez rend les adversaires vulnérables pendant 1 s.",
             isChild: true,
+            detail: " Dégâts physiques",
             labels: "Combattant de Fosse 1",
           },
         ],
@@ -4761,19 +4903,24 @@ export const optionSkillsBarbarian = [
         left: "56.0674%",
         id: "secondWeaponMastery_3",
         image: "/skill-tree/barbarian/WeaponMastery/thick_skin.png",
-        label: "Peau Épaisse",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Peau dure",
+        details: [
+          "Chaque fois que vous subissez des dégâts directs, vous obtenez un montant de fortification égal à 0.6% de votre maximum de vie (1).",
+        ],
+        detail: " Dégâts physiques",
         children: [
           {
             id: "secondWeaponMastery_3_1",
             parent_id: "secondWeaponMastery_3",
             max_rank: 1,
             rank: 0,
+            label: "Contre-offensive",
             top: "75.1007%",
             left: "55.3674%",
             notes:
-              "Les adversaires touchés par Poigne d'Acier subissent 15% de dégâts supplémentaires de votre part pendant 5 s.",
+              "Tant que vous bénéficiez d’une fortification supérieure à 50% de votre maximum de points de vie, vous infligez 4%[x] de dégâts supplémentaires.",
             isChild: true,
+            detail: " Dégâts physiques",
             labels: "Peau Épaisse 1",
           },
           {
@@ -4781,10 +4928,12 @@ export const optionSkillsBarbarian = [
             parent_id: "secondWeaponMastery_3",
             max_rank: 1,
             rank: 0,
+            label: "Position défensive",
             top: "72.2017%",
             left: "51.0674%",
+            detail: " Dégâts physiques",
             notes:
-              "Les adversaires touchés par Poigne d'Acier subissent 15% de dégâts supplémentaires de votre part pendant 5 s.",
+              "Augmente la réduction des dégâts obtenue de 2% supplémentaires et rend 0.5% de points de votre maximum de points de vie chaque seconde tant que vous bénéficiez d’une fortification.",
             isChild: true,
             labels: "Peau Épaisse 1",
           },
@@ -4793,10 +4942,12 @@ export const optionSkillsBarbarian = [
             parent_id: "secondWeaponMastery_3",
             max_rank: 1,
             rank: 0,
+            label: "Irrépressible",
             top: "75.0017%",
             left: "51.6674%",
+            detail: " Dégâts physiques",
             notes:
-              "Les adversaires touchés par Poigne d'Acier subissent 15% de dégâts supplémentaires de votre part pendant 5 s.",
+              "Lorsque vous utilisez une compétence de maîtrise d’arme, vous bénéficiez d’une fortification équivalente à 10% de votre maximum de points de vie (1).",
             isChild: true,
             labels: "Peau Épaisse 1",
           },
@@ -4822,20 +4973,25 @@ export const optionSkillsBarbarian = [
         image: "/skill-tree/barbarian/Ultimate/call_of_the_ancients.png",
         label: "Appel des Anciens",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 50 s",
+          "Vous invoquez 3 Anciens qui viennent vous aider en combat pendant 6 s.",
+          " Korlic se jette sur les adversaires en infligeant 110% points de dégâts, et il les frappe frénétiquement avec ses armes en infligeant 40% points de dégâts par coup. Talic attaque en tourbillonnant et inflige 80% points de dégâts aux adversaires. Madawc soulève le sol, ce qui inflige 200% points de dégâts.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "ultimate_1_1",
             parent_id: "ultimate_1",
             max_rank: 1,
             rank: 0,
+            label: "Appel des Anciens",
             top: "75%",
             left: "26.1219%",
-            notes:
-              "Tant qu’Appel des Anciens est actif, votre vitesse d’attaque est augmentée de 20%[+] et vous infligez 25%[x] de dégâts supplémentaires.",
+            notes: [
+              "Temps de recharge : 41 s",
+              "Vous invoquez 3 Anciens qui viennent vous aider en combat pendant 6 s. Tant qu’Appel des Anciens est actif, votre vitesse de déplacement est augmentée de 50%[+] et vous bénéficiez de 20% de réduction des dégâts à distance. Korlic se jette sur les adversaires en infligeant 154% points de dégâts, et il les frappe frénétiquement avec ses armes en infligeant 56% points de dégâts par coup. Talic attaque en tourbillonnant et inflige 112% points de dégâts aux adversaires. Madawc soulève le sol,ce qui inflige 280% points de dégâts.",
+            ],
+            detail: " Dégâts physiques",
             isChild: true,
           },
           {
@@ -4843,10 +4999,11 @@ export const optionSkillsBarbarian = [
             parent_id: "ultimate_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Appel des Anciens primordial",
             top: "72.7%",
             left: "26.1219%",
             notes:
-              "Chacun des Anciens acquiert un pouvoir supplémentaire : Korlic : vous obtenez 10 points de fureur chaque fois que Korlic blesse une cible avec Frénésie. Talic : les cibles sont ralenties de 50% pendant 1 s après avoir été blessées par son Tourbillon. Madawc : 30% de chances d’étourdir les adversaires pendant 3 s lorsqu’il utilise Soulèvement.",
+              "Tant qu’Appel des Anciens est actif, votre vitesse d’attaque est augmentée de 20%[+] et vous infligez 30%[x] de dégâts supplémentaires.",
             isChild: true,
           },
         ],
@@ -4858,22 +5015,25 @@ export const optionSkillsBarbarian = [
         left: "13.735%",
         id: "ultimate_2",
         image: "/skill-tree/barbarian/Ultimate/iron_maelstrom.png",
-        label: "Maelström de Fer",
+        label: "Maelström d’acier",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 45 s",
+          "Chances d’obtenir un coup de chance : [24%]",
+          "Activez trois fois cette compétence pour attacher des chaînes à chacune de vos armes et effectuer une attaque. D’abord, vous frappez le sol avec votre arme contondante à deux mains, ce qui inflige 75% points de dégâts et étourdit les adversaires pendant 2 s. Ensuite, vous effectuez une attaque de taille devant vous avec votre arme tranchante à deux mains, ce qui inflige 20% points de dégâts à l’impact et 120% points de dégâts de saignement en 5 s. Enfin, vous frappez les adversaires autour de vous avec vos deux armes, ce qui inflige 43% points de dégâts par coup.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
+        footer: "Nécessite d’avoir un arsenal d’armes au complet.",
         children: [
           {
             id: "ultimate_2_1",
             parent_id: "ultimate_2",
             max_rank: 1,
+            label: "Maelström d’acier primordial",
             rank: 0,
             top: "83.0058%",
             left: "10%",
             notes:
-              "Maelström d’acier a 30%[+] de chances supplémentaires d’infliger un coup critique et inflige 40%[x] de dégâts critiques supplémentaires.",
+              "Maelström d’acier a 30%[+] de chances supplémentaires d’infliger un coup critique et inflige 50%[x] de dégâts critiques supplémentaires.",
             isChild: true,
           },
           {
@@ -4881,10 +5041,11 @@ export const optionSkillsBarbarian = [
             parent_id: "ultimate_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Maelström d’acier suprême",
             top: "83.0058%",
             left: "7%",
             notes:
-              "Lorsque vous infligez des dégâts directs à une cible après avoir changé d’arme, le temps de recharge de Maelström d’acier est réduit de 1 s.",
+              "Après avoir changé d’arme, le temps de recharge de Maelström d’acier est réduit de 1 s.",
             isChild: true,
           },
         ],
@@ -4896,10 +5057,10 @@ export const optionSkillsBarbarian = [
         left: "25.4647%",
         id: "ultimate_3",
         image: "/skill-tree/barbarian/Ultimate/wrath_of_the_berserker.png",
-        label: "Colère du Berserker",
+        label: "Courroux du berserker",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 60 s",
+          "Vous laissez exploser votre rage, ce qui repousse les adversaires à proximité, vous octroie l’effet de Rage du berserker et vous rend inarrêtable pendant 10 s.",
         ],
         footer: "Compétence Défensive",
         children: [
@@ -4908,6 +5069,7 @@ export const optionSkillsBarbarian = [
             parent_id: "ultimate_3_2",
             max_rank: 1,
             rank: 0,
+            label: "Courroux du berserker primordial",
             top: "94%",
             label: "Colère du Berserker 1",
             left: "27.4647%",
@@ -4920,6 +5082,7 @@ export const optionSkillsBarbarian = [
             parent_id: "ultimate_3",
             max_rank: 1,
             rank: 0,
+            label: "Courroux du berserker suprême",
             top: "91.7%",
             left: "27.4647%",
             label: "Colère du Berserker 2",
@@ -4939,6 +5102,10 @@ export const optionSkillsBarbarian = [
         id: "secondUltimate_1",
         image: "/skill-tree/barbarian/Ultimate/duelist.png",
         label: "Duelliste",
+        details: [
+          "Lorsque vous maniez des armes à une main, votre vitesse d’attaque est augmentée de 3%[+].",
+        ],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 3,
@@ -4947,7 +5114,11 @@ export const optionSkillsBarbarian = [
         left: "18.5%",
         id: "secondUltimate_5",
         image: "/skill-tree/barbarian/Ultimate/heavy.png",
-        label: "Duell",
+        label: "Gros bras",
+        details: [
+          "Vos compétences ultimes, vos tremblements de terre et vos tourbillons de poussière infligent 10%[x] de dégâts supplémentaires.",
+        ],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 3,
@@ -4957,6 +5128,9 @@ export const optionSkillsBarbarian = [
         id: "secondUltimate_6",
         image: "/skill-tree/barbarian/Ultimate/furious.png",
         label: "Ulitmum",
+        details: [
+          "Vous infligez 3%[x] de dégâts supplémentaires aux cibles à proximité et obtenez 2% de réduction des dégâts.",
+        ],
       },
       {
         max_rank: 3,
@@ -4966,6 +5140,9 @@ export const optionSkillsBarbarian = [
         id: "secondUltimate_7",
         image: "/skill-tree/barbarian/Ultimate/invig.png",
         label: "Ultraas",
+        details: [
+          "Vous infligez 3%[x] de dégâts supplémentaires aux cibles à proximité et obtenez 2% de réduction des dégâts.",
+        ],
       },
       {
         max_rank: 3,
@@ -4973,14 +5150,23 @@ export const optionSkillsBarbarian = [
         top: "82.3%",
         left: "36.5%",
         id: "secondUltimate_2",
+        details: [
+          "Vos dégâts d’accablement sont augmentés de 8%[x] lorsque vous maniez une arme à deux mains.",
+        ],
         image: "/skill-tree/barbarian/Ultimate/brute.png",
-        label: "Fureur Tempérée",
+        label: "Force brute",
+        detail: " Dégâts physiques",
+
         children: [
           {
             id: "secondUltimate_2_1",
             parent_id: "secondUltimate_2",
             linkedSecondOptionIds: ["secondUltimate_4"],
             max_rank: 1,
+            label: "Commotion",
+            details: [
+              "Coup de chance : vos compétences utilisant des armes contondantes ont jusqu’à 20 % de chances d’étourdir les adversaires pendant 2 s, et jusqu’à 30 % de chances si vous utilisez une arme contondante à deux mains, tout en leur infligeant 30% points de dégâts physiques.",
+            ],
             rank: 0,
             top: "84.6%",
             left: "37.5%",
@@ -4996,8 +5182,11 @@ export const optionSkillsBarbarian = [
         top: "81.2%",
         left: "32.5%",
         id: "secondUltimate_3",
+        details: [
+          "Lorsque vous maniez des armes à deux mains, vous infligez 6%[x] de dégâts critiques supplémentaires.",
+        ],
         image: "/skill-tree/barbarian/Ultimate/heavy_handed.png",
-        label: "Fureur Tempérée another",
+        label: "Main lourde",
       },
       {
         max_rank: 3,
@@ -5005,9 +5194,13 @@ export const optionSkillsBarbarian = [
         top: "84.1%",
         left: "33%",
         linkedSecondOptionIds: ["secondUltimate_2_1"],
+        details: [
+          "Lorsque vous maniez des armes à deux mains, vous infligez 6%[x] de dégâts critiques supplémentairesVos compétences utilisant des armes contondantes infligent 5%[x] de dégâts supplémentaires si la cible est étourdie ou vulnérable.",
+        ],
         id: "secondUltimate_4",
         image: "/skill-tree/barbarian/Ultimate/wallop.png",
-        label: "Fureur Temp",
+        label: "Torgnole",
+        detail: " Dégâts physiques",
       },
     ],
   },
@@ -5029,8 +5222,12 @@ export const optionSkillsBarbarian = [
         id: "second_1",
         image: "/skill-tree/barbarian/WeaponMastery/five.png",
         // image: "/skill-tree/barbarian/Core/upheaval.png",
-        label: "Sans Contrainte",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Arsenal ambulant",
+        details: [
+          "Si vous utilisez une compétence avec une arme contondante à deux mains, une arme tranchante à deux mains ou deux armes, vous bénéficiez de 15%[x] de dégâts supplémentaires pendant 10 s.",
+          "Si les trois bonus de dégâts sont actifs, la durée de vos effets de perte de contrôle et votre vitesse d’attaque sont augmentées de 25%[+].",
+        ],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 1,
@@ -5039,8 +5236,12 @@ export const optionSkillsBarbarian = [
         left: "50.3868%",
         id: "second_5",
         image: "/skill-tree/barbarian/WeaponMastery/two.png",
-        label: "Sans Certa",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Plaies béantes",
+        details: [
+          "Lorsque vous faites saigner une cible, vous avez des chances égales à celles d’infliger un coup critique d’augmenter le montant du saignement de 70%[x], mais aussi de l’augmenter à hauteur de 100%[+] de votre bonus aux dégâts critiques.",
+          "Lorsque vous accablez une cible qui saigne, cela déclenche une explosion qui inflige 150% points de dégâts de saignement en 5 s.",
+        ],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 1,
@@ -5049,8 +5250,11 @@ export const optionSkillsBarbarian = [
         left: "57.1901%",
         id: "second_2",
         image: "/skill-tree/barbarian/WeaponMastery/three.png",
-        label: "Blessures Jaillissantes",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Rage effrénée",
+        details: [
+          "Les compétences principales infligent 45%[x] de dégâts supplémentaires, mais coûtent 100%[x] plus de fureur. Les dégâts sont doublés contre les cibles blessées.",
+        ],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 1,
@@ -5059,8 +5263,12 @@ export const optionSkillsBarbarian = [
         left: "53.3384%",
         id: "second_3",
         image: "/skill-tree/barbarian/WeaponMastery/one.png",
-        label: "Rage Débridée",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Carapace barbelée",
+        details: [
+          "Tous les 25 points de fureur que vous utilisez, vous obtenez 10%[+] d’épines pendant 8 s, jusqu’à un maximum de 120%.",
+          "Si vous lancez une compétence à temps de recharge, vous pouvez vous mouvoir librement pendant 5 s. Durant cette période, vous infligez chaque seconde 120% de vos dégâts d’épines sous forme de dégâts physiques aux adversaires à proximité.",
+        ],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 1,
@@ -5069,8 +5277,10 @@ export const optionSkillsBarbarian = [
         left: "42.3589%",
         id: "second_4",
         image: "/skill-tree/barbarian/WeaponMastery/four.png",
-        label: "Arsenal Ambulant",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Sans contrainte",
+        details: [
+          "Le bonus aux dégâts de Rage du berserker est porté à 60%[x]. Tant que vous avez moins de 65% de vos points de vie, vous continuez à bénéficier de l’effet de la compétence et obtenez un bonus de réduction des dégâts physiques de 30%[x].",
+        ],
       },
     ],
   },
