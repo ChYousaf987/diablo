@@ -2311,25 +2311,26 @@ export const optionSkillsNecromancer = [
         rank: 0,
         powers: ["Combat", "Mobilité"],
         image: "/skill-tree/necromamce/one/decompose.png",
-        label: "Coup",
+        label: "Décomposition",
         top: "5.1185%",
         left: "45.4826%",
         details: [
-          "Génération de Furie : 15",
-          "Coup de chance : 50%",
-          "<span class='text-gray-500'>Frappez l'ennemi avec votre arme, infligeant<span class='text-yellow-500'> [33%] </span>de dégâts. Après avoir frappé les ennemis 4 fois, votre prochain Coup les étourdira pendant 1,25 secondes, passant à 2 secondes si vous utilisez une arme à deux mains.</span>",
+          "Essence générée : [12 - 16] par seconde",
+          "Chances d’obtenir un coup de chance : 40%",
+          "Vous arrachez la chair d’une cible, ce qui lui inflige 150% points de dégâts de corruption par seconde et crée à partir de sa chair un cadavre utilisable toutes les 1 s.",
         ],
-        footer: "Dégâts Physiques",
+        detail: "Dégâts d’ombre ",
         children: [
           {
             id: "basic_1_1",
             parent_id: "basic_1",
             max_rank: 1,
             rank: 0,
+            label: "Décomposition renforcée",
             top: "2.92081%",
             left: "42.0622%",
             notes:
-              "Lorsque vous infligez une volée de coups à une cible adverse, vous recevez 20% de votre maximum de points de vie (1) sous forme de points de fortification.",
+              "Décomposition déclenche désormais une petite explosion infligeant 100% points de dégâts lorsqu’un cadavre est créé ou qu’une cible meurt. Vous obtenez également 10 points d’essence.",
             isChild: true,
           },
           {
@@ -2337,10 +2338,11 @@ export const optionSkillsNecromancer = [
             parent_id: "basic_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Décomposition d’acolyte",
             top: "1.0783463%",
             left: "39.2167%",
             notes:
-              "Lorsque vous infligez une volée de coups à une cible adverse, vous générez 10 points de fureur supplémentaires.",
+              "Les explosions de Décomposition rendent les adversaires vulnérables pendant 4 s.",
             isChild: true,
           },
           {
@@ -2348,10 +2350,11 @@ export const optionSkillsNecromancer = [
             parent_id: "basic_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Décomposition d’adepte",
             top: "1.0783463%",
             left: "44.3187%",
             notes:
-              "Lorsque vous réalisez 4 coups critiques avec Raclée en utilisant une arme à deux mains, votre prochaine compétence principale ou de maîtrise d’arme accablera les adversaires.",
+              "Décomposition ralentit les adversaires de 50%. Quand la compétence explose, vous obtenez 30%[+] de vitesse de déplacement pendant 8 s.",
             isChild: true,
           },
         ],
@@ -2363,12 +2366,13 @@ export const optionSkillsNecromancer = [
         rank: 0,
         id: "basic_2",
         image: "/skill-tree/necromamce/one/reap.png",
-        label: "Écorcher",
+        label: "Fauchage",
         details: [
-          "Génération de Furie : 15",
-          "Coup de chance : 50%",
-          "<span class='text-gray-500'>Écorchez l'ennemi, infligeant <span class='text-yellow-500'> [5%]</span> de dégâts et infligeant <span class='text-yellow-500'> [44%] </span> de dégâts de Saignement sur 5 secondes.</span>",
+          "Essence générée : 4 par cible touchée, 15 contre un boss.",
+          "Chances d’obtenir un coup de chance : 30%",
+          "Vous donnez un large coup de faux éthérée devant vous, infligeant 50% points de dégâts. Lorsque vous touchez une cible avec Fauchage, votre réduction des dégâts est augmentée de 15% pendant 4 s.",
         ],
+        detail: "Dégâts d’ombre ",
         footer: "Dégâts Physiques <br/> Nécessite une arme tranchante",
         children: [
           {
@@ -2376,10 +2380,11 @@ export const optionSkillsNecromancer = [
             parent_id: "basic_2",
             max_rank: 1,
             rank: 0,
+            label: "Fauchage renforcé",
             top: "6.81331%",
             left: "38.1172%",
             notes:
-              "Écorchement a 15% de chances de rendre l’adversaire vulnérable pendant 5 s. Ces chances sont doublées lorsque vous utilisez une arme à deux mains.",
+              "Si une cible touchée par Fauchage meurt dans les 2 s qui suivent, votre vitesse d’attaque est augmentée de 30%[+] pendant 4 s.",
             isChild: true,
           },
           {
@@ -2387,10 +2392,11 @@ export const optionSkillsNecromancer = [
             parent_id: "basic_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Fauchage d’acolyte",
             top: "3.67796%",
             left: "36.21%",
             notes:
-              "Lorsqu’Écorchement inflige des dégâts directs à une cible, celle-ci subit 15%[x] de dégâts de saignement supplémentaires de votre part pendant les 3 s qui suivent.",
+              "Fauchage génère un cadavre sous la première cible touchée. Cet effet ne peut se produire qu’une fois toutes les 4 s.",
             isChild: true,
           },
           {
@@ -2398,10 +2404,11 @@ export const optionSkillsNecromancer = [
             parent_id: "basic_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Fauchage d’adepte",
             top: "6.586%",
             left: "32.5524%",
             notes:
-              "Lorsqu’Écorchement inflige des dégâts directs à une cible adverse, vous obtenez 4 % de réduction des dégâts et 40 points de dégâts d’épines pendant 6 s. Cet effet peut se cumuler jusqu’à 5 fois.",
+              "Fauchage tue instantanément les adversaires ayant moins de 5% de points de vie. Cet effet ne fonctionne pas sur les boss et les personnages-joueurs.",
             isChild: true,
           },
         ],
@@ -2413,13 +2420,13 @@ export const optionSkillsNecromancer = [
         rank: 0,
         id: "basic_3",
         image: "/skill-tree/necromamce/one/hemorrhage.png",
-        label: "Frénésie",
+        label: "Saignée",
         details: [
-          "Génération de Furie : 4",
-          "Coup de chance : 30%",
-          "<span class='text-gray-500'>Déchaînez une rafale rapide de coups, infligeant <span class='text-yellow-500'>[24%]</span> de dégâts avec chaque paire de coups.</span>",
-          "<span class='text-gray-500'>Si Frénésie touche un ennemi, sa Vitesse d'Attaque est augmentée de +20% pendant 3 secondes, jusqu'à +60%.</span>",
+          "Essence générée : 13",
+          "Chances d’obtenir un coup de chance : 50%",
+          "Vous faites gicler le sang d’une cible et lui infligez 80% points de dégâts. Saignée a 20% de chances de générer un orbe de sang.",
         ],
+        detail: "Dégâts physiques ",
         footer: "Dégâts Physiques <br/> Nécessite des armes doubles",
         children: [
           {
@@ -2427,10 +2434,11 @@ export const optionSkillsNecromancer = [
             parent_id: "basic_3",
             max_rank: 1,
             rank: 0,
+            label: "Saignée renforcée",
             top: "2.92081%",
             left: "52.5%",
             notes:
-              "Tant que Frénésie augmente votre vitesse d’attaque de 60%[+], le coût en fureur de vos compétences principales est réduit de 25%.",
+              "Après avoir ramassé un orbe de sang, votre prochaine Saignée inflige aussi des dégâts aux adversaires autour de votre cible et vous confère 2 points d’essence supplémentaires par cible touchée.",
             isChild: true,
           },
           {
@@ -2438,10 +2446,11 @@ export const optionSkillsNecromancer = [
             parent_id: "basic_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Saignée d’acolyte",
             top: "1.0783463%",
             left: "50.2296%",
             notes:
-              "Sous l’effet de Rage du berserker, la vitesse d’attaque de vos autres compétences est augmentée de 6%[+] pour chaque cumul de Frénésie que vous avez.",
+              "La vitesse d’attaque de Saignée est augmentée de 20%[+] supplémentaires lorsque vous êtes en bonne santé.",
             isChild: true,
           },
           {
@@ -2449,10 +2458,11 @@ export const optionSkillsNecromancer = [
             parent_id: "basic_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Saignée d’adepte",
             top: "1.0783463%",
             left: "55.8456%",
             notes:
-              "Chaque cumul de Frénésie que vous possédez vous confère 5% de réduction des dégâts et 5% de vitesse de déplacement.",
+              "Saignée vous confère un montant de fortification égal à 1.6% de votre maximum points de vie (1) chaque fois qu’elle touche une cible, et a 1.5% de chances de vous conférer un montant de fortification égal à 100% de votre maximum points de vie (1) par cible touchée.",
             isChild: true,
           },
         ],
@@ -2464,13 +2474,13 @@ export const optionSkillsNecromancer = [
         rank: 0,
         id: "basic_4",
         image: "/skill-tree/necromamce/one/bone_splinters.png",
-        label: "Frappe plongeante",
+        label: "Éclats d’os",
         details: [
-          "Génération de Furie : 4",
-          "Coup de chance : 30%",
-          "<span class='text-gray-500'>Déchaînez une rafale rapide de coups, infligeant <span class='text-yellow-500'>[24%]</span> de dégâts avec chaque paire de coups.</span>",
-          "<span class='text-gray-500'>Si Frénésie touche un ennemi, sa Vitesse d'Attaque est augmentée de +20% pendant 3 secondes, jusqu'à +60%.</span>",
+          "Essence générée : 10",
+          "Chances d’obtenir un coup de chance : 30%",
+          "Vous lancez 3 éclats d’os infligeant 30% points de dégâts chacun. Chaque cible supplémentaire touchée par la même utilisation d’Éclat d’os vous fait gagner 1 point d’essence.",
         ],
+        detail: "Dégâts physiques ",
         footer: "Dégâts Physiques <br/> Nécessite des armes doubles",
         children: [
           {
@@ -2478,10 +2488,11 @@ export const optionSkillsNecromancer = [
             parent_id: "basic_4",
             max_rank: 1,
             rank: 0,
+            label: "Éclats d’os renforcés",
             top: "6.82835%",
             left: "61.3759%",
             notes:
-              "Fente inflige 30%[x] de dégâts supplémentaires et vous rend 2% de votre maximum de points de vie (8) lorsqu’elle blesse une cible en bonne santé.",
+              "Éclats d’os a 25% de chances de lancer 2 projectiles supplémentaires si vous avez au moins 50 points d’essence au moment de son utilisation.",
             isChild: true,
           },
           {
@@ -2489,10 +2500,11 @@ export const optionSkillsNecromancer = [
             parent_id: "basic_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Éclats d’os d’acolyte",
             top: "3.7317%",
             left: "59.7804%",
             notes:
-              "Fente inflige aussi 20% points de dégâts de saignement en 5 s.",
+              "Si une seule utilisation d’Éclats d’os touche la même cible au moins 3 fois, vos chances d’infliger un coup critique sont augmentées de 8%[+] pendant 4 s.",
             isChild: true,
           },
           {
@@ -2500,10 +2512,11 @@ export const optionSkillsNecromancer = [
             parent_id: "basic_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Éclats d’os d’adepte",
             top: "4.86376%",
             left: "65.7311%",
             notes:
-              "Infliger des coups critiques avec Fente vous confère Rage du berserker pendant 3.0 s.",
+              "Éclats d’os a 20% de chances par coup de rendre les adversaires vulnérables pendant 2 s.",
             isChild: true,
           },
         ],
@@ -2526,12 +2539,14 @@ export const optionSkillsNecromancer = [
         rank: 0,
         id: "core_1",
         image: "/skill-tree/necromamce/two/blood_lance.png",
-        label: "Double Balancement",
+        label: "Prélèvement",
         details: [
-          "Coût en Furie : 25",
-          "Coup de chance : 30%",
-          "Balancez vos armes dans des directions opposées, infligeant [50%] de dégâts avec chaque arme. Les ennemis pris au centre subissent les dégâts des deux armes.",
+          "Coût en essence : 15",
+          "Chances d’obtenir un coup de chance : 50%",
+          "Vous projetez une lance de sang qui reste plantée dans l’adversaire pendant 3 s, infligeant 80% points de dégâts à cette cible ainsi qu’à toutes les autres cibles empalées.",
+          "Prélèvement applique l’effet d’empalement à une cible adverse à proximité supplémentaire et si le coup initial est porté sur une cible déjà victime de l’effet d’empalement, les dégâts sont augmentés de 100%.",
         ],
+        detail: " Dégâts physiques ",
         footer: "Dégâts Physiques",
         children: [
           {
@@ -2539,10 +2554,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_1",
             max_rank: 1,
             rank: 0,
+            label: "Prélèvement surnaturel",
             top: "12%",
             left: "24%",
             notes:
-              "Si Coup double blesse une cible étourdie ou renversée, vous obtenez 25 points de fureur.",
+              "Prélèvement inflige 15%[x] de dégâts critiques supplémentaires et 15%[x] de dégâts d’accablement supplémentaires.",
             isChild: true,
           },
           {
@@ -2550,10 +2566,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Prélèvement paranormal",
             top: "10%",
             left: "26%",
             notes:
-              "Lancer Coup double sous l’effet de Rage du berserker vous confère 2 s supplémentaires de Rage du berserker.",
+              "Tant qu’au moins 2 cibles ou un boss sont affectés par Prélèvement, votre vitesse d’attaque est augmentée de 15%[+] et le coût en essence de Prélèvement est réduit de 3.",
             isChild: true,
           },
           {
@@ -2561,10 +2578,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Prélèvement renforcé",
             top: "10%",
             left: "22%",
             notes:
-              "Les cibles touchées par les deux coups de Coup double deviennent vulnérables pendant 2 s.",
+              "Après avoir utilisé Prélèvement 6 fois, votre prochaine utilisation de Prélèvement accable les adversaires à coup sûr et fait apparaître un orbe de sang sous la première cible touchée.",
             isChild: true,
           },
         ],
@@ -2576,12 +2594,13 @@ export const optionSkillsNecromancer = [
         max_rank: 5,
         rank: 0,
         image: "/skill-tree/necromamce/two/blood.png",
-        label: "Marteau des Anciens",
+        label: "Afflux sanguin",
         details: [
-          "Coût en Mana : 25",
-          "Coup de chance : 35%",
-          "<span class='text-gray-500'>Libérez une série de projectiles chargés qui infligent <span class='text-yellow-500'> [50%]</span> de dégâts chacun.</span>",
+          "Coût en essence : 30",
+          "Chances d’obtenir un coup de chance : 12%",
+          "Vous drainez le sang des adversaires, ce qui leur inflige 20% points de dégâts et émet une nova de sang qui inflige 70% points de dégâts. Les dégâts de la nova d’Afflux sanguin sont augmentés de 5%[x] par cible drainée, jusqu’à un maximum de 50%[x].",
         ],
+        detail: " Dégâts physiques ",
         footer: "Dégâts de Foudre",
         children: [
           {
@@ -2589,10 +2608,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_2",
             max_rank: 1,
             rank: 0,
+            label: "Afflux sanguin renforcé",
             top: "13%",
             left: "16%",
             notes:
-              "Vous gagnez 3%[x] de fureur en plus pendant 5 s pour chaque cible blessée par Marteau des Anciens, cet effet pouvant se cumuler jusqu’à 10 fois.",
+              "Afflux sanguin vous rend 3.0% de votre maximum de points de vie (12) lorsque vous drainez le sang des adversaires. Si vous drainez le sang d’au moins 4 adversaires, vous récupérez 3.0% de votre maximum de points de vie (12).",
             isChild: true,
           },
           {
@@ -2600,10 +2620,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Afflux sanguin paranormal",
             top: "11%",
             left: "18%",
             notes:
-              "Marteau des Anciens obtient 2.0%[+] de chances d’infliger un coup critique tous les 10 points de fureur dont vous disposiez à l’utilisation. Ses coups critiques renversent les adversaires pendant 2 s.",
+              "Si une cible est blessée par la nova d’Afflux sanguin alors que vous êtes en bonne santé, vous obtenez 1 cumul de sang accablant. Lorsque vous avez 5 cumuls de sang accablant, votre prochain Afflux sanguin accablera les adversaires",
             isChild: true,
           },
           {
@@ -2611,10 +2632,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Afflux sanguin surnaturel",
             top: "11%",
             left: "14%",
             notes:
-              "Après avoir accablé une cible avec Marteau des Anciens, vous infligez 40%[x] de dégâts supplémentaires pendant 5 s.",
+              "Chaque fois qu’une cible est touchée par la nova d’Afflux sanguin, vous obtenez un montant de fortification égal à 1.1% de votre maximum points de vie (1). Tant que vous bénéficiez d’une fortification supérieure à 50% de votre maximum de points de vie, Afflux sanguin inflige 30%[x] de dégâts supplémentaires.",
             isChild: true,
           },
         ],
@@ -2626,12 +2648,14 @@ export const optionSkillsNecromancer = [
         rank: 0,
         id: "core_3",
         image: "/skill-tree/necromamce/two/blight.png",
-        label: "Déchirer",
+        label: "Chancre",
         details: [
-          "Coût en Mana : 30",
-          "Coup de chance : 40%",
-          "<span class='text-gray-500'>Lancez un projectile enflammé qui explose à l'impact, infligeant <span class='text-yellow-500'> [100%]</span> de dégâts à tous les ennemis proches.</span>",
+          "Coût en essence : 20",
+          "Chances d’obtenir un coup de chance : 40%",
+          "Vous libérez un chancre concentré qui inflige 40% points de dégâts à l’impact et laisse derrière lui une zone souillée qui inflige 135% points de dégâts de corruption en 6 s.",
         ],
+        detail: "Dégâts d’ombre",
+
         footer: "Dégâts de Feu",
         children: [
           {
@@ -2639,10 +2663,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_3",
             max_rank: 1,
             rank: 0,
+            label: "Chancre renforcé",
             top: "28%",
             left: "21%",
             notes:
-              "Infliger des dégâts directs avec Déchirure prolonge la vulnérabilité des adversaires de 2 s.",
+              "Le rayon de Chancre est augmenté de 15% et les dégâts infligés par la zone souillée sont doublés lorsque la compétence frappe directement une cible élite.",
             isChild: true,
           },
           {
@@ -2650,10 +2675,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Chancre paranormal",
             top: "30%",
             left: "24%",
             notes:
-              "Infliger des dégâts directs avec Déchirure vous octroie 5 points de fureur par cible touchée, jusqu’à un maximum de 25 points.",
+              "Chancre a 25% de chances de geler instantanément les adversaires à l’impact pendant 3 s et la zone souillée les glace également à hauteur de 15% chaque seconde.",
             isChild: true,
           },
           {
@@ -2661,10 +2687,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Chancre surnaturel",
             top: "30%",
             left: "18%",
             notes:
-              "Déchirure inflige 30%[x] de dégâts supplémentaires aux adversaires vulnérables.",
+              "Vous et vos serviteurs infligez 20%[x] de dégâts supplémentaires aux cibles dans le chancre.",
             isChild: true,
           },
         ],
@@ -2676,12 +2703,14 @@ export const optionSkillsNecromancer = [
         rank: 0,
         id: "core_4",
         image: "/skill-tree/necromamce/two/sever.png",
-        label: "Soulèvement",
+        label: "Section",
         details: [
-          "Coût en Mana : 30",
-          "Coup de chance : 40%",
-          "<span class='text-gray-500'>Lancez un projectile enflammé qui explose à l'impact, infligeant <span class='text-yellow-500'> [100%]</span> de dégâts à tous les ennemis proches.</span>",
+          "Coût en essence : 20",
+          "Chances d’obtenir un coup de chance : 40%",
+          "Votre forme spectrale charge vers l’avant en infligeant 110% points de dégâts avec sa faux puis revient vers vous en infligeant 45% points de dégâts.",
         ],
+        detail: "Dégâts d’ombre",
+
         footer: "Dégâts de Feu",
         children: [
           {
@@ -2689,10 +2718,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_4",
             max_rank: 1,
             rank: 0,
+            label: "Section renforcée",
             top: "29%",
             left: "29%",
             notes:
-              "Soulèvement a 35% de chances d’étourdir pendant 3.0 s toutes les cibles auxquelles il inflige des dégâts.",
+              "Section inflige 85% de ses dégâts initiaux aux adversaires sur sa trajectoire et les ralentit de 40% pendant 3 s.",
             isChild: true,
           },
           {
@@ -2700,10 +2730,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Section paranormale",
             top: "32%",
             left: "32%",
             notes:
-              "Infliger des dégâts directs à une cible avec une autre compétence que Soulèvement augmente de 15%[x] les dégâts de votre prochaine utilisation de Soulèvement, cet effet pouvant se cumuler jusqu’à 8 fois.",
+              "La 3e utilisation d’affilée de Section apeure les adversaires et les rend vulnérables pendant 3 s.",
             isChild: true,
           },
           {
@@ -2711,10 +2742,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Section surnaturelle",
             top: "32%",
             left: "26%",
             notes:
-              "Vous obtenez l’effet de Rage du berserker pendant 3 s si Soulèvement inflige des dégâts à au moins 2 adversaires ou à un ou une boss, et pendant 5 s s’il inflige des dégâts à au moins 4 adversaires.",
+              "Section inflige 2%[x] de dégâts supplémentaires pour chaque serviteur sous votre contrôle et génère un cadavre en bout de trajectoire.",
             isChild: true,
           },
         ],
@@ -2726,12 +2758,13 @@ export const optionSkillsNecromancer = [
         rank: 0,
         id: "core_5",
         image: "/skill-tree/necromamce/two/bone_spear.png",
-        label: "Tourbillon",
+        label: "Lance d’os",
         details: [
-          "Coût en Mana : 30",
-          "Coup de chance : 40%",
-          "<span class='text-gray-500'>Lancez un projectile enflammé qui explose à l'impact, infligeant <span class='text-yellow-500'> [100%]</span> de dégâts à tous les ennemis proches.</span>",
+          "Coût en essence : 25",
+          "Chances d’obtenir un coup de chance : 50%",
+          "Vous faites jaillir du sol une lance d’os qui inflige 130% points de dégâts et transperce les adversaires.",
         ],
+        detail: " Dégâts physiques",
         footer: "Dégâts de Feu",
         children: [
           {
@@ -2739,10 +2772,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_5",
             max_rank: 1,
             rank: 0,
+            label: "Lance d’os renforcée",
             top: "21%",
             left: "40%",
             notes:
-              "Vous gagnez 1 point de fureur chaque fois que Tourbillon inflige des dégâts directs à une cible, ou 4 points de fureur si la cible est une élite.",
+              "Lance d’os rend la première cible qu’elle touche vulnérable pendant 3 s. Lorsqu’elle est détruite, elle se brise en 3 éclats qui infligent 25% points de dégâts chacun.",
             isChild: true,
           },
           {
@@ -2750,10 +2784,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_5_1",
             max_rank: 1,
             rank: 0,
+            label: "Lance d’os paranormale",
             top: "19%",
             left: "42%",
             notes:
-              "Lorsque vous maniez une arme tranchante, Tourbillon inflige aussi 40% de ses dégâts de base sous forme de dégâts de saignement en 5 s.",
+              "Les chances d’infliger un coup critique avec Lance d’os sont augmentées de 5%[+]. Si le projectile principal inflige un coup critique, il projette 2 éclats supplémentaires lorsqu’il est détruit, et votre essence maximale est augmentée de 10% pendant 5 s.",
             isChild: true,
           },
           {
@@ -2761,10 +2796,11 @@ export const optionSkillsNecromancer = [
             parent_id: "core_5_1",
             max_rank: 1,
             rank: 0,
+            label: "Lance d’os surnaturelle",
             top: "23%",
             left: "42%",
             notes:
-              "Après avoir utilisé Tourbillon pendant 2 s, Tourbillon inflige 35%[x] de dégâts supplémentaires jusqu’à son annulation.",
+              "Lance d’os inflige 40%[x] de dégâts d’accablement supplémentaires et vous permet de récupérer 5% du maximum de points de vie (20) après avoir accablé une cible.",
             isChild: true,
           },
         ],
@@ -2827,22 +2863,24 @@ export const optionSkillsNecromancer = [
         top: "30.031%",
         id: "defensive_1",
         image: "/skill-tree/necromamce/three/blood_mist.png",
-        label: "Cri de Défi",
+        label: "Brume de sang",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 24 s",
+          "Chances d’obtenir un coup de chance : 8.73%",
+          "Votre enveloppe charnelle se sublime en une brume de sang, ce qui vous rend insensible pendant 3 s. Vous infligez régulièrement 35% points de dégâts aux adversaires et récupérez un montant de points de vie égal à 0.5% de votre maximum de points de vie (2).",
         ],
-        footer: "Compétence Défensive",
+        detail: "  Dégâts physiques",
         children: [
           {
             id: "defensive_1_1",
             parent_id: "defensive_1",
             max_rank: 1,
             rank: 0,
+            label: "Brume de sang renforcée",
             top: "28%",
             left: "57%",
             notes:
-              "Lorsque Cri provocateur est actif, vous obtenez un bonus de 20%[x] à votre maximum de points de vie.",
+              "Utiliser une compétence qui accable les adversaires réduit le temps de recharge de Brume de sang de 2 s.",
             isChild: true,
           },
           {
@@ -2850,10 +2888,11 @@ export const optionSkillsNecromancer = [
             parent_id: "defensive_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Brume de sang épouvantable",
             top: "26%",
             left: "59%",
             notes:
-              "Lorsque Cri provocateur est actif, vous gagnez un montant de dégâts d’épines égal à 30% de votre maximum de points de vie.",
+              "Vous obtenez 15%[+] de chances d’infliger un coup critique et 10%[x] de dégâts critiques supplémentaires pendant 5 s lorsque Brume de sang prend fin.",
             isChild: true,
           },
           {
@@ -2861,10 +2900,11 @@ export const optionSkillsNecromancer = [
             parent_id: "defensive_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Brume de sang funèbre",
             top: "26%",
             left: "55%",
             notes:
-              "Lorsque Cri provocateur est actif, vous gagnez 6 points de fureur chaque fois que vous subissez des dégâts.",
+              "Brume de sang est désormais une compétence de mobilité qui octroie 30%[+] de vitesse de déplacement supplémentaire, fait apparaître un cadavre toutes les secondes et applique l’effet vulnérable pendant 5 s aux adversaires qui la traverse.",
             isChild: true,
           },
         ],
@@ -2876,22 +2916,22 @@ export const optionSkillsNecromancer = [
         top: "33.7723%",
         id: "defensive_3",
         image: "/skill-tree/necromamce/three/corpse_explosion.png",
-        label: "Peau de Fer",
+        label: "Explosion macabre",
         details: [
-          "Temps de recharge : 25 secondes",
-          "<span class='text-gray-500'>Créez une barrière protectrice autour de vous qui absorbe <span class='text-yellow-500'> [200%]</span> de votre santé maximale en dégâts pendant 6 secondes.</span>",
+          "Chances d’obtenir un coup de chance : 25%",
+          "Vous faites exploser un cadavre, ce qui inflige 85% points de dégâts aux adversaires à proximité.",
         ],
-        footer: "Compétence Défensive",
+        detail: "Dégâts physiques ",
         children: [
           {
             id: "defensive_3_1",
             parent_id: "defensive_3",
             max_rank: 1,
             rank: 0,
+            label: "Explosion macabre renforcée",
             top: "34.9723%",
             left: "41.4404%",
-            notes:
-              "La barrière de Galvanisation absorbe 25% de votre maximum de points de vie en plus.",
+            notes: "Le rayon d’Explosion macabre est augmenté de 15%.",
             isChild: true,
           },
           {
@@ -2899,10 +2939,11 @@ export const optionSkillsNecromancer = [
             parent_id: "defensive_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Explosion macabre putrescente",
             top: "32.9723%",
             left: "38.4404%",
             notes:
-              "Galvanisation confère aussi un montant de fortification égal à 20% de votre maximum de vie (0). Ce montant est doublé si vous avez moins de 50% de points de vie au moment de son utilisation.",
+              "Explosion macabre devient une compétence de ténèbres qui, au lieu de faire exploser un cadavre, libère désormais un ignoble miasme infligeant 110% points de dégâts de corruption en 6 s.",
             isChild: true,
           },
           {
@@ -2910,10 +2951,11 @@ export const optionSkillsNecromancer = [
             parent_id: "defensive_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Explosion macabre pestiférée",
             top: "36.9723%",
             left: "38.4404%",
             notes:
-              "Tant que Galvanisation est active, vous récupérez chaque seconde un montant de points de vie égal à 10% du montant initial de la barrière.",
+              "Explosion macabre inflige 10%[x] de dégâts supplémentaires aux cibles ralenties, étourdies ou vulnérables. Ces bonus aux dégâts peuvent se cumuler.",
             isChild: true,
           },
         ],
@@ -2925,22 +2967,22 @@ export const optionSkillsNecromancer = [
         top: "40.5776%",
         id: "defensive_4",
         image: "/skill-tree/necromamce/three/bone_prison.png",
-        label: "Cri de Ralliement",
+        label: "Prison d’os",
         details: [
-          "Temps de recharge : 25 secondes",
-          "<span class='text-gray-500'>Créez une barrière protectrice autour de vous qui absorbe <span class='text-yellow-500'> [200%]</span> de votre santé maximale en dégâts pendant 6 secondes.</span>",
+          "Temps de recharge : 15 s",
+          "Vous exhumez une prison d’os avec 120 points de vie qui entoure la zone ciblée pendant 6 s.",
         ],
-        footer: "Compétence Défensive",
         children: [
           {
             id: "defensive_4_1",
             parent_id: "defensive_4",
             max_rank: 1,
             rank: 0,
+            label: "Prison d’os funèbre",
             top: "45%",
             left: "57.5%",
             notes:
-              "Cri de ralliement vous octroie l’état inarrêtable tant qu’il est actif.",
+              "L’utilisation de Prison d’os octroie 40 points d’essence. Lorsqu’un boss est emprisonné, vous obtenez 25 points d’essence supplémentaires.",
             isChild: true,
           },
           {
@@ -2948,10 +2990,11 @@ export const optionSkillsNecromancer = [
             parent_id: "defensive_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Prison d’os épouvantable",
             top: "47%",
             left: "54%",
             notes:
-              "Cri de ralliement vous confère un montant de fortification égal à 10% de votre maximum de vie (1). Tant que Cri de ralliement est actif, vous obtenez un montant de fortification supplémentaire égal à 2% de votre maximum de vie (1) chaque fois que vous subissez ou infligez des dégâts directs.",
+              "Réduit vos temps de recharge actifs de 0.5 s par adversaire piégé par Prison d’os, jusqu’à un maximum de 5 s.",
             isChild: true,
           },
           {
@@ -2959,10 +3002,11 @@ export const optionSkillsNecromancer = [
             parent_id: "defensive_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Prison d’os renforcée",
             top: "47%",
             left: "60%",
             notes:
-              "Cri de ralliement génère 20 points de fureur et augmente votre génération de ressources de 20%[x] supplémentaires.",
+              "Les adversaires se trouvant à l’intérieur de la prison d’os au moment du lancement deviennent vulnérables et subissent 15%[x] de dégâts supplémentaires pendant 8 s.",
             isChild: true,
           },
         ],
@@ -3051,22 +3095,24 @@ export const optionSkillsNecromancer = [
         left: "16.4904%",
         id: "brawling_2",
         image: "/skill-tree/necromamce/four/iron_maiden.png",
-        label: "Coup de Pied",
+        label: "Vierge de fer",
         details: [
-          "Temps de recharge : 20 secondes",
-          "<span class='text-gray-500'>Durcissez temporairement votre peau, réduisant les dégâts subis de <span class='text-yellow-500'> [30%]</span> pendant 8 secondes.</span>",
+          "Coût en essence : 10",
+          "Chances d’obtenir un coup de chance : 5%",
+          "Vous maudissez la zone ciblée. Les cibles affligées par Vierge de fer subissent 30% points de dégâts toutes les 2 s et chaque fois qu’elles infligent des dégâts directs. Dure 10 s.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques ",
         children: [
           {
             id: "brawling_2_1",
             parent_id: "brawling_2",
             max_rank: 1,
             rank: 0,
+            label: "Vierge de fer renforcée",
             top: "44%",
             left: "16.5%",
             notes:
-              "Les cibles blessées par Coup de pied deviennent vulnérables pendant 4 s.",
+              "Vierge de fer ne coûte plus d’essence. À la place, vous gagnez 5 points d’essence pour chaque cible maudite. Ne fonctionne pas avec les cibles qui sont déjà maudites avec Vierge de fer.",
             isChild: true,
           },
           {
@@ -3074,10 +3120,11 @@ export const optionSkillsNecromancer = [
             parent_id: "brawling_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Vierge de fer abjecte",
             top: "41%",
             left: "19%",
             notes:
-              "Les cibles repoussées par Coup de pied infligent 54% points de dégâts aux adversaires qu’elles percutent. Les adversaires ainsi blessés sont renversés pendant 2 s.",
+              "Vous récupérez 7% de votre maximum de points de vie (28) lorsqu’une cible meurt en étant affectée par Vierge de fer.",
             isChild: true,
           },
           {
@@ -3085,10 +3132,11 @@ export const optionSkillsNecromancer = [
             parent_id: "brawling_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Vierge de fer horrible",
             top: "41%",
             left: "13%",
             notes:
-              "Désormais, Coup de pied est également une compétence principale. Si Coup de pied blesse une cible adverse, il consomme tous vos points de fureur et inflige 25% points de dégâts supplémentaires par tranche de 10 points de fureur consommés. Coup de pied ne repousse plus les adversaires.",
+              "Lorsqu’au moins 3 cibles sont affectés par Vierge de fer, ses dégâts sont augmentés de 30%[x].",
             isChild: true,
           },
         ],
@@ -3100,22 +3148,22 @@ export const optionSkillsNecromancer = [
         left: "11.6365%",
         id: "brawling_3",
         image: "/skill-tree/necromamce/four/decrepify.png",
-        label: "Bond",
+        label: "Décrépitude",
         details: [
-          "Temps de recharge : 25 secondes",
+          "Coût en essence : 10",
           "<span class='text-gray-500'>Créez une barrière protectrice autour de vous qui absorbe <span class='text-yellow-500'> [200%]</span> de votre santé maximale en dégâts pendant 6 secondes.</span>",
         ],
-        footer: "Compétence Défensive",
         children: [
           {
             id: "brawling_3_1",
             parent_id: "brawling_3",
             max_rank: 1,
             rank: 0,
+            label: "Décrépitude renforcée",
             top: "53.6%",
             left: "8%",
             notes:
-              "Si Bond ne blesse aucune cible, son temps de recharge est réduit de 4 s.",
+              "Coup de chance : les cibles affligées par Décrépitude ont jusqu’à 10% de chances d’être étourdies pendant 2 s lorsqu’elles sont touchées.",
             isChild: true,
           },
           {
@@ -3123,10 +3171,11 @@ export const optionSkillsNecromancer = [
             parent_id: "brawling_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Décrépitude abjecte",
             top: "50.5%",
             left: "6%",
             notes:
-              "Les cibles blessées par Bond sont ralenties de 70% pendant 5 s.",
+              "Coup de chance : les cibles affligées par Décrépitude ont jusqu’à 15% de chances de réduire vos temps de recharge actifs de 1 s lorsqu’elles sont touchées.",
             isChild: true,
           },
           {
@@ -3134,10 +3183,11 @@ export const optionSkillsNecromancer = [
             parent_id: "brawling_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Décrépitude horrible",
             top: "56%",
             left: "6%",
             notes:
-              "Si Bond inflige des dégâts à au moins une cible, vous gagnez 40 points de fureur.",
+              "Lorsque vous ou vos serviteurs frappez une cible qui a moins de 10% de ses points de vie et qui est affligée par Décrépitude, celle-ci est instantanément tuée. Ne fonctionne pas avec les boss.",
             isChild: true,
           },
         ],
@@ -3212,22 +3262,24 @@ export const optionSkillsNecromancer = [
         left: "65.1668%",
         id: "weapon_mastery_2",
         image: "/skill-tree/necromamce/five/corpse_tendrils.png",
-        label: "Rupture",
+        label: "Vrilles nécrophages",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 11 s",
+          "Chances d’obtenir un coup de chance : 30%",
+          "Des veines jaillissent d’un cadavre, attirant les adversaires, les étourdissant pendant 3 s et leur infligeant 20% points de dégâts. Ceci ne consomme pas le cadavre.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "weapon_mastery_2_1",
             parent_id: "weapon_mastery_2",
             max_rank: 1,
             rank: 0,
+            label: "Vrilles nécrophages renforcées",
             top: "60.6%",
             left: "70%",
             notes:
-              "Arracher votre arme du corps d’une cible pendant Rupture déclenche une explosion qui inflige 70% points de dégâts de saignement en 5 s. Ces dégâts augmentent de 20%[x] pour chaque tranche de 50 points de force dont vous disposez. Bonus actuel : 0%[x]",
+              "Les cibles à portée des vrilles nécrophages sont ralenties de 50% avant d’être attirées.",
             isChild: true,
           },
           {
@@ -3235,10 +3287,11 @@ export const optionSkillsNecromancer = [
             parent_id: "weapon_mastery_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Vrilles nécrophages putrescentes",
             top: "57.5%",
             left: "73%",
             notes:
-              "Toucher au moins 1 adversaire avec Rupture vous rend 22% de votre maximum de points de vie (88).",
+              "Vrilles nécrophages a 35% de chances de générer un orbe de sang lorsqu’elle inflige des dégâts.",
             isChild: true,
           },
           {
@@ -3246,10 +3299,11 @@ export const optionSkillsNecromancer = [
             parent_id: "weapon_mastery_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Vrilles nécrophages pestiférées",
             top: "57.5%",
             left: "67%",
             notes:
-              "Toucher des adversaires avec Rupture augmente votre vitesse d’attaque de 40%[+] pendant 5 s.",
+              "Les cibles blessées par Vrilles nécrophages deviennent vulnérables pendant 3 s.",
             isChild: true,
           },
         ],
@@ -3261,22 +3315,25 @@ export const optionSkillsNecromancer = [
         top: "70.2345%",
         id: "weapon_mastery_3",
         image: "/skill-tree/necromamce/five/bone_spirit.png",
-        label: "Poigne d'Acier",
+        label: "Esprit d’os",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 12 s",
+          "Coût en essence : toute votre essence restante",
+          "Chances d’obtenir un coup de chance : 33%",
+          "Vous dépensez toute votre essence pour invoquer un esprit d’os qui traque les adversaires. Lorsqu’il atteint une cible adverse, l’esprit explose en infligeant 80% points de dégâts à la cible et à l’ensemble des adversaires à proximité. Ces dégâts sont augmentés de 4%[x] pour chaque point d’essence dépensé lors de l’utilisation d’Esprit d’os.",
         ],
-        footer: "Compétence Défensive",
+        detail: "Dégâts physiques",
         children: [
           {
             id: "weapon_mastery_3_1",
             parent_id: "weapon_mastery_3",
             max_rank: 1,
             rank: 0,
+            label: "Esprit d’os renforcé",
             left: "67.3227%",
             top: "76.2345%",
             notes:
-              "Poigne de fer rend aussi les adversaires vulnérables pendant 3.0 s.",
+              "Si Esprit d’os inflige un coup critique, son temps de recharge est réduit de 7 s. Cet effet ne peut se produire qu’une fois par utilisation.",
             isChild: true,
           },
           {
@@ -3284,10 +3341,11 @@ export const optionSkillsNecromancer = [
             parent_id: "weapon_mastery_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Esprit d’os épouvantable",
             left: "70.3227%",
             top: "78.2345%",
             notes:
-              "Si Poigne de fer blesse une cible, vous obtenez l’effet de Rage du berserker pendant 2 s.",
+              "Une fois qu’Esprit d’os a touché un adversaire, vous générez 30% de votre maximum d’essence au cours des 4 prochaines secondes.",
             isChild: true,
           },
           {
@@ -3295,9 +3353,10 @@ export const optionSkillsNecromancer = [
             parent_id: "weapon_mastery_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Esprit d’os funèbre",
             left: "64.3227%",
             top: "78.2345%",
-            notes: "Poigne de fer gagne 1 charge supplémentaire.",
+            notes: "Esprit d’os funèbre",
             isChild: true,
           },
         ],
@@ -3484,22 +3543,23 @@ export const optionSkillsNecromancer = [
         left: "26.1219%",
         id: "ultimate_1",
         image: "/skill-tree/necromamce/six/blood_wave.png",
-        label: "Appel des Anciens",
+        label: "Vague de sang",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 50 s",
+          "Chances d’obtenir un coup de chance : 50%",
+          "Chances d’obtenir un coup de chance : 50%",
         ],
-        footer: "Compétence Défensive",
+        detail: "Dégâts physiques",
         children: [
           {
             id: "ultimate_1_1",
             parent_id: "ultimate_1",
             max_rank: 1,
             rank: 0,
+            label: "Vague de sang",
             top: "74%",
             left: "29%",
-            notes:
-              "Tant qu’Appel des Anciens est actif, votre vitesse d’attaque est augmentée de 20%[+] et vous infligez 25%[x] de dégâts supplémentaires.",
+            notes: "Temps de recharge : 41 s",
             isChild: true,
           },
           {
@@ -3507,10 +3567,11 @@ export const optionSkillsNecromancer = [
             parent_id: "ultimate_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Vague de sang primordiale",
             top: "71.3%",
             left: "26%",
             notes:
-              "Chacun des Anciens acquiert un pouvoir supplémentaire : Korlic : vous obtenez 10 points de fureur chaque fois que Korlic blesse une cible avec Frénésie. Talic : les cibles sont ralenties de 50% pendant 1 s après avoir été blessées par son Tourbillon. Madawc : 30% de chances d’étourdir les adversaires pendant 3 s lorsqu’il utilise Soulèvement.",
+              "L’utilisation de Vague de sang vous octroie 20% de réduction des dégâts pendant 10 s.",
             isChild: true,
           },
         ],
@@ -3522,22 +3583,27 @@ export const optionSkillsNecromancer = [
         left: "13.735%",
         id: "ultimate_2",
         image: "/skill-tree/necromamce/six/teo.png",
-        label: "Maelström de Fer",
+        label: "Armée de morts",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 60 s",
+          "Chances d’obtenir un coup de chance : 64%",
+          "Vous réveillez les morts profondément enterrés. Des squelettes instables émergent du sol pendant 7 s et explosent lorsqu’ils sont à proximité des adversaires, ce qui leur inflige 120% points de dégâts et les étourdit pendant 2 s.",
         ],
-        footer: "Compétence Défensive",
+        detail: "Bonus actuel : 0.0%[x].",
+
         children: [
           {
             id: "ultimate_2_1",
             parent_id: "ultimate_2",
             max_rank: 1,
             rank: 0,
+            label: "Armée de morts primordiale",
             top: "83.0058%",
             left: "9%",
-            notes:
-              "Maelström d’acier a 30%[+] de chances supplémentaires d’infliger un coup critique et inflige 40%[x] de dégâts critiques supplémentaires.",
+            notes: [
+              "Lorsque les squelettes instables",
+              "d’Armée de morts explosent, ils ont 100% de chances de laisser un cadavre derrière eux.",
+            ],
             isChild: true,
           },
           {
@@ -3545,10 +3611,11 @@ export const optionSkillsNecromancer = [
             parent_id: "ultimate_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Armée de morts suprême",
             top: "83.0058%",
             left: "6%",
             notes:
-              "Lorsque vous infligez des dégâts directs à une cible après avoir changé d’arme, le temps de recharge de Maelström d’acier est réduit de 1 s.",
+              "Armée de morts fait aussi se relever vos guerriers squelettes et mages squelettes.",
             isChild: true,
           },
         ],
@@ -3560,22 +3627,24 @@ export const optionSkillsNecromancer = [
         left: "26.2647%",
         id: "ultimate_3",
         image: "/skill-tree/necromamce/six/qwe.png",
-        label: "Colère du Berserker",
+        label: "Tempête d’os",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 60 s",
+          "Chances d’obtenir un coup de chance : 40%",
+          "Une tempête d’ossements tourbillonnants se forme autour de votre golem et vous, ce qui inflige 350% points de dégâts aux adversaires à proximité en 10 s.",
         ],
-        footer: "Compétence Défensive",
+        detail: "Dégâts physiques",
         children: [
           {
             id: "ultimate_3_1",
             parent_id: "ultimate_3",
             max_rank: 1,
             rank: 0,
+            label: "Tempête d’os primordiale",
             top: "91.7%",
             left: "28.3%",
             notes:
-              "Tant que Courroux du berserker est actif, votre vitesse de déplacement est augmentée de 20%[+] et votre génération de fureur de 30%[x].",
+              "Votre réduction des dégâts est augmentée de 15% tant que Tempête d’os est active.",
             isChild: true,
           },
           {
@@ -3583,10 +3652,11 @@ export const optionSkillsNecromancer = [
             parent_id: "ultimate_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Tempête d’os suprême",
             top: "93.7%",
             left: "25.3%",
             notes:
-              "Tant que Courroux du berserker est actif, le bonus aux dégâts de l’effet de Rage du berserker est augmenté de 25%[x] chaque fois que vous dépensez 50 points de fureur, jusqu’à un maximum de 100%[x].",
+              "Vos chances d’infliger des coups critiques et votre vitesse d’attaque sont augmentées de 20%[+] tant que Tempête d’os est active.",
             isChild: true,
           },
         ],
@@ -3725,8 +3795,12 @@ export const optionSkillsNecromancer = [
         left: "37.3868%",
         id: "second_1",
         image: "/skill-tree/necromamce/seven/kalan's_edict.png",
-        label: "Sans Contrainte",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Décret de Kalan",
+        details: [
+          "Vos serviteurs bénéficient d’une augmentation de 3%[+] de la vitesse d’attaque et de 3%[x] des dégâts infligés par serviteur actif.",
+          "Lorsqu’un de vos serviteurs meurt, vos autres serviteurs enragent et infligent 20%[x] de dégâts supplémentaires pendant 3 s.",
+        ],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 1,
@@ -3735,8 +3809,12 @@ export const optionSkillsNecromancer = [
         left: "60.1901%",
         id: "second_2",
         image: "/skill-tree/necromamce/seven/rathma's_vigor.png",
-        label: "Blessures Jaillissantes",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Vigueur de Rathma",
+        details: [
+          "Après avoir été en bonne santé pendant 15 s, votre prochaine compétence de sang accable. Ce laps de temps est réduit de 2 s à chaque fois que des orbes de sang vous rendent 400 points de vie.",
+          "Vous infligez 100%[x] de dégâts d’accablement supplémentaires.",
+        ],
+        detail: " Dégâts physiques ",
       },
       {
         max_rank: 1,
@@ -3745,8 +3823,13 @@ export const optionSkillsNecromancer = [
         left: "55.3384%",
         id: "second_3",
         image: "/skill-tree/necromamce/seven/affliction.png",
-        label: "Rage Débridée",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Affliction",
+        details: [
+          "Les cibles adverses vulnérables, sous l’effet d’une perte de contrôle ou corrompues sont frappées d’affliction et subissent 45%[x] de dégâts supplémentaires de votre part.",
+          "Vos compétences de malédiction infligent 180% points de dégâts d’ombre aux adversaires sous l’effet d’affliction. Ce montant est augmenté à hauteur de 120%[x] de vos bonus aux dégâts critiques, aux dégâts contre les cibles vulnérables et aux dégâts contre les cibles sous l’effet d’une perte de contrôle, jusqu’à un maximum de 900%[x].",
+          "Bonus aux dégâts actuel : 84%[x]",
+        ],
+        detail: "Dégâts physiques ",
       },
       {
         max_rank: 1,
@@ -3755,8 +3838,13 @@ export const optionSkillsNecromancer = [
         left: "43.0589%",
         id: "second_4",
         image: "/skill-tree/necromamce/seven/shadowblight.png",
-        label: "Arsenal Ambulant",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Chancre d’ombre",
+        details: [
+          "Vos dégâts d’ombre infectent les adversaires avec Chancre d’ombre pendant 2 s. Toutes les 8 fois qu’une cible subit des dégâts d’ombre de votre part alors qu’elle est affectée par Chancre d’ombre, celle-ci subit 200% points de dégâts d’ombre supplémentaires.",
+          "Les dégâts de Chancre d’ombre sont augmentés à hauteur de 70%[x] de vos bonus de dégâts de corruption et d’ombre, jusqu’à un maximum de 450%[x].",
+          "Bonus actuel : 0%[x]",
+        ],
+        detail: " Dégâts physiques ",
       },
       {
         max_rank: 1,
@@ -3765,8 +3853,12 @@ export const optionSkillsNecromancer = [
         top: "86.4803%",
         id: "second_5",
         image: "/skill-tree/necromamce/seven/asd.png",
-        label: "Arsenal Ambulant",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Essence ossifiée",
+        details: [
+          "Votre régénération d’essence est augmentée de 50% et vos compétences d’os infligent 0.7%[x] de dégâts supplémentaires pour chaque point d’essence dont vous disposez lors de leur utilisation, jusqu’à un maximum de 140%[x].",
+          "Bonus actuel :0.0%[x]",
+        ],
+        detail: " Dégâts physiques ",
       },
     ],
   },

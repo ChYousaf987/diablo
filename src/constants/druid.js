@@ -2303,27 +2303,28 @@ export const optionSkillsDruid = [
         id: "basic_1",
         max_rank: 5,
         rank: 0,
-        powers: ["Combat", "Mobilité"],
+        powers: ["Basique", "Magie naturelle", "Tempête"],
         image: "/skill-tree/druide/one/wind_shear.webp",
-        label: "Coup",
+        label: "Vent cisaillant ",
         top: "5.1185%",
         left: "45.4826%",
         details: [
-          "Génération de Furie : 15",
-          "Coup de chance : 50%",
-          "<span class='text-gray-500'>Frappez l'ennemi avec votre arme, infligeant<span class='text-yellow-500'> [33%] </span>de dégâts. Après avoir frappé les ennemis 4 fois, votre prochain Coup les étourdira pendant 1,25 secondes, passant à 2 secondes si vous utilisez une arme à deux mains.</span>",
+          "Esprit généré : 16",
+          "Chances d’obtenir un coup de chance : 20%",
+          "Vous invoquez une lame de vent perçante qui inflige 60% points de dégâts.",
         ],
-        footer: "Dégâts Physiques",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "basic_1_1",
             parent_id: "basic_1",
             max_rank: 1,
             rank: 0,
+            label: "Vent cisaillant renforcé",
             top: "2.92081%",
             left: "42.0622%",
             notes:
-              "Lorsque vous infligez une volée de coups à une cible adverse, vous recevez 20% de votre maximum de points de vie (1) sous forme de points de fortification.",
+              "Vent cisaillant a 20% de chances de rendre les adversaires vulnérables pendant 4 s.",
             isChild: true,
           },
           {
@@ -2331,10 +2332,11 @@ export const optionSkillsDruid = [
             parent_id: "basic_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Vent cisaillant féroce",
             top: "1.0783463%",
             left: "39.2167%",
             notes:
-              "Lorsque vous infligez une volée de coups à une cible adverse, vous générez 10 points de fureur supplémentaires.",
+              "Chaque cible touchée par Vent cisaillant augmente votre vitesse de déplacement de 5%[+] pendant 5 s, jusqu’à un maximum de 20%[+].",
             isChild: true,
           },
           {
@@ -2342,10 +2344,11 @@ export const optionSkillsDruid = [
             parent_id: "basic_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Vent cisaillant indomptable",
             top: "1.0783463%",
             left: "44.3187%",
             notes:
-              "Lorsque vous réalisez 4 coups critiques avec Raclée en utilisant une arme à deux mains, votre prochaine compétence principale ou de maîtrise d’arme accablera les adversaires.",
+              "Vent cisaillant vous confère 4 points d’esprit supplémentaires pour chaque cible touchée après la première cible.",
             isChild: true,
           },
         ],
@@ -2357,45 +2360,51 @@ export const optionSkillsDruid = [
         rank: 0,
         id: "basic_2",
         image: "/skill-tree/druide/one/earth_spike.webp",
-        label: "Écorcher",
+        label: "Pointe de terre",
+        powers: ["Basique", "Magie naturelle", "Tempête"],
+
         details: [
-          "Génération de Furie : 15",
-          "Coup de chance : 50%",
-          "<span class='text-gray-500'>Écorchez l'ennemi, infligeant <span class='text-yellow-500'> [5%]</span> de dégâts et infligeant <span class='text-yellow-500'> [44%] </span> de dégâts de Saignement sur 5 secondes.</span>",
+          "Esprit généré : 16",
+          "Chances d’obtenir un coup de chance : 35%",
+          "Vous fissurez la terre et empalez la première cible touchée, ce qui lui inflige 90% points de dégâts.",
         ],
-        footer: "Dégâts Physiques <br/> Nécessite une arme tranchante",
+        detail: " Dégâts physiques",
+
         children: [
           {
             id: "basic_2_1",
             parent_id: "basic_2",
             max_rank: 1,
             rank: 0,
+            label: "Pointe de terre renforcée",
             top: "6.81331%",
             left: "38.1172%",
-            notes:
-              "Écorchement a 15% de chances de rendre l’adversaire vulnérable pendant 5 s. Ces chances sont doublées lorsque vous utilisez une arme à deux mains.",
+            notes: "Pointe de terre a 15% de chances d’étourdir pendant 2.5 s.",
             isChild: true,
           },
           {
             id: "basic_2_2",
             parent_id: "basic_2_1",
             max_rank: 1,
+            label: "Pointe de terre féroce",
             rank: 0,
             top: "3.67796%",
             left: "36.21%",
             notes:
-              "Lorsqu’Écorchement inflige des dégâts directs à une cible, celle-ci subit 15%[x] de dégâts de saignement supplémentaires de votre part pendant les 3 s qui suivent.",
+              "Vous obtenez un montant de fortification égal à 12% de votre maximum points de vie (1) chaque fois que Pointe de terre inflige des dégâts à des cibles étourdies, immobilisées ou repoussées.",
             isChild: true,
           },
           {
             id: "basic_2_3",
             parent_id: "basic_2_1",
+            powers: ["Terre", "Magie naturelle"],
             max_rank: 1,
+            label: "Pointe de terre indomptable",
             rank: 0,
             top: "6.586%",
             left: "32.5524%",
             notes:
-              "Lorsqu’Écorchement inflige des dégâts directs à une cible adverse, vous obtenez 4 % de réduction des dégâts et 40 points de dégâts d’épines pendant 6 s. Cet effet peut se cumuler jusqu’à 5 fois.",
+              "Pointe de terre empale une seconde fois lorsque vous touchez une cible immobilisée ou étourdie.",
             isChild: true,
           },
         ],
@@ -2407,24 +2416,25 @@ export const optionSkillsDruid = [
         rank: 0,
         id: "basic_3",
         image: "/skill-tree/druide/one/storm_strike.webp",
-        label: "Frénésie",
+        label: "Coup de tonnerre",
         details: [
-          "Génération de Furie : 4",
-          "Coup de chance : 30%",
-          "<span class='text-gray-500'>Déchaînez une rafale rapide de coups, infligeant <span class='text-yellow-500'>[24%]</span> de dégâts avec chaque paire de coups.</span>",
-          "<span class='text-gray-500'>Si Frénésie touche un ennemi, sa Vitesse d'Attaque est augmentée de +20% pendant 3 secondes, jusqu'à +60%.</span>",
+          "Esprit généré : 15",
+          "Chances d’obtenir un coup de chance : 25%",
+          "De l’électricité se concentre autour de votre arme et inflige 60% points de dégâts à votre cible, puis se propage à un maximum de 3 adversaires à proximité.",
+          "Après avoir infligé des dégâts avec Coup de tonnerre, vous obtenez 15% de réduction des dégâts pendant 3 s.",
         ],
-        footer: "Dégâts Physiques <br/> Nécessite des armes doubles",
+        footer: " Dégâts de foudre",
         children: [
           {
             id: "basic_3_1",
             parent_id: "basic_3",
             max_rank: 1,
+            label: "Coup de tonnerre renforcé",
             rank: 0,
             top: "2.92081%",
             left: "52.5%",
             notes:
-              "Tant que Frénésie augmente votre vitesse d’attaque de 60%[+], le coût en fureur de vos compétences principales est réduit de 25%.",
+              "Coup de tonnerre a 15% de chances d’immobiliser toutes les cibles touchées pendant 2.5 s.",
             isChild: true,
           },
           {
@@ -2432,21 +2442,23 @@ export const optionSkillsDruid = [
             parent_id: "basic_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Coup de tonnerre féroce",
             top: "1.0783463%",
             left: "50.2296%",
             notes:
-              "Sous l’effet de Rage du berserker, la vitesse d’attaque de vos autres compétences est augmentée de 6%[+] pour chaque cumul de Frénésie que vous avez.",
+              "Coup de tonnerre rend les adversaires vulnérables pendant 3 s.",
             isChild: true,
           },
           {
             id: "basic_3_3",
             parent_id: "basic_3_1",
             max_rank: 1,
+            label: "Coup de tonnerre indomptable",
             rank: 0,
+            powers: ["chaine"],
             top: "1.0783463%",
             left: "55.8456%",
-            notes:
-              "Chaque cumul de Frénésie que vous possédez vous confère 5% de réduction des dégâts et 5% de vitesse de déplacement.",
+            notes: "Coup de tonnerre se propage à 2 cibles supplémentaires.",
             isChild: true,
           },
         ],
@@ -2458,24 +2470,23 @@ export const optionSkillsDruid = [
         rank: 0,
         id: "basic_4",
         image: "/skill-tree/druide/one/claw.webp",
-        label: "Frappe plongeante",
+        label: "Griffe",
         details: [
-          "Génération de Furie : 4",
-          "Coup de chance : 30%",
-          "<span class='text-gray-500'>Déchaînez une rafale rapide de coups, infligeant <span class='text-yellow-500'>[24%]</span> de dégâts avec chaque paire de coups.</span>",
-          "<span class='text-gray-500'>Si Frénésie touche un ennemi, sa Vitesse d'Attaque est augmentée de +20% pendant 3 secondes, jusqu'à +60%.</span>",
+          "Esprit généré : 15",
+          "Chances d’obtenir un coup de chance : 50%",
+          "Vous vous transformez en lycanthrope et griffez une cible, ce qui lui inflige 80% points de dégâts.",
         ],
-        footer: "Dégâts Physiques <br/> Nécessite des armes doubles",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "basic_4_1",
             parent_id: "basic_4",
             max_rank: 1,
             rank: 0,
+            label: "Griffe renforcée",
             top: "6.82835%",
             left: "61.3759%",
-            notes:
-              "Fente inflige 30%[x] de dégâts supplémentaires et vous rend 2% de votre maximum de points de vie (8) lorsqu’elle blesse une cible en bonne santé.",
+            notes: "La vitesse d’attaque de Griffe est augmentée de 20%[+].",
             isChild: true,
           },
           {
@@ -2485,8 +2496,8 @@ export const optionSkillsDruid = [
             rank: 0,
             top: "3.7317%",
             left: "59.7804%",
-            notes:
-              "Fente inflige aussi 20% points de dégâts de saignement en 5 s.",
+            label: "Griffe féroce",
+            notes: "Griffe inflige 40% points de dégâts de poison en 6 s.",
             isChild: true,
           },
           {
@@ -2496,8 +2507,10 @@ export const optionSkillsDruid = [
             rank: 0,
             top: "4.86376%",
             left: "65.7311%",
-            notes:
-              "Infliger des coups critiques avec Fente vous confère Rage du berserker pendant 3.0 s.",
+            label: "Griffe indomptable",
+            powers: ["Lycanthrope ", " Métamorphose"],
+
+            notes: "Griffe a 15% de chances d’attaquer deux fois.",
             isChild: true,
           },
         ],
@@ -2509,24 +2522,25 @@ export const optionSkillsDruid = [
         rank: 0,
         id: "basic_5",
         image: "/skill-tree/druide/one/maul.webp",
-        label: "Frappe plongeante",
+        label: "Mutilation",
         details: [
-          "Génération de Furie : 4",
-          "Coup de chance : 30%",
-          "<span class='text-gray-500'>Déchaînez une rafale rapide de coups, infligeant <span class='text-yellow-500'>[24%]</span> de dégâts avec chaque paire de coups.</span>",
-          "<span class='text-gray-500'>Si Frénésie touche un ennemi, sa Vitesse d'Attaque est augmentée de +20% pendant 3 secondes, jusqu'à +60%.</span>",
+          "Esprit généré : 20",
+          "Chances d’obtenir un coup de chance : 30%",
+          "Vous vous transformez en ursoïde et mutilez les adversaires devant vous, leur infligeant 80% points de dégâts.",
         ],
-        footer: "Dégâts Physiques <br/> Nécessite des armes doubles",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "basic_5_1",
             parent_id: "basic_5",
             max_rank: 1,
             rank: 0,
+            label: "Mutilation renforcée",
+
             top: "12.82835%",
             left: "64.3759%",
             notes:
-              "Fente inflige 30%[x] de dégâts supplémentaires et vous rend 2% de votre maximum de points de vie (8) lorsqu’elle blesse une cible en bonne santé.",
+              "Lorsqu’une cible est touchée par Mutilation, vous obtenez un montant de fortification égal à 8% de votre maximum points de vie (1).",
             isChild: true,
           },
           {
@@ -2534,21 +2548,24 @@ export const optionSkillsDruid = [
             parent_id: "basic_5_1",
             max_rank: 1,
             rank: 0,
+            label: "Mutilation féroce",
+
             top: "14.7317%",
             left: "67.7804%",
-            notes:
-              "Fente inflige aussi 20% points de dégâts de saignement en 5 s.",
+            notes: "Augmente la portée et le périmètre de Mutilation de 25%.",
             isChild: true,
           },
           {
             id: "basic_5_3",
             parent_id: "basic_5_1",
             max_rank: 1,
+            label: "Mutilation indomptable",
+
             rank: 0,
             top: "10.86376%",
             left: "67.7311%",
             notes:
-              "Infliger des coups critiques avec Fente vous confère Rage du berserker pendant 3.0 s.",
+              "Mutilation a 20% de chances de renverser les cibles pendant 2 s.",
             isChild: true,
           },
         ],
@@ -2571,23 +2588,27 @@ export const optionSkillsDruid = [
         rank: 0,
         id: "core_1",
         image: "/skill-tree/druide/two/stone_burst.webp",
-        label: "Double Balancement",
+        powers: ["Principale", "Magie naturelle", "Terre", "Canalisation"],
+
+        label: "Explosion de pierres",
         details: [
-          "Coût en Furie : 25",
-          "Coup de chance : 30%",
-          "Balancez vos armes dans des directions opposées, infligeant [50%] de dégâts avec chaque arme. Les ennemis pris au centre subissent les dégâts des deux armes.",
+          "Coût en esprit : 30",
+          "Chances d’obtenir un coup de chance : 25%",
+          "Vous rassemblez des pierres sous vos adversaires, puis les faites exploser pour infliger 120% points de dégâts.",
+          "Si vous effectuez une canalisation, vous infligez 20% points de dégâts et la zone affectée augmente, jusqu’à un maximum de 400% au bout de [1.1 - 0.8] s.",
         ],
-        footer: "Dégâts Physiques",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "core_1_1",
             parent_id: "core_1",
             max_rank: 1,
             rank: 0,
+            label: "Explosion de pierres renforcée",
             top: "12%",
             left: "31.1%",
             notes:
-              "Si Coup double blesse une cible étourdie ou renversée, vous obtenez 25 points de fureur.",
+              "Les dégâts de la dernière salve d’Explosion de pierres sont augmentés de 25%[x] sur les adversaires à l’intérieur de son rayon initial.",
             isChild: true,
           },
           {
@@ -2595,21 +2616,23 @@ export const optionSkillsDruid = [
             parent_id: "core_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Explosion de pierres tonitruante",
             top: "9%",
             left: "32%",
             notes:
-              "Lancer Coup double sous l’effet de Rage du berserker vous confère 2 s supplémentaires de Rage du berserker.",
+              "Explosion de pierres coûte 66%[x] d’esprit en plus, et sa dernière explosion inflige 50%[x] de dégâts supplémentaires.",
             isChild: true,
           },
           {
             id: "core_1_3",
             parent_id: "core_1_1",
             max_rank: 1,
+            label: "Explosion de pierres primale",
             rank: 0,
             top: "9%",
             left: "28%",
             notes:
-              "Les cibles touchées par les deux coups de Coup double deviennent vulnérables pendant 2 s.",
+              "Lorsque vous canalisez Explosion de pierres, et pendant les 2 s suivantes, vous obtenez 30%[+] de vitesse d’attaque.",
             isChild: true,
           },
         ],
@@ -2621,23 +2644,26 @@ export const optionSkillsDruid = [
         max_rank: 5,
         rank: 0,
         image: "/skill-tree/druide/two/lightning_storm.webp",
-        label: "Marteau des Anciens",
+        label: "Orage",
         details: [
-          "Coût en Mana : 25",
-          "Coup de chance : 35%",
-          "<span class='text-gray-500'>Libérez une série de projectiles chargés qui infligent <span class='text-yellow-500'> [50%]</span> de dégâts chacun.</span>",
+          "Coût en esprit : 15 par frappe.",
+          "Chances d’obtenir un coup de chance : 15%",
+          "Vous invoquez un orage grandissant qui inflige 74% points de dégâts par coup de foudre. Le nombre de coups de foudre augmente avec la durée de canalisation de l’orage, jusqu’à un maximum de 5 coups à la fois.",
         ],
-        footer: "Dégâts de Foudre",
+        powers: ["Principale", "Magie naturelle", "Tempête", " Canalisation"],
+
+        footer: " Dégâts de foudre",
         children: [
           {
             id: "core_2_1",
             parent_id: "core_2",
             max_rank: 1,
             rank: 0,
+            label: "Orage primordial",
             top: "13%",
             left: "16%",
             notes:
-              "Vous gagnez 3%[x] de fureur en plus pendant 5 s pour chaque cible blessée par Marteau des Anciens, cet effet pouvant se cumuler jusqu’à 10 fois.",
+              "Orage a 12% de chances d’immobiliser les cibles touchées pendant 3 s.",
             isChild: true,
           },
           {
@@ -2645,10 +2671,11 @@ export const optionSkillsDruid = [
             parent_id: "core_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Orage primordial",
             top: "11%",
             left: "18%",
             notes:
-              "Marteau des Anciens obtient 2.0%[+] de chances d’infliger un coup critique tous les 10 points de fureur dont vous disposiez à l’utilisation. Ses coups critiques renversent les adversaires pendant 2 s.",
+              "Orage a 12% de chances d’immobiliser les cibles touchées pendant 3 s.",
             isChild: true,
           },
           {
@@ -2656,10 +2683,10 @@ export const optionSkillsDruid = [
             parent_id: "core_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Orage enragé",
             top: "11%",
             left: "14%",
-            notes:
-              "Après avoir accablé une cible avec Marteau des Anciens, vous infligez 40%[x] de dégâts supplémentaires pendant 5 s.",
+            notes: "Orage gagne 1 coup de foudre supplémentaire.",
             isChild: true,
           },
         ],
@@ -2671,23 +2698,27 @@ export const optionSkillsDruid = [
         rank: 0,
         id: "core_3",
         image: "/skill-tree/druide/two/pulverize.webp",
-        label: "Déchirer",
+        label: "Pulvérisation",
+        powers: ["Basique", " Métamorphose ", "Ursoïde"],
+
         details: [
-          "Coût en Mana : 30",
-          "Coup de chance : 40%",
-          "<span class='text-gray-500'>Lancez un projectile enflammé qui explose à l'impact, infligeant <span class='text-yellow-500'> [100%]</span> de dégâts à tous les ennemis proches.</span>",
+          "Coût en esprit : 35",
+          "Chances d’obtenir un coup de chance : 25%",
+          "Vous vous transformez en ursoïde et frappez le sol, ce qui inflige 175% points de dégâts aux adversaires à proximité.",
         ],
-        footer: "Dégâts de Feu",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "core_3_1",
             parent_id: "core_3",
             max_rank: 1,
             rank: 0,
+            label: "Pulvérisation renforcée",
+
             top: "29%",
             left: "13%",
             notes:
-              "Infliger des dégâts directs avec Déchirure prolonge la vulnérabilité des adversaires de 2 s.",
+              "Pulvérisation inflige 30%[x] de dégâts supplémentaires aux cibles sous l’effet d’une perte de contrôle ainsi qu’aux boss.",
             isChild: true,
           },
           {
@@ -2695,10 +2726,12 @@ export const optionSkillsDruid = [
             parent_id: "core_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Pulvérisation primordiale",
+
             top: "31%",
             left: "10%",
             notes:
-              "Infliger des dégâts directs avec Déchirure vous octroie 5 points de fureur par cible touchée, jusqu’à un maximum de 25 points.",
+              "Les cibles touchées par Pulvérisation infligent des dégâts réduits de 20% pendant 5 s.",
             isChild: true,
           },
           {
@@ -2706,10 +2739,12 @@ export const optionSkillsDruid = [
             parent_id: "core_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Pulvérisation enragée",
+
             top: "31%",
             left: "15%",
             notes:
-              "Déchirure inflige 30%[x] de dégâts supplémentaires aux adversaires vulnérables.",
+              "Toutes les 10 s, Pulvérisation accable à coup sûr les adversaires qui subissent alors 20%[x] de dégâts supplémentaires pendant 5 s.",
             isChild: true,
           },
         ],
@@ -2721,23 +2756,27 @@ export const optionSkillsDruid = [
         rank: 0,
         id: "core_4",
         image: "/skill-tree/druide/two/shred.webp",
-        label: "Soulèvement",
+        label: "Déchiquetage",
+        powers: ["Principale", " Métamorphose", "Lycanthrope", "Mobilité"],
+
         details: [
-          "Coût en Mana : 30",
-          "Coup de chance : 40%",
-          "<span class='text-gray-500'>Lancez un projectile enflammé qui explose à l'impact, infligeant <span class='text-yellow-500'> [100%]</span> de dégâts à tous les ennemis proches.</span>",
+          "Coût en esprit : 35",
+          "Chances d’obtenir un coup de chance : 20%",
+          "Vous vous transformez en lycanthrope et effectuez un combo de trois attaques :1re attaque : Vous foncez sur la cible et infligez 52% points de dégâts. 2e attaque : Vous infligez 72% points de dégâts.",
         ],
-        footer: "Dégâts de Feu",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "core_4_1",
             parent_id: "core_4",
             max_rank: 1,
             rank: 0,
+            label: "Déchiquetage renforcé",
+
             top: "29%",
             left: "31%",
             notes:
-              "Soulèvement a 35% de chances d’étourdir pendant 3.0 s toutes les cibles auxquelles il inflige des dégâts.",
+              "La vitesse d’attaque de Déchiquetage est augmentée de 30%[+] et Déchiquetage vous rend 4% de votre maximum de points de vie (16) lorsqu’une cible est touchée.",
             isChild: true,
           },
           {
@@ -2745,10 +2784,12 @@ export const optionSkillsDruid = [
             parent_id: "core_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Déchiquetage primordial",
+
             top: "32%",
             left: "29%",
             notes:
-              "Infliger des dégâts directs à une cible avec une autre compétence que Soulèvement augmente de 15%[x] les dégâts de votre prochaine utilisation de Soulèvement, cet effet pouvant se cumuler jusqu’à 8 fois.",
+              "Lors des attaques supplémentaires de Déchiquetage, vous vous ruez sur l’adversaire. De plus, les dégâts critiques de Déchiquetage sont augmentés de 30%[x].",
             isChild: true,
           },
           {
@@ -2756,10 +2797,12 @@ export const optionSkillsDruid = [
             parent_id: "core_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Déchiquetage enragé",
+
             top: "32%",
             left: "33%",
             notes:
-              "Vous obtenez l’effet de Rage du berserker pendant 3 s si Soulèvement inflige des dégâts à au moins 2 adversaires ou à un ou une boss, et pendant 5 s s’il inflige des dégâts à au moins 4 adversaires.",
+              "La troisième attaque du combo de Déchiquetage est plus ample, inflige 143% points de dégâts de poison supplémentaires en 5 s et augmente les dégâts de poison subits par l’adversaire de 150%[x] pendant 5 s.",
             isChild: true,
           },
         ],
@@ -2771,11 +2814,13 @@ export const optionSkillsDruid = [
         max_rank: 5,
         rank: 0,
         image: "/skill-tree/druide/two/landslide.webp",
-        label: "Landslide",
+        label: "Éboulement",
+        powers: ["Principale", "Magie naturelle", "Terre"],
+
         details: [
-          "Coût en Mana : 25",
-          "Coup de chance : 35%",
-          "<span class='text-gray-500'>Libérez une série de projectiles chargés qui infligent <span class='text-yellow-500'> [50%]</span> de dégâts chacun.</span>",
+          "Coût en esprit : 30",
+          "Chances d’obtenir un coup de chance : 20%",
+          "Vous écrasez les adversaires entre 4 piliers de terre, ce qui leur inflige jusqu’à 140% points de dégâts.",
         ],
         footer: "Dégâts de Foudre",
         children: [
@@ -2784,10 +2829,11 @@ export const optionSkillsDruid = [
             parent_id: "core_6",
             max_rank: 1,
             rank: 0,
+            label: "Éboulement renforcé",
             top: "13%",
             left: "23%",
             notes:
-              "Vous gagnez 3%[x] de fureur en plus pendant 5 s pour chaque cible blessée par Marteau des Anciens, cet effet pouvant se cumuler jusqu’à 10 fois.",
+              "Une fois qu’Éboulement a infligé des dégâts aux adversaires 4 fois, le prochain coup immobilisera les adversaires pendant 3 s.",
             isChild: true,
           },
           {
@@ -2795,10 +2841,11 @@ export const optionSkillsDruid = [
             parent_id: "core_6_1",
             max_rank: 1,
             rank: 0,
+            label: "Éboulement primordial",
             top: "11%",
             left: "25%",
             notes:
-              "Marteau des Anciens obtient 2.0%[+] de chances d’infliger un coup critique tous les 10 points de fureur dont vous disposiez à l’utilisation. Ses coups critiques renversent les adversaires pendant 2 s.",
+              "Lorsque vous immobilisez ou étourdissez une cible, vous gagnez un grain de terre. Chaque cible touchée par Éboulement consomme un grain de terre, ce qui garantit un coup critique qui infligera 40%[x] de dégâts critiques supplémentaires. Les boss ont toujours jusqu’à 10% de chances d’octroyer un grain de terre lorsqu’ils sont touchés.",
             isChild: true,
           },
           {
@@ -2806,10 +2853,11 @@ export const optionSkillsDruid = [
             parent_id: "core_6_1",
             max_rank: 1,
             rank: 0,
+            label: "Éboulement enragé",
             top: "11%",
             left: "21%",
             notes:
-              "Après avoir accablé une cible avec Marteau des Anciens, vous infligez 40%[x] de dégâts supplémentaires pendant 5 s.",
+              "Lorsque vous frappez une cible immobilisée ou étourdie avec Éboulement, un pilier de terre supplémentaire se forme.",
             isChild: true,
           },
         ],
@@ -2821,23 +2869,26 @@ export const optionSkillsDruid = [
         max_rank: 5,
         rank: 0,
         image: "/skill-tree/druide/two/tornado.webp",
-        label: "Landslide",
+        label: "Tornade",
+        powers: ["Principale", "Magie naturelle", "Tempête"],
+
         details: [
-          "Coût en Mana : 25",
-          "Coup de chance : 35%",
-          "<span class='text-gray-500'>Libérez une série de projectiles chargés qui infligent <span class='text-yellow-500'> [50%]</span> de dégâts chacun.</span>",
+          "Coût en esprit : 35",
+          "Chances d’obtenir un coup de chance : 8%",
+          "Vous invoquez une tornade qui inflige 65% points de dégâts.",
         ],
-        footer: "Dégâts de Foudre",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "core_7_1",
             parent_id: "core_7",
             max_rank: 1,
             rank: 0,
+            label: "Tornade renforcée",
             top: "19%",
             left: "11.5%",
             notes:
-              "Vous gagnez 3%[x] de fureur en plus pendant 5 s pour chaque cible blessée par Marteau des Anciens, cet effet pouvant se cumuler jusqu’à 10 fois.",
+              "Chaque fois que vous utilisez Tornade, vous avez 20% de chances de faire apparaître une Tornade supplémentaire.",
             isChild: true,
           },
           {
@@ -2845,10 +2896,11 @@ export const optionSkillsDruid = [
             parent_id: "core_7_1",
             max_rank: 1,
             rank: 0,
+            label: "Tornade primordiale",
             top: "17%",
             left: "13%",
             notes:
-              "Marteau des Anciens obtient 2.0%[+] de chances d’infliger un coup critique tous les 10 points de fureur dont vous disposiez à l’utilisation. Ses coups critiques renversent les adversaires pendant 2 s.",
+              "Les cibles blessées par Tornade sont ralenties de 8% pendant 3 s, jusqu’à un maximum de 40%.",
             isChild: true,
           },
           {
@@ -2856,10 +2908,11 @@ export const optionSkillsDruid = [
             parent_id: "core_7_1",
             max_rank: 1,
             rank: 0,
+            label: "Tornade enragée",
             top: "17%",
             left: "10%",
             notes:
-              "Après avoir accablé une cible avec Marteau des Anciens, vous infligez 40%[x] de dégâts supplémentaires pendant 5 s.",
+              "Les cibles touchées par Tornade ont 10% de chances de devenir vulnérables pendant 3 s",
             isChild: true,
           },
         ],
@@ -2874,8 +2927,11 @@ export const optionSkillsDruid = [
         top: "25.1733%",
         id: "secondCore_1",
         image: "/skill-tree/druide/two/predat.png",
-        label: "Furie Sans Fin",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Instinct du prédateur",
+        details: [
+          "Vos chances d’infliger un coup critique aux adversaires à proximité sont augmentées de 2%[+].",
+        ],
+        detail: " Dégâts physiques",
         children: [
           {
             id: "secondCore_1_1",
@@ -2885,9 +2941,12 @@ export const optionSkillsDruid = [
             rank: 0,
             top: "28.1367%",
             left: "24.9612%",
-            labels: "Point de Pression 1",
-            notes:
-              "Les adversaires vulnérables subissent 10% de dégâts supplémentaires de votre part.",
+            label: "Démarche de digitigrade",
+            notes: [
+              "Sous forme de lycanthrope, votre vitesse de déplacement est augmentée de 4%[+].",
+              "Ce bonus persiste pendant 3 s après avoir quitté la forme de lycanthrope.",
+            ],
+            detail: " Dégâts physiques",
             isChild: true,
           },
           {
@@ -2898,9 +2957,11 @@ export const optionSkillsDruid = [
             rank: 0,
             top: "28.1367%",
             left: "20.9612%",
-            labels: "Point de Pression 1",
+            label: "Poil de fer",
             notes:
-              "Les adversaires vulnérables subissent 10% de dégâts supplémentaires de votre part.",
+              "Vous bénéficiez de 4% de réduction des dégâts sous forme ursoïde.",
+            detail: " Dégâts physiques",
+
             isChild: true,
           },
         ],
@@ -2912,23 +2973,19 @@ export const optionSkillsDruid = [
         rank: 0,
         id: "secondCore_2",
         image: "/skill-tree/druide/two/heart.png",
-        label: "Tourbillon",
-        details: [
-          "Coût en Mana : 30",
-          "Coup de chance : 40%",
-          "<span class='text-gray-500'>Lancez un projectile enflammé qui explose à l'impact, infligeant <span class='text-yellow-500'> [100%]</span> de dégâts à tous les ennemis proches.</span>",
-        ],
-        footer: "Dégâts de Feu",
+        label: "Cœur de fauve",
+        details: ["Votre maximum d’esprit est augmenté de 3."],
+        detail: " Dégâts physiques",
         children: [
           {
             id: "secondCore_2_1",
             parent_id: "secondCore_2",
             max_rank: 1,
             rank: 0,
+            label: "Profusion",
             top: "19%",
             left: "42%",
-            notes:
-              "Lorsque vous maniez une arme tranchante, Tourbillon inflige aussi 40% de ses dégâts de base sous forme de dégâts de saignement en 5 s.",
+            notes: "Les compétences de base génèrent 15% d’esprit en plus.",
             isChild: true,
           },
           {
@@ -2936,10 +2993,11 @@ export const optionSkillsDruid = [
             parent_id: "secondCore_2",
             max_rank: 1,
             rank: 0,
+            label: "Pulsions sauvages",
             top: "23%",
             left: "42%",
             notes:
-              "Après avoir utilisé Tourbillon pendant 2 s, Tourbillon inflige 35%[x] de dégâts supplémentaires jusqu’à son annulation.",
+              "Vos compétences principales coûtent 3%[x] d’esprit en plus, mais infligent 5%[x] de dégâts supplémentaires.",
             isChild: true,
           },
         ],
@@ -2962,22 +3020,23 @@ export const optionSkillsDruid = [
         top: "30.031%",
         id: "defensive_1",
         image: "/skill-tree/druide/three/earthen_bulwark.webp",
-        label: "Cri de Défi",
+        label: "Rempart de terre",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 16 s",
+          "Chances d’obtenir un coup de chance : 30%",
+          "Des rochers vous entourent pendant 3 s et créent une barrière absorbant un montant de dégâts égal à 45% de votre maximum de points de vie (0.45).",
         ],
-        footer: "Compétence Défensive",
         children: [
           {
             id: "defensive_1_1",
             parent_id: "defensive_1",
             max_rank: 1,
             rank: 0,
+            label: "Rempart de terre renforcé",
             top: "28%",
             left: "57%",
             notes:
-              "Lorsque Cri provocateur est actif, vous obtenez un bonus de 20%[x] à votre maximum de points de vie.",
+              "Rempart de terre vous rend inarrêtable tant qu’il est actif.",
             isChild: true,
           },
           {
@@ -2985,10 +3044,11 @@ export const optionSkillsDruid = [
             parent_id: "defensive_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Rempart de terre inné",
             top: "26%",
             left: "59%",
             notes:
-              "Lorsque Cri provocateur est actif, vous gagnez un montant de dégâts d’épines égal à 30% de votre maximum de points de vie.",
+              "Lorsque Rempart de terre expire ou se fait détruire, une explosion d’éclats de roches se produit et inflige 60% points de dégâts aux adversaires à proximité. Ces dégâts sont augmentés par les bonus de barrière.",
             isChild: true,
           },
           {
@@ -2996,10 +3056,11 @@ export const optionSkillsDruid = [
             parent_id: "defensive_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Rempart de terre préservateur",
             top: "26%",
             left: "55%",
             notes:
-              "Lorsque Cri provocateur est actif, vous gagnez 6 points de fureur chaque fois que vous subissez des dégâts.",
+              "Utiliser Rempart de terre vous confère un montant de fortification égal à 18% de votre maximum points de vie (1).",
             isChild: true,
           },
         ],
@@ -3011,22 +3072,25 @@ export const optionSkillsDruid = [
         top: "33.4418%",
         id: "defensive_2",
         image: "/skill-tree/druide/three/cyclone_armor.webp",
-        label: "Piétinement",
+        label: "Armure cyclonique",
         details: [
-          "Temps de recharge : 20 secondes",
-          "<span class='text-gray-500'>Durcissez temporairement votre peau, réduisant les dégâts subis de <span class='text-yellow-500'> [30%]</span> pendant 8 secondes.</span>",
+          "Temps de recharge : 18 s",
+          "Chances d’obtenir un coup de chance : 25%",
+          "Compétence passive : des vents puissants vous entourent, ce qui vous confère 20.0% de réduction des dégâts non physiques.",
+          "Compétence active : les vents se déchaînent, ce qui repousse les adversaires en leur infligeant 30% points de dégâts.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "defensive_2_1",
             parent_id: "defensive_2",
             max_rank: 1,
             rank: 0,
+            label: "Armure cyclonique renforcée",
             top: "31.5%",
             left: "71%",
             notes:
-              "Choc terrestre génère 60 points de fureur et dispose d’une durée d’étourdissement augmentée de 2 s.",
+              "Les cibles déplacées par Armure cyclonique deviennent vulnérables pendant 5 s.",
             isChild: true,
           },
           {
@@ -3034,10 +3098,11 @@ export const optionSkillsDruid = [
             parent_id: "defensive_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Armure cyclonique innée",
             top: "29%",
             left: "70%",
             notes:
-              "Le temps de recharge de votre compétence ultime est réduit de 4 s par cible blessée par Choc terrestre, jusqu’à un maximum de 12 s.",
+              "Les cibles touchées par Armure cyclonique sont ralenties de 70% et subissent 15% de dégâts supplémentaires pendant 6 s.",
             isChild: true,
           },
           {
@@ -3045,10 +3110,11 @@ export const optionSkillsDruid = [
             parent_id: "defensive_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Armure cyclonique préservatrice",
             top: "29%",
             left: "74%",
             notes:
-              "Choc terrestre est désormais aussi une compétence de combat et inflige 900%[x] de dégâts supplémentaires. Elle rend également la cible vulnérable pendant 4 s.",
+              "Armure cyclonique attire les adversaires au lieu de les repousser et vous octroie 10% de réduction des dégâts supplémentaire pendant 4 s.",
             isChild: true,
           },
         ],
@@ -3059,13 +3125,13 @@ export const optionSkillsDruid = [
         left: "68.4404%",
         top: "37.4188%",
         id: "defensive_3",
+        powers: ["Défense", "Métamorphose ", "Lycanthrope", "Cri"],
         image: "/skill-tree/druide/three/blood_howl.webp",
-        label: "Peau de Fer",
+        label: "Hurlement sanglant",
         details: [
-          "Temps de recharge : 25 secondes",
-          "<span class='text-gray-500'>Créez une barrière protectrice autour de vous qui absorbe <span class='text-yellow-500'> [200%]</span> de votre santé maximale en dégâts pendant 6 secondes.</span>",
+          "Temps de recharge : 15 s",
+          "Vous vous transformez en lycanthrope et hurlez furieusement, ce qui vous rend 20.0% de votre maximum de points de vie (80).",
         ],
-        footer: "Compétence Défensive",
         children: [
           {
             id: "defensive_3_1",
@@ -3074,6 +3140,7 @@ export const optionSkillsDruid = [
             rank: 0,
             top: "37.5%",
             left: "73.5%",
+            label: "Hurlement sanglant renforcé",
             notes:
               "La barrière de Galvanisation absorbe 25% de votre maximum de points de vie en plus.",
             isChild: true,
@@ -3083,21 +3150,23 @@ export const optionSkillsDruid = [
             parent_id: "defensive_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Hurlement sanglant préservateur",
             top: "39.5%",
             left: "77.5%",
             notes:
-              "Galvanisation confère aussi un montant de fortification égal à 20% de votre maximum de vie (0). Ce montant est doublé si vous avez moins de 50% de points de vie au moment de son utilisation.",
+              "Hurlement sanglant augmente aussi votre vitesse d’attaque de 15%[+] pendant 4 s. ",
             isChild: true,
           },
           {
             id: "defensive_3_3",
             parent_id: "defensive_3_1",
             max_rank: 1,
+            label: "Hurlement sanglant inné",
             rank: 0,
             top: "35.5%",
             left: "77.5%",
             notes:
-              "Tant que Galvanisation est active, vous récupérez chaque seconde un montant de points de vie égal à 10% du montant initial de la barrière.",
+              "Hurlement sanglant génère aussi 20 points d’esprit. Vous infligez 25%[x] de dégâts supplémentaires jusqu’à ce que vous sortiez de la forme de lycanthropique.",
             isChild: true,
           },
         ],
@@ -3109,22 +3178,25 @@ export const optionSkillsDruid = [
         top: "40.5776%",
         id: "defensive_4",
         image: "/skill-tree/druide/three/debilitating_roar.webp",
-        label: "Cri de Ralliement",
+        label: "Rugissement débilitant",
+        powers: ["Défense", "Métamorphose", "Ursoïde", "Cri"],
+
         details: [
-          "Temps de recharge : 25 secondes",
-          "<span class='text-gray-500'>Créez une barrière protectrice autour de vous qui absorbe <span class='text-yellow-500'> [200%]</span> de votre santé maximale en dégâts pendant 6 secondes.</span>",
+          "Temps de recharge : 22 s",
+          "Vous vous transformez en ursoïde et poussez un puissant rugissement, réduisant les dégâts infligés par les adversaires à proximité de 40% pendant 4 s.",
         ],
-        footer: "Compétence Défensive",
         children: [
           {
             id: "defensive_4_1",
             parent_id: "defensive_4",
             max_rank: 1,
             rank: 0,
+            label: "Rugissement débilitant renforcé",
+
             top: "45%",
             left: "57.5%",
             notes:
-              "Cri de ralliement vous octroie l’état inarrêtable tant qu’il est actif.",
+              "Rugissement débilitant vous confère aussi un montant de fortification égal à 30% de votre maximum points de vie (1).",
             isChild: true,
           },
           {
@@ -3132,10 +3204,12 @@ export const optionSkillsDruid = [
             parent_id: "defensive_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Rugissement débilitant inné",
+
             top: "47%",
             left: "54%",
             notes:
-              "Cri de ralliement vous confère un montant de fortification égal à 10% de votre maximum de vie (1). Tant que Cri de ralliement est actif, vous obtenez un montant de fortification supplémentaire égal à 2% de votre maximum de vie (1) chaque fois que vous subissez ou infligez des dégâts directs.",
+              "Vous infligez 25%[x] de dégâts supplémentaires tant que Rugissement débilitant est actif.",
             isChild: true,
           },
           {
@@ -3143,10 +3217,12 @@ export const optionSkillsDruid = [
             parent_id: "defensive_4_1",
             max_rank: 1,
             rank: 0,
+            label: "JeRugissement débilitant préservateurt",
+
             top: "47%",
             left: "60%",
             notes:
-              "Cri de ralliement génère 20 points de fureur et augmente votre génération de ressources de 20%[x] supplémentaires.",
+              "Rugissement débilitant vous rend aussi 6% de votre maximum de points de vie (24) par seconde durant toute sa durée.",
             isChild: true,
           },
         ],
@@ -3160,8 +3236,11 @@ export const optionSkillsDruid = [
         left: "64.355%",
         id: "secondDefensive_1",
         image: "/skill-tree/druide/three/backlash.png",
-        label: "Présence Imposante",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Contrecoup",
+        details: [
+          "Après avoir lancé une capacité défensive, vous infligez 4%[x] de dégâts supplémentaires pendant 5 s.",
+        ],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 3,
@@ -3170,8 +3249,9 @@ export const optionSkillsDruid = [
         left: "64.2644%",
         id: "secondDefensive_2",
         image: "/skill-tree/druide/three/ancest.png",
-        label: "Explosion",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Vigueur ancestrale",
+        details: ["Augmente vos résistances non physiques de 5%[+]."],
+        detail: " Dégâts physiques",
         children: [
           {
             id: "secondDefensive_2_1",
@@ -3181,9 +3261,9 @@ export const optionSkillsDruid = [
             top: "43%",
             left: "66.5%",
             notes:
-              "Les cibles touchées par Cri de défi subissent 10% de dégâts supplémentaires de votre part.",
+              "Vous obtenez 5% de réduction des dégâts dans les 6 s qui suivent l’utilisation d’une compétence défensive.",
             isChild: true,
-            labels: "Point de Pression 1",
+            label: "Vigilance",
           },
         ],
       },
@@ -3205,22 +3285,25 @@ export const optionSkillsDruid = [
         left: "24.2048%",
         id: "brawling_1",
         image: "/skill-tree/druide/four/wolves.webp",
-        label: "Charge",
+        label: "Loups",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 11 s",
+          "Chances d’obtenir un coup de chance : 50%",
+          "Compétence passive : vous invoquez 2 compagnons loups qui mordent les adversaires et leur infligent 14% points de dégâts.",
+          "Compétence active : vous ordonnez à vos loups de bondir sur une cible, qu’ils attaquent en infligeant 200% points de dégâts. Ils deviennent également inarrêtables.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "brawling_1_1",
             parent_id: "brawling_1",
             max_rank: 1,
             rank: 0,
+            label: "Meute de loups renforcés",
             top: "42%",
             left: "24.5%",
             notes:
-              "Les cibles repoussées par Charge et qui percutent des obstacles subissent 150% points de dégâts et sont étourdies pendant 3 s.",
+              "Les loups infligent 25%[x] de dégâts supplémentaires aux cibles immobilisées, étourdies, ralenties ou empoisonnées.",
             isChild: true,
           },
           {
@@ -3228,21 +3311,23 @@ export const optionSkillsDruid = [
             parent_id: "brawling_1_1",
             max_rank: 1,
             rank: 0,
+            label: "Meute de loups brutaux",
             top: "39%",
             left: "21%",
             notes:
-              "Les cibles blessées par Charge deviennent vulnérables pendant 4 s.",
+              "Lorsque vous infligez un coup critique, la vitesse d’attaque de vos loups est augmentée de 25%[+] pendant 3 s.",
             isChild: true,
           },
           {
             id: "brawling_1_3",
             parent_id: "brawling_1_1",
             max_rank: 1,
+            label: "Meute de loups farouches",
             rank: 0,
             top: "39%",
             left: "27%",
             notes:
-              "Réduit le temps de recharge de Charge de 2 s par adversaire touché par la compétence, jusqu’à 6 s. Si vous chargez un boss, réduit le temps de recharge de 4 s.",
+              "Coup de chance : les attaques de vos loups ont jusqu’à 40% de chances de vous conférer un montant de fortification égal à 8% de votre maximum points de vie (1).",
             isChild: true,
           },
         ],
@@ -3254,12 +3339,16 @@ export const optionSkillsDruid = [
         left: "16.4904%",
         id: "brawling_2",
         image: "/skill-tree/druide/four/poison_creeper.webp",
-        label: "Coup de Pied",
+        label: "Lierre empoisonné",
+        powers: ["Compagnon ", "Invocation"],
+
         details: [
-          "Temps de recharge : 20 secondes",
-          "<span class='text-gray-500'>Durcissez temporairement votre peau, réduisant les dégâts subis de <span class='text-yellow-500'> [30%]</span> pendant 8 secondes.</span>",
+          "Temps de recharge : 20 s",
+          "Chances d’obtenir un coup de chance : 28%",
+          "Compétence passive : 1 lierre empoisonné surgit du sol toutes les 7 s, ce qui inflige 65% points de dégâts de poison en 6 s à une cible dans la zone d’effet.",
+          "Compétence active : des lianes enserrent toutes les cibles à proximité, ce qui les immobilise pendant 2 s et les empoisonne à hauteur de 180% points de dégâts en 2 s.",
         ],
-        footer: "Compétence Défensive",
+        footer: " Dégâts de poison",
         children: [
           {
             id: "brawling_2_1",
@@ -3268,8 +3357,9 @@ export const optionSkillsDruid = [
             rank: 0,
             top: "52.0276%",
             left: "12.5%",
+            label: "Lierre empoisonné renforcé",
             notes:
-              "Les cibles blessées par Coup de pied deviennent vulnérables pendant 4 s.",
+              "Les durées d’immobilisation et d’empoisonnement de Lierre empoisonné sont augmentées de 1 s.",
             isChild: true,
           },
           {
@@ -3277,10 +3367,12 @@ export const optionSkillsDruid = [
             parent_id: "brawling_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Lierre empoisonné brutal",
+
             top: "50.7276%",
             left: "10%",
             notes:
-              "Les cibles repoussées par Coup de pied infligent 54% points de dégâts aux adversaires qu’elles percutent. Les adversaires ainsi blessés sont renversés pendant 2 s.",
+              "Vos chances d’infliger un coup critique sont augmentées de 20%[+] contre les cibles enserrées par un lierre empoisonné.",
             isChild: true,
           },
           {
@@ -3288,10 +3380,12 @@ export const optionSkillsDruid = [
             parent_id: "brawling_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Lierre empoisonné farouche",
+
             top: "53.4276%",
             left: "10%",
             notes:
-              "Désormais, Coup de pied est également une compétence principale. Si Coup de pied blesse une cible adverse, il consomme tous vos points de fureur et inflige 25% points de dégâts supplémentaires par tranche de 10 points de fureur consommés. Coup de pied ne repousse plus les adversaires.",
+              "La durée d’action du poison du lierre empoisonné est augmentée de 3 s.",
             isChild: true,
           },
         ],
@@ -3303,13 +3397,17 @@ export const optionSkillsDruid = [
         left: "24.2593%",
 
         id: "brawling_4",
+        powers: ["Compagnon ", "Invocation"],
+
         image: "/skill-tree/druide/four/ravens.webp",
-        label: "Cri de Guerre",
+        label: "Corbeaux",
         details: [
-          "Temps de recharge : 25 secondes",
-          "<span class='text-gray-500'>Créez une barrière protectrice autour de vous qui absorbe <span class='text-yellow-500'> [200%]</span> de votre santé maximale en dégâts pendant 6 secondes.</span>",
+          "Temps de recharge : 15 s",
+          "Chances d’obtenir un coup de chance : 45%",
+          "Compétence passive : 1 corbeau vole au-dessus de vous et attaque régulièrement vos adversaires, ce qui leur inflige 90% points de dégâts toutes les 5 s.",
+          "Compétence active : la zone ciblée est assaillie de corbeaux, qui infligent 300% points de dégâts en 6 s.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "brawling_4_1",
@@ -3317,9 +3415,11 @@ export const optionSkillsDruid = [
             max_rank: 1,
             rank: 0,
             top: "60.6%",
+            label: "Corbeaux renforcés",
+
             left: "25.7593%",
             notes:
-              "Cri de guerre vous confère l’effet de Rage du berserker pendant 4 s.",
+              "Lorsque des cibles sont touchées par les corbeaux, vos chances de leur infliger un coup critique sont augmentées de 8%[+] durant les 6 s qui suivent.",
             isChild: true,
           },
           {
@@ -3327,10 +3427,12 @@ export const optionSkillsDruid = [
             parent_id: "brawling_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Corbeaux brutaux",
+
             top: "63.5%",
             left: "27.7593%",
             notes:
-              "Cri de guerre vous confère un montant de fortification égal à 15% de votre maximum de vie (1).",
+              "2 corbeaux supplémentaires attaquent régulièrement les adversaires. Augmente les dégâts passifs des corbeaux de 40%[x].",
             isChild: true,
           },
           {
@@ -3338,10 +3440,12 @@ export const optionSkillsDruid = [
             parent_id: "brawling_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Corbeaux farouches",
+
             top: "63.5%",
             left: "23.7593%",
             notes:
-              "Si au moins 6 adversaires sont à proximité lorsque vous lancez Cri de guerre, votre bonus aux dégâts est augmenté de 10%[x] supplémentaires.",
+              "Les adversaires se trouvant à l’intérieur de la nuée de corbeaux lorsque la compétence est activée deviennent vulnérables pendant 3 s.",
             isChild: true,
           },
         ],
@@ -3355,8 +3459,10 @@ export const optionSkillsDruid = [
         left: "16.4904%",
         id: "secondBrawling_1",
         image: "/skill-tree/druide/four/clarity.png",
-        label: "Voix Tonitruante",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Humanité",
+        details: [
+          "Sous forme humaine, vous infligez 5%[x] de dégâts supplémentaires et bénéficiez de 2% de réduction des dégâts.",
+        ],
       },
       {
         max_rank: 3,
@@ -3365,8 +3471,11 @@ export const optionSkillsDruid = [
         left: "20.4904%",
         id: "secondBrawling_5",
         image: "/skill-tree/druide/four/nature.png",
-        label: "Voix Tonitruante",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Clarté",
+        details: [
+          "Après avoir utilisé une compétence de compagnon, votre prochaine compétence principale ou de colère bénéficie de 5%[x] de dégâts et de chances supplémentaires d’infliger un coup critique, jusqu’à un maximum de 15%[x].",
+        ],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 3,
@@ -3375,7 +3484,7 @@ export const optionSkillsDruid = [
         left: "16.4904%",
         id: "secondBrawling_2",
         image: "/skill-tree/druide/four/humanity.png",
-        label: "Résistance Agressive",
+        label: "Voix Tonitruante",
         details: ["Temps de recharge : 30 secondes"],
       },
       {
@@ -3385,8 +3494,10 @@ export const optionSkillsDruid = [
         left: "34.4904%",
         id: "secondBrawling_3",
         image: "/skill-tree/druide/four/call.png",
-        label: "Agressive",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Appel de la Nature",
+        details: [
+          "Vos compétences de compagnon infligent 12%[x] de dégâts supplémentaires.",
+        ],
       },
       {
         max_rank: 3,
@@ -3395,8 +3506,11 @@ export const optionSkillsDruid = [
         left: "34.4904%",
         id: "secondBrawling_4",
         image: "/skill-tree/druide/four/feral.png",
-        label: "Résistance Agressive",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Aptitude sauvage",
+        details: [
+          "Vous infligez 3%[x] de dégâts supplémentaires lorsque vous êtes en bonne santé et 3%[x] de dégâts supplémentaires lorsque vous dépassez 100% de vitesse de déplacement. Ces bonus peuvent se cumuler.",
+        ],
+        detail: " Dégâts physiques",
       },
     ],
   },
@@ -3416,22 +3530,26 @@ export const optionSkillsDruid = [
         left: "47.0431%",
         id: "weapon_mastery_1",
         image: "/skill-tree/druide/five/hurricane.webp",
-        label: "Coup Mortel",
+        label: "Ouragan ",
+        powers: ["Colère", "Magie naturelle", "Tempête"],
+
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 20 s",
+          "Chances d’obtenir un coup de chance : 21%",
+          "Vous formez un ouragan autour de vous qui inflige 346% points de dégâts aux adversaires à proximité en 8 s.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "weapon_mastery_1_1",
             parent_id: "weapon_mastery_1",
             max_rank: 1,
             rank: 0,
+            label: "Ouragan renforcé ",
             top: "68.6738%",
             left: "44%",
             notes:
-              "Coup de grâce inflige 150%[x] de dégâts supplémentaires aux boss.",
+              "Les cibles blessées par Ouragan sont ralenties de 25% pendant 2 s.",
             isChild: true,
           },
           {
@@ -3441,19 +3559,22 @@ export const optionSkillsDruid = [
             rank: 0,
             top: "66.6738%",
             left: "41%",
+            label: "Ouragan naturel ",
+
             notes:
-              "Si Coup de grâce inflige des dégâts à au moins une cible, vous gagnez 20 points de fureur.",
+              "Ouragan a 15% de chances de rendre les adversaires vulnérables pendant 3 s.",
             isChild: true,
           },
           {
             id: "weapon_mastery_1_3",
             parent_id: "weapon_mastery_1_1",
             max_rank: 1,
+            label: "Ouragan sauvage ",
             rank: 0,
             top: "70.3738%",
             left: "41%",
             notes:
-              "Si Coup de grâce inflige des dégâts à au moins une cible, vous obtenez l’effet de Rage du berserker pendant 3 s.",
+              "Les cibles affectées par Ouragan infligent 20% de dégâts en moins.",
             isChild: true,
           },
         ],
@@ -3465,22 +3586,26 @@ export const optionSkillsDruid = [
         left: "65.1668%",
         id: "weapon_mastery_2",
         image: "/skill-tree/druide/five/rabies.webp",
-        label: "Rupture",
+        label: "Morsure rabique",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 12 s",
+          "Chances d’obtenir un coup de chance : 50%",
+          "Chances d’obtenir un coup de chance : 50%",
+          "Vous vous transformez en lycanthrope et infligez une morsure infectieuse aux adversaires devant vous, ce qui leur inflige 28% points de dégâts, puis 275% points de dégâts de poison supplémentaires en 6 s.",
+          "Les cibles infectées propagent le virus de Morsure rabique aux autres cibles à proximité.",
         ],
-        footer: "Compétence Défensive",
+        footer: " Dégâts de poison",
         children: [
           {
             id: "weapon_mastery_2_1",
             parent_id: "weapon_mastery_2",
             max_rank: 1,
+            label: "Morsure rabique renforcée ",
             rank: 0,
             top: "59.6%",
             left: "65%",
             notes:
-              "Arracher votre arme du corps d’une cible pendant Rupture déclenche une explosion qui inflige 70% points de dégâts de saignement en 5 s. Ces dégâts augmentent de 20%[x] pour chaque tranche de 50 points de force dont vous disposez. Bonus actuel : 0%[x]",
+              "Les dégâts de poison de Morsure rabique augmentent pendant toute la durée de la maladie, infligeant 60%[x] de dégâts supplémentaires à sa durée maximale.",
             isChild: true,
           },
           {
@@ -3488,10 +3613,10 @@ export const optionSkillsDruid = [
             parent_id: "weapon_mastery_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Morsure rabique naturelle ",
             top: "56.5%",
             left: "68%",
-            notes:
-              "Toucher au moins 1 adversaire avec Rupture vous rend 22% de votre maximum de points de vie (88).",
+            notes: "La portée de Morsure rabique est augmentée de 70%.",
             isChild: true,
           },
           {
@@ -3499,10 +3624,11 @@ export const optionSkillsDruid = [
             parent_id: "weapon_mastery_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Morsure rabique sauvage ",
             top: "56.5%",
             left: "62%",
             notes:
-              "Toucher des adversaires avec Rupture augmente votre vitesse d’attaque de 40%[+] pendant 5 s.",
+              "Morsure rabique inflige la totalité de ses dégâts de poison en 4 s au lieu de 6 s.",
             isChild: true,
           },
         ],
@@ -3514,43 +3640,51 @@ export const optionSkillsDruid = [
         top: "70.2345%",
         id: "weapon_mastery_3",
         image: "/skill-tree/druide/five/trample.webp",
-        label: "Poigne d'Acier",
+        powers: ["Colère ", "Métamorphose", " Ursoïde ", "Mobilité "],
+
+        label: "Piétinement",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 14 s",
+          "Chances d’obtenir un coup de chance : 20%",
+          "Vous vous transformez en ursoïde, devenez inarrêtable et chargez, ce qui inflige 75% points de dégâts et repousse les adversaires.",
+          "Les cibles repoussées qui percutent des obstacles subissent 45% points de dégâts supplémentaires et sont étourdies pendant 3 s.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "weapon_mastery_3_1",
             parent_id: "weapon_mastery_3",
             max_rank: 1,
             rank: 0,
+            label: "Piétinement renforcé ",
+
             top: "74.7345%",
             left: "65.3227%",
             notes:
-              "Poigne de fer rend aussi les adversaires vulnérables pendant 3.0 s.",
+              "Piétinement inflige 150%[x] de dégâts supplémentaires. Ce bonus est réduit de 50%[x] à chaque cible touchée après la première.",
             isChild: true,
           },
           {
             id: "weapon_mastery_3_2",
             parent_id: "weapon_mastery_3_1",
             max_rank: 1,
+            label: "Piétinement naturel ",
             rank: 0,
             top: "76.7345%",
             left: "62.3227%",
             notes:
-              "Si Poigne de fer blesse une cible, vous obtenez l’effet de Rage du berserker pendant 2 s.",
+              "Utiliser Piétinement vous confère un montant de fortification égal à 20% de votre maximum points de vie (1).",
             isChild: true,
           },
           {
             id: "weapon_mastery_3_3",
             parent_id: "weapon_mastery_3_1",
             max_rank: 1,
+            label: "Piétinement sauvage ",
             rank: 0,
             top: "76.7345%",
             left: "68.3227%",
-            notes: "Poigne de fer gagne 1 charge supplémentaire.",
+            notes: "Utiliser Piétinement confère 40 points d’esprit.",
             isChild: true,
           },
         ],
@@ -3564,18 +3698,22 @@ export const optionSkillsDruid = [
         left: "60.8703%",
         id: "secondWeaponMastery_1",
         image: "/skill-tree/druide/five/endles.png",
-        label: "Combattant de Fosse",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Tempête éternelle",
+        details: ["Augmente la durée d’Ouragan et de Cataclysme de 5%[x]."],
+        detail: " Dégâts physiques",
         children: [
           {
             id: "secondWeaponMastery_1_1",
             parent_id: ["secondWeaponMastery_1", "secondWeaponMastery_5"],
             max_rank: 1,
             rank: 0,
+            label: "Choc électrique ",
             top: "58.3%",
             left: "60.2703%",
-            notes:
-              "Les cibles touchées par Coup mortel subissent 10% de dégâts supplémentaires de votre part.",
+            notes: [
+              "Coup de chance : lorsque vous infligez des dégâts de foudre aux adversaires, vous avez jusqu’à 8 % de chances de les immobiliser pendant 3 s.",
+              "Si la cible est déjà immobilisée, les dégâts de foudre qui lui sont infligés augmentent de 7%[x] à la place.",
+            ],
             isChild: true,
             labels: "Point de Pression 1",
           },
@@ -3587,20 +3725,28 @@ export const optionSkillsDruid = [
         top: "68.0941%",
         left: "66.5646%",
         id: "secondWeaponMastery_2",
+        powers: ["Terre", " Magie naturelle "],
         image: "/skill-tree/druide/five/crushi.png",
-        label: "Jarret",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Terre broyeuse",
+        details: [
+          "Les compétences de terre infligent 5%[x] de dégâts supplémentaires aux cibles ralenties, étourdies, immobilisées ou repoussées.",
+        ],
+        detail: " Dégâts physiques",
         children: [
           {
             id: "secondWeaponMastery_2_1",
             parent_id: "secondWeaponMastery_2",
             linkedOptionId: ["weapon_mastery_2"],
             max_rank: 1,
+            powers: ["Terre", " Magie naturelle "],
+            label: "Protection ",
             rank: 0,
             top: "67%",
             left: "70.8646%",
             notes:
-              "Les cibles touchées par Jarret subissent 10% de dégâts supplémentaires de votre part.",
+              "Lorsque vous infligez des coups critiques avec des compétences de terre, vous obtenez un montant de fortification égal à 3% de votre maximum de vie (1).",
+            detail: " Dégâts physiques",
+
             isChild: true,
             labels: "Point de Pression 1",
           },
@@ -3609,10 +3755,14 @@ export const optionSkillsDruid = [
             parent_id: "secondWeaponMastery_2",
             max_rank: 1,
             rank: 0,
+            label: "Garde de pierre ",
+            powers: ["Terre", " Magie naturelle "],
             top: "70.7%",
             left: "70.5646%",
             notes:
-              "Les cibles touchées par Jarret subissent 10% de dégâts supplémentaires de votre part.",
+              "Tant que vous bénéficiez d’une fortification supérieure à 50% de votre maximum de points de vie, vos compétences de terre infligent 4%[x] de dégâts supplémentaires.",
+            detail: " Dégâts physiques",
+
             isChild: true,
             labels: "Point de Pression 1",
           },
@@ -3625,8 +3775,10 @@ export const optionSkillsDruid = [
         left: "57.2674%",
         id: "secondWeaponMastery_3",
         image: "/skill-tree/druide/five/neur.png",
-        label: "Peau Épaisse",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Neurotoxine",
+        details: ["Les cibles empoisonnées sont ralenties de 8%."],
+        detail: " Dégâts physiques",
+
         children: [
           {
             id: "secondWeaponMastery_3_1",
@@ -3634,22 +3786,28 @@ export const optionSkillsDruid = [
             linkedOptionId: ["weapon_mastery_3"],
             max_rank: 1,
             rank: 0,
+            label: "Envenimation ",
+
             top: "73.7017%",
             left: "59.8674%",
             notes:
-              "Les cibles touchées par Jarret subissent 10% de dégâts supplémentaires de votre part.",
+              "Vos dégâts critiques et ceux de vos compagnons augmentent de 10%[x] contre les cibles empoisonnées.",
             isChild: true,
             labels: "Toxic Claws",
+            footer: " Dégâts de foudre",
           },
           {
             id: "secondWeaponMastery_3_2",
             parent_id: "secondWeaponMastery_3",
             max_rank: 1,
             rank: 0,
+            label: "Griffes toxiques",
+
             top: "73.7017%",
             left: "54.6674%",
+            detail: " Dégâts physiques",
             notes:
-              "Les cibles touchées par Jarret subissent 10% de dégâts supplémentaires de votre part.",
+              "Vous infligez 5%[x] de dégâts de poison supplémentaires. Cet effet est doublé en forme lycanthropique et pendant 8 s après l’avoir quittée.",
             isChild: true,
             labels: "Point de Pression 1",
           },
@@ -3662,20 +3820,27 @@ export const optionSkillsDruid = [
         left: "54.0703%",
         id: "secondWeaponMastery_4",
         image: "/skill-tree/druide/five/charg.png",
-        label: "Charged Atmosphere",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Atmosphère lourde",
+        powers: ["Tempête ", "Magie naturelle", " Éclat de foudre "],
+        footer: " Choc électrique",
+        details: [
+          "Coup de chance : lorsque vous infligez des dégâts de foudre aux adversaires, vous avez jusqu’à 8 % de chances de les immobiliser pendant 3 s.",
+          "Si la cible est déjà immobilisée, les dégâts de foudre qui lui sont infligés augmentent de 7%[x] à la place.",
+        ],
+        detail: " Dégâts physiques",
         children: [
           {
             id: "secondWeaponMastery_4_1",
             parent_id: ["secondWeaponMastery_4", "secondWeaponMastery_5"],
             max_rank: 1,
             rank: 0,
+            label: "Mauvais présage ",
             top: "58.3%",
             left: "55.8703%",
             notes:
-              "Les cibles touchées par Coup mortel subissent 10% de dégâts supplémentaires de votre part.",
+              "Coup de chance : lorsque vous infligez des dégâts à une cible vulnérable, immobilisée ou étourdie, vous avez jusqu’à 10 % de chances qu’un éclat de foudre la frappe également en lui infligeant 70% points de dégâts.",
             isChild: true,
-            labels: "Point de Pression 1",
+            footer: " Dégâts de foudre",
           },
         ],
       },
@@ -3686,8 +3851,11 @@ export const optionSkillsDruid = [
         left: "58.2703%",
         id: "secondWeaponMastery_5",
         image: "/skill-tree/druide/five/ele.png",
-        label: "Combattant de Fosse",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Sensibilité élémentaire",
+        details: [
+          "TCoup de chance : vos compétences de tempête ont jusqu’à 10 % de chances de rendre les adversaires vulnérables pendant 1.0 s.",
+        ],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 3,
@@ -3696,8 +3864,12 @@ export const optionSkillsDruid = [
         left: "48.2703%",
         id: "secondWeaponMastery_6",
         image: "/skill-tree/druide/five/mending.png",
-        label: "Combattant de Fosse",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Convalescence",
+        details: [
+          "Sous forme ursoïde, vous recevez 6%[+] de soins supplémentaires de toutes les sources, et votre maximum de points de vie est augmenté de 4%[x].",
+        ],
+        detail: " Dégâts physiques",
+
         children: [
           {
             id: "secondWeaponMastery_6_1",
@@ -3708,9 +3880,10 @@ export const optionSkillsDruid = [
             top: "64.9676%",
             left: "44.2703%",
             notes:
-              "Les cibles touchées par Coup mortel subissent 10% de dégâts supplémentaires de votre part.",
+              "Après 10 s passées sous forme d’ursoïde, votre prochaine compétence non défensive accable les adversaires et inflige 5%[x] de dégâts supplémentaires.",
             isChild: true,
-            labels: "Point de Pression 1",
+            label: "Provocation",
+            detail: " Dégâts physiques",
           },
         ],
       },
@@ -3732,10 +3905,13 @@ export const optionSkillsDruid = [
         left: "24.1219%",
         id: "ultimate_1",
         image: "/skill-tree/druide/six/petrify.webp",
-        label: "Appel des Anciens",
+        label: "Pétrification",
+        powers: ["Ultime ", "Magie naturelle ", "Terre "],
+
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Esprit généré : 100",
+          "Temps de recharge : 50 s",
+          "Vous encastrez l’ensemble des adversaires à proximité dans la pierre, ce qui les étourdit pendant 4 s. L’utilisation de Pétrification réinitialise le temps de recharge de toutes vos compétences non ultimes.",
         ],
         footer: "Compétence Défensive",
         children: [
@@ -3745,9 +3921,11 @@ export const optionSkillsDruid = [
             max_rank: 1,
             rank: 0,
             top: "74%",
+            label: "Pétrification primordiale ",
+
             left: "28.1219%",
             notes:
-              "Tant qu’Appel des Anciens est actif, votre vitesse d’attaque est augmentée de 20%[+] et vous infligez 25%[x] de dégâts supplémentaires.",
+              "Vous infligez 30%[x] de dégâts critiques supplémentaires aux cibles affectées par Pétrification. Contre les boss, le bonus aux dégâts critiques est porté à 50%[x] et sa durée à 7 s.",
             isChild: true,
           },
           {
@@ -3756,9 +3934,11 @@ export const optionSkillsDruid = [
             max_rank: 1,
             rank: 0,
             top: "71%",
+            label: "Pétrification suprême ",
+
             left: "24.1219%",
             notes:
-              "Chacun des Anciens acquiert un pouvoir supplémentaire : Korlic : vous obtenez 10 points de fureur chaque fois que Korlic blesse une cible avec Frénésie. Talic : les cibles sont ralenties de 50% pendant 1 s après avoir été blessées par son Tourbillon. Madawc : 30% de chances d’étourdir les adversaires pendant 3 s lorsqu’il utilise Soulèvement.",
+              "Lorsque vous tuez un adversaire sous l’effet de Pétrification, vous réduisez le temps de recharge de cette compétence de 1 s. S’il s’agit d’un boss, le temps de recharge est réduit de 10 s.  ",
             isChild: true,
           },
         ],
@@ -3770,22 +3950,24 @@ export const optionSkillsDruid = [
         left: "13.735%",
         id: "ultimate_2",
         image: "/skill-tree/druide/six/lacerate.webp",
-        label: "Maelström de Fer",
+        label: "Lacération",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 35 s",
+          "Chances d’obtenir un coup de chance : 7%",
+          "Vous vous transformez en lycanthrope, devenez insensible et bondissez 10 fois parmi les adversaires dans la zone, ce qui inflige jusqu’à 600% points de dégâts.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "ultimate_2_1",
             parent_id: "ultimate_2",
             max_rank: 1,
             rank: 0,
+            label: "Lacération primordiale ",
             top: "85.5%",
             left: "11%",
             notes:
-              "Maelström d’acier a 30%[+] de chances supplémentaires d’infliger un coup critique et inflige 40%[x] de dégâts critiques supplémentaires.",
+              "Lacération vous soigne à hauteur de 3% de votre maximum de vie (12). Les coups critiques doublent cet effet. Le premier coup critique est garanti et inflige 150%[x] points de dégâts supplémentaires.",
             isChild: true,
           },
           {
@@ -3793,10 +3975,11 @@ export const optionSkillsDruid = [
             parent_id: "ultimate_2_1",
             max_rank: 1,
             rank: 0,
+            label: "Lacération suprême ",
             top: "86.5%",
             left: "7%",
             notes:
-              "Lorsque vous infligez des dégâts directs à une cible après avoir changé d’arme, le temps de recharge de Maelström d’acier est réduit de 1 s.",
+              "Lorsque Lacération inflige un coup critique, vos compétences bénéficient de 4%[x] de dégâts supplémentaires pendant 10 s, jusqu’à un maximum de 40%[x].",
             isChild: true,
           },
         ],
@@ -3808,22 +3991,24 @@ export const optionSkillsDruid = [
         left: "24.2647%",
         id: "ultimate_3",
         image: "/skill-tree/druide/six/grizzly_rage.webp",
-        label: "Colère du Berserker",
+        label: "Rage du grizzly",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 50 s",
+          "Vous vous transformez en ursoïde féroce pendant 10 s, ce qui augmente vos dégâts de 60%[x] et votre réduction des dégâts de 20%. Ce bonus aux dégâts est augmenté de 4% par seconde passée sous cette forme, jusqu’à un maximum de 100%[x].",
+          "L’élimination d’une cible prolonge la durée de la transformation de 1 s et l’accablement de boss la prolonge de 5 s. La durée ne peut pas dépasser 10 s. Vous pouvez utiliser vos compagnons pendant cet effet.",
         ],
-        footer: "Compétence Défensive",
+        detail: " Dégâts physiques",
         children: [
           {
             id: "ultimate_3_1",
             parent_id: "ultimate_3",
             max_rank: 1,
             rank: 0,
+            label: "Rage du grizzly primordiale ",
+
             top: "90.7843%",
             left: "29.8647%",
-            notes:
-              "Tant que Courroux du berserker est actif, votre vitesse de déplacement est augmentée de 20%[+] et votre génération de fureur de 30%[x].",
+            notes: "Vous êtes inarrêtable tant que Rage du grizzly est active.",
             isChild: true,
           },
           {
@@ -3831,6 +4016,8 @@ export const optionSkillsDruid = [
             parent_id: "ultimate_3_1",
             max_rank: 1,
             rank: 0,
+            label: "Coup ",
+
             top: "92.7%",
             left: "26.2647%",
             notes:
