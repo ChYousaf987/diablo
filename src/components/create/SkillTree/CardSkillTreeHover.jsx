@@ -267,7 +267,7 @@ export default function CardSkillTreeHover({
               <h4 className="font-bold text-lg">{item.label}</h4>
             </div>
             <p className="text-sm text-[#a3a4a5]">
-              Power: {item.rank || (item.powers && item.powers.join(", "))}
+              {item.rank || (item.powers && item.powers.join(", "))}
             </p>
 
             {item.details && item.details.length > 0 && (
@@ -277,9 +277,8 @@ export default function CardSkillTreeHover({
                 ))}
               </div>
             )}
-            <hr />
-            <p className="text-sm text-end text-[#a3a4a5] mt-1">
-              {" "}
+            <hr className="my-3"/>
+            <p className="text-sm flex gap-1 text-end justify-end text-[#a3a4a5] mt-1">
               {item.detail}
             </p>
             <p className="text-sm text-end text-[#a3a4a5] mt-1">

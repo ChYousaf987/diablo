@@ -3400,9 +3400,10 @@ export const optionSkillsBarbarian = [
         details: [
           "Fureur générée : 15",
           "Chances d’obtenir un coup de chance : 50%",
-          "<span class='text-gray-500'>Vous frappez l’adversaire avec votre arme et lui infligez <span class='text-yellow-500'> 90% </span>points de dégâts. Après avoir frappé des adversaires 4 fois, votre prochaine raclée infligera une volée de coups et étourdira vos cibles pendant 1.5 s. Vous infligez une volée de coups deux fois plus souvent avec une arme à deux mains.</span>",
+          "Vous frappez l’adversaire avec votre arme et lui infligez 90% points de dégâts. Après avoir frappé des adversaires 4 fois, votre prochaine raclée infligera une volée de coups et étourdira vos cibles pendant 1.5 s. Vous infligez une volée de coups deux fois plus souvent avec une arme à deux mains.",
         ],
-        footer: "Dégâts Physiques",
+        detail: " Dégâts physiques",
+        footer: "Nécessite une arme contondante.",
         children: [
           {
             id: "basic_1_1",
@@ -3453,11 +3454,11 @@ export const optionSkillsBarbarian = [
         details: [
           "Fureur générée : 12",
           "Chances d’obtenir un coup de chance : 50%",
-          "<span class='text-gray-500'>Vous vous fendez et frappez votre adversaire, ce qui lui inflige<span class='text-yellow-500'> 90%</span>points de dégâts.</span>",
+          "Vous vous fendez et frappez votre adversaire, ce qui lui inflige 90% points de dégâts.",
         ],
         Detail: "Dégâts physiques",
-        footer:
-          "Dégâts Physiques <br/> Nécessite d’avoir un arsenal d’armes au complet",
+        footer: "Nécessite d’avoir un arsenal d’armes au complet.",
+
         children: [
           {
             id: "basic_2_1",
@@ -3508,11 +3509,11 @@ export const optionSkillsBarbarian = [
         details: [
           "Fureur générée : 7",
           "Chances d’obtenir un coup de chance : 30%",
-          "<span class='text-gray-500'>Vous déclenchez une rafale de coups rapides qui inflige<span class='text-yellow-500'>70%</span> points de dégâts tous les deux coups portés.</span>",
-          "<span class='text-gray-500'>Si Frénésie touche une cible, sa vitesse d’attaque est augmentée de 20%[+] pendant 3 s, jusqu’à un maximum de 60%[+].</span>",
+          "Vous déclenchez une rafale de coups rapides qui inflige 70% points de dégâts tous les deux coups portés.",
+          "Si Frénésie touche une cible, sa vitesse d’attaque est augmentée de 20%[+] pendant 3 s, jusqu’à un maximum de 60%[+].",
         ],
         detail: "Dégâts Physiques",
-        footer: "Nécessite des armes doubles",
+        footer: "Nécessite deux armes.",
         children: [
           {
             id: "basic_3_1",
@@ -3521,7 +3522,7 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "2.92081%",
             left: "52.5%",
-            label: "Fury Reduction",
+            label: "Frénésie renforcée",
             notes:
               "Tant que Frénésie augmente votre vitesse d’attaque de 60%[+], le coût en fureur de vos compétences principales est réduit de 25%.",
             isChild: true,
@@ -3533,7 +3534,7 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "1.0783463%",
             left: "50.2296%",
-            label: "Berserker Rage",
+            label: "Frénésie guerrière",
             notes:
               "Sous l’effet de Rage du berserker, la vitesse d’attaque de vos autres compétences est augmentée de 6%[+] pour chaque cumul de Frénésie que vous avez.",
             isChild: true,
@@ -3545,7 +3546,7 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "1.0783463%",
             left: "55.8456%",
-            label: "Mobility Boost",
+            label: "Frénésie martiale",
             notes:
               "Chaque cumul de Frénésie que vous possédez vous confère 5% de réduction des dégâts et 5% de vitesse de déplacement.",
             isChild: true,
@@ -3559,14 +3560,15 @@ export const optionSkillsBarbarian = [
         rank: 0,
         id: "basic_4",
         image: "/skill-tree/barbarian/Basic/flay.png",
-        label: "Frappe plongeante",
+        label: "Écorchement",
         details: [
-          "Génération de Furie : 4",
-          "Coup de chance : 30%",
-          "<span class='text-gray-500'>Déchaînez une rafale rapide de coups, infligeant <span class='text-yellow-500'>[24%]</span> de dégâts avec chaque paire de coups.</span>",
-          "<span class='text-gray-500'>Si Frénésie touche un ennemi, sa Vitesse d'Attaque est augmentée de +20% pendant 3 secondes, jusqu'à +60%.</span>",
+          "Fureur générée : 15",
+          "Chances d’obtenir un coup de chance : 50%",
+          "Vous écorchez l’adversaire, ce qui lui inflige 5.5% points de dégâts à l’impact et 115% points de dégâts de saignement en 5 s.",
         ],
-        footer: "Dégâts Physiques <br/> Nécessite des armes doubles",
+        detail: " Dégâts physiques",
+
+        footer: "Nécessite une arme tranchante.",
         children: [
           {
             id: "basic_4_1",
@@ -3575,9 +3577,9 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "6.82835%",
             left: "61.3759%",
-            label: "Life Steal",
+            label: "Écorchement renforcé",
             notes:
-              "Fente inflige 30%[x] de dégâts supplémentaires et vous rend 2% de votre maximum de points de vie (8) lorsqu’elle blesse une cible en bonne santé.",
+              "Écorchement a 50% de chances de rendre l’adversaire vulnérable pendant 5 s. Ces chances sont doublées lorsque vous utilisez une arme à deux mains.",
             isChild: true,
           },
           {
@@ -3587,9 +3589,9 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "3.7317%",
             left: "59.7804%",
-            label: "Bleed Damage",
+            label: "Écorchement guerrier",
             notes:
-              "Fente inflige aussi 20% points de dégâts de saignement en 5 s.",
+              "Lorsqu’Écorchement inflige des dégâts directs à une cible, celle-ci subit 15%[x] de dégâts de saignement supplémentaires de votre part pendant les 3 s qui suivent.",
             isChild: true,
           },
           {
@@ -3599,9 +3601,9 @@ export const optionSkillsBarbarian = [
             rank: 0,
             top: "4.86376%",
             left: "65.7311%",
-            label: "Berserker Fury",
+            label: "Écorchement martial",
             notes:
-              "Infliger des coups critiques avec Fente vous confère Rage du berserker pendant 3.0 s.",
+              "Lorsqu’Écorchement inflige des dégâts directs à une cible adverse, vous obtenez 4 % de réduction des dégâts et 40 points de dégâts d’épines pendant 6 s. Cet effet peut se cumuler jusqu’à 5 fois.",
             isChild: true,
           },
         ],

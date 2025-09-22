@@ -4016,12 +4016,12 @@ export const optionSkillsDruid = [
             parent_id: "ultimate_3_1",
             max_rank: 1,
             rank: 0,
-            label: "Coup ",
+            label: "Rage du grizzly suprême ",
 
             top: "92.7%",
             left: "26.2647%",
             notes:
-              "Tant que Courroux du berserker est actif, le bonus aux dégâts de l’effet de Rage du berserker est augmenté de 25%[x] chaque fois que vous dépensez 50 points de fureur, jusqu’à un maximum de 100%[x].",
+              "Vous obtenez un montant de fortification par seconde égal à 8% de votre maximum points de vie (1) tant que Rage du grizzly est active.",
             isChild: true,
           },
         ],
@@ -4035,20 +4035,21 @@ export const optionSkillsDruid = [
         image: "/skill-tree/druide/six/cataclysm.webp",
         label: "Cataclysm",
         details: [
-          "Temps de recharge : 30 secondes",
-          "<span class='text-gray-500'>Élevez un mur de boucliers, réduisant les dégâts entrants de <span class='text-yellow-500'> [50%]</span> pendant 5 secondes.</span>",
+          "Temps de recharge : 60 s",
+          "Chances d’obtenir un coup de chance : 62%",
+          "Une énorme tempête vous suit pendant 8 s. Des tornades repoussent les adversaires en infligeant 46% points de dégâts et des coups de foudre s’abattent violemment du ciel en infligeant 115% points de dégâts.",
         ],
-        footer: "Compétence Défensive",
+        footer: "Dégâts de foudre",
         children: [
           {
             id: "ultimate_4_1",
             parent_id: "ultimate_4",
             max_rank: 1,
             rank: 0,
+            label: "Cataclysme primordial ",
             top: "81%",
             left: "11%",
-            notes:
-              "Maelström d’acier a 30%[+] de chances supplémentaires d’infliger un coup critique et inflige 40%[x] de dégâts critiques supplémentaires.",
+            notes: "La durée de Cataclysme est augmentée de 4 s.",
             isChild: true,
           },
           {
@@ -4056,10 +4057,11 @@ export const optionSkillsDruid = [
             parent_id: "ultimate_4_1",
             max_rank: 1,
             rank: 0,
+            label: "Cataclysme suprême ",
             top: "82%",
             left: "7%",
             notes:
-              "Lorsque vous infligez des dégâts directs à une cible après avoir changé d’arme, le temps de recharge de Maelström d’acier est réduit de 1 s.",
+              "Les coups de foudre de Cataclysme rendent les adversaires vulnérables pendant 6 s.",
             isChild: true,
           },
         ],
@@ -4072,9 +4074,12 @@ export const optionSkillsDruid = [
         top: "78.4905%",
         left: "19.5023%",
         id: "secondUltimate_1",
-        image: "/skill-tree/druide/six/.png",
-        label: "Duelliste",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/druide/six/natural_disaster.png",
+        label: "Résistance",
+        details: [
+          "Les compétences de magie naturelle infligent 4%[x] de dégâts supplémentaires aux élites.",
+        ],
+        detail: " Dégâts physiques",
         children: [
           {
             id: "secondUltimate_1_1",
@@ -4082,10 +4087,11 @@ export const optionSkillsDruid = [
             connectedChildIds: ["secondUltimate_1_2", "secondUltimate_1_3"],
             max_rank: 1,
             rank: 0,
+            label: "Cycle de la vie ",
             top: "74.4905%",
             left: "19.5023%",
             notes:
-              "Les cibles touchées par Coup de grâce subissent 10% de dégâts supplémentaires de votre part.",
+              "Les compétences de magie naturelle qui consomment de l’esprit vous rendent 1% de votre maximum de points de vie (4).",
             isChild: true,
             labels: "Point de Pression 1",
           },
@@ -4094,11 +4100,15 @@ export const optionSkillsDruid = [
             parent_id: "secondUltimate_1",
             max_rank: 1,
             rank: 0,
+            label: "Catastrophe naturelle ",
             top: "76.4905%",
             left: "22.5023%",
-            notes:
-              "Les cibles touchées par Coup de grâce subissent 10% de dégâts supplémentaires de votre part.",
+            notes: [
+              "Vos compétences de terre infligent 4%[x] de dégâts supplémentaires aux cibles vulnérables.",
+              "Vos compétences de tempête infligent 4%[x] de dégâts supplémentaires aux cibles étourdies, immobilisées ou repoussées.",
+            ],
             isChild: true,
+            detail: " Dégâts physiques",
             labels: "Point de Pression 1",
           },
           {
@@ -4106,11 +4116,12 @@ export const optionSkillsDruid = [
             parent_id: "secondUltimate_1",
             linkedOptionId: ["ultimate_4"],
             max_rank: 1,
+            label: "Résonance ",
             rank: 0,
             top: "76.4905%",
             left: "16.5023%",
             notes:
-              "Les cibles touchées par Coup de grâce subissent 10% de dégâts supplémentaires de votre part.",
+              "Les compétences de magie naturelle infligent 2%[x] de dégâts supplémentaires. Ce bonus est triplé si une compétence de terre est lancée juste après une compétence de tempête, ou si une compétence de tempête est lancée juste après une compétence de terre.",
             isChild: true,
             labels: "Point de Pression 1",
           },
@@ -4122,9 +4133,12 @@ export const optionSkillsDruid = [
         top: "87.9901%",
         left: "18.4895%",
         id: "secondUltimate_2",
-        image: "/skill-tree/barbarian/Ultimate/tempered_fury.png",
-        label: "Fureur Tempérée",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/druide/six/quickshift.png",
+        label: "Métamorphose rapide",
+        details: [
+          "Lorsque vous vous métamorphosez en nouvelle forme animale, vous obtenez 1%[x] de dégâts supplémentaires, jusqu’à un maximum de 6%[x]. Ce bonus se dissipe au bout de 3 s lorsque vous reprenez forme humaine.",
+        ],
+        detail: " Dégâts physiques",
         children: [
           {
             id: "secondUltimate_2_1",
@@ -4132,6 +4146,7 @@ export const optionSkillsDruid = [
             linkedOptionId: ["ultimate_2"],
             max_rank: 1,
             rank: 0,
+            label: "Sens aiguisés",
             top: "89.9901%",
             left: "14.4895%",
             notes:
@@ -4145,11 +4160,14 @@ export const optionSkillsDruid = [
             linkedOptionId: ["ultimate_3"],
             max_rank: 1,
             rank: 0,
+            label: "Vigueur naturelle",
             top: "90.9901%",
             left: "20.4895%",
             notes:
-              "Les cibles touchées par Coup de grâce subissent 10% de dégâts supplémentaires de votre part.",
+              "Métamorphose vous confère un montant de fortification égal à 2% de votre maximum points de vie (1).",
             isChild: true,
+            detail: " Dégâts physiques",
+
             labels: "Point de Pression 1",
           },
         ],
@@ -4161,8 +4179,11 @@ export const optionSkillsDruid = [
         left: "34.3377%",
         id: "secondUltimate_3",
         image: "/skill-tree/barbarian/Ultimate/wallop.png",
-        label: "Coup Puissant",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Posture défensive",
+        details: [
+          "Augmente de 5%[+] le montant de fortification que vous obtenez de toutes les sources, et vous obtenez 3% de réduction des dégâts pendant la durée de la fortification.",
+        ],
+        detail: " Dégâts physiques",
         children: [
           {
             id: "secondUltimate_3_1",
@@ -4171,20 +4192,26 @@ export const optionSkillsDruid = [
             rank: 0,
             top: "81.2183%",
             left: "37.3377%",
+            label: "Volonté de la Nature ",
+
             notes:
-              "Les cibles touchées par Coup puissant subissent 10% de dégâts supplémentaires de votre part.",
+              "5% de chances d’obtenir un montant de fortification égal à 4.4% de votre maximum de points de vie (1).",
             isChild: true,
             labels: "Point de Pression 1",
+            detail: " Dégâts physiques",
           },
           {
             id: "secondUltimate_3_2",
             parent_id: "secondUltimate_3",
             max_rank: 1,
             rank: 0,
+            detail: " Dégâts physiques",
             top: "83.2183%",
             left: "40.3377%",
+            label: "Peau épaisse ",
+
             notes:
-              "Les cibles touchées par Coup puissant subissent 10% de dégâts supplémentaires de votre part.",
+              "Chaque fois que vous subissez un étourdissement, une immobilisation ou un renversement, vous obtenez un montant de fortification égal à 10% de votre maximum points de vie (1).",
             isChild: true,
             labels: "Point de Pression 1",
           },
@@ -4194,9 +4221,12 @@ export const optionSkillsDruid = [
             max_rank: 1,
             rank: 0,
             top: "85.2183%",
+            detail: " Dégâts physiques",
             left: "37.3377%",
+            label: "Sans retenue ",
+
             notes:
-              "Les cibles touchées par Coup puissant subissent 10% de dégâts supplémentaires de votre part.",
+              "La durée des effets de perte de contrôle est réduite de 5%. Cet effet est doublé lorsque vous bénéficiez d’une fortification supérieure à 50% de votre maximum de points de vie.",
             isChild: true,
             labels: "Point de Pression 1",
           },
@@ -4221,8 +4251,12 @@ export const optionSkillsDruid = [
         left: "53.3384%",
         id: "second_1",
         image: "/skill-tree/druide/seven/one_with_nature.webp",
-        label: "Sans Contrainte",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Communion avec la nature",
+        detail: " Dégâts physiques",
+        details: [
+          "Vos compétences de compagnon génèrent chacune 1 compagnon supplémentaire et infligent 80%[x] points de dégâts supplémentaires.",
+          "Vous bénéficiez de l’effet de la compétence passive des corbeaux, des loups et du lierre empoisonné.",
+        ],
       },
       {
         max_rank: 1,
@@ -4231,8 +4265,11 @@ export const optionSkillsDruid = [
         left: "58.1901%",
         id: "second_2",
         image: "/skill-tree/druide/seven/earthen_might.webp",
-        label: "Blessures Jaillissantes",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Tempête parfaite ",
+        details: [
+          "Les compétences de tempête que vous lancez vous confèrent 2 points d’esprit et infligent 80%[x] de dégâts supplémentaires lorsqu’elles infligent des dégâts à des cibles vulnérables, immobilisées ou ralenties.",
+        ],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 1,
@@ -4241,8 +4278,11 @@ export const optionSkillsDruid = [
         left: "48.3384%",
         id: "second_3",
         image: "/skill-tree/druide/seven/lupine_ferocity.webp",
-        label: "Rage Débridée",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Férocité lupine",
+        details: [
+          "Toutes les 3 compétences de lycanthrope utilisées, vous infligez automatiquement un coup critique. Les coups critiques de lycanthrope infligent 75%[x] de dégâts supplémentaires.",
+        ],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 1,
@@ -4251,8 +4291,11 @@ export const optionSkillsDruid = [
         left: "40.3384%",
         id: "second_4",
         image: "/skill-tree/druide/seven/bestial_rampage.webp",
-        label: "Arsenal Ambulant",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Saccage bestial",
+        details: [
+          "Lorsque vous vous métamorphosez, Ursoïde vous permet d’infliger 40%[x] de dégâts supplémentaires et Lycanthrope augmente votre vitesse d’attaque de 30%[+].",
+          "Ces bonus persistent aussi longtemps que vous conservez l’une ou l’autre forme animale et se dissipent au bout de 3 s lorsque vous reprenez forme humaine.",
+        ],
       },
       {
         max_rank: 1,
@@ -4261,8 +4304,11 @@ export const optionSkillsDruid = [
         left: "52.1901%",
         id: "second_5",
         image: "/skill-tree/druide/seven/nature's_fury.webp",
-        label: "Blessures Jaillissantes",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Fureur de la Nature",
+        details: [
+          "Utiliser ou canaliser une compétence de terre a 40 % de chances de déclencher une compétence de tempête gratuite de la même catégorie et inversement. Vous infligez 40%[x] de dégâts de terre et de tempête supplémentaires et ces compétences gratuites comptent pour les deux éléments à la fois.",
+        ],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 1,
@@ -4271,8 +4317,9 @@ export const optionSkillsDruid = [
         left: "46.0901%",
         id: "second_6",
         image: "/skill-tree/druide/seven/perfect_storm.webp",
-        label: "Blessures Jaillissantes",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Tempête parfaite",
+        details: ["Les compétences de tempête que vous lancez vous confèrent 2 points d’esprit et infligent 80%[x] de dégâts supplémentaires lorsqu’elles infligent des dégâts à des cibles vulnérables, immobilisées ou ralenties."],
+        detail: " Dégâts physiques",
       },
       {
         max_rank: 1,
@@ -4281,8 +4328,11 @@ export const optionSkillsDruid = [
         left: "37.3384%",
         id: "second_7",
         image: "/skill-tree/druide/seven/ursine_strength.webp",
-        label: "Arsenal Ambulant",
-        details: ["Temps de recharge : 30 secondes"],
+        label: "Force ursine",
+        details: [
+          "Vous obtenez 30.0% de maximum de points de vie supplémentaires, infligez des dégâts accrus de 20.0%[x] et un bonus d’accablement de 100.0%[x] sous forme d’ursoïde et encore pendant 8 s après l’avoir quittée.",
+        ],
+        detail: " Dégâts physiques",
       },
     ],
   },

@@ -2373,7 +2373,7 @@ export const optionSkillsNecromancer = [
           "Vous donnez un large coup de faux éthérée devant vous, infligeant 50% points de dégâts. Lorsque vous touchez une cible avec Fauchage, votre réduction des dégâts est augmentée de 15% pendant 4 s.",
         ],
         detail: "Dégâts d’ombre ",
-        footer: "Dégâts Physiques <br/> Nécessite une arme tranchante",
+
         children: [
           {
             id: "basic_2_1",
@@ -2427,7 +2427,7 @@ export const optionSkillsNecromancer = [
           "Vous faites gicler le sang d’une cible et lui infligez 80% points de dégâts. Saignée a 20% de chances de générer un orbe de sang.",
         ],
         detail: "Dégâts physiques ",
-        footer: "Dégâts Physiques <br/> Nécessite des armes doubles",
+
         children: [
           {
             id: "basic_3_1",
@@ -2481,7 +2481,7 @@ export const optionSkillsNecromancer = [
           "Vous lancez 3 éclats d’os infligeant 30% points de dégâts chacun. Chaque cible supplémentaire touchée par la même utilisation d’Éclat d’os vous fait gagner 1 point d’essence.",
         ],
         detail: "Dégâts physiques ",
-        footer: "Dégâts Physiques <br/> Nécessite des armes doubles",
+
         children: [
           {
             id: "basic_4_1",
@@ -2547,7 +2547,6 @@ export const optionSkillsNecromancer = [
           "Prélèvement applique l’effet d’empalement à une cible adverse à proximité supplémentaire et si le coup initial est porté sur une cible déjà victime de l’effet d’empalement, les dégâts sont augmentés de 100%.",
         ],
         detail: " Dégâts physiques ",
-        footer: "Dégâts Physiques",
         children: [
           {
             id: "core_1_1",
@@ -2601,7 +2600,6 @@ export const optionSkillsNecromancer = [
           "Vous drainez le sang des adversaires, ce qui leur inflige 20% points de dégâts et émet une nova de sang qui inflige 70% points de dégâts. Les dégâts de la nova d’Afflux sanguin sont augmentés de 5%[x] par cible drainée, jusqu’à un maximum de 50%[x].",
         ],
         detail: " Dégâts physiques ",
-        footer: "Dégâts de Foudre",
         children: [
           {
             id: "core_2_1",
@@ -2656,7 +2654,6 @@ export const optionSkillsNecromancer = [
         ],
         detail: "Dégâts d’ombre",
 
-        footer: "Dégâts de Feu",
         children: [
           {
             id: "core_3_1",
@@ -2711,7 +2708,6 @@ export const optionSkillsNecromancer = [
         ],
         detail: "Dégâts d’ombre",
 
-        footer: "Dégâts de Feu",
         children: [
           {
             id: "core_4_1",
@@ -2765,7 +2761,6 @@ export const optionSkillsNecromancer = [
           "Vous faites jaillir du sol une lance d’os qui inflige 130% points de dégâts et transperce les adversaires.",
         ],
         detail: " Dégâts physiques",
-        footer: "Dégâts de Feu",
         children: [
           {
             id: "core_5_1",
@@ -2813,23 +2808,24 @@ export const optionSkillsNecromancer = [
         top: "19.8367%",
         left: "16.9612%",
         id: "secondCore_1",
-        image: "/skill-tree/barbarian/core/pressure_point.png",
-        label: "Point de Pression",
-        details: [
-          "Coup de chance : vos compétences principales et de maîtrise d’arme ont jusqu’à 10 % de chances de rendre les adversaires vulnérables pendant 2 s.",
-        ],
+        image: "/skill-tree/necromamce/two/unliving_energy.png",
+        label: "Énergie non vivante",
+        details: ["Votre essence maximale est augmentée de 3."],
+        detail: " Dégâts physiques",
         children: [
           {
             label: "Coup de Grâce",
             id: "secondCore_1_1",
             parent_id: ["secondCore_1", "secondCore_2"],
             max_rank: 1,
+            label: "Équilibre imparfait ",
             rank: 0,
             top: "20.8367%",
             left: "12%",
             details:
-              "s compétences principales et de maîtri hances de rendre les adversaires vulnérables p",
+              "Vos compétences principales coûtent 3%[x] d’essence en plus, mais infligent 5%[x] de dégâts supplémentaires.",
             isChild: true,
+            detail: " Dégâts physiques",
           },
         ],
       },
@@ -2839,11 +2835,13 @@ export const optionSkillsNecromancer = [
         top: "21.8367%",
         left: "16.9612%",
         id: "secondCore_2",
-        image: "/skill-tree/barbarian/core/pressure_point.png",
-        label: "Pression",
+        image: "/skill-tree/necromamce/two/hewed_flesh.png",
+        label: "Chair dépecée",
         details: [
-          "Coup de chance : vos compétences principales et de maîtrise d’arme ont jusqu’à 10 % de chances de rendre les adversaires vulnérables pendant 2 s.",
+          "Coup de chance : vos dégâts ont jusqu’à 4 % de chances de générer un cadavre à l’emplacement de la cible.",
+          "Ces chances sont doublées contre les boss.",
         ],
+        detail: " Dégâts physiques",
       },
     ],
   },
@@ -3019,9 +3017,12 @@ export const optionSkillsNecromancer = [
         top: "30.6225%",
         left: "64.355%",
         id: "secondDefensive_1",
-        image: "/skill-tree/barbarian/Defensive/imposing_presence.png",
-        label: "Présence Imposante",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/necrotic_fortitude.png",
+        label: "Vigueur nécrotique",
+        detail: "  Dégâts physiques",
+        details: [
+          "Coup de chance : jusqu’à 7% de chances de vous octroyer à vous-même une barrière équivalente à 7% de votre maximum de points de vie (0.07) pendant 6 s. ",
+        ],
       },
       {
         max_rank: 3,
@@ -3029,9 +3030,10 @@ export const optionSkillsNecromancer = [
         top: "40.0472%",
         left: "64.2644%",
         id: "secondDefensive_2",
-        image: "/skill-tree/barbarian/Defensive/outburst.png",
-        label: "Explosion",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/skeletal_warrior_mastery.png",
+        label: "necrotic_fortitude",
+        details: ["Tnecrotic_fortitude"],
+        detail: "  Dégâts physiques",
       },
       {
         max_rank: 3,
@@ -3039,9 +3041,11 @@ export const optionSkillsNecromancer = [
         left: "50.4404%",
         top: "37.2723%",
         id: "secondDefensive_3",
-        image: "/skill-tree/barbarian/Defensive/outburst.png",
-        label: "DEfensice as",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/grim_harvest.png",
+
+        label: "Moisson sinistre",
+        details: ["Consommer un cadavre vous confère 2 points d’essence."],
+        detail: "  Dégâts physiques",
         children: [
           {
             id: "secondDefensive_3_1",
@@ -3049,10 +3053,12 @@ export const optionSkillsNecromancer = [
             linkedOptionId: ["defensive_3"],
             max_rank: 1,
             rank: 0,
+            label: "Vol de mort",
+
             top: "38.7%",
             left: "47%",
             notes:
-              "Infliger des dégâts directs avec Déchirure prolonge la vulnérabilité des adversaires de 2 s.",
+              "Après avoir consommé un cadavre, vous infligez 3%[x] de dégâts supplémentaires pendant 6 s.",
             isChild: true,
           },
         ],
@@ -3063,9 +3069,10 @@ export const optionSkillsNecromancer = [
         top: "35.2723%",
         left: "64.3472%",
         id: "secondDefensive_4",
-        image: "/skill-tree/barbarian/Defensive/outburst.png",
-        label: "Explosion",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/titan's_fall.png",
+        label: "Déchéance du titan",
+        detail: "  Dégâts physiques",
+        details: ["Vous infligez 5%[x] de dégâts supplémentaires aux élites."],
       },
       {
         max_rank: 3,
@@ -3073,9 +3080,12 @@ export const optionSkillsNecromancer = [
         top: "38.0723%",
         left: "66.3472%",
         id: "secondDefensive_5",
-        image: "/skill-tree/barbarian/Defensive/outburst.png",
-        label: "Explosion",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/spiked_armor.png",
+        label: "Armure hérissée",
+        detail: "  Dégâts physiques",
+        details: [
+          "Octroie 40 points de dégâts d’épines, 5%[x] d’armure et 10%[+] de chances de bloquer supplémentaires.",
+        ],
       },
     ],
   },
@@ -3200,9 +3210,11 @@ export const optionSkillsNecromancer = [
         top: "50.8539%",
         left: "18.5059%",
         id: "secondBrawling_1",
-        image: "/skill-tree/barbarian/Brawling/booming_voice.png",
-        label: "Voix Tonitruante",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/amplify_damage.png",
+        label: "Amplification des dégâts",
+        details: [
+          "Vous infligez 4%[x] de dégâts supplémentaires aux cibles maudites et apeurées. Ces bonus peuvent se cumuler.",
+        ],
       },
       {
         max_rank: 3,
@@ -3210,9 +3222,12 @@ export const optionSkillsNecromancer = [
         top: "56.3042%",
         left: "24.2593%",
         id: "secondBrawling_2",
-        image: "/skill-tree/barbarian/Brawling/aggressive_resistance.png",
-        label: "Résistance Agressive",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/skeletal_mage_mastery.png",
+        label: "Maîtrise des mages squelettes ",
+        details: [
+          "Augmente les dégâts et les points de vie de vos mages squelettes de 20%[x].",
+        ],
+        detail: "  Dégâts physiques",
       },
       {
         max_rank: 3,
@@ -3220,9 +3235,10 @@ export const optionSkillsNecromancer = [
         top: "48.9357%",
         left: "36.2668%",
         id: "secondBrawling_3",
-        image: "/skill-tree/barbarian/Brawling/aggressive_resistance.png",
-        label: "Résistance Agressive",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/death's_approach.png",
+        label: "La mort approche",
+        detail: "  Dégâts physiques",
+        details: ["Vous gagnez 5%[+] de vitesse de déplacement."],
       },
       {
         max_rank: 3,
@@ -3230,9 +3246,12 @@ export const optionSkillsNecromancer = [
         top: "52.3357%",
         left: "36.2668%",
         id: "secondBrawling_4",
-        image: "/skill-tree/barbarian/Brawling/aggressive_resistance.png",
-        label: "Résistance Agressive",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/precision_decay.png",
+        label: "Pestilence précise",
+        details: [
+          "Vos chances d’obtenir un coup de chance sont augmentées de 5%[+].",
+        ],
+        detail: "  Dégâts physiques",
       },
       {
         max_rank: 3,
@@ -3240,9 +3259,12 @@ export const optionSkillsNecromancer = [
         top: "47.9357%",
         left: "26.2668%",
         id: "secondBrawling_5",
-        image: "/skill-tree/barbarian/Brawling/aggressive_resistance.png",
-        label: "Résistance Agressive",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/death's_embrace.png",
+        label: "Caresse de la Mort",
+        detail: "  Dégâts physiques",
+        details: [
+          "Vous infligez 2%[x] de dégâts supplémentaires aux cibles à proximité, et les dégâts qu’elles vous infligent sont réduits de 4%.",
+        ],
       },
     ],
   },
@@ -3369,19 +3391,28 @@ export const optionSkillsNecromancer = [
         top: "61.8676%",
         left: "61.8703%",
         id: "secondWeaponMastery_1",
-        image: "/skill-tree/barbarian/WeaponMastery/pit_fighter.png",
-        label: "Combattant de Fosse",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/gruesome_mending.png",
+        label: "Convalescence macabre",
+        details: [
+          "Vous recevez 10%[+] de soins supplémentaires de toutes les sources.",
+        ],
+        detail: "  Dégâts physiques",
         children: [
           {
             id: "secondWeaponMastery_1_1",
             parent_id: "secondWeaponMastery_1",
             max_rank: 1,
             rank: 0,
+            label: "Perfusion",
+
             top: "58.8676%",
             left: "61.8703%",
-            notes:
-              "Si Coup de grâce inflige des dégâts à au moins une cible, vous obtenez l’effet de Rage duberserker pendant 2 s.",
+            notes: [
+              "Coup de chance : vos compétences de sang ont jusqu’à 3 % de chances de générer un orbe de sang à l’emplacement de la cible. Cet effet ne peut se produire qu’une fois toutes les 2 s.",
+              "Ces chances sont doublées contre les boss.",
+            ],
+            detail: "  Dégâts physiques",
+
             isChild: true,
           },
           {
@@ -3389,11 +3420,13 @@ export const optionSkillsNecromancer = [
             parent_id: "secondWeaponMastery_1",
             max_rank: 1,
             rank: 0,
+            label: "Drain de vitalité",
             top: "59.8676%",
             left: "59.8703%",
             notes:
-              "Si Coup de grâce inflige des dégâts à au moins une cible, vous obtenez l’effet de Rage duberserker pendant 2 s.",
+              "Coup de chance : lorsque vous blessez des adversaires avec des compétences de sang, vous avez jusqu’à 30 % de chances de recevoir un montant de fortification égal à 2.5% de votre maximum points de vie (1).",
             isChild: true,
+            detail: "  Dégâts physiques",
           },
         ],
       },
@@ -3403,9 +3436,12 @@ export const optionSkillsNecromancer = [
         top: "68.0941%",
         left: "66.5646%",
         id: "secondWeaponMastery_2",
-        image: "/skill-tree/barbarian/WeaponMastery/hamstring.png",
-        label: "Jarret",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/necrotic_carapace.png",
+        label: "Carapace nécrotique",
+        details: [
+          "Lorsqu’un cadavre est créé par l’une de vos compétences ou l’un de vos serviteurs, vous obtenez un montant de fortification égal à 5% de votre maximum points de vie (1).",
+        ],
+        detail: "  Dégâts physiques",
       },
       {
         max_rank: 3,
@@ -3413,43 +3449,52 @@ export const optionSkillsNecromancer = [
         top: "72.2017%",
         left: "59.2674%",
         id: "secondWeaponMastery_3",
-        image: "/skill-tree/barbarian/WeaponMastery/thick_skin.png",
-        label: "Peau Épaisse",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/serration.png",
+        label: "Crantage ",
+        details: [
+          "Les chances d’infliger un coup critique de vos compétences d’os sont augmentées de 1%[+] pour chaque tranche de 30 points d’essence dont vous disposez lors de leur utilisation.",
+        ],
         children: [
           {
             id: "secondWeaponMastery_3_1",
             parent_id: "secondWeaponMastery_3",
             max_rank: 1,
             rank: 0,
+            label: "Fracture ouverte",
             top: "74.2017%",
             left: "55.2674%",
             notes:
-              "Si Rupture inflige des dégâts à au moins une cible, vous obtenez l’effet de Rage du berserker pendant 2 s.",
+              "Lorsque vous réalisez 10 coups critiques avec des compétences d’os, vos compétences d’os infligent 6%[x] de dégâts supplémentaires pendant 5 s.",
             isChild: true,
+            detail: "  Dégâts physiques",
           },
           {
             id: "secondWeaponMastery_3_2",
             parent_id: "secondWeaponMastery_3",
             max_rank: 1,
             rank: 0,
+            label: "Évulsion",
+
             top: "74.2017%",
             left: "62.0674%",
             linkedOptionId: ["weapon_mastery_3"],
             notes:
-              "Si Rupture inflige des dégâts à au moins une cible, vous obtenez 20 points de fureur.",
+              "Vos compétences d’os infligent 6%[x] de dégâts supplémentaires aux adversaires vulnérables.",
             isChild: true,
+            detail: "  Dégâts physiques",
           },
           {
             id: "secondWeaponMastery_3_3",
             parent_id: "secondWeaponMastery_3",
             max_rank: 1,
             rank: 0,
+            label: "Ossification rapide",
             top: "77.2017%",
             left: "58.2674%",
             notes:
-              "Si Rupture inflige des dégâts à au moins une cible, vous obtenez 20 points de fureur.",
+              "Tous les 100 points d’essence que vous dépensez, le temps de recharge de vos compétences d’os est réduit de 0.5 s.",
             isChild: true,
+            detail: "  Dégâts physiques",
           },
         ],
       },
@@ -3459,19 +3504,24 @@ export const optionSkillsNecromancer = [
         top: "61.8676%",
         left: "54.8703%",
         id: "secondWeaponMastery_4",
-        image: "/skill-tree/barbarian/WeaponMastery/pit_fighter.png",
-        label: "Combattant de Fosse",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/coalesced_blood.png",
+        label: "Sang amalgamé",
+        detail: "  Dégâts physiques",
+
+        details: [
+          "Lorsque vous êtes en bonne santé, vous infligez 6%[x] de dégâts supplémentaires.",
+        ],
         children: [
           {
             id: "secondWeaponMastery_4_1",
             parent_id: "secondWeaponMastery_4",
             max_rank: 1,
             rank: 0,
+            label: "Vagues de sang",
             top: "58.8676%",
             left: "54.8703%",
             notes:
-              "Si Coup de grâce inflige des dégâts à au moins une cible, vous obtenez l’effet de Rage duberserker pendant 2 s.",
+              "Vos compétences de sang infligent 5%[x] de dégâts d’accablement supplémentaires. Ce bonus est doublé lorsque vous êtes en bonne santé.",
             isChild: true,
           },
         ],
@@ -3482,19 +3532,24 @@ export const optionSkillsNecromancer = [
         top: "67.4738%",
         left: "49.0431%",
         id: "secondWeaponMastery_5",
-        image: "/skill-tree/barbarian/WeaponMastery/thick_skin.png",
-        label: "Peau Épaisse",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/reaper's_pursuit.png",
+        label: "Poursuite de la Faucheuse",
+        details: [
+          "Pour chaque compétence de ténèbres sur votre barre d’action, votre vitesse de déplacement est augmentée 2%[+] et vous infligez 2%[x] de dégâts supplémentaires.",
+        ],
+        detail: "  Dégâts physiques",
         children: [
           {
             id: "secondWeaponMastery_5_1",
             parent_id: "secondWeaponMastery_5",
             max_rank: 1,
+            label: "Ténèbres paralysantes",
+
             rank: 0,
             top: "70.4738%",
             left: "47.4431%",
             notes:
-              "Si Rupture inflige des dégâts à au moins une cible, vous obtenez l’effet de Rage du berserker pendant 2 s.",
+              "Coup de chance : vos compétences de ténèbres ont jusqu’à 15 % de chances d’étourdir les adversaires pendant 1 s et de leur infliger 20% points de dégâts d’ombre.",
             isChild: true,
           },
           {
@@ -3502,10 +3557,11 @@ export const optionSkillsNecromancer = [
             parent_id: "secondWeaponMastery_5",
             max_rank: 1,
             rank: 0,
+            label: "Obscurité   ",
             top: "65.4738%",
             left: "46.0431%",
             notes:
-              "Si Rupture inflige des dégâts à au moins une cible, vous obtenez 20 points de fureur.",
+              "Lorsque vos compétences de ténèbres infligent des dégâts à des cibles, celles-ci subissent 2%[x] de dégâts d’ombre supplémentaires de votre part et de celle de vos serviteurs pendant 2 s, cet effet pouvant se cumuler jusqu’à 4 fois.",
             isChild: true,
           },
           {
@@ -3515,12 +3571,13 @@ export const optionSkillsNecromancer = [
               "secondWeaponMastery_5_1",
               "secondWeaponMastery_5_2",
             ],
+            label: "Terreur",
             max_rank: 1,
             rank: 0,
             top: "67.4738%",
             left: "43.0431%",
             notes:
-              "Si Rupture inflige des dégâts à au moins une cible, vous obtenez 20 points de fureur.",
+              "Vous infligez 3%[x] de dégâts d’ombre supplémentaires aux cibles subissant un effet de perte de contrôle et 3%[x] de dégâts d’ombre supplémentaires aux adversaires élites et aux boss. Ces bonus se cumulent.",
             isChild: true,
           },
         ],
@@ -3669,9 +3726,13 @@ export const optionSkillsNecromancer = [
         top: "76.4905%",
         left: "23.7023%",
         id: "secondUltimate_1",
-        image: "/skill-tree/barbarian/Ultimate/duelist.png",
-        label: "Duelliste",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/finality.png",
+        label: "Finalité",
+        detail: "  Dégâts physiques",
+
+        details: [
+          "Après avoir lancé une compétence ultime, vous infligez 5%[x] de dégâts supplémentaires pendant 8 s.",
+        ],
         children: [
           {
             id: "secondUltimate_1_1",
@@ -3680,12 +3741,14 @@ export const optionSkillsNecromancer = [
               "secondUltimate_6",
               "secondUltimate_7",
             ],
+            label: "Memento mori",
             max_rank: 1,
             rank: 0,
             top: "75.4905%",
             left: "14.7023%",
+            detail: "  Dégâts physiques",
             notes:
-              "Duelliste augmente la durée de l’effet de Rage du berserker de 2 s.",
+              "Sacrifier des guerriers squelettes et des mages squelettes augmente leurs bonus sacrificiels de 20%.",
             isChild: true,
           },
         ],
@@ -3696,9 +3759,13 @@ export const optionSkillsNecromancer = [
         top: "78.4905%",
         left: "21.5023%",
         id: "secondUltimate_6",
-        image: "/skill-tree/barbarian/Ultimate/duelist.png",
-        label: "Duelliste",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/golem_mastery.png",
+        label: "Maîtrise des golems",
+        detail: "  Dégâts physiques",
+
+        details: [
+          "Augmente les dégâts et les points de vie de votre golem de 25%[x].",
+        ],
       },
       {
         max_rank: 3,
@@ -3706,9 +3773,12 @@ export const optionSkillsNecromancer = [
         top: "79.5905%",
         left: "15.5023%",
         id: "secondUltimate_7",
-        image: "/skill-tree/barbarian/Ultimate/duelist.png",
-        label: "Duelliste",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/stand_alone.png",
+        label: "Autosuffisance",
+        detail: "  Dégâts physiques",
+        details: [
+          "Augmente la réduction des dégâts de 6% quand vous n’avez pas de serviteur. Chaque serviteur actif réduit ce bonus de 2%.",
+        ],
       },
       {
         max_rank: 3,
@@ -3716,9 +3786,12 @@ export const optionSkillsNecromancer = [
         top: "86.4901%",
         left: "19.6895%",
         id: "secondUltimate_2",
-        image: "/skill-tree/barbarian/Ultimate/tempered_fury.png",
-        label: "Fureur Tempérée",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/inspiring_leader.png",
+        label: "Leader charismatique",
+        detail: "  Dégâts physiques",
+        details: [
+          "Tant que vous êtes en bonne santé, vous avez 4%[+] de chances supplémentaires d’infliger un coup critique, tandis que vos serviteurs ont 6%[+] de chances supplémentaires d’infliger un coup critique.",
+        ],
         children: [
           {
             id: "secondUltimate_2_1",
@@ -3727,10 +3800,12 @@ export const optionSkillsNecromancer = [
             connectedChildIds: ["secondUltimate_2_2"],
             max_rank: 1,
             rank: 0,
+            label: "Défense de la Mort",
             top: "86.9901%",
             left: "15.4895%",
+            detail: "  Dégâts physiques",
             notes:
-              "Fureur tempérée augmente la durée de l’effet de Rage du berserker de 2 s.",
+              "Vos serviteurs obtiennent 8%[+] d’armure supplémentaire et 8%[+] de résistance à tous les éléments.",
             isChild: true,
           },
           {
@@ -3738,10 +3813,12 @@ export const optionSkillsNecromancer = [
             parent_id: ["secondUltimate_2", "secondUltimate_5"],
             max_rank: 1,
             rank: 0,
+            label: "Capitaine des troupes",
             top: "89.9901%",
             left: "15.4895%",
+            detail: "  Dégâts physiques",
             notes:
-              "Fureur tempérée augmente la durée de l’effet de Rage du berserker de 2 s.",
+              "Lorsque vous contrôlez au moins 7 serviteurs, vos dégâts d’invocation sont augmentés de 10%[x].",
             isChild: true,
           },
         ],
@@ -3752,9 +3829,12 @@ export const optionSkillsNecromancer = [
         top: "89.9901%",
         left: "21.4895%",
         id: "secondUltimate_5",
-        image: "/skill-tree/barbarian/Ultimate/tempered_fury.png",
-        label: "Tempérée",
-        details: ["Temps de recharge : 30 secondes"],
+        image: "/skill-tree/necromamce/two/bonded_in_essence.png",
+        label: "Liens de substance",
+        detail: "  Dégâts physiques",
+        details: [
+          "Toutes les 5 s, les soins de votre prêtre squelette rendent 20% supplémentaires de leur maximum de points de vie à vos squelettes.",
+        ],
       },
       {
         max_rank: 3,
@@ -19853,7 +19933,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_89",
-          activable_ids: ["barbarian_2_170", "barbarian_2_88", "barbarian_2_90"],
+          activable_ids: [
+            "barbarian_2_170",
+            "barbarian_2_88",
+            "barbarian_2_90",
+          ],
           active: false,
           index: 9,
           link: false,
@@ -19980,7 +20064,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_95",
-          activable_ids: ["barbarian_2_176", "barbarian_2_94", "barbarian_2_96"],
+          activable_ids: [
+            "barbarian_2_176",
+            "barbarian_2_94",
+            "barbarian_2_96",
+          ],
           active: false,
           index: 15,
           link: false,
@@ -20083,7 +20171,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_165",
-          activable_ids: ["barbarian_2_53", "barbarian_2_50", "barbarian_2_166"],
+          activable_ids: [
+            "barbarian_2_53",
+            "barbarian_2_50",
+            "barbarian_2_166",
+          ],
           active: false,
           index: 4,
           link: false,
@@ -20095,7 +20187,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_166",
-          activable_ids: ["barbarian_2_54", "barbarian_2_165", "barbarian_2_167"],
+          activable_ids: [
+            "barbarian_2_54",
+            "barbarian_2_165",
+            "barbarian_2_167",
+          ],
           active: false,
           index: 5,
           link: false,
@@ -20215,7 +20311,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_174",
-          activable_ids: ["barbarian_2_93", "barbarian_2_173", "barbarian_2_175"],
+          activable_ids: [
+            "barbarian_2_93",
+            "barbarian_2_173",
+            "barbarian_2_175",
+          ],
           active: false,
           index: 13,
           link: false,
@@ -20261,7 +20361,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_177",
-          activable_ids: ["barbarian_2_96", "barbarian_2_120", "barbarian_2_176"],
+          activable_ids: [
+            "barbarian_2_96",
+            "barbarian_2_120",
+            "barbarian_2_176",
+          ],
           active: false,
           index: 16,
           link: false,
@@ -20285,7 +20389,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_179",
-          activable_ids: ["barbarian_2_98", "barbarian_2_123", "barbarian_2_178"],
+          activable_ids: [
+            "barbarian_2_98",
+            "barbarian_2_123",
+            "barbarian_2_178",
+          ],
           active: false,
           index: 19,
           link: false,
@@ -20331,7 +20439,11 @@ export const optionSParagonNecromancer = [
           label: "Nœud normal",
           options: ["5 Force"],
           opened: true,
-          activable_ids: ["barbarian_2_166", "barbarian_2_53", "barbarian_2_55"],
+          activable_ids: [
+            "barbarian_2_166",
+            "barbarian_2_53",
+            "barbarian_2_55",
+          ],
         },
         {
           id: "barbarian_2_55",
@@ -20400,7 +20512,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_117",
-          activable_ids: ["barbarian_2_173", "barbarian_2_127", "barbarian_2_116"],
+          activable_ids: [
+            "barbarian_2_173",
+            "barbarian_2_127",
+            "barbarian_2_116",
+          ],
           active: false,
           index: 12,
           link: false,
@@ -20460,7 +20576,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_122",
-          activable_ids: ["barbarian_2_178", "barbarian_2_121", "barbarian_2_123"],
+          activable_ids: [
+            "barbarian_2_178",
+            "barbarian_2_121",
+            "barbarian_2_123",
+          ],
           active: false,
           index: 18,
           link: false,
@@ -20532,7 +20652,11 @@ export const optionSParagonNecromancer = [
           label: "Nœud normal",
           options: ["5 Volonté"],
           opened: true,
-          activable_ids: ["barbarian_2_115", "barbarian_2_124", "barbarian_2_126"],
+          activable_ids: [
+            "barbarian_2_115",
+            "barbarian_2_124",
+            "barbarian_2_126",
+          ],
         },
         {
           id: "barbarian_2_126",
@@ -20586,7 +20710,11 @@ export const optionSParagonNecromancer = [
           label: "Nœud normal",
           options: ["5 Volonté"],
           opened: true,
-          activable_ids: ["barbarian_2_119", "barbarian_2_134", "barbarian_2_130"],
+          activable_ids: [
+            "barbarian_2_119",
+            "barbarian_2_134",
+            "barbarian_2_130",
+          ],
         },
         {
           id: "barbarian_2_130",
@@ -20597,13 +20725,21 @@ export const optionSParagonNecromancer = [
           label: "Nœud normal",
           options: ["5 Volonté"],
           opened: true,
-          activable_ids: ["barbarian_2_120", "barbarian_2_135", "barbarian_2_129"],
+          activable_ids: [
+            "barbarian_2_120",
+            "barbarian_2_135",
+            "barbarian_2_129",
+          ],
         },
       ],
       [
         {
           id: "barbarian_2_131",
-          activable_ids: ["barbarian_2_126", "barbarian_2_138", "barbarian_2_184"],
+          activable_ids: [
+            "barbarian_2_126",
+            "barbarian_2_138",
+            "barbarian_2_184",
+          ],
           active: false,
           index: 11,
           link: false,
@@ -20720,7 +20856,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_139",
-          activable_ids: ["barbarian_2_184", "barbarian_2_138", "barbarian_2_140"],
+          activable_ids: [
+            "barbarian_2_184",
+            "barbarian_2_138",
+            "barbarian_2_140",
+          ],
           active: false,
           index: 12,
           link: false,
@@ -20730,7 +20870,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_140",
-          activable_ids: ["barbarian_2_132", "barbarian_2_146", "barbarian_2_139"],
+          activable_ids: [
+            "barbarian_2_132",
+            "barbarian_2_146",
+            "barbarian_2_139",
+          ],
           active: false,
           index: 13,
           link: false,
@@ -20740,7 +20884,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_141",
-          activable_ids: ["barbarian_2_134", "barbarian_2_148", "barbarian_2_142"],
+          activable_ids: [
+            "barbarian_2_134",
+            "barbarian_2_148",
+            "barbarian_2_142",
+          ],
           active: false,
           index: 15,
           link: false,
@@ -20765,7 +20913,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_143",
-          activable_ids: ["barbarian_2_136", "barbarian_2_150", "barbarian_2_142"],
+          activable_ids: [
+            "barbarian_2_136",
+            "barbarian_2_150",
+            "barbarian_2_142",
+          ],
           active: false,
           index: 17,
           link: false,
@@ -20777,7 +20929,11 @@ export const optionSParagonNecromancer = [
       [
         {
           id: "barbarian_2_144",
-          activable_ids: ["barbarian_2_137", "barbarian_2_151", "barbarian_2_145"],
+          activable_ids: [
+            "barbarian_2_137",
+            "barbarian_2_151",
+            "barbarian_2_145",
+          ],
           active: false,
           index: 10,
           link: false,
@@ -20797,7 +20953,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_146",
-          activable_ids: ["barbarian_2_140", "barbarian_2_153", "barbarian_2_147"],
+          activable_ids: [
+            "barbarian_2_140",
+            "barbarian_2_153",
+            "barbarian_2_147",
+          ],
           active: false,
           index: 13,
           link: false,
@@ -20817,7 +20977,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_148",
-          activable_ids: ["barbarian_2_141", "barbarian_2_147", "barbarian_2_149"],
+          activable_ids: [
+            "barbarian_2_141",
+            "barbarian_2_147",
+            "barbarian_2_149",
+          ],
           active: false,
           index: 15,
           link: false,
@@ -20827,7 +20991,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_149",
-          activable_ids: ["barbarian_2_142", "barbarian_2_148", "barbarian_2_150"],
+          activable_ids: [
+            "barbarian_2_142",
+            "barbarian_2_148",
+            "barbarian_2_150",
+          ],
           active: false,
           index: 16,
           link: false,
@@ -20869,7 +21037,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_153",
-          activable_ids: ["barbarian_2_146", "barbarian_2_157", "barbarian_2_152"],
+          activable_ids: [
+            "barbarian_2_146",
+            "barbarian_2_157",
+            "barbarian_2_152",
+          ],
           active: false,
           index: 13,
           link: false,
@@ -20901,7 +21073,11 @@ export const optionSParagonNecromancer = [
         },
         {
           id: "barbarian_2_156",
-          activable_ids: ["barbarian_2_152", "barbarian_2_155", "barbarian_2_157"],
+          activable_ids: [
+            "barbarian_2_152",
+            "barbarian_2_155",
+            "barbarian_2_157",
+          ],
           active: false,
           index: 12,
           link: false,
