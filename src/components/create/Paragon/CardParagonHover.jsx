@@ -24,25 +24,30 @@ export default function CardParagonHover({ item, size = 30 }) {
       ? parseInt(item.id.split("_")[1], 10)
       : 1;
 
-  // Define glyph socket IDs for each board
-  const glyphSocketIds = {
-    1: "barbarian_1_23",
-    2: "barbarian_2_173",
-    3: "barbrian_3_145", // Fix: was "barbrian_3_145"
-    4: "barbrian_4_79",
-    5: "barbrian_5_37",
-    6: "barbrian_6_133",
-    7: "barbrian_7_39",
-    8: "barbrian_8_41",
-    9: "barbrian_9_118",
-    10: "barbrian_10_38",
+  // Dynamic prefix from item.id
+  const prefix = item.id ? item.id.split("_")[0] : "barbarian";
+
+  // Shared socket numbers per board (adjust if class-specific)
+  const socketNumbers = {
+    1: 23,
+    2: 173,
+    3: 145, // Fixed typo
+    4: 79,
+    5: 37,
+    6: 133,
+    7: 39,
+    8: 41,
+    9: 118,
+    10: 38,
     // Add more boards as needed
   };
 
-  // Find the glyph socket node for the current board
+  // Dynamic glyph socket ID
+  const socketNum = socketNumbers[boardNumber] || 23;
+  const glyphSocketId = `${prefix}_${boardNumber}_${socketNum}`;
+
+  // Find the glyph socket node for the current board (dynamic)
   const currentBoard = paragon_builds.find((board) => board.id === boardNumber);
-  const glyphSocketId =
-    glyphSocketIds[boardNumber] || `barbarian_${boardNumber}_23`;
   const glyphSocketNode = currentBoard?.bord
     .flat()
     .find((node) => node && node.id === glyphSocketId);
@@ -90,8 +95,7 @@ export default function CardParagonHover({ item, size = 30 }) {
 
   if (item.is_glyph_socket) {
     if (item.glyph_id !== undefined && item.glyph_id !== null) {
-      highlightClass =
-        " shadow-lg hover:scale-105 transition-all";
+      highlightClass = " shadow-lg hover:scale-105 transition-all";
       bgClass = ""; // Red background for glyph socket with glyph
     } else {
       highlightClass =
@@ -104,8 +108,7 @@ export default function CardParagonHover({ item, size = 30 }) {
       item.glyph_id !== null &&
       item.glyph_id === selectedGlyphId
     ) {
-      highlightClass =
-        "green shadow-green-500/50";
+      highlightClass = "green shadow-green-500/50";
       bgClass = "card-board-green-bg";
     } else {
       highlightClass = item.active

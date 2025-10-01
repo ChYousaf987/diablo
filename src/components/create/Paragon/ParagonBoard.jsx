@@ -22,33 +22,37 @@ const ParagonBoard = ({ item, style }) => {
       ? parseInt(item.id.split("_")[1], 10)
       : 1;
 
-  // Define glyph socket IDs for each board
-  const glyphSocketIds = {
-    1: "barbarian_1_23",
-    2: "barbarian_2_173",
-    3: "barbrian_3_145",
-    4: "barbrian_4_79",
-    5: "barbrian_5_37",
-    6: "barbrian_6_133",
-    7: "barbrian_7_39",
-    8: "barbrian_8_41",
-    9: "barbrian_9_118",
-    10: "barbrian_10_38",
+  // Extract prefix dynamically from the first available bord.id (assumes consistent prefix per board)
+  const firstNodeId = item.bord.flat().find((node) => node)?.id;
+  const prefix = firstNodeId ? firstNodeId.split("_")[0] : "barbarian";
+
+  // Shared socket numbers per board (adjust if class-specific)
+  const socketNumbers = {
+    1: 23,
+    2: 173,
+    3: 145, // Fixed typo
+    4: 79,
+    5: 37,
+    6: 133,
+    7: 39,
+    8: 41,
+    9: 118,
+    10: 38,
   };
 
-  // Get the glyph socket ID for the current board
-  const glyphSocketId =
-    glyphSocketIds[boardNumber] || `barbarian_${boardNumber}_23`;
+  // Get the glyph socket ID dynamically
+  const socketNum = socketNumbers[boardNumber] || 23;
+  const glyphSocketId = `${prefix}_${boardNumber}_${socketNum}`;
 
-  // Normalize item.id to match imagePositions keys
+  // Normalize item.id to match imagePositions keys (use prefix dynamically)
   const normalizedId =
     typeof item.id === "number"
-      ? `barbarian_${item.id}`
+      ? `${prefix}_${item.id}`
       : typeof item.id === "string"
       ? item.id.toLowerCase()
-      : "barbarian_1";
+      : `${prefix}_1`;
 
-  // Define image positions for each Paragon board
+  // Define image positions for each Paragon board (assuming shared; add per-class if needed)
   const imagePositions = {
     barbarian_1: { top: "-1%", left: "14.2%" },
     barbarian_2: { top: "27.7%", left: "23.7%" },
@@ -60,6 +64,7 @@ const ParagonBoard = ({ item, style }) => {
     barbarian_8: { top: "-5.64%", left: "38.2%" },
     barbarian_9: { top: "42%", left: "-9.8%" },
     barbarian_10: { top: "-5.6%", left: "-9.8%" },
+    // Add druid_*, rogue_*, etc. if positions differ
   };
 
   const imagePosition = imagePositions[normalizedId] || {
@@ -125,7 +130,9 @@ const ParagonBoard = ({ item, style }) => {
                   return <div key={`empty_${rowIndex}_${colIndex}`} />;
                 }
                 if (bord.link === true) {
-                  if (bord.id === `barbarian_${boardNumber}_1`) {
+                  // Dynamic gate check: extract prefix from bord.id
+                  const gatePrefix = bord.id.split("_")[0];
+                  if (bord.id === `${gatePrefix}_${boardNumber}_1`) {
                     return (
                       <CardParagonModal
                         key={`modal_${bord.id}`}
@@ -135,6 +142,7 @@ const ParagonBoard = ({ item, style }) => {
                       />
                     );
                   }
+                  // Glyph socket check (dynamic)
                   if (bord.is_glyph_socket || bord.id === glyphSocketId) {
                     const glyphItem = {
                       ...bord,
