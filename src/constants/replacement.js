@@ -7,7 +7,7 @@
     str: 70,
     dex: 39,
     int: 10,
-    will: 39,
+    will: 39,\
     item_top: null,
     is_active: false,
     bord: [
