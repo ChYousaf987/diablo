@@ -106,7 +106,7 @@ const ParagonBoard = ({ item, style }) => {
       <div className="w-[100%] relative">
         {hasSelectedGlyph && (
           <Image
-            className="absolute h-[112vh]"
+            className="absolute h-[118vh]"
             style={{ top: imagePosition.top, left: imagePosition.left }}
             src="/paragon/boards.png"
             alt="Paragon Board Background"
