@@ -15696,7 +15696,9 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: [
@@ -15712,7 +15714,9 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+
           label: "Nœud normal",
           options: ["+5 volonte"],
           activable_ids: [
@@ -15727,7 +15731,9 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+
           label: "Nœud normal",
           options: ["+5 volonte"],
           activable_ids: ["barbarian_6_86", "barbarian_6_88"],
@@ -15738,7 +15744,9 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+
           label: "Nœud normal",
           options: ["+5 Force"],
           activable_ids: [
@@ -15753,7 +15761,9 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+
           label: "Nœud normal",
           options: ["+5 volonte"],
           activable_ids: [
@@ -15920,7 +15930,9 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: [
@@ -15935,7 +15947,9 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+
           label: "Nœud normal",
           options: ["+5 volonte"],
           activable_ids: [
@@ -15951,7 +15965,9 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+
           label: "Nœud normal",
           options: ["+5 Force"],
           activable_ids: [
@@ -15966,7 +15982,9 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: [
@@ -15997,7 +16015,9 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+
           label: "Nœud normal",
           options: ["+5 Force"],
           activable_ids: [
@@ -16129,7 +16149,9 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+
           label: "Nœud normal",
           options: ["+5 volonte"],
           activable_ids: [
@@ -16144,7 +16166,9 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: [
@@ -16174,7 +16198,9 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+
           label: "Nœud normal",
           options: ["+5 Force"],
           activable_ids: [
@@ -16233,7 +16259,9 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+
           label: "Nœud normal",
           options: ["+5 volonte"],
           activable_ids: [
@@ -16250,7 +16278,9 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+
           label: "Nœud normal",
           options: ["+5 volonte"],
           activable_ids: [
@@ -16317,7 +16347,9 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+
           label: "Nœud normal",
           options: ["+5 Force"],
           activable_ids: [
@@ -16346,7 +16378,9 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/CriticalDamage_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+
           activable_ids: [
             "barbarian_6_118",
             "barbarian_6_141",
@@ -16368,7 +16402,9 @@ export const optionSParagonBarbarian = [
           active: null,
           index: 10,
           link: true,
+
           image: "/paragon/tile_bg_glyph.png",
+
           options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
           activable_ids: [
             "barbarian_6_120",
@@ -16382,7 +16418,9 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: [
@@ -16397,7 +16435,9 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+
           activable_ids: [
             "barbarian_6_124",
             "barbarian_6_147",
@@ -16425,7 +16465,9 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+
           label: "Nœud normal",
           options: ["+5 Force"],
           activable_ids: [
@@ -16452,7 +16494,9 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: ["barbarian_6_131", "barbarian_6_141"],
@@ -16478,7 +16522,9 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: [
@@ -16509,7 +16555,9 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+
           label: "Nœud normal",
           options: ["+5 Force"],
           activable_ids: [
@@ -16540,7 +16588,9 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+
           label: "Nœud normal",
           options: ["+5 Force"],
           activable_ids: [
@@ -16583,7 +16633,9 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: ["barbarian_6_141", "barbarian_6_150"],
@@ -16594,7 +16646,9 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+
           label: "Nœud normal",
           options: ["+5 volonte"],
           activable_ids: [
@@ -16668,7 +16722,9 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+
           label: "Nœud normal",
           options: ["+5 Force"],
           activable_ids: ["barbarian_6_150", "barbarian_6_156"],
@@ -16679,7 +16735,9 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+
           label: "Nœud normal",
           options: ["+5 Force"],
           activable_ids: [
@@ -16695,7 +16753,9 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+
           label: "Nœud normal",
           options: ["+5 volonte"],
           activable_ids: ["barbarian_6_156", "barbarian_6_158"],
@@ -16721,7 +16781,9 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: ["barbarian_6_153", "barbarian_6_158"],
@@ -16744,7 +16806,9 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: ["barbarian_6_158", "barbarian_6_164"],
@@ -16771,7 +16835,9 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+
           label: "Nœud normal",
           options: ["+5 Force"],
           activable_ids: [
@@ -16914,8 +16980,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_9", "barbarian_7_3"],
         },
         {
@@ -16925,7 +16993,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_2", "barbarian_7_4"],
         },
         {
@@ -16934,8 +17004,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_3", "barbarian_7_5"],
         },
         {
@@ -16954,8 +17026,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_5", "barbarian_7_7"],
         },
         {
@@ -16964,8 +17038,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_6", "barbarian_7_8"],
         },
         {
@@ -16974,8 +17050,10 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_11", "barbarian_7_7"],
         },
       ],
@@ -16986,8 +17064,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_2", "barbarian_7_12"],
         },
         {
@@ -16996,9 +17076,11 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_5"],
         },
         {
@@ -17007,8 +17089,10 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_8", "barbarian_7_17"],
         },
       ],
@@ -17019,8 +17103,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/Str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_9", "barbarian_7_18", "barbarian_7_13"],
         },
         {
@@ -17029,9 +17115,11 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_19", "barbarian_7_12", "barbarian_7_14"],
         },
         {
@@ -17040,9 +17128,11 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_20", "barbarian_7_13"],
         },
         {
@@ -17051,8 +17141,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: ["barbarian_7_22", "barbarian_7_16"],
         },
         {
@@ -17061,9 +17153,11 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_23", "barbarian_7_15", "barbarian_7_17"],
         },
         {
@@ -17072,8 +17166,10 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_11", "barbarian_7_24", "barbarian_7_16"],
         },
       ],
@@ -17084,9 +17180,11 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_12", "barbarian_7_26", "barbarian_7_19"],
           bg: "magic",
         },
@@ -17126,9 +17224,11 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_29", "barbarian_7_20", "barbarian_7_22"],
         },
         {
@@ -17167,9 +17267,11 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_17", "barbarian_7_32", "barbarian_7_23"],
           bg: "magic",
         },
@@ -17181,9 +17283,11 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_35", "barbarian_7_26"],
         },
         {
@@ -17301,7 +17405,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/str_active.png",
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_43", "barbarian_7_32"],
         },
       ],
@@ -17314,7 +17420,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/str_active.png",
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_35"],
         },
         {
@@ -17458,7 +17566,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/will_active.png",
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_43"],
         },
       ],
@@ -17471,7 +17581,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/will_active.png",
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_35", "barbarian_7_59", "barbarian_7_46"],
         },
         {
@@ -17512,9 +17624,11 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_38", "barbarian_7_47", "barbarian_7_49"],
         },
         {
@@ -17523,9 +17637,11 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_39", "barbarian_7_48", "barbarian_7_50"],
         },
         {
@@ -17534,8 +17650,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: ["barbarian_7_40", "barbarian_7_49", "barbarian_7_51"],
         },
         {
@@ -17576,9 +17694,11 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_43", "barbarian_7_64", "barbarian_7_52"],
         },
       ],
@@ -17589,8 +17709,10 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_70", "barbarian_7_55"],
         },
         {
@@ -17599,8 +17721,10 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_71", "barbarian_7_54", "barbarian_7_56"],
         },
         {
@@ -17610,7 +17734,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/will_active.png",
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_55", "barbarian_7_57"],
         },
         {
@@ -17619,8 +17745,10 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_72", "barbarian_7_56", "barbarian_7_58"],
         },
         {
@@ -17629,8 +17757,10 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_73", "barbarian_7_57", "barbarian_7_59"],
         },
         {
@@ -17640,7 +17770,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/dex_active.png",
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_45", "barbarian_7_58", "barbarian_7_60"],
         },
         {
@@ -17665,9 +17797,11 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_47", "barbarian_7_75", "barbarian_7_60"],
         },
         {
@@ -17676,9 +17810,11 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_51", "barbarian_7_77", "barbarian_7_63"],
         },
         {
@@ -17703,7 +17839,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_53", "barbarian_7_63", "barbarian_7_65"],
         },
         {
@@ -17712,8 +17850,10 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_79", "barbarian_7_64", "barbarian_7_66"],
         },
         {
@@ -17722,8 +17862,10 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_80", "barbarian_7_65", "barbarian_7_67"],
         },
         {
@@ -17732,8 +17874,10 @@ export const optionSParagonBarbarian = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_66", "barbarian_7_68"],
         },
         {
@@ -17742,8 +17886,10 @@ export const optionSParagonBarbarian = [
           index: 18,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_81", "barbarian_7_67", "barbarian_7_69"],
         },
         {
@@ -17752,8 +17898,10 @@ export const optionSParagonBarbarian = [
           index: 19,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_82", "barbarian_7_68"],
         },
       ],
@@ -17764,8 +17912,10 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_54", "barbarian_7_84", "barbarian_7_71"],
         },
         {
@@ -17774,8 +17924,10 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_55", "barbarian_7_85", "barbarian_7_70"],
         },
         {
@@ -17784,6 +17936,8 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/CriticalDamageEarth_active.png",
+
+
           activable_ids: ["barbarian_7_57", "barbarian_7_86", "barbarian_7_73"],
           bg: "magic",
         },
@@ -17793,6 +17947,8 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/DustDevilArea_active.png",
+
+
           activable_ids: ["barbarian_7_58", "barbarian_7_87", "barbarian_7_72"],
           bg: "magic",
         },
@@ -17802,8 +17958,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_60", "barbarian_7_75"],
         },
         {
@@ -17812,9 +17970,11 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_61", "barbarian_7_88", "barbarian_7_74"],
         },
         {
@@ -17823,9 +17983,11 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_90"],
         },
         {
@@ -17834,9 +17996,11 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_62", "barbarian_7_92", "barbarian_7_78"],
         },
         {
@@ -17845,8 +18009,10 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_63", "barbarian_7_77"],
         },
         {
@@ -17855,6 +18021,8 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+
+
           activable_ids: ["barbarian_7_65", "barbarian_7_93", "barbarian_7_80"],
           bg: "magic",
         },
@@ -17864,6 +18032,8 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+
+
           activable_ids: ["barbarian_7_66", "barbarian_7_94", "barbarian_7_79"],
           bg: "magic",
         },
@@ -17873,8 +18043,10 @@ export const optionSParagonBarbarian = [
           index: 18,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_68", "barbarian_7_95", "barbarian_7_82"],
         },
         {
@@ -17883,8 +18055,10 @@ export const optionSParagonBarbarian = [
           index: 19,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_69", "barbarian_7_96", "barbarian_7_81"],
         },
       ],
@@ -17913,8 +18087,10 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_71", "barbarian_7_98", "barbarian_7_84"],
         },
         {
@@ -17923,6 +18099,8 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/CriticalDamageEarth_active.png",
+
+
           activable_ids: ["barbarian_7_72", "barbarian_7_99", "barbarian_7_87"],
           bg: "rare",
         },
@@ -17932,6 +18110,8 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/CriticalDamageEarth_active.png",
+
+
           activable_ids: [
             "barbarian_7_73",
             "barbarian_7_100",
@@ -17945,8 +18125,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_7_75",
             "barbarian_7_103",
@@ -17959,9 +18141,11 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_7_104",
             "barbarian_7_88",
@@ -17990,9 +18174,11 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_7_106",
             "barbarian_7_90",
@@ -18005,8 +18191,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_7_77",
             "barbarian_7_107",
@@ -18019,6 +18207,8 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+
+
           activable_ids: [
             "barbarian_7_79",
             "barbarian_7_110",
@@ -18045,8 +18235,10 @@ export const optionSParagonBarbarian = [
           index: 18,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_7_81",
             "barbarian_7_112",
@@ -18079,8 +18271,10 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_7_84",
             "barbarian_7_114",
@@ -18093,8 +18287,10 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_7_85",
             "barbarian_7_115",
@@ -18107,6 +18303,14 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/CriticalDamageEarth_active.png",
+
+          activable_ids: [
+            "barbarian_7_86",
+            "barbarian_7_117",
+            "barbarian_7_100",
+                    ],
+          label: "normalde socket",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
           activable_ids: [
             "barbarian_7_86",
             "barbarian_7_117",
@@ -18115,6 +18319,23 @@ export const optionSParagonBarbarian = [
           bg: "magic",
         },
         {
+          id: "barbarian_7_100",
+          active: false,
+          index: 5,
+          link: false,
+          image: "/paragon/barbarian/DustDevilArea_active.png",
+          label: "Nœud magique",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
+          activable_ids: [
+            "barbarian_7_87",
+            "barbarian_7_118",
+            "barbarian_7_99",
+            "barbarian_7_101",
+          ],
+          bg: "magic",
+        },
+        {
+
           id: "barbarian_7_100",
           active: false,
           index: 5,
@@ -18129,13 +18350,16 @@ export const optionSParagonBarbarian = [
           bg: "magic",
         },
         {
+
           id: "barbarian_7_101",
           active: false,
           index: 6,
           link: false,
           image: "/paragon/barbarian/will_active.png",
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_7_119",
             "barbarian_7_100",
@@ -18148,8 +18372,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_7_120",
             "barbarian_7_101",
@@ -18177,8 +18403,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_7_89",
             "barbarian_7_103",
@@ -18207,7 +18435,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/int_active.png",
           label: "Nœud normal",
+
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_7_91",
             "barbarian_7_105",
@@ -18236,7 +18466,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_7_124",
             "barbarian_7_107",
@@ -18249,8 +18481,10 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_7_125",
             "barbarian_7_108",
@@ -18277,6 +18511,8 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+
+
           activable_ids: [
             "barbarian_7_94",
             "barbarian_7_127",
@@ -18290,8 +18526,10 @@ export const optionSParagonBarbarian = [
           index: 18,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_7_95",
             "barbarian_7_129",
@@ -18304,8 +18542,10 @@ export const optionSParagonBarbarian = [
           index: 19,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_7_96",
             "barbarian_7_130",
@@ -18320,8 +18560,10 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_97", "barbarian_7_115"],
         },
         {
@@ -18330,8 +18572,10 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_7_98",
             "barbarian_7_114",
@@ -18344,8 +18588,10 @@ export const optionSParagonBarbarian = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/Will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_115", "barbarian_7_117"],
         },
         {
@@ -18355,7 +18601,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_7_99",
             "barbarian_7_116",
@@ -18369,7 +18617,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_7_100",
             "barbarian_7_117",
@@ -18382,8 +18632,10 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_7_101",
             "barbarian_7_118",
@@ -18396,8 +18648,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_7_102",
             "barbarian_7_119",
@@ -18410,8 +18664,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_7_103",
             "barbarian_7_131",
@@ -18424,8 +18680,10 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_105", "barbarian_7_132"],
         },
         {
@@ -18435,7 +18693,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_7_107",
             "barbarian_7_133",
@@ -18448,8 +18708,10 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_7_108",
             "barbarian_7_123",
@@ -18462,8 +18724,10 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_7_109",
             "barbarian_7_124",
@@ -18477,7 +18741,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_7_110",
             "barbarian_7_125",
@@ -18490,8 +18756,10 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_7_111",
             "barbarian_7_126",
@@ -18504,8 +18772,10 @@ export const optionSParagonBarbarian = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_127", "barbarian_7_129"],
         },
         {
@@ -18514,8 +18784,10 @@ export const optionSParagonBarbarian = [
           index: 18,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_7_112",
             "barbarian_7_128",
@@ -18529,7 +18801,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/dex_active.png",
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_113", "barbarian_7_129"],
         },
       ],
@@ -18540,8 +18814,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_121", "barbarian_7_136"],
         },
         {
@@ -18550,6 +18826,8 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/barbarian.png",
+
+
           activable_ids: ["barbarian_7_122", "barbarian_7_137"],
           bg: "rare",
         },
@@ -18559,8 +18837,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_123", "barbarian_7_138"],
         },
       ],
@@ -18571,6 +18851,8 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+
+
           activable_ids: ["barbarian_7_141", "barbarian_7_135"],
           bg: "magic",
         },
@@ -18580,6 +18862,8 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+
+
           activable_ids: [
             "barbarian_7_142",
             "barbarian_7_134",
@@ -18594,7 +18878,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/will_active.png",
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_7_131",
             "barbarian_7_143",
@@ -18607,8 +18893,10 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_132", "barbarian_7_145"],
         },
         {
@@ -18617,8 +18905,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_7_133",
             "barbarian_7_147",
@@ -18631,6 +18921,8 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/EarthquakeDamage_active.png",
+
+
           activable_ids: [
             "barbarian_7_148",
             "barbarian_7_138",
@@ -18644,6 +18936,8 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/EarthquakeDamage_active.png",
+
+
           activable_ids: ["barbarian_7_149", "barbarian_7_139"],
           bg: "magic",
         },
@@ -18697,8 +18991,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_7_153",
             "barbarian_7_143",
@@ -18726,8 +19022,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_7_155",
             "barbarian_7_145",
@@ -18769,6 +19067,8 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/EarthquakeDamage_active.png",
+
+
           activable_ids: [
             "barbarian_7_140",
             "barbarian_7_158",
@@ -18784,6 +19084,8 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+
+
           activable_ids: ["barbarian_7_141", "barbarian_7_151"],
           bg: "magic",
         },
@@ -18793,6 +19095,8 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+
+
           activable_ids: [
             "barbarian_7_142",
             "barbarian_7_150",
@@ -18821,8 +19125,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_7_144",
             "barbarian_7_152",
@@ -18835,8 +19141,10 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_7_145",
             "barbarian_7_153",
@@ -18849,8 +19157,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_7_146",
             "barbarian_7_154",
@@ -18878,6 +19188,8 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/DamagePhysical_active.png",
+
+
           activable_ids: [
             "barbarian_7_148",
             "barbarian_7_156",
@@ -18891,6 +19203,8 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/DamagePhysical_active.png",
+
+
           activable_ids: ["barbarian_7_149", "barbarian_7_157"],
           bg: "magic",
         },
@@ -18902,8 +19216,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_152", "barbarian_7_161"],
         },
         {
@@ -18912,8 +19228,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_156", "barbarian_7_164"],
         },
       ],
@@ -18924,8 +19242,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_7_159",
             "barbarian_7_165",
@@ -18938,8 +19258,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_166", "barbarian_7_161"],
         },
         {
@@ -18948,8 +19270,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_7_168", "barbarian_7_164"],
         },
         {
@@ -18958,8 +19282,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_7_160",
             "barbarian_7_169",
@@ -18975,7 +19301,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_7_161", "barbarian_7_166"],
         },
         {
@@ -18984,8 +19312,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_7_162",
             "barbarian_7_165",
@@ -19008,8 +19338,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_7_163",
             "barbarian_7_167",
@@ -19023,7 +19355,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/dex_active.png",
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_7_164", "barbarian_7_168"],
         },
       ],
@@ -19060,6 +19394,8 @@ export const optionSParagonBarbarian = [
           link: true,
           direction: "top",
           image: "/paragon/barbarian/Gate_active.png",
+
+
           activable_ids: ["barbarian_8_3"],
         },
         {
@@ -19068,9 +19404,11 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_8"],
         },
       ],
@@ -19091,8 +19429,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_11", "barbarian_8_3", "barbarian_8_5"],
         },
         {
@@ -19102,7 +19442,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/dex_active.png",
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_12", "barbarian_8_4", "barbarian_8_6"],
         },
         {
@@ -19111,8 +19453,10 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_13", "barbarian_8_5", "barbarian_8_7"],
         },
         {
@@ -19121,9 +19465,11 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_14", "barbarian_8_6", "barbarian_8_8"],
           bg: "magic",
         },
@@ -19147,9 +19493,11 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_16", "barbarian_8_8"],
         },
       ],
@@ -19160,6 +19508,7 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
           activable_ids: ["barbarian_8_3", "barbarian_8_18", "barbarian_8_11"],
@@ -19171,7 +19520,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_4", "barbarian_8_10", "barbarian_8_12"],
         },
         {
@@ -19180,8 +19531,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_5", "barbarian_8_11", "barbarian_8_13"],
         },
         {
@@ -19253,7 +19606,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/str_active.png",
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_16"],
         },
       ],
@@ -19264,8 +19619,10 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_10", "barbarian_8_24"],
         },
         {
@@ -19274,9 +19631,11 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/Will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_13", "barbarian_8_27", "barbarian_8_20"],
         },
         {
@@ -19315,9 +19674,11 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_16", "barbarian_8_21"],
         },
         {
@@ -19326,9 +19687,11 @@ export const optionSParagonBarbarian = [
           index: 18,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_31"],
         },
       ],
@@ -19339,8 +19702,10 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_18", "barbarian_8_36", "barbarian_8_25"],
         },
         {
@@ -19349,9 +19714,11 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_37", "barbarian_8_24", "barbarian_8_26"],
         },
         {
@@ -19360,9 +19727,11 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_38", "barbarian_8_25", "barbarian_8_27"],
         },
         {
@@ -19402,9 +19771,11 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/Str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_21", "barbarian_8_41", "barbarian_8_28"],
         },
         {
@@ -19413,9 +19784,11 @@ export const optionSParagonBarbarian = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_42", "barbarian_8_31"],
         },
         {
@@ -19441,9 +19814,11 @@ export const optionSParagonBarbarian = [
           index: 19,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_44", "barbarian_8_31"],
         },
       ],
@@ -19454,8 +19829,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_47", "barbarian_8_34"],
         },
         {
@@ -19464,8 +19841,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_48", "barbarian_8_33", "barbarian_8_35"],
         },
         {
@@ -19474,8 +19853,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/Will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_49", "barbarian_8_34", "barbarian_8_36"],
         },
         {
@@ -19500,9 +19881,11 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_25", "barbarian_8_36", "barbarian_8_38"],
         },
         {
@@ -19543,9 +19926,11 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_28", "barbarian_8_39", "barbarian_8_41"],
         },
         {
@@ -19562,9 +19947,11 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_30", "barbarian_8_55", "barbarian_8_43"],
         },
         {
@@ -19573,6 +19960,8 @@ export const optionSParagonBarbarian = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/DamageToVulnerable_active.png",
+
+
           activable_ids: ["barbarian_8_30", "barbarian_8_55", "barbarian_8_43"],
           bg: "magic",
         },
@@ -19610,9 +19999,11 @@ export const optionSParagonBarbarian = [
           index: 20,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_44"],
         },
       ],
@@ -19623,6 +20014,8 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/ResistancePoison_active.png",
+
+
           activable_ids: ["barbarian_8_63", "barbarian_8_47"],
           bg: "magic",
         },
@@ -19632,8 +20025,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_33", "barbarian_8_46", "barbarian_8_48"],
         },
         {
@@ -19657,8 +20052,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: ["barbarian_8_35", "barbarian_8_48", "barbarian_8_50"],
         },
         {
@@ -19667,8 +20064,10 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_36", "barbarian_8_49"],
         },
         {
@@ -19677,9 +20076,11 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_38", "barbarian_8_64", "barbarian_8_52"],
         },
         {
@@ -19688,9 +20089,11 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_39", "barbarian_8_51"],
         },
         {
@@ -19699,9 +20102,11 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_41", "barbarian_8_66", "barbarian_8_54"],
         },
         {
@@ -19711,7 +20116,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/int_active.png",
           label: "Nœud normal",
+
           options: ["5 Intelligence"],
+
           activable_ids: ["barbarian_8_67", "barbarian_8_53", "barbarian_8_55"],
         },
         {
@@ -19736,6 +20143,8 @@ export const optionSParagonBarbarian = [
           index: 18,
           link: false,
           image: "/paragon/barbarian/DamageToVulnerable_active.png",
+
+
           activable_ids: ["barbarian_8_43", "barbarian_8_55", "barbarian_8_57"],
           bg: "magic",
         },
@@ -19747,7 +20156,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/will_active.png",
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_44", "barbarian_8_71", "barbarian_8_56"],
         },
       ],
@@ -19759,7 +20170,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_72", "barbarian_8_59"],
         },
         {
@@ -19769,7 +20182,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_73", "barbarian_8_58", "barbarian_8_60"],
         },
         {
@@ -19779,7 +20194,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_74", "barbarian_8_59", "barbarian_8_61"],
         },
         {
@@ -19788,6 +20205,8 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/ResistancePoison_active.png",
+
+
           activable_ids: ["barbarian_8_60", "barbarian_8_62"],
           bg: "magic",
         },
@@ -19797,6 +20216,8 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/ResistancePoison_active.png",
+
+
           activable_ids: ["barbarian_8_75", "barbarian_8_61", "barbarian_8_63"],
           bg: "rare",
         },
@@ -19806,6 +20227,8 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+
+
           activable_ids: ["barbarian_8_46", "barbarian_8_76", "barbarian_8_62"],
           bg: "magic",
         },
@@ -19815,9 +20238,11 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_51", "barbarian_8_81"],
         },
         {
@@ -19826,9 +20251,11 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_83", "barbarian_8_66"],
         },
         {
@@ -19870,9 +20297,11 @@ export const optionSParagonBarbarian = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_55", "barbarian_8_67"],
         },
         {
@@ -19881,9 +20310,11 @@ export const optionSParagonBarbarian = [
           index: 18,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_48", "barbarian_8_78"],
         },
         {
@@ -19893,7 +20324,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_57", "barbarian_8_87"],
         },
       ],
@@ -19904,8 +20337,10 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_58", "barbarian_8_88", "barbarian_8_73"],
         },
         {
@@ -19929,8 +20364,10 @@ export const optionSParagonBarbarian = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_60", "barbarian_8_73"],
         },
         {
@@ -19939,6 +20376,8 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+
+
           activable_ids: ["barbarian_8_62", "barbarian_8_76"],
           bg: "magic",
         },
@@ -19963,7 +20402,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_91", "barbarian_8_76", "barbarian_8_78"],
         },
         {
@@ -19985,8 +20426,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/Str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_93", "barbarian_8_78"],
         },
         {
@@ -19996,6 +20439,8 @@ export const optionSParagonBarbarian = [
           link: false,
           image:
             "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+
+
           activable_ids: ["barbarian_8_95", "barbarian_8_81"],
           bg: "magic",
         },
@@ -20019,8 +20464,10 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: ["barbarian_8_81", "barbarian_8_83"],
         },
         {
@@ -20031,7 +20478,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/str_active.png",
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_65", "barbarian_8_82", "barbarian_8_84"],
         },
         {
@@ -20056,9 +20505,11 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_67", "barbarian_8_98", "barbarian_8_84"],
         },
         {
@@ -20067,8 +20518,10 @@ export const optionSParagonBarbarian = [
           index: 18,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_99", "barbarian_8_87"],
         },
         {
@@ -20077,8 +20530,10 @@ export const optionSParagonBarbarian = [
           index: 19,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_8_71",
             "barbarian_8_100",
@@ -20093,8 +20548,10 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_8_72",
             "barbarian_8_102",
@@ -20107,8 +20564,10 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_73", "barbarian_8_88"],
         },
         {
@@ -20117,8 +20576,10 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_76", "barbarian_8_91"],
         },
         {
@@ -20127,8 +20588,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/Str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_77", "barbarian_8_90", "barbarian_8_92"],
         },
         {
@@ -20152,8 +20615,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_79", "barbarian_8_92", "barbarian_8_94"],
         },
         {
@@ -20162,6 +20627,8 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/ResistanceFire_active.png",
+
+
           activable_ids: ["barbarian_8_93", "barbarian_8_95"],
           bg: "magic",
         },
@@ -20187,6 +20654,8 @@ export const optionSParagonBarbarian = [
           link: false,
           image:
             "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+
+
           activable_ids: ["barbarian_8_81", "barbarian_8_95"],
           bg: "magic",
         },
@@ -20196,9 +20665,11 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_84",
             "barbarian_8_106",
@@ -20211,9 +20682,11 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_8_85",
             "barbarian_8_107",
@@ -20227,7 +20700,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/will_active.png",
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_8_86",
             "barbarian_8_109",
@@ -20240,8 +20715,10 @@ export const optionSParagonBarbarian = [
           index: 19,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_87",
             "barbarian_8_110",
@@ -20274,8 +20751,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_92", "barbarian_8_115"],
         },
         {
@@ -20285,6 +20764,8 @@ export const optionSParagonBarbarian = [
           link: false,
           image:
             "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+
+
           activable_ids: ["barbarian_8_95", "barbarian_8_117"],
           bg: "magic",
         },
@@ -20294,8 +20775,10 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_119", "barbarian_8_106"],
         },
         {
@@ -20319,8 +20802,10 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_8_98",
             "barbarian_8_106",
@@ -20333,8 +20818,10 @@ export const optionSParagonBarbarian = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_107", "barbarian_8_109"],
         },
         {
@@ -20343,8 +20830,10 @@ export const optionSParagonBarbarian = [
           index: 18,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_99",
             "barbarian_8_108",
@@ -20378,7 +20867,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/will_active.png",
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_102", "barbarian_8_121"],
         },
         {
@@ -20387,8 +20878,10 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_123", "barbarian_8_114"],
         },
         {
@@ -20397,8 +20890,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_124",
             "barbarian_8_113",
@@ -20411,8 +20906,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_103",
             "barbarian_8_114",
@@ -20425,8 +20922,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_125", "barbarian_8_115"],
         },
         {
@@ -20435,8 +20934,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_8_104",
             "barbarian_8_127",
@@ -20449,8 +20950,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_128", "barbarian_8_117"],
         },
         {
@@ -20459,8 +20962,10 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_8_105",
             "barbarian_8_129",
@@ -20473,8 +20978,10 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_106",
             "barbarian_8_130",
@@ -20489,8 +20996,10 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_112",
             "barbarian_8_131",
@@ -20503,8 +21012,10 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_132", "barbarian_8_121"],
         },
         {
@@ -20514,7 +21025,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/dex_active.png",
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_8_113",
             "barbarian_8_134",
@@ -20527,8 +21040,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_114", "barbarian_8_123"],
         },
         {
@@ -20538,7 +21053,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/int_active.png",
           label: "Nœud normal",
+
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_8_116",
             "barbarian_8_136",
@@ -20551,8 +21068,10 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_125", "barbarian_8_127"],
         },
         {
@@ -20577,7 +21096,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_118",
             "barbarian_8_138",
@@ -20591,7 +21112,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_119",
             "barbarian_8_139",
@@ -20604,8 +21127,10 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_120",
             "barbarian_8_140",
@@ -20620,8 +21145,10 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_8_121",
             "barbarian_8_141",
@@ -20634,8 +21161,10 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_8_122",
             "barbarian_8_142",
@@ -20648,8 +21177,10 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_143", "barbarian_8_134"],
         },
         {
@@ -20658,8 +21189,10 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_8_123",
             "barbarian_8_144",
@@ -20673,7 +21206,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/dex_active.png",
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_146", "barbarian_8_136"],
         },
         {
@@ -20682,8 +21217,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_8_125",
             "barbarian_8_147",
@@ -20696,8 +21233,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_127",
             "barbarian_8_148",
@@ -20710,8 +21249,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_128",
             "barbarian_8_149",
@@ -20724,8 +21265,10 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/Str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_129",
             "barbarian_8_151",
@@ -20738,8 +21281,10 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_130", "barbarian_8_139"],
         },
       ],
@@ -20750,8 +21295,10 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_8_131",
             "barbarian_8_152",
@@ -20764,8 +21311,10 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/Will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_8_132",
             "barbarian_8_153",
@@ -20778,8 +21327,10 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_133",
             "barbarian_8_155",
@@ -20807,8 +21358,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_8_157",
             "barbarian_8_144",
@@ -20821,8 +21374,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_8_135",
             "barbarian_8_145",
@@ -20835,8 +21390,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_136", "barbarian_8_146"],
         },
         {
@@ -20845,8 +21402,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_137", "barbarian_8_149"],
         },
         {
@@ -20869,6 +21428,8 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/Dodge_active.png",
+
+
           activable_ids: [
             "barbarian_8_159",
             "barbarian_8_149",
@@ -20882,6 +21443,8 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/CCDurationReduction_active.png",
+
+
           activable_ids: ["barbarian_8_139", "barbarian_8_150"],
           bg: "magic",
         },
@@ -20893,8 +21456,10 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_141", "barbarian_8_153"],
         },
         {
@@ -20904,7 +21469,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_142",
             "barbarian_8_160",
@@ -20917,8 +21484,10 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_8_162", "barbarian_8_155"],
         },
         {
@@ -20941,8 +21510,10 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_8_144",
             "barbarian_8_155",
@@ -20955,8 +21526,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_145", "barbarian_8_156"],
         },
         {
@@ -20965,6 +21538,8 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Dodge_active.png",
+
+
           activable_ids: ["barbarian_8_149", "barbarian_8_159"],
           bg: "magic",
         },
@@ -20974,6 +21549,8 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/CCDurationReduction_active.png",
+
+
           activable_ids: [
             "barbarian_8_150",
             "barbarian_8_164",
@@ -20989,8 +21566,10 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_153",
             "barbarian_8_165",
@@ -21003,8 +21582,10 @@ export const optionSParagonBarbarian = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_8_166",
             "barbarian_8_160",
@@ -21032,8 +21613,10 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/Str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_155", "barbarian_8_162"],
         },
         {
@@ -21042,6 +21625,8 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/CCDurationReduction_active.png",
+
+
           activable_ids: ["barbarian_8_159", "barbarian_8_169"],
           bg: "magic",
         },
@@ -21054,6 +21639,14 @@ export const optionSParagonBarbarian = [
           link: false,
           image:
             "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+
+          activable_ids: [
+            "barbarian_8_160",
+            "barbarian_8_171",
+            "barbarian_8_166",
+],
+          label: "de normal",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
           activable_ids: [
             "barbarian_8_160",
             "barbarian_8_171",
@@ -21062,6 +21655,23 @@ export const optionSParagonBarbarian = [
           bg: "magic",
         },
         {
+          id: "barbarian_8_166",
+          active: false,
+          index: 3,
+          link: false,
+          image: "/paragon/barbarian/DamageToVulnerable_active.png",
+          label: "Nœud magique",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
+          activable_ids: [
+            "barbarian_8_161",
+            "barbarian_8_172",
+            "barbarian_8_165",
+            "barbarian_8_167",
+          ],
+          bg: "magic",
+        },
+        {
+
           id: "barbarian_8_166",
           active: false,
           index: 3,
@@ -21076,13 +21686,16 @@ export const optionSParagonBarbarian = [
           bg: "magic",
         },
         {
+
           id: "barbarian_8_167",
           active: false,
           index: 4,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_8_162",
             "barbarian_8_173",
@@ -21095,8 +21708,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_179", "barbarian_8_169"],
         },
         {
@@ -21105,8 +21720,10 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_8_164",
             "barbarian_8_180",
@@ -21121,6 +21738,8 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/DamageToVulnerable_active.png",
+
+
           activable_ids: ["barbarian_8_171"],
           bg: "magic",
         },
@@ -21146,6 +21765,8 @@ export const optionSParagonBarbarian = [
           link: false,
           image:
             "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+
+
           activable_ids: [
             "barbarian_8_166",
             "barbarian_8_171",
@@ -21159,8 +21780,10 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_8_167",
             "barbarian_8_172",
@@ -21173,8 +21796,10 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_182",
             "barbarian_8_173",
@@ -21188,7 +21813,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_183",
             "barbarian_8_174",
@@ -21202,7 +21829,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/dex_active.png",
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_8_184",
             "barbarian_8_175",
@@ -21215,8 +21844,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_185", "barbarian_8_176"],
         },
         {
@@ -21226,7 +21857,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/will_active.png",
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_188", "barbarian_8_179"],
         },
         {
@@ -21250,8 +21883,10 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_8_169",
             "barbarian_8_190",
@@ -21267,6 +21902,8 @@ export const optionSParagonBarbarian = [
           link: false,
           image:
             "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+
+
           activable_ids: ["barbarian_8_171"],
           bg: "magic",
         },
@@ -21276,8 +21913,10 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_174", "barbarian_8_183"],
         },
         {
@@ -21286,8 +21925,10 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_8_175",
             "barbarian_8_182",
@@ -21300,8 +21941,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_176",
             "barbarian_8_183",
@@ -21314,8 +21957,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_8_177",
             "barbarian_8_184",
@@ -21328,8 +21973,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_8_185", "barbarian_8_187"],
         },
         {
@@ -21348,8 +21995,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_8_178",
             "barbarian_8_187",
@@ -21362,8 +22011,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_8_179",
             "barbarian_8_188",
@@ -21376,8 +22027,10 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/Will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_8_180", "barbarian_8_189"],
         },
       ],
@@ -21424,7 +22077,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/will_active.png",
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_5", "barbarian_9_3"],
         },
         {
@@ -21443,8 +22098,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_7", "barbarian_9_3"],
         },
       ],
@@ -21455,8 +22112,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: ["barbarian_9_2", "barbarian_9_8", "barbarian_9_6"],
         },
         {
@@ -21480,8 +22139,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_4", "barbarian_9_10", "barbarian_9_6"],
         },
       ],
@@ -21492,8 +22153,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_5", "barbarian_9_12", "barbarian_9_9"],
         },
         {
@@ -21517,8 +22180,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: ["barbarian_9_7", "barbarian_9_14", "barbarian_9_9"],
         },
       ],
@@ -21530,7 +22195,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_17", "barbarian_9_12"],
         },
         {
@@ -21554,8 +22221,10 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_9", "barbarian_9_12", "barbarian_9_14"],
         },
         {
@@ -21579,6 +22248,8 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/ResistanceFire_active.png",
+
+
           activable_ids: ["barbarian_9_20", "barbarian_9_14"],
           bg: "magic",
         },
@@ -21590,8 +22261,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_24", "barbarian_9_17"],
         },
         {
@@ -21615,8 +22288,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_12", "barbarian_9_26", "barbarian_9_17"],
         },
         {
@@ -21625,6 +22300,8 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/ResistanceFire_active.png",
+
+
           activable_ids: ["barbarian_9_14", "barbarian_9_27", "barbarian_9_20"],
           bg: "magic",
         },
@@ -21634,6 +22311,8 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+
+
           activable_ids: ["barbarian_9_15", "barbarian_9_28", "barbarian_9_19"],
           bg: "magic",
         },
@@ -21645,6 +22324,8 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+
+
           activable_ids: ["barbarian_9_30", "barbarian_9_22"],
           bg: "magic",
         },
@@ -21654,6 +22335,8 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+
+
           activable_ids: ["barbarian_9_31", "barbarian_9_21", "barbarian_9_23"],
           bg: "magic",
         },
@@ -21663,6 +22346,8 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+
+
           activable_ids: ["barbarian_9_32", "barbarian_9_22", "barbarian_9_24"],
           bg: "magic",
         },
@@ -21672,6 +22357,8 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+
+
           activable_ids: ["barbarian_9_16", "barbarian_9_23", "barbarian_9_25"],
           bg: "magic",
         },
@@ -21696,8 +22383,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: ["barbarian_9_18", "barbarian_9_34", "barbarian_9_25"],
         },
         {
@@ -21706,6 +22395,8 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/ResistanceFire_active.png",
+
+
           activable_ids: ["barbarian_9_19", "barbarian_9_36", "barbarian_9_28"],
           bg: "magic",
         },
@@ -21715,6 +22406,8 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/ResistanceFire_active.png",
+
+
           activable_ids: ["barbarian_9_20", "barbarian_9_27"],
           bg: "magic",
         },
@@ -21726,8 +22419,10 @@ export const optionSParagonBarbarian = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_37", "barbarian_9_30"],
         },
         {
@@ -21751,6 +22446,8 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+
+
           activable_ids: ["barbarian_9_22", "barbarian_9_30", "barbarian_9_32"],
           bg: "magic",
         },
@@ -21760,6 +22457,8 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+
+
           activable_ids: ["barbarian_9_23", "barbarian_9_31"],
           bg: "rare",
         },
@@ -21770,7 +22469,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/dex_active.png",
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_25", "barbarian_9_34"],
         },
         {
@@ -21779,8 +22480,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_26", "barbarian_9_33", "barbarian_9_35"],
         },
         {
@@ -21789,8 +22492,10 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_39", "barbarian_9_34", "barbarian_9_36"],
         },
         {
@@ -21799,6 +22504,8 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+
+
           activable_ids: ["barbarian_9_27", "barbarian_9_35"],
           bg: "magic",
         },
@@ -21810,8 +22517,10 @@ export const optionSParagonBarbarian = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_29", "barbarian_9_43", "barbarian_9_38"],
         },
         {
@@ -21820,8 +22529,10 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_30", "barbarian_9_44", "barbarian_9_37"],
         },
         {
@@ -21830,8 +22541,10 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_35", "barbarian_9_45"],
         },
         {
@@ -21840,6 +22553,8 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+
+
           activable_ids: ["barbarian_9_47", "barbarian_9_41"],
           bg: "rare",
         },
@@ -21849,6 +22564,8 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/HealingBonus_active.png",
+
+
           activable_ids: ["barbarian_9_48", "barbarian_9_40", "barbarian_9_42"],
           bg: "magic",
         },
@@ -21858,6 +22575,8 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+
+
           activable_ids: ["barbarian_9_49", "barbarian_9_41"],
           bg: "magic",
         },
@@ -21869,8 +22588,10 @@ export const optionSParagonBarbarian = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_37", "barbarian_9_56", "barbarian_9_44"],
         },
         {
@@ -21879,8 +22600,10 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_38", "barbarian_9_43"],
         },
         {
@@ -21889,8 +22612,10 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_39", "barbarian_9_60"],
         },
         {
@@ -21899,6 +22624,8 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/HealingBonus_active.png",
+
+
           activable_ids: ["barbarian_9_63", "barbarian_9_47"],
           bg: "magic",
         },
@@ -21908,6 +22635,8 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+
+
           activable_ids: ["barbarian_9_40", "barbarian_9_46", "barbarian_9_48"],
           bg: "magic",
         },
@@ -21917,6 +22646,8 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+
+
           activable_ids: ["barbarian_9_41", "barbarian_9_47", "barbarian_9_49"],
           bg: "magic",
         },
@@ -21941,8 +22672,10 @@ export const optionSParagonBarbarian = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_65", "barbarian_9_49", "barbarian_9_51"],
         },
         {
@@ -21951,8 +22684,10 @@ export const optionSParagonBarbarian = [
           index: 18,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_66", "barbarian_9_50", "barbarian_9_52"],
         },
         {
@@ -21961,8 +22696,10 @@ export const optionSParagonBarbarian = [
           index: 19,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_67", "barbarian_9_51"],
         },
       ],
@@ -21991,8 +22728,10 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_70", "barbarian_9_54", "barbarian_9_56"],
         },
         {
@@ -22001,8 +22740,10 @@ export const optionSParagonBarbarian = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_43", "barbarian_9_71", "barbarian_9_55"],
         },
         {
@@ -22011,8 +22752,10 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_73"],
         },
         {
@@ -22021,8 +22764,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_75", "barbarian_9_59"],
         },
         {
@@ -22031,8 +22776,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_76", "barbarian_9_58", "barbarian_9_60"],
         },
         {
@@ -22056,8 +22803,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_60", "barbarian_9_62"],
         },
         {
@@ -22066,8 +22815,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_61", "barbarian_9_63"],
         },
         {
@@ -22076,8 +22827,10 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_46", "barbarian_9_78", "barbarian_9_62"],
         },
         {
@@ -22086,8 +22839,10 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: ["barbarian_9_49", "barbarian_9_81", "barbarian_9_65"],
         },
         {
@@ -22149,7 +22904,9 @@ export const optionSParagonBarbarian = [
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_54", "barbarian_9_70"],
         },
         {
@@ -22192,7 +22949,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/Dex_active.png",
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_87", "barbarian_9_71", "barbarian_9_73"],
         },
         {
@@ -22218,9 +22977,11 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_89", "barbarian_9_73"],
         },
         {
@@ -22229,9 +22990,11 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_58", "barbarian_9_90", "barbarian_9_76"],
         },
         {
@@ -22256,10 +23019,12 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_60", "barbarian_9_92", "barbarian_9_76"],
         },
         {
@@ -22268,10 +23033,12 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_63", "barbarian_9_93", "barbarian_9_79"],
         },
         {
@@ -22280,10 +23047,12 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_94", "barbarian_9_78", "barbarian_9_80"],
         },
         {
@@ -22292,9 +23061,11 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_95", "barbarian_9_79", "barbarian_9_81"],
         },
         {
@@ -22322,7 +23093,9 @@ export const optionSParagonBarbarian = [
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_65", "barbarian_9_81", "barbarian_9_83"],
         },
         {
@@ -22331,10 +23104,12 @@ export const optionSParagonBarbarian = [
           index: 18,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_66", "barbarian_9_82", "barbarian_9_84"],
         },
         {
@@ -22343,9 +23118,11 @@ export const optionSParagonBarbarian = [
           index: 19,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_67", "barbarian_9_83"],
         },
       ],
@@ -22356,9 +23133,11 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_70", "barbarian_9_86"],
         },
         {
@@ -22417,9 +23196,11 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_9_74",
             "barbarian_9_100",
@@ -22432,6 +23213,8 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/barbarian.png",
+
+
           activable_ids: ["barbarian_9_75", "barbarian_9_91"],
           bg: "rare",
         },
@@ -22441,8 +23224,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/Int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: ["barbarian_9_76", "barbarian_9_90", "barbarian_9_92"],
         },
         {
@@ -22451,9 +23236,11 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_77", "barbarian_9_91"],
         },
         {
@@ -22462,8 +23249,10 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: ["barbarian_9_78", "barbarian_9_94"],
         },
         {
@@ -22504,10 +23293,12 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_81", "barbarian_9_95"],
         },
       ],
@@ -22520,7 +23311,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/str_active.png",
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_86", "barbarian_9_98"],
         },
         {
@@ -22561,10 +23354,12 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_9_89",
             "barbarian_9_99",
@@ -22577,9 +23372,11 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_108", "barbarian_9_100"],
         },
         {
@@ -22588,6 +23385,8 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+
+
           activable_ids: [
             "barbarian_9_94",
             "barbarian_9_112",
@@ -22603,7 +23402,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/str_active.png",
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_95", "barbarian_9_102"],
         },
       ],
@@ -22616,7 +23417,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/dex_active.png",
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_114", "barbarian_9_105"],
           bg: "magic",
         },
@@ -22626,6 +23429,8 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+
+
           activable_ids: ["barbarian_9_115", "barbarian_9_104"],
           bg: "magic",
         },
@@ -22635,8 +23440,10 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_9_98",
             "barbarian_9_117",
@@ -22649,9 +23456,11 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_9_99",
             "barbarian_9_118",
@@ -22664,9 +23473,11 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_9_101",
             "barbarian_9_120",
@@ -22682,7 +23493,9 @@ export const optionSParagonBarbarian = [
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_9_121",
             "barbarian_9_108",
@@ -22695,9 +23508,11 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_122", "barbarian_9_109"],
         },
         {
@@ -22706,6 +23521,8 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+
+
           activable_ids: ["barbarian_9_124", "barbarian_9_112"],
           bg: "rare",
         },
@@ -22715,6 +23532,8 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+
+
           activable_ids: [
             "barbarian_9_102",
             "barbarian_9_125",
@@ -22730,9 +23549,11 @@ export const optionSParagonBarbarian = [
           index: 0,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_114"],
         },
         {
@@ -22769,9 +23590,11 @@ export const optionSParagonBarbarian = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_9_128",
             "barbarian_9_115",
@@ -22784,9 +23607,11 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_9_106",
             "barbarian_9_116",
@@ -22807,10 +23632,12 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_9_130",
             "barbarian_9_118",
@@ -22871,10 +23698,12 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_122"],
         },
         {
@@ -22883,6 +23712,8 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+
+
           activable_ids: [
             "barbarian_9_111",
             "barbarian_9_136",
@@ -22896,6 +23727,8 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+
+
           activable_ids: [
             "barbarian_9_112",
             "barbarian_9_137",
@@ -22911,9 +23744,11 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_114", "barbarian_9_127"],
         },
         {
@@ -22939,6 +23774,8 @@ export const optionSParagonBarbarian = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+
+
           activable_ids: [
             "barbarian_9_116",
             "barbarian_9_139",
@@ -22952,9 +23789,11 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_9_118",
             "barbarian_9_141",
@@ -22967,9 +23806,11 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_9_119",
             "barbarian_9_129",
@@ -23014,8 +23855,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_9_122",
             "barbarian_9_144",
@@ -23028,9 +23871,11 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_146", "barbarian_9_135"],
         },
         {
@@ -23041,7 +23886,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/Str_active.png",
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_9_147",
             "barbarian_9_134",
@@ -23070,6 +23917,8 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+
+
           activable_ids: ["barbarian_9_125", "barbarian_9_136"],
         },
       ],
@@ -23080,10 +23929,12 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_127", "barbarian_9_139"],
         },
         {
@@ -23108,6 +23959,8 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/DamageWhileFortified_active.png",
+
+
           activable_ids: [
             "barbarian_9_150",
             "barbarian_9_139",
@@ -23121,9 +23974,11 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_9_129",
             "barbarian_9_151",
@@ -23136,9 +23991,11 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_131", "barbarian_9_143"],
         },
         {
@@ -23180,9 +24037,11 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_9_155",
             "barbarian_9_144",
@@ -23195,9 +24054,11 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/Str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_9_134",
             "barbarian_9_145",
@@ -23210,9 +24071,11 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_9_135",
             "barbarian_9_146",
@@ -23227,7 +24090,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/dex_active.png",
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_136", "barbarian_9_147"],
         },
       ],
@@ -23240,7 +24105,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/str_active.png",
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_139", "barbarian_9_150"],
         },
         {
@@ -23281,6 +24148,8 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/DamageWhileFortified_active.png",
+
+
           activable_ids: ["barbarian_9_158", "barbarian_9_151"],
           bg: "magic",
         },
@@ -23290,10 +24159,12 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_143", "barbarian_9_154"],
         },
         {
@@ -23318,9 +24189,11 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/Str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_9_145",
             "barbarian_9_160",
@@ -23335,9 +24208,11 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_9_150", "barbarian_9_157"],
         },
         {
@@ -23360,10 +24235,12 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_9_152", "barbarian_9_157"],
           bg: "magic",
         },
@@ -23373,9 +24250,11 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_154", "barbarian_9_160"],
         },
         {
@@ -23398,8 +24277,10 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/Str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_9_157"],
         },
         {
@@ -23438,6 +24319,8 @@ export const optionSParagonBarbarian = [
           options: ["+5 Force"],
           glyph_id: 1,
           _id: 2,
+
+
           activable_ids: ["barbarian_10_4"],
         },
         {
@@ -23456,9 +24339,11 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_10_12", "barbarian_10_4"],
         },
         {
@@ -23483,9 +24368,11 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_10_14",
             "barbarian_10_4",
@@ -23498,8 +24385,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_5", "barbarian_10_7"],
         },
         {
@@ -23508,8 +24397,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_6", "barbarian_10_8"],
         },
         {
@@ -23518,8 +24409,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_10_7", "barbarian_10_9"],
         },
         {
@@ -23539,7 +24432,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_16", "barbarian_10_9"],
         },
       ],
@@ -23550,9 +24445,11 @@ export const optionSParagonBarbarian = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_10_12"],
         },
         {
@@ -23594,9 +24491,11 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_10_5",
             "barbarian_10_20",
@@ -23610,8 +24509,10 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_10_9",
             "barbarian_10_23",
@@ -23624,8 +24525,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_10_10",
             "barbarian_10_24",
@@ -23645,6 +24548,8 @@ export const optionSParagonBarbarian = [
           options: ["+5 Force"],
           glyph_id: 1,
           _id: 2,
+
+
           activable_ids: ["barbarian_10_26"],
         },
         {
@@ -23658,6 +24563,8 @@ export const optionSParagonBarbarian = [
           options: ["5 Dextérité"],
           glyph_id: 1,
           _id: 2,
+
+
           activable_ids: ["barbarian_10_12", "barbarian_10_19"],
         },
         {
@@ -23696,6 +24603,8 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+
+
           activable_ids: [
             "barbarian_10_30",
             "barbarian_10_20",
@@ -23709,9 +24618,11 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_10_31", "barbarian_10_21"],
           bg: "magic",
         },
@@ -23721,8 +24632,10 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_15", "barbarian_10_24"],
         },
         {
@@ -23732,7 +24645,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
+
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_10_16",
             "barbarian_10_32",
@@ -23747,9 +24662,11 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_34", "barbarian_10_26"],
         },
         {
@@ -23774,9 +24691,11 @@ export const optionSParagonBarbarian = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_10_36", "barbarian_10_26"],
         },
         {
@@ -23785,9 +24704,11 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_10_19",
             "barbarian_10_38",
@@ -23832,6 +24753,8 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+
+
           activable_ids: [
             "barbarian_10_22",
             "barbarian_10_41",
@@ -23845,8 +24768,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_10_24"],
         },
       ],
@@ -23862,6 +24787,8 @@ export const optionSParagonBarbarian = [
           options: ["+5 Force"],
           glyph_id: 1,
           _id: 2,
+
+
           activable_ids: ["barbarian_10_34"],
         },
         {
@@ -23920,7 +24847,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/dex_active.png",
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_10_48",
             "barbarian_10_36",
@@ -23941,9 +24870,11 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_10_29",
             "barbarian_10_38",
@@ -23988,9 +24919,11 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_10_52",
             "barbarian_10_41",
@@ -24005,7 +24938,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/str_active.png",
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_42"],
         },
         {
@@ -24015,7 +24950,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_53"],
         },
         {
@@ -24025,7 +24962,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/dex_active.png",
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_10_53"],
         },
       ],
@@ -24036,8 +24975,10 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_10_34",
             "barbarian_10_54",
@@ -24050,9 +24991,11 @@ export const optionSParagonBarbarian = [
           index: 2,
           link: false,
           image: "/paragon/barbarian/Will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_10_35",
             "barbarian_10_45",
@@ -24097,9 +25040,11 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_10_38",
             "barbarian_10_57",
@@ -24112,9 +25057,11 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_40", "barbarian_10_51"],
         },
         {
@@ -24141,8 +25088,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: [
             "barbarian_10_42",
             "barbarian_10_60",
@@ -24155,6 +25104,8 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
+
+
           activable_ids: ["barbarian_10_44", "barbarian_10_62"],
           bg: "magic",
         },
@@ -24167,7 +25118,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/will_active.png",
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_10_45", "barbarian_10_63"],
         },
         {
@@ -24176,6 +25129,8 @@ export const optionSParagonBarbarian = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
+
+
           activable_ids: [
             "barbarian_10_47",
             "barbarian_10_64",
@@ -24219,9 +25174,11 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_10_67", "barbarian_10_57"],
         },
         {
@@ -24232,7 +25189,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/dex_active.png",
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
+
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_10_51", "barbarian_10_60"],
         },
         {
@@ -24243,7 +25202,9 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/str_active.png",
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_10_52",
             "barbarian_10_69",
@@ -24256,6 +25217,8 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
+
+
           activable_ids: ["barbarian_10_70", "barbarian_10_62"],
           bg: "rare",
         },
@@ -24267,6 +25230,8 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/MoveSpeedEliteKill_active.png",
           glyph_id: 1,
           _id: 2,
+
+
           activable_ids: [
             "barbarian_10_53",
             "barbarian_10_71",
@@ -24282,8 +25247,10 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_54", "barbarian_10_79"],
         },
         {
@@ -24292,9 +25259,11 @@ export const optionSParagonBarbarian = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_10_55", "barbarian_10_65"],
           bg: "magic",
         },
@@ -24304,6 +25273,8 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
+
+
           activable_ids: [
             "barbarian_10_56",
             "barbarian_10_64",
@@ -24349,9 +25320,11 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_82", "barbarian_10_67"],
         },
         {
@@ -24360,8 +25333,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_60", "barbarian_10_84"],
         },
         {
@@ -24370,6 +25345,8 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
+
+
           activable_ids: [
             "barbarian_10_61",
             "barbarian_10_86",
@@ -24383,6 +25360,8 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
+
+
           activable_ids: [
             "barbarian_10_62",
             "barbarian_10_70",
@@ -24398,6 +25377,8 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/MoveSpeedEliteKill_active.png",
           glyph_id: 1,
           _id: 2,
+
+
           activable_ids: ["barbarian_10_71", "barbarian_10_73"],
           bg: "magic",
         },
@@ -24408,7 +25389,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_10_87",
             "barbarian_10_72",
@@ -24421,8 +25404,10 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_10_88",
             "barbarian_10_73",
@@ -24435,8 +25420,10 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_10_89",
             "barbarian_10_74",
@@ -24449,8 +25436,10 @@ export const optionSParagonBarbarian = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_75", "barbarian_10_77"],
         },
         {
@@ -24459,8 +25448,10 @@ export const optionSParagonBarbarian = [
           index: 18,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_10_90",
             "barbarian_10_76",
@@ -24473,8 +25464,10 @@ export const optionSParagonBarbarian = [
           index: 19,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_10_91", "barbarian_10_77"],
         },
       ],
@@ -24485,8 +25478,10 @@ export const optionSParagonBarbarian = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_10_63", "barbarian_10_93"],
         },
         {
@@ -24495,9 +25490,11 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: [
             "barbarian_10_66",
             "barbarian_10_96",
@@ -24510,9 +25507,11 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: [
             "barbarian_10_67",
             "barbarian_10_80",
@@ -24525,8 +25524,10 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_10_68",
             "barbarian_10_81",
@@ -24539,8 +25540,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_10_82", "barbarian_10_84"],
         },
         {
@@ -24568,6 +25571,8 @@ export const optionSParagonBarbarian = [
           options: ["+5 volonte"],
           glyph_id: 1,
           _id: 2,
+
+
           activable_ids: ["barbarian_10_84", "barbarian_10_86"],
         },
         {
@@ -24576,8 +25581,10 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_10_70",
             "barbarian_10_98",
@@ -24594,6 +25601,8 @@ export const optionSParagonBarbarian = [
           options: ["+5 Force"],
           glyph_id: 1,
           _id: 2,
+
+
           activable_ids: ["barbarian_10_73", "barbarian_10_88"],
         },
         {
@@ -24602,8 +25611,10 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: [
             "barbarian_10_74",
             "barbarian_10_87",
@@ -24692,8 +25703,10 @@ export const optionSParagonBarbarian = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_106", "barbarian_10_94"],
         },
         {
@@ -24702,9 +25715,11 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_80", "barbarian_10_108"],
         },
         {
@@ -24717,6 +25732,8 @@ export const optionSParagonBarbarian = [
           options: ["+5 Force"],
           glyph_id: 1,
           _id: 2,
+
+
           activable_ids: ["barbarian_10_84", "barbarian_10_111"],
         },
         {
@@ -24739,8 +25756,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_10_98"],
         },
         {
@@ -24749,6 +25768,8 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+
+
           activable_ids: ["barbarian_10_89"],
         },
         {
@@ -24792,7 +25813,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/will_active.png",
           label: "Nœud normal",
+
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_10_93", "barbarian_10_105"],
         },
         {
@@ -24829,8 +25852,10 @@ export const optionSParagonBarbarian = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_10_106", "barbarian_10_108"],
         },
         {
@@ -24853,6 +25878,8 @@ export const optionSParagonBarbarian = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
+
+
           activable_ids: ["barbarian_10_120", "barbarian_10_110"],
           bg: "rare",
         },
@@ -24917,6 +25944,8 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+
+
           activable_ids: ["barbarian_10_126", "barbarian_10_115"],
           bg: "rare",
         },
@@ -24926,6 +25955,8 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+
+
           activable_ids: ["barbarian_10_127", "barbarian_10_114"],
           bg: "magic",
         },
@@ -24965,8 +25996,10 @@ export const optionSParagonBarbarian = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_108", "barbarian_10_119"],
         },
         {
@@ -24975,6 +26008,8 @@ export const optionSParagonBarbarian = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
+
+
           activable_ids: ["barbarian_10_118", "barbarian_10_120"],
           bg: "magic",
         },
@@ -25010,8 +26045,10 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_10_112", "barbarian_10_123"],
         },
         {
@@ -25048,8 +26085,10 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: ["barbarian_10_124", "barbarian_10_126"],
         },
         {
@@ -25085,6 +26124,8 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+
+
           activable_ids: ["barbarian_10_127", "barbarian_10_129"],
           bg: "magic",
         },
@@ -25094,8 +26135,10 @@ export const optionSParagonBarbarian = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_10_128", "barbarian_10_130"],
         },
         {
@@ -25118,8 +26161,10 @@ export const optionSParagonBarbarian = [
           index: 19,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_10_117", "barbarian_10_130"],
         },
       ],
@@ -25130,6 +26175,8 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+
+
           activable_ids: ["barbarian_10_121", "barbarian_10_135"],
           bg: "magic",
         },
@@ -25139,8 +26186,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_124", "barbarian_10_137"],
         },
         {
@@ -25149,8 +26198,10 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_127", "barbarian_10_139"],
         },
       ],
@@ -25175,8 +26226,10 @@ export const optionSParagonBarbarian = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_142", "barbarian_10_135"],
         },
         {
@@ -25185,6 +26238,8 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+
+
           activable_ids: ["barbarian_10_133", "barbarian_10_144"],
           bg: "magic",
         },
@@ -25194,8 +26249,10 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_10_146", "barbarian_10_139"],
         },
         {
@@ -25218,8 +26275,10 @@ export const optionSParagonBarbarian = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/int_active.png",
+
           label: "Nœud normal",
           options: ["5 Intelligence"],
+
           activable_ids: ["barbarian_10_147", "barbarian_10_139"],
         },
       ],
@@ -25258,6 +26317,8 @@ export const optionSParagonBarbarian = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/ResistanceLightning_active.png",
+
+
           activable_ids: ["barbarian_10_152", "barbarian_10_144"],
           bg: "rare",
         },
@@ -25281,8 +26342,10 @@ export const optionSParagonBarbarian = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_10_144", "barbarian_10_146"],
         },
         {
@@ -25319,8 +26382,10 @@ export const optionSParagonBarbarian = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/will_active.png",
+
           label: "Nœud normal",
           options: ["+5 volonte"],
+
           activable_ids: ["barbarian_10_157", "barbarian_10_147"],
         },
       ],
@@ -25359,6 +26424,8 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/ResistanceLightning_active.png",
+
+
           activable_ids: ["barbarian_10_150", "barbarian_10_152"],
           bg: "magic",
         },
@@ -25394,8 +26461,10 @@ export const optionSParagonBarbarian = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_146", "barbarian_10_155"],
         },
         {
@@ -25449,8 +26518,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_10_149", "barbarian_10_163"],
         },
         {
@@ -25460,7 +26531,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/str_active.png",
           label: "Nœud normal",
+
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_153", "barbarian_10_167"],
         },
         {
@@ -25469,8 +26542,10 @@ export const optionSParagonBarbarian = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_155", "barbarian_10_161"],
         },
         {
@@ -25493,6 +26568,8 @@ export const optionSParagonBarbarian = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/barbarian.png",
+
+
           activable_ids: ["barbarian_10_157", "barbarian_10_161"],
           bg: "rare",
         },
@@ -25576,8 +26653,10 @@ export const optionSParagonBarbarian = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Str_active.png",
+
           label: "Nœud normal",
           options: ["+5 Force"],
+
           activable_ids: ["barbarian_10_163", "barbarian_10_169"],
         },
         {
@@ -25624,8 +26703,10 @@ export const optionSParagonBarbarian = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/dex_active.png",
+
           label: "Nœud normal",
           options: ["5 Dextérité"],
+
           activable_ids: ["barbarian_10_167", "barbarian_10_171"],
         },
       ],
