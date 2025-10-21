@@ -147,6 +147,7 @@ export default function CardParagonHover({ item, size = 30 }) {
                 className={`w-full z-0`}
                 alt="logo"
               />
+              
             </div>
           ) : (
             <img
@@ -178,19 +179,8 @@ export default function CardParagonHover({ item, size = 30 }) {
                 <div className="flex flex-col items-start">
                   <span className="font-bold">{item.label}</span>
                   <span className="font-bold">{item.secondLabel}</span>
-                  {/* Display associated glyph labels for non-glyph-socket nodes */}
-                  {selectedGlyphs.length > 0 && !item.is_glyph_socket && (
-                    <div>
-                      <span className="font-bold text-yellow-600">
-                        Associated Glyphs:
-                      </span>
-                      {selectedGlyphs.map((glyph, index) => (
-                        <span key={index} className="block text-sm">
-                          {glyph?.label || "Unknown Glyph"}
-                        </span>
-                      ))}
-                    </div>
-                  )}
+                 
+                  
                 </div>
               </div>
               <ul className="px-3 my-2">
