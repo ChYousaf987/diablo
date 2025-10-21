@@ -51,9 +51,20 @@ const slice = createSlice({
             ...node,
             active: node.active || false,
             is_glyph_socket:
-              node.id === `${category}_1_23` || node.id === `${category}_2_173`,
+              node.id === `${category}_1_23` ||
+              node.id === `${category}_2_173` ||
+              node.id === `${category}_3_145` ||
+              node.id === `${category}_4_79` ||
+              node.id === `${category}_5_37` ||
+              node.id === `${category}_6_133` ||
+              node.id === `${category}_7_39` ||
+              node.id === `${category}_8_41` ||
+              node.id === `${category}_9_118` ||
+              node.id === `${category}_10_38`,
             glyph_id: node.is_glyph_socket ? node.glyph_id || null : null,
-            glyph_ids: node.glyph_ids || (node.glyph_id && !node.is_glyph_socket ? [node.glyph_id] : []),
+            glyph_ids:
+              node.glyph_ids ||
+              (node.glyph_id && !node.is_glyph_socket ? [node.glyph_id] : []),
           }))
         ),
       })
@@ -107,7 +118,11 @@ const slice = createSlice({
                   node.id === `${category}_1_23` ||
                   node.id === `${category}_2_173`,
                 glyph_id: node.is_glyph_socket ? node.glyph_id || null : null,
-                glyph_ids: node.glyph_ids || (node.glyph_id && !node.is_glyph_socket ? [node.glyph_id] : []),
+                glyph_ids:
+                  node.glyph_ids ||
+                  (node.glyph_id && !node.is_glyph_socket
+                    ? [node.glyph_id]
+                    : []),
               }))
             ),
           })
@@ -199,7 +214,9 @@ const slice = createSlice({
                 node.id === `${newCategory}_1_23` ||
                 node.id === `${newCategory}_2_173`,
               glyph_id: node.is_glyph_socket ? node.glyph_id || null : null,
-              glyph_ids: node.glyph_ids || (node.glyph_id && !node.is_glyph_socket ? [node.glyph_id] : []),
+              glyph_ids:
+                node.glyph_ids ||
+                (node.glyph_id && !node.is_glyph_socket ? [node.glyph_id] : []),
             }))
           ),
         })
@@ -258,7 +275,11 @@ const slice = createSlice({
                   node.id === `${newCategory}_1_23` ||
                   node.id === `${newCategory}_2_173`,
                 glyph_id: node.is_glyph_socket ? node.glyph_id || null : null,
-                glyph_ids: node.glyph_ids || (node.glyph_id && !node.is_glyph_socket ? [node.glyph_id] : []),
+                glyph_ids:
+                  node.glyph_ids ||
+                  (node.glyph_id && !node.is_glyph_socket
+                    ? [node.glyph_id]
+                    : []),
               }))
             ),
           })),
@@ -508,7 +529,11 @@ const slice = createSlice({
                 if (node && node.id === node_id) {
                   return {
                     ...node,
-                    glyph_id: node.is_glyph_socket ? (glyph_ids.length > 0 ? glyph_ids[0] : null) : null,
+                    glyph_id: node.is_glyph_socket
+                      ? glyph_ids.length > 0
+                        ? glyph_ids[0]
+                        : null
+                      : null,
                     glyph_ids: node.is_glyph_socket ? [] : glyph_ids,
                   };
                 }
@@ -564,13 +589,25 @@ const slice = createSlice({
                       ? {
                           ...node,
                           active: update.active,
-                          glyph_id: update.is_glyph_socket ? update.glyph_id || null : null,
-                          glyph_ids: update.glyph_ids || (update.glyph_id && !update.is_glyph_socket ? [update.glyph_id] : []),
+                          glyph_id: update.is_glyph_socket
+                            ? update.glyph_id || null
+                            : null,
+                          glyph_ids:
+                            update.glyph_ids ||
+                            (update.glyph_id && !update.is_glyph_socket
+                              ? [update.glyph_id]
+                              : []),
                         }
                       : {
                           ...node,
-                          glyph_id: node.is_glyph_socket ? node.glyph_id || null : null,
-                          glyph_ids: node.glyph_ids || (node.glyph_id && !node.is_glyph_socket ? [node.glyph_id] : []),
+                          glyph_id: node.is_glyph_socket
+                            ? node.glyph_id || null
+                            : null,
+                          glyph_ids:
+                            node.glyph_ids ||
+                            (node.glyph_id && !node.is_glyph_socket
+                              ? [node.glyph_id]
+                              : []),
                         };
                   })
                 ),
@@ -586,7 +623,11 @@ const slice = createSlice({
                     node.id === `${build.category}_1_23` ||
                     node.id === `${build.category}_2_173`,
                   glyph_id: node.is_glyph_socket ? node.glyph_id || null : null,
-                  glyph_ids: node.glyph_ids || (node.glyph_id && !node.is_glyph_socket ? [node.glyph_id] : []),
+                  glyph_ids:
+                    node.glyph_ids ||
+                    (node.glyph_id && !node.is_glyph_socket
+                      ? [node.glyph_id]
+                      : []),
                 }))
               ),
             }));
@@ -683,7 +724,11 @@ const slice = createSlice({
                   node.id === `${build.category}_1_23` ||
                   node.id === `${build.category}_2_173`,
                 glyph_id: node.is_glyph_socket ? node.glyph_id || null : null,
-                glyph_ids: node.glyph_ids || (node.glyph_id && !node.is_glyph_socket ? [node.glyph_id] : []),
+                glyph_ids:
+                  node.glyph_ids ||
+                  (node.glyph_id && !node.is_glyph_socket
+                    ? [node.glyph_id]
+                    : []),
               }))
             ),
           })),
