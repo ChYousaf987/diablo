@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   HoverCard,
   HoverCardContent,
@@ -18,7 +18,7 @@ export default function CardParagonHover({ item, size = 30 }) {
   const paragon_builds = useAppSelector(selectParagonBuilds);
   const glyphs = useAppSelector(selectGlyphs);
 
-  // Extract board number from item.id (assuming item.id is like "barbarian_X_Y")
+  // Extract board number from item.id
   const boardNumber =
     item.id && typeof item.id === "string" && item.id.includes("_")
       ? parseInt(item.id.split("_")[1], 10)
@@ -27,11 +27,11 @@ export default function CardParagonHover({ item, size = 30 }) {
   // Dynamic prefix from item.id
   const prefix = item.id ? item.id.split("_")[0] : "barbarian";
 
-  // Shared socket numbers per board (adjust if class-specific)
+  // Shared socket numbers per board
   const socketNumbers = {
     1: 23,
     2: 173,
-    3: 145, // Fixed typo
+    3: 145,
     4: 79,
     5: 37,
     6: 133,
@@ -39,25 +39,27 @@ export default function CardParagonHover({ item, size = 30 }) {
     8: 41,
     9: 118,
     10: 38,
-    // Add more boards as needed
   };
 
   // Dynamic glyph socket ID
   const socketNum = socketNumbers[boardNumber] || 23;
   const glyphSocketId = `${prefix}_${boardNumber}_${socketNum}`;
 
-  // Find the glyph socket node for the current board (dynamic)
+  // Find the glyph socket node for the current board
   const currentBoard = paragon_builds.find((board) => board.id === boardNumber);
   const glyphSocketNode = currentBoard?.bord
     .flat()
     .find((node) => node && node.id === glyphSocketId);
   const selectedGlyphId = glyphSocketNode?.glyph_id;
 
-  // Find the glyph assigned to this node, if any (for glyph sockets)
-  const selectedGlyph =
-    item.is_glyph_socket && item.glyph_id
-      ? glyphs.find((glyph) => glyph.id === item.glyph_id)
-      : null;
+  // Find glyphs assigned to this node
+  const selectedGlyphs = item.is_glyph_socket
+    ? item.glyph_id
+      ? [glyphs.find((glyph) => glyph.id === item.glyph_id)]
+      : []
+    : (item.glyph_ids || [])
+        .map((id) => glyphs.find((glyph) => glyph.id === id))
+        .filter(Boolean);
 
   const filterStyle =
     item.link || item.active ? "grayscale(0%)" : "grayscale(100%)";
@@ -95,19 +97,16 @@ export default function CardParagonHover({ item, size = 30 }) {
 
   if (item.is_glyph_socket) {
     if (item.glyph_id !== undefined && item.glyph_id !== null) {
-      highlightClass = " shadow-lg hover:scale-105 transition-all";
-      bgClass = ""; // Red background for glyph socket with glyph
+      highlightClass = "shadow-lg hover:scale-105 transition-all";
+      bgClass = "";
     } else {
       highlightClass =
-        " bg-opacity-30 shadow-lg hover:bg-opacity-50 hover:scale-105 transition-all";
+        "bg-opacity-30 shadow-lg hover:bg-opacity-50 hover:scale-105 transition-all";
     }
   } else {
-    // Apply green background to nodes with matching glyph_id
-    if (
-      item.glyph_id !== undefined &&
-      item.glyph_id !== null &&
-      item.glyph_id === selectedGlyphId
-    ) {
+    // Highlight if any glyph_id in glyph_ids matches selectedGlyphId
+    const hasMatchingGlyphId = item.glyph_ids?.includes(selectedGlyphId);
+    if (hasMatchingGlyphId) {
       highlightClass = "green shadow-green-500/50";
       bgClass = "card-board-green-bg";
     } else {
@@ -139,15 +138,24 @@ export default function CardParagonHover({ item, size = 30 }) {
               } w-full h-full opacity-70 hover:opacity-100 cursor-pointer`}
             >
               <img
-                src={selectedGlyph?.image || item.image}
+                src={
+                  item.is_glyph_socket && selectedGlyphs[0]?.image
+                    ? selectedGlyphs[0].image
+                    : item.image
+                }
                 style={{ filter: filterStyle }}
                 className={`w-full z-0`}
                 alt="logo"
               />
+              
             </div>
           ) : (
             <img
-              src={selectedGlyph?.image || item.image}
+              src={
+                item.is_glyph_socket && selectedGlyphs[0]?.image
+                  ? selectedGlyphs[0].image
+                  : item.image
+              }
               className={`w-full z-0 cursor-pointer`}
               alt="logo"
             />
@@ -158,7 +166,11 @@ export default function CardParagonHover({ item, size = 30 }) {
             <div>
               <div className="flex justify-center items-center gap-3 border-b-[.5px] py-2">
                 <Image
-                  src={selectedGlyph?.image || item.image}
+                  src={
+                    item.is_glyph_socket && selectedGlyphs[0]?.image
+                      ? selectedGlyphs[0].image
+                      : item.image
+                  }
                   className="transition-all bg-[#1f2025] hover:scale-105 rounded-sm"
                   alt="logo"
                   width={40}
@@ -167,6 +179,8 @@ export default function CardParagonHover({ item, size = 30 }) {
                 <div className="flex flex-col items-start">
                   <span className="font-bold">{item.label}</span>
                   <span className="font-bold">{item.secondLabel}</span>
+                 
+                  
                 </div>
               </div>
               <ul className="px-3 my-2">

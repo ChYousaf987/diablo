@@ -22,15 +22,15 @@ const ParagonBoard = ({ item, style }) => {
       ? parseInt(item.id.split("_")[1], 10)
       : 1;
 
-  // Extract prefix dynamically from the first available bord.id (assumes consistent prefix per board)
+  // Extract prefix dynamically from the first available bord.id
   const firstNodeId = item.bord.flat().find((node) => node)?.id;
   const prefix = firstNodeId ? firstNodeId.split("_")[0] : "barbarian";
 
-  // Shared socket numbers per board (adjust if class-specific)
+  // Shared socket numbers per board
   const socketNumbers = {
     1: 23,
     2: 173,
-    3: 145, // Fixed typo
+    3: 145,
     4: 79,
     5: 37,
     6: 133,
@@ -44,7 +44,7 @@ const ParagonBoard = ({ item, style }) => {
   const socketNum = socketNumbers[boardNumber] || 23;
   const glyphSocketId = `${prefix}_${boardNumber}_${socketNum}`;
 
-  // Normalize item.id to match imagePositions keys (use prefix dynamically)
+  // Normalize item.id to match imagePositions keys
   const normalizedId =
     typeof item.id === "number"
       ? `${prefix}_${item.id}`
@@ -52,7 +52,7 @@ const ParagonBoard = ({ item, style }) => {
       ? item.id.toLowerCase()
       : `${prefix}_1`;
 
-  // Define image positions for each Paragon board (assuming shared; add per-class if needed)
+  // Define image positions for each Paragon board
   const imagePositions = {
     barbarian_1: { top: "-1%", left: "14.2%" },
     barbarian_2: { top: "27.7%", left: "23.7%" },
@@ -64,7 +64,6 @@ const ParagonBoard = ({ item, style }) => {
     barbarian_8: { top: "-5.64%", left: "38.2%" },
     barbarian_9: { top: "42%", left: "-9.8%" },
     barbarian_10: { top: "-5.6%", left: "-9.8%" },
-    // Add druid_*, rogue_*, etc. if positions differ
   };
 
   const imagePosition = imagePositions[normalizedId] || {
@@ -130,7 +129,7 @@ const ParagonBoard = ({ item, style }) => {
                   return <div key={`empty_${rowIndex}_${colIndex}`} />;
                 }
                 if (bord.link === true) {
-                  // Dynamic gate check: extract prefix from bord.id
+                  // Dynamic gate check
                   const gatePrefix = bord.id.split("_")[0];
                   if (bord.id === `${gatePrefix}_${boardNumber}_1`) {
                     return (
@@ -142,13 +141,14 @@ const ParagonBoard = ({ item, style }) => {
                       />
                     );
                   }
-                  // Glyph socket check (dynamic)
+                  // Glyph socket check
                   if (bord.is_glyph_socket || bord.id === glyphSocketId) {
                     const glyphItem = {
                       ...bord,
                       label: bord.label || "Glyph Socket",
                       is_glyph_socket: true,
                       glyph_id: bord.glyph_id || null,
+                      glyph_ids: [], // Glyph sockets use glyph_id, not glyph_ids
                     };
                     return (
                       <div className="relative" key={`glyph_${bord.id}`}>
@@ -171,7 +171,17 @@ const ParagonBoard = ({ item, style }) => {
                 return (
                   <CardParagonHover
                     key={`hover_${bord.id}`}
-                    item={{ ...bord, glyph_id: bord.glyph_id || null }}
+                    item={{
+                      ...bord,
+                      glyph_ids:
+                        bord.glyph_ids ||
+                        (bord.glyph_id && !bord.is_glyph_socket
+                          ? [bord.glyph_id]
+                          : []),
+                      glyph_id: bord.is_glyph_socket
+                        ? bord.glyph_id || null
+                        : null,
+                    }}
                     size={30}
                   />
                 );
