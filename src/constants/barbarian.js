@@ -5703,8 +5703,7 @@ export const optionSParagonBarbarian = [
           index: 10,
           link: true,
           image: "/paragon/barbarian/tile_bg_glyph.png",
-          label: "Glyph_id: 1,e de socket",
-          label: "Glyph_id: 4,e de socket",
+          label: "glyph socket",
           is_icon: true,
           activable_ids: ["barbarian_1_31", "barbarian_1_22", "barbarian_1_24"],
         },
@@ -7105,7 +7104,7 @@ export const optionSParagonBarbarian = [
       ],
       [
         {
-          id: "barbarian_2_203",
+          id: "barbarian_2_1",
           active: false,
           index: 0,
           direction: "left",
@@ -7270,7 +7269,7 @@ export const optionSParagonBarbarian = [
           options: ["+5 Force"],
         },
         {
-          id: "barbarian_2_204",
+          id: "barbarian_2_1",
           active: false,
           index: 20,
           direction: "right",

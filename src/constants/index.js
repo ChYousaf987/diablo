@@ -826,6 +826,432 @@ export const GemsOptions = [
   },
 ];
 
+
+
+export const itemState = [
+  {
+    image: "/gears/charge.png",
+    label: "Andariel's Visage",
+    description: "Unique Helm",
+    features: ["Unique", "Légendaire"],
+  },
+  {
+    image: "/gears/charge.png",
+    label: "Arme",
+    description: "Description de l'Arme",
+  },
+  {
+    image: "/gears/charge.png",
+    label: "Arme",
+    description: "Description de l'Arme",
+  },
+];
+
+export const itemStateFooter = [
+  {
+    image: "/gears/charge.png",
+    label: "Arme",
+    description: "Description de l'Arme",
+  },
+  {
+    image: "/gears/charge.png",
+    label: "Arme",
+    description: "Description de l'Arme",
+  },
+];
+
+export const skills = [
+  {
+    image: "/skill-tech/empty_skill.png",
+    parent_id: null,
+    skill_id: null,
+  },
+  {
+    image: "/skill-tech/empty_skill.png",
+    parent_id: null,
+    skill_id: null,
+  },
+  {
+    image: "/skill-tech/empty_skill.png",
+    parent_id: null,
+    skill_id: null,
+  },
+  {
+    image: "/skill-tech/empty_skill.png",
+    parent_id: null,
+    skill_id: null,
+  },
+  {
+    image: "/skill-tech/empty_skill.png",
+    parent_id: null,
+    skill_id: null,
+  },
+  {
+    image: "/skill-tech/empty_skill.png",
+    parent_id: null,
+    skill_id: null,
+  },
+];
+
+export const techniques = [
+  {
+    image: "/skill-tech/empty_skill.png",
+    option_id: null,
+  },
+];
+
+export const optiontechs = [
+  {
+    image: "/skill-tech/1h_axe.png",
+    id: 1,
+    label: "Expertise Hache à Une Main",
+    code: "Hache 1M",
+    details:
+      "+ [10.0%] de chance de coup critique contre les ennemis blessés. Double ce montant en utilisant deux haches.",
+  },
+  {
+    image: "/skill-tech/1h_axe.png",
+    id: 2,
+    label: "Expertise Hache à Une Main",
+    code: "Hache 1M",
+    details:
+      "+ [10.0%] de chance de coup critique contre les ennemis blessés. Double ce montant en utilisant deux haches.",
+  },
+  {
+    image: "/skill-tech/1h_axe.png",
+    id: 3,
+    label: "Expertise Hache à Une Main",
+    code: "Hache 1M",
+    details:
+      "+ [10.0%] de chance de coup critique contre les ennemis blessés. Double ce montant en utilisant deux haches.",
+  },
+  {
+    image: "/skill-tech/1h_axe.png",
+    id: 4,
+    label: "Expertise Hache à Une Main",
+    code: "Hache 1M",
+    details:
+      "+ [10.0%] de chance de coup critique contre les ennemis blessés. Double ce montant en utilisant deux haches.",
+  },
+  {
+    image: "/skill-tech/1h_axe.png",
+    id: 5,
+    label: "Expertise Hache à Une Main",
+    code: "Hache 1M",
+    details:
+      "+ [10.0%] de chance de coup critique contre les ennemis blessés. Double ce montant en utilisant deux haches.",
+  },
+  {
+    image: "/skill-tech/1h_axe.png",
+    id: 6,
+    label: "Expertise Hache à Une Main",
+    code: "Hache 1M",
+    details:
+      "+ [10.0%] de chance de coup critique contre les ennemis blessés. Double ce montant en utilisant deux haches.",
+  },
+];
+
+export const optionSkills = [
+  {
+    image: "/skill-tech/category_basic.png",
+    id: 1,
+    next_id: 2,
+    label: "Base",
+    top: "9.16945%",
+    left: "47.4826%",
+    options: [
+      {
+        id: 1,
+        image: "/skill-tech/bash.png",
+        label: "Coup",
+        details: [
+          "Génération de Furie : 15",
+          "Coup de Chance : 50% ",
+          "<span class='text-gray-500'>Frappez l'ennemi avec votre arme, infligeant <span class='text-yellow-500'>[33%]</span> de dégâts. Après avoir frappé les ennemis 4 fois, votre prochain Coup les étourdira pendant 1,25 secondes, passant à 2 secondes si vous utilisez une arme à deux mains.</span>",
+        ],
+        footer: "Dégâts Physiques",
+      },
+      {
+        id: 2,
+        image: "/skill-tech/flay.png",
+        label: "Écorcher",
+        details: [
+          "Génération de Furie : 15",
+          "Coup de Chance : 50% ",
+          "<span class='text-gray-500'>Écorchez l'ennemi, infligeant <span class='text-yellow-500'>[5%]</span> de dégâts et infligeant <span class='text-yellow-500'>[44%]</span> de dégâts de Saignement sur 5 secondes.</span>",
+        ],
+        footer: "Dégâts Physiques <br/> Nécessite une arme tranchante",
+      },
+      {
+        id: 3,
+        image: "/skill-tech/frenzy.png",
+        label: "Frénésie",
+        details: [
+          "Génération de Furie : 4",
+          "Coup de Chance : 30% ",
+          "<span class='text-gray-500'>Déchaînez une rafale rapide de coups, infligeant <span class='text-yellow-500'>[24%]</span> de dégâts avec chaque paire de coups.</span>",
+          "<span class='text-gray-500'>Si Frénésie touche un ennemi, sa Vitesse d'Attaque est augmentée de +20% pendant 3 secondes, jusqu'à +60%.</span>",
+        ],
+        footer: "Dégâts Physiques <br/> Nécessite des armes doubles",
+      },
+    ],
+  },
+  {
+    image: "/skill-tech/category_core.png",
+    id: 2,
+    next_id: 3,
+    label: "Principal",
+    top: "19.7813%",
+    left: "24.2791%",
+    options: [
+      {
+        id: 1,
+        image: "/skill-tech/chain_lightning.png",
+        label: "Chaîne d'Éclairs",
+        details: [
+          "Coût en Mana : 15",
+          "Coup de Chance : 50% ",
+          "<span class='text-gray-500'>Lancez un éclair qui rebondit entre les ennemis proches, infligeant <span class='text-yellow-500'>[33%]</span> de dégâts.</span>",
+        ],
+        footer: "Dégâts de Foudre",
+      },
+      {
+        id: 2,
+        image: "/skill-tech/charged_bolts.png",
+        label: "Éclairs Chargés",
+        details: [
+          "Coût en Mana : 15",
+          "Coup de Chance : 50% ",
+          "<span class='text-gray-500'>Tirez des éclairs chargés qui se déplacent aléatoirement, infligeant <span class='text-yellow-500'>[5%]</span> de dégâts chacun.</span>",
+        ],
+        footer: "Dégâts de Foudre",
+      },
+      {
+        id: 3,
+        image: "/skill-tech/fireball.png",
+        label: "Boule de Feu",
+        details: [
+          "Coût en Mana : 20",
+          "Coup de Chance : 30% ",
+          "<span class='text-gray-500'>Lancez une boule de feu qui explose à l'impact, infligeant <span class='text-yellow-500'>[24%]</span> de dégâts dans la zone.</span>",
+        ],
+        footer: "Dégâts de Feu",
+      },
+      {
+        id: 4,
+        image: "/skill-tech/frozen_orb.png",
+        label: "Orbe Gelé",
+        details: [
+          "Coût en Mana : 25",
+          "Coup de Chance : 40% ",
+          "<span class='text-gray-500'>Créez un orbe de glace qui explose en éclats glacés, infligeant <span class='text-yellow-500'>[30%]</span> de dégâts.</span>",
+        ],
+        footer: "Dégâts de Glace",
+      },
+      {
+        id: 5,
+        image: "/skill-tech/ice_shards.png",
+        label: "Éclats de Glace",
+        details: [
+          "Coût en Mana : 15",
+          "Coup de Chance : 33% ",
+          "<span class='text-gray-500'>Lancez des éclats de glace acérés, infligeant <span class='text-yellow-500'>[18%]</span> de dégâts et ralentissant les ennemis.</span>",
+        ],
+        footer: "Dégâts de Glace",
+      },
+      {
+        id: 6,
+        image: "/skill-tech/incinerate.png",
+        label: "Incinérer",
+        details: [
+          "Coût en Mana : 10 par seconde",
+          "Coup de Chance : 20% ",
+          "<span class='text-gray-500'>Canalisez un jet de flammes, infligeant <span class='text-yellow-500'>[40%]</span> de dégâts par seconde aux ennemis touchés.</span>",
+        ],
+        footer: "Dégâts de Feu",
+      },
+    ],
+  },
+  {
+    image: "/skill-tech/category_defensive.png",
+    id: 3,
+    next_id: null,
+    label: "Défensif",
+    top: "35.2723%",
+    left: "57.3472%",
+    options: [
+      {
+        id: 1,
+        image: "/skill-tech/bash.png",
+        label: "Coup",
+        details: [
+          "Génération de Furie : 15",
+          "Coup de Chance : 50% ",
+          "<span class='text-gray-500'>Frappez l'ennemi avec votre arme, infligeant <span class='text-yellow-500'>[33%]</span> de dégâts. Après avoir frappé les ennemis 4 fois, votre prochain Coup les étourdira pendant 1,25 secondes, passant à 2 secondes si vous utilisez une arme à deux mains.</span>",
+        ],
+        footer: "Dégâts Physiques",
+      },
+      {
+        id: 2,
+        image: "/skill-tech/flay.png",
+        label: "Écorcher",
+        details: [
+          "Génération de Furie : 15",
+          "Coup de Chance : 50% ",
+          "<span class='text-gray-500'>Écorchez l'ennemi, infligeant <span class='text-yellow-500'>[5%]</span> de dégâts et infligeant <span class='text-yellow-500'>[44%]</span> de dégâts de Saignement sur 5 secondes.</span>",
+        ],
+        footer: "Dégâts Physiques <br/> Nécessite une arme tranchante",
+      },
+      {
+        id: 3,
+        image: "/skill-tech/frenzy.png",
+        label: "Frénésie",
+        details: [
+          "Génération de Furie : 4",
+          "Coup de Chance : 30% ",
+          "<span class='text-gray-500'>Déchaînez une rafale rapide de coups, infligeant <span class='text-yellow-500'>[24%]</span> de dégâts avec chaque paire de coups.</span>",
+          "<span class='text-gray-500'>Si Frénésie touche un ennemi, sa Vitesse d'Attaque est augmentée de +20% pendant 3 secondes, jusqu'à +60%.</span>",
+        ],
+        footer: "Dégâts Physiques <br/> Nécessite des armes doubles",
+      },
+    ],
+  },
+];
+
+export const levelRanges = [
+  { min: 0, max: 2, index: 0 },
+  { min: 2, max: 6, index: 1 },
+  { min: 6, max: 11, index: 2 },
+  { min: 11, max: 16, index: 3 },
+  { min: 16, max: 23, index: 4 },
+  { min: 23, max: 33, index: 5 },
+];
+
+export const bossPowers = [
+  { id: 1, label: "Les serres de Allek", image: "/gears/charge.png" },
+  { id: 2, label: "Skull enflammé d'Andariel", image: "/gears/charge.png" },
+  { id: 3, label: "Ashavas Poison Breath", image: "/gears/charge.png" },
+  { id: 4, label: "Minerai explosif de l'avarice", image: "/gears/charge.png" },
+  {
+    id: 5,
+    label: "Bête dans le grésil de la glace",
+    image: "/gears/charge.png",
+  },
+  { id: 6, label: "Traing de Beastmaster", image: "/gears/charge.png" },
+  {
+    id: 7,
+    label: "Le leurre de cristal de Belial",
+    image: "/gears/charge.png",
+  },
+  {
+    id: 8,
+    label: "Les faisceaux oculaires de Belial",
+    image: "/gears/charge.png",
+  },
+  { id: 9, label: "Sabotage du chantage", image: "/gears/charge.png" },
+  { id: 10, label: "Duriel's Bendow", image: "/gears/charge.png" },
+  {
+    id: 11,
+    label: "La perturbation de Fair Reaper",
+    image: "/gears/charge.png",
+  },
+  { id: 12, label: "Square de Grigoire", image: "/gears/charge.png" },
+  {
+    id: 13,
+    label: "Harbinger de la volée de Haterd",
+    image: "/gears/charge.png",
+  },
+  {
+    id: 14,
+    label: "La hâte de l'étreinte de Haterd",
+    image: "/gears/charge.png",
+  },
+  { id: 15, label: "Les étincelles de Kirma", image: "/gears/charge.png" },
+  {
+    id: 16,
+    label: "Le vent de la haine de Lilith",
+    image: "/gears/charge.png",
+  },
+  { id: 17, label: "Pool de sang de Lord Zir", image: "/gears/charge.png" },
+  {
+    id: 18,
+    label: "Oeil de tireur d'élite hors-la-loi",
+    image: "/gears/charge.png",
+  },
+  { id: 19, label: "Les flammes de Sinerat", image: "/gears/charge.png" },
+  { id: 20, label: "Toxines de Slerg", image: "/gears/charge.png" },
+  { id: 21, label: "Rage de Torusk", image: "/gears/charge.png" },
+  { id: 22, label: "Bombes lobées d'Urivar", image: "/gears/charge.png" },
+  { id: 23, label: "La vie de Varshan vole", image: "/gears/charge.png" },
+  {
+    id: 24,
+    label: "Poutre thoracique de Deat errant",
+    image: "/gears/charge.png",
+  },
+];
+
+export const bossPowers9 = [
+  { id: 1, label: "Bottled Wind", image: "/gears/bot.png" },
+  { id: 2, label: "Invigorating Helix", image: "/gears/invi.png" },
+  { id: 3, label: "Jagged Bramble", image: "/gears/jag.png" },
+  { id: 4, label: "Luminous Gem", image: "/gears/lumi.png" },
+  { id: 5, label: "Murky Essence", image: "/gears/mur.png" },
+  { id: 6, label: "Reactive Ooze", image: "/gears/rea.png" },
+  { id: 7, label: "Shifting Powder", image: "/gears/shif.png" },
+  { id: 8, label: "Tendrilous Bundle", image: "/gears/tend.png" },
+  { id: 9, label: "Thunderous Particle", image: "/gears/tra.png" },
+  { id: 10, label: "Volatile Spark", image: "/gears/vola.png" },
+  { id: 11, label: "Potent Alloy", image: "/gears/fras.png" },
+  { id: 12, label: "Sapping Crux", image: "/gears/pot.png" },
+  { id: 13, label: "Sharpening Gizmo", image: "/gears/sap.png" },
+  { id: 14, label: "Bloody Charm", image: "/gears/sha.png" },
+  { id: 15, label: "Floaty Bobble", image: "/gears/blo.png" },
+  { id: 16, label: "Frigid Heart", image: "/gears/floa.png" },
+  { id: 17, label: "Nightmare Orb", image: "/gears/fri.png" },
+  { id: 18, label: "Pressurized Steam", image: "/gears/nig.png" },
+];
+
+export const bossPowers9main = [
+  { id: 1, label: "Corrosive Vapor", image: "/gears/vapor.png" },
+  { id: 2, label: "Glacial Nimbus", image: "/gears/nimbus.png" },
+  { id: 3, label: "Nebulous Extract", image: "/gears/extract.png" },
+  { id: 4, label: "Smoldering Ember", image: "/gears/ember.png" },
+  { id: 5, label: "Thunderous Particle", image: "/gears/particle5.png" },
+];
+
+export const catalystPowers = [
+  {
+    id: 1,
+    label: "Astral Pillar",
+    image: "/gears/astr.png",
+    description: "Increases Strength by 10%",
+  },
+  {
+    id: 2,
+    label: "Celestial Surge",
+    image: "/gears/celes.png",
+    description: "Increases Agility by 10%",
+  },
+  {
+    id: 3,
+    label: "Cosmic Anomaly",
+    image: "/gears/cos.png",
+    description: "Increases Intelligence by 10%",
+  },
+  {
+    id: 4,
+    label: "Disintegrate",
+    image: "/gears/dis.png",
+    description: "Increases Intelligence by 10%",
+  },
+  {
+    id: 5,
+    label: "Propulsion",
+    image: "/gears/pro.png",
+    description: "Increases Intelligence by 10%",
+  },
+];
+
 export const aspectMap = {
   barbarian: {
     Season8: {
@@ -1008,7 +1434,7 @@ export const aspectMap = {
         },
         {
           id: 23,
-         image: "/gears/godslayer_crown.png",
+          image: "/gears/godslayer_crown.png",
           label: "Couronne du Tueur de Dieux",
           description: "Casque Unique",
           category: "Unique",
@@ -1016,7 +1442,7 @@ export const aspectMap = {
         },
         {
           id: 24,
-           image: "/gears/harlequin_crest.png",
+          image: "/gears/harlequin_crest.png",
           label: "Crête d'Harlequin",
           description: "Casque Unique",
           category: "Unique",
@@ -5432,7 +5858,7 @@ export const aspectMap = {
         },
       ],
     },
-   Season9: {
+    Season9: {
       left: [
         {
           id: 1,
@@ -5612,7 +6038,7 @@ export const aspectMap = {
         },
         {
           id: 23,
-         image: "/gears/godslayer_crown.png",
+          image: "/gears/godslayer_crown.png",
           label: "Couronne du Tueur de Dieux",
           description: "Casque Unique",
           category: "Unique",
@@ -5620,7 +6046,7 @@ export const aspectMap = {
         },
         {
           id: 24,
-           image: "/gears/harlequin_crest.png",
+          image: "/gears/harlequin_crest.png",
           label: "Crête d'Harlequin",
           description: "Casque Unique",
           category: "Unique",
@@ -53270,7 +53696,7 @@ export const aspectMap = {
       ],
     },
   },
-}; 
+};
 
 export const aspectspower = [
   { id: 1, label: "Amethyst", image: "/gears/grand.png" },
@@ -53309,429 +53735,5 @@ export const aspectsFilter = [
   },
   {
     label: "Utilitaire",
-  },
-];
-
-export const itemState = [
-  {
-    image: "/gears/charge.png",
-    label: "Andariel's Visage",
-    description: "Unique Helm",
-    features: ["Unique", "Légendaire"],
-  },
-  {
-    image: "/gears/charge.png",
-    label: "Arme",
-    description: "Description de l'Arme",
-  },
-  {
-    image: "/gears/charge.png",
-    label: "Arme",
-    description: "Description de l'Arme",
-  },
-];
-
-export const itemStateFooter = [
-  {
-    image: "/gears/charge.png",
-    label: "Arme",
-    description: "Description de l'Arme",
-  },
-  {
-    image: "/gears/charge.png",
-    label: "Arme",
-    description: "Description de l'Arme",
-  },
-];
-
-export const skills = [
-  {
-    image: "/skill-tech/empty_skill.png",
-    parent_id: null,
-    skill_id: null,
-  },
-  {
-    image: "/skill-tech/empty_skill.png",
-    parent_id: null,
-    skill_id: null,
-  },
-  {
-    image: "/skill-tech/empty_skill.png",
-    parent_id: null,
-    skill_id: null,
-  },
-  {
-    image: "/skill-tech/empty_skill.png",
-    parent_id: null,
-    skill_id: null,
-  },
-  {
-    image: "/skill-tech/empty_skill.png",
-    parent_id: null,
-    skill_id: null,
-  },
-  {
-    image: "/skill-tech/empty_skill.png",
-    parent_id: null,
-    skill_id: null,
-  },
-];
-
-export const techniques = [
-  {
-    image: "/skill-tech/empty_skill.png",
-    option_id: null,
-  },
-];
-
-export const optiontechs = [
-  {
-    image: "/skill-tech/1h_axe.png",
-    id: 1,
-    label: "Expertise Hache à Une Main",
-    code: "Hache 1M",
-    details:
-      "+ [10.0%] de chance de coup critique contre les ennemis blessés. Double ce montant en utilisant deux haches.",
-  },
-  {
-    image: "/skill-tech/1h_axe.png",
-    id: 2,
-    label: "Expertise Hache à Une Main",
-    code: "Hache 1M",
-    details:
-      "+ [10.0%] de chance de coup critique contre les ennemis blessés. Double ce montant en utilisant deux haches.",
-  },
-  {
-    image: "/skill-tech/1h_axe.png",
-    id: 3,
-    label: "Expertise Hache à Une Main",
-    code: "Hache 1M",
-    details:
-      "+ [10.0%] de chance de coup critique contre les ennemis blessés. Double ce montant en utilisant deux haches.",
-  },
-  {
-    image: "/skill-tech/1h_axe.png",
-    id: 4,
-    label: "Expertise Hache à Une Main",
-    code: "Hache 1M",
-    details:
-      "+ [10.0%] de chance de coup critique contre les ennemis blessés. Double ce montant en utilisant deux haches.",
-  },
-  {
-    image: "/skill-tech/1h_axe.png",
-    id: 5,
-    label: "Expertise Hache à Une Main",
-    code: "Hache 1M",
-    details:
-      "+ [10.0%] de chance de coup critique contre les ennemis blessés. Double ce montant en utilisant deux haches.",
-  },
-  {
-    image: "/skill-tech/1h_axe.png",
-    id: 6,
-    label: "Expertise Hache à Une Main",
-    code: "Hache 1M",
-    details:
-      "+ [10.0%] de chance de coup critique contre les ennemis blessés. Double ce montant en utilisant deux haches.",
-  },
-];
-
-export const optionSkills = [
-  {
-    image: "/skill-tech/category_basic.png",
-    id: 1,
-    next_id: 2,
-    label: "Base",
-    top: "9.16945%",
-    left: "47.4826%",
-    options: [
-      {
-        id: 1,
-        image: "/skill-tech/bash.png",
-        label: "Coup",
-        details: [
-          "Génération de Furie : 15",
-          "Coup de Chance : 50% ",
-          "<span class='text-gray-500'>Frappez l'ennemi avec votre arme, infligeant <span class='text-yellow-500'>[33%]</span> de dégâts. Après avoir frappé les ennemis 4 fois, votre prochain Coup les étourdira pendant 1,25 secondes, passant à 2 secondes si vous utilisez une arme à deux mains.</span>",
-        ],
-        footer: "Dégâts Physiques",
-      },
-      {
-        id: 2,
-        image: "/skill-tech/flay.png",
-        label: "Écorcher",
-        details: [
-          "Génération de Furie : 15",
-          "Coup de Chance : 50% ",
-          "<span class='text-gray-500'>Écorchez l'ennemi, infligeant <span class='text-yellow-500'>[5%]</span> de dégâts et infligeant <span class='text-yellow-500'>[44%]</span> de dégâts de Saignement sur 5 secondes.</span>",
-        ],
-        footer: "Dégâts Physiques <br/> Nécessite une arme tranchante",
-      },
-      {
-        id: 3,
-        image: "/skill-tech/frenzy.png",
-        label: "Frénésie",
-        details: [
-          "Génération de Furie : 4",
-          "Coup de Chance : 30% ",
-          "<span class='text-gray-500'>Déchaînez une rafale rapide de coups, infligeant <span class='text-yellow-500'>[24%]</span> de dégâts avec chaque paire de coups.</span>",
-          "<span class='text-gray-500'>Si Frénésie touche un ennemi, sa Vitesse d'Attaque est augmentée de +20% pendant 3 secondes, jusqu'à +60%.</span>",
-        ],
-        footer: "Dégâts Physiques <br/> Nécessite des armes doubles",
-      },
-    ],
-  },
-  {
-    image: "/skill-tech/category_core.png",
-    id: 2,
-    next_id: 3,
-    label: "Principal",
-    top: "19.7813%",
-    left: "24.2791%",
-    options: [
-      {
-        id: 1,
-        image: "/skill-tech/chain_lightning.png",
-        label: "Chaîne d'Éclairs",
-        details: [
-          "Coût en Mana : 15",
-          "Coup de Chance : 50% ",
-          "<span class='text-gray-500'>Lancez un éclair qui rebondit entre les ennemis proches, infligeant <span class='text-yellow-500'>[33%]</span> de dégâts.</span>",
-        ],
-        footer: "Dégâts de Foudre",
-      },
-      {
-        id: 2,
-        image: "/skill-tech/charged_bolts.png",
-        label: "Éclairs Chargés",
-        details: [
-          "Coût en Mana : 15",
-          "Coup de Chance : 50% ",
-          "<span class='text-gray-500'>Tirez des éclairs chargés qui se déplacent aléatoirement, infligeant <span class='text-yellow-500'>[5%]</span> de dégâts chacun.</span>",
-        ],
-        footer: "Dégâts de Foudre",
-      },
-      {
-        id: 3,
-        image: "/skill-tech/fireball.png",
-        label: "Boule de Feu",
-        details: [
-          "Coût en Mana : 20",
-          "Coup de Chance : 30% ",
-          "<span class='text-gray-500'>Lancez une boule de feu qui explose à l'impact, infligeant <span class='text-yellow-500'>[24%]</span> de dégâts dans la zone.</span>",
-        ],
-        footer: "Dégâts de Feu",
-      },
-      {
-        id: 4,
-        image: "/skill-tech/frozen_orb.png",
-        label: "Orbe Gelé",
-        details: [
-          "Coût en Mana : 25",
-          "Coup de Chance : 40% ",
-          "<span class='text-gray-500'>Créez un orbe de glace qui explose en éclats glacés, infligeant <span class='text-yellow-500'>[30%]</span> de dégâts.</span>",
-        ],
-        footer: "Dégâts de Glace",
-      },
-      {
-        id: 5,
-        image: "/skill-tech/ice_shards.png",
-        label: "Éclats de Glace",
-        details: [
-          "Coût en Mana : 15",
-          "Coup de Chance : 33% ",
-          "<span class='text-gray-500'>Lancez des éclats de glace acérés, infligeant <span class='text-yellow-500'>[18%]</span> de dégâts et ralentissant les ennemis.</span>",
-        ],
-        footer: "Dégâts de Glace",
-      },
-      {
-        id: 6,
-        image: "/skill-tech/incinerate.png",
-        label: "Incinérer",
-        details: [
-          "Coût en Mana : 10 par seconde",
-          "Coup de Chance : 20% ",
-          "<span class='text-gray-500'>Canalisez un jet de flammes, infligeant <span class='text-yellow-500'>[40%]</span> de dégâts par seconde aux ennemis touchés.</span>",
-        ],
-        footer: "Dégâts de Feu",
-      },
-    ],
-  },
-  {
-    image: "/skill-tech/category_defensive.png",
-    id: 3,
-    next_id: null,
-    label: "Défensif",
-    top: "35.2723%",
-    left: "57.3472%",
-    options: [
-      {
-        id: 1,
-        image: "/skill-tech/bash.png",
-        label: "Coup",
-        details: [
-          "Génération de Furie : 15",
-          "Coup de Chance : 50% ",
-          "<span class='text-gray-500'>Frappez l'ennemi avec votre arme, infligeant <span class='text-yellow-500'>[33%]</span> de dégâts. Après avoir frappé les ennemis 4 fois, votre prochain Coup les étourdira pendant 1,25 secondes, passant à 2 secondes si vous utilisez une arme à deux mains.</span>",
-        ],
-        footer: "Dégâts Physiques",
-      },
-      {
-        id: 2,
-        image: "/skill-tech/flay.png",
-        label: "Écorcher",
-        details: [
-          "Génération de Furie : 15",
-          "Coup de Chance : 50% ",
-          "<span class='text-gray-500'>Écorchez l'ennemi, infligeant <span class='text-yellow-500'>[5%]</span> de dégâts et infligeant <span class='text-yellow-500'>[44%]</span> de dégâts de Saignement sur 5 secondes.</span>",
-        ],
-        footer: "Dégâts Physiques <br/> Nécessite une arme tranchante",
-      },
-      {
-        id: 3,
-        image: "/skill-tech/frenzy.png",
-        label: "Frénésie",
-        details: [
-          "Génération de Furie : 4",
-          "Coup de Chance : 30% ",
-          "<span class='text-gray-500'>Déchaînez une rafale rapide de coups, infligeant <span class='text-yellow-500'>[24%]</span> de dégâts avec chaque paire de coups.</span>",
-          "<span class='text-gray-500'>Si Frénésie touche un ennemi, sa Vitesse d'Attaque est augmentée de +20% pendant 3 secondes, jusqu'à +60%.</span>",
-        ],
-        footer: "Dégâts Physiques <br/> Nécessite des armes doubles",
-      },
-    ],
-  },
-];
-
-export const levelRanges = [
-  { min: 0, max: 2, index: 0 },
-  { min: 2, max: 6, index: 1 },
-  { min: 6, max: 11, index: 2 },
-  { min: 11, max: 16, index: 3 },
-  { min: 16, max: 23, index: 4 },
-  { min: 23, max: 33, index: 5 },
-];
-
-export const bossPowers = [
-  { id: 1, label: "Les serres de Allek", image: "/gears/charge.png" },
-  { id: 2, label: "Skull enflammé d'Andariel", image: "/gears/charge.png" },
-  { id: 3, label: "Ashavas Poison Breath", image: "/gears/charge.png" },
-  { id: 4, label: "Minerai explosif de l'avarice", image: "/gears/charge.png" },
-  {
-    id: 5,
-    label: "Bête dans le grésil de la glace",
-    image: "/gears/charge.png",
-  },
-  { id: 6, label: "Traing de Beastmaster", image: "/gears/charge.png" },
-  {
-    id: 7,
-    label: "Le leurre de cristal de Belial",
-    image: "/gears/charge.png",
-  },
-  {
-    id: 8,
-    label: "Les faisceaux oculaires de Belial",
-    image: "/gears/charge.png",
-  },
-  { id: 9, label: "Sabotage du chantage", image: "/gears/charge.png" },
-  { id: 10, label: "Duriel's Bendow", image: "/gears/charge.png" },
-  {
-    id: 11,
-    label: "La perturbation de Fair Reaper",
-    image: "/gears/charge.png",
-  },
-  { id: 12, label: "Square de Grigoire", image: "/gears/charge.png" },
-  {
-    id: 13,
-    label: "Harbinger de la volée de Haterd",
-    image: "/gears/charge.png",
-  },
-  {
-    id: 14,
-    label: "La hâte de l'étreinte de Haterd",
-    image: "/gears/charge.png",
-  },
-  { id: 15, label: "Les étincelles de Kirma", image: "/gears/charge.png" },
-  {
-    id: 16,
-    label: "Le vent de la haine de Lilith",
-    image: "/gears/charge.png",
-  },
-  { id: 17, label: "Pool de sang de Lord Zir", image: "/gears/charge.png" },
-  {
-    id: 18,
-    label: "Oeil de tireur d'élite hors-la-loi",
-    image: "/gears/charge.png",
-  },
-  { id: 19, label: "Les flammes de Sinerat", image: "/gears/charge.png" },
-  { id: 20, label: "Toxines de Slerg", image: "/gears/charge.png" },
-  { id: 21, label: "Rage de Torusk", image: "/gears/charge.png" },
-  { id: 22, label: "Bombes lobées d'Urivar", image: "/gears/charge.png" },
-  { id: 23, label: "La vie de Varshan vole", image: "/gears/charge.png" },
-  {
-    id: 24,
-    label: "Poutre thoracique de Deat errant",
-    image: "/gears/charge.png",
-  },
-];
-
-export const bossPowers9 = [
-  { id: 1, label: "Bottled Wind", image: "/gears/bot.png" },
-  { id: 2, label: "Invigorating Helix", image: "/gears/invi.png" },
-  { id: 3, label: "Jagged Bramble", image: "/gears/jag.png" },
-  { id: 4, label: "Luminous Gem", image: "/gears/lumi.png" },
-  { id: 5, label: "Murky Essence", image: "/gears/mur.png" },
-  { id: 6, label: "Reactive Ooze", image: "/gears/rea.png" },
-  { id: 7, label: "Shifting Powder", image: "/gears/shif.png" },
-  { id: 8, label: "Tendrilous Bundle", image: "/gears/tend.png" },
-  { id: 9, label: "Thunderous Particle", image: "/gears/tra.png" },
-  { id: 10, label: "Volatile Spark", image: "/gears/vola.png" },
-  { id: 11, label: "Potent Alloy", image: "/gears/fras.png" },
-  { id: 12, label: "Sapping Crux", image: "/gears/pot.png" },
-  { id: 13, label: "Sharpening Gizmo", image: "/gears/sap.png" },
-  { id: 14, label: "Bloody Charm", image: "/gears/sha.png" },
-  { id: 15, label: "Floaty Bobble", image: "/gears/blo.png" },
-  { id: 16, label: "Frigid Heart", image: "/gears/floa.png" },
-  { id: 17, label: "Nightmare Orb", image: "/gears/fri.png" },
-  { id: 18, label: "Pressurized Steam", image: "/gears/nig.png" },
-];
-
-export const bossPowers9main = [
-  { id: 1, label: "Corrosive Vapor", image: "/gears/vapor.png" },
-  { id: 2, label: "Glacial Nimbus", image: "/gears/nimbus.png" },
-  { id: 3, label: "Nebulous Extract", image: "/gears/extract.png" },
-  { id: 4, label: "Smoldering Ember", image: "/gears/ember.png" },
-  { id: 5, label: "Thunderous Particle", image: "/gears/particle5.png" },
-];
-
-export const catalystPowers = [
-  {
-    id: 1,
-    label: "Astral Pillar",
-    image: "/gears/astr.png",
-    description: "Increases Strength by 10%",
-  },
-  {
-    id: 2,
-    label: "Celestial Surge",
-    image: "/gears/celes.png",
-    description: "Increases Agility by 10%",
-  },
-  {
-    id: 3,
-    label: "Cosmic Anomaly",
-    image: "/gears/cos.png",
-    description: "Increases Intelligence by 10%",
-  },
-  {
-    id: 4,
-    label: "Disintegrate",
-    image: "/gears/dis.png",
-    description: "Increases Intelligence by 10%",
-  },
-  {
-    id: 5,
-    label: "Propulsion",
-    image: "/gears/pro.png",
-    description: "Increases Intelligence by 10%",
   },
 ];
