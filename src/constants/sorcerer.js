@@ -13452,7 +13452,7 @@ export const optionSParagonSorcerer = [
           link: true,
           direction: "bottom",
           image: "/paragon/barbarian/Gate_active.png",
-          label: "Porte de fixation de la carte",
+          label: "Porte de fixation de la carte ",
           options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
