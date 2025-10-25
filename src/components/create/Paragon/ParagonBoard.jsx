@@ -1,3 +1,4 @@
+// ParagonBoard.js
 import React from "react";
 import CardParagonHover from "./CardParagonHover";
 import CardParagonModal from "./CardParagonModal";
@@ -21,26 +22,20 @@ const glyphSocketNumbers = {
     10: 38,
   },
   druid: {
-    2: 38,
-    // Add more boards if available
+    2: 38, // Matches druid_2_38
   },
   necromancer: {
     1: 2,
-    // Add more boards if available
   },
   rogue: {
     1: 1,
-    // Add more boards if available
   },
   sorcerer: {
     1: 1,
-    // Add more boards if available
   },
   spiritborn: {
     3: 2,
-    // Add more boards if available
   },
-  // Add other classes as needed
 };
 
 const ParagonBoard = ({ item, style }) => {
@@ -81,7 +76,7 @@ const ParagonBoard = ({ item, style }) => {
       ? item.id.toLowerCase()
       : `${prefix}_1`;
 
-  // Define image positions for each Paragon board (extend for other classes if needed)
+  // Define image positions for each Paragon board
   const imagePositions = {
     barbarian_1: { top: "-1%", left: "14.2%" },
     barbarian_2: { top: "27.7%", left: "23.7%" },
@@ -93,12 +88,11 @@ const ParagonBoard = ({ item, style }) => {
     barbarian_8: { top: "-5.64%", left: "38.2%" },
     barbarian_9: { top: "42%", left: "-9.8%" },
     barbarian_10: { top: "-5.6%", left: "-9.8%" },
-    // Add positions for other classes like druid_2, etc., if different
-    druid_2: { top: "-5.6%", left: "-9.8%" }, // Placeholder, adjust as needed
-    necromancer_1: { top: "0%", left: "0%" }, // Placeholder
-    rogue_1: { top: "0%", left: "0%" }, // Placeholder
-    sorcerer_1: { top: "0%", left: "0%" }, // Placeholder
-    spiritborn_3: { top: "0%", left: "0%" }, // Placeholder
+    druid_2: { top: "-5.6%", left: "-9.8%" }, // Adjusted for Druid
+    necromancer_1: { top: "0%", left: "0%" },
+    rogue_1: { top: "0%", left: "0%" },
+    sorcerer_1: { top: "0%", left: "0%" },
+    spiritborn_3: { top: "0%", left: "0%" },
   };
 
   const imagePosition = imagePositions[normalizedId] || {

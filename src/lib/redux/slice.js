@@ -1,3 +1,4 @@
+// slice.js
 import { createSlice } from "@reduxjs/toolkit";
 import {
   aspects,
@@ -29,12 +30,11 @@ const glyphSocketPositions = {
     "9_118",
     "10_38",
   ],
-  druid: ["2_38"], // Add more if available
-  necromancer: ["1_2"], // Add more if available
-  rogue: ["1_1"], // Add more if available
-  sorcerer: ["1_1"], // Add more if available
-  spiritborn: ["3_2"], // Add more if available
-  // Add other classes as needed
+  druid: ["2_38"], // Matches druid_2_38 in optionSParagonDruid
+  necromancer: ["1_2"],
+  rogue: ["1_1"],
+  sorcerer: ["1_1"],
+  spiritborn: ["3_2"],
 };
 
 const slice = createSlice({

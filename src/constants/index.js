@@ -352,6 +352,16 @@ export const glyphs = [
     effects: ["Rare Glyph"],
   },
 ];
+// In your constants file or druid.js file, add this export for Druid glyphs
+export const glyphsDruid = [
+  {
+    id: 1,
+    label: "Bane",
+    image: "/paragon/druid/glyph1.png",
+    code: "Glyph",
+    radius: 3,
+  },
+];
 
 export const data = {
   barbarian: {

@@ -1,3 +1,4 @@
+// CardParagonHover.js
 import React, { useState } from "react";
 import { usePopper } from "react-popper";
 import Image from "next/image";
@@ -25,7 +26,7 @@ export default function CardParagonHover({ item, size = 30 }) {
     ],
   });
 
-  // Extract board number and other logic remains the same
+  // Extract board number and prefix
   const boardNumber =
     item.id && typeof item.id === "string" && item.id.includes("_")
       ? parseInt(item.id.split("_")[1], 10)
@@ -34,19 +35,28 @@ export default function CardParagonHover({ item, size = 30 }) {
   const prefix = item.id ? item.id.split("_")[0] : "barbarian";
 
   const socketNumbers = {
-    1: 23,
-    2: 173,
-    3: 145,
-    4: 79,
-    5: 37,
-    6: 133,
-    7: 39,
-    8: 41,
-    9: 118,
-    10: 38,
+    barbarian: {
+      1: 23,
+      2: 173,
+      3: 145,
+      4: 79,
+      5: 37,
+      6: 133,
+      7: 39,
+      8: 41,
+      9: 118,
+      10: 38,
+    },
+    druid: {
+      2: 38,
+    },
+    necromancer: { 1: 2 },
+    rogue: { 1: 1 },
+    sorcerer: { 1: 1 },
+    spiritborn: { 3: 2 },
   };
 
-  const socketNum = socketNumbers[boardNumber] || 23;
+  const socketNum = socketNumbers[prefix]?.[boardNumber] || 23;
   const glyphSocketId = `${prefix}_${boardNumber}_${socketNum}`;
 
   const currentBoard = paragon_builds.find((board) => board.id === boardNumber);
@@ -107,7 +117,8 @@ export default function CardParagonHover({ item, size = 30 }) {
   } else {
     const hasMatchingGlyphId = item.glyph_ids?.includes(selectedGlyphId);
     if (hasMatchingGlyphId) {
-      highlightClass = "green shadow-green-500/50";
+      highlightClass =
+        "border-2 border-green-800 text-green-500 bg-[#204522] shadow-lg shadow-green-500/50";
       bgClass = "card-board-green-bg";
     } else {
       highlightClass = item.active
