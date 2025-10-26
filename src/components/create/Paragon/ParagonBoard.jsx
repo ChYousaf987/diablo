@@ -24,7 +24,7 @@ const glyphSocketNumbers = {
   druid: {
     2: 38, // Matches druid_2_38
     3: 118, // Matches druid_3_118
-    4: 4_173, // Matches druid_4_173
+    4: 173, // Matches druid_4_173
   },
   necromancer: {
     1: 2,
@@ -92,7 +92,7 @@ const ParagonBoard = ({ item, style }) => {
     barbarian_10: { top: "-5.6%", left: "-9.8%" },
     druid_2: { top: "-5.6%", left: "-9.8%" }, // Adjusted for Druid
     druid_3: { top: "42%", left: "-9.8%" }, // Adjusted for Druid
-    druid_4: { top: "42%", left: "-9.8%" }, // Adjusted for Druid
+    druid_4: { top: "27.7%", left: "23.7%" }, // Adjusted for Druid
     necromancer_1: { top: "0%", left: "0%" },
     rogue_1: { top: "0%", left: "0%" },
     sorcerer_1: { top: "0%", left: "0%" },
