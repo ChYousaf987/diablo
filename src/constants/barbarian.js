@@ -5752,9 +5752,9 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
+          options: ["+5 Force"],
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20], // Multiple glyph IDs
           _id: 1,
-          options: ["+5 Force"],
         },
         {
           id: "barbarian_1_27",

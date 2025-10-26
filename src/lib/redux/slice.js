@@ -30,7 +30,7 @@ const glyphSocketPositions = {
     "9_118",
     "10_38",
   ],
-  druid: ["2_38"], // Matches druid_2_38 in optionSParagonDruid
+  druid: ["2_38", "3_118", "4_173"], // Matches druid_2_38 in optionSParagonDruid
   necromancer: ["1_2"],
   rogue: ["1_1"],
   sorcerer: ["1_1"],
