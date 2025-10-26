@@ -1,3 +1,4 @@
+// slice.js
 import { createSlice } from "@reduxjs/toolkit";
 import {
   aspects,
@@ -14,6 +15,27 @@ import {
   catalystPowers,
   aspectMap,
 } from "@/constants";
+
+// Define glyph socket positions per class (without prefix)
+const glyphSocketPositions = {
+  barbarian: [
+    "1_23",
+    "2_173",
+    "3_145",
+    "4_79",
+    "5_37",
+    "6_133",
+    "7_39",
+    "8_41",
+    "9_118",
+    "10_38",
+  ],
+  druid: ["2_38", "3_118", "4_173"], // Matches druid_2_38 in optionSParagonDruid
+  necromancer: ["1_2"],
+  rogue: ["1_1"],
+  sorcerer: ["1_1"],
+  spiritborn: ["3_2"],
+};
 
 const slice = createSlice({
   name: "gear",
@@ -51,16 +73,9 @@ const slice = createSlice({
             ...node,
             active: node.active || false,
             is_glyph_socket:
-              node.id === `${category}_1_23` ||
-              node.id === `${category}_2_173` ||
-              node.id === `${category}_3_145` ||
-              node.id === `${category}_4_79` ||
-              node.id === `${category}_5_37` ||
-              node.id === `${category}_6_133` ||
-              node.id === `${category}_7_39` ||
-              node.id === `${category}_8_41` ||
-              node.id === `${category}_9_118` ||
-              node.id === `${category}_10_38`,
+              glyphSocketPositions[category]?.includes(
+                node.id.split("_").slice(1).join("_")
+              ) || false,
             glyph_id: node.is_glyph_socket ? node.glyph_id || null : null,
             glyph_ids:
               node.glyph_ids ||
@@ -115,8 +130,9 @@ const slice = createSlice({
                 ...node,
                 active: node.active || false,
                 is_glyph_socket:
-                  node.id === `${category}_1_23` ||
-                  node.id === `${category}_2_173`,
+                  glyphSocketPositions[category]?.includes(
+                    node.id.split("_").slice(1).join("_")
+                  ) || false,
                 glyph_id: node.is_glyph_socket ? node.glyph_id || null : null,
                 glyph_ids:
                   node.glyph_ids ||
@@ -211,8 +227,9 @@ const slice = createSlice({
               ...node,
               active: node.active || false,
               is_glyph_socket:
-                node.id === `${newCategory}_1_23` ||
-                node.id === `${newCategory}_2_173`,
+                glyphSocketPositions[newCategory]?.includes(
+                  node.id.split("_").slice(1).join("_")
+                ) || false,
               glyph_id: node.is_glyph_socket ? node.glyph_id || null : null,
               glyph_ids:
                 node.glyph_ids ||
@@ -272,8 +289,9 @@ const slice = createSlice({
                 ...node,
                 active: node.active || false,
                 is_glyph_socket:
-                  node.id === `${newCategory}_1_23` ||
-                  node.id === `${newCategory}_2_173`,
+                  glyphSocketPositions[newCategory]?.includes(
+                    node.id.split("_").slice(1).join("_")
+                  ) || false,
                 glyph_id: node.is_glyph_socket ? node.glyph_id || null : null,
                 glyph_ids:
                   node.glyph_ids ||
@@ -403,8 +421,9 @@ const slice = createSlice({
               ...node,
               active: node.active || false,
               is_glyph_socket:
-                node.id === `${state.category}_1_23` ||
-                node.id === `${state.category}_2_173`,
+                glyphSocketPositions[state.category]?.includes(
+                  node.id.split("_").slice(1).join("_")
+                ) || false,
               glyph_id: node.is_glyph_socket ? node.glyph_id || null : null,
               glyph_ids:
                 node.glyph_ids ||
@@ -620,8 +639,9 @@ const slice = createSlice({
                   ...node,
                   active: node.active || false,
                   is_glyph_socket:
-                    node.id === `${build.category}_1_23` ||
-                    node.id === `${build.category}_2_173`,
+                    glyphSocketPositions[build.category]?.includes(
+                      node.id.split("_").slice(1).join("_")
+                    ) || false,
                   glyph_id: node.is_glyph_socket ? node.glyph_id || null : null,
                   glyph_ids:
                     node.glyph_ids ||
@@ -721,8 +741,9 @@ const slice = createSlice({
                 ...node,
                 active: node.active || false,
                 is_glyph_socket:
-                  node.id === `${build.category}_1_23` ||
-                  node.id === `${build.category}_2_173`,
+                  glyphSocketPositions[build.category]?.includes(
+                    node.id.split("_").slice(1).join("_")
+                  ) || false,
                 glyph_id: node.is_glyph_socket ? node.glyph_id || null : null,
                 glyph_ids:
                   node.glyph_ids ||

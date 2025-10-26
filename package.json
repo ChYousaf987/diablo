@@ -11,6 +11,7 @@
   "dependencies": {
     "@auth/mongodb-adapter": "^3.1.0",
     "@hookform/resolvers": "^3.4.2",
+    "@popperjs/core": "^2.11.8",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-checkbox": "^1.0.4",
     "@radix-ui/react-dialog": "^1.0.5",
@@ -39,6 +40,7 @@
     "react-hook-form": "^7.51.4",
     "react-icons": "^5.5.0",
     "react-map-interaction": "^2.1.0",
+    "react-popper": "^2.3.0",
     "react-redux": "^9.1.2",
     "react-zoom-pan": "^0.1.48",
     "react-zoom-pan-pinch": "^3.6.1",

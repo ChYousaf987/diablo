@@ -1,9 +1,6 @@
-import React from "react";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
+// CardParagonHover.js
+import React, { useState } from "react";
+import { usePopper } from "react-popper";
 import Image from "next/image";
 import {
   selectParagonBuilds,
@@ -17,42 +14,59 @@ export default function CardParagonHover({ item, size = 30 }) {
   const dispatch = useAppDispatch();
   const paragon_builds = useAppSelector(selectParagonBuilds);
   const glyphs = useAppSelector(selectGlyphs);
+  const [referenceElement, setReferenceElement] = useState(null);
+  const [popperElement, setPopperElement] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
 
-  // Extract board number from item.id
+  const { styles, attributes } = usePopper(referenceElement, popperElement, {
+    placement: "top",
+    modifiers: [
+      { name: "offset", options: { offset: [0, 8] } },
+      { name: "preventOverflow", options: { padding: 8 } },
+    ],
+  });
+
+  // Extract board number and prefix
   const boardNumber =
     item.id && typeof item.id === "string" && item.id.includes("_")
       ? parseInt(item.id.split("_")[1], 10)
       : 1;
 
-  // Dynamic prefix from item.id
   const prefix = item.id ? item.id.split("_")[0] : "barbarian";
 
-  // Shared socket numbers per board
   const socketNumbers = {
-    1: 23,
-    2: 173,
-    3: 145,
-    4: 79,
-    5: 37,
-    6: 133,
-    7: 39,
-    8: 41,
-    9: 118,
-    10: 38,
+    barbarian: {
+      1: 23,
+      2: 173,
+      3: 145,
+      4: 79,
+      5: 37,
+      6: 133,
+      7: 39,
+      8: 41,
+      9: 118,
+      10: 38,
+    },
+    druid: {
+      2: 38,
+      3: 118,
+      4: 173,
+    },
+    necromancer: { 1: 2 },
+    rogue: { 1: 1 },
+    sorcerer: { 1: 1 },
+    spiritborn: { 3: 2 },
   };
 
-  // Dynamic glyph socket ID
-  const socketNum = socketNumbers[boardNumber] || 23;
+  const socketNum = socketNumbers[prefix]?.[boardNumber] || 23;
   const glyphSocketId = `${prefix}_${boardNumber}_${socketNum}`;
 
-  // Find the glyph socket node for the current board
   const currentBoard = paragon_builds.find((board) => board.id === boardNumber);
   const glyphSocketNode = currentBoard?.bord
     .flat()
     .find((node) => node && node.id === glyphSocketId);
   const selectedGlyphId = glyphSocketNode?.glyph_id;
 
-  // Find glyphs assigned to this node
   const selectedGlyphs = item.is_glyph_socket
     ? item.glyph_id
       ? [glyphs.find((glyph) => glyph.id === item.glyph_id)]
@@ -91,7 +105,6 @@ export default function CardParagonHover({ item, size = 30 }) {
     }
   };
 
-  // Determine highlighting and background classes
   let highlightClass = "";
   let bgClass = "";
 
@@ -104,10 +117,10 @@ export default function CardParagonHover({ item, size = 30 }) {
         "bg-opacity-30 shadow-lg hover:bg-opacity-50 hover:scale-105 transition-all";
     }
   } else {
-    // Highlight if any glyph_id in glyph_ids matches selectedGlyphId
     const hasMatchingGlyphId = item.glyph_ids?.includes(selectedGlyphId);
     if (hasMatchingGlyphId) {
-      highlightClass = "green shadow-green-500/50";
+      highlightClass =
+        "border-2 border-green-800 text-green-500 bg-[#204522] shadow-lg shadow-green-500/50";
       bgClass = "card-board-green-bg";
     } else {
       highlightClass = item.active
@@ -119,49 +132,56 @@ export default function CardParagonHover({ item, size = 30 }) {
 
   return (
     <div className="flex">
-      <HoverCard closeDelay="200" openDelay={200} className="bg-[#1a1b1f]">
-        <HoverCardTrigger
-          className={`flex flex-col justify-center bg-[#1a1b1f] items-center text-white ${
-            bgClass || tile_bg
-          } p-1 ${highlightClass}`}
-        >
-          {!item.is_icon ? (
-            <div
-              onClick={(e) => {
-                if (item.link === false && !item.is_glyph_socket) {
-                  handleUpdate(e);
-                }
-              }}
-              onContextMenu={item.link === false ? handleUpdate : null}
-              className={`${item.link ? "card-board-legendary" : tile_bg} ${
-                is_active || item.activable_ids == null ? "" : ""
-              } w-full h-full opacity-70 hover:opacity-100 cursor-pointer`}
-            >
-              <img
-                src={
-                  item.is_glyph_socket && selectedGlyphs[0]?.image
-                    ? selectedGlyphs[0].image
-                    : item.image
-                }
-                style={{ filter: filterStyle }}
-                className={`w-full z-0`}
-                alt="logo"
-              />
-              
-            </div>
-          ) : (
+      <div
+        ref={setReferenceElement}
+        className={`flex flex-col justify-center bg-[#1a1b1f] items-center text-white ${
+          bgClass || tile_bg
+        } p-1 ${highlightClass}`}
+        onMouseEnter={() => setIsOpen(true)}
+        onMouseLeave={() => setIsOpen(false)}
+      >
+        {!item.is_icon ? (
+          <div
+            onClick={(e) => {
+              if (item.link === false && !item.is_glyph_socket) {
+                handleUpdate(e);
+              }
+            }}
+            onContextMenu={item.link === false ? handleUpdate : null}
+            className={`${item.link ? "card-board-legendary" : tile_bg} ${
+              is_active || item.activable_ids == null ? "" : ""
+            } w-full h-full opacity-70 hover:opacity-100 cursor-pointer`}
+          >
             <img
               src={
                 item.is_glyph_socket && selectedGlyphs[0]?.image
                   ? selectedGlyphs[0].image
                   : item.image
               }
-              className={`w-full z-0 cursor-pointer`}
+              style={{ filter: filterStyle }}
+              className={`w-full z-0`}
               alt="logo"
             />
-          )}
-        </HoverCardTrigger>
-        <HoverCardContent className="bg-[#26272d] z-[9999] text-white max-w-[400px] w-full p-1">
+          </div>
+        ) : (
+          <img
+            src={
+              item.is_glyph_socket && selectedGlyphs[0]?.image
+                ? selectedGlyphs[0].image
+                : item.image
+            }
+            className={`w-full z-0 cursor-pointer`}
+            alt="logo"
+          />
+        )}
+      </div>
+      {isOpen && (
+        <div
+          ref={setPopperElement}
+          style={{ ...styles.popper, zIndex: 9999 }}
+          {...attributes.popper}
+          className="bg-[#15161A] text-white max-w-[250px] w-full p-1 rounded-md shadow-lg"
+        >
           {!item.is_icon ? (
             <div>
               <div className="flex justify-center items-center gap-3 border-b-[.5px] py-2">
@@ -179,8 +199,6 @@ export default function CardParagonHover({ item, size = 30 }) {
                 <div className="flex flex-col items-start">
                   <span className="font-bold">{item.label}</span>
                   <span className="font-bold">{item.secondLabel}</span>
-                 
-                  
                 </div>
               </div>
               <ul className="px-3 my-2">
@@ -199,8 +217,8 @@ export default function CardParagonHover({ item, size = 30 }) {
               {item.label}
             </div>
           )}
-        </HoverCardContent>
-      </HoverCard>
+        </div>
+      )}
     </div>
   );
 }

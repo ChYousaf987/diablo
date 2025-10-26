@@ -1,3 +1,4 @@
+// ParagonBoard.js
 import React from "react";
 import CardParagonHover from "./CardParagonHover";
 import CardParagonModal from "./CardParagonModal";
@@ -5,6 +6,39 @@ import CardGlyphModal from "./CardGlyphModal";
 import { useAppSelector } from "@/lib/hooks";
 import { selectGlyphs, selectParagonBuilds } from "@/lib/redux/slice";
 import Image from "next/image";
+
+// Define glyph socket numbers per class and board
+const glyphSocketNumbers = {
+  barbarian: {
+    1: 23,
+    2: 173,
+    3: 145,
+    4: 79,
+    5: 37,
+    6: 133,
+    7: 39,
+    8: 41,
+    9: 118,
+    10: 38,
+  },
+  druid: {
+    2: 38, // Matches druid_2_38
+    3: 118, // Matches druid_3_118
+    4: 4_173, // Matches druid_4_173
+  },
+  necromancer: {
+    1: 2,
+  },
+  rogue: {
+    1: 1,
+  },
+  sorcerer: {
+    1: 1,
+  },
+  spiritborn: {
+    3: 2,
+  },
+};
 
 const ParagonBoard = ({ item, style }) => {
   const glyphs = useAppSelector(selectGlyphs);
@@ -26,23 +60,15 @@ const ParagonBoard = ({ item, style }) => {
   const firstNodeId = item.bord.flat().find((node) => node)?.id;
   const prefix = firstNodeId ? firstNodeId.split("_")[0] : "barbarian";
 
-  // Shared socket numbers per board
-  const socketNumbers = {
-    1: 23,
-    2: 173,
-    3: 145,
-    4: 79,
-    5: 37,
-    6: 133,
-    7: 39,
-    8: 41,
-    9: 118,
-    10: 38,
-  };
+  // Get socket numbers for the current class, fallback to barbarian
+  const socketNumbers =
+    glyphSocketNumbers[prefix] || glyphSocketNumbers.barbarian;
 
-  // Get the glyph socket ID dynamically
-  const socketNum = socketNumbers[boardNumber] || 23;
-  const glyphSocketId = `${prefix}_${boardNumber}_${socketNum}`;
+  // Get the glyph socket number for the current board
+  const socketNum = socketNumbers[boardNumber];
+  const glyphSocketId = socketNum
+    ? `${prefix}_${boardNumber}_${socketNum}`
+    : null;
 
   // Normalize item.id to match imagePositions keys
   const normalizedId =
@@ -64,6 +90,13 @@ const ParagonBoard = ({ item, style }) => {
     barbarian_8: { top: "-5.64%", left: "38.2%" },
     barbarian_9: { top: "42%", left: "-9.8%" },
     barbarian_10: { top: "-5.6%", left: "-9.8%" },
+    druid_2: { top: "-5.6%", left: "-9.8%" }, // Adjusted for Druid
+    druid_3: { top: "42%", left: "-9.8%" }, // Adjusted for Druid
+    druid_4: { top: "42%", left: "-9.8%" }, // Adjusted for Druid
+    necromancer_1: { top: "0%", left: "0%" },
+    rogue_1: { top: "0%", left: "0%" },
+    sorcerer_1: { top: "0%", left: "0%" },
+    spiritborn_3: { top: "0%", left: "0%" },
   };
 
   const imagePosition = imagePositions[normalizedId] || {
