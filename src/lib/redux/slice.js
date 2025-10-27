@@ -30,7 +30,7 @@ const glyphSocketPositions = {
     "9_118",
     "10_38",
   ],
-  druid: ["2_38", "3_118", "4_173"], // Matches druid_2_38 in optionSParagonDruid
+  druid: ["2_38", "3_118", "4_173", "5_145"], // Matches druid_2_38 in optionSParagonDruid
   necromancer: ["1_2"],
   rogue: ["1_1"],
   sorcerer: ["1_1"],
@@ -816,6 +816,9 @@ export const selectOptionTechs = (state) => state.gear.optionTechs;
 export const selectSeason = (state) => state.gear.season;
 export const selectGlyphs = (state) => state.gear.glyphs;
 export const selectAspects = (state) => state.gear.aspects;
-export const selectAspectsRight = (state) => state.gear.aspectsRight;
-
-export default slice.reducer;
+export const selectAspectsRight = (state) => state.gear.aspectsRight;export default {  // ...existing config...
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**", // restrict to your CDN/domain instead of **
