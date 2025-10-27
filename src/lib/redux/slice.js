@@ -816,9 +816,6 @@ export const selectOptionTechs = (state) => state.gear.optionTechs;
 export const selectSeason = (state) => state.gear.season;
 export const selectGlyphs = (state) => state.gear.glyphs;
 export const selectAspects = (state) => state.gear.aspects;
-export const selectAspectsRight = (state) => state.gear.aspectsRight;export default {  // ...existing config...
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**", // restrict to your CDN/domain instead of **
+export const selectAspectsRight = (state) => state.gear.aspectsRight;
+
+export default slice.reducer;
