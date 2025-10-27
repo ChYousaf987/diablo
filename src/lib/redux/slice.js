@@ -30,7 +30,7 @@ const glyphSocketPositions = {
     "9_118",
     "10_38",
   ],
-  druid: ["2_38", "3_118", "4_173", "5_145"], // Matches druid_2_38 in optionSParagonDruid
+  druid: ["2_38", "3_118", "4_173", "5_145"],
   necromancer: ["1_2"],
   rogue: ["1_1"],
   sorcerer: ["1_1"],
@@ -225,7 +225,7 @@ const slice = createSlice({
           bord: paragon.bord.map((row) =>
             row.map((node) => ({
               ...node,
-              active: node.active || false,
+              active: false, // Reset active state to prevent carryover
               is_glyph_socket:
                 glyphSocketPositions[newCategory]?.includes(
                   node.id.split("_").slice(1).join("_")
@@ -287,7 +287,7 @@ const slice = createSlice({
             bord: paragon.bord.map((row) =>
               row.map((node) => ({
                 ...node,
-                active: node.active || false,
+                active: false, // Reset active state to prevent carryover
                 is_glyph_socket:
                   glyphSocketPositions[newCategory]?.includes(
                     node.id.split("_").slice(1).join("_")

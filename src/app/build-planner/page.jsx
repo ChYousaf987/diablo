@@ -1,10 +1,13 @@
-
+// BuildPlanner.js
 "use client";
 import { Suspense, useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useAppSelector, useAppDispatch } from "@/lib/hooks";
-import { selectVariants, selectCategory, initailizeGear } from "@/lib/redux/slice";
-// import { useToast } from "../ui/use-toast";
+import {
+  selectVariants,
+  selectCategory,
+  initializeGear,
+} from "@/lib/redux/slice";
 import BuildAction from "@/components/create/BuildAction";
 import Tags from "@/components/create/Tags";
 import CopyVariant from "@/components/create/CopyVariant";
@@ -36,7 +39,7 @@ function BuildPlannerComp() {
           const response = await fetch(`/api/builds/${buildId}`);
           if (!response.ok) throw new Error("Failed to fetch build data");
           const data = await response.json();
-          dispatch(initailizeGear({ build: data, variants: data.variants }));
+          dispatch(initializeGear({ build: data, variants: data.variants }));
         } catch (error) {
           setError(error.message);
           toast({ title: "Error", description: error.message });
@@ -124,7 +127,7 @@ function BuildPlannerComp() {
           className="bg-[#1a1b1f] p-3 mt-3 rounded-sm overflow-x-auto"
           value="paragon"
         >
-          <Paragon />
+          <Paragon key={category} />
         </TabsContent>
         <TabsContent className="bg-[#1a1b1f] p-3 mt-3 rounded-sm" value="notes">
           <Notes />
