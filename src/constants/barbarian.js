@@ -5412,7 +5412,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/will_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
           options: ["+5 volonte"],
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
