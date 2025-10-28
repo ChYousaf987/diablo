@@ -10133,7 +10133,7 @@ export const optionSParagonBarbarian = [
           ],
           index: 2,
           link: false,
-          image: "/paragon/barbarian/DverpowerDamage_active.png",
+          image: "/paragon/barbarian/OverpowerDamage_active.png",
 
           _id: 1,
           bg: "magic",
@@ -10287,7 +10287,7 @@ export const optionSParagonBarbarian = [
           active: null,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/DverpowerDamage_active.png",
+          image: "/paragon/barbarian/OverpowerDamage_active.png",
           bg: "magic",
           label: "Magic Node",
         },
@@ -10301,7 +10301,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/DverpowerDamage_active.png",
+          image: "/paragon/barbarian/OverpowerDamage_active.png",
 
           _id: 3,
           bg: "rare",
@@ -10475,7 +10475,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/DverpowerDamage_active.png",
+          image: "/paragon/barbarian/OverpowerDamage_active.png",
 
           _id: 4,
           bg: "magic",
@@ -11360,7 +11360,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/DriticalDamage_active.png",
+          image: "/paragon/barbarian/CriticalDamage_active.png",
           activable_ids: [
             "barbarian_4_31",
             "barbarian_4_53",
@@ -11477,7 +11477,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/DriticalDamage_active.png",
+          image: "/paragon/barbarian/CriticalDamage_active.png",
           activable_ids: ["barbarian_4_62", "barbarian_4_50", "barbarian_4_52"],
           bg: "rare",
         },
@@ -11486,7 +11486,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/DriticalDamage_active.png",
+          image: "/paragon/barbarian/CriticalDamage_active.png",
           activable_ids: [
             "barbarian_4_40",
             "barbarian_4_63",
@@ -11597,7 +11597,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/DriticalDamage_active.png",
+          image: "/paragon/barbarian/CriticalDamage_active.png",
           activable_ids: ["barbarian_4_52", "barbarian_4_62", "barbarian_4_64"],
           bg: "magic",
         },
@@ -12618,7 +12618,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/DriticalDamage_active.png",
+          image: "/paragon/barbarian/CriticalDamage_active.png",
           activable_ids: ["barbarian_4_146", "barbarian_4_142"],
           bg: "magic",
         },
@@ -12713,7 +12713,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/DriticalDamage_active.png",
+          image: "/paragon/barbarian/CriticalDamage_active.png",
           activable_ids: ["barbarian_4_146", "barbarian_4_150"],
           bg: "magic",
         },
@@ -13272,7 +13272,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/DverpowerDamage_active.png",
+          image: "/paragon/barbarian/OverpowerDamage_active.png",
           activable_ids: ["barbarian_5_29", "barbarian_5_38", "barbarian_5_40"],
           bg: "magic",
         },
@@ -13281,7 +13281,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/DverpowerDamage_active.png",
+          image: "/paragon/barbarian/OverpowerDamage_active.png",
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           activable_ids: [
             "barbarian_5_30",
@@ -13296,7 +13296,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/DverpowerDamage_active.png",
+          image: "/paragon/barbarian/OverpowerDamage_active.png",
           activable_ids: [
             "barbarian_5_31",
             "barbarian_5_51",
@@ -13412,7 +13412,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/DverpowerDamage_active.png",
+          image: "/paragon/barbarian/OverpowerDamage_active.png",
           activable_ids: ["barbarian_5_40", "barbarian_5_67", "barbarian_5_51"],
           bg: "magic",
         },
@@ -16183,7 +16183,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/DriticalDamage_active.png",
+          image: "/paragon/barbarian/CriticalDamage_active.png",
           activable_ids: [
             "barbarian_6_103",
             "barbarian_6_118",
@@ -16362,7 +16362,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/DriticalDamage_active.png",
+          image: "/paragon/barbarian/CriticalDamage_active.png",
           activable_ids: [
             "barbarian_6_117",
             "barbarian_6_140",
@@ -16376,7 +16376,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/DriticalDamage_active.png",
+          image: "/paragon/barbarian/CriticalDamage_active.png",
 
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
 
@@ -16506,7 +16506,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/DriticalDamage_active.png",
+          image: "/paragon/barbarian/CriticalDamage_active.png",
           activable_ids: [
             "barbarian_6_132",
             "barbarian_6_149",
@@ -18906,7 +18906,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/DarthquakeDamage_active.png",
+          image: "/paragon/barbarian/EarthquakeDamage_active.png",
 
           activable_ids: [
             "barbarian_7_148",
@@ -18920,7 +18920,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/DarthquakeDamage_active.png",
+          image: "/paragon/barbarian/EarthquakeDamage_active.png",
 
           activable_ids: ["barbarian_7_149", "barbarian_7_139"],
           bg: "magic",
@@ -19036,7 +19036,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/DarthquakeDamage_active.png",
+          image: "/paragon/barbarian/EarthquakeDamage_active.png",
           activable_ids: [
             "barbarian_7_139",
             "barbarian_7_157",
@@ -19050,7 +19050,7 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/DarthquakeDamage_active.png",
+          image: "/paragon/barbarian/EarthquakeDamage_active.png",
 
           activable_ids: [
             "barbarian_7_140",
