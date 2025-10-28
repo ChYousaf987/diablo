@@ -8502,7 +8502,7 @@ export const optionSParagonBarbarian = [
       ],
       [
         {
-          id: "barbarian_2_158",
+          id: "barbarian_2_1",
           active: false,
           index: 10,
           direction: "bottom",
@@ -8528,12 +8528,14 @@ export const optionSParagonBarbarian = [
     bord: [
       [
         {
-          id: "barbarian_3_1",
+          id: "barbarian_2_1",
           active: false,
           index: 10,
           direction: "top",
           link: true,
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
       [
@@ -9407,7 +9409,7 @@ export const optionSParagonBarbarian = [
       ],
       [
         {
-          id: "barbarian_3_42",
+          id: "barbarian_2_1",
           activable_ids: ["barbarian_3_43"],
           active: false,
           direction: "left",
@@ -9626,7 +9628,7 @@ export const optionSParagonBarbarian = [
           opened: true,
         },
         {
-          id: "barbarian_3_186",
+          id: "barbarian_2_1",
           activable_ids: ["barbarian_3_107"],
           active: false,
           direction: "right",
@@ -11716,7 +11718,7 @@ export const optionSParagonBarbarian = [
       ],
       [
         {
-          id: "barbarian_4_73",
+          id: "barbarian_2_1",
           active: false,
           index: 0,
           link: true,
@@ -11877,7 +11879,7 @@ export const optionSParagonBarbarian = [
           opened: true,
         },
         {
-          id: "barbarian_4_86",
+          id: "barbarian_2_1",
           active: false,
           index: 20,
           link: true,
@@ -12778,7 +12780,7 @@ export const optionSParagonBarbarian = [
       ],
       [
         {
-          id: "barbarian_4_157",
+          id: "barbarian_2_1",
           active: false,
           index: 10,
           link: true,
