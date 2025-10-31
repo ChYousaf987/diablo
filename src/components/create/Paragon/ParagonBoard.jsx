@@ -22,11 +22,11 @@ const glyphSocketNumbers = {
     10: 38,
   },
   druid: {
+    1: 23,
     2: 38, // Matches druid_2_38
     3: 118,
     4: 173,
     5: 145,
-    1: 23,
     6: 134,
     7: 37,
     8: 79,
@@ -43,7 +43,11 @@ const glyphSocketNumbers = {
     1: 1,
   },
   spiritborn: {
-    3: 2,
+    1: 23,
+    2: 37,
+    3: 118,
+    4: 134,
+    5: 41,
   },
 };
 
@@ -110,7 +114,11 @@ const ParagonBoard = ({ item, style }) => {
     necromancer_1: { top: "0%", left: "0%" },
     rogue_1: { top: "0%", left: "0%" },
     sorcerer_1: { top: "0%", left: "0%" },
-    spiritborn_3: { top: "0%", left: "0%" },
+    spiritborn_1: { top: "-1%", left: "14.2%" },
+    spiritborn_2: { top: "8.7%", left: "14.2%" },
+    spiritborn_3: { top: "42%", left: "-9.8%" },
+    spiritborn_4: { top: "27.6%", left: "14.2%" },
+    spiritborn_5: { top: "-5.64%", left: "38.2%" },
   };
 
   const imagePosition = imagePositions[normalizedId] || {

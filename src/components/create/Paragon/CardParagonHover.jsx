@@ -62,7 +62,13 @@ export default function CardParagonHover({ item, size = 30 }) {
     necromancer: { 1: 2 },
     rogue: { 1: 1 },
     sorcerer: { 1: 1 },
-    spiritborn: { 3: 2 },
+    spiritborn: {
+      1: 23,
+      2: 37,
+      3: 118,
+      4: 134,
+      5: 41,
+    },
   };
 
   const socketNum = socketNumbers[prefix]?.[boardNumber] || 23;

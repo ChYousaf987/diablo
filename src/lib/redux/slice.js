@@ -45,7 +45,7 @@ const glyphSocketPositions = {
   necromancer: ["1_2"],
   rogue: ["1_1"],
   sorcerer: ["1_1"],
-  spiritborn: ["3_2"],
+  spiritborn: ["1_23", "2_37", "3_118", "4_134", "5_41"],
 };
 
 const slice = createSlice({
