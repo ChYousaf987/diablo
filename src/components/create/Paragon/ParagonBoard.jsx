@@ -40,7 +40,16 @@ const glyphSocketNumbers = {
     1: 1,
   },
   sorcerer: {
-    1: 1,
+    1: 23,
+    2: 145,
+    3: 118,
+    4: 37,
+    5: 38,
+    6: 173,
+    7: 39,
+    8: 134,
+    9: 41,
+    10: 79,
   },
   spiritborn: {
     1: 23,
@@ -101,6 +110,7 @@ const ParagonBoard = ({ item, style }) => {
     barbarian_8: { top: "-5.64%", left: "38.2%" },
     barbarian_9: { top: "42%", left: "-9.8%" },
     barbarian_10: { top: "-5.6%", left: "-9.8%" },
+
     druid_1: { top: "-1%", left: "14.2%" },
     druid_2: { top: "-5.6%", left: "-9.8%" }, // Adjusted for Druid
     druid_3: { top: "42%", left: "-9.8%" }, // Adjusted for Druid
@@ -111,9 +121,22 @@ const ParagonBoard = ({ item, style }) => {
     druid_8: { top: "18.4%", left: "23.7%" },
     druid_9: { top: "-5.64%", left: "38.2%" },
     druid_10: { top: "-0.9%", left: "14.2%" },
+
     necromancer_1: { top: "0%", left: "0%" },
+
     rogue_1: { top: "0%", left: "0%" },
-    sorcerer_1: { top: "0%", left: "0%" },
+
+    sorcerer_1: { top: "-1%", left: "14.2%" },
+    sorcerer_2: { top: "42%", left: "-9.8%" },
+    sorcerer_3: { top: "42%", left: "-9.8%" },
+    sorcerer_4: { top: "8.7%", left: "14.2%" },
+    sorcerer_5: { top: "-5.6%", left: "-9.8%" },
+    sorcerer_6: { top: "27.7%", left: "23.7%" },
+    sorcerer_7: { top: "-0.9%", left: "14.2%" },
+    sorcerer_8: { top: "27.6%", left: "14.2%" },
+    sorcerer_9: { top: "-5.64%", left: "38.2%" },
+    sorcerer_10: { top: "18.4%", left: "23.7%" },
+
     spiritborn_1: { top: "-1%", left: "14.2%" },
     spiritborn_2: { top: "8.7%", left: "14.2%" },
     spiritborn_3: { top: "42%", left: "-9.8%" },
