@@ -4026,7 +4026,9 @@ export const optionSParagonSpiritborn = [
           glyph_ids: [1, 3, 5, 11, 12, 13, 16, 21],
           label: "Nœud normal",
           options: ["+5 Force"],
-        },W      ],S      [
+        },
+      ],
+      [
         {
           id: "spiritborn_1_7",
           activable_ids: [
@@ -10217,7 +10219,8 @@ export const optionSParagonSpiritborn = [
           image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
           options: ["+5 Force"],
-          activable_ids: ["spiritborn_4_97", "spiritborn_4_80"],S        },
+          activable_ids: ["spiritborn_4_97", "spiritborn_4_80"],
+        },
         {
           id: "spiritborn_4_80",
           active: false,
@@ -13612,7 +13615,8 @@ export const optionSParagonSpiritborn = [
           image: "/paragon/barbarian/Dodge_active.png",
           activable_ids: ["spiritborn_5_159", "spiritborn_5_169"],
           bg: "magic",
-        },S      ],
+        },
+      ],
       [
         {
           id: "spiritborn_5_165",
@@ -15998,7 +16002,8 @@ export const optionSParagonSpiritborn = [
           link: false,
           image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],S        },
+          options: ["+5 Force"],
+        },
         {
           id: "spiritborn_6_151",
           activable_ids: ["spiritborn_6_140", "spiritborn_6_150"],
