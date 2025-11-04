@@ -59,7 +59,13 @@ export default function CardParagonHover({ item, size = 30 }) {
       9: 41,
       10: 39,
     },
-    necromancer: { 1: 2 },
+    necromancer: {
+      1: 23,
+      2: 134,
+      8: 79,
+      9: 134,
+      10: 38,
+    },
     rogue: { 1: 1 },
     sorcerer: {
       1: 23,
@@ -79,6 +85,10 @@ export default function CardParagonHover({ item, size = 30 }) {
       3: 118,
       4: 134,
       5: 41,
+      6: 145,
+      7: 38,
+      8: 173,
+      9: 79,
     },
   };
 

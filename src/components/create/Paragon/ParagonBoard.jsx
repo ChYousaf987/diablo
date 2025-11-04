@@ -34,7 +34,11 @@ const glyphSocketNumbers = {
     10: 39,
   },
   necromancer: {
-    1: 2,
+    1: 23,
+    2: 134,
+    8: 79,
+    9: 134,
+    10: 38,
   },
   rogue: {
     1: 1,
@@ -57,6 +61,10 @@ const glyphSocketNumbers = {
     3: 118,
     4: 134,
     5: 41,
+    6: 145,
+    7: 38,
+    8: 173,
+    9: 79,
   },
 };
 
@@ -122,9 +130,13 @@ const ParagonBoard = ({ item, style }) => {
     druid_9: { top: "-5.64%", left: "38.2%" },
     druid_10: { top: "-0.9%", left: "14.2%" },
 
-    necromancer_1: { top: "0%", left: "0%" },
+    necromancer_1: { top: "-1%", left: "14.2%" },
+    necromancer_2: { top: "27.6%", left: "14.2%" },
+    necromancer_8: { top: "18.4%", left: "23.7%" },
+    necromancer_9: { top: "27.6%", left: "14.2%" },
+    necromancer_10: { top: "-5.6%", left: "-9.8%" },
 
-    rogue_1: { top: "0%", left: "0%" },
+    rogue_1: { top: "-1%", left: "14.2%" },
 
     sorcerer_1: { top: "-1%", left: "14.2%" },
     sorcerer_2: { top: "42%", left: "-9.8%" },
@@ -142,6 +154,10 @@ const ParagonBoard = ({ item, style }) => {
     spiritborn_3: { top: "42%", left: "-9.8%" },
     spiritborn_4: { top: "27.6%", left: "14.2%" },
     spiritborn_5: { top: "-5.64%", left: "38.2%" },
+    spiritborn_6: { top: "42%", left: "-9.8%" },
+    spiritborn_7: { top: "-5.6%", left: "-9.8%" },
+    spiritborn_8: { top: "27.7%", left: "23.7%" },
+    spiritborn_9: { top: "18.4%", left: "23.7%" },
   };
 
   const imagePosition = imagePositions[normalizedId] || {
