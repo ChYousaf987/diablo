@@ -36,12 +36,16 @@ const glyphSocketNumbers = {
   necromancer: {
     1: 23,
     2: 134,
+    4: 145,
+    5: 41,
     8: 79,
     9: 134,
     10: 38,
   },
   rogue: {
-    1: 1,
+    1: 23,
+    2: 79,
+    3: 38,
   },
   sorcerer: {
     1: 23,
@@ -132,11 +136,15 @@ const ParagonBoard = ({ item, style }) => {
 
     necromancer_1: { top: "-1%", left: "14.2%" },
     necromancer_2: { top: "27.6%", left: "14.2%" },
+    necromancer_4: { top: "42%", left: "-9.8%" },
+    necromancer_5: { top: "-5.64%", left: "38.2%" },
     necromancer_8: { top: "18.4%", left: "23.7%" },
     necromancer_9: { top: "27.6%", left: "14.2%" },
     necromancer_10: { top: "-5.6%", left: "-9.8%" },
 
     rogue_1: { top: "-1%", left: "14.2%" },
+    rogue_2: { top: "18.4%", left: "23.7%" },
+    rogue_3: { top: "-5.6%", left: "-9.8%" },
 
     sorcerer_1: { top: "-1%", left: "14.2%" },
     sorcerer_2: { top: "42%", left: "-9.8%" },

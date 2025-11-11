@@ -13811,7 +13811,8 @@ export const optionSParagonSpiritborn = [
             "spiritborn_5_190",
             "spiritborn_5_179",
           ],
-        },W      ],
+        },
+      ],
       [
         {
           id: "spiritborn_5_181",
@@ -18230,7 +18231,9 @@ export const optionSParagonSpiritborn = [
           label: "Nœud normal",
           options: ["+5 Volonté"],
           activable_ids: ["spiritborn_7_127", "spiritborn_7_139"],
-        },W      ],
+        },
+        
+      ],
       [
         {
           id: "spiritborn_7_135",
