@@ -62,6 +62,7 @@ export default function CardParagonHover({ item, size = 30 }) {
     necromancer: {
       1: 23,
       2: 134,
+      3: 118,
       4: 145,
       5: 41,
       8: 79,

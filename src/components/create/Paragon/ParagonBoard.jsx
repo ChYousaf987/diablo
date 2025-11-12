@@ -36,6 +36,7 @@ const glyphSocketNumbers = {
   necromancer: {
     1: 23,
     2: 134,
+    3: 118,
     4: 145,
     5: 41,
     8: 79,
@@ -136,6 +137,7 @@ const ParagonBoard = ({ item, style }) => {
 
     necromancer_1: { top: "-1%", left: "14.2%" },
     necromancer_2: { top: "27.6%", left: "14.2%" },
+    necromancer_3: { top: "42%", left: "-9.8%" },
     necromancer_4: { top: "42%", left: "-9.8%" },
     necromancer_5: { top: "-5.64%", left: "38.2%" },
     necromancer_8: { top: "18.4%", left: "23.7%" },
