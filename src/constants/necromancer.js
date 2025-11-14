@@ -7768,7 +7768,8 @@ export const optionSParagonNecromancer = [
 
           activable_ids: ["necromancer_3_27", "necromancer_3_35"],
           bg: "magic",
-        },S      ],
+        },
+      ],
       [
         {
           id: "necromancer_3_37",
@@ -12206,7 +12207,9 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
           options: ["+5 Force"],
-        },S      ],
+        },
+        
+      ],
       [
         {
           id: "necromancer_4_179",
@@ -12296,7 +12299,9 @@ export const optionSParagonNecromancer = [
           link: false,
           direction: "bottom",
           image: "/paragon/barbarian/Gate_active.png",
-        },S      ],
+        },
+        
+      ],
     ],
   },
   {
@@ -12335,7 +12340,9 @@ export const optionSParagonNecromancer = [
           options: ["+5 Force"],
 
           activable_ids: ["necromancer_5_8"],
-        },S      ],
+        },
+        
+      ],
       [
         {
           id: "necromancer_5_3",
@@ -12576,7 +12583,9 @@ export const optionSParagonNecromancer = [
           options: ["+5 Force"],
 
           activable_ids: ["necromancer_5_16"],
-        },S      ],
+        },
+        
+      ],
       [
         {
           id: "necromancer_5_18",
@@ -14835,7 +14844,9 @@ export const optionSParagonNecromancer = [
             "necromancer_5_180",
             "necromancer_5_168",
           ],
-        },S      ],
+        },
+        
+      ],
       [
         {
           id: "necromancer_5_170",
