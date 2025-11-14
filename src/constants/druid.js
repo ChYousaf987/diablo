@@ -5317,7 +5317,7 @@ export const optionSParagonDruid = [
           activable_ids: ["druid_2_4"],
         },
         {
-          id: "druid_2_2",
+          id: "druid_2_1",
           active: false,
           index: 10,
           link: true,
@@ -6344,7 +6344,7 @@ export const optionSParagonDruid = [
       ],
       [
         {
-          id: "druid_2_92",
+          id: "druid_2_1",
           active: false,
           index: 0,
           link: true,
@@ -6450,7 +6450,7 @@ export const optionSParagonDruid = [
           opened: true,
         },
         {
-          id: "druid_2_103",
+          id: "druid_2_1",
           active: false,
           index: 20,
           link: true,
@@ -7147,7 +7147,7 @@ export const optionSParagonDruid = [
       ],
       [
         {
-          id: "druid_2_173",
+          id: "druid_2_1",
           active: false,
           index: 10,
           link: true,

@@ -73,6 +73,13 @@ export default function CardParagonHover({ item, size = 30 }) {
       1: 23,
       2: 79,
       3: 38,
+      4: 39,
+      5: 37,
+      6: 41,
+      7: 118,
+      8: 145,
+      9: 134,
+      10: 173,
     },
     sorcerer: {
       1: 23,
