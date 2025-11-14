@@ -18178,6 +18178,7 @@ export const optionSParagonSpiritborn = [
           options: ["5 Intelligence"],
           activable_ids: ["spiritborn_7_128", "spiritborn_7_130"],
         },
+        
         {
           id: "spiritborn_7_130",
           active: false,
