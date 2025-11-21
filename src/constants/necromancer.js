@@ -4040,6 +4040,8 @@ export const optionSParagonNecromancer = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
           bg: "magic",
         },
         {
@@ -4053,6 +4055,8 @@ export const optionSParagonNecromancer = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts physiques"],
           bg: "magic",
         },
         {
@@ -4064,7 +4068,7 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Will_active.png",
           glyph_ids: [8, 9, 14, 15, 16, 18, 22],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+7 volonte"],
           bg: "magic",
         },
         {
@@ -4076,7 +4080,7 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           glyph_ids: [1, 11, 13, 23, 21],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["7 Dextérité"],
           bg: "magic",
         },
       ],
@@ -4095,7 +4099,7 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Will_active.png",
           glyph_ids: [8, 9, 14, 15, 16, 18, 22],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+7 volonte"],
           bg: "magic",
         },
         {
@@ -4109,7 +4113,14 @@ export const optionSParagonNecromancer = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
-
+          label: "Nœud rare",
+          secondLabel: "Incitation",
+          options: [
+            "+20.0% de dégâts",
+            "+10 volonté",
+            "Bonus : ajoute +20.0% de dégâts si ces conditions sont remplies :",
+            "340 intelligence",
+          ],
           bg: "rare",
         },
         {
@@ -4123,7 +4134,14 @@ export const optionSParagonNecromancer = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
-
+          label: "Nœud rare",
+          secondLabel: "Réclamation",
+          options: [
+            "+30.0% de dégâts aux élites",
+            "+10 volonté",
+            "Bonus : ajoute +30.0% de dégâts aux élites si ces conditions sont remplies :",
+            "340 dextérité",
+          ],
           bg: "rare",
         },
         {
@@ -4140,7 +4158,7 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           glyph_ids: [1, 11, 13, 23, 21],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["7 Dextérité"],
           bg: "magic",
         },
         {
@@ -4194,6 +4212,8 @@ export const optionSParagonNecromancer = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
           bg: "magic",
         },
         {
@@ -4207,6 +4227,8 @@ export const optionSParagonNecromancer = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
           bg: "magic",
         },
         {
@@ -4220,6 +4242,8 @@ export const optionSParagonNecromancer = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts physiques"],
           bg: "magic",
         },
         {
@@ -4234,6 +4258,8 @@ export const optionSParagonNecromancer = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts physiques"],
           bg: "magic",
         },
         {
@@ -4749,6 +4775,8 @@ export const optionSParagonNecromancer = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           bg: "magic",
         },
         {
@@ -4794,6 +4822,8 @@ export const optionSParagonNecromancer = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           bg: "magic",
         },
       ],
@@ -4810,7 +4840,14 @@ export const optionSParagonNecromancer = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
-
+          label: "Nœud rare",
+          secondLabel: "Ténacité",
+          options: [
+            "Maximum de vie augmenté de 3.0%",
+            "+4 à l'armure",
+            "Bonus : ajoute Maximum de vie augmenté de 3.0% si ces conditions sont remplies :",
+            "630 volonté",
+          ],
           bg: "rare",
         },
         {
@@ -4820,6 +4857,8 @@ export const optionSParagonNecromancer = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           bg: "magic",
         },
         {
@@ -4829,6 +4868,8 @@ export const optionSParagonNecromancer = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           bg: "magic",
         },
         {
@@ -4843,7 +4884,14 @@ export const optionSParagonNecromancer = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
-
+          label: "Nœud rare",
+          secondLabel: "Primauté",
+          options: [
+            "+20.0% de dégâts",
+            "Maximum de vie augmenté de 4.0%",
+            "Bonus : ajoute +20.0% de dégâts si ces conditions sont remplies :",
+            "190 intelligence",
+          ],
           bg: "rare",
         },
         {
@@ -4853,6 +4901,8 @@ export const optionSParagonNecromancer = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           bg: "magic",
         },
         {
@@ -4862,8 +4912,9 @@ export const optionSParagonNecromancer = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
-
-          bg: "rare",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
+          bg: "magic",
         },
       ],
       [
@@ -4874,6 +4925,8 @@ export const optionSParagonNecromancer = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           bg: "magic",
         },
         {
@@ -4883,6 +4936,8 @@ export const optionSParagonNecromancer = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
           bg: "magic",
         },
       ],
@@ -5115,6 +5170,8 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/HPRegen_active.png",
+          label: "Nœud magique",
+          options: ["+50% de soins reçus"],
           activable_ids: ["necromancer_2_21", "necromancer_2_12"],
           bg: "magic",
         },
@@ -5124,6 +5181,8 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_2_2",
             "necromancer_2_22",
@@ -5214,6 +5273,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/BloodOrbHealing_active.png",
+          label: "Nœud magique",
+          options: ["+5% de soins reçus des orbes de sang"],
           activable_ids: [
             "necromancer_2_10",
             "necromancer_2_23",
@@ -5228,6 +5289,8 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: ["necromancer_2_24", "necromancer_2_19"],
           bg: "magic",
         },
@@ -5239,6 +5302,14 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Nœud rare",
+          secondLabel: "Récupération",
+          options: [
+            "Maximum de vie augmenté de 4.0%",
+            "+100 points de vie toutes les 5 secondes",
+            "Bonus : ajoute Maximum de vie augmenté de 4.0% si ces conditions sont remplies :",
+            "305 volonté",
+          ],
           activable_ids: [
             "necromancer_2_11",
             "necromancer_2_26",
@@ -5252,6 +5323,8 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_2_12",
             "necromancer_2_27",
@@ -5265,6 +5338,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/BloodOrbHealing_active.png",
+          label: "Nœud magique",
+          options: ["+5% de soins reçus des orbes de sang"],
           activable_ids: [
             "necromancer_2_19",
             "necromancer_2_30",
@@ -5278,6 +5353,14 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/BloodOrbHealing_active.png",
+          label: "Nœud rare",
+          secondLabel: "Goût pour le sang",
+          options: [
+            "+10.0% de soins reçus des orbes de sang",
+            "Maximum de vie augmenté de 4.0%",
+            "Bonus : ajoute +10.0% de soins reçus des orbes de sang si ces conditions sont remplies :",
+            "385 volonté",
+          ],
           activable_ids: [
             "necromancer_2_20",
             "necromancer_2_31",
@@ -5303,6 +5386,8 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/HPRegen_active.png",
+          label: "Nœud magique",
+          options: ["+50% de soins reçus"],
           activable_ids: [
             "necromancer_2_21",
             "necromancer_2_35",
@@ -5317,6 +5402,8 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_2_22",
             "necromancer_2_36",
@@ -5351,6 +5438,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/BloodOrbHealing_active.png",
+          label: "Nœud magique",
+          options: ["+5% de soins reçus des orbes de sang"],
           activable_ids: [
             "necromancer_2_23",
             "necromancer_2_43",
@@ -5365,6 +5454,8 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_2_24",
             "necromancer_2_44",
@@ -5624,6 +5715,11 @@ export const optionSParagonNecromancer = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/Necromancer_active.png",
+          label: "Nœud légendaire",
+          secondLabel: "Dîme de sang",
+          options: [
+            "Les orbes de sang augmentent vos dégâts de 10%[x] pendant 5 s, jusqu'à un maximum de 50%[x].",
+          ],
           activable_ids: [
             "necromancer_2_60",
             "necromancer_2_50",
@@ -5688,6 +5784,8 @@ export const optionSParagonNecromancer = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_2_47",
             "necromancer_2_66",
@@ -5701,6 +5799,8 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/BloodOrbHealing_active.png",
+          label: "Nœud magique",
+          options: ["+5% de soins reçus des orbes de sang"],
           activable_ids: [
             "necromancer_2_67",
             "necromancer_2_56",
@@ -5714,6 +5814,14 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/BloodOrbHealing_active.png",
+          label: "Nœud rare",
+          secondLabel: "Vampirisme",
+          options: [
+            "+10.0% de soins reçus des orbes de sang",
+            "Maximum de vie augmenté de 4.0%",
+            "Bonus : ajoute +10.0% de soins reçus des orbes de sang si ces conditions sont remplies :",
+            "385 volonté",
+          ],
           activable_ids: ["necromancer_2_68", "necromancer_2_57"],
           bg: "rare",
         },
@@ -5757,6 +5865,8 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/BloodDamage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Sang)"],
           activable_ids: ["necromancer_2_75", "necromancer_2_63"],
           bg: "magic",
         },
@@ -5766,6 +5876,8 @@ export const optionSParagonNecromancer = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/BloodDamage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Sang)"],
           activable_ids: [
             "necromancer_2_76",
             "necromancer_2_62",
@@ -5779,6 +5891,14 @@ export const optionSParagonNecromancer = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/DamageWhileHealthy_active.png",
+          label: "Nœud rare",
+          secondLabel: "Vivification",
+          options: [
+            "+20.0% de dégâts (Sang)",
+            "+25.0% de dégâts lorsque vous êtes en bonne santé",
+            "Bonus : ajoute +20.0% de dégâts (Sang) si ces conditions sont remplies :",
+            "1.155 intelligence, 260 volonté",
+          ],
           activable_ids: [
             "necromancer_2_55",
             "necromancer_2_77",
@@ -5819,6 +5939,8 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/BloodOrbHealing_active.png",
+          label: "Nœud magique",
+          options: ["+5% de soins reçus des orbes de sang"],
           activable_ids: [
             "necromancer_2_57",
             "necromancer_2_66",
@@ -5846,6 +5968,8 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/BloodOrbHealing_active.png",
+          label: "Nœud magique",
+          options: ["+5% de soins reçus des orbes de sang"],
           activable_ids: [
             "necromancer_2_83",
             "necromancer_2_68",
@@ -5907,6 +6031,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/BloodDamage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Sang)"],
           activable_ids: [
             "necromancer_2_91",
             "necromancer_2_73",
@@ -5920,6 +6046,8 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/DamageWhileHealthy_active.png",
+          label: "Noeud magique",
+          options: ["+12.5% de dégâts"],
           activable_ids: [
             "necromancer_2_62",
             "necromancer_2_92",
@@ -5934,6 +6062,8 @@ export const optionSParagonNecromancer = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/BloodDamage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Sang)"],
           activable_ids: [
             "necromancer_2_63",
             "necromancer_2_75",
@@ -6521,6 +6651,7 @@ export const optionSParagonNecromancer = [
             "necromancer_2_117",
             "necromancer_2_119",
           ],
+          bg: "magic",
         },
         {
           id: "necromancer_2_119",
@@ -6528,11 +6659,14 @@ export const optionSParagonNecromancer = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/BloodDamage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Sang)"],
           activable_ids: [
             "necromancer_2_103",
             "necromancer_2_118",
             "necromancer_2_120",
           ],
+          bg: "magic",
         },
         {
           id: "necromancer_2_120",
@@ -6586,11 +6720,14 @@ export const optionSParagonNecromancer = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/DamageWhileHealthy_active.png",
+          label: "Noeud magique",
+          options: ["+12.5% de dégâts"],
           activable_ids: [
             "necromancer_2_106",
             "necromancer_2_122",
             "necromancer_2_124",
           ],
+          bg: "magic",
         },
         {
           id: "necromancer_2_124",
@@ -6600,13 +6737,14 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Will_active.png",
           glyph_ids: [8, 9, 14, 15, 16, 18, 22],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+7 volonte"],
           activable_ids: [
             "necromancer_2_107",
             "necromancer_2_136",
             "necromancer_2_123",
             "necromancer_2_125",
           ],
+          bg: "magic",
         },
         {
           id: "necromancer_2_125",
@@ -6696,6 +6834,8 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/BloodDamage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Sang)"],
           activable_ids: [
             "necromancer_2_117",
             "necromancer_2_140",
@@ -6773,6 +6913,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/DamageWhileHealthy_active.png",
+          label: "Noeud magique",
+          options: ["+12.5% de dégâts"],
           activable_ids: [
             "necromancer_2_125",
             "necromancer_2_148",
@@ -6917,6 +7059,8 @@ export const optionSParagonNecromancer = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/DamageWhileHealthy_active.png",
+          label: "Noeud magique",
+          options: ["+12.5% de dégâts"],
           activable_ids: [
             "necromancer_2_136",
             "necromancer_2_154",
@@ -7265,6 +7409,8 @@ export const optionSParagonNecromancer = [
           link: true,
           direction: "top",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
       [
@@ -7273,11 +7419,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_3_5", "necromancer_3_3"],
         },
         {
@@ -7285,9 +7429,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           opened: true,
         },
         {
@@ -7295,11 +7439,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_7", "necromancer_3_3"],
         },
       ],
@@ -7309,11 +7451,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_3_2",
             "necromancer_3_8",
@@ -7325,9 +7465,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_3",
             "necromancer_3_9",
@@ -7342,11 +7482,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_4",
             "necromancer_3_10",
@@ -7360,11 +7496,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_5",
             "necromancer_3_12",
@@ -7376,9 +7510,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_6",
             "necromancer_3_13",
@@ -7391,11 +7525,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_3_7",
             "necromancer_3_14",
@@ -7411,11 +7543,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-          label: "Nœud normal",
-
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: ["necromancer_3_17", "necromancer_3_12"],
         },
         {
@@ -7423,9 +7551,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_8",
             "necromancer_3_18",
@@ -7440,11 +7568,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_9",
             "necromancer_3_12",
@@ -7456,9 +7580,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_10",
             "necromancer_3_19",
@@ -7471,8 +7595,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/ResistanceFire_active.png",
-
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: ["necromancer_3_20", "necromancer_3_14"],
           bg: "magic",
         },
@@ -7483,11 +7608,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_24", "necromancer_3_17"],
         },
         {
@@ -7495,9 +7618,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_11",
             "necromancer_3_25",
@@ -7510,11 +7633,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_12",
             "necromancer_3_26",
@@ -7526,8 +7647,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/ResistanceFire_active.png",
-
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "necromancer_3_14",
             "necromancer_3_27",
@@ -7540,8 +7662,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/HPPercent_active.png",
-
+          image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: [
             "necromancer_3_15",
             "necromancer_3_28",
@@ -7556,8 +7679,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 4,
           link: false,
-          image: "/paragon/barbarian/FuryOnKill_active.png",
-
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: ["necromancer_3_30", "necromancer_3_22"],
           bg: "magic",
         },
@@ -7566,8 +7690,7 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/FuryOnKill_active.png",
-
+          image: "/paragon/barbarian/DamageReductionFromDot_active.png",
           activable_ids: [
             "necromancer_3_31",
             "necromancer_3_21",
@@ -7580,8 +7703,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/FuryOnKill_active.png",
-
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "necromancer_3_32",
             "necromancer_3_22",
@@ -7594,8 +7718,7 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/FuryOnKill_active.png",
-
+          image: "/paragon/barbarian/DamageReductionFromDot_active.png",
           activable_ids: [
             "necromancer_3_16",
             "necromancer_3_23",
@@ -7608,9 +7731,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_17",
             "necromancer_3_33",
@@ -7623,11 +7746,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_3_18",
             "necromancer_3_34",
@@ -7639,8 +7760,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/ResistanceFire_active.png",
-
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "necromancer_3_19",
             "necromancer_3_36",
@@ -7653,10 +7775,17 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/ResistanceFire_active.png",
-
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Nœud rare",
+          secondLabel: "Déni",
+          options: [
+            "+3.0% de résistance à tous les éléments",
+            "+30 à l'armure",
+            "Bonus : ajoute +3.0% de résistance à tous les éléments si ces conditions sont remplies :",
+            "340 dextérité",
+          ],
           activable_ids: ["necromancer_3_20", "necromancer_3_27"],
-          bg: "magic",
+          bg: "rare",
         },
       ],
       [
@@ -7665,11 +7794,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_37", "necromancer_3_30"],
         },
         {
@@ -7679,9 +7806,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_21",
             "necromancer_3_38",
@@ -7694,8 +7819,7 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/FuryOnKill_active.png",
-
+          image: "/paragon/barbarian/DamageReductionFromDot_active.png",
           activable_ids: [
             "necromancer_3_22",
             "necromancer_3_30",
@@ -7708,8 +7832,15 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/FuryOnKill_active.png",
-
+          image: "/paragon/barbarian/DamageReductionFromDot_active.png",
+          label: "Nœud rare",
+          secondLabel: "Résilience imprégnée",
+          options: [
+            "+5.0% de réduction des dégâts",
+            "+3.0% de résistance à tous les éléments",
+            "Bonus : ajoute +5.0% de réduction des dégâts si ces conditions sont remplies :",
+            "340 intelligence",
+          ],
           activable_ids: ["necromancer_3_23", "necromancer_3_31"],
           bg: "rare",
         },
@@ -7720,11 +7851,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-          label: "Nœud normal",
-
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: ["necromancer_3_25", "necromancer_3_34"],
         },
         {
@@ -7732,11 +7859,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_26",
             "necromancer_3_33",
@@ -7748,11 +7873,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_39",
             "necromancer_3_34",
@@ -7764,8 +7887,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/HPPercent_active.png",
-
+          image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: ["necromancer_3_27", "necromancer_3_35"],
           bg: "magic",
         },
@@ -7776,11 +7900,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_29",
             "necromancer_3_43",
@@ -7792,11 +7914,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 4,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_30",
             "necromancer_3_44",
@@ -7810,11 +7930,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: ["necromancer_3_35", "necromancer_3_45"],
         },
         {
@@ -7822,8 +7938,15 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/ResistanceAll_active.png",
-
+          image: "/paragon/barbarian/LuckyHitBonus_active.png",
+          label: "Nœud rare",
+          secondLabel: "Supériorité",
+          options: [
+            "+5.0% de chances d'obtenir un Coup de chance",
+            "Maximum de vie augmenté de 4.0%",
+            "Bonus : ajoute +5.0% de chances d'obtenir un Coup de chance si ces conditions sont remplies :",
+            "1.540 volonté",
+          ],
           activable_ids: ["necromancer_3_47", "necromancer_3_41"],
           bg: "rare",
         },
@@ -7832,8 +7955,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/HealingBonus_active.png",
-
+          image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_3_48",
             "necromancer_3_40",
@@ -7846,8 +7970,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 16,
           link: false,
-          image: "/paragon/barbarian/ResistanceAll_active.png",
-
+          image: "/paragon/barbarian/LuckyHitBonus_active.png",
+          label: "Nœud magique",
+          options: ["+2.5% à la vitesse d'attaque pour Basique"],
           activable_ids: ["necromancer_3_49", "necromancer_3_41"],
           bg: "magic",
         },
@@ -7858,11 +7983,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_37",
             "necromancer_3_56",
@@ -7876,11 +7999,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: ["necromancer_3_38", "necromancer_3_43"],
         },
         {
@@ -7888,11 +8007,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_3_39", "necromancer_3_60"],
         },
         {
@@ -7900,8 +8017,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/HealingBonus_active.png",
-
+          image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: ["necromancer_3_63", "necromancer_3_47"],
           bg: "magic",
         },
@@ -7910,8 +8028,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/ResistanceAll_active.png",
-
+          image: "/paragon/barbarian/LuckyHitBonus_active.png",
+          label: "Nœud magique",
+          options: ["+2.5% à la vitesse d'attaque pour Basique"],
           activable_ids: [
             "necromancer_3_40",
             "necromancer_3_46",
@@ -7924,8 +8043,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/ResistanceAll_active.png",
-
+          image: "/paragon/barbarian/LuckyHitBonus_active.png",
+          label: "Nœud magique",
+          options: ["+2.5% à la vitesse d'attaque pour Basique"],
           activable_ids: [
             "necromancer_3_41",
             "necromancer_3_47",
@@ -7940,9 +8060,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_42",
             "necromancer_3_64",
@@ -7957,11 +8075,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_65",
             "necromancer_3_49",
@@ -7973,11 +8087,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 18,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_66",
             "necromancer_3_50",
@@ -7989,31 +8101,31 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 19,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_67", "necromancer_3_51"],
         },
       ],
       [
         {
-          id: "necromancer_3_53",
+          id: "necromancer_3_1",
           active: false,
           index: 0,
           link: true,
           direction: "left",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
         {
           id: "necromancer_3_54",
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Force"],
           opened: true,
         },
         {
@@ -8021,11 +8133,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_70",
             "necromancer_3_54",
@@ -8037,11 +8147,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_43",
             "necromancer_3_71",
@@ -8053,11 +8161,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_73"],
         },
         {
@@ -8065,11 +8171,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_3_75", "necromancer_3_59"],
         },
         {
@@ -8077,11 +8181,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_76",
             "necromancer_3_58",
@@ -8093,9 +8195,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_45",
             "necromancer_3_77",
@@ -8110,11 +8212,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: ["necromancer_3_60", "necromancer_3_62"],
         },
         {
@@ -8124,11 +8222,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: ["necromancer_3_61", "necromancer_3_63"],
         },
         {
@@ -8136,11 +8230,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_46",
             "necromancer_3_78",
@@ -8152,11 +8244,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 16,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_3_49",
             "necromancer_3_81",
@@ -8168,9 +8258,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_50",
             "necromancer_3_82",
@@ -8183,9 +8273,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 18,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_51",
             "necromancer_3_83",
@@ -8198,18 +8288,20 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 19,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           opened: true,
         },
         {
-          id: "necromancer_3_68",
+          id: "necromancer_3_1",
           active: false,
           index: 20,
           link: true,
           direction: "right",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
       [
@@ -8218,13 +8310,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_3_54", "necromancer_3_70"],
         },
         {
@@ -8232,10 +8320,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_55",
             "necromancer_3_85",
@@ -8248,10 +8335,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_56",
             "necromancer_3_86",
@@ -8265,13 +8351,9 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_87",
             "necromancer_3_71",
@@ -8283,11 +8365,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_57",
             "necromancer_3_88",
@@ -8300,12 +8381,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_89", "necromancer_3_73"],
         },
         {
@@ -8313,12 +8392,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_58",
             "necromancer_3_90",
@@ -8330,10 +8406,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_59",
             "necromancer_3_91",
@@ -8346,13 +8421,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_60",
             "necromancer_3_92",
@@ -8364,13 +8435,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_63",
             "necromancer_3_93",
@@ -8382,13 +8449,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_94",
             "necromancer_3_78",
@@ -8400,12 +8463,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_95",
             "necromancer_3_79",
@@ -8419,10 +8479,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_64",
             "necromancer_3_96",
@@ -8435,13 +8492,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_65",
             "necromancer_3_81",
@@ -8453,13 +8506,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 18,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_66",
             "necromancer_3_82",
@@ -8471,12 +8520,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 19,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_67", "necromancer_3_83"],
         },
       ],
@@ -8486,12 +8532,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_70", "necromancer_3_86"],
         },
         {
@@ -8499,11 +8542,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_71",
             "necromancer_3_97",
@@ -8516,11 +8558,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 4,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_72",
             "necromancer_3_98",
@@ -8533,10 +8574,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_73",
             "necromancer_3_99",
@@ -8550,13 +8591,9 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_74",
             "necromancer_3_100",
@@ -8568,9 +8605,13 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/barbarian.png",
-
+          image: "/paragon/barbarian/necromancer_active.png",
           activable_ids: ["necromancer_3_75", "necromancer_3_91"],
+          label: "Nœud légendaire",
+          secondLabel: "Vrilles lugubres",
+          options: [
+            "Les compétences de magie naturelle infligent 35%[x] de dégâts supplémentaires contre les cibles empoisonnées. Coup de chance : les compétences de magie naturelle ont jusqu'à 40% de chances d'empoisonner l'adversaire et de lui infliger 100% points de dégâts en 4 s.",
+          ],
           bg: "rare",
         },
         {
@@ -8578,11 +8619,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_3_76",
             "necromancer_3_90",
@@ -8596,12 +8635,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: ["necromancer_3_77", "necromancer_3_91"],
         },
         {
@@ -8609,11 +8643,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: ["necromancer_3_78", "necromancer_3_94"],
         },
         {
@@ -8621,10 +8653,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_79",
             "necromancer_3_102",
@@ -8637,10 +8668,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_80",
             "necromancer_3_103",
@@ -8653,13 +8683,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 16,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_3_81", "necromancer_3_95"],
         },
       ],
@@ -8669,12 +8695,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_86", "necromancer_3_98"],
         },
         {
@@ -8683,11 +8707,9 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_87",
             "necromancer_3_106",
@@ -8701,11 +8723,9 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_88",
             "necromancer_3_107",
@@ -8718,13 +8738,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_89",
             "necromancer_3_99",
@@ -8736,12 +8753,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_108", "necromancer_3_100"],
         },
         {
@@ -8749,8 +8764,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/FuryOnKill_active.png",
-
+          image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_3_94",
             "necromancer_3_112",
@@ -8763,12 +8779,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_95", "necromancer_3_102"],
         },
       ],
@@ -8778,14 +8791,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Dex_active.png",
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-
-          options: ["5 Dextérité"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_3_114", "necromancer_3_105"],
           bg: "magic",
         },
@@ -8794,8 +8803,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Damage_active.png",
-
+          image: "/paragon/barbarian/DamageNature_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Magie naturelle)"],
           activable_ids: ["necromancer_3_115", "necromancer_3_104"],
           bg: "magic",
         },
@@ -8804,11 +8814,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 4,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_3_98",
             "necromancer_3_117",
@@ -8820,12 +8828,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_99",
             "necromancer_3_118",
@@ -8838,13 +8844,9 @@ export const optionSParagonNecromancer = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_101",
             "necromancer_3_120",
@@ -8856,13 +8858,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_121",
             "necromancer_3_108",
@@ -8874,12 +8873,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_122", "necromancer_3_109"],
         },
         {
@@ -8887,8 +8884,15 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/FuryOnKill_active.png",
-
+          image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Nœud rare",
+          secondLabel: "Courage",
+          options: [
+            "Maximum de vie augmenté de 4.0%",
+            "+30 à l'armure",
+            "Bonus : ajoute Maximum de vie augmenté de 4.0% si ces conditions sont remplies :",
+            "340 dextérité",
+          ],
           activable_ids: ["necromancer_3_124", "necromancer_3_112"],
           bg: "rare",
         },
@@ -8897,8 +8901,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/HPPercent_active.png",
-
+          image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: [
             "necromancer_3_102",
             "necromancer_3_125",
@@ -8914,13 +8919,9 @@ export const optionSParagonNecromancer = [
           index: 0,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: ["necromancer_3_114"],
         },
         {
@@ -8928,7 +8929,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Damage_active.png",
+          image: "/paragon/barbarian/DamageNature_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Magie naturelle)"],
           activable_ids: [
             "necromancer_3_104",
             "necromancer_3_126",
@@ -8942,7 +8945,15 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Damage_active.png",
+          image: "/paragon/barbarian/DamageNature_active.png",
+          label: "Nœud rare",
+          secondLabel: "Volonté de la nature",
+          options: [
+            "+20.0% de dégâts (Magie naturelle)",
+            "+10 volonté",
+            "Bonus : ajoute +20.0% de dégâts (Magie naturelle) si ces conditions sont remplies :",
+            "380 intelligence",
+          ],
           activable_ids: [
             "necromancer_3_105",
             "necromancer_3_127",
@@ -8956,12 +8967,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_128",
             "necromancer_3_115",
@@ -8974,13 +8983,9 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_106",
             "necromancer_3_116",
@@ -8992,21 +8997,18 @@ export const optionSParagonNecromancer = [
           active: null,
           index: 5,
           link: true,
+          is_icon: true,
           image: "/paragon/tile_bg_glyph.png",
-          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
         {
           id: "necromancer_3_119",
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_130",
             "necromancer_3_118",
@@ -9018,10 +9020,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_108",
             "necromancer_3_131",
@@ -9034,10 +9036,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_109",
             "necromancer_3_132",
@@ -9050,10 +9052,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_110",
             "necromancer_3_133",
@@ -9066,13 +9068,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_3_122"],
         },
         {
@@ -9080,8 +9079,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/FuryOnKill_active.png",
-
+          image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_3_111",
             "necromancer_3_136",
@@ -9094,8 +9094,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/FuryOnKill_active.png",
-
+          image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_3_112",
             "necromancer_3_137",
@@ -9110,12 +9111,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_114", "necromancer_3_127"],
         },
         {
@@ -9123,12 +9122,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Dex_active.png",
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_115",
             "necromancer_3_138",
@@ -9142,8 +9139,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Damage_active.png",
-
+          image: "/paragon/barbarian/DamageNature_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Magie naturelle)"],
           activable_ids: [
             "necromancer_3_116",
             "necromancer_3_139",
@@ -9156,12 +9154,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_118",
             "necromancer_3_141",
@@ -9174,13 +9170,9 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_119",
             "necromancer_3_129",
@@ -9192,10 +9184,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_120",
             "necromancer_3_142",
@@ -9209,11 +9201,9 @@ export const optionSParagonNecromancer = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_121",
             "necromancer_3_143",
@@ -9226,11 +9216,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_3_122",
             "necromancer_3_144",
@@ -9244,12 +9232,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: ["necromancer_3_146", "necromancer_3_135"],
         },
         {
@@ -9257,12 +9240,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_147",
             "necromancer_3_134",
@@ -9274,10 +9254,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_124",
             "necromancer_3_148",
@@ -9290,9 +9269,11 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/HPPercent_active.png",
-
+          image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: ["necromancer_3_125", "necromancer_3_136"],
+          bg: "magic",
         },
       ],
       [
@@ -9301,13 +9282,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_3_127", "necromancer_3_139"],
         },
         {
@@ -9315,10 +9293,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_128",
             "necromancer_3_149",
@@ -9331,8 +9309,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 4,
           link: false,
-          image: "/paragon/barbarian/DamageWhileFortified_active.png",
-
+          image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
           activable_ids: [
             "necromancer_3_150",
             "necromancer_3_139",
@@ -9346,13 +9325,9 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_129",
             "necromancer_3_151",
@@ -9364,12 +9339,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_131", "necromancer_3_143"],
         },
         {
@@ -9378,11 +9351,9 @@ export const optionSParagonNecromancer = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Dextérité"],
           activable_ids: [
             "necromancer_3_132",
             "necromancer_3_153",
@@ -9395,11 +9366,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_3_133",
             "necromancer_3_154",
@@ -9412,12 +9381,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_155",
             "necromancer_3_144",
@@ -9429,12 +9395,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_134",
             "necromancer_3_145",
@@ -9446,12 +9409,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_135",
             "necromancer_3_146",
@@ -9465,10 +9425,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Dextérité"],
           activable_ids: ["necromancer_3_136", "necromancer_3_147"],
         },
       ],
@@ -9478,12 +9435,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_139", "necromancer_3_150"],
         },
         {
@@ -9491,11 +9446,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 4,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+7 Dextérité"],
           activable_ids: [
             "necromancer_3_140",
             "necromancer_3_156",
@@ -9509,7 +9463,15 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/DamageWhileFortified_active.png",
+          image: "/paragon/barbarian/DamageToElite_active.png",
+          label: "Nœud rare",
+          secondLabel: "Dévastation",
+          options: [
+            "+20.0% de dégâts",
+            "+10 volonté",
+            "Bonus : ajoute +20.0% de dégâts si ces conditions sont remplies :",
+            "380 dextérité",
+          ],
           activable_ids: [
             "necromancer_3_141",
             "necromancer_3_157",
@@ -9523,8 +9485,7 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/DamageWhileFortified_active.png",
-
+          image: "/paragon/barbarian/DamageToElite_active.png",
           activable_ids: ["necromancer_3_158", "necromancer_3_151"],
           bg: "magic",
         },
@@ -9533,13 +9494,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_3_143", "necromancer_3_154"],
         },
         {
@@ -9547,10 +9504,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_144",
             "necromancer_3_159",
@@ -9563,12 +9519,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_3_145",
             "necromancer_3_160",
@@ -9583,13 +9536,9 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["+5 Dextérité"],
           activable_ids: ["necromancer_3_150", "necromancer_3_157"],
         },
         {
@@ -9597,7 +9546,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/DamageWhileFortified_active.png",
+          image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
           activable_ids: [
             "necromancer_3_151",
             "necromancer_3_161",
@@ -9611,13 +9562,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["+7 Dextérité"],
           activable_ids: ["necromancer_3_152", "necromancer_3_157"],
           bg: "magic",
         },
@@ -9626,12 +9574,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_154", "necromancer_3_160"],
         },
         {
@@ -9639,11 +9584,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           opened: true,
         },
       ],
@@ -9653,20 +9596,21 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_3_157"],
         },
         {
-          id: "necromancer_3_162",
+          id: "necromancer_3_1",
           active: false,
           index: 10,
           link: true,
           direction: "bottom",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
     ],
@@ -12208,7 +12152,6 @@ export const optionSParagonNecromancer = [
           label: "Nœud normal",
           options: ["+5 Force"],
         },
-        
       ],
       [
         {
@@ -12300,7 +12243,6 @@ export const optionSParagonNecromancer = [
           direction: "bottom",
           image: "/paragon/barbarian/Gate_active.png",
         },
-        
       ],
     ],
   },
@@ -12325,7 +12267,8 @@ export const optionSParagonNecromancer = [
           link: true,
           direction: "top",
           image: "/paragon/barbarian/Gate_active.png",
-
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
           activable_ids: ["necromancer_5_3"],
         },
         {
@@ -12333,15 +12276,12 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_8"],
         },
-        
       ],
       [
         {
@@ -12349,9 +12289,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           opened: true,
         },
         {
@@ -12359,11 +12299,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_11",
             "necromancer_5_3",
@@ -12378,10 +12316,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-          label: "Nœud normal",
-
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_12",
             "necromancer_5_4",
@@ -12396,10 +12330,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_13",
             "necromancer_5_5",
@@ -12412,13 +12342,9 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["7 Dextérité"],
           activable_ids: [
             "necromancer_5_14",
             "necromancer_5_6",
@@ -12431,7 +12357,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/DamageBleed_active.png",
+          image: "/paragon/barbarian/DamageStorm_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Tempête)"],
           activable_ids: [
             "necromancer_5_2",
             "necromancer_5_15",
@@ -12446,13 +12374,9 @@ export const optionSParagonNecromancer = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: ["necromancer_5_16", "necromancer_5_8"],
         },
       ],
@@ -12462,10 +12386,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_3",
             "necromancer_5_18",
@@ -12480,10 +12403,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-          label: "Nœud normal",
-
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_4",
             "necromancer_5_10",
@@ -12498,10 +12417,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_5",
             "necromancer_5_11",
@@ -12513,10 +12428,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_6",
             "necromancer_5_19",
@@ -12529,7 +12444,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/DamageBleed_active.png",
+          image: "/paragon/barbarian/DamageStorm_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Tempête)"],
           activable_ids: [
             "necromancer_5_7",
             "necromancer_5_20",
@@ -12543,7 +12460,15 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/DamageBleed_active.png",
+          image: "/paragon/barbarian/DamageStorm_active.png",
+          label: "Nœud rare",
+          secondLabel: "Mande-foudre",
+          options: [
+            "+20.0% de dégâts (Tempête)",
+            "+10 volonté",
+            "Bonus : ajoute +20.0% de dégâts (Tempête) si ces conditions sont remplies :",
+            "360 dextérité",
+          ],
           activable_ids: [
             "necromancer_5_8",
             "necromancer_5_21",
@@ -12558,11 +12483,9 @@ export const optionSParagonNecromancer = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["7 Dextérité"],
           activable_ids: [
             "necromancer_5_9",
             "necromancer_5_22",
@@ -12576,15 +12499,12 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_16"],
         },
-        
       ],
       [
         {
@@ -12592,11 +12512,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_10", "necromancer_5_24"],
         },
         {
@@ -12604,12 +12522,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_13",
             "necromancer_5_27",
@@ -12621,10 +12537,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_14",
             "necromancer_5_28",
@@ -12637,7 +12553,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/DamageBleed_active.png",
+          image: "/paragon/barbarian/DamageStorm_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Tempête)"],
           activable_ids: [
             "necromancer_5_15",
             "necromancer_5_29",
@@ -12652,13 +12570,9 @@ export const optionSParagonNecromancer = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: ["necromancer_5_16", "necromancer_5_21"],
         },
         {
@@ -12666,12 +12580,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 18,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_31"],
         },
       ],
@@ -12684,10 +12596,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_18",
             "necromancer_5_36",
@@ -12699,12 +12607,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_37",
             "necromancer_5_24",
@@ -12716,12 +12622,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_38",
             "necromancer_5_25",
@@ -12733,9 +12637,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_5_19",
             "necromancer_5_39",
@@ -12748,10 +12652,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_20",
             "necromancer_5_40",
@@ -12764,12 +12668,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_21",
             "necromancer_5_41",
@@ -12781,12 +12683,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_42", "necromancer_5_31"],
         },
         {
@@ -12794,10 +12694,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 18,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_23",
             "necromancer_5_43",
@@ -12812,13 +12712,9 @@ export const optionSParagonNecromancer = [
           index: 19,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: ["necromancer_5_44", "necromancer_5_31"],
         },
       ],
@@ -12828,11 +12724,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_47", "necromancer_5_34"],
         },
         {
@@ -12840,11 +12734,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_48",
             "necromancer_5_33",
@@ -12856,11 +12748,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_49",
             "necromancer_5_34",
@@ -12872,10 +12762,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_24",
             "necromancer_5_50",
@@ -12888,12 +12778,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_25",
             "necromancer_5_36",
@@ -12906,9 +12794,7 @@ export const optionSParagonNecromancer = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-          glyph_ids: [2, 10, 15, 22, 23],
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: [
@@ -12924,9 +12810,7 @@ export const optionSParagonNecromancer = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-          glyph_ids: [2, 10, 15, 22, 23],
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: [
@@ -12941,12 +12825,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_28",
             "necromancer_5_39",
@@ -12963,76 +12845,66 @@ export const optionSParagonNecromancer = [
         {
           id: "necromancer_5_42",
           active: false,
-          index: 16,
-          link: false,
-          image: "/paragon/barbarian/Dex_active.png",
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
-          activable_ids: [
-            "necromancer_5_30",
-            "necromancer_5_55",
-            "necromancer_5_43",
-          ],
-        },
-        {
-          id: "necromancer_5_42",
-          active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/DamageToVulnerable_active.png",
-
+          image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
+          label: "Nœud normal",
+          options: ["5 Dextérité"],
           activable_ids: [
             "necromancer_5_30",
             "necromancer_5_55",
             "necromancer_5_43",
           ],
-          bg: "magic",
         },
         {
           id: "necromancer_5_43",
           active: false,
           index: 18,
           link: false,
-          image: "/paragon/barbarian/DamageToVulnerable_active.png",
+          image: "/paragon/barbarian/DamageToNear_active.png",
+          label: "Noeud magique",
+          options: ["+12.0% de dégâts"],
           activable_ids: [
             "necromancer_5_31",
             "necromancer_5_56",
             "necromancer_5_42",
             "necromancer_5_44",
           ],
-          bg: "rare",
+          bg: "magic",
         },
         {
           id: "necromancer_5_44",
           active: false,
           index: 19,
           link: false,
-          image: "/paragon/barbarian/DamageToVulnerable_active.png",
+          image: "/paragon/barbarian/DamageToNear_active.png",
+          label: "Nœud rare",
+          secondLabel: "Concentration",
+          options: [
+            "+24.0% de dégâts contre les cibles proches",
+            "+10 volonté",
+            "Bonus : ajoute +24.0% de dégâts contre les cibles proches si ces conditions sont remplies :",
+            "360 intelligence",
+          ],
           activable_ids: [
             "necromancer_5_32",
             "necromancer_5_57",
             "necromancer_5_43",
             "necromancer_5_45",
           ],
-          bg: "magic",
+          bg: "rare",
         },
         {
           id: "necromancer_5_45",
           active: false,
           index: 20,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
-          label: "Nœud normal",
-          options: ["+5 Force"],
-
+          image: "/paragon/barbarian/DamageToNear_active.png",
+          label: "Noeud magique",
+          options: ["+12.0% de dégâts"],
           activable_ids: ["necromancer_5_44"],
+          bg: "magic",
         },
       ],
       [
@@ -13041,8 +12913,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/ResistancePoison_active.png",
-
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: ["necromancer_5_63", "necromancer_5_47"],
           bg: "magic",
         },
@@ -13051,11 +12924,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_33",
             "necromancer_5_46",
@@ -13067,9 +12938,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_34",
             "necromancer_5_70",
@@ -13082,11 +12953,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_5_35",
             "necromancer_5_48",
@@ -13098,11 +12967,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_36", "necromancer_5_49"],
         },
         {
@@ -13111,13 +12978,9 @@ export const optionSParagonNecromancer = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_38",
             "necromancer_5_64",
@@ -13129,12 +12992,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_39", "necromancer_5_51"],
         },
         {
@@ -13142,12 +13003,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_41",
             "necromancer_5_66",
@@ -13159,11 +13018,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 16,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_5_67",
             "necromancer_5_53",
@@ -13175,10 +13032,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_42",
             "necromancer_5_69",
@@ -13191,8 +13048,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 18,
           link: false,
-          image: "/paragon/barbarian/DamageToVulnerable_active.png",
-
+          image: "/paragon/barbarian/DamageToNear_active.png",
+          label: "Noeud magique",
+          options: ["+12.0% de dégâts"],
           activable_ids: [
             "necromancer_5_43",
             "necromancer_5_55",
@@ -13205,17 +13063,16 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 19,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_44",
             "necromancer_5_71",
             "necromancer_5_56",
           ],
+          bg: "magic",
         },
       ],
       [
@@ -13224,11 +13081,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_72", "necromancer_5_59"],
         },
         {
@@ -13236,11 +13091,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_73",
             "necromancer_5_58",
@@ -13252,11 +13105,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_74",
             "necromancer_5_59",
@@ -13268,8 +13119,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 4,
           link: false,
-          image: "/paragon/barbarian/ResistancePoison_active.png",
-
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: ["necromancer_5_60", "necromancer_5_62"],
           bg: "magic",
         },
@@ -13278,8 +13130,15 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/ResistancePoison_active.png",
-
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Nœud rare",
+          secondLabel: "Résilience à la foudre",
+          options: [
+            "+10.0% de résistance aux dégâts de foudre",
+            "+2.0% de résistance maximum aux dégâts de foudre",
+            "Bonus : ajoute +10.0% de résistance aux dégâts de foudre si ces conditions sont remplies :",
+            "340 intelligence",
+          ],
           activable_ids: [
             "necromancer_5_75",
             "necromancer_5_61",
@@ -13293,7 +13152,8 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
-
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "necromancer_5_46",
             "necromancer_5_76",
@@ -13306,12 +13166,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_51", "necromancer_5_81"],
         },
         {
@@ -13319,12 +13176,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_83", "necromancer_5_66"],
         },
         {
@@ -13332,10 +13187,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_53",
             "necromancer_5_84",
@@ -13349,9 +13204,7 @@ export const optionSParagonNecromancer = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-          glyph_ids: [2, 10, 15, 22, 23],
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: [
@@ -13361,44 +13214,43 @@ export const optionSParagonNecromancer = [
             "necromancer_5_69",
           ],
         },
-
+        {
+          id: "necromancer_5_68",
+          active: false,
+          index: 16,
+          link: false,
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
+          activable_ids: [
+            "necromancer_5_54",
+            "necromancer_5_85",
+            "necromancer_5_66",
+            "necromancer_5_69",
+          ],
+        },
         {
           id: "necromancer_5_69",
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_55", "necromancer_5_67"],
         },
         {
           id: "necromancer_5_70",
           active: false,
-          index: 18,
+          index: 8,
           link: false,
           image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
           options: ["+5 volonte"],
-
           activable_ids: ["necromancer_5_48", "necromancer_5_78"],
-        },
-        {
-          id: "necromancer_5_71",
-          active: false,
-          index: 19,
-          link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          label: "Nœud normal",
-
-          options: ["+5 Force"],
-
-          activable_ids: ["necromancer_5_57", "necromancer_5_87"],
         },
       ],
       [
@@ -13407,11 +13259,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_58",
             "necromancer_5_88",
@@ -13423,9 +13273,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_59",
             "necromancer_5_89",
@@ -13438,11 +13288,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_60", "necromancer_5_73"],
         },
         {
@@ -13451,7 +13299,8 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
-
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: ["necromancer_5_62", "necromancer_5_76"],
           bg: "magic",
         },
@@ -13460,7 +13309,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/ResistancePoison_active.png",
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "necromancer_5_63",
             "necromancer_5_90",
@@ -13474,11 +13325,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_91",
             "necromancer_5_76",
@@ -13505,11 +13354,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_93", "necromancer_5_78"],
         },
         {
@@ -13517,9 +13364,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image:
-            "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
-
+          image: "/paragon/barbarian/DamageToFar_active.png",
+          label: "Noeud magique",
+          options: ["+20.0% de dégâts"],
           activable_ids: ["necromancer_5_95", "necromancer_5_81"],
           bg: "magic",
         },
@@ -13528,7 +13375,11 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/ResistanceFire_active.png",
+          image: "/paragon/barbarian/DamageToCC_active.png",
+          label: "Nœud magique",
+          options: [
+            "+17.5% de dégâts contre les cibles subissant une perte de contrôle",
+          ],
           activable_ids: [
             "necromancer_5_64",
             "necromancer_5_96",
@@ -13542,11 +13393,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: ["necromancer_5_81", "necromancer_5_83"],
         },
         {
@@ -13554,12 +13403,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_65",
             "necromancer_5_82",
@@ -13571,10 +13418,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_66",
             "necromancer_5_97",
@@ -13587,12 +13434,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 16,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
-          glyph_ids: [3, 7, 8, 11, 16, 19, 21],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_67",
             "necromancer_5_98",
@@ -13607,10 +13452,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: ["necromancer_5_99", "necromancer_5_87"],
         },
         {
@@ -13621,10 +13462,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_71",
             "necromancer_5_100",
@@ -13641,10 +13478,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_72",
             "necromancer_5_102",
@@ -13656,11 +13489,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_73", "necromancer_5_88"],
         },
         {
@@ -13668,11 +13499,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_76", "necromancer_5_91"],
         },
         {
@@ -13680,11 +13509,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_77",
             "necromancer_5_90",
@@ -13699,8 +13526,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
           activable_ids: [
             "necromancer_5_78",
             "necromancer_5_103",
@@ -13713,11 +13538,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_79",
             "necromancer_5_92",
@@ -13729,8 +13552,11 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/ResistanceFire_active.png",
-
+          image: "/paragon/barbarian/DamageToCC_active.png",
+          label: "Nœud magique",
+          options: [
+            "+17.5% de dégâts contre les cibles subissant une perte de contrôle",
+          ],
           activable_ids: ["necromancer_5_93", "necromancer_5_95"],
           bg: "magic",
         },
@@ -13739,8 +13565,15 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image:
-            "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+          image: "/paragon/barbarian/DamageToFar_active.png",
+          label: "Nœud rare",
+          secondLabel: "Déluge",
+          options: [
+            "+40.0% de dégâts contre les cibles à distance",
+            "+35.0% de dégâts contre les cibles subissant une perte de contrôle",
+            "Bonus : ajoute +40.0% de dégâts contre les cibles à distance si ces conditions sont remplies :",
+            "1.610 volonté, 330 intelligence",
+          ],
           activable_ids: [
             "necromancer_5_80",
             "necromancer_5_104",
@@ -13754,9 +13587,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image:
-            "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
-
+          image: "/paragon/barbarian/DamageToFar_active.png",
+          label: "Noeud magique",
+          options: ["+20.0% de dégâts"],
           activable_ids: ["necromancer_5_81", "necromancer_5_95"],
           bg: "magic",
         },
@@ -13765,12 +13598,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
-          glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_84",
             "necromancer_5_106",
@@ -13783,13 +13614,9 @@ export const optionSParagonNecromancer = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_85",
             "necromancer_5_107",
@@ -13801,11 +13628,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 18,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_86",
             "necromancer_5_109",
@@ -13817,11 +13642,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 19,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_87",
             "necromancer_5_110",
@@ -13837,15 +13660,17 @@ export const optionSParagonNecromancer = [
           link: true,
           direction: "left",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
         {
           id: "necromancer_5_102",
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Force"],
           opened: true,
         },
         {
@@ -13853,11 +13678,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_92", "necromancer_5_115"],
         },
         {
@@ -13865,9 +13688,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image:
-            "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
-
+          image: "/paragon/barbarian/DamageToFar_active.png",
+          label: "Noeud magique",
+          options: ["+20.0% de dégâts"],
           activable_ids: ["necromancer_5_95", "necromancer_5_117"],
           bg: "magic",
         },
@@ -13876,11 +13699,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_119", "necromancer_5_106"],
         },
         {
@@ -13888,9 +13709,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_97",
             "necromancer_5_120",
@@ -13903,11 +13724,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 16,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_5_98",
             "necromancer_5_106",
@@ -13919,11 +13738,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_107", "necromancer_5_109"],
         },
         {
@@ -13931,11 +13748,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 18,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_99",
             "necromancer_5_108",
@@ -13947,9 +13762,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 19,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           opened: true,
         },
         {
@@ -13959,6 +13774,8 @@ export const optionSParagonNecromancer = [
           link: true,
           direction: "right",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
       [
@@ -13967,11 +13784,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_102", "necromancer_5_121"],
         },
         {
@@ -13979,11 +13794,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_123", "necromancer_5_114"],
         },
         {
@@ -13991,11 +13804,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_124",
             "necromancer_5_113",
@@ -14007,11 +13818,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_103",
             "necromancer_5_114",
@@ -14023,11 +13832,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_125", "necromancer_5_115"],
         },
         {
@@ -14035,11 +13842,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_5_104",
             "necromancer_5_127",
@@ -14051,11 +13856,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_128", "necromancer_5_117"],
         },
         {
@@ -14063,11 +13866,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_105",
             "necromancer_5_129",
@@ -14079,11 +13880,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_106",
             "necromancer_5_130",
@@ -14097,11 +13896,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_112",
             "necromancer_5_131",
@@ -14113,11 +13910,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_132", "necromancer_5_121"],
         },
         {
@@ -14128,10 +13923,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-          label: "Nœud normal",
-
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_113",
             "necromancer_5_134",
@@ -14143,11 +13934,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_114", "necromancer_5_123"],
         },
         {
@@ -14155,11 +13944,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_5_116",
             "necromancer_5_136",
@@ -14174,10 +13961,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: ["necromancer_5_125", "necromancer_5_127"],
         },
         {
@@ -14186,8 +13969,6 @@ export const optionSParagonNecromancer = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: [
@@ -14202,11 +13983,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_118",
             "necromancer_5_138",
@@ -14218,11 +13997,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_119",
             "necromancer_5_139",
@@ -14234,11 +14011,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_120",
             "necromancer_5_140",
@@ -14255,10 +14030,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_121",
             "necromancer_5_141",
@@ -14270,11 +14041,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_122",
             "necromancer_5_142",
@@ -14289,10 +14058,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: ["necromancer_5_143", "necromancer_5_134"],
         },
         {
@@ -14300,11 +14065,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_123",
             "necromancer_5_144",
@@ -14319,10 +14082,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-          label: "Nœud normal",
-
-          options: ["5 Dextérité"],
-
           activable_ids: ["necromancer_5_146", "necromancer_5_136"],
         },
         {
@@ -14330,11 +14089,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_125",
             "necromancer_5_147",
@@ -14346,11 +14103,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_127",
             "necromancer_5_148",
@@ -14362,11 +14117,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_128",
             "necromancer_5_149",
@@ -14378,11 +14131,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_129",
             "necromancer_5_151",
@@ -14394,11 +14145,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_130", "necromancer_5_139"],
         },
       ],
@@ -14408,11 +14157,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_5_131",
             "necromancer_5_152",
@@ -14424,11 +14171,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_132",
             "necromancer_5_153",
@@ -14440,11 +14185,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_133",
             "necromancer_5_155",
@@ -14456,9 +14199,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_134",
             "necromancer_5_156",
@@ -14474,10 +14217,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_157",
             "necromancer_5_144",
@@ -14489,11 +14228,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_135",
             "necromancer_5_145",
@@ -14505,11 +14242,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_136", "necromancer_5_146"],
         },
         {
@@ -14517,11 +14252,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_137", "necromancer_5_149"],
         },
         {
@@ -14529,7 +14262,7 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/CCDurationReduction_active.png",
+          image: "/paragon/barbarian/DamageReductionFromVulnerable_active.png",
           activable_ids: [
             "necromancer_5_138",
             "necromancer_5_158",
@@ -14543,8 +14276,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/Dodge_active.png",
-
+          image: "/paragon/barbarian/HealingBonus_active.png",
+          label: "Nœud magique",
+          options: ["+3% de soins reçus"],
           activable_ids: [
             "necromancer_5_159",
             "necromancer_5_149",
@@ -14557,8 +14291,7 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/CCDurationReduction_active.png",
-
+          image: "/paragon/barbarian/DamageReductionFromVulnerable_active.png",
           activable_ids: ["necromancer_5_139", "necromancer_5_150"],
           bg: "magic",
         },
@@ -14569,11 +14302,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_141", "necromancer_5_153"],
         },
         {
@@ -14581,11 +14312,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_142",
             "necromancer_5_160",
@@ -14600,10 +14329,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: ["necromancer_5_162", "necromancer_5_155"],
         },
         {
@@ -14611,7 +14336,13 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/barbarian.png",
+          image: "/paragon/barbarian/Druid_active.png",
+          label: "Nœud légendaire",
+          secondLabel: "Foudroiement",
+          options: [
+            "Les compétences de tempête infligent des dégâts supplémentaires à hauteur de 20%[x] de vos bonus de dégâts contre les cibles à proximité et à distance, jusqu'à un maximum de 60%[x].",
+            "Bonus actuel : 0%[x]",
+          ],
           activable_ids: [
             "necromancer_5_143",
             "necromancer_5_163",
@@ -14625,11 +14356,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_144",
             "necromancer_5_155",
@@ -14641,11 +14370,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_145", "necromancer_5_156"],
         },
         {
@@ -14653,8 +14380,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/Dodge_active.png",
-
+          image: "/paragon/barbarian/HealingBonus_active.png",
+          label: "Nœud magique",
+          options: ["+3% de soins reçus"],
           activable_ids: ["necromancer_5_149", "necromancer_5_159"],
           bg: "magic",
         },
@@ -14663,8 +14391,15 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/CCDurationReduction_active.png",
-
+          image: "/paragon/barbarian/DamageReductionFromVulnerable_active.png",
+          label: "Nœud rare",
+          secondLabel: "Outrecuidance",
+          options: [
+            "6.0% de réduction des dégâts infligés par les cibles vulnérables",
+            "+6.0% de soins reçus",
+            "Bonus : ajoute 6.0% de réduction des dégâts infligés par les cibles vulnérables si ces conditions sont remplies :",
+            "360 intelligence",
+          ],
           activable_ids: [
             "necromancer_5_150",
             "necromancer_5_164",
@@ -14679,11 +14414,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_153",
             "necromancer_5_165",
@@ -14695,11 +14428,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_166",
             "necromancer_5_160",
@@ -14711,9 +14442,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 4,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_154",
             "necromancer_5_167",
@@ -14726,11 +14457,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_155", "necromancer_5_162"],
         },
         {
@@ -14738,8 +14467,7 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/CCDurationReduction_active.png",
-
+          image: "/paragon/barbarian/DamageReductionFromVulnerable_active.png",
           activable_ids: ["necromancer_5_159", "necromancer_5_169"],
           bg: "magic",
         },
@@ -14750,16 +14478,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image:
-            "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
-
-          activable_ids: [
-            "necromancer_5_160",
-            "necromancer_5_171",
-            "necromancer_5_166",
-          ],
-          label: "de normal",
-          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
+          image: "/paragon/barbarian/CriticalDamage_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts critiques"],
           activable_ids: [
             "necromancer_5_160",
             "necromancer_5_171",
@@ -14774,21 +14495,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/DamageToVulnerable_active.png",
           label: "Nœud magique",
-          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
-          activable_ids: [
-            "necromancer_5_161",
-            "necromancer_5_172",
-            "necromancer_5_165",
-            "necromancer_5_167",
-          ],
-          bg: "magic",
-        },
-        {
-          id: "necromancer_5_166",
-          active: false,
-          index: 3,
-          link: false,
-          image: "/paragon/barbarian/DamageToVulnerable_active.png",
+          options: ["+12.5% de dégâts contre les cibles vulnérables"],
           activable_ids: [
             "necromancer_5_161",
             "necromancer_5_172",
@@ -14805,10 +14512,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_162",
             "necromancer_5_173",
@@ -14820,11 +14523,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_179", "necromancer_5_169"],
         },
         {
@@ -14835,17 +14536,12 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_164",
             "necromancer_5_180",
             "necromancer_5_168",
           ],
         },
-        
       ],
       [
         {
@@ -14854,7 +14550,8 @@ export const optionSParagonNecromancer = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/DamageToVulnerable_active.png",
-
+          label: "Nœud magique",
+          options: ["+12.5% de dégâts contre les cibles vulnérables"],
           activable_ids: ["necromancer_5_171"],
           bg: "magic",
         },
@@ -14863,8 +14560,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image:
-            "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+          image: "/paragon/barbarian/CriticalDamage_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts critiques"],
           activable_ids: [
             "necromancer_5_165",
             "necromancer_5_181",
@@ -14878,9 +14576,15 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image:
-            "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
-
+          image: "/paragon/barbarian/CriticalDamage_active.png",
+          label: "Nœud rare",
+          secondLabel: "Tempête",
+          options: [
+            "+2.0% de chances d'infliger un coup critique",
+            "+25.0% de dégâts contre les cibles vulnérables",
+            "Bonus : ajoute +2.0% de chances d'infliger un coup critique si ces conditions sont remplies :",
+            "1.610 volonté, 330 dextérité",
+          ],
           activable_ids: [
             "necromancer_5_166",
             "necromancer_5_171",
@@ -14893,11 +14597,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 4,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_5_167",
             "necromancer_5_172",
@@ -14909,11 +14611,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_182",
             "necromancer_5_173",
@@ -14925,11 +14625,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_183",
             "necromancer_5_174",
@@ -14944,10 +14642,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-          label: "Nœud normal",
-
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_184",
             "necromancer_5_175",
@@ -14959,11 +14653,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_185", "necromancer_5_176"],
         },
         {
@@ -14971,11 +14663,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_188", "necromancer_5_179"],
         },
         {
@@ -14984,8 +14674,6 @@ export const optionSParagonNecromancer = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
           label: "Nœud normal",
           options: ["5 Dextérité"],
           activable_ids: [
@@ -15000,11 +14688,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_5_169",
             "necromancer_5_190",
@@ -15018,9 +14704,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image:
-            "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
-
+          image: "/paragon/barbarian/CriticalDamage_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts critiques"],
           activable_ids: ["necromancer_5_171"],
           bg: "magic",
         },
@@ -15029,11 +14715,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_174", "necromancer_5_183"],
         },
         {
@@ -15041,11 +14725,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_5_175",
             "necromancer_5_182",
@@ -15057,11 +14739,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_176",
             "necromancer_5_183",
@@ -15073,11 +14753,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: [
             "necromancer_5_177",
             "necromancer_5_184",
@@ -15089,11 +14767,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Str_active.png",
-
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
-
+          options: ["+5 volonte"],
           activable_ids: ["necromancer_5_185", "necromancer_5_187"],
         },
         {
@@ -15101,9 +14777,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           opened: true,
         },
         {
@@ -15111,11 +14787,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
-
+          options: ["+5 Force"],
           activable_ids: [
             "necromancer_5_178",
             "necromancer_5_187",
@@ -15130,10 +14804,6 @@ export const optionSParagonNecromancer = [
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
           options: ["5 Dextérité"],
-
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: [
             "necromancer_5_179",
             "necromancer_5_188",
@@ -15145,11 +14815,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
-
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_5_180", "necromancer_5_189"],
         },
       ],
@@ -15161,6 +14829,8 @@ export const optionSParagonNecromancer = [
           link: true,
           direction: "bottom",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
     ],
@@ -19542,6 +19212,8 @@ export const optionSParagonNecromancer = [
           link: true,
           direction: "top",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
       [
@@ -19645,6 +19317,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/DamageWhileHealthy_active.png",
+          label: "Noeud magique",
+          options: ["+12.5% de dégâts"],
           activable_ids: [
             "necromancer_8_6",
             "necromancer_8_13",
@@ -19659,6 +19333,8 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: ["necromancer_8_14", "necromancer_8_10"],
           bg: "magic",
         },
@@ -19680,6 +19356,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/DamageWhileHealthy_active.png",
+          label: "Noeud magique",
+          options: ["+12.5% de dégâts"],
           activable_ids: [
             "necromancer_8_10",
             "necromancer_8_19",
@@ -19693,6 +19371,14 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/DamageWhileHealthy_active.png",
+          label: "Nœud rare",
+          secondLabel: "Ferveur",
+          options: [
+            "+25.0% de dégâts lorsque vous êtes en bonne santé",
+            "+30 à l'armure",
+            "Bonus : ajoute +25.0% de dégâts lorsque vous êtes en bonne santé si ces conditions sont remplies :",
+            "445 dextérité",
+          ],
           activable_ids: [
             "necromancer_8_11",
             "necromancer_8_20",
@@ -19756,6 +19442,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/DamageWhileHealthy_active.png",
+          label: "Noeud magique",
+          options: ["+12.5% de dégâts"],
           activable_ids: [
             "necromancer_8_13",
             "necromancer_8_23",
@@ -19770,6 +19458,8 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: ["necromancer_8_14", "necromancer_8_19"],
           bg: "magic",
         },
@@ -19821,6 +19511,14 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/DamageToHigh_active.png",
+          label: "Nœud rare",
+          secondLabel: "Fer-de-lance",
+          options: [
+            "+25.0% de dégâts contre les cibles en bonne santé",
+            "Maximum de vie augmenté de 4.0%",
+            "Bonus : ajoute +25.0% de dégâts contre les cibles en bonne santé si ces conditions sont remplies :",
+            "415 intelligence",
+          ],
           activable_ids: ["necromancer_8_35", "necromancer_8_25"],
           bg: "rare",
         },
@@ -19830,6 +19528,8 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: [
             "necromancer_8_36",
             "necromancer_8_24",
@@ -19984,6 +19684,8 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: [
             "necromancer_8_25",
             "necromancer_8_35",
@@ -20057,6 +19759,8 @@ export const optionSParagonNecromancer = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/DamageWhileBear_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Lycanthrope)"],
           activable_ids: [
             "necromancer_8_31",
             "necromancer_8_53",
@@ -20195,6 +19899,14 @@ export const optionSParagonNecromancer = [
           index: 9,
           link: false,
           image: "/paragon/barbarian/DamageWhileBear_active.png",
+          label: "Nœud rare",
+          secondLabel: "Grizzly",
+          options: [
+            "+20.0% de dégâts sous forme urside",
+            "+10 volonté",
+            "Bonus : ajoute +20.0% de dégâts sous forme urside si ces conditions sont remplies :",
+            "455 intelligence",
+          ],
           activable_ids: [
             "necromancer_8_62",
             "necromancer_8_50",
@@ -20208,6 +19920,8 @@ export const optionSParagonNecromancer = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/DamageWhileBear_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Lycanthrope)"],
           activable_ids: [
             "necromancer_8_40",
             "necromancer_8_63",
@@ -20268,6 +19982,8 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: ["necromancer_8_68", "necromancer_8_55"],
         },
       ],
@@ -20348,6 +20064,8 @@ export const optionSParagonNecromancer = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/DamageWhileBear_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Lycanthrope)"],
           activable_ids: [
             "necromancer_8_52",
             "necromancer_8_62",
@@ -20492,6 +20210,8 @@ export const optionSParagonNecromancer = [
           link: true,
           direction: "left",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
         {
           id: "necromancer_8_74",
@@ -20509,6 +20229,11 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/necromancer_active.png",
+          label: "Nœud légendaire",
+          secondLabel: "Instinct de survie",
+          options: [
+            "Sous forme urside, vous infligez 30%[x] de dégâts supplémentaires, ou 45%[x] si vos points de vie sont au maximum. Vous infligez 1%[x] de dégâts d'accablement supplémentaires, jusqu'à un maximum de 35%[x], pour chaque tranche de 1% d'écart entre vos pourcentages de vie actuelle et fortifiée et ceux de l'adversaire.",
+          ],
           activable_ids: ["necromancer_8_76"],
           bg: "rare",
         },
@@ -20657,6 +20382,8 @@ export const optionSParagonNecromancer = [
           link: true,
           direction: "left",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
       [
@@ -20736,6 +20463,8 @@ export const optionSParagonNecromancer = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_8_109",
             "necromancer_8_92",
@@ -20892,6 +20621,8 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/DamageReductionWhileFortified_active.png",
+          label: "Noeud magique",
+          options: ["+3.3% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "necromancer_8_90",
             "necromancer_8_114",
@@ -20939,6 +20670,14 @@ export const optionSParagonNecromancer = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Nœud rare",
+          secondLabel: "Peau calleuse",
+          options: [
+            "+5 au maximum de vie",
+            "+10 volonté",
+            "Bonus : ajoute +5 au maximum de vie si ces conditions sont remplies :",
+            "415 dextérité",
+          ],
           activable_ids: [
             "necromancer_8_93",
             "necromancer_8_119",
@@ -20953,6 +20692,8 @@ export const optionSParagonNecromancer = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_8_94",
             "necromancer_8_120",
@@ -21010,6 +20751,8 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/DamageReductionWhileFortified_active.png",
+          label: "Noeud magique",
+          options: ["+3.3% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "necromancer_8_105",
             "necromancer_8_124",
@@ -21023,6 +20766,8 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/DamageReductionWhileFortified_active.png",
+          label: "Noeud magique",
+          options: ["+3.3% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "necromancer_8_125",
             "necromancer_8_114",
@@ -21092,6 +20837,8 @@ export const optionSParagonNecromancer = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_8_110",
             "necromancer_8_131",
@@ -21154,6 +20901,14 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/DamageReductionWhileFortified_active.png",
+          label: "Nœud rare",
+          secondLabel: "Rempart",
+          options: [
+            "6.0% de réduction des dégâts pendant la fortification",
+            "+6.5% à la génération de fortification",
+            "Bonus : ajoute 6.0% de réduction des dégâts pendant la fortification si ces conditions sont remplies :",
+            "2.125 volonté",
+          ],
           activable_ids: ["necromancer_8_114", "necromancer_8_125"],
           bg: "rare",
         },
@@ -21163,6 +20918,8 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/DamageReductionWhileFortified_active.png",
+          label: "Noeud magique",
+          options: ["+3.3% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "necromancer_8_115",
             "necromancer_8_124",
@@ -21176,6 +20933,8 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/DamageReductionWhileFortified_active.png",
+          label: "Noeud magique",
+          options: ["+3.3% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "necromancer_8_116",
             "necromancer_8_125",
@@ -21392,6 +21151,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: [
             "necromancer_8_137",
             "necromancer_8_145",
@@ -21406,6 +21167,8 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: ["necromancer_8_146", "necromancer_8_142"],
           bg: "magic",
         },
@@ -21427,6 +21190,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: [
             "necromancer_8_142",
             "necromancer_8_150",
@@ -21440,6 +21205,14 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Nœud rare",
+          secondLabel: "Ursin",
+          options: [
+            "+3.0% à l'armure totale",
+            "Maximum de vie augmenté de 4.0%",
+            "Bonus : ajoute +3.0% à l'armure totale si ces conditions sont remplies :",
+            "2.065 volonté, 400 intelligence",
+          ],
           activable_ids: [
             "necromancer_8_143",
             "necromancer_8_151",
@@ -21489,6 +21262,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: [
             "necromancer_8_145",
             "necromancer_8_156",
@@ -21503,6 +21278,8 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: ["necromancer_8_146", "necromancer_8_150"],
           bg: "magic",
         },
@@ -21575,6 +21352,8 @@ export const optionSParagonNecromancer = [
           link: true,
           direction: "bottom",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
     ],
@@ -21600,6 +21379,8 @@ export const optionSParagonNecromancer = [
           link: true,
           direction: "top",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
       [
@@ -21725,6 +21506,8 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: ["necromancer_9_21", "necromancer_9_12"],
           bg: "magic",
         },
@@ -21734,6 +21517,8 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: [
             "necromancer_9_2",
             "necromancer_9_22",
@@ -21824,6 +21609,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "necromancer_9_10",
             "necromancer_9_23",
@@ -21838,6 +21625,8 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/HealingBonus_active.png",
+          label: "Nœud magique",
+          options: ["+3% de soins reçus"],
           activable_ids: ["necromancer_9_24", "necromancer_9_19"],
           bg: "magic",
         },
@@ -21849,6 +21638,14 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Nœud rare",
+          secondLabel: "Carnage",
+          options: [
+            "+30 à l'armure",
+            "Maximum de vie augmenté de 4.0%",
+            "Bonus : ajoute +30 à l'armure si ces conditions sont remplies :",
+            "1.155 volonté, 260 intelligence",
+          ],
           activable_ids: [
             "necromancer_9_11",
             "necromancer_9_26",
@@ -21862,6 +21659,8 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: [
             "necromancer_9_12",
             "necromancer_9_27",
@@ -21875,6 +21674,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "necromancer_9_19",
             "necromancer_9_30",
@@ -21888,6 +21689,14 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Nœud rare",
+          secondLabel: "Sauvagerie",
+          options: [
+            "+3.0% de résistance à tous les éléments",
+            "+6.0% de soins reçus",
+            "Bonus : ajoute +3.0% de résistance à tous les éléments si ces conditions sont remplies :",
+            "305 dextérité",
+          ],
           activable_ids: [
             "necromancer_9_20",
             "necromancer_9_31",
@@ -21913,6 +21722,8 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_9_21",
             "necromancer_9_35",
@@ -21927,6 +21738,8 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: [
             "necromancer_9_22",
             "necromancer_9_36",
@@ -21961,6 +21774,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "necromancer_9_23",
             "necromancer_9_43",
@@ -21975,6 +21790,8 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/HealingBonus_active.png",
+          label: "Nœud magique",
+          options: ["+3% de soins reçus"],
           activable_ids: [
             "necromancer_9_24",
             "necromancer_9_44",
@@ -22233,7 +22050,13 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/necromancer_active.png",
+          image: "/paragon/barbarian/Druid_active.png",
+          label: "Nœud légendaire",
+          secondLabel: "Bête intérieure",
+          options: [
+            "Après avoir changé de forme, les coûts en esprit de vos compétences sont réduits de 4.5% pendant 10 s, jusqu'à un maximum de 45%.",
+            "Lorsque vous atteignez 10 cumuls, ce bonus se réinitialise et réduit le temps de recharge de votre compétence ultime de 5 s.",
+          ],
           activable_ids: [
             "necromancer_9_60",
             "necromancer_9_50",
@@ -22298,6 +22121,8 @@ export const optionSParagonNecromancer = [
           index: 3,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
           activable_ids: [
             "necromancer_9_47",
             "necromancer_9_66",
@@ -22311,6 +22136,8 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/AttackSpeed_active.png",
+          label: "Nœud magique",
+          options: ["+2.5% à la vitesse d'attaque"],
           activable_ids: [
             "necromancer_9_67",
             "necromancer_9_56",
@@ -22324,6 +22151,14 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/AttackSpeed_active.png",
+          label: "Nœud rare",
+          secondLabel: "Agile",
+          options: [
+            "+2.5% à la vitesse d'attaque",
+            "+20.0% de dégâts",
+            "Bonus : ajoute +2.5% à la vitesse d'attaque si ces conditions sont remplies :",
+            "305 dextérité",
+          ],
           activable_ids: ["necromancer_9_68", "necromancer_9_57"],
           bg: "rare",
         },
@@ -22367,6 +22202,14 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Nœud rare",
+          secondLabel: "Ténacité",
+          options: [
+            "Maximum de vie augmenté de 4.0%",
+            "+30 à l'armure",
+            "Bonus : ajoute Maximum de vie augmenté de 4.0% si ces conditions sont remplies :",
+            "1.085 volonté",
+          ],
           activable_ids: ["necromancer_9_75", "necromancer_9_63"],
           bg: "rare",
         },
@@ -22376,6 +22219,8 @@ export const optionSParagonNecromancer = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_9_76",
             "necromancer_9_62",
@@ -22389,6 +22234,8 @@ export const optionSParagonNecromancer = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: [
             "necromancer_9_55",
             "necromancer_9_77",
@@ -22429,6 +22276,8 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/AttackSpeed_active.png",
+          label: "Nœud magique",
+          options: ["+2.5% à la vitesse d'attaque"],
           activable_ids: [
             "necromancer_9_57",
             "necromancer_9_66",
@@ -22442,6 +22291,8 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
           activable_ids: [
             "necromancer_9_58",
             "necromancer_9_82",
@@ -22456,6 +22307,8 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/AttackSpeed_active.png",
+          label: "Nœud magique",
+          options: ["+2.5% à la vitesse d'attaque"],
           activable_ids: [
             "necromancer_9_83",
             "necromancer_9_68",
@@ -22517,6 +22370,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_9_91",
             "necromancer_9_73",
@@ -22530,6 +22385,8 @@ export const optionSParagonNecromancer = [
           index: 15,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: [
             "necromancer_9_62",
             "necromancer_9_92",
@@ -22544,6 +22401,8 @@ export const optionSParagonNecromancer = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_9_63",
             "necromancer_9_75",
@@ -22824,6 +22683,8 @@ export const optionSParagonNecromancer = [
           link: true,
           direction: "left",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
         {
           id: "necromancer_9_97",
@@ -23058,6 +22919,8 @@ export const optionSParagonNecromancer = [
           link: true,
           direction: "right",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
       [
@@ -23139,6 +23002,8 @@ export const optionSParagonNecromancer = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/DamageShapeshifting_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Métamorphose)"],
           activable_ids: [
             "necromancer_9_103",
             "necromancer_9_118",
@@ -23198,6 +23063,8 @@ export const optionSParagonNecromancer = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
           activable_ids: [
             "necromancer_9_106",
             "necromancer_9_122",
@@ -23310,6 +23177,8 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/DamageShapeshifting_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Métamorphose)"],
           activable_ids: [
             "necromancer_9_117",
             "necromancer_9_140",
@@ -23324,6 +23193,14 @@ export const optionSParagonNecromancer = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/DamageShapeshifting_active.png",
+          label: "Nœud rare",
+          secondLabel: "Métamorphe",
+          options: [
+            "+20.0% de dégâts (Métamorphose)",
+            "+10 volonté",
+            "Bonus : ajoute +20.0% de dégâts (Métamorphose) si ces conditions sont remplies :",
+            "305 dextérité",
+          ],
           activable_ids: [
             "necromancer_9_118",
             "necromancer_9_141",
@@ -23374,6 +23251,14 @@ export const optionSParagonNecromancer = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud rare",
+          secondLabel: "Incitation",
+          options: [
+            "+20.0% de dégâts",
+            "+10 volonté",
+            "Bonus : ajoute +20.0% de dégâts si ces conditions sont remplies :",
+            "285 intelligence",
+          ],
           activable_ids: [
             "necromancer_9_124",
             "necromancer_9_147",
@@ -23387,6 +23272,8 @@ export const optionSParagonNecromancer = [
           index: 14,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
           activable_ids: [
             "necromancer_9_125",
             "necromancer_9_148",
@@ -23440,6 +23327,8 @@ export const optionSParagonNecromancer = [
           index: 7,
           link: false,
           image: "/paragon/barbarian/DamageShapeshifting_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts (Métamorphose)"],
           activable_ids: [
             "necromancer_9_132",
             "necromancer_9_149",
@@ -23531,6 +23420,8 @@ export const optionSParagonNecromancer = [
           index: 13,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
           activable_ids: [
             "necromancer_9_136",
             "necromancer_9_154",
@@ -23855,6 +23746,8 @@ export const optionSParagonNecromancer = [
           link: true,
           direction: "bottom",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
     ],
@@ -23878,19 +23771,21 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_4"],
         },
         {
-          id: "necromancer_10_2",
+          id: "necromancer_10_1",
           active: false,
           index: 10,
           link: true,
           direction: "top",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
       [
@@ -23900,7 +23795,9 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
-          glyph_ids: [1, 11, 13, 23, 21],
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
+          label: "Nœud normal",
+          options: ["5 Dextérité"],
           activable_ids: ["necromancer_10_12", "necromancer_10_4"],
         },
         {
@@ -23908,10 +23805,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_1",
             "necromancer_10_13",
@@ -23924,10 +23821,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [8, 9, 14, 15, 16, 18, 22],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_14",
             "necromancer_10_4",
@@ -23939,9 +23836,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_5", "necromancer_10_7"],
         },
         {
@@ -23949,7 +23846,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_6", "necromancer_10_8"],
         },
         {
@@ -23957,9 +23856,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_10_7", "necromancer_10_9"],
         },
         {
@@ -23967,7 +23866,7 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
           options: ["5 Intelligence"],
           opened: true,
@@ -23977,9 +23876,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_16", "necromancer_10_9"],
         },
       ],
@@ -23989,8 +23888,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [8, 9, 14, 15, 16, 18, 22],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_10_12"],
         },
         {
@@ -24000,7 +23901,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["5 Force"],
           activable_ids: [
             "necromancer_10_3",
             "necromancer_10_18",
@@ -24013,10 +23914,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_4",
             "necromancer_10_19",
@@ -24029,8 +23930,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [8, 9, 14, 15, 16, 18, 22],
+          image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
+          label: "Nœud normal",
+          options: ["7 Dextérité"],
           activable_ids: [
             "necromancer_10_5",
             "necromancer_10_20",
@@ -24043,7 +23946,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_9",
             "necromancer_10_23",
@@ -24056,6 +23961,8 @@ export const optionSParagonNecromancer = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          label: "Nœud normal",
+          options: ["5 Dextérité"],
           activable_ids: [
             "necromancer_10_10",
             "necromancer_10_24",
@@ -24069,10 +23976,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_26"],
         },
         {
@@ -24081,9 +23988,9 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
-          glyph_ids: [1, 11, 13, 23, 21],
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["5 Dextérité"],
           activable_ids: ["necromancer_10_12", "necromancer_10_19"],
         },
         {
@@ -24091,10 +23998,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [8, 9, 14, 15, 16, 18, 22],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_13",
             "necromancer_10_28",
@@ -24107,9 +24014,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/DamageShadow_active.png",
-          label: "Nœud normal",
-          options: ["+5 volonte"],
+          image: "/paragon/barbarian/DamageCore_active.png",
+          label: "Nœud magique",
+          options: ["+14.0% de dégâts (Principale)"],
           activable_ids: [
             "necromancer_10_14",
             "necromancer_10_29",
@@ -24123,23 +24030,32 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/DamageShadow_active.png",
+          image: "/paragon/barbarian/DamageCore_active.png",
+          label: "Nœud rare",
+          secondLabel: "Harmonie",
+          options: [
+            "+28.0% de dégâts (Principale)",
+            "+10 volonté",
+            "Bonus : ajoute +28.0% de dégâts (Principale) si ces conditions sont remplies :",
+            "405 dextérité",
+          ],
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           activable_ids: [
             "necromancer_10_30",
             "necromancer_10_20",
             "necromancer_10_22",
           ],
-          bg: "magic",
+          bg: "rare",
         },
         {
           id: "necromancer_10_22",
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [8, 9, 14, 15, 16, 18, 22],
+          image: "/paragon/barbarian/Dex_active.png",
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["7 Dextérité"],
           activable_ids: ["necromancer_10_31", "necromancer_10_21"],
           bg: "magic",
         },
@@ -24148,7 +24064,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_15", "necromancer_10_24"],
         },
         {
@@ -24156,9 +24074,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Dex_active.png",
+          image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["5 Force"],
           activable_ids: [
             "necromancer_10_16",
             "necromancer_10_32",
@@ -24172,10 +24090,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_34", "necromancer_10_26"],
         },
         {
@@ -24183,10 +24101,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_17",
             "necromancer_10_35",
@@ -24199,8 +24117,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [8, 9, 14, 15, 16, 18, 22],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_10_36", "necromancer_10_26"],
         },
         {
@@ -24208,8 +24128,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_19",
             "necromancer_10_38",
@@ -24222,22 +24144,25 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
-          glyph_ids: [1, 11, 13, 23, 21],
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["7 Dextérité"],
           activable_ids: [
             "necromancer_10_20",
             "necromancer_10_39",
             "necromancer_10_28",
             "necromancer_10_30",
           ],
+          bg: "magic",
         },
         {
           id: "necromancer_10_30",
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/DamageShadow_active.png",
+          image: "/paragon/barbarian/DamageCore_active.png",
+          label: "Nœud magique",
+          options: ["+14.0% de dégâts (Principale)"],
           activable_ids: [
             "necromancer_10_21",
             "necromancer_10_40",
@@ -24251,9 +24176,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/DamageShadow_active.png",
-          label: "Nœud normal",
-          options: ["+5 volonte"],
+          image: "/paragon/barbarian/DamageCore_active.png",
+          label: "Nœud magique",
+          options: ["+14.0% de dégâts (Principale)"],
           activable_ids: [
             "necromancer_10_22",
             "necromancer_10_41",
@@ -24266,7 +24191,7 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
           options: ["5 Intelligence"],
           activable_ids: ["necromancer_10_24"],
@@ -24278,10 +24203,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 0,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_34"],
         },
         {
@@ -24289,8 +24214,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_25",
             "necromancer_10_45",
@@ -24303,8 +24230,8 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [8, 9, 14, 15, 16, 18, 22],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
           options: ["5 Intelligence"],
           activable_ids: [
@@ -24319,10 +24246,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_27",
             "necromancer_10_47",
@@ -24336,7 +24263,9 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
-          glyph_ids: [1, 11, 13, 23, 21],
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
+          label: "Nœud normal",
+          options: ["5 Dextérité"],
           activable_ids: [
             "necromancer_10_48",
             "necromancer_10_36",
@@ -24356,8 +24285,8 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [8, 9, 14, 15, 16, 18, 22],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
           options: ["5 Intelligence"],
           activable_ids: [
@@ -24371,10 +24300,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_30",
             "necromancer_10_50",
@@ -24387,10 +24316,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_31",
             "necromancer_10_51",
@@ -24403,8 +24332,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [8, 9, 14, 15, 16, 18, 22],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_52",
             "necromancer_10_41",
@@ -24416,10 +24347,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_42"],
         },
         {
@@ -24427,9 +24358,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/Dex_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_53"],
         },
       ],
@@ -24440,6 +24371,8 @@ export const optionSParagonNecromancer = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/Str_active.png",
+          label: "Nœud normal",
+          options: ["5 Force"],
           activable_ids: [
             "necromancer_10_34",
             "necromancer_10_54",
@@ -24451,10 +24384,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Dex_active.png",
-          glyph_ids: [1, 11, 13, 23, 21],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["7 Intelligence"],
           activable_ids: [
             "necromancer_10_35",
             "necromancer_10_45",
@@ -24467,9 +24400,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/DamageShadow_active.png",
-          label: "Nœud normal",
-          options: ["+5 Force"],
+          image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
           activable_ids: [
             "necromancer_10_36",
             "necromancer_10_55",
@@ -24484,6 +24417,8 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Str_active.png",
+          label: "Nœud normal",
+          options: ["5 Force"],
           activable_ids: [
             "necromancer_10_37",
             "necromancer_10_56",
@@ -24496,8 +24431,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_38",
             "necromancer_10_57",
@@ -24509,8 +24446,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_40", "necromancer_10_51"],
         },
         {
@@ -24518,10 +24457,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [8, 9, 14, 15, 16, 18, 22],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_41",
             "necromancer_10_59",
@@ -24536,7 +24475,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Force"],
           activable_ids: [
             "necromancer_10_42",
             "necromancer_10_60",
@@ -24548,9 +24487,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/DamageShadow_active.png",
-          label: "Nœud normal",
-          options: ["5 Intelligence"],
+          image: "/paragon/barbarian/ResourceUp_active.png",
+          label: "Nœud magique",
+          options: ["+2.0% de génération de ressources"],
           activable_ids: ["necromancer_10_44", "necromancer_10_62"],
           bg: "magic",
         },
@@ -24561,7 +24500,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_10_45", "necromancer_10_63"],
         },
         {
@@ -24569,7 +24510,16 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/DamageShadow_active.png",
+          image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud rare",
+          secondLabel: "Guide",
+          options: [
+            "+20.0% de dégâts",
+            "+10 volonté",
+            "Bonus : ajoute +20.0% de dégâts si ces conditions sont remplies :",
+            "305 intelligence",
+          ],
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           activable_ids: [
             "necromancer_10_47",
             "necromancer_10_64",
@@ -24582,9 +24532,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 4,
           link: false,
-          image: "/paragon/barbarian/DamageShadow_active.png",
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
+          image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
           activable_ids: [
             "necromancer_10_48",
             "necromancer_10_65",
@@ -24598,8 +24548,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [8, 9, 14, 15, 16, 18, 22],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_49",
             "necromancer_10_66",
@@ -24612,8 +24564,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
-          glyph_ids: [8, 9, 14, 15, 16, 18, 22],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_10_67", "necromancer_10_57"],
         },
         {
@@ -24622,9 +24576,9 @@ export const optionSParagonNecromancer = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
-          glyph_ids: [1, 11, 13, 23, 21],
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Dextérité"],
           activable_ids: ["necromancer_10_51", "necromancer_10_60"],
         },
         {
@@ -24632,8 +24586,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_52",
             "necromancer_10_69",
@@ -24645,7 +24601,15 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/DamageShadow_active.png",
+          image: "/paragon/barbarian/Spirit_active.png",
+          label: "Nœud rare",
+          secondLabel: "Harmonie naturelle",
+          options: [
+            "+4.0% de génération de ressources",
+            "Maximum de vie augmenté de 4.0%",
+            "Bonus : ajoute +4.0% de génération de ressources si ces conditions sont remplies :",
+            "405 intelligence",
+          ],
           activable_ids: ["necromancer_10_70", "necromancer_10_62"],
           bg: "rare",
         },
@@ -24654,9 +24618,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/DamageShadow_active.png",
-          label: "Nœud normal",
-          options: ["+5 Force"],
+          image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_10_53",
             "necromancer_10_71",
@@ -24671,7 +24635,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_54", "necromancer_10_79"],
         },
         {
@@ -24679,8 +24645,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Dex_active.png",
-          glyph_ids: [1, 11, 13, 23, 21],
+          image: "/paragon/barbarian/Int_active.png",
+          glyph_ids: [1, 2, 8, 11, 14, 20, 23],
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_10_55", "necromancer_10_65"],
           bg: "magic",
         },
@@ -24689,7 +24657,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 4,
           link: false,
-          image: "/paragon/barbarian/DamageShadow_active.png",
+          image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud magique",
+          options: ["+10.0% de dégâts physiques"],
           activable_ids: [
             "necromancer_10_56",
             "necromancer_10_64",
@@ -24702,10 +24672,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
-          glyph_ids: [2, 3, 4, 5, 6, 7, 10, 12, 17, 20, 19],
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_57",
             "necromancer_10_80",
@@ -24719,7 +24689,9 @@ export const optionSParagonNecromancer = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
-          glyph_ids: [1, 11, 13, 23, 21],
+          glyph_ids: [5, 7, 12, 13, 15, 16, 17, 18, 19],
+          label: "Nœud normal",
+          options: ["5 Dextérité"],
           activable_ids: [
             "necromancer_10_58",
             "necromancer_10_81",
@@ -24732,9 +24704,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          glyph_ids: [3, 4, 6, 9, 10, 21, 22],
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_82", "necromancer_10_67"],
         },
         {
@@ -24742,9 +24715,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_60", "necromancer_10_84"],
         },
         {
@@ -24752,7 +24725,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/DamageShadow_active.png",
+          image: "/paragon/barbarian/ResourceUp_active.png",
+          label: "Nœud magique",
+          options: ["+2.0% de génération de ressources"],
           activable_ids: [
             "necromancer_10_61",
             "necromancer_10_86",
@@ -24765,31 +24740,35 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/DamageShadow_active.png",
+          image: "/paragon/barbarian/ResourceUp_active.png",
+          label: "Nœud magique",
+          options: ["+2.0% de génération de ressources"],
+          bg: "magic",
           activable_ids: [
             "necromancer_10_62",
             "necromancer_10_70",
             "necromancer_10_72",
           ],
-          bg: "magic",
         },
         {
           id: "necromancer_10_72",
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/ResourceDown_active.png",
-          label: "Nœud normal",
-          options: ["+5 Force"],
-          activable_ids: ["necromancer_10_71", "necromancer_10_73"],
+          image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           bg: "magic",
+          activable_ids: ["necromancer_10_71", "necromancer_10_73"],
         },
         {
           id: "necromancer_10_73",
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_87",
             "necromancer_10_72",
@@ -24801,7 +24780,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_88",
             "necromancer_10_73",
@@ -24813,9 +24794,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 16,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_89",
             "necromancer_10_74",
@@ -24827,9 +24808,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_75", "necromancer_10_77"],
         },
         {
@@ -24852,6 +24833,8 @@ export const optionSParagonNecromancer = [
           index: 19,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          label: "Nœud normal",
+          options: ["5 Dextérité"],
           activable_ids: ["necromancer_10_91", "necromancer_10_77"],
         },
       ],
@@ -24863,7 +24846,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Dextérité"],
           activable_ids: ["necromancer_10_63", "necromancer_10_93"],
         },
         {
@@ -24872,6 +24855,8 @@ export const optionSParagonNecromancer = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          label: "Nœud normal",
+          options: ["5 Dextérité"],
           activable_ids: [
             "necromancer_10_66",
             "necromancer_10_96",
@@ -24883,7 +24868,7 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
           options: ["5 Intelligence"],
           activable_ids: [
@@ -24897,7 +24882,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_68",
             "necromancer_10_81",
@@ -24911,7 +24898,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["5 Dextérité"],
           activable_ids: ["necromancer_10_82", "necromancer_10_84"],
         },
         {
@@ -24919,9 +24906,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_69",
             "necromancer_10_97",
@@ -24934,9 +24921,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_10_84", "necromancer_10_86"],
         },
         {
@@ -24944,9 +24931,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_70",
             "necromancer_10_98",
@@ -24958,9 +24945,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_73", "necromancer_10_88"],
         },
         {
@@ -24968,9 +24955,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_74",
             "necromancer_10_87",
@@ -24984,7 +24971,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["5 Dextérité"],
           activable_ids: [
             "necromancer_10_75",
             "necromancer_10_100",
@@ -24996,9 +24983,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 18,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_77",
             "necromancer_10_101",
@@ -25010,9 +24997,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 19,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_78",
             "necromancer_10_102",
@@ -25022,12 +25009,14 @@ export const optionSParagonNecromancer = [
       ],
       [
         {
-          id: "necromancer_10_92",
+          id: "necromancer_10_1",
           active: false,
           index: 0,
           link: true,
           direction: "left",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
         {
           id: "necromancer_10_93",
@@ -25035,6 +25024,8 @@ export const optionSParagonNecromancer = [
           index: 1,
           link: false,
           image: "/paragon/barbarian/Str_active.png",
+          label: "Nœud normal",
+          options: ["5 Force"],
           opened: true,
         },
         {
@@ -25042,9 +25033,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_105",
             "necromancer_10_93",
@@ -25056,9 +25047,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_106", "necromancer_10_94"],
         },
         {
@@ -25066,7 +25057,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_80", "necromancer_10_108"],
         },
         {
@@ -25074,9 +25067,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_84", "necromancer_10_111"],
         },
         {
@@ -25086,7 +25079,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Dextérité"],
           activable_ids: [
             "necromancer_10_86",
             "necromancer_10_113",
@@ -25100,7 +25093,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Dextérité"],
           activable_ids: ["necromancer_10_98"],
         },
         {
@@ -25108,9 +25101,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 16,
           link: false,
-          image: "/paragon/barbarian/Armor_active.png",
-          label: "Nœud normal",
-          options: ["+5 volonte"],
+          image: "/paragon/barbarian/Spirit_active.png",
+          label: "Nœud magique",
+          options: ["+4 de ressource par victime pour Esprit"],
           activable_ids: ["necromancer_10_89"],
           bg: "magic",
         },
@@ -25119,7 +25112,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 18,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_90",
             "necromancer_10_116",
@@ -25131,18 +25126,20 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 19,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+5 Volonté"],
           opened: true,
         },
         {
-          id: "necromancer_10_103",
+          id: "necromancer_10_1",
           active: false,
           index: 20,
           link: true,
           direction: "right",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
       [
@@ -25151,7 +25148,7 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 1,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
           options: ["5 Intelligence"],
           activable_ids: ["necromancer_10_93", "necromancer_10_105"],
@@ -25161,7 +25158,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 2,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_94",
             "necromancer_10_104",
@@ -25173,9 +25172,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 3,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_95",
             "necromancer_10_105",
@@ -25188,6 +25187,8 @@ export const optionSParagonNecromancer = [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          label: "Nœud normal",
+          options: ["5 Dextérité"],
           activable_ids: ["necromancer_10_106", "necromancer_10_108"],
         },
         {
@@ -25195,7 +25196,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_96",
             "necromancer_10_118",
@@ -25207,9 +25210,16 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/ResistanceAll_active.png",
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
+          image: "/paragon/barbarian/DamageCore_active.png",
+          label: "Nœud rare",
+          secondLabel: "Pouvoirs spirituels",
+          options: [
+            "+28.0% de dégâts (Principale)",
+            "+5.0% à la vitesse d'attaque pour Basique",
+            "Bonus : ajoute +28.0% de dégâts (Principale) si ces conditions sont remplies :",
+            "1.155 volonté",
+            "260 intelligence",
+          ],
           activable_ids: ["necromancer_10_120", "necromancer_10_110"],
           bg: "rare",
         },
@@ -25218,9 +25228,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/ResistanceAll_active.png",
-          label: "Nœud normal",
-          options: ["+5 Force"],
+          image: "/paragon/barbarian/DamageCore_active.png",
+          label: "Nœud magique",
+          options: ["+14.0% de dégâts (Principale)"],
           activable_ids: [
             "necromancer_10_121",
             "necromancer_10_109",
@@ -25233,7 +25243,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_97",
             "necromancer_10_110",
@@ -25245,7 +25257,7 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
           options: ["5 Intelligence"],
           activable_ids: [
@@ -25259,7 +25271,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_98",
             "necromancer_10_123",
@@ -25271,9 +25285,16 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Armor_active.png",
-          label: "Nœud normal",
-          options: ["5 Intelligence"],
+          image: "/paragon/barbarian/Spirit_active.png",
+          label: "Nœud rare",
+          secondLabel: "Réhabilitation",
+          options: [
+            "+8[Esprit maximum]",
+            "+2 de ressource par victime pour Esprit",
+            "Bonus : ajoute +8[Esprit maximum] si ces conditions sont remplies :",
+            "305 intelligence",
+          ],
+          bg: "rare",
           activable_ids: ["necromancer_10_126", "necromancer_10_115"],
         },
         {
@@ -25281,7 +25302,10 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/ResistanceAll_active.png",
+          image: "/paragon/barbarian/Spirit_active.png",
+          label: "Nœud magique",
+          options: ["+1 de ressource par victime pour Esprit"],
+          bg: "magic",
           activable_ids: ["necromancer_10_127", "necromancer_10_114"],
         },
         {
@@ -25289,7 +25313,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 18,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_101",
             "necromancer_10_130",
@@ -25301,9 +25327,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 19,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_102",
             "necromancer_10_131",
@@ -25317,7 +25343,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_108", "necromancer_10_119"],
         },
         {
@@ -25325,9 +25353,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/ResistanceAll_active.png",
-          label: "Nœud normal",
-          options: ["+5 Force"],
+          image: "/paragon/barbarian/DamageCore_active.png",
+          label: "Nœud magique",
+          options: ["+14.0% de dégâts (Principale)"],
           activable_ids: ["necromancer_10_118", "necromancer_10_120"],
           bg: "magic",
         },
@@ -25336,7 +25364,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/ResistanceAll_active.png",
+          image: "/paragon/barbarian/AttackSpeed_active.png",
+          label: "Nœud magique",
+          options: ["+2.5% à la vitesse d'attaque pour Basique"],
           activable_ids: [
             "necromancer_10_109",
             "necromancer_10_119",
@@ -25349,7 +25379,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/ResistanceAll_active.png",
+          image: "/paragon/barbarian/DamageCore_active.png",
+          label: "Nœud magique",
+          options: ["+14.0% de dégâts (Principale)"],
           activable_ids: [
             "necromancer_10_110",
             "necromancer_10_132",
@@ -25364,7 +25396,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["5 Dextérité"],
           activable_ids: ["necromancer_10_112", "necromancer_10_123"],
         },
         {
@@ -25386,9 +25418,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_133",
             "necromancer_10_123",
@@ -25402,7 +25434,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["5 Force"],
           activable_ids: ["necromancer_10_124", "necromancer_10_126"],
         },
         {
@@ -25410,9 +25442,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/ResistanceAll_active.png",
-          label: "Nœud normal",
-          options: ["5 Intelligence"],
+          image: "/paragon/barbarian/SpiritOnKill_active.png",
+          label: "Nœud magique",
+          options: ["+1 de ressource par victime pour Esprit"],
           activable_ids: [
             "necromancer_10_114",
             "necromancer_10_125",
@@ -25425,23 +25457,25 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Armor_active.png",
+          image: "/paragon/barbarian/SpiritOnKill_active.png",
+          label: "Nœud magique",
+          options: ["+4 de ressource par victime pour Esprit"],
+          bg: "magic",
           activable_ids: [
             "necromancer_10_115",
             "necromancer_10_134",
             "necromancer_10_126",
             "necromancer_10_128",
           ],
-          bg: "magic",
         },
         {
           id: "necromancer_10_128",
           active: false,
           index: 16,
           link: false,
-          image: "/paragon/barbarian/Armor_active.png",
-          label: "Nœud normal",
-          options: ["+5 volonte"],
+          image: "/paragon/barbarian/SpiritOnKill_active.png",
+          label: "Nœud magique",
+          options: ["+4 de ressource par victime pour Esprit"],
           activable_ids: ["necromancer_10_127", "necromancer_10_129"],
           bg: "magic",
         },
@@ -25450,7 +25484,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_10_128", "necromancer_10_130"],
         },
         {
@@ -25460,7 +25496,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["5 Dextérité"],
           activable_ids: [
             "necromancer_10_116",
             "necromancer_10_129",
@@ -25484,7 +25520,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/ResistanceAll_active.png",
+          image: "/paragon/barbarian/AttackSpeed_active.png",
+          label: "Nœud magique",
+          options: ["+2.5% à la vitesse d'attaque pour Basique"],
           activable_ids: ["necromancer_10_121", "necromancer_10_135"],
           bg: "magic",
         },
@@ -25493,7 +25531,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_124", "necromancer_10_137"],
         },
         {
@@ -25501,7 +25541,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_127", "necromancer_10_139"],
         },
       ],
@@ -25511,7 +25553,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_132",
             "necromancer_10_141",
@@ -25523,9 +25567,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_142", "necromancer_10_135"],
         },
         {
@@ -25533,17 +25577,20 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/HealingBonus_active.png",
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
+          image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: ["necromancer_10_133", "necromancer_10_144"],
+          bg: "magic",
         },
         {
           id: "necromancer_10_138",
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_10_146", "necromancer_10_139"],
         },
         {
@@ -25551,7 +25598,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_134",
             "necromancer_10_138",
@@ -25564,6 +25613,8 @@ export const optionSParagonNecromancer = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/Str_active.png",
+          label: "Nœud normal",
+          options: ["5 Force"],
           activable_ids: ["necromancer_10_147", "necromancer_10_139"],
         },
       ],
@@ -25573,7 +25624,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_135",
             "necromancer_10_149",
@@ -25585,9 +25638,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_136",
             "necromancer_10_150",
@@ -25599,34 +25652,42 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Armor_active.png",
-          label: "Nœud normal",
-          options: ["+5 volonte"],
-          activable_ids: ["necromancer_10_152", "necromancer_10_144"],
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Nœud rare",
+          secondLabel: "Défension",
+          options: [
+            "+3.0% de résistance à tous les éléments",
+            "Maximum de vie augmenté de 4.0%",
+            "Bonus : ajoute +3.0% de résistance à tous les éléments si ces conditions sont remplies :",
+            "405 dextérité",
+          ],
           bg: "rare",
+          activable_ids: ["necromancer_10_152", "necromancer_10_144"],
         },
         {
           id: "necromancer_10_144",
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/Armor_active.png",
-          label: "Nœud normal",
-          options: ["5 Intelligence"],
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
+          bg: "magic",
           activable_ids: [
             "necromancer_10_137",
             "necromancer_10_153",
             "necromancer_10_143",
             "necromancer_10_145",
           ],
-          bg: "magic",
         },
         {
           id: "necromancer_10_145",
           active: false,
           index: 13,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_10_144", "necromancer_10_146"],
         },
         {
@@ -25634,9 +25695,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_138",
             "necromancer_10_154",
@@ -25649,6 +25710,8 @@ export const optionSParagonNecromancer = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          label: "Nœud normal",
+          options: ["5 Dextérité"],
           activable_ids: [
             "necromancer_10_140",
             "necromancer_10_156",
@@ -25660,9 +25723,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["5 Intelligence"],
           activable_ids: ["necromancer_10_157", "necromancer_10_147"],
         },
       ],
@@ -25673,6 +25736,8 @@ export const optionSParagonNecromancer = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          label: "Nœud normal",
+          options: ["5 Dextérité"],
           activable_ids: [
             "necromancer_10_141",
             "necromancer_10_158",
@@ -25686,7 +25751,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["5 Force"],
           activable_ids: [
             "necromancer_10_142",
             "necromancer_10_149",
@@ -25698,9 +25763,11 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/HPPercent_active.png",
-          activable_ids: ["necromancer_10_150", "necromancer_10_152"],
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           bg: "magic",
+          activable_ids: ["necromancer_10_150", "necromancer_10_152"],
         },
         {
           id: "necromancer_10_152",
@@ -25708,6 +25775,8 @@ export const optionSParagonNecromancer = [
           index: 11,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
           activable_ids: [
             "necromancer_10_143",
             "necromancer_10_151",
@@ -25720,22 +25789,24 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/HPPercent_active.png",
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
+          bg: "magic",
           activable_ids: [
             "necromancer_10_144",
             "necromancer_10_159",
             "necromancer_10_152",
           ],
-          bg: "magic",
         },
         {
           id: "necromancer_10_154",
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_146", "necromancer_10_155"],
         },
         {
@@ -25743,9 +25814,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_160",
             "necromancer_10_154",
@@ -25757,7 +25828,7 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 16,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
           options: ["5 Intelligence"],
           activable_ids: [
@@ -25772,9 +25843,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_148",
             "necromancer_10_162",
@@ -25789,6 +25860,8 @@ export const optionSParagonNecromancer = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          label: "Nœud normal",
+          options: ["5 Dextérité"],
           activable_ids: ["necromancer_10_149", "necromancer_10_163"],
         },
         {
@@ -25796,7 +25869,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_153", "necromancer_10_167"],
         },
         {
@@ -25804,9 +25879,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 15,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_155", "necromancer_10_161"],
         },
         {
@@ -25815,6 +25890,8 @@ export const optionSParagonNecromancer = [
           index: 16,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          label: "Nœud normal",
+          options: ["5 Dextérité"],
           activable_ids: [
             "necromancer_10_156",
             "necromancer_10_160",
@@ -25826,10 +25903,13 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/Necromancer_active.png",
-          label: "Nœud normal",
-          options: ["+5 Force"],
+          image: "/paragon/barbarian/Druid_active.png",
           activable_ids: ["necromancer_10_157", "necromancer_10_161"],
+          label: "Nœud légendaire",
+          secondLabel: "Guide ancestral",
+          options: [
+            "Après avoir dépensé 75 points d'esprit, vous infligez 40%[x] de dégâts supplémentaires pendant 5 s. Vos compétences ultimes infligent 1%[x] de dégâts supplémentaires par point d'esprit.",
+          ],
           bg: "rare",
         },
       ],
@@ -25839,9 +25919,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_158",
             "necromancer_10_168",
@@ -25853,7 +25933,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_169",
             "necromancer_10_163",
@@ -25865,7 +25947,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
+          label: "Nœud normal",
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_170",
             "necromancer_10_164",
@@ -25877,7 +25961,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           activable_ids: [
             "necromancer_10_171",
             "necromancer_10_165",
@@ -25890,6 +25976,8 @@ export const optionSParagonNecromancer = [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
+          label: "Nœud normal",
+          options: ["5 Dextérité"],
           activable_ids: [
             "necromancer_10_159",
             "necromancer_10_172",
@@ -25903,9 +25991,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["+5 Force"],
+          options: ["+5 Volonté"],
           activable_ids: ["necromancer_10_163", "necromancer_10_169"],
         },
         {
@@ -25913,9 +26001,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 9,
           link: false,
-          image: "/paragon/barbarian/Int_active.png",
+          image: "/paragon/barbarian/Will_active.png",
           label: "Nœud normal",
-          options: ["5 Intelligence"],
+          options: ["+5 Volonté"],
           activable_ids: [
             "necromancer_10_164",
             "necromancer_10_168",
@@ -25927,7 +26015,9 @@ export const optionSParagonNecromancer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Will_active.png",
+          image: "/paragon/barbarian/Int_active.png",
+          label: "Nœud normal",
+          options: ["5 Intelligence"],
           opened: true,
         },
         {
@@ -25937,7 +26027,7 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Str_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["5 Force"],
           activable_ids: [
             "necromancer_10_166",
             "necromancer_10_170",
@@ -25951,18 +26041,20 @@ export const optionSParagonNecromancer = [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["5 Dextérité"],
           activable_ids: ["necromancer_10_167", "necromancer_10_171"],
         },
       ],
       [
         {
-          id: "necromancer_10_173",
+          id: "necromancer_10_1",
           active: false,
           index: 10,
           link: true,
           direction: "bottom",
           image: "/paragon/barbarian/Gate_active.png",
+          label: "Porte de fixation de la carte",
+          options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
         },
       ],
     ],
