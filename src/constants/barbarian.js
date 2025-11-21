@@ -17979,10 +17979,8 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/DustDevilSize_active.png",
           label: "Nœud magique",
-  secondLabel: null,
-  options: [
-    "+10.0% de dégâts pour Tourbillon de poussière"
-  ],
+          secondLabel: null,
+          options: ["+10.0% de dégâts pour Tourbillon de poussière"],
           bg: "magic",
           activable_ids: [
             "barbarian_7_13",
@@ -18045,7 +18043,7 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
           label: "Noeud magique",
-  options: ["+12.0% de dégâts"],
+          options: ["+12.0% de dégâts"],
           activable_ids: [
             "barbarian_7_16",
             "barbarian_7_31",
@@ -18090,13 +18088,13 @@ export const optionSParagonBarbarian = [
           link: false,
           image: "/paragon/barbarian/DustDevilSize_active.png",
           label: "Nœud rare",
-secondLabel: "Bourrasque",
-options: [
-  "+30.0% de dégâts pour Tourbillon de poussière",
-  "+10 force",
-  "Bonus : ajoute +30.0% de dégâts pour Tourbillon de poussière si ces conditions sont remplies :",
-  "360 dextérité"
-],
+          secondLabel: "Bourrasque",
+          options: [
+            "+30.0% de dégâts pour Tourbillon de poussière",
+            "+10 force",
+            "Bonus : ajoute +30.0% de dégâts pour Tourbillon de poussière si ces conditions sont remplies :",
+            "360 dextérité",
+          ],
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           activable_ids: [
             "barbarian_7_18",
@@ -18113,10 +18111,8 @@ options: [
           link: false,
           image: "/paragon/barbarian/DustDevilSize_active.png",
           label: "Nœud magique",
-  secondLabel: null,
-  options: [
-    "+10.0% de dégâts pour Tourbillon de poussière"
-  ],
+          secondLabel: null,
+          options: ["+10.0% de dégâts pour Tourbillon de poussière"],
           activable_ids: [
             "barbarian_7_19",
             "barbarian_7_37",
@@ -18180,7 +18176,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
           label: "Noeud magique",
-  options: ["+12.0% de dégâts"],
+          options: ["+12.0% de dégâts"],
           activable_ids: [
             "barbarian_7_23",
             "barbarian_7_41",
@@ -18196,16 +18192,16 @@ options: [
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
           label: "Noeud magique",
-  options: ["+12.0% de dégâts"],
+          options: ["+12.0% de dégâts"],
           glyph_ids: [1, 4, 5, 6, 9, 12, 13, 14, 17, 18, 20],
           label: "Nœud rare",
-secondLabel: "Puissance pure",
-options: [
-  "+24.0% de dégâts contre les cibles proches",
-  "+10 force",
-  "Bonus : ajoute +24.0% de dégâts contre les cibles proches si ces conditions sont remplies :",
-  "360 volonté"
-],
+          secondLabel: "Puissance pure",
+          options: [
+            "+24.0% de dégâts contre les cibles proches",
+            "+10 force",
+            "Bonus : ajoute +24.0% de dégâts contre les cibles proches si ces conditions sont remplies :",
+            "360 volonté",
+          ],
           activable_ids: [
             "barbarian_7_24",
             "barbarian_7_42",
@@ -18268,10 +18264,8 @@ options: [
           link: false,
           image: "/paragon/barbarian/DustDevilSize_active.png",
           label: "Nœud magique",
-  secondLabel: null,
-  options: [
-    "+10.0% de dégâts pour Tourbillon de poussière"
-  ],
+          secondLabel: null,
+          options: ["+10.0% de dégâts pour Tourbillon de poussière"],
           activable_ids: [
             "barbarian_7_26",
             "barbarian_7_46",
@@ -18360,7 +18354,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
           label: "Noeud magique",
-  options: ["+12.0% de dégâts"],
+          options: ["+12.0% de dégâts"],
           activable_ids: [
             "barbarian_7_32",
             "barbarian_7_52",
@@ -18777,9 +18771,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/CriticalDamageEarth_active.png",
           label: "Nœud magique",
-  options: [
-    "+5.0% à la durée pour Tremblement de terre"
-  ],
+          options: ["+5.0% à la durée pour Tremblement de terre"],
           activable_ids: ["barbarian_7_57", "barbarian_7_86", "barbarian_7_73"],
           bg: "magic",
         },
@@ -18790,9 +18782,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/DustDevilArea_active.png",
           label: "Nœud magique",
-  options: [
-    "+5.0% de taille pour Tourbillon de poussière"
-  ],
+          options: ["+5.0% de taille pour Tourbillon de poussière"],
           activable_ids: ["barbarian_7_58", "barbarian_7_87", "barbarian_7_72"],
           bg: "magic",
         },
@@ -18870,7 +18860,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
           label: "Noeud magique",
-  options: ["+1.5% de résistance maximum aux dégâts de feu"],
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_7_65", "barbarian_7_93", "barbarian_7_80"],
           bg: "magic",
@@ -18882,7 +18872,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
           label: "Noeud magique",
-  options: ["+1.5% de résistance maximum aux dégâts de feu"],
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_7_66", "barbarian_7_94", "barbarian_7_79"],
           bg: "magic",
@@ -18952,14 +18942,14 @@ options: [
           link: false,
           image: "/paragon/barbarian/CriticalDamageEarth_active.png",
           label: "Nœud rare",
-secondLabel: "Alliage",
-options: [
-  "+10.0% à la durée pour Tremblement de terre",
-  "+10.0% de taille pour Tourbillon de poussière",
-  "Bonus : ajoute +10.0% à la durée pour Tremblement de terre si ces conditions sont remplies :",
-  "380 volonté"
-],
-          
+          secondLabel: "Alliage",
+          options: [
+            "+10.0% à la durée pour Tremblement de terre",
+            "+10.0% de taille pour Tourbillon de poussière",
+            "Bonus : ajoute +10.0% à la durée pour Tremblement de terre si ces conditions sont remplies :",
+            "380 volonté",
+          ],
+
           activable_ids: ["barbarian_7_72", "barbarian_7_99", "barbarian_7_87"],
           bg: "rare",
         },
@@ -18970,10 +18960,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/CriticalDamageEarth_active.png",
           label: "Nœud magique",
-  options: [
-    "+5.0% à la durée pour Tremblement de terre"
-  ],
-          
+          options: ["+5.0% à la durée pour Tremblement de terre"],
 
           activable_ids: [
             "barbarian_7_73",
@@ -19075,7 +19062,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
           label: "Noeud magique",
-  options: ["+1.5 à l'armure"],
+          options: ["+1.5 à l'armure"],
 
           activable_ids: [
             "barbarian_7_79",
@@ -19091,13 +19078,13 @@ options: [
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
           label: "Nœud rare",
-secondLabel: "Déni",
-options: [
-  "+3.0% de résistance à tous les éléments",
-  "+30 à l'armure",
-  "Bonus : ajoute +3.0% de résistance à tous les éléments si ces conditions sont remplies :",
-  "340 dextérité"
-],
+          secondLabel: "Déni",
+          options: [
+            "+3.0% de résistance à tous les éléments",
+            "+30 à l'armure",
+            "Bonus : ajoute +3.0% de résistance à tous les éléments si ces conditions sont remplies :",
+            "340 dextérité",
+          ],
           bg: "rare",
           activable_ids: [
             "barbarian_7_80",
@@ -19182,10 +19169,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/CriticalDamageEarth_active.png",
           label: "Nœud magique",
-  options: [
-    "+5.0% à la durée pour Tremblement de terre"
-  ],
-          
+          options: ["+5.0% à la durée pour Tremblement de terre"],
 
           activable_ids: [
             "barbarian_7_86",
@@ -19208,9 +19192,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/DustDevilArea_active.png",
           label: "Nœud magique",
-  options: [
-    "+5.0% de taille pour Tourbillon de poussière"
-  ],
+          options: ["+5.0% de taille pour Tourbillon de poussière"],
           label: "Nœud magique",
           options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
           activable_ids: [
@@ -19228,9 +19210,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/DustDevilArea_active.png",
           label: "Nœud magique",
-  options: [
-    "+5.0% de taille pour Tourbillon de poussière"
-  ],
+          options: ["+5.0% de taille pour Tourbillon de poussière"],
           activable_ids: [
             "barbarian_7_87",
             "barbarian_7_118",
@@ -19387,7 +19367,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
           label: "Noeud magique",
-  options: ["+1.5 à l'armure"],
+          options: ["+1.5 à l'armure"],
           activable_ids: [
             "barbarian_7_93",
             "barbarian_7_126",
@@ -19403,7 +19383,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
           label: "Noeud magique",
-  options: ["+1.5% de résistance maximum aux dégâts de feu"],
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: [
             "barbarian_7_94",
@@ -19755,7 +19735,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
           label: "Noeud magique",
-  options: ["Maximum de vie augmenté de 2.0%"],
+          options: ["Maximum de vie augmenté de 2.0%"],
 
           activable_ids: ["barbarian_7_141", "barbarian_7_135"],
           bg: "magic",
@@ -19767,7 +19747,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
           label: "Noeud magique",
-  options: ["+1.5 à l'armure"],
+          options: ["+1.5 à l'armure"],
 
           activable_ids: [
             "barbarian_7_142",
@@ -19829,7 +19809,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/EarthquakeDamage_active.png",
           label: "Nœud magique",
-  options: ["+22.5% de dégâts pour Tremblement de terre"],
+          options: ["+22.5% de dégâts pour Tremblement de terre"],
           activable_ids: [
             "barbarian_7_148",
             "barbarian_7_138",
@@ -19844,7 +19824,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/EarthquakeDamage_active.png",
           label: "Nœud magique",
-  options: ["+22.5% de dégâts pour Tremblement de terre"],
+          options: ["+22.5% de dégâts pour Tremblement de terre"],
 
           activable_ids: ["barbarian_7_149", "barbarian_7_139"],
           bg: "magic",
@@ -19858,7 +19838,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
           label: "Noeud magique",
-  options: ["Maximum de vie augmenté de 2.0%"],
+          options: ["Maximum de vie augmenté de 2.0%"],
           bg: "magic",
           activable_ids: [
             "barbarian_7_134",
@@ -19873,14 +19853,14 @@ options: [
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
           label: "Nœud rare",
-secondLabel: "Ténacité",
-options: [
-  "Maximum de vie augmenté de 4.0%",
-  "+30 à l'armure",
-  "Bonus : ajoute Maximum de vie augmenté de 4.0% si ces conditions sont remplies :",
-  "1.540 force (Barbare)",
-  "340 volonté (Barbare)"
-],
+          secondLabel: "Ténacité",
+          options: [
+            "Maximum de vie augmenté de 4.0%",
+            "+30 à l'armure",
+            "Bonus : ajoute Maximum de vie augmenté de 4.0% si ces conditions sont remplies :",
+            "1.540 force (Barbare)",
+            "340 volonté (Barbare)",
+          ],
           activable_ids: [
             "barbarian_7_135",
             "barbarian_7_151",
@@ -19975,13 +19955,13 @@ options: [
           link: false,
           image: "/paragon/barbarian/EarthquakeDamage_active.png",
           label: "Nœud rare",
-secondLabel: "Catalyseur",
-options: [
-  "+70.0% de dégâts pour Tremblement de terre",
-  "+20.0% de dégâts physiques",
-  "Bonus : ajoute +70.0% de dégâts pour Tremblement de terre si ces conditions sont remplies :",
-  "340 volonté"
-],
+          secondLabel: "Catalyseur",
+          options: [
+            "+70.0% de dégâts pour Tremblement de terre",
+            "+20.0% de dégâts physiques",
+            "Bonus : ajoute +70.0% de dégâts pour Tremblement de terre si ces conditions sont remplies :",
+            "340 volonté",
+          ],
           activable_ids: [
             "barbarian_7_139",
             "barbarian_7_157",
@@ -19997,7 +19977,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/EarthquakeDamage_active.png",
           label: "Nœud magique",
-  options: ["+22.5% de dégâts pour Tremblement de terre"],
+          options: ["+22.5% de dégâts pour Tremblement de terre"],
 
           activable_ids: [
             "barbarian_7_140",
@@ -20015,7 +19995,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
           label: "Noeud magique",
-  options: ["+1.5 à l'armure"],
+          options: ["+1.5 à l'armure"],
 
           activable_ids: ["barbarian_7_141", "barbarian_7_151"],
           bg: "magic",
@@ -20027,7 +20007,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
           label: "Noeud magique",
-  options: ["Maximum de vie augmenté de 2.0%"],
+          options: ["Maximum de vie augmenté de 2.0%"],
 
           activable_ids: [
             "barbarian_7_142",
@@ -20127,7 +20107,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/DamagePhysical_active.png",
           label: "Nœud magique",
-  options: ["+10.0% de dégâts physiques"],
+          options: ["+10.0% de dégâts physiques"],
           activable_ids: [
             "barbarian_7_148",
             "barbarian_7_156",
@@ -20142,7 +20122,7 @@ options: [
           link: false,
           image: "/paragon/barbarian/DamagePhysical_active.png",
           label: "Nœud magique",
-  options: ["+10.0% de dégâts physiques"],
+          options: ["+10.0% de dégâts physiques"],
           activable_ids: ["barbarian_7_149", "barbarian_7_157"],
           bg: "magic",
         },
@@ -20417,12 +20397,8 @@ options: [
           link: false,
           image: "/paragon/barbarian/Dex_active.png",
           label: "Nœud normal",
-          options: ["5 Dextérité"],
-
+          options: ["7 Dextérité"],
           glyph_ids: [2, 10, 15, 22, 23],
-          label: "Nœud normal",
-          options: ["5 Dextérité"],
-
           activable_ids: ["barbarian_8_14", "barbarian_8_6", "barbarian_8_8"],
           bg: "magic",
         },
@@ -20432,6 +20408,8 @@ options: [
           index: 15,
           link: false,
           image: "/paragon/barbarian/DamageBleed_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts physiques sur la durée"],
           activable_ids: [
             "barbarian_8_2",
             "barbarian_8_15",
@@ -20518,6 +20496,8 @@ options: [
           index: 14,
           link: false,
           image: "/paragon/barbarian/DamageBleed_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts physiques sur la durée"],
           activable_ids: [
             "barbarian_8_7",
             "barbarian_8_20",
@@ -20532,6 +20512,14 @@ options: [
           index: 15,
           link: false,
           image: "/paragon/barbarian/DamageBleed_active.png",
+          label: "Nœud rare",
+          secondLabel: "Boucherie",
+          options: [
+            "+30.0% de dégâts physiques sur la durée",
+            "+10 force",
+            "Bonus : ajoute +30.0% de dégâts physiques sur la durée si ces conditions sont remplies :",
+            "455 dextérité",
+          ],
           activable_ids: [
             "barbarian_8_8",
             "barbarian_8_21",
@@ -20550,7 +20538,7 @@ options: [
           options: ["5 Dextérité"],
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["7 Dextérité"],
           activable_ids: [
             "barbarian_8_9",
             "barbarian_8_22",
@@ -20621,6 +20609,8 @@ options: [
           index: 15,
           link: false,
           image: "/paragon/barbarian/DamageBleed_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts physiques sur la durée"],
           activable_ids: [
             "barbarian_8_15",
             "barbarian_8_29",
@@ -20933,6 +20923,8 @@ options: [
           index: 17,
           link: false,
           image: "/paragon/barbarian/DamageToVulnerable_active.png",
+          label: "Nœud magique",
+          options: ["+12.5% de dégâts contre les cibles vulnérables"],
 
           activable_ids: ["barbarian_8_30", "barbarian_8_55", "barbarian_8_43"],
           bg: "magic",
@@ -20943,6 +20935,14 @@ options: [
           index: 18,
           link: false,
           image: "/paragon/barbarian/DamageToVulnerable_active.png",
+          label: "Nœud rare",
+          secondLabel: "Écorchage",
+          options: [
+            "+25.0% de dégâts contre les cibles vulnérables",
+            "+10 force",
+            "Bonus : ajoute +25.0% de dégâts contre les cibles vulnérables si ces conditions sont remplies :",
+            "455 volonté",
+          ],
           activable_ids: [
             "barbarian_8_31",
             "barbarian_8_56",
@@ -20957,6 +20957,8 @@ options: [
           index: 19,
           link: false,
           image: "/paragon/barbarian/DamageToVulnerable_active.png",
+          label: "Nœud magique",
+          options: ["+12.5% de dégâts contre les cibles vulnérables"],
           activable_ids: [
             "barbarian_8_32",
             "barbarian_8_57",
@@ -20985,7 +20987,9 @@ options: [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/ResistancePoison_active.png",
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_8_63", "barbarian_8_47"],
           bg: "magic",
@@ -21116,6 +21120,8 @@ options: [
           index: 18,
           link: false,
           image: "/paragon/barbarian/DamageToVulnerable_active.png",
+          label: "Nœud magique",
+          options: ["+12.5% de dégâts contre les cibles vulnérables"],
 
           activable_ids: ["barbarian_8_43", "barbarian_8_55", "barbarian_8_57"],
           bg: "magic",
@@ -21176,7 +21182,9 @@ options: [
           active: false,
           index: 4,
           link: false,
-          image: "/paragon/barbarian/ResistancePoison_active.png",
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_8_60", "barbarian_8_62"],
           bg: "magic",
@@ -21186,8 +21194,15 @@ options: [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/ResistancePoison_active.png",
-
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          llabel: "Nœud rare",
+          secondLabel: "Conditionnement au poison",
+          options: [
+            "+10.0% de résistance aux dégâts de poison",
+            "+2.0% de résistance maximum aux dégâts de poison",
+            "Bonus : ajoute +10.0% de résistance aux dégâts de poison si ces conditions sont remplies :",
+            "435 volonté",
+          ],
           activable_ids: ["barbarian_8_75", "barbarian_8_61", "barbarian_8_63"],
           bg: "rare",
         },
@@ -21197,6 +21212,8 @@ options: [
           index: 6,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_8_46", "barbarian_8_76", "barbarian_8_62"],
           bg: "magic",
@@ -21347,6 +21364,8 @@ options: [
           index: 5,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_8_62", "barbarian_8_76"],
           bg: "magic",
@@ -21356,7 +21375,9 @@ options: [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/ResistancePoison_active.png",
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "barbarian_8_63",
             "barbarian_8_90",
@@ -21409,8 +21430,9 @@ options: [
           active: false,
           index: 11,
           link: false,
-          image:
-            "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+          image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
 
           activable_ids: ["barbarian_8_95", "barbarian_8_81"],
           bg: "magic",
@@ -21420,7 +21442,9 @@ options: [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/ResistanceFire_active.png",
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "barbarian_8_64",
             "barbarian_8_96",
@@ -21605,8 +21629,9 @@ options: [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/ResistanceFire_active.png",
-
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: ["barbarian_8_93", "barbarian_8_95"],
           bg: "magic",
         },
@@ -21615,8 +21640,15 @@ options: [
           active: false,
           index: 11,
           link: false,
-          image:
-            "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+          image: "/paragon/barbarian/Armor_active.png",
+          label: "Nœud rare",
+          secondLabel: "Bain de sang",
+          options: [
+            "6.0% de réduction des dégâts infligés par les cibles sous l'effet « Saignement »",
+            "+3.0% de résistance à tous les éléments",
+            "Bonus : ajoute 6.0% de réduction des dégâts infligés par les cibles sous l'effet « Saignement » si ces conditions sont remplies :",
+            "455 volonté",
+          ],
           activable_ids: [
             "barbarian_8_80",
             "barbarian_8_104",
@@ -21630,8 +21662,9 @@ options: [
           active: false,
           index: 12,
           link: false,
-          image:
-            "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+          image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
 
           activable_ids: ["barbarian_8_81", "barbarian_8_95"],
           bg: "magic",
@@ -21743,8 +21776,9 @@ options: [
           active: false,
           index: 11,
           link: false,
-          image:
-            "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+          image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
 
           activable_ids: ["barbarian_8_95", "barbarian_8_117"],
           bg: "magic",
@@ -22410,6 +22444,8 @@ options: [
           index: 12,
           link: false,
           image: "/paragon/barbarian/CCDurationReduction_active.png",
+          label: "Nœud magique",
+          options: ["6.0% de réduction des pertes de contrôle"],
           activable_ids: [
             "barbarian_8_138",
             "barbarian_8_158",
@@ -22424,6 +22460,8 @@ options: [
           index: 13,
           link: false,
           image: "/paragon/barbarian/Dodge_active.png",
+          label: "Nœud magique",
+          options: ["1.0% de chances d'esquiver"],
 
           activable_ids: [
             "barbarian_8_159",
@@ -22438,6 +22476,8 @@ options: [
           index: 14,
           link: false,
           image: "/paragon/barbarian/CCDurationReduction_active.png",
+          label: "Nœud magique",
+          options: ["6.0% de réduction des pertes de contrôle"],
 
           activable_ids: ["barbarian_8_139", "barbarian_8_150"],
           bg: "magic",
@@ -22492,6 +22532,11 @@ options: [
           index: 5,
           link: false,
           image: "/paragon/barbarian/barbarian.png",
+          label: "Nœud légendaire",
+          secondLabel: "Saigné",
+          options: [
+            "L'application d'un saignement sur une cible vulnérable inflige 45%[x] de dégâts supplémentaires.",
+          ],
           activable_ids: [
             "barbarian_8_143",
             "barbarian_8_163",
@@ -22534,7 +22579,8 @@ options: [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Dodge_active.png",
-
+          label: "Nœud magique",
+          options: ["1.0% de chances d'esquiver"],
           activable_ids: ["barbarian_8_149", "barbarian_8_159"],
           bg: "magic",
         },
@@ -22544,6 +22590,14 @@ options: [
           index: 13,
           link: false,
           image: "/paragon/barbarian/CCDurationReduction_active.png",
+          label: "Nœud rare",
+          secondLabel: "Vélocé",
+          options: [
+            "12.0% de réduction des pertes de contrôle",
+            "2.0% de chances d'esquiver",
+            "Bonus : ajoute 12.0% de réduction des pertes de contrôle si ces conditions sont remplies :",
+            "415 dextérité",
+          ],
 
           activable_ids: [
             "barbarian_8_150",
@@ -22619,6 +22673,8 @@ options: [
           index: 13,
           link: false,
           image: "/paragon/barbarian/CCDurationReduction_active.png",
+          label: "Nœud magique",
+          options: ["6.0% de réduction des pertes de contrôle"],
 
           activable_ids: ["barbarian_8_159", "barbarian_8_169"],
           bg: "magic",
@@ -22632,6 +22688,8 @@ options: [
           link: false,
           image:
             "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts physiques sur la durée"],
 
           activable_ids: [
             "barbarian_8_160",
@@ -22654,6 +22712,8 @@ options: [
           link: false,
           image: "/paragon/barbarian/DamageToVulnerable_active.png",
           label: "Nœud magique",
+          options: ["+12.5% de dégâts contre les cibles vulnérables"],
+          label: "Nœud magique",
           options: ["5 Force", "5 Intelligence", "5 Volonté", "5 Dextérité"],
           activable_ids: [
             "barbarian_8_161",
@@ -22669,6 +22729,8 @@ options: [
           index: 3,
           link: false,
           image: "/paragon/barbarian/DamageToVulnerable_active.png",
+          label: "Nœud magique",
+          options: ["+12.5% de dégâts contre les cibles vulnérables"],
           activable_ids: [
             "barbarian_8_161",
             "barbarian_8_172",
@@ -22733,6 +22795,8 @@ options: [
           index: 1,
           link: false,
           image: "/paragon/barbarian/DamageToVulnerable_active.png",
+          label: "Nœud magique",
+          options: ["+12.5% de dégâts contre les cibles vulnérables"],
 
           activable_ids: ["barbarian_8_171"],
           bg: "magic",
@@ -22744,6 +22808,14 @@ options: [
           link: false,
           image:
             "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+          label: "Nœud rare",
+          secondLabel: "Lacérateur",
+          options: [
+            "+30.0% de dégâts physiques sur la durée",
+            "+25.0% de dégâts contre les cibles vulnérables",
+            "Bonus : ajoute +30.0% de dégâts physiques sur la durée si ces conditions sont remplies :",
+            "255 force",
+          ],
           activable_ids: [
             "barbarian_8_165",
             "barbarian_8_181",
@@ -22759,6 +22831,8 @@ options: [
           link: false,
           image:
             "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts physiques sur la durée"],
 
           activable_ids: [
             "barbarian_8_166",
@@ -22899,6 +22973,8 @@ options: [
           link: false,
           image:
             "/paragon/barbarian/DamageReductionFromBleedingTarget_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts physiques sur la durée"],
 
           activable_ids: ["barbarian_8_171"],
           bg: "magic",
@@ -23255,7 +23331,9 @@ options: [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/ResistanceFire_active.png",
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_9_20", "barbarian_9_14"],
           bg: "magic",
@@ -23306,7 +23384,9 @@ options: [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/ResistanceFire_active.png",
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_9_14", "barbarian_9_27", "barbarian_9_20"],
           bg: "magic",
@@ -23317,6 +23397,8 @@ options: [
           index: 12,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
 
           activable_ids: ["barbarian_9_15", "barbarian_9_28", "barbarian_9_19"],
           bg: "magic",
@@ -23329,6 +23411,8 @@ options: [
           index: 4,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+          label: "Nœud magique",
+          options: ["+1 de ressource par victime pour Fureur"],
 
           activable_ids: ["barbarian_9_30", "barbarian_9_22"],
           bg: "magic",
@@ -23339,6 +23423,8 @@ options: [
           index: 5,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+          label: "Nœud magique",
+          options: ["+4 de ressource par victime pour Fureur"],
 
           activable_ids: ["barbarian_9_31", "barbarian_9_21", "barbarian_9_23"],
           bg: "magic",
@@ -23349,6 +23435,8 @@ options: [
           index: 6,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+          label: "Nœud magique",
+          options: ["+1 de ressource par victime pour Fureur"],
 
           activable_ids: ["barbarian_9_32", "barbarian_9_22", "barbarian_9_24"],
           bg: "magic",
@@ -23359,6 +23447,8 @@ options: [
           index: 7,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+          label: "Nœud magique",
+          options: ["+4 de ressource par victime pour Fureur"],
 
           activable_ids: ["barbarian_9_16", "barbarian_9_23", "barbarian_9_25"],
           bg: "magic",
@@ -23395,7 +23485,9 @@ options: [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/ResistanceFire_active.png",
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_9_19", "barbarian_9_36", "barbarian_9_28"],
           bg: "magic",
@@ -23405,10 +23497,17 @@ options: [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/ResistanceFire_active.png",
-
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Rare Node",
+          secondLabel: "Fire Resilience",
+          options: [
+            "+3% Total Resistance",
+            "+4% Maximum Life",
+            "Bonus: Another +3% Total Resistance if requirements are met:",
+            "84/360 Willpower",
+          ],
           activable_ids: ["barbarian_9_20", "barbarian_9_27"],
-          bg: "magic",
+          bg: "rare",
         },
       ],
       [
@@ -23447,6 +23546,8 @@ options: [
           index: 5,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+          label: "Nœud magique",
+          options: ["+4 de ressource par victime pour Fureur"],
 
           activable_ids: ["barbarian_9_22", "barbarian_9_30", "barbarian_9_32"],
           bg: "magic",
@@ -23457,7 +23558,14 @@ options: [
           index: 6,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
-
+          label: "Nœud rare",
+          secondLabel: "Fureur vorace",
+          options: [
+            "+8[Fureur maximum] pour Fureur",
+            "+2 de ressource par victime pour Fureur",
+            "Bonus : ajoute +8[Fureur maximum] si ces conditions sont remplies :",
+            "285 volonté",
+          ],
           activable_ids: ["barbarian_9_23", "barbarian_9_31"],
           bg: "rare",
         },
@@ -23505,6 +23613,8 @@ options: [
           index: 11,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
 
           activable_ids: ["barbarian_9_27", "barbarian_9_35"],
           bg: "magic",
@@ -23554,8 +23664,16 @@ options: [
           active: false,
           index: 14,
           link: false,
-          image: "/paragon/barbarian/ResistanceAll_active.png",
-
+          image: "/paragon/barbarian/HealingBonus_active.png",
+          label: "Nœud rare",
+          secondLabel: "Conditionnement",
+          options: [
+            "+3.0% de résistance à tous les éléments",
+            "+6.0% de soins requis",
+            "Bonus : ajoute +3.0% de résistance à tous les éléments si ces conditions sont remplies :",
+            "285 volonté (Barbare)",
+            "285 dextérité (Barbare)",
+          ],
           activable_ids: ["barbarian_9_47", "barbarian_9_41"],
           bg: "rare",
         },
@@ -23565,6 +23683,8 @@ options: [
           index: 15,
           link: false,
           image: "/paragon/barbarian/HealingBonus_active.png",
+          label: "Nœud magique",
+          options: ["+3% de soins reçus"],
 
           activable_ids: ["barbarian_9_48", "barbarian_9_40", "barbarian_9_42"],
           bg: "magic",
@@ -23575,6 +23695,8 @@ options: [
           index: 16,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_9_49", "barbarian_9_41"],
           bg: "magic",
@@ -23625,6 +23747,8 @@ options: [
           index: 13,
           link: false,
           image: "/paragon/barbarian/HealingBonus_active.png",
+          label: "Nœud magique",
+          options: ["+3% de soins reçus"],
 
           activable_ids: ["barbarian_9_63", "barbarian_9_47"],
           bg: "magic",
@@ -23635,6 +23759,8 @@ options: [
           index: 14,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_9_40", "barbarian_9_46", "barbarian_9_48"],
           bg: "magic",
@@ -23645,6 +23771,8 @@ options: [
           index: 15,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_9_41", "barbarian_9_47", "barbarian_9_49"],
           bg: "magic",
@@ -24229,7 +24357,11 @@ options: [
           index: 8,
           link: false,
           image: "/paragon/barbarian/barbarian.png",
-
+          label: "Nœud légendaire",
+          secondLabel: "Porte-guerre",
+          options: [
+            "Pour chaque tranche de 75 points de fureur dépensés, vous obtenez un montant de fortification égal à 15% de votre maximum de points de vie (60).",
+          ],
           activable_ids: ["barbarian_9_75", "barbarian_9_91"],
           bg: "rare",
         },
@@ -24406,6 +24538,8 @@ options: [
           index: 14,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+          label: "Nœud magique",
+          options: ["+4 de ressource par victime pour Fureur"],
 
           activable_ids: [
             "barbarian_9_94",
@@ -24440,7 +24574,7 @@ options: [
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
 
-          options: ["5 Dextérité"],
+          options: ["7 Dextérité"],
 
           activable_ids: ["barbarian_9_114", "barbarian_9_105"],
           bg: "magic",
@@ -24451,6 +24585,8 @@ options: [
           index: 2,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Noeud magique",
+          options: ["+10.0% de dégâts"],
 
           activable_ids: ["barbarian_9_115", "barbarian_9_104"],
           bg: "magic",
@@ -24544,7 +24680,14 @@ options: [
           index: 13,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
-
+          label: "Nœud rare",
+          secondLabel: "Réserve innée",
+          options: [
+            "+8[Fureur maximum]",
+            "Maximum de vie augmenté de 4.0%",
+            "Bonus : ajoute +8[Fureur maximum] si ces conditions sont remplies :",
+            "305 volonté",
+          ],
           activable_ids: ["barbarian_9_124", "barbarian_9_112"],
           bg: "rare",
         },
@@ -24554,6 +24697,8 @@ options: [
           index: 14,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
 
           activable_ids: [
             "barbarian_9_102",
@@ -24585,6 +24730,8 @@ options: [
           index: 1,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Noeud magique",
+          options: ["+10.0% de dégâts"],
           activable_ids: [
             "barbarian_9_104",
             "barbarian_9_126",
@@ -24599,6 +24746,14 @@ options: [
           index: 2,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Nœud rare",
+          secondLabel: "Puissance brute",
+          options: [
+            "+20.0% de dégâts",
+            "+10 force",
+            "Bonus : ajoute +20.0% de dégâts si ces conditions sont remplies :",
+            "265 dextérité",
+          ],
           activable_ids: [
             "barbarian_9_105",
             "barbarian_9_127",
@@ -24737,6 +24892,8 @@ options: [
           index: 13,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+          label: "Nœud magique",
+          options: ["+4 de ressource par victime pour Fureur"],
 
           activable_ids: [
             "barbarian_9_111",
@@ -24751,6 +24908,8 @@ options: [
           index: 14,
           link: false,
           image: "/paragon/barbarian/FuryOnKill_active.png",
+          label: "Nœud magique",
+          options: ["+4 de ressource par victime pour Fureur"],
 
           activable_ids: [
             "barbarian_9_112",
@@ -24784,7 +24943,7 @@ options: [
           options: ["5 Dextérité"],
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["7 Dextérité"],
           activable_ids: [
             "barbarian_9_115",
             "barbarian_9_138",
@@ -24799,6 +24958,8 @@ options: [
           index: 3,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Noeud magique",
+          options: ["+10.0% de dégâts"],
 
           activable_ids: [
             "barbarian_9_116",
@@ -24947,6 +25108,8 @@ options: [
           index: 14,
           link: false,
           image: "/paragon/barbarian/HPPercent_active.png",
+          label: "Noeud magique",
+          options: ["Maximum de vie augmenté de 2.0%"],
 
           activable_ids: ["barbarian_9_125", "barbarian_9_136"],
         },
@@ -24988,6 +25151,8 @@ options: [
           index: 4,
           link: false,
           image: "/paragon/barbarian/DamageWhileFortified_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts pendant la fortification"],
 
           activable_ids: [
             "barbarian_9_150",
@@ -25151,7 +25316,7 @@ options: [
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+7 volonte"],
           activable_ids: [
             "barbarian_9_140",
             "barbarian_9_156",
@@ -25166,6 +25331,14 @@ options: [
           index: 5,
           link: false,
           image: "/paragon/barbarian/DamageWhileFortified_active.png",
+          label: "Nœud rare",
+          secondLabel: "Puissance brute",
+          options: [
+            "+20.0% de dégâts",
+            "+10 force",
+            "Bonus : ajoute +20.0% de dégâts si ces conditions sont remplies :",
+            "265 dextérité",
+          ],
           activable_ids: [
             "barbarian_9_141",
             "barbarian_9_157",
@@ -25180,6 +25353,8 @@ options: [
           index: 6,
           link: false,
           image: "/paragon/barbarian/DamageWhileFortified_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts pendant la fortification"],
 
           activable_ids: ["barbarian_9_158", "barbarian_9_151"],
           bg: "magic",
@@ -25254,6 +25429,8 @@ options: [
           index: 5,
           link: false,
           image: "/paragon/barbarian/DamageWhileFortified_active.png",
+          label: "Nœud magique",
+          options: ["+15.0% de dégâts pendant la fortification"],
           activable_ids: [
             "barbarian_9_151",
             "barbarian_9_161",
@@ -25272,7 +25449,7 @@ options: [
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
 
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+7 volonte"],
 
           activable_ids: ["barbarian_9_152", "barbarian_9_157"],
           bg: "magic",
@@ -25534,7 +25711,7 @@ options: [
 
           glyph_ids: [2, 10, 15, 22, 23],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["7 Dextérité"],
 
           activable_ids: [
             "barbarian_10_5",
@@ -25631,6 +25808,8 @@ options: [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Noeud magique",
+          options: ["+10.0% de dégâts"],
           activable_ids: [
             "barbarian_10_14",
             "barbarian_10_29",
@@ -25645,7 +25824,14 @@ options: [
           index: 7,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
-
+          label: "Nœud rare",
+          secondLabel: "Puissance brute",
+          options: [
+            "+20.0% de dégâts",
+            "+10 force",
+            "Bonus : ajoute +20.0% de dégâts si ces conditions sont remplies :",
+            "340 dextérité",
+          ],
           activable_ids: [
             "barbarian_10_30",
             "barbarian_10_20",
@@ -25662,7 +25848,7 @@ options: [
           label: "Nœud normal",
           options: ["5 Dextérité"],
           label: "Nœud normal",
-          options: ["5 Dextérité"],
+          options: ["7 Dextérité"],
           glyph_ids: [2, 10, 15, 22, 23],
           activable_ids: ["barbarian_10_31", "barbarian_10_21"],
           bg: "magic",
@@ -25782,6 +25968,8 @@ options: [
           index: 7,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Noeud magique",
+          options: ["+10.0% de dégâts"],
           activable_ids: [
             "barbarian_10_21",
             "barbarian_10_40",
@@ -25796,6 +25984,8 @@ options: [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Noeud magique",
+          options: ["+10.0% de dégâts"],
 
           activable_ids: [
             "barbarian_10_22",
@@ -26039,7 +26229,7 @@ options: [
 
           glyph_ids: [3, 7, 8, 11, 16, 19, 21],
           label: "Nœud normal",
-          options: ["+5 volonte"],
+          options: ["+7 volonte"],
 
           activable_ids: [
             "barbarian_10_35",
@@ -26054,6 +26244,8 @@ options: [
           index: 3,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
+          label: "Nœud magique",
+          options: ["+2[Fureur maximum]"],
 
           _id: 2,
           activable_ids: [
@@ -26149,6 +26341,8 @@ options: [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
+          label: "Nœud magique",
+          options: ["+2[Fureur maximum]"],
 
           activable_ids: ["barbarian_10_44", "barbarian_10_62"],
           bg: "magic",
@@ -26173,7 +26367,14 @@ options: [
           index: 3,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
-
+          label: "Nœud rare",
+          secondLabel: "Force de frappe",
+          options: [
+            "+4[Fureur maximum]",
+            "+10 force",
+            "Bonus : ajoute +4[Fureur maximum] si ces conditions sont remplies :",
+            "340 volonté",
+          ],
           activable_ids: [
             "barbarian_10_47",
             "barbarian_10_64",
@@ -26187,6 +26388,8 @@ options: [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
+          label: "Nœud magique",
+          options: ["+2[Fureur maximum]"],
           activable_ids: [
             "barbarian_10_48",
             "barbarian_10_65",
@@ -26261,7 +26464,14 @@ options: [
           index: 11,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
-
+          label: "Nœud rare",
+          secondLabel: "Chasseur-tueur",
+          options: [
+            "+2 de ressource par victime pour Fureur",
+            "+20.0% à la vitesse de déplacement pendant 4s après avoir tué une élite",
+            "Bonus : ajoute +2 de ressource par victime pour Fureur si ces conditions sont remplies :",
+            "360 dextérité",
+          ],
           activable_ids: ["barbarian_10_70", "barbarian_10_62"],
           bg: "rare",
         },
@@ -26271,9 +26481,11 @@ options: [
           index: 12,
           link: false,
           image: "/paragon/barbarian/MoveSpeedEliteKill_active.png",
-
+          label: "Nœud magique",
+          options: [
+            "+10% à la vitesse de déplacement pendant 4s après avoir tué une élite",
+          ],
           _id: 2,
-
           activable_ids: [
             "barbarian_10_53",
             "barbarian_10_71",
@@ -26315,6 +26527,8 @@ options: [
           index: 4,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
+          label: "Nœud magique",
+          options: ["+2[Fureur maximum]"],
 
           activable_ids: [
             "barbarian_10_56",
@@ -26388,6 +26602,8 @@ options: [
           index: 11,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
+          label: "Nœud magique",
+          options: ["+2[Fureur maximum]"],
 
           activable_ids: [
             "barbarian_10_61",
@@ -26402,6 +26618,8 @@ options: [
           index: 12,
           link: false,
           image: "/paragon/barbarian/Fury_active.png",
+          label: "Nœud magique",
+          options: ["+2[Fureur maximum]"],
 
           activable_ids: [
             "barbarian_10_62",
@@ -26416,9 +26634,11 @@ options: [
           index: 13,
           link: false,
           image: "/paragon/barbarian/MoveSpeedEliteKill_active.png",
-
           _id: 2,
-
+          label: "Nœud magique",
+          options: [
+            "+10% à la vitesse de déplacement pendant 4s après avoir tué une élite",
+          ],
           activable_ids: ["barbarian_10_71", "barbarian_10_73"],
           bg: "magic",
         },
@@ -26823,6 +27043,8 @@ options: [
           index: 16,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_10_89"],
         },
@@ -26935,8 +27157,15 @@ options: [
           active: false,
           index: 7,
           link: false,
-          image: "/paragon/barbarian/Fury_active.png",
-
+          image: "/paragon/barbarian/AttackSpeed_active.png",
+          label: "Nœud rare",
+          secondLabel: "Agile",
+          options: [
+            "+2.5% à la vitesse d'attaque",
+            "+20.0% de dégâts",
+            "Bonus : ajoute +2.5% à la vitesse d'attaque si ces conditions sont remplies :",
+            "380 dextérité",
+          ],
           activable_ids: ["barbarian_10_120", "barbarian_10_110"],
           bg: "rare",
         },
@@ -26945,7 +27174,9 @@ options: [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Fury_active.png",
+          image: "/paragon/barbarian/AttackSpeed_active.png",
+          label: "Nœud magique",
+          options: ["+2.5% à la vitesse d'attaque"],
           bg: "magic",
           activable_ids: [
             "barbarian_10_121",
@@ -27001,7 +27232,14 @@ options: [
           index: 14,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
-
+          label: "Nœud rare",
+          secondLabel: "Déni",
+          options: [
+            "+3.0% de résistance à tous les éléments",
+            "+30 à l'armure",
+            "Bonus : ajoute +3.0% de résistance à tous les éléments si ces conditions sont remplies :",
+            "340 dextérité",
+          ],
           activable_ids: ["barbarian_10_126", "barbarian_10_115"],
           bg: "rare",
         },
@@ -27011,7 +27249,8 @@ options: [
           index: 15,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
-
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: ["barbarian_10_127", "barbarian_10_114"],
           bg: "magic",
         },
@@ -27062,7 +27301,9 @@ options: [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/Fury_active.png",
+          image: "/paragon/barbarian/AttackSpeed_active.png",
+          label: "Nœud magique",
+          options: ["+2.5% à la vitesse d'attaque"],
 
           activable_ids: ["barbarian_10_118", "barbarian_10_120"],
           bg: "magic",
@@ -27073,6 +27314,8 @@ options: [
           index: 7,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Noeud magique",
+          options: ["+10.0% de dégâts"],
           activable_ids: [
             "barbarian_10_109",
             "barbarian_10_119",
@@ -27085,7 +27328,9 @@ options: [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Fury_active.png",
+          image: "/paragon/barbarian/AttackSpeed_active.png",
+          label: "Nœud magique",
+          options: ["+2.5% à la vitesse d'attaque"],
           activable_ids: [
             "barbarian_10_110",
             "barbarian_10_132",
@@ -27155,6 +27400,8 @@ options: [
           index: 14,
           link: false,
           image: "/paragon/barbarian/Armor_active.png",
+          label: "Noeud magique",
+          options: ["+1.5 à l'armure"],
           activable_ids: [
             "barbarian_10_114",
             "barbarian_10_125",
@@ -27168,6 +27415,8 @@ options: [
           index: 15,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "barbarian_10_115",
             "barbarian_10_134",
@@ -27182,6 +27431,8 @@ options: [
           index: 16,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_10_127", "barbarian_10_129"],
           bg: "magic",
@@ -27236,6 +27487,8 @@ options: [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Damage_active.png",
+          label: "Noeud magique",
+          options: ["+10.0% de dégâts"],
 
           activable_ids: ["barbarian_10_121", "barbarian_10_135"],
           bg: "magic",
@@ -27298,6 +27551,8 @@ options: [
           index: 12,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_10_133", "barbarian_10_144"],
           bg: "magic",
@@ -27375,17 +27630,21 @@ options: [
           active: false,
           index: 11,
           link: false,
-          image: "/paragon/barbarian/ResistanceLightning_active.png",
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_10_152", "barbarian_10_144"],
-          bg: "rare",
+          bg: "magic",
         },
         {
           id: "barbarian_10_144",
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/ResistanceLightning_active.png",
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "barbarian_10_137",
             "barbarian_10_153",
@@ -27485,7 +27744,9 @@ options: [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/ResistanceLightning_active.png",
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
 
           activable_ids: ["barbarian_10_150", "barbarian_10_152"],
           bg: "magic",
@@ -27496,6 +27757,14 @@ options: [
           index: 11,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Rare Node",
+          secondLabel: "Deflection",
+          options: [
+            "+3% Total Resistance",
+            "+2% Total Armor",
+            "Bonus: Another 3% Total Resistance if requirements are met:",
+            "175/265 Dexterity",
+          ],
           activable_ids: [
             "barbarian_10_143",
             "barbarian_10_151",
@@ -27508,7 +27777,9 @@ options: [
           active: false,
           index: 12,
           link: false,
-          image: "/paragon/barbarian/ResistanceLightning_active.png",
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud magique",
+          options: ["+1.5% de résistance maximum aux dégâts de feu"],
           activable_ids: [
             "barbarian_10_144",
             "barbarian_10_159",
@@ -27633,7 +27904,11 @@ options: [
           index: 17,
           link: false,
           image: "/paragon/barbarian/barbarian.png",
-
+          label: "Nœud légendaire",
+          secondLabel: "Maître d'armes",
+          options: [
+            "Changer d'arme vous octroie 8% de votre fureur maximum. Vous infligez 30% de dégâts supplémentaires aux cibles adverses blessées et en bonne santé.",
+          ],
           activable_ids: ["barbarian_10_157", "barbarian_10_161"],
           bg: "rare",
         },
