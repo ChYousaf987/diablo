@@ -119,6 +119,7 @@ export const seasons = [
   { value: "Season 8", label: "Saison 8" },
   { value: "Season 9", label: "Saison 9" },
   { value: "Season 10", label: "Saison 10" },
+  { value: "Season 11", label: "Saison 11" },
 ];
 
 export const categories = [
@@ -352,7 +353,7 @@ export const glyphs = [
     effects: ["Rare Glyph"],
   },
 ];
-// In your constants file or druid.js file, add this export for Druid glyphs
+
 export const glyphsDruid = [
   {
     id: 1,
@@ -462,292 +463,6 @@ export const data = {
   },
 };
 
-export const gearLeft = [
-  {
-    image: "/gears/helm.png",
-    label: "Casque",
-    description: "Vide",
-    aspect_id: null,
-    aspect_power_id: null,
-    aspect_power_id_2: null,
-    details: {
-      selects1: [],
-      selects2: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-      selects3: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-    },
-  },
-  {
-    image: "/gears/chest_armor.png",
-    label: "Armure de Torse",
-    description: "Vide",
-    aspect_id: null,
-    aspect_power_id: null,
-    aspect_power_id_2: null,
-    details: {
-      selects1: [],
-      selects2: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-      selects3: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-    },
-  },
-  {
-    image: "/gears/gloves.png",
-    label: "Gants",
-    description: "Vide",
-    aspect_id: null,
-    aspect_power_id: null,
-    aspect_power_id_2: null,
-    details: {
-      selects1: [],
-      selects2: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-      selects3: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-    },
-  },
-  {
-    image: "/gears/pants.png",
-    label: "Pantalon",
-    description: "Vide",
-    aspect_id: null,
-    aspect_power_id: null,
-    aspect_power_id_2: null,
-    details: {
-      selects1: [],
-      selects2: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-      selects3: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-    },
-  },
-  {
-    image: "/gears/boots.png",
-    label: "Bottes",
-    description: "Vide",
-    aspect_id: null,
-    aspect_power_id: null,
-    aspect_power_id_2: null,
-    details: {
-      selects1: [],
-      selects2: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-      selects3: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-    },
-  },
-  {
-    image: "/gears/bludgeoning_weapon.png",
-    label: "Arme Contondante",
-    description: "Vide",
-    aspect_id: null,
-    aspect_power_id: null,
-    aspect_power_id_2: null,
-    details: {
-      selects1: [],
-      selects2: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-      selects3: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-    },
-  },
-  {
-    image: "/gears/dual-wield_weapon_1.png",
-    label: "Arme Double 1",
-    description: "Vide",
-    aspect_id: null,
-    aspect_power_id: null,
-    aspect_power_id_2: null,
-    details: {
-      selects1: [],
-      selects2: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-      selects3: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-    },
-  },
-];
-
-export const gearRight = [
-  {
-    image: "empty.png",
-    label: "",
-    description: "",
-    aspect_id: null,
-    aspect_power_id: null,
-    aspect_power_id_2: null,
-    details: {
-      selects1: [],
-      selects2: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-      selects3: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-    },
-  },
-  {
-    image: "/gears/amulet.png",
-    label: "Amulette",
-    description: "Vide",
-    aspect_id: null,
-    aspect_power_id: null,
-    aspect_power_id_2: null,
-    details: {
-      selects1: [],
-      selects2: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-      selects3: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-    },
-  },
-  {
-    image: "/gears/ring_1.png",
-    label: "Anneau 1",
-    description: "Vide",
-    aspect_id: null,
-    aspect_power_id: null,
-    aspect_power_id_2: null,
-    details: {
-      selects1: [],
-      selects2: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-      selects3: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-    },
-  },
-  {
-    image: "/gears/ring_1.png",
-    label: "Anneau 2",
-    description: "Vide",
-    aspect_id: null,
-    aspect_power_id: null,
-    aspect_power_id_2: null,
-    details: {
-      selects1: [],
-      selects2: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-      selects3: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-    },
-  },
-  {
-    image: "empty.png",
-    label: "",
-    description: "",
-    aspect_id: null,
-    aspect_power_id: null,
-    aspect_power_id_2: null,
-    details: {
-      selects1: [],
-      selects2: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-      selects3: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-    },
-  },
-  {
-    image: "/gears/slashing_weapon.png",
-    label: "Arme Tranchante",
-    description: "Vide",
-    aspect_id: null,
-    aspect_power_id: null,
-    aspect_power_id_2: null,
-    details: {
-      selects1: [],
-      selects2: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-      selects3: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-    },
-  },
-  {
-    image: "/gears/dual-wield_weapon_2.png",
-    label: "Arme Double 2",
-    description: "Vide",
-    aspect_id: null,
-    aspect_power_id: null,
-    aspect_power_id_2: null,
-    details: {
-      selects1: [],
-      selects2: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-      selects3: [
-        { value: 0, selectedValue: "" },
-        { value: 0, selectedValue: "" },
-      ],
-    },
-  },
-];
-
 export const gems = [
   { image: "empty.png", label: "", option_id: null },
   { image: "empty.png", label: "", option_id: null },
@@ -835,8 +550,6 @@ export const GemsOptions = [
     ],
   },
 ];
-
-
 
 export const itemState = [
   {
@@ -1261,6 +974,334 @@ export const catalystPowers = [
     description: "Increases Intelligence by 10%",
   },
 ];
+
+export const aspectspower = [
+  { id: 1, label: "Amethyst", image: "/gears/grand.png" },
+  { id: 2, label: "Emerald", image: "/gears/erald.png" },
+  { id: 3, label: "Ruby", image: "/gears/ruby.png" },
+  { id: 4, label: "Topaz", image: "/gears/graq.png" },
+  { id: 5, label: "Sapphier", image: "/gears/gra.png" },
+  { id: 6, label: "Diamand", image: "/gears/gran.png" },
+];
+
+export const aspectsFilter = [
+  {
+    label: "Codex",
+  },
+  { label: "Drop-seulement" },
+  {
+    label: "Spécifique à la classe",
+  },
+  {
+    label: "Unique",
+  },
+  {
+    label: "Légendaire",
+  },
+  {
+    label: "Offensif",
+  },
+  {
+    label: "Défensive",
+  },
+  {
+    label: "Mobilité",
+  },
+  {
+    label: "Ressource",
+  },
+  {
+    label: "Utilitaire",
+  },
+];
+
+
+export const gearLeft = [
+  {
+    image: "/gears/helm.png",
+    label: "Casque",
+    description: "Vide",
+    aspect_id: null,
+    aspect_power_id: null,
+    aspect_power_id_2: null,
+    details: {
+      selects1: [],
+      selects2: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+      selects3: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+    },
+  },
+  {
+    image: "/gears/chest_armor.png",
+    label: "Armure de Torse",
+    description: "Vide",
+    aspect_id: null,
+    aspect_power_id: null,
+    aspect_power_id_2: null,
+    details: {
+      selects1: [],
+      selects2: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+      selects3: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+    },
+  },
+  {
+    image: "/gears/gloves.png",
+    label: "Gants",
+    description: "Vide",
+    aspect_id: null,
+    aspect_power_id: null,
+    aspect_power_id_2: null,
+    details: {
+      selects1: [],
+      selects2: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+      selects3: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+    },
+  },
+  {
+    image: "/gears/pants.png",
+    label: "Pantalon",
+    description: "Vide",
+    aspect_id: null,
+    aspect_power_id: null,
+    aspect_power_id_2: null,
+    details: {
+      selects1: [],
+      selects2: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+      selects3: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+    },
+  },
+  {
+    image: "/gears/boots.png",
+    label: "Bottes",
+    description: "Vide",
+    aspect_id: null,
+    aspect_power_id: null,
+    aspect_power_id_2: null,
+    details: {
+      selects1: [],
+      selects2: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+      selects3: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+    },
+  },
+  {
+    image: "/gears/bludgeoning_weapon.png",
+    label: "Arme Contondante",
+    description: "Vide",
+    aspect_id: null,
+    aspect_power_id: null,
+    aspect_power_id_2: null,
+    details: {
+      selects1: [],
+      selects2: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+      selects3: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+    },
+  },
+  {
+    image: "/gears/dual-wield_weapon_1.png",
+    label: "Arme Double 1",
+    description: "Vide",
+    aspect_id: null,
+    aspect_power_id: null,
+    aspect_power_id_2: null,
+    details: {
+      selects1: [],
+      selects2: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+      selects3: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+    },
+  },
+];
+
+export const gearRight = [
+  {
+    image: "empty.png",
+    label: "",
+    description: "",
+    aspect_id: null,
+    aspect_power_id: null,
+    aspect_power_id_2: null,
+    details: {
+      selects1: [],
+      selects2: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+      selects3: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+    },
+  },
+  {
+    image: "/gears/amulet.png",
+    label: "Amulette",
+    description: "Vide",
+    aspect_id: null,
+    aspect_power_id: null,
+    aspect_power_id_2: null,
+    details: {
+      selects1: [],
+      selects2: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+      selects3: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+    },
+  },
+  {
+    image: "/gears/ring_1.png",
+    label: "Anneau 1",
+    description: "Vide",
+    aspect_id: null,
+    aspect_power_id: null,
+    aspect_power_id_2: null,
+    details: {
+      selects1: [],
+      selects2: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+      selects3: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+    },
+  },
+  {
+    image: "/gears/ring_1.png",
+    label: "Anneau 2",
+    description: "Vide",
+    aspect_id: null,
+    aspect_power_id: null,
+    aspect_power_id_2: null,
+    details: {
+      selects1: [],
+      selects2: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+      selects3: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+    },
+  },
+  {
+    image: "empty.png",
+    label: "",
+    description: "",
+    aspect_id: null,
+    aspect_power_id: null,
+    aspect_power_id_2: null,
+    details: {
+      selects1: [],
+      selects2: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+      selects3: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+    },
+  },
+  {
+    image: "/gears/slashing_weapon.png",
+    label: "Arme Tranchante",
+    description: "Vide",
+    aspect_id: null,
+    aspect_power_id: null,
+    aspect_power_id_2: null,
+    details: {
+      selects1: [],
+      selects2: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+      selects3: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+    },
+  },
+  {
+    image: "/gears/dual-wield_weapon_2.png",
+    label: "Arme Double 2",
+    description: "Vide",
+    aspect_id: null,
+    aspect_power_id: null,
+    aspect_power_id_2: null,
+    details: {
+      selects1: [],
+      selects2: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+      selects3: [
+        { value: 0, selectedValue: "" },
+        { value: 0, selectedValue: "" },
+      ],
+    },
+  },
+];
+
 
 export const aspectMap = {
   barbarian: {
@@ -53708,42 +53749,3 @@ export const aspectMap = {
   },
 };
 
-export const aspectspower = [
-  { id: 1, label: "Amethyst", image: "/gears/grand.png" },
-  { id: 2, label: "Emerald", image: "/gears/erald.png" },
-  { id: 3, label: "Ruby", image: "/gears/ruby.png" },
-  { id: 4, label: "Topaz", image: "/gears/graq.png" },
-  { id: 5, label: "Sapphier", image: "/gears/gra.png" },
-  { id: 6, label: "Diamand", image: "/gears/gran.png" },
-];
-
-export const aspectsFilter = [
-  {
-    label: "Codex",
-  },
-  { label: "Drop-seulement" },
-  {
-    label: "Spécifique à la classe",
-  },
-  {
-    label: "Unique",
-  },
-  {
-    label: "Légendaire",
-  },
-  {
-    label: "Offensif",
-  },
-  {
-    label: "Défensive",
-  },
-  {
-    label: "Mobilité",
-  },
-  {
-    label: "Ressource",
-  },
-  {
-    label: "Utilitaire",
-  },
-];
