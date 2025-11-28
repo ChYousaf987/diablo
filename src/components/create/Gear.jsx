@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import GearItem from "./GearItem";
 import MainGearSeason8 from "./MainGearSeason8";
 import MainGearSeason9 from "./MainGearSeason9";
+import MainGearSeason11 from "./MainGearSeason11"; // New import
 import SkillTech from "./Skill";
 import GearStats from "./GearStats";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
@@ -76,6 +77,8 @@ export default function Gear({ mode = "create" }) {
         <div className="grow justify-stretch items-stretch hidden sm:flex">
           {season === "Season 9" ? (
             <MainGearSeason9 mode={mode} />
+          ) : season === "Season 11" ? ( // New condition
+            <MainGearSeason11 mode={mode} />
           ) : (
             <MainGearSeason8 mode={mode} />
           )}
@@ -107,6 +110,8 @@ export default function Gear({ mode = "create" }) {
         <div className="grow justify-stretch items-stretch sm:hidden mx-6 sm:mx-0">
           {season === "Season 9" ? (
             <MainGearSeason9 mode={mode} />
+          ) : season === "Season 11" ? ( // New condition
+            <MainGearSeason11 mode={mode} />
           ) : (
             <MainGearSeason8 mode={mode} />
           )}

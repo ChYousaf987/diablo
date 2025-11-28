@@ -119,7 +119,7 @@ export const seasons = [
   { value: "Season 8", label: "Saison 8" },
   { value: "Season 9", label: "Saison 9" },
   { value: "Season 10", label: "Saison 10" },
-  { value: "Season 11", label: "Saison 11" },
+  { value: "Season 11", label: "Saison 11" }, // New addition
 ];
 
 export const categories = [
@@ -942,6 +942,149 @@ export const bossPowers9main = [
   { id: 5, label: "Thunderous Particle", image: "/gears/particle5.png" },
 ];
 
+export const bossPowers11Top = [
+  {
+    id: 1,
+    label: "l'essence des mensonges",
+    image: "/gears/essence-of-lies.webp",
+  },
+  {
+    id: 2,
+    label: "essence des ombres",
+    image: "/gears/essence-of-shadows.webp",
+  },
+  // Add more unique to top
+];
+
+export const bossPowers11Bottom = [
+  {
+    id: 1,
+    label: "essence du feu infernal",
+    image: "/gears/essence-of-hellfire.webp",
+  },
+  { 
+    id: 2, label: "essence du péché", 
+    image: "/gears/essence-of-sin.webp" 
+  },
+  // Add more unique to bottom
+];
+
+export const bossPowers11Left = [
+  {
+    id: 1,
+    label: "essence de la douleur",
+    image: "/gears/essence-of-pain.webp",
+  },
+  {
+    id: 2,
+    label: "essence de la misère",
+    image: "/gears/essence-of-squalor.png",
+  },
+  // Add more
+];
+
+export const bossPowers11Right = [
+  {
+    id: 1,
+    label: "essence de l'angoisse",
+    image: "/gears/essence-of-anguish.webp",
+  },
+  { 
+    id: 2, label: "essence des cris", 
+    image: "/gears/essence-of-screams.webp" 
+  },
+  // Add more
+];
+
+export const bossPowers11MidLeft = [
+  {
+    id: 1,
+    label: "essence de la douleur",
+    image: "/gears/essence-of-pain.webp",
+  },
+  {
+    id: 2,
+    label: "essence de la misère",
+    image: "/gears/essence-of-squalor.png",
+  },
+  // Add more
+];
+
+export const bossPowers11MidTop = [
+  {
+    id: 1,
+    label: "l'essence des mensonges",
+    image: "/gears/essence-of-lies.webp",
+  },
+  {
+    id: 2,
+    label: "essence des ombres",
+    image: "/gears/essence-of-shadows.webp",
+  },
+  // Add more
+];
+
+export const bossPowers11MidBottom = [
+  {
+    id: 1,
+    label: "essence du feu infernal",
+    image: "/gears/essence-of-hellfire.webp",
+  },
+  {
+    id: 2,
+    label: "essence du péché",
+    image: "/gears/essence-of-sin.webp",
+  },
+  // Add more
+];
+
+export const bossPowers11MidRight = [
+  {
+    id: 1,
+    label: "essence de l'angoisse",
+    image: "/gears/essence-of-anguish.webp",
+  },
+  {
+    id: 2,
+    label: "essence des cris",
+    image: "/gears/essence-of-screams.webp",
+  },
+  // Add more
+];
+
+export const catalystPowers11 = [
+  {
+    id: 1,
+    label: "Astral Pillar",
+    image: "/gears/astr.png",
+    description: "Increases Strength by 10%",
+  },
+  {
+    id: 2,
+    label: "Celestial Surge",
+    image: "/gears/celes.png",
+    description: "Increases Agility by 10%",
+  },
+  {
+    id: 3,
+    label: "Cosmic Anomaly",
+    image: "/gears/cos.png",
+    description: "Increases Intelligence by 10%",
+  },
+  {
+    id: 4,
+    label: "Disintegrate",
+    image: "/gears/dis.png",
+    description: "Increases Intelligence by 10%",
+  },
+  {
+    id: 5,
+    label: "Propulsion",
+    image: "/gears/pro.png",
+    description: "Increases Intelligence by 10%",
+  },
+];
+
 export const catalystPowers = [
   {
     id: 1,
@@ -1014,7 +1157,6 @@ export const aspectsFilter = [
     label: "Utilitaire",
   },
 ];
-
 
 export const gearLeft = [
   {
@@ -1301,7 +1443,6 @@ export const gearRight = [
     },
   },
 ];
-
 
 export const aspectMap = {
   barbarian: {
@@ -53748,4 +53889,3 @@ export const aspectMap = {
     },
   },
 };
-
