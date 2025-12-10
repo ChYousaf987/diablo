@@ -106,7 +106,7 @@ export default function GearItemTrigger({
 
   return (
     <div
-      className={`flex justify-start items-center gap-3 ${
+      className={`flex px-2 justify-start items-center gap-3 ${
         reverse ? "sm:flex-row-reverse " : "flex-row"
       }`}
     >
@@ -166,9 +166,7 @@ export default function GearItemTrigger({
           {isAspectID ? aspect?.label || gear.label : gear.label}
         </span>
         <span className="text-[#5f6060]">
-          {isAspectID
-            ? aspect?.description || gear.description
-            : gear.description}
+          {isAspectID ? aspect?.category || gear.category : gear.category} 
         </span>
         <span
           className={`${

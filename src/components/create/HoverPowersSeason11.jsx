@@ -145,7 +145,7 @@ const HoverPowersSeason11 = ({ open, onClose, slot, onSelectPower }) => {
                 <img
                   src={power.image}
                   alt={power.label}
-                  className="w-8 h-8 object-contain"
+                  className="w-12 h-12 object-contain"
                 />
               </div>
               <div>

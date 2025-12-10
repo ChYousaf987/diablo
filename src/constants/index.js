@@ -962,9 +962,10 @@ export const bossPowers11Bottom = [
     label: "essence du feu infernal",
     image: "/gears/essence-of-hellfire.webp",
   },
-  { 
-    id: 2, label: "essence du péché", 
-    image: "/gears/essence-of-sin.webp" 
+  {
+    id: 2,
+    label: "essence du péché",
+    image: "/gears/essence-of-sin.webp",
   },
   // Add more unique to bottom
 ];
@@ -989,9 +990,10 @@ export const bossPowers11Right = [
     label: "essence de l'angoisse",
     image: "/gears/essence-of-anguish.webp",
   },
-  { 
-    id: 2, label: "essence des cris", 
-    image: "/gears/essence-of-screams.webp" 
+  {
+    id: 2,
+    label: "essence des cris",
+    image: "/gears/essence-of-screams.webp",
   },
   // Add more
 ];
@@ -15881,6 +15883,4256 @@ export const aspectMap = {
         },
       ],
     },
+    Season11: {
+      left: [
+        {
+          id: 1,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 2,
+          image: "/gears/utility.png",
+          label: "Aspect d'anémie",
+          description:
+            "Coup de chance : lorsque vous infligez des dégâts directs à une cible vulnérable ou qui saigne, vous avez jusqu'à [15 - 35]% de chances de l'étourdir pendant 2 s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 3,
+          image: "/gears/defensive.png",
+          label: "Aspect d'approche sournoise",
+          description:
+            "Lorsque vous cumulez une perte de 50 % de votre maximum de vie, vous lancez automatiquement une compétence équipée de défense, de subterfuge ou macabre avant de subir les dégâts. Ne se produit qu'une fois toutes les [45 - 30] s et ne peut pas lancer de compétences de mobilité.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 4,
+          image: "/gears/defensive.png",
+          label: "Aspect d'assimilation",
+          description:
+            "Vous avez 8% de chances supplémentaires d'esquiver. Lorsque vous esquivez, vous obtenez une fortification équivalente à [5 - 12]% de votre maximum de points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 5,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 6,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 7,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 8,
+          image: "/gears/defensive.png",
+          label: "Aspect d'immortalité",
+          description:
+            "Lorsque vous utilisez une compétence, vous récupérez [0.5 - 2.5]% de vos points de vie. Ce bonus double si vous disposez de moins de 50% de vos points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 9,
+          image: "/gears/defensive.png",
+          label: "Aspect de barrière réfléchissante",
+          description:
+            "Après avoir subi des dégâts directs, vous avez [5.0 - 12.0]% de chances d'obtenir une barrière équivalente à 20% de votre maximum de points de vie pendant 10 s. Ces chances sont doublées contre les adversaires à distance.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 10,
+          image: "/gears/defensive.png",
+          label: "Aspect de Bull-Kathos",
+          description:
+            "Bond génère un tremblement de terre qui inflige [206 - 326] points de dégâts physiques en 4 s. Lorsque vous vous trouvez au milieu d'un tremblement de terre et pendant 4 s après l'avoir quitté, vous gagnez 30% de réduction des dégâts.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 11,
+          image: "/gears/defensive.png",
+          label: "Aspect de colère anesthésiante",
+          description:
+            "Chaque point de fureur généré alors qu'elle est déjà à son maximum confère [4 - 37] points de fortification.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 12,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1 456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 13,
+          image: "/gears/defensive.png",
+          label: "Aspect de coups calculés",
+          description:
+            "Après avoir changé d'arme 5 fois, vous obtenez [102 - 830] points de fortification.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 14,
+          image: "/gears/defensive.png",
+          label: "Aspect de défense de fer",
+          description:
+            "Galvanisation octroie l'état inarrêtable, ainsi que [20 - 40]% de réduction des dégâts.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 15,
+          image: "/gears/defensive.png",
+          label: "Aspect de désobéissance",
+          description:
+            "Votre armure est augmentée de [0.4 - 0.8]%[+] pendant 4 s lorsque vous infligez n'importe quel type de dégâts, jusqu'à un maximum de [25.0 - 46.0]%[+].",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 16,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 17,
+          image: "/gears/defensive.png",
+          label: "Aspect de la forteresse",
+          description:
+            "Pour chaque tranche de 10 % de points de vie manquants, vous gagnez [1.0 - 5.0]% de réduction des dégâts.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 18,
+          image: "/gears/utility.png",
+          label: "Aspect de maître d'armes",
+          description:
+            "Vos compétences de maîtrise d'arme disposent d'une charge supplémentaire. Coup de chance : lorsque vous infligez des dégâts à une cible avec une compétence de maîtrise d'arme, vous avez jusqu'à [40 - 60]% de chances de l'étourdir pendant 2 s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 19,
+          image: "/gears/defensive.png",
+          label: "Aspect de mastodonte",
+          description:
+            "Vous obtenez [583 - 816] points d'armure, mais le temps de recharge d'Esquive augmente de 100%.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 20,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 21,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 22,
+          image: "/gears/defensive.png",
+          label: "Aspect de sagesse par le nombre",
+          description:
+            "Vos chances d'esquiver sont augmentées de 8 %. Vous récupérez [5 - 25]% de votre maximum de vie en cas d'esquive réussie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 23,
+          image: "/gears/defensive.png",
+          label: "Aspect de toute-puissance",
+          description:
+            "Les compétences de base confèrent 20.0% de réduction des dégâts pendant [2.0 - 10.0] s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 24,
+          image: "/gears/utility.png",
+          label: "Aspect de trombe centripète",
+          description:
+            "Tourbillon attire les adversaires vers vous toutes les [6.0 - 3.0] s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 25,
+          image: "/gears/utility.png",
+          label: "Aspect du berserker implacable",
+          description:
+            "Coup de chance : en infligeant des dégâts à une cible adverse avec une compétence principale, vous avez jusqu'à [15 - 35]% de chances d'augmenter la durée de l'effet de Rage du berserker de 2 s. Cette durée est doublée si le coup de chance est un coup critique.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 26,
+          image: "/gears/defensive.png",
+          label: "Aspect du berserker robuste",
+          description:
+            "Vous obtenez [153 - 881] points de fortification chaque fois que vous infligez des dégâts directs sous l'effet de Rage du berserker.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 27,
+          image: "/gears/defensive.png",
+          label: "Aspect du cœur prudent",
+          description:
+            "Après avoir subi des dégâts équivalant à au moins 20 % de votre maximum de vie à la fois, vous devenez insensible pendant [2.5 - 4.0] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 28,
+          image: "/gears/defensive.png",
+          label: "Aspect du Protecteur",
+          description:
+            "Le fait de blesser une cible adverse élite vous octroie une barrière qui absorbe jusqu'à [655 - 5 898] points de dégâts pendant 10 s. Cet effet ne peut se produire qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 29,
+          image: "/gears/defensive.png",
+          label: "Aspect du sang de fer",
+          description:
+            "Vous gagnez [2.0 - 6.0]% de réduction des dégâts par adversaire proche qui saigne, jusqu'à une réduction maximum de [10 - 30]%.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 30,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 31,
+          image: "/gears/utility.png",
+          label: "Aspect porte-bonheur",
+          description:
+            "Vos chances d'obtenir un coup de chance sont augmentées de [10 - 30]%[+] tant que tous vos bonus de dégâts de votre compétence passive principale Arsenal ambulant sont actifs.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 32,
+          image: "/gears/defensive.png",
+          label: "Aspect protecteur",
+          description:
+            "Lorsque vous n'êtes pas en bonne santé, vous invoquez une bulle protectrice qui rend insensible l'ensemble des personnages-joueurs à l'intérieur. La bulle dure [2.5 - 6.0] s et ne peut se former qu'une fois toutes les 90 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 2,
+          image: "/gears/utility.png",
+          label: "Aspect d'anémie",
+          description:
+            "Coup de chance : lorsque vous infligez des dégâts directs à une cible vulnérable ou qui saigne, vous avez jusqu'à [15 - 35]% de chances de l'étourdir pendant 2 s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 3,
+          image: "/gears/defensive.png",
+          label: "Aspect d'approche sournoise",
+          description:
+            "Lorsque vous cumulez une perte de 50 % de votre maximum de vie, vous lancez automatiquement une compétence équipée de défense, de subterfuge ou macabre avant de subir les dégâts. Ne se produit qu'une fois toutes les [45 - 30] s et ne peut pas lancer de compétences de mobilité.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 4,
+          image: "/gears/defensive.png",
+          label: "Aspect d'assimilation",
+          description:
+            "Vous avez 8% de chances supplémentaires d'esquiver. Lorsque vous esquivez, vous obtenez une fortification équivalente à [5 - 12]% de votre maximum de points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 5,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 6,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 7,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 8,
+          image: "/gears/defensive.png",
+          label: "Aspect d'immortalité",
+          description:
+            "Lorsque vous utilisez une compétence, vous récupérez [0.5 - 2.5]% de vos points de vie. Ce bonus double si vous disposez de moins de 50% de vos points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 9,
+          image: "/gears/defensive.png",
+          label: "Aspect de barrière réfléchissante",
+          description:
+            "Après avoir subi des dégâts directs, vous avez [5.0 - 12.0]% de chances d'obtenir une barrière équivalente à 20% de votre maximum de points de vie pendant 10 s. Ces chances sont doublées contre les adversaires à distance.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 10,
+          image: "/gears/defensive.png",
+          label: "Aspect de Bull-Kathos",
+          description:
+            "Bond génère un tremblement de terre qui inflige [206 - 326] points de dégâts physiques en 4 s. Lorsque vous vous trouvez au milieu d'un tremblement de terre et pendant 4 s après l'avoir quitté, vous gagnez 30% de réduction des dégâts.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 11,
+          image: "/gears/defensive.png",
+          label: "Aspect de colère anesthésiante",
+          description:
+            "Chaque point de fureur généré alors qu'elle est déjà à son maximum confère [4 - 37] points de fortification.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 12,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1 456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 13,
+          image: "/gears/defensive.png",
+          label: "Aspect de coups calculés",
+          description:
+            "Après avoir changé d'arme 5 fois, vous obtenez [102 - 830] points de fortification.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 14,
+          image: "/gears/defensive.png",
+          label: "Aspect de défense de fer",
+          description:
+            "Galvanisation octroie l'état inarrêtable, ainsi que [20 - 40]% de réduction des dégâts.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 15,
+          image: "/gears/defensive.png",
+          label: "Aspect de désobéissance",
+          description:
+            "Votre armure est augmentée de [0.4 - 0.8]%[+] pendant 4 s lorsque vous infligez n'importe quel type de dégâts, jusqu'à un maximum de [25.0 - 46.0]%[+].",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 16,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 17,
+          image: "/gears/defensive.png",
+          label: "Aspect de la forteresse",
+          description:
+            "Pour chaque tranche de 10 % de points de vie manquants, vous gagnez [1.0 - 5.0]% de réduction des dégâts.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 18,
+          image: "/gears/utility.png",
+          label: "Aspect de maître d'armes",
+          description:
+            "Vos compétences de maîtrise d'arme disposent d'une charge supplémentaire. Coup de chance : lorsque vous infligez des dégâts à une cible avec une compétence de maîtrise d'arme, vous avez jusqu'à [40 - 60]% de chances de l'étourdir pendant 2 s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 19,
+          image: "/gears/defensive.png",
+          label: "Aspect de mastodonte",
+          description:
+            "Vous obtenez [583 - 816] points d'armure, mais le temps de recharge d'Esquive augmente de 100%.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 20,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 21,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 22,
+          image: "/gears/defensive.png",
+          label: "Aspect de sagesse par le nombre",
+          description:
+            "Vos chances d'esquiver sont augmentées de 8 %. Vous récupérez [5 - 25]% de votre maximum de vie en cas d'esquive réussie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 23,
+          image: "/gears/defensive.png",
+          label: "Aspect de toute-puissance",
+          description:
+            "Les compétences de base confèrent 20.0% de réduction des dégâts pendant [2.0 - 10.0] s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 24,
+          image: "/gears/utility.png",
+          label: "Aspect de trombe centripète",
+          description:
+            "Tourbillon attire les adversaires vers vous toutes les [6.0 - 3.0] s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 25,
+          image: "/gears/utility.png",
+          label: "Aspect du berserker implacable",
+          description:
+            "Coup de chance : en infligeant des dégâts à une cible adverse avec une compétence principale, vous avez jusqu'à [15 - 35]% de chances d'augmenter la durée de l'effet de Rage du berserker de 2 s. Cette durée est doublée si le coup de chance est un coup critique.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 26,
+          image: "/gears/defensive.png",
+          label: "Aspect du berserker robuste",
+          description:
+            "Vous obtenez [153 - 881] points de fortification chaque fois que vous infligez des dégâts directs sous l'effet de Rage du berserker.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 27,
+          image: "/gears/defensive.png",
+          label: "Aspect du cœur prudent",
+          description:
+            "Après avoir subi des dégâts équivalant à au moins 20 % de votre maximum de vie à la fois, vous devenez insensible pendant [2.5 - 4.0] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 28,
+          image: "/gears/defensive.png",
+          label: "Aspect du Protecteur",
+          description:
+            "Le fait de blesser une cible adverse élite vous octroie une barrière qui absorbe jusqu'à [655 - 5 898] points de dégâts pendant 10 s. Cet effet ne peut se produire qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 29,
+          image: "/gears/defensive.png",
+          label: "Aspect du sang de fer",
+          description:
+            "Vous gagnez [2.0 - 6.0]% de réduction des dégâts par adversaire proche qui saigne, jusqu'à une réduction maximum de [10 - 30]%.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 30,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 31,
+          image: "/gears/utility.png",
+          label: "Aspect porte-bonheur",
+          description:
+            "Vos chances d'obtenir un coup de chance sont augmentées de [10 - 30]%[+] tant que tous vos bonus de dégâts de votre compétence passive principale Arsenal ambulant sont actifs.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 32,
+          image: "/gears/defensive.png",
+          label: "Aspect protecteur",
+          description:
+            "Lorsque vous n'êtes pas en bonne santé, vous invoquez une bulle protectrice qui rend insensible l'ensemble des personnages-joueurs à l'intérieur. La bulle dure [2.5 - 6.0] s et ne peut se former qu'une fois toutes les 90 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/offensive.png",
+          label: "Aspect d'abus",
+          description:
+            "La durée des effets de perte de contrôle que vous infligez est augmentée de 20%. Tant que les adversaires sont inarrêtables, vous leur infligez [25 - 45]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 2,
+          image: "/gears/offensive.png",
+          label: "Aspect d'accélération",
+          description:
+            "Les coups critiques avec les compétences principales augmentent votre vitesse d'attaque de [10.0 - 30.0]%[+] pendant 5 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 3,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 4,
+          image: "/gears/utility.png",
+          label: "Aspect d'anémie",
+          description:
+            "Coup de chance : lorsque vous infligez des dégâts directs à une cible vulnérable ou qui saigne, vous avez jusqu'à [15 - 35]% de chances de l'étourdir pendant 2 s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 5,
+          image: "/gears/offensive.png",
+          label: "Aspect d'arrogance",
+          description:
+            "Vous infligez [10 - 30]%[x] de dégâts supplémentaires tant que vous avez une barrière active.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 6,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 7,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 8,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 9,
+          image: "/gears/offensive.png",
+          label: "Aspect d'extinction retardée",
+          description:
+            "Avec la réduction du temps de recharge, les dégâts de Jet puissant et Poigne de fer deviennent multiplicatifs, et sont également augmentés de 25%[x]. De plus, les compétences de maîtrise d'arme infligent [15 - 35]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 10,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hémorragie du berserker",
+          description:
+            "Chaque fois que vous infligez des dégâts directs sous l'effet de Rage du berserker, vous infligez [15 - 35]% de vos dégâts de base sous forme de dégâts de saignement supplémentaires en 5 s.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 11,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hirsutisme",
+          description:
+            "Les dégâts d'épines infligés ont [25 - 45]% de chances d'infliger des dégâts aux adversaires autour de vous et de vos serviteurs.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 12,
+          image: "/gears/offensive.png",
+          label: "Aspect d'incendie dévastateur",
+          description:
+            "Charge obtient une charge supplémentaire. Chaque cible qu'elle touche explose en infligeant [104 - 194] points de dégâts de feu aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 13,
+          image: "/gears/offensive.png",
+          label: "Aspect de bourreau",
+          description:
+            "Vos accablements provoquent un tremblement de terre toutes les 4 s, qui inflige [300 - 602] points de dégâts physiques en 4 s. Les dégâts de vos tremblements de terre sont augmentés de 5%[x] pour chaque tranche de 100 points de force que vous possédez, jusqu'à un maximum de 100%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 14,
+          image: "/gears/offensive.png",
+          label: "Aspect de brise-crâne",
+          description:
+            "Étourdir une cible qui saigne lui inflige un montant de dégâts physiques égal à [25 - 45]% de son saignement total.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 15,
+          image: "/gears/offensive.png",
+          label: "Aspect de calme intérieur",
+          description:
+            "Vous infligez [5.0 - 13.0]%[x] de dégâts supplémentaires. Ce bonus est triplé lorsque vous restez immobile pendant 3 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 16,
+          image: "/gears/offensive.png",
+          label: "Aspect de charge ancestrale",
+          description:
+            "L'utilisation de Charge invoque 4 Anciens qui chargent avec vous et infligent chacun [20 - 40]%[x] des dégâts normaux. Vos invocations infligent [20 - 40]% de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 17,
+          image: "/gears/offensive.png",
+          label: "Aspect de châtiment",
+          description:
+            "Vos chances d'infliger un coup critique aux cibles blessées sont augmentées de [13 - 23]%[+]. Lorsque vous êtes en bonne santé, vous bénéficiez d'une augmentation de la durée des effets de perte de contrôle [25 - 45]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 18,
+          image: "/gears/offensive.png",
+          label: "Aspect de colère débordante",
+          description:
+            "Après avoir dépensé 100 points de fureur, votre prochaine compétence de maîtrise d'arme ou de combat lancée dans les 8 s qui suivent inflige [40 - 80]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 19,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1 456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 20,
+          image: "/gears/offensive.png",
+          label: "Aspect de destin inévitable",
+          description:
+            "Lorsqu'une cible tombe à moins de 35% de points de vie sous l'effet d'un de vos dégâts sur la durée, une explosion se produit toutes les 7 s, infligeant [300 - 525] points de dégâts pour chaque élément qui l'affecte.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 21,
+          image: "/gears/offensive.png",
+          label: "Aspect de fissures incendiaires",
+          description:
+            "Vos tremblements de terre infligent des dégâts de feu augmentés de [40 - 60]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 22,
+          image: "/gears/offensive.png",
+          label: "Aspect de folie guerrière",
+          description:
+            "Vous obtenez l'effet de Rage du berserker et infligez [30 - 60]%[x] de dégâts supplémentaires pendant 4 s après avoir changé d'arme 8 fois.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 23,
+          image: "/gears/offensive.png",
+          label: "Aspect de force ancestrale",
+          description:
+            "Marteau des Anciens se propage vers l'extérieur, infligeant [30 - 60]%[x] de dégâts supplémentaires. Ce bonus est doublé contre les boss.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 24,
+          image: "/gears/offensive.png",
+          label: "Aspect de fragments d'acier",
+          description:
+            "Poigne de fer et Maelström d'acier lancent jusqu'à 10 éclats de métal qui infligent [120 - 420] points de dégâts physiques.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 25,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 26,
+          image: "/gears/offensive.png",
+          label: "Aspect de funambule",
+          description:
+            "Les compétences infligent jusqu'à [5 - 25]%[x] de dégâts supplémentaires en fonction de votre ressource principale disponible à leur lancement, pour un résultat maximal lorsque votre ressource principale est au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 27,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'attente",
+          description:
+            "Après avoir attaqué des adversaires avec une compétence de base, les dégâts de votre prochaine compétence principale lancée dans les 5 s qui suivent sont augmentés de [5 - 12]%[x], jusqu'à 30%[x] au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 28,
+          image: "/gears/offensive.png",
+          label: "Aspect de la fureur déchaînée",
+          description:
+            "L'utilisation d'une compétence ultime augmente les dégâts de vos compétences ultimes de [6.0 - 10.0]%[x], jusqu'à un maximum de [60 - 100]%[x]. Lorsque vous avez cumulé cet effet 10 fois, il se réinitialise tout comme vos temps de recharge.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 29,
+          image: "/gears/offensive.png",
+          label: "Aspect de la mort insidieuse",
+          description:
+            "Vous infligez aux adversaires [5.0 - 20.0]%[x] de dégâts supplémentaires sur la durée pour chaque effet de perte de contrôle différent qui leur est appliqué. Vous infligez plutôt [10 - 40]%[x] aux adversaires inarrêtables et aux boss stupéfiés.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 30,
+          image: "/gears/utility.png",
+          label: "Aspect de maître d'armes",
+          description:
+            "Vos compétences de maîtrise d'arme disposent d'une charge supplémentaire. Coup de chance : lorsque vous infligez des dégâts à une cible avec une compétence de maîtrise d'arme, vous avez jusqu'à [40 - 60]% de chances de l'étourdir pendant 2 s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 31,
+          image: "/gears/offensive.png",
+          label: "Aspect de maîtrise de soi",
+          description:
+            "Tant que vous avez plus de [55 - 40] points de fureur, vous bénéficiez de l'effet de Rage du berserker, mais 2 points de fureur sont drainés par seconde.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 32,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 33,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 34,
+          image: "/gears/offensive.png",
+          label: "Aspect de pulsion de mort",
+          description:
+            "Vous gagnez [510 - 655] points de dégâts d'épines tant que vous êtes sous l'effet de Rage du berserker.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 35,
+          image: "/gears/offensive.png",
+          label: "Aspect de querelleur",
+          description:
+            "L'utilisation d'une compétence ultime augmente vos dégâts de [10 - 30]%[x] pendant 8 s. Vos compétences ultimes bénéficient de 2 rangs supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 36,
+          image: "/gears/offensive.png",
+          label: "Aspect de rage ardente",
+          description:
+            "Tant que vous êtes sous l'effet de Rage du berserker, vous infligez [68 - 124] points de dégâts de feu par seconde aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 37,
+          image: "/gears/offensive.png",
+          label: "Aspect de rage infinie",
+          description:
+            "Chaque point de fureur que vous générez au-delà du maximum augmente les dégâts de votre prochaine compétence principale, lancée dans les 5 s qui suivent, de [1.00 - 3.00]%[x], jusqu'à un maximum de 15 fois.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 38,
+          image: "/gears/offensive.png",
+          label: "Aspect de rupture arbitraire",
+          description:
+            "Double le rayon d'embrochement de Rupture et la durée de tous les effets de saignement est augmentée de [30 - 60]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 39,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang bouillonnant",
+          description:
+            "Lorsque vos compétences principales accablent les adversaires, vous faites apparaître 3 gouttes de sang instable. Ramassez-en une pour la faire exploser et infliger [263 - 938] points de dégâts physiques autour de vous. Toutes les 20 s, votre prochaine compétence accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 40,
+          image: "/gears/offensive.png",
+          label: "Aspect de spectacle herculéen",
+          description:
+            "Jet puissant inflige [25 - 45]%[x] de dégâts supplémentaires et projette 2 armes de plus.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 41,
+          image: "/gears/offensive.png",
+          label: "Aspect de terre scindée",
+          description:
+            "Toutes les 20 s, votre prochaine utilisation de Soulèvement accable obligatoirement et inflige [50 - 70]%[x] de dégâts supplémentaires. Les coups critiques de Soulèvement infligés à des élites réduisent ce laps de temps de 1 s.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 42,
+          image: "/gears/offensive.png",
+          label: "Aspect de toucher maudit",
+          description:
+            "Coup de chance : vos compétences ont jusqu'à [20.0 - 40.0]% de chances d'infliger aux adversaires une malédiction vampirique. Toute cible affectée par une malédiction vampirique est également vulnérable. Les âmes stockées par la malédiction vampirique infligent [20.0 - 60.0]% points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 43,
+          image: "/gears/offensive.png",
+          label: "Aspect de tremblements de terre",
+          description:
+            "Choc terrestre génère un tremblement de terre qui inflige [167 - 287] points de dégâts physiques en 4 s. Lorsque vous vous trouvez au milieu d'un tremblement de terre et pendant 4 s après l'avoir quitté, vous infligez [20 - 60]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 44,
+          image: "/gears/utility.png",
+          label: "Aspect de trombe centripète",
+          description:
+            "Tourbillon attire les adversaires vers vous toutes les [6.0 - 3.0] s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 45,
+          image: "/gears/offensive.png",
+          label: "Aspect de trombe mortelle",
+          description:
+            "Les chances d'infliger un coup critique et les dégâts critiques de Tourbillon sont augmentés de [5.5 - 10]%[x] par seconde de canalisation de la compétence, jusqu'à un maximum de [28 - 50]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 46,
+          image: "/gears/offensive.png",
+          label: "Aspect de vents violents",
+          description:
+            "Vos compétences de cri créent 3 tourbillons de poussière qui infligent [60 - 120] points de dégâts aux adversaires sur leur passage. Vos tourbillons de poussière sont [5 - 25]% plus grands et infligent 1%[x] de dégâts supplémentaires par tranche de 1% d'agrandissement.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 47,
+          image: "/gears/offensive.png",
+          label: "Aspect de vétéran du combat",
+          description:
+            "Chaque fois qu'une compétence principale inflige des dégâts directs à une cible, votre prochaine utilisation de Charge, Bond ou Coup de pied inflige [4.0 - 10.0]%[x] de dégâts supplémentaires, jusqu'à un maximum de [20 - 50]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 48,
+          image: "/gears/offensive.png",
+          label: "Aspect de vindicte",
+          description:
+            "Les cibles à distance ont 10% de chances d'être étourdies pendant 2 s lorsqu'elles vous infligent des dégâts. Vous infligez [15 - 35]%[x] de dégâts supplémentaires aux cibles étourdies ou renversées.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 49,
+          image: "/gears/offensive.png",
+          label: "Aspect des échos ancestraux",
+          description:
+            "Coup de chance : Bond, Soulèvement et Tourbillon ont jusqu'à [45 - 65]% de chances d'invoquer un Ancien qui répétera la même compétence. Cet effet ne peut se produire qu'une fois toutes les 5 s. Vos invocations infligent [20 - 40]% de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 50,
+          image: "/gears/offensive.png",
+          label: "Aspect des éléments",
+          description:
+            "Augmente les dégâts infligés par un ensemble de types de dégâts de [15 - 35]%[x] pendant 7 s. Cet effet alterne entre deux ensembles : feu, foudre et physiques ; froid, poison et ombre.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 51,
+          image: "/gears/offensive.png",
+          label: "Aspect diabolique",
+          description:
+            "Après la génération de 100 points de fureur, les prochains dégâts directs que vous infligez génèrent 2 tourbillons de poussière qui infligent [60 - 105] points de dégâts aux adversaires dans leur sillage.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 52,
+          image: "/gears/utility.png",
+          label: "Aspect du berserker implacable",
+          description:
+            "Coup de chance : en infligeant des dégâts à une cible adverse avec une compétence principale, vous avez jusqu'à [15 - 35]% de chances d'augmenter la durée de l'effet de Rage du berserker de 2 s. Cette durée est doublée si le coup de chance est un coup critique.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 53,
+          image: "/gears/offensive.png",
+          label: "Aspect du combat",
+          description:
+            "Les cibles tuées dans les 2 s après avoir été touchées par Coup de pied ou Charge explosent en infligeant [375 - 488] points de dégâts aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 54,
+          image: "/gears/offensive.png",
+          label: "Aspect du crépuscule",
+          description:
+            "Lorsque vous infligez des dégâts avec une compétence de base, vous recevez 4% de vitesse d'attaque supplémentaire pendant 10 s, jusqu'à un maximum de 5 fois. Une fois ce seuil atteint, vous sombrez dans une rage de sang vampirique et obtenez un bonus de [40 - 60]%[x] aux dégâts des compétences de base et de 15% à la vitesse de déplacement pendant 10 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 55,
+          image: "/gears/offensive.png",
+          label: "Aspect du fouette-vent",
+          description:
+            "L'utilisation de Coup double génère un tourbillon de poussière qui inflige [53 - 83] points de dégâts aux adversaires dans son sillage.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 56,
+          image: "/gears/offensive.png",
+          label: "Aspect du frappe-terre",
+          description:
+            "Après avoir changé d'arme 8 fois, votre prochaine compétence, hors compétences de base, accablera et infligera [15 - 35]%[x] de dégâts d'accablement supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 57,
+          image: "/gears/offensive.png",
+          label: "Aspect du tourbillon de poussière",
+          description:
+            "Tourbillon laisse derrière lui des tourbillons de poussière qui infligent [120 - 210] points de dégâts aux adversaires dans leur sillage. Les cibles touchées par les tourbillons de poussière subissent 25%[x] de dégâts supplémentaires de toutes vos autres sources pendant 3 s.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 58,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 59,
+          image: "/gears/offensive.png",
+          label: "Aspect expéditif",
+          description:
+            "La vitesse d'attaque des compétences de base est augmentée de [15 - 35]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 60,
+          image: "/gears/utility.png",
+          label: "Aspect porte-bonheur",
+          description:
+            "Vos chances d'obtenir un coup de chance sont augmentées de [10 - 30]%[+] tant que tous vos bonus de dégâts de votre compétence passive principale Arsenal ambulant sont actifs.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 2,
+          image: "/gears/utility.png",
+          label: "Aspect d'anémie",
+          description:
+            "Coup de chance : lorsque vous infligez des dégâts directs à une cible vulnérable ou qui saigne, vous avez jusqu'à [15 - 35]% de chances de l'étourdir pendant 2 s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 3,
+          image: "/gears/defensive.png",
+          label: "Aspect d'approche sournoise",
+          description:
+            "Lorsque vous cumulez une perte de 50 % de votre maximum de vie, vous lancez automatiquement une compétence équipée de défense, de subterfuge ou macabre avant de subir les dégâts. Ne se produit qu'une fois toutes les [45 - 30] s et ne peut pas lancer de compétences de mobilité.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 4,
+          image: "/gears/defensive.png",
+          label: "Aspect d'assimilation",
+          description:
+            "Vous avez 8% de chances supplémentaires d'esquiver. Lorsque vous esquivez, vous obtenez une fortification équivalente à [5 - 12]% de votre maximum de points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 5,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 6,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 7,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 8,
+          image: "/gears/defensive.png",
+          label: "Aspect d'immortalité",
+          description:
+            "Lorsque vous utilisez une compétence, vous récupérez [0.5 - 2.5]% de vos points de vie. Ce bonus double si vous disposez de moins de 50% de vos points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 9,
+          image: "/gears/defensive.png",
+          label: "Aspect de barrière réfléchissante",
+          description:
+            "Après avoir subi des dégâts directs, vous avez [5.0 - 12.0]% de chances d'obtenir une barrière équivalente à 20% de votre maximum de points de vie pendant 10 s. Ces chances sont doublées contre les adversaires à distance.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 10,
+          image: "/gears/defensive.png",
+          label: "Aspect de Bull-Kathos",
+          description:
+            "Bond génère un tremblement de terre qui inflige [206 - 326] points de dégâts physiques en 4 s. Lorsque vous vous trouvez au milieu d'un tremblement de terre et pendant 4 s après l'avoir quitté, vous gagnez 30% de réduction des dégâts.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 11,
+          image: "/gears/defensive.png",
+          label: "Aspect de colère anesthésiante",
+          description:
+            "Chaque point de fureur généré alors qu'elle est déjà à son maximum confère [4 - 37] points de fortification.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 12,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1 456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 13,
+          image: "/gears/defensive.png",
+          label: "Aspect de coups calculés",
+          description:
+            "Après avoir changé d'arme 5 fois, vous obtenez [102 - 830] points de fortification.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 14,
+          image: "/gears/defensive.png",
+          label: "Aspect de défense de fer",
+          description:
+            "Galvanisation octroie l'état inarrêtable, ainsi que [20 - 40]% de réduction des dégâts.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 15,
+          image: "/gears/defensive.png",
+          label: "Aspect de désobéissance",
+          description:
+            "Votre armure est augmentée de [0.4 - 0.8]%[+] pendant 4 s lorsque vous infligez n'importe quel type de dégâts, jusqu'à un maximum de [25.0 - 46.0]%[+].",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 16,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 17,
+          image: "/gears/defensive.png",
+          label: "Aspect de la forteresse",
+          description:
+            "Pour chaque tranche de 10 % de points de vie manquants, vous gagnez [1.0 - 5.0]% de réduction des dégâts.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 18,
+          image: "/gears/utility.png",
+          label: "Aspect de maître d'armes",
+          description:
+            "Vos compétences de maîtrise d'arme disposent d'une charge supplémentaire. Coup de chance : lorsque vous infligez des dégâts à une cible avec une compétence de maîtrise d'arme, vous avez jusqu'à [40 - 60]% de chances de l'étourdir pendant 2 s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 19,
+          image: "/gears/defensive.png",
+          label: "Aspect de mastodonte",
+          description:
+            "Vous obtenez [583 - 816] points d'armure, mais le temps de recharge d'Esquive augmente de 100%.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 20,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 21,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 22,
+          image: "/gears/defensive.png",
+          label: "Aspect de sagesse par le nombre",
+          description:
+            "Vos chances d'esquiver sont augmentées de 8 %. Vous récupérez [5 - 25]% de votre maximum de vie en cas d'esquive réussie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 23,
+          image: "/gears/defensive.png",
+          label: "Aspect de toute-puissance",
+          description:
+            "Les compétences de base confèrent 20.0% de réduction des dégâts pendant [2.0 - 10.0] s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 24,
+          image: "/gears/utility.png",
+          label: "Aspect de trombe centripète",
+          description:
+            "Tourbillon attire les adversaires vers vous toutes les [6.0 - 3.0] s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 25,
+          image: "/gears/utility.png",
+          label: "Aspect du berserker implacable",
+          description:
+            "Coup de chance : en infligeant des dégâts à une cible adverse avec une compétence principale, vous avez jusqu'à [15 - 35]% de chances d'augmenter la durée de l'effet de Rage du berserker de 2 s. Cette durée est doublée si le coup de chance est un coup critique.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 26,
+          image: "/gears/defensive.png",
+          label: "Aspect du berserker robuste",
+          description:
+            "Vous obtenez [153 - 881] points de fortification chaque fois que vous infligez des dégâts directs sous l'effet de Rage du berserker.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 27,
+          image: "/gears/defensive.png",
+          label: "Aspect du cœur prudent",
+          description:
+            "Après avoir subi des dégâts équivalant à au moins 20 % de votre maximum de vie à la fois, vous devenez insensible pendant [2.5 - 4.0] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 28,
+          image: "/gears/defensive.png",
+          label: "Aspect du Protecteur",
+          description:
+            "Le fait de blesser une cible adverse élite vous octroie une barrière qui absorbe jusqu'à [655 - 5 898] points de dégâts pendant 10 s. Cet effet ne peut se produire qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 29,
+          image: "/gears/defensive.png",
+          label: "Aspect du sang de fer",
+          description:
+            "Vous gagnez [2.0 - 6.0]% de réduction des dégâts par adversaire proche qui saigne, jusqu'à une réduction maximum de [10 - 30]%.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 30,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 31,
+          image: "/gears/utility.png",
+          label: "Aspect porte-bonheur",
+          description:
+            "Vos chances d'obtenir un coup de chance sont augmentées de [10 - 30]%[+] tant que tous vos bonus de dégâts de votre compétence passive principale Arsenal ambulant sont actifs.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 32,
+          image: "/gears/defensive.png",
+          label: "Aspect protecteur",
+          description:
+            "Lorsque vous n'êtes pas en bonne santé, vous invoquez une bulle protectrice qui rend insensible l'ensemble des personnages-joueurs à l'intérieur. La bulle dure [2.5 - 6.0] s et ne peut se former qu'une fois toutes les 90 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 2,
+          image: "/gears/utility.png",
+          label: "Aspect d'anémie",
+          description:
+            "Coup de chance : lorsque vous infligez des dégâts directs à une cible vulnérable ou qui saigne, vous avez jusqu'à [15 - 35]% de chances de l'étourdir pendant 2 s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 3,
+          image: "/gears/mobility.png",
+          label: "Aspect d'arpenteur spectral",
+          description:
+            "Lorsque vous êtes inarrêtable et pendant les 4 s qui suivent la fin de cet effet, votre vitesse de déplacement est augmentée de [10 - 30]%[+] et vous pouvez vous mouvoir librement.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 4,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 5,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 6,
+          image: "/gears/mobility.png",
+          label: "Aspect d'élan en avant",
+          description:
+            "Lorsque vous repoussez une cible, votre vitesse de déplacement est augmentée de [25 - 45]% pendant 3 s.",
+          category: "Mobilité",
+          class: "Barbare",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 7,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 8,
+          image: "/gears/mobility.png",
+          label: "Aspect de carnage",
+          description:
+            "Vous obtenez 20% de vitesse de déplacement. Ce bonus disparaît pendant [5.0 - 2.0] s après avoir subi des dégâts d'un personnage adverse à proximité.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 9,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1 456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 10,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 11,
+          image: "/gears/mobility.png",
+          label: "Aspect de la frappe du vent",
+          description:
+            "Les coups critiques augmentent votre vitesse de déplacement de [8.5 - 19.0]%[+] pendant 1 s, jusqu'à 6 s.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 12,
+          image: "/gears/utility.png",
+          label: "Aspect de maître d'armes",
+          description:
+            "Vos compétences de maîtrise d'arme disposent d'une charge supplémentaire. Coup de chance : lorsque vous infligez des dégâts à une cible avec une compétence de maîtrise d'arme, vous avez jusqu'à [40 - 60]% de chances de l'étourdir pendant 2 s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 13,
+          image: "/gears/mobility.png",
+          label: "Aspect de métamorphose",
+          description:
+            "Pendant une esquive, vous vous transformez en une nuée de chauves-souris et devenez inarrêtable pendant 2.5 s. Les adversaires sur votre chemin subissent 300 points de dégâts physiques ainsi qu'une malédiction vampirique. Le temps de recharge d'Esquive est augmenté de [10.0 - 4.0] s.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 14,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 15,
+          image: "/gears/mobility.png",
+          label: "Aspect de piétinement perpétuel",
+          description:
+            "Blesser une cible ennemie avec Coup de pied ou Choc terrestre réinitialise le temps de recharge de Bond.",
+          category: "Mobilité",
+          class: "Barbare",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 16,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 17,
+          image: "/gears/utility.png",
+          label: "Aspect de trombe centripète",
+          description:
+            "Tourbillon attire les adversaires vers vous toutes les [6.0 - 3.0] s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 18,
+          image: "/gears/utility.png",
+          label: "Aspect du berserker implacable",
+          description:
+            "Coup de chance : en infligeant des dégâts à une cible adverse avec une compétence principale, vous avez jusqu'à [15 - 35]% de chances d'augmenter la durée de l'effet de Rage du berserker de 2 s. Cette durée est doublée si le coup de chance est un coup critique.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 19,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 20,
+          image: "/gears/mobility.png",
+          label: "Aspect lâche",
+          description:
+            "Votre vitesse de déplacement est augmentée de [25 - 45]%[x] lorsque vous vous éloignez de cibles ralenties ou glacées.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 21,
+          image: "/gears/utility.png",
+          label: "Aspect porte-bonheur",
+          description:
+            "Vos chances d'obtenir un coup de chance sont augmentées de [10 - 30]%[+] tant que tous vos bonus de dégâts de votre compétence passive principale Arsenal ambulant sont actifs.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Bottes"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/offensive.png",
+          label: "Aspect d'abus",
+          description:
+            "La durée des effets de perte de contrôle que vous infligez est augmentée de 20%. Tant que les adversaires sont inarrêtables, vous leur infligez [25 - 45]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 2,
+          image: "/gears/offensive.png",
+          label: "Aspect d'accélération",
+          description:
+            "Les coups critiques avec les compétences principales augmentent votre vitesse d'attaque de [10.0 - 30.0]%[+] pendant 5 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 3,
+          image: "/gears/offensive.png",
+          label: "Aspect d'arrogance",
+          description:
+            "Vous infligez [10 - 30]%[x] de dégâts supplémentaires tant que vous avez une barrière active.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 4,
+          image: "/gears/offensive.png",
+          label: "Aspect d'extinction retardée",
+          description:
+            "Avec la réduction du temps de recharge, les dégâts de Jet puissant et Poigne de fer deviennent multiplicatifs, et sont également augmentés de 25%[x]. De plus, les compétences de maîtrise d'arme infligent [15 - 35]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 5,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hémorragie du berserker",
+          description:
+            "Chaque fois que vous infligez des dégâts directs sous l'effet de Rage du berserker, vous infligez [15 - 35]% de vos dégâts de base sous forme de dégâts de saignement supplémentaires en 5 s.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 6,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hirsutisme",
+          description:
+            "Les dégâts d'épines infligés ont [25 - 45]% de chances d'infliger des dégâts aux adversaires autour de vous et de vos serviteurs.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 7,
+          image: "/gears/offensive.png",
+          label: "Aspect d'incendie dévastateur",
+          description:
+            "Charge obtient une charge supplémentaire. Chaque cible qu'elle touche explose en infligeant [104 - 194] points de dégâts de feu aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 8,
+          image: "/gears/offensive.png",
+          label: "Aspect de bourreau",
+          description:
+            "Vos accablements provoquent un tremblement de terre toutes les 4 s, qui inflige [300 - 602] points de dégâts physiques en 4 s. Les dégâts de vos tremblements de terre sont augmentés de 5%[x] pour chaque tranche de 100 points de force que vous possédez, jusqu'à un maximum de 100%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 9,
+          image: "/gears/offensive.png",
+          label: "Aspect de brise-crâne",
+          description:
+            "Étourdir une cible qui saigne lui inflige un montant de dégâts physiques égal à [25 - 45]% de son saignement total.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 10,
+          image: "/gears/offensive.png",
+          label: "Aspect de calme intérieur",
+          description:
+            "Vous infligez [5.0 - 13.0]%[x] de dégâts supplémentaires. Ce bonus est triplé lorsque vous restez immobile pendant 3 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 11,
+          image: "/gears/offensive.png",
+          label: "Aspect de charge ancestrale",
+          description:
+            "L'utilisation de Charge invoque 4 Anciens qui chargent avec vous et infligent chacun [20 - 40]%[x] des dégâts normaux. Vos invocations infligent [20 - 40]% de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 12,
+          image: "/gears/offensive.png",
+          label: "Aspect de châtiment",
+          description:
+            "Vos chances d'infliger un coup critique aux cibles blessées sont augmentées de [13 - 23]%[+]. Lorsque vous êtes en bonne santé, vous bénéficiez d'une augmentation de la durée des effets de perte de contrôle [25 - 45]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 13,
+          image: "/gears/offensive.png",
+          label: "Aspect de colère débordante",
+          description:
+            "Après avoir dépensé 100 points de fureur, votre prochaine compétence de maîtrise d'arme ou de combat lancée dans les 8 s qui suivent inflige [40 - 80]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 14,
+          image: "/gears/offensive.png",
+          label: "Aspect de destin inévitable",
+          description:
+            "Lorsqu'une cible tombe à moins de 35% de points de vie sous l'effet d'un de vos dégâts sur la durée, une explosion se produit toutes les 7 s, infligeant [300 - 525] points de dégâts pour chaque élément qui l'affecte.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 15,
+          image: "/gears/offensive.png",
+          label: "Aspect de fissures incendiaires",
+          description:
+            "Vos tremblements de terre infligent des dégâts de feu augmentés de [40 - 60]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 16,
+          image: "/gears/offensive.png",
+          label: "Aspect de folie guerrière",
+          description:
+            "Vous obtenez l'effet de Rage du berserker et infligez [30 - 60]%[x] de dégâts supplémentaires pendant 4 s après avoir changé d'arme 8 fois.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 17,
+          image: "/gears/offensive.png",
+          label: "Aspect de force ancestrale",
+          description:
+            "Marteau des Anciens se propage vers l'extérieur, infligeant [30 - 60]%[x] de dégâts supplémentaires. Ce bonus est doublé contre les boss.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 18,
+          image: "/gears/offensive.png",
+          label: "Aspect de fragments d'acier",
+          description:
+            "Poigne de fer et Maelström d'acier lancent jusqu'à 10 éclats de métal qui infligent [120 - 420] points de dégâts physiques.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 19,
+          image: "/gears/offensive.png",
+          label: "Aspect de funambule",
+          description:
+            "Les compétences infligent jusqu'à [5 - 25]%[x] de dégâts supplémentaires en fonction de votre ressource principale disponible à leur lancement, pour un résultat maximal lorsque votre ressource principale est au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 20,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'attente",
+          description:
+            "Après avoir attaqué des adversaires avec une compétence de base, les dégâts de votre prochaine compétence principale lancée dans les 5 s qui suivent sont augmentés de [5 - 12]%[x], jusqu'à 30%[x] au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 21,
+          image: "/gears/offensive.png",
+          label: "Aspect de la fureur déchaînée",
+          description:
+            "L'utilisation d'une compétence ultime augmente les dégâts de vos compétences ultimes de [6.0 - 10.0]%[x], jusqu'à un maximum de [60 - 100]%[x]. Lorsque vous avez cumulé cet effet 10 fois, il se réinitialise tout comme vos temps de recharge.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 22,
+          image: "/gears/offensive.png",
+          label: "Aspect de la mort insidieuse",
+          description:
+            "Vous infligez aux adversaires [5.0 - 20.0]%[x] de dégâts supplémentaires sur la durée pour chaque effet de perte de contrôle différent qui leur est appliqué. Vous infligez plutôt [10 - 40]%[x] aux adversaires inarrêtables et aux boss stupéfiés.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 23,
+          image: "/gears/offensive.png",
+          label: "Aspect de maîtrise de soi",
+          description:
+            "Tant que vous avez plus de [55 - 40] points de fureur, vous bénéficiez de l'effet de Rage du berserker, mais 2 points de fureur sont drainés par seconde.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 24,
+          image: "/gears/offensive.png",
+          label: "Aspect de pulsion de mort",
+          description:
+            "Vous gagnez [510 - 655] points de dégâts d'épines tant que vous êtes sous l'effet de Rage du berserker.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 25,
+          image: "/gears/offensive.png",
+          label: "Aspect de querelleur",
+          description:
+            "L'utilisation d'une compétence ultime augmente vos dégâts de [10 - 30]%[x] pendant 8 s. Vos compétences ultimes bénéficient de 2 rangs supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 26,
+          image: "/gears/offensive.png",
+          label: "Aspect de rage ardente",
+          description:
+            "Tant que vous êtes sous l'effet de Rage du berserker, vous infligez [68 - 124] points de dégâts de feu par seconde aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 27,
+          image: "/gears/offensive.png",
+          label: "Aspect de rage infinie",
+          description:
+            "Chaque point de fureur que vous générez au-delà du maximum augmente les dégâts de votre prochaine compétence principale, lancée dans les 5 s qui suivent, de [1.00 - 3.00]%[x], jusqu'à un maximum de 15 fois.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 28,
+          image: "/gears/offensive.png",
+          label: "Aspect de rupture arbitraire",
+          description:
+            "Double le rayon d'embrochement de Rupture et la durée de tous les effets de saignement est augmentée de [30 - 60]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 29,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang bouillonnant",
+          description:
+            "Lorsque vos compétences principales accablent les adversaires, vous faites apparaître 3 gouttes de sang instable. Ramassez-en une pour la faire exploser et infliger [263 - 938] points de dégâts physiques autour de vous. Toutes les 20 s, votre prochaine compétence accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 30,
+          image: "/gears/offensive.png",
+          label: "Aspect de spectacle herculéen",
+          description:
+            "Jet puissant inflige [25 - 45]%[x] de dégâts supplémentaires et projette 2 armes de plus.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 31,
+          image: "/gears/offensive.png",
+          label: "Aspect de terre scindée",
+          description:
+            "Toutes les 20 s, votre prochaine utilisation de Soulèvement accable obligatoirement et inflige [50 - 70]%[x] de dégâts supplémentaires. Les coups critiques de Soulèvement infligés à des élites réduisent ce laps de temps de 1 s.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 32,
+          image: "/gears/offensive.png",
+          label: "Aspect de toucher maudit",
+          description:
+            "Coup de chance : vos compétences ont jusqu'à [20.0 - 40.0]% de chances d'infliger aux adversaires une malédiction vampirique. Toute cible affectée par une malédiction vampirique est également vulnérable. Les âmes stockées par la malédiction vampirique infligent [20.0 - 60.0]% points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 33,
+          image: "/gears/offensive.png",
+          label: "Aspect de tremblements de terre",
+          description:
+            "Choc terrestre génère un tremblement de terre qui inflige [167 - 287] points de dégâts physiques en 4 s. Lorsque vous vous trouvez au milieu d'un tremblement de terre et pendant 4 s après l'avoir quitté, vous infligez [20 - 60]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 34,
+          image: "/gears/offensive.png",
+          label: "Aspect de trombe mortelle",
+          description:
+            "Les chances d'infliger un coup critique et les dégâts critiques de Tourbillon sont augmentés de [5.5 - 10]%[x] par seconde de canalisation de la compétence, jusqu'à un maximum de [28 - 50]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 35,
+          image: "/gears/offensive.png",
+          label: "Aspect de vents violents",
+          description:
+            "Vos compétences de cri créent 3 tourbillons de poussière qui infligeant [60 - 120] points de dégâts aux adversaires sur leur passage. Vos tourbillons de poussière sont [5 - 25]% plus grands et infligent 1%[x] de dégâts supplémentaires par tranche de 1% d'agrandissement.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 36,
+          image: "/gears/offensive.png",
+          label: "Aspect de vétéran du combat",
+          description:
+            "Chaque fois qu'une compétence principale inflige des dégâts directs à une cible, votre prochaine utilisation de Charge, Bond ou Coup de pied inflige [4.0 - 10.0]%[x] de dégâts supplémentaires, jusqu'à un maximum de [20 - 50]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 37,
+          image: "/gears/offensive.png",
+          label: "Aspect de vindicte",
+          description:
+            "Les cibles à distance ont 10% de chances d'être étourdies pendant 2 s lorsqu'elles vous infligent des dégâts. Vous infligez [15 - 35]%[x] de dégâts supplémentaires aux cibles étourdies ou renversées.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 38,
+          image: "/gears/offensive.png",
+          label: "Aspect des échos ancestraux",
+          description:
+            "Coup de chance : Bond, Soulèvement et Tourbillon ont jusqu'à [45 - 65]% de chances d'invoquer un Ancien qui répétera la même compétence. Cet effet ne peut se produire qu'une fois toutes les 5 s. Vos invocations infligent [20 - 40]% de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 39,
+          image: "/gears/offensive.png",
+          label: "Aspect des éléments",
+          description:
+            "Augmente les dégâts infligés par un ensemble de types de dégâts de [15 - 35]%[x] pendant 7 s. Cet effet alterne entre deux ensembles : feu, foudre et physiques ; froid, poison et ombre.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 40,
+          image: "/gears/offensive.png",
+          label: "Aspect diabolique",
+          description:
+            "Après la génération de 100 points de fureur, les prochains dégâts directs que vous infligez génèrent 2 tourbillons de poussière qui infligent [60 - 105] points de dégâts aux adversaires dans leur sillage.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 41,
+          image: "/gears/offensive.png",
+          label: "Aspect du combat",
+          description:
+            "Les cibles tuées dans les 2 s après avoir été touchées par Coup de pied ou Charge explosent en infligeant [375 - 488] points de dégâts aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 42,
+          image: "/gears/offensive.png",
+          label: "Aspect du crépuscule",
+          description:
+            "Lorsque vous infligez des dégâts avec une compétence de base, vous recevez 4% de vitesse d'attaque supplémentaire pendant 10 s, jusqu'à un maximum de 5 fois. Une fois ce seuil atteint, vous sombrez dans une rage de sang vampirique et obtenez un bonus de [40 - 60]%[x] aux dégâts des compétences de base et de 15% à la vitesse de déplacement pendant 10 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 43,
+          image: "/gears/offensive.png",
+          label: "Aspect du fouette-vent",
+          description:
+            "L'utilisation de Coup double génère un tourbillon de poussière qui inflige [53 - 83] points de dégâts aux adversaires dans son sillage.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 44,
+          image: "/gears/offensive.png",
+          label: "Aspect du frappe-terre",
+          description:
+            "Après avoir changé d'arme 8 fois, votre prochaine compétence, hors compétences de base, accablera et infligera [15 - 35]%[x] de dégâts d'accablement supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 45,
+          image: "/gears/offensive.png",
+          label: "Aspect du tourbillon de poussière",
+          description:
+            "Tourbillon laisse derrière lui des tourbillons de poussière qui infligent [120 - 210] points de dégâts aux adversaires dans leur sillage. Les cibles touchées par les tourbillons de poussière subissent 25%[x] de dégâts supplémentaires de toutes vos autres sources pendant 3 s.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 46,
+          image: "/gears/offensive.png",
+          label: "Aspect expéditif",
+          description:
+            "La vitesse d'attaque des compétences de base est augmentée de [15 - 35]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+      ],
+      right: [
+        {
+          id: 1,
+          image: "/gears/offensive.png",
+          label: "Aspect d'abus",
+          description:
+            "La durée des effets de perte de contrôle que vous infligez est augmentée de 20%. Tant que les adversaires sont inarrêtables, vous leur infligez [25 - 45]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 2,
+          image: "/gears/offensive.png",
+          label: "Aspect d'accélération",
+          description:
+            "Les coups critiques avec les compétences principales augmentent votre vitesse d'attaque de [10.0 - 30.0]%[+] pendant 5 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 3,
+          image: "/gears/resource.png",
+          label: "Aspect d'adaptabilité",
+          description:
+            "Les compétences de base génèrent 5 points de ressource principale supplémentaire, une fois par compétence. Les compétences de base infligent [0.40 - 0.60]%[x] de dégâts supplémentaires pour chaque point de ressource principale dont vous disposez, dans la limite de 500 points de ressource.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 4,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 5,
+          image: "/gears/utility.png",
+          label: "Aspect d'anémie",
+          description:
+            "Coup de chance : lorsque vous infligez des dégâts directs à une cible vulnérable ou qui saigne, vous avez jusqu'à [15 - 35]% de chances de l'étourdir pendant 2 s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 6,
+          image: "/gears/defensive.png",
+          label: "Aspect d'approche sournoise",
+          description:
+            "Lorsque vous cumulez une perte de 50 % de votre maximum de vie, vous lancez automatiquement une compétence équipée de défense, de subterfuge ou macabre avant de subir les dégâts. Ne se produit qu'une fois toutes les [45 - 30] s et ne peut pas lancer de compétences de mobilité.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 7,
+          image: "/gears/mobility.png",
+          label: "Aspect d'arpenteur spectral",
+          description:
+            "Lorsque vous êtes inarrêtable et pendant les 4 s qui suivent la fin de cet effet, votre vitesse de déplacement est augmentée de [10 - 30]%[+] et vous pouvez vous mouvoir librement.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 8,
+          image: "/gears/offensive.png",
+          label: "Aspect d'arrogance",
+          description:
+            "Vous infligez [10 - 30]%[x] de dégâts supplémentaires tant que vous avez une barrière active.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 9,
+          image: "/gears/defensive.png",
+          label: "Aspect d'assimilation",
+          description:
+            "Vous avez 8% de chances supplémentaires d'esquiver. Lorsque vous esquivez, vous obtenez une fortification équivalente à [5 - 12]% de votre maximum de points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 10,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 11,
+          image: "/gears/resource.png",
+          label: "Aspect d'assouvissement",
+          description:
+            "Coup de chance : vous avez jusqu'à [45.0 - 65.0]% de chances de gagner 20 points de fureur lorsqu'une compétence principale inflige des dégâts directs à au moins une cible qui saigne. Votre fureur maximum est augmentée de [5 - 25] points.",
+          category: "Ressource",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 12,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 13,
+          image: "/gears/mobility.png",
+          label: "Aspect d'élan en avant",
+          description:
+            "Lorsque vous repoussez une cible, votre vitesse de déplacement augmentée de [25 - 45]% pendant 3 s.",
+          category: "Mobilité",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 14,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 15,
+          image: "/gears/offensive.png",
+          label: "Aspect d'extinction retardée",
+          description:
+            "Avec la réduction du temps de recharge, les dégâts de Jet puissant et Poigne de fer deviennent multiplicatifs, et sont également augmentés de 25%[x]. De plus, les compétences de maîtrise d'arme infligent [15 - 35]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 16,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hémorragie du berserker",
+          description:
+            "Chaque fois que vous infligez des dégâts directs sous l'effet de Rage du berserker, vous infligez [15 - 35]% de vos dégâts de base sous forme de dégâts de saignement supplémentaires en 5 s.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 17,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hirsutisme",
+          description:
+            "Les dégâts d'épines infligés ont [25 - 45]% de chances d'infliger des dégâts aux adversaires autour de vous et de vos serviteurs.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 18,
+          image: "/gears/offensive.png",
+          label: "Aspect d'incendie dévastateur",
+          description:
+            "Charge obtient une charge supplémentaire. Chaque cible qu'elle touche explose en infligeant [104 - 194] points de dégâts de feu aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 19,
+          image: "/gears/defensive.png",
+          label: "Aspect d'immortalité",
+          description:
+            "Lorsque vous utilisez une compétence, vous récupérez [0.5 - 2.5]% de vos points de vie. Ce bonus double si vous disposez de moins de 50% de vos points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 20,
+          image: "/gears/defensive.png",
+          label: "Aspect de barrière réfléchissante",
+          description:
+            "Après avoir subi des dégâts directs, vous avez [5.0 - 12.0]% de chances d'obtenir une barrière équivalente à 20% de votre maximum de points de vie pendant 10 s. Ces chances sont doublées contre les adversaires à distance.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 21,
+          image: "/gears/offensive.png",
+          label: "Aspect de bourreau",
+          description:
+            "Vos accablements provoquent un tremblement de terre toutes les 4 s, qui inflige [300 - 602] points de dégâts physiques en 4 s. Les dégâts de vos tremblements de terre sont augmentés de 5%[x] pour chaque tranche de 100 points de force que vous possédez, jusqu'à un maximum de 100%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 22,
+          image: "/gears/offensive.png",
+          label: "Aspect de brise-crâne",
+          description:
+            "Étourdir une cible qui saigne lui inflige un montant de dégâts physiques égal à [25 - 45]% de son saignement total.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 23,
+          image: "/gears/defensive.png",
+          label: "Aspect de Bull-Kathos",
+          description:
+            "Bond génère un tremblement de terre qui inflige [206 - 326] points de dégâts physiques en 4 s. Lorsque vous vous trouvez au milieu d'un tremblement de terre et pendant 4 s après l'avoir quitté, vous gagnez 30% de réduction des dégâts.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 24,
+          image: "/gears/mobility.png",
+          label: "Aspect de carnage",
+          description:
+            "Vous obtenez 20% de vitesse de déplacement. Ce bonus disparaît pendant [5.0 - 2.0] s après avoir subi des dégâts d'un personnage adverse à proximité.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 25,
+          image: "/gears/offensive.png",
+          label: "Aspect de charge ancestrale",
+          description:
+            "L'utilisation de Charge invoque 4 Anciens qui chargent avec vous et infligent chacun [20 - 40]%[x] des dégâts normaux. Vos invocations infligent [20 - 40]% de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 26,
+          image: "/gears/offensive.png",
+          label: "Aspect de châtiment",
+          description:
+            "Vos chances d'infliger un coup critique aux cibles blessées sont augmentées de [13 - 23]%[+]. Lorsque vous êtes en bonne santé, vous bénéficiez d'une augmentation de la durée des effets de perte de contrôle [25 - 45]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 27,
+          image: "/gears/defensive.png",
+          label: "Aspect de colère anesthésiante",
+          description:
+            "Chaque point de fureur généré alors qu'elle est déjà à son maximum confère [4 - 37] points de fortification.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 28,
+          image: "/gears/offensive.png",
+          label: "Aspect de colère débordante",
+          description:
+            "Après avoir dépensé 100 points de fureur, votre prochaine compétence de maîtrise d'arme ou de combat lancée dans les 8 s qui suivent inflige [40 - 80]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 29,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1 456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 30,
+          image: "/gears/defensive.png",
+          label: "Aspect de coups calculés",
+          description:
+            "Après avoir changé d'arme 5 fois, vous obtenez [102 - 830] points de fortification.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 31,
+          image: "/gears/defensive.png",
+          label: "Aspect de défense de fer",
+          description:
+            "Galvanisation octroie l'état inarrêtable, ainsi que [20 - 40]% de réduction des dégâts.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 32,
+          image: "/gears/defensive.png",
+          label: "Aspect de désobéissance",
+          description:
+            "Votre armure est augmentée de [0.4 - 0.8]%[+] pendant 4 s lorsque vous infligez n'importe quel type de dégâts, jusqu'à un maximum de [25.0 - 46.0]%[+].",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 33,
+          image: "/gears/offensive.png",
+          label: "Aspect de destin inévitable",
+          description:
+            "Lorsqu'une cible tombe à moins de 35% de points de vie sous l'effet d'un de vos dégâts sur la durée, une explosion se produit toutes les 7 s, infligeant [300 - 525] points de dégâts pour chaque élément qui l'affecte.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 34,
+          image: "/gears/offensive.png",
+          label: "Aspect de fissures incendiaires",
+          description:
+            "Vos tremblements de terre infligent des dégâts de feu augmentés de [40 - 60]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 35,
+          image: "/gears/offensive.png",
+          label: "Aspect de folie guerrière",
+          description:
+            "Vous obtenez l'effet de Rage du berserker et infligez [30 - 60]%[x] de dégâts supplémentaires pendant 4 s après avoir changé d'arme 8 fois.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 36,
+          image: "/gears/offensive.png",
+          label: "Aspect de force ancestrale",
+          description:
+            "Marteau des Anciens se propage vers l'extérieur, infligeant [30 - 60]%[x] de dégâts supplémentaires. Ce bonus est doublé contre les boss.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 37,
+          image: "/gears/offensive.png",
+          label: "Aspect de fragments d'acier",
+          description:
+            "Poigne de fer et Maelström d'acier lancent jusqu'à 10 éclats de métal qui infligent [120 - 420] points de dégâts physiques.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 38,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 39,
+          image: "/gears/offensive.png",
+          label: "Aspect de funambule",
+          description:
+            "Les compétences infligent jusqu'à [5 - 25]%[x] de dégâts supplémentaires en fonction de votre ressource principale disponible à leur lancement, pour un résultat maximal lorsque votre ressource principale est au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 40,
+          image: "/gears/resource.png",
+          label: "Aspect de fureur du berserker",
+          description:
+            "Vous obtenez [1.0 - 8.0] point de fureur par seconde tant que vous êtes sous l'effet de Rage du berserker.",
+          category: "Ressource",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 41,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'attente",
+          description:
+            "Après avoir attaqué des adversaires avec une compétence de base, les dégâts de votre prochaine compétence principale lancée dans les 5 s qui suivent sont augmentés de [5 - 12]%[x], jusqu'à 30%[x] au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 42,
+          image: "/gears/resource.png",
+          label: "Aspect de l'ombre",
+          description:
+            "Vous récupérez [1.0 - 8.0] de votre ressource principale lorsque vous infligez un effet de perte de contrôle à une cible adverse.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 43,
+          image: "/gears/defensive.png",
+          label: "Aspect de la forteresse",
+          description:
+            "Pour chaque tranche de 10 % de points de vie manquants, vous gagnez [1.0 - 5.0]% de réduction des dégâts.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 44,
+          image: "/gears/mobility.png",
+          label: "Aspect de la frappe du vent",
+          description:
+            "Les coups critiques augmentent votre vitesse de déplacement de [8.5 - 19.0]%[+] pendant 1 s, jusqu'à 6 s.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 45,
+          image: "/gears/offensive.png",
+          label: "Aspect de la fureur déchaînée",
+          description:
+            "L'utilisation d'une compétence ultime augmente les dégâts de vos compétences ultimes de [6.0 - 10.0]%[x], jusqu'à un maximum de [60 - 100]%[x]. Lorsque vous avez cumulé cet effet 10 fois, il se réinitialise tout comme vos temps de recharge.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 46,
+          image: "/gears/offensive.png",
+          label: "Aspect de la mort insidieuse",
+          description:
+            "Vous infligez aux adversaires [5.0 - 20.0]%[x] de dégâts supplémentaires sur la durée pour chaque effet de perte de contrôle différent qui leur est appliqué. Vous infligez plutôt [10 - 40]%[x] aux adversaires inarrêtables et aux boss stupéfiés.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 47,
+          image: "/gears/utility.png",
+          label: "Aspect de maître d'armes",
+          description:
+            "Vos compétences de maîtrise d'arme disposent d'une charge supplémentaire. Coup de chance : lorsque vous infligez des dégâts à une cible avec une compétence de maîtrise d'arme, vous avez jusqu'à [40 - 60]% de chances de l'étourdir pendant 2 s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 48,
+          image: "/gears/defensive.png",
+          label: "Aspect de mastodonte",
+          description:
+            "Vous obtenez [583 - 816] points d'armure, mais le temps de recharge d'Esquive augmente de 100%.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 49,
+          image: "/gears/mobility.png",
+          label: "Aspect de métamorphose",
+          description:
+            "Pendant une esquive, vous vous transformez en une nuée de chauves-souris et devenez inarrêtable pendant 2.5 s. Les adversaires sur votre chemin subissent 300 points de dégâts physiques ainsi qu'une malédiction vampirique. Le temps de recharge d'Esquive est augmenté de [10.0 - 4.0] s.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 50,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 51,
+          image: "/gears/resource.png",
+          label: "Aspect de pas de géant",
+          description:
+            "Réduit le temps de recharge de Bond de [1.3 - 3.5] s par cible touchée, jusqu'à un maximum de 7 s. Atteindre un boss avec cette compétence octroie le maximum de réduction.",
+          category: "Ressource",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 52,
+          image: "/gears/mobility.png",
+          label: "Aspect de piétinement perpétuel",
+          description:
+            "Blesser une cible ennemie avec Coup de pied ou Choc terrestre réinitialise le temps de recharge de Bond.",
+          category: "Mobilité",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 53,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 54,
+          image: "/gears/offensive.png",
+          label: "Aspect de pulsion de mort",
+          description:
+            "Vous gagnez [510 - 655] points de dégâts d'épines tant que vous êtes sous l'effet de Rage du berserker.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 55,
+          image: "/gears/offensive.png",
+          label: "Aspect de querelleur",
+          description:
+            "L'utilisation d'une compétence ultime augmente vos dégâts de [10 - 30]%[x] pendant 8 s. Vos compétences ultimes bénéficient de 2 rangs supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 56,
+          image: "/gears/offensive.png",
+          label: "Aspect de rage ardente",
+          description:
+            "Tant que vous êtes sous l'effet de Rage du berserker, vous infligez [68 - 124] points de dégâts de feu par seconde aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 57,
+          image: "/gears/offensive.png",
+          label: "Aspect de rage infinie",
+          description:
+            "Chaque point de fureur que vous générez au-delà du maximum augmente les dégâts de votre prochaine compétence principale, lancée dans les 5 s qui suivent, de [1.00 - 3.00]%[x], jusqu'à un maximum de 15 fois.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 58,
+          image: "/gears/offensive.png",
+          label: "Aspect de rupture arbitraire",
+          description:
+            "Double le rayon d'embrochement de Rupture et la durée de tous les effets de saignement est augmentée de [30 - 60]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 59,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang bouillonnant",
+          description:
+            "Lorsque vos compétences principales accablent les adversaires, vous faites apparaître 3 gouttes de sang instable. Ramassez-en une pour la faire exploser et infliger [263 - 938] points de dégâts physiques autour de vous. Toutes les 20 s, votre prochaine compétence accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 60,
+          image: "/gears/offensive.png",
+          label: "Aspect de spectacle herculéen",
+          description:
+            "Jet puissant inflige [25 - 45]%[x] de dégâts supplémentaires et projette 2 armes de plus.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 61,
+          image: "/gears/offensive.png",
+          label: "Aspect de terre scindée",
+          description:
+            "Toutes les 20 s, votre prochaine utilisation de Soulèvement accable obligatoirement et inflige [50 - 70]%[x] de dégâts supplémentaires. Les coups critiques de Soulèvement infligés à des élites réduisent ce laps de temps de 1 s.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 62,
+          image: "/gears/offensive.png",
+          label: "Aspect de toucher maudit",
+          description:
+            "Coup de chance : vos compétences ont jusqu'à [20.0 - 40.0]% de chances d'infliger aux adversaires une malédiction vampirique. Toute cible affectée par une malédiction vampirique est également vulnérable. Les âmes stockées par la malédiction vampirique infligent [20.0 - 60.0]% points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 63,
+          image: "/gears/offensive.png",
+          label: "Aspect de tremblements de terre",
+          description:
+            "Choc terrestre génère un tremblement de terre qui inflige [167 - 287] points de dégâts physiques en 4 s. Lorsque vous vous trouvez au milieu d'un tremblement de terre et pendant 4 s après l'avoir quitté, vous infligez [20 - 60]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 64,
+          image: "/gears/utility.png",
+          label: "Aspect de trombe centripète",
+          description:
+            "Tourbillon attire les adversaires vers vous toutes les [6.0 - 3.0] s.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 65,
+          image: "/gears/offensive.png",
+          label: "Aspect de trombe mortelle",
+          description:
+            "Les chances d'infliger un coup critique et les dégâts critiques de Tourbillon sont augmentés de [5.5 - 10]%[x] par seconde de canalisation de la compétence, jusqu'à un maximum de [28 - 50]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 66,
+          image: "/gears/offensive.png",
+          label: "Aspect de vents violents",
+          description:
+            "Vos compétences de cri créent 3 tourbillons de poussière qui infligent [60 - 120] points de dégâts aux adversaires sur leur passage. Vos tourbillons de poussière sont [5 - 25]% plus grands et infligent 1%[x] de dégâts supplémentaires par tranche de 1% d'agrandissement.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 67,
+          image: "/gears/offensive.png",
+          label: "Aspect de vétéran du combat",
+          description:
+            "Chaque fois qu'une compétence principale inflige des dégâts directs à une cible, votre prochaine utilisation de Charge, Bond ou Coup de pied inflige [4.0 - 10.0]%[x] de dégâts supplémentaires, jusqu'à un maximum de [20 - 50]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 68,
+          image: "/gears/offensive.png",
+          label: "Aspect de vindicte",
+          description:
+            "Les cibles à distance ont 10% de chances d'être étourdies pendant 2 s lorsqu'elles vous infligent des dégâts. Vous infligez [15 - 35]%[x] de dégâts supplémentaires aux cibles étourdies ou renversées.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 69,
+          image: "/gears/offensive.png",
+          label: "Aspect des échos ancestraux",
+          description:
+            "Coup de chance : Bond, Soulèvement et Tourbillon ont jusqu'à [45 - 65]% de chances d'invoquer un Ancien qui répétera la même compétence. Cet effet ne peut se produire qu'une fois toutes les 5 s. Vos invocations infligent [20 - 40]% de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 70,
+          image: "/gears/offensive.png",
+          label: "Aspect des éléments",
+          description:
+            "Augmente les dégâts infligés par un ensemble de types de dégâts de [15 - 35]%[x] pendant 7 s. Cet effet alterne entre deux ensembles : feu, foudre et physiques ; froid, poison et ombre.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 71,
+          image: "/gears/offensive.png",
+          label: "Aspect diabolique",
+          description:
+            "Après la génération de 100 points de fureur, les prochains dégâts directs que vous infligez génèrent 2 tourbillons de poussière qui infligent [60 - 105] points de dégâts aux adversaires dans leur sillage.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 72,
+          image: "/gears/utility.png",
+          label: "Aspect du berserker implacable",
+          description:
+            "Coup de chance : en infligeant des dégâts à une cible adverse avec une compétence principale, vous avez jusqu'à [15 - 35]% de chances d'augmenter la durée de l'effet de Rage du berserker de 2 s. Cette durée est doublée si le coup de chance est un coup critique.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 73,
+          image: "/gears/offensive.png",
+          label: "Aspect du combat",
+          description:
+            "Les cibles tuées dans les 2 s après avoir été touchées par Coup de pied ou Charge explosent en infligeant [375 - 488] points de dégâts aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 74,
+          image: "/gears/offensive.png",
+          label: "Aspect du crépuscule",
+          description:
+            "Lorsque vous infligez des dégâts avec une compétence de base, vous recevez 4% de vitesse d'attaque supplémentaire pendant 10 s, jusqu'à un maximum de 5 fois. Une fois ce seuil atteint, vous sombrez dans une rage de sang vampirique et obtenez un bonus de [40 - 60]%[x] aux dégâts des compétences de base et de 15% à la vitesse de déplacement pendant 10 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 75,
+          image: "/gears/offensive.png",
+          label: "Aspect du fouette-vent",
+          description:
+            "L'utilisation de Coup double génère un tourbillon de poussière qui inflige [53 - 83] points de dégâts aux adversaires dans son sillage.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 76,
+          image: "/gears/offensive.png",
+          label: "Aspect du frappe-terre",
+          description:
+            "Après avoir changé d'arme 8 fois, votre prochaine compétence, hors compétences de base, accablera et infligera [15 - 35]%[x] de dégâts d'accablement supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 77,
+          image: "/gears/offensive.png",
+          label: "Aspect du tourbillon de poussière",
+          description:
+            "Tourbillon laisse derrière lui des tourbillons de poussière qui infligent [120 - 210] points de dégâts aux adversaires dans leur sillage. Les cibles touchées par les tourbillons de poussière subissent 25%[x] de dégâts supplémentaires de toutes vos autres sources pendant 3 s.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 78,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 79,
+          image: "/gears/offensive.png",
+          label: "Aspect expéditif",
+          description:
+            "La vitesse d'attaque des compétences de base est augmentée de [15 - 35]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 80,
+          image: "/gears/mobility.png",
+          label: "Aspect lâche",
+          description:
+            "Votre vitesse de déplacement est augmentée de [25 - 45]%[x] lorsque vous vous éloignez de cibles ralenties ou glacées.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 81,
+          image: "/gears/utility.png",
+          label: "Aspect porte-bonheur",
+          description:
+            "Vos chances d'obtenir un coup de chance sont augmentées de [10 - 30]%[+] tant que tous vos bonus de dégâts de votre compétence passive principale Arsenal ambulant sont actifs.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 82,
+          image: "/gears/defensive.png",
+          label: "Aspect protecteur",
+          description:
+            "Lorsque vous n'êtes pas en bonne santé, vous invoquez une bulle protectrice qui rend insensible l'ensemble des personnages-joueurs à l'intérieur. La bulle dure [2.5 - 6.0] s et ne peut se former qu'une fois toutes les 90 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 83,
+          image: "/gears/defensive.png",
+          label: "Aspect du cœur prudent",
+          description:
+            "Après avoir subi des dégâts équivalant à au moins 20 % de votre maximum de vie à la fois, vous devenez insensible pendant [2.5 - 4.0] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 84,
+          image: "/gears/defensive.png",
+          label: "Aspect du Protecteur",
+          description:
+            "Le fait de blesser une cible adverse élite vous octroie une barrière qui absorbe jusqu'à [655 - 5 898] points de dégâts pendant 10 s. Cet effet ne peut se produire qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 85,
+          image: "/gears/defensive.png",
+          label: "Aspect du sang de fer",
+          description:
+            "Vous gagnez [2.0 - 6.0]% de réduction des dégâts par adversaire proche qui saigne, jusqu'à une réduction maximum de [10 - 30]%.",
+          category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 86,
+          image: "/gears/resource.png",
+          label: "Aspect du maître d'armes intransigeant",
+          description:
+            "Votre génération de fureur est augmentée de [35.0 - 75.0]%[x] et le coût en fureur est réduit de 15% lorsque tous les bonus de dégâts de la compétence passive principale Arsenal ambulant sont actifs.",
+          category: "Ressource",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 87,
+          image: "/gears/offensive.png",
+          label: "Aspect du tourbillon de poussière",
+          description:
+            "Tourbillon laisse derrière lui des tourbillons de poussière qui infligent [120 - 210] points de dégâts aux adversaires dans leur sillage. Les cibles touchées par les tourbillons de poussière subissent 25%[x] de dégâts supplémentaires de toutes vos autres sources pendant 3 s.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 88,
+          image: "/gears/mobility.png",
+          label: "Aspect lâche",
+          description:
+            "Votre vitesse de déplacement est augmentée de [25 - 45]%[x] lorsque vous vous éloignez de cibles ralenties ou glacées.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 89,
+          image: "/gears/utility.png",
+          label: "Aspect porte-bonheur",
+          description:
+            "Vos chances d'obtenir un coup de chance sont augmentées de [10 - 30]%[+] tant que tous vos bonus de dégâts de votre compétence passive principale Arsenal ambulant sont actifs.",
+          category: "Attributs",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 90,
+          image: "/gears/defensive.png",
+          label: "Aspect protecteur",
+          description:
+            "Lorsque vous n'êtes pas en bonne santé, vous invoquez une bulle protectrice qui rend insensible l'ensemble des personnages-joueurs à l'intérieur. La bulle dure [2.5 - 6.0] s et ne peut se former qu'une fois toutes les 90 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 91,
+          image: "/gears/resource.png",
+          label: "Aspect du berserker de l'Ours",
+          description:
+            "En tuant une cible sous l'effet de Rage du berserker, vous avez 40% de chances d'augmenter de [1.70 - 40.0]% la réduction du temps de recharge de vos compétences de combat pendant 2 s.",
+          category: "Ressource",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 92,
+          image: "/gears/resource.png",
+          label: "Aspect de rage vorace",
+          description:
+            "Lorsque vous tuez une cible avec une compétence principale, vous recevez [15.0 - 35.0]% de son coût de base. Cet effet ne peut se produire qu'une fois par utilisation.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 93,
+          image: "/gears/resource.png",
+          label: "Aspect de renforcement exprimé",
+          description:
+            "Vos compétences de cri génèrent [5.0 - 12.0] points de ressource principale par seconde tant qu'elles sont actives.",
+          category: "Ressource",
+          class: "Barbare, Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 94,
+          image: "/gears/resource.png",
+          label: "Aspect de la sombre danse",
+          description:
+            "Les compétences qui consomment des points de vie infligent 80%[x] de dégâts supplémentaires.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 95,
+          image: "/gears/resource.png",
+          label: "Aspect de lumière stellaire",
+          description:
+            "Vous gagnez [25.0 - 45.0] points de votre ressource principale pour chaque tranche de 20% de points de vie soignés ou pour chaque tranche de 12% de points de vie que vous avez en trop, jusqu'à un maximum de 300 points de ressources par seconde.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 96,
+          image: "/gears/offensive.png",
+          label: "Aspect du maître d'armes intransigeant",
+          description:
+            "Votre génération de fureur est augmentée de [35.0 - 75.0]%[x] et le coût en fureur est réduit de 15% lorsque tous les bonus de dégâts de la compétence passive principale Arsenal ambulant sont actifs.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 97,
+          image: "/gears/defensive.png",
+          label: "Aspect de toute-puissance",
+          description:
+            "Les compétences de base confèrent 20.0% de réduction des dégâts pendant [2.0 - 10.0] s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/offensive.png",
+          label: "Accelerating Aspect",
+          description:
+            "Critical Strikes with Core Skills increase your Attack Speed by [10.0 - 30.0]%[+] for 5 seconds.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 2,
+          image: "/gears/offensive.png",
+          label: "Aspect of Accursed Touch",
+          description:
+            "Lucky Hit: Up to a [20.0 - 40.0]% chance for your Skills to inflict Vampiric Curse on enemies. Enemies afflicted with Vampiric Curse are also Vulnerable. Vampiric Curse's stored souls deal [20.0 - 60.0]% increased damage.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 3,
+          image: "/gears/resource.png",
+          label: "Aspect of Adaptability",
+          description:
+            "Basic Skills generate 5 additional Primary Resource, once per Skill. Basic Skills deal [0.40 - 0.60]%[x] increased damage for each point of Primary Resource you have, up to 500 Resource.",
+          category: "Resource",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 4,
+          image: "/gears/offensive.png",
+          label: "Aspect of Ancestral Charge",
+          description:
+            "Casting Charge Summons 4 Ancients to Charge with you, each dealing [20 - 40]%[x] of normal damage. Your Summons deal [20 - 40]% increased damage.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 5,
+          image: "/gears/offensive.png",
+          label: "Aspect of Ancestral Echoes",
+          description:
+            "Lucky Hit: Leap, Upheaval, and Whirlwind have up to a [45 - 65]% chance to Summon an Ancient to perform the same Skill. Can only occur once every 5 seconds. Your Summons deal [20 - 40]% increased damage.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 6,
+          image: "/gears/offensive.png",
+          label: "Aspect of Ancestral Force",
+          description:
+            "Hammer of the Ancients quakes outward for [30 - 60]%[x] increased damage. This bonus is doubled against Bosses.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 7,
+          image: "/gears/offensive.png",
+          label: "Aspect of Anger Management",
+          description:
+            "While above [55 - 40] Fury, you are Berserking but 2 Fury drains per second.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 8,
+          image: "/gears/offensive.png",
+          label: "Aspect of Apogeic Furor",
+          description:
+            "Casting an Ultimate Skill increases your Ultimate damage by [6.0 - 10.0]%[x] up to [60 - 100]%[x]. At 10 stacks, your Cooldowns and this bonus are reset.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 9,
+          image: "/gears/resource.png",
+          label: "Aspect of Berserk Fury",
+          description: "You gain [1.0 - 8.0] Fury per second while Berserking.",
+          category: "Resource",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 10,
+          image: "/gears/offensive.png",
+          label: "Aspect of Berserk Ripping",
+          description:
+            "Whenever you deal direct damage while Berserking, inflict [15 - 35]% of the Base damage dealt as additional Bleeding damage over 5 seconds.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 11,
+          image: "/gears/offensive.png",
+          label: "Aspect of Burning Rage",
+          description:
+            "While Berserking, you deal [68 - 124] Fire damage every second to surrounding enemies.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 12,
+          image: "/gears/offensive.png",
+          label: "Aspect of Creeping Death",
+          description:
+            "You deal [5.0 - 20.0]%[x] increased damage over time to enemies for each different Crowd Control effect they're afflicted by. Unstoppable enemies and Staggered Bosses take [10 - 40]%[x] increased damage over time from you instead.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 13,
+          image: "/gears/offensive.png",
+          label: "Aspect of Delayed Extinction",
+          description:
+            "Mighty Throw and Steel Grasp now gain multiplicative damage instead of cooldown from Cooldown Reduction and their damage is increased by another 25%[x]. Additionally, Weapon Mastery skills gain [15 - 35]%[x] bonus damage.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 14,
+          image: "/gears/offensive.png",
+          label: "Aspect of Earthquakes",
+          description:
+            "Ground Stomp creates an Earthquake damaging enemies for [167 - 287] Physical damage over 4 seconds. While standing in Earthquakes and for 4 seconds afterwards, you deal [20 - 60]%[x] increased damage.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 15,
+          image: "/gears/offensive.png",
+          label: "Aspect of Elements",
+          description:
+            "Gain [15 - 35]%[x] increased damage to a set of damage types for 7 seconds. This effect alternates between 2 sets: Fire, Lightning, and Physical. Cold, Poison, and Shadow.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 16,
+          image: "/gears/offensive.png",
+          label: "Aspect of Encroaching Wrath",
+          description:
+            "After spending 100 Fury, your next Weapon Mastery or Brawling Skill within 8 seconds deals [40 - 80]%[x] increased damage.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 17,
+          image: "/gears/offensive.png",
+          label: "Aspect of Fierce Winds",
+          description:
+            "Your Shout Skills create 3 Dust Devils that deal [60 - 120] damage to enemies along their path. Your Dust Devils are [5 - 25]% bigger and deal 1%[x] increased damage for each 1% their size is increased.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 18,
+          image: "/gears/resource.png",
+          label: "Aspect of Giant Strides",
+          description:
+            "Reduces the Cooldown of Leap by [1.3 - 3.5] seconds per enemy hit, up to a maximum of 7 seconds. Hitting a Boss with Leap provides the maximum reduction.",
+          category: "Resource",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 19,
+          image: "/gears/offensive.png",
+          label: "Aspect of Herculean Spectacle",
+          description:
+            "Mighty Throw deals [25 - 45]%[x] increased damage and hurls another 2 weapons.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 20,
+          image: "/gears/offensive.png",
+          label: "Aspect of Incendiary Fissures",
+          description:
+            "Your Earthquakes deal [40 - 60]%[x] increased damage and their damage is converted into Fire.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 21,
+          image: "/gears/offensive.png",
+          label: "Aspect of Inevitable Fate",
+          description:
+            "When an enemy falls below 35% Life while afflicted with any of your damage over time effects, an explosion occurs every 7 seconds, dealing [300 - 525] damage for each Element they're afflicted by.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 22,
+          image: "/gears/offensive.png",
+          label: "Aspect of Inner Calm",
+          description:
+            "Deal [5.0 - 13.0]%[x] increased damage. Triple this bonus after standing still for 3 seconds.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 23,
+          image: "/gears/offensive.png",
+          label: "Aspect of Limitless Rage",
+          description:
+            "Each point of Fury you generate while at Maximum Fury grants your next Core Skill within 5 seconds [1.00 - 3.00]%[x] increased damage, stacking up to 15 times.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 24,
+          image: "/gears/offensive.png",
+          label: "Aspect of Retribution",
+          description:
+            "Distant enemies have a 10% chance to be Stunned for 2 seconds when they hit you. You deal [15 - 35]%[x] increased damage to Stunned or Knocked Down enemies.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 25,
+          image: "/gears/offensive.png",
+          label: "Aspect of Shattering Steel",
+          description:
+            "Steel Grasp and Iron Maelstrom launch up to 10 metal shards that deal [120 - 420] Physical damage.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 26,
+          image: "/gears/offensive.png",
+          label: "Aspect of Sundered Ground",
+          description:
+            "Every 20 seconds, your next Upheaval cast is guaranteed to Overpower and deals [50 - 70]%[x] increased damage. Upheaval Critical Strikes against Elites reduce this timer by 1 second.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 27,
+          image: "/gears/resource.png",
+          label: "Aspect of the Dark Dance",
+          description:
+            "Every 5 seconds, your next Core Skill costs [17 - 29] Life instead of Primary Resource. Will only occur if you have at least 60% of your Maximum Life. Skills that consume Life deal 80%[x] increased damage.",
+          category: "Resource",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 28,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Dire Whirlwind",
+          description:
+            "Whirlwind's Critical Strike Chance and Critical Strike Damage are increased by [5.5 - 10]%[x] for each second it is channeled, up to [28 - 50]%[x].",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 29,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Expectant",
+          description:
+            "After attacking enemies with a Basic Skill, increase the damage of your next Core Skill cast within 5 seconds by [5 - 12]%[x], up to 30%[x].",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 30,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Flaming Rampage",
+          description:
+            "Charge gains an additional Charge. Each target hit by it explodes for [104 - 194] Fire damage to surrounding enemies.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 31,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Moonrise",
+          description:
+            "Damaging an enemy with a Basic Skill grants you 4% Attack Speed for 10 seconds, stacking up to 5 times. Upon reaching maximum stacks, you enter a Vampiric Bloodrage, gaining [40 - 60]%[x] Basic Skill damage and 15% Movement Speed for 10 seconds.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 32,
+          image: "/gears/resource.png",
+          label: "Aspect of the Relentless Armsmaster",
+          description:
+            "Gain [35.0 - 75.0]%[x] increased Fury Generation and 15% reduced Fury cost while all damage bonuses from the Walking Arsenal Key Passive are active.",
+          category: "Resource",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 33,
+          image: "/gears/resource.png",
+          label: "Aspect of the Umbral",
+          description:
+            "Restore [1.0 - 8.0] of your Primary Resource when you Crowd Control an enemy.",
+          category: "Resource",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 34,
+          image: "/gears/resource.png",
+          label: "Aspect of Vocalized Empowerment",
+          description:
+            "Your Shout Skills generate [5.0 - 12.0] Primary Resource per second while active.",
+          category: "Resource",
+          class: "Barbarian, Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 35,
+          image: "/gears/resource.png",
+          label: "Aspect of Voracious Rage",
+          description:
+            "Killing an enemy with a Core Skill refunds [15.0 - 35.0]% of its base cost. Can only happen once per Skill cast.",
+          category: "Resource",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 36,
+          image: "/gears/offensive.png",
+          label: "Battle-Mad Aspect",
+          description:
+            "Gain [30 - 60]%[x] increased damage and Berserking for 4 seconds after swapping weapons 8 times.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 37,
+          image: "/gears/resource.png",
+          label: "Bear Clan Berserker's Aspect",
+          description:
+            "Killing an enemy while Berserking has a 40% chance to grant [17.0 - 40.0]% increased Cooldown Reduction to your Brawling Skills for 2 seconds.",
+          category: "Resource",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 38,
+          image: "/gears/offensive.png",
+          label: "Blood Boiling Aspect",
+          description:
+            "When your Core Skills Overpower any number of enemies, you spawn 3 Volatile Blood Drops. Collecting a Volatile Blood Drop causes it to explode, dealing [263 - 938] Physical damage around you. Every 20 seconds, your next skill is guaranteed to Overpower.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 39,
+          image: "/gears/resource.png",
+          label: "Bold Chieftain's Aspect",
+          description:
+            "Whenever you cast a Shout Skill, its active Cooldown is reduced by [10.0 - 30.0]% per Nearby enemy, up to a maximum of 70.0%.",
+          category: "Resource",
+          class: "Barbarian, Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 40,
+          image: "/gears/offensive.png",
+          label: "Brawler's Aspect",
+          description:
+            "Enemies damaged by Kick or Charge will explode if they are killed within the next 2 seconds, dealing [375 - 488] damage to surrounding enemies.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 41,
+          image: "/gears/offensive.png",
+          label: "Conceited Aspect",
+          description:
+            "Deal [10 - 30]%[x] increased damage while you have a Barrier active.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 42,
+          image: "/gears/offensive.png",
+          label: "Death Wish Aspect",
+          description: "Gain [510 - 655] Thorns while Berserking.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 43,
+          image: "/gears/offensive.png",
+          label: "Devilish Aspect",
+          description:
+            "After generating 100 Fury your next direct damage creates 2 Dust Devils that deal [60 - 105] damage to enemies along their path.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 44,
+          image: "/gears/offensive.png",
+          label: "Dust Devil's Aspect",
+          description:
+            "Whirlwind leaves behind Dust Devils that deal [120 - 210] damage to enemies in their path. Enemies hit by Dust Devils take 25%[x] increased damage from all of your other sources for 3 seconds.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 45,
+          image: "/gears/offensive.png",
+          label: "Earthstriker's Aspect",
+          description:
+            "After swapping weapons 8 times, your next non-Basic Skill will Overpower and deal [15 - 35]%[x] increased Overpower damage.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 46,
+          image: "/gears/offensive.png",
+          label: "Edgemaster's Aspect",
+          description:
+            "Skills deal up to [5 - 25]%[x] increased damage based on your available Primary Resource when cast, receiving the maximum benefit while you have full Primary Resource.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 47,
+          image: "/gears/offensive.png",
+          label: "Executioner's Aspect",
+          description:
+            "Your Overpowers will spawn an Earthquake every 4 seconds that deals [300 - 602] Physical damage over 4 seconds. Your Earthquake damage is increased by 5%[x] for every 100 Strength you have, up to 100%[x].",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 48,
+          image: "/gears/offensive.png",
+          label: "Exploiter's Aspect",
+          description:
+            "You have 20%[+] increased Crowd Control Duration. While enemies are Unstoppable, you deal [25 - 45]%[x] increased damage to them.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 49,
+          image: "/gears/offensive.png",
+          label: "Needleflare Aspect",
+          description:
+            "Thorns damage dealt has a [25 - 45]% chance to deal damage to all enemies around you and your Minions.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 50,
+          image: "/gears/offensive.png",
+          label: "Rapid Aspect",
+          description: "Basic Skills gain [15 - 35]%[+] Attack Speed.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 51,
+          image: "/gears/offensive.png",
+          label: "Skullbreaker's Aspect",
+          description:
+            "Stunning a Bleeding enemy deals [25 - 45]% of their total Bleeding amount to them as Physical damage.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 52,
+          image: "/gears/resource.png",
+          label: "Slaking Aspect",
+          description:
+            "Lucky Hit: You have up to a [45.0 - 65.0]% chance to gain 20 Fury when a Core Skill deals direct damage to at least one Bleeding enemy. Your Maximum Fury is increased by [5 - 25].",
+          category: "Resource",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 53,
+          image: "/gears/offensive.png",
+          label: "Smiting Aspect",
+          description:
+            "You have [13 - 23]%[+] increased Critical Strike Chance against Injured enemies. While you are Healthy, you gain [25 - 45]%[+] increased Crowd Control Duration.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 54,
+          image: "/gears/resource.png",
+          label: "Starlight Aspect",
+          description:
+            "Gain [25.0 - 45.0] of your Primary Resource for every 20% of your Life that you Heal or every 120% Life that you Overheal while at Maximum Life, up to 300 Resource per second.",
+          category: "Resource",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 55,
+          image: "/gears/offensive.png",
+          label: "Vehement Brawler's Aspect",
+          description:
+            "Casting an Ultimate Skill increases your damage by [10 - 30]%[x] for 8 seconds. Gain 2 additional Ultimate Skill Ranks.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 56,
+          image: "/gears/offensive.png",
+          label: "Veteran Brawler's Aspect",
+          description:
+            "Each time a Core Skill deals direct damage to an enemy, your next Charge, Leap, or Kick deals [4.0 - 10.0]%[x] increased damage, up to [20 - 50]%[x].",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 57,
+          image: "/gears/offensive.png",
+          label: "Wanton Rupture Aspect",
+          description:
+            "Double your Rupture's skewer radius, and all Bleed durations are increased by [30 - 60]%[x].",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 58,
+          image: "/gears/offensive.png",
+          label: "Windlasher Aspect",
+          description:
+            "Casting Double Swing creates a Dust Devil that deals [53 - 83] damage to enemies in its path.",
+          category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/offensive.png",
+          label: "Aspect d'abus",
+          description:
+            "La durée des effets de perte de contrôle que vous infligez est augmentée de 20%. Tant que les adversaires sont inarrêtables, vous leur infligez [25 - 45]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 2,
+          image: "/gears/offensive.png",
+          label: "Aspect d'accélération",
+          description:
+            "Les coups critiques avec les compétences principales augmentent votre vitesse d'attaque de [10.0 - 30.0]%[+] pendant 5 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 3,
+          image: "/gears/offensive.png",
+          label: "Aspect d'arrogance",
+          description:
+            "Vous infligez [10 - 30]%[x] de dégâts supplémentaires tant que vous avez une barrière active.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 4,
+          image: "/gears/offensive.png",
+          label: "Aspect d'extinction retardée",
+          description:
+            "Avec la réduction du temps de recharge, les dégâts de Jet puissant et Poigne de fer deviennent multiplicatifs, et sont également augmentés de 25%[x]. De plus, les compétences de maîtrise d'arme infligent [15 - 35]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 5,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hémorragie du berserker",
+          description:
+            "Chaque fois que vous infligez des dégâts directs sous l'effet de Rage du berserker, vous infligez [15 - 35]% de vos dégâts de base sous forme de dégâts de saignement supplémentaires en 5 s.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 6,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hirsutisme",
+          description:
+            "Les dégâts d'épines infligés ont [25 - 45]% de chances d'infliger des dégâts aux adversaires autour de vous et de vos serviteurs.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 7,
+          image: "/gears/offensive.png",
+          label: "Aspect d'incendie dévastateur",
+          description:
+            "Charge obtient une charge supplémentaire. Chaque cible qu'elle touche explose en infligeant [104 - 194] points de dégâts de feu aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 8,
+          image: "/gears/offensive.png",
+          label: "Aspect de bourreau",
+          description:
+            "Vos accablements provoquent un tremblement de terre toutes les 4 s, qui inflige [300 - 602] points de dégâts physiques en 4 s. Les dégâts de vos tremblements de terre sont augmentés de 5%[x] pour chaque tranche de 100 points de force que vous possédez, jusqu'à un maximum de 100%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 9,
+          image: "/gears/offensive.png",
+          label: "Aspect de brise-crâne",
+          description:
+            "Étourdir une cible qui saigne lui inflige un montant de dégâts physiques égal à [25 - 45]% de son saignement total.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 10,
+          image: "/gears/offensive.png",
+          label: "Aspect de calme intérieur",
+          description:
+            "Vous infligez [5.0 - 13.0]%[x] de dégâts supplémentaires. Ce bonus est triplé lorsque vous restez immobile pendant 3 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 11,
+          image: "/gears/offensive.png",
+          label: "Aspect de charge ancestrale",
+          description:
+            "L'utilisation de Charge invoque 4 Anciens qui chargent avec vous et infligent chacun [20 - 40]%[x] des dégâts normaux. Vos invocations infligent [20 - 40]% de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 12,
+          image: "/gears/offensive.png",
+          label: "Aspect de châtiment",
+          description:
+            "Vos chances d'infliger un coup critique aux cibles blessées sont augmentées de [13 - 23]%[+]. Lorsque vous êtes en bonne santé, vous bénéficiez d'une augmentation de la durée des effets de perte de contrôle [25 - 45]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 13,
+          image: "/gears/offensive.png",
+          label: "Aspect de colère débordante",
+          description:
+            "Après avoir dépensé 100 points de fureur, votre prochaine compétence de maîtrise d'arme ou de combat lancée dans les 8 s qui suivent inflige [40 - 80]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 14,
+          image: "/gears/offensive.png",
+          label: "Aspect de destin inévitable",
+          description:
+            "Lorsqu'une cible tombe à moins de 35% de points de vie sous l'effet d'un de vos dégâts sur la durée, une explosion se produit toutes les 7 s, infligeant [300 - 525] points de dégâts pour chaque élément qui l'affecte.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 15,
+          image: "/gears/offensive.png",
+          label: "Aspect de fissures incendiaires",
+          description:
+            "Vos tremblements de terre infligent des dégâts de feu augmentés de [40 - 60]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 16,
+          image: "/gears/offensive.png",
+          label: "Aspect de folie guerrière",
+          description:
+            "Vous obtenez l'effet de Rage du berserker et infligez [30 - 60]%[x] de dégâts supplémentaires pendant 4 s après avoir changé d'arme 8 fois.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 17,
+          image: "/gears/offensive.png",
+          label: "Aspect de force ancestrale",
+          description:
+            "Marteau des Anciens se propage vers l'extérieur, infligeant [30 - 60]%[x] de dégâts supplémentaires. Ce bonus est doublé contre les boss.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 18,
+          image: "/gears/offensive.png",
+          label: "Aspect de fragments d'acier",
+          description:
+            "Poigne de fer et Maelström d'acier lancent jusqu'à 10 éclats de métal qui infligent [120 - 420] points de dégâts physiques.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 19,
+          image: "/gears/offensive.png",
+          label: "Aspect de funambule",
+          description:
+            "Les compétences infligent jusqu'à [5 - 25]%[x] de dégâts supplémentaires en fonction de votre ressource principale disponible à leur lancement, pour un résultat maximal lorsque votre ressource principale est au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 20,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'attente",
+          description:
+            "Après avoir attaqué des adversaires avec une compétence de base, les dégâts de votre prochaine compétence principale lancée dans les 5 s qui suivent sont augmentés de [5 - 12]%[x], jusqu'à 30%[x] au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 21,
+          image: "/gears/offensive.png",
+          label: "Aspect de la fureur déchaînée",
+          description:
+            "L'utilisation d'une compétence ultime augmente les dégâts de vos compétences ultimes de [6.0 - 10.0]%[x], jusqu'à un maximum de [60 - 100]%[x]. Lorsque vous avez cumulé cet effet 10 fois, il se réinitialise tout comme vos temps de recharge.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 22,
+          image: "/gears/offensive.png",
+          label: "Aspect de la mort insidieuse",
+          description:
+            "Vous infligez aux adversaires [5.0 - 20.0]%[x] de dégâts supplémentaires sur la durée pour chaque effet de perte de contrôle différent qui leur est appliqué. Vous infligez plutôt [10 - 40]%[x] aux adversaires inarrêtables et aux boss stupéfiés.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 23,
+          image: "/gears/offensive.png",
+          label: "Aspect de maîtrise de soi",
+          description:
+            "Tant que vous avez plus de [55 - 40] points de fureur, vous bénéficiez de l'effet de Rage du berserker, mais 2 points de fureur sont drainés par seconde.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 24,
+          image: "/gears/offensive.png",
+          label: "Aspect de pulsion de mort",
+          description:
+            "Vous gagnez [510 - 655] points de dégâts d'épines tant que vous êtes sous l'effet de Rage du berserker.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 25,
+          image: "/gears/offensive.png",
+          label: "Aspect de querelleur",
+          description:
+            "L'utilisation d'une compétence ultime augmente vos dégâts de [10 - 30]%[x] pendant 8 s. Vos compétences ultimes bénéficient de 2 rangs supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 26,
+          image: "/gears/offensive.png",
+          label: "Aspect de rage ardente",
+          description:
+            "Tant que vous êtes sous l'effet de Rage du berserker, vous infligez [68 - 124] points de dégâts de feu par seconde aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 27,
+          image: "/gears/offensive.png",
+          label: "Aspect de rage infinie",
+          description:
+            "Chaque point de fureur que vous générez au-delà du maximum augmente les dégâts de votre prochaine compétence principale, lancée dans les 5 s qui suivent, de [1.00 - 3.00]%[x], jusqu'à un maximum de 15 fois.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 28,
+          image: "/gears/offensive.png",
+          label: "Aspect de rupture arbitraire",
+          description:
+            "Double le rayon d'embrochement de Rupture et la durée de tous les effets de saignement est augmentée de [30 - 60]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 29,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang bouillonnant",
+          description:
+            "Lorsque vos compétences principales accablent les adversaires, vous faites apparaître 3 gouttes de sang instable. Ramassez-en une pour la faire exploser et infliger [263 - 938] points de dégâts physiques autour de vous. Toutes les 20 s, votre prochaine compétence accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 30,
+          image: "/gears/offensive.png",
+          label: "Aspect de spectacle herculéen",
+          description:
+            "Jet puissant inflige [25 - 45]%[x] de dégâts supplémentaires et projette 2 armes de plus.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 31,
+          image: "/gears/offensive.png",
+          label: "Aspect de terre scindée",
+          description:
+            "Toutes les 20 s, votre prochaine utilisation de Soulèvement accable obligatoirement et inflige [50 - 70]%[x] de dégâts supplémentaires. Les coups critiques de Soulèvement infligés à des élites réduisent ce laps de temps de 1 s.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 32,
+          image: "/gears/offensive.png",
+          label: "Aspect de toucher maudit",
+          description:
+            "Coup de chance : vos compétences ont jusqu'à [20.0 - 40.0]% de chances d'infliger aux adversaires une malédiction vampirique. Toute cible affectée par une malédiction vampirique est également vulnérable. Les âmes stockées par la malédiction vampirique infligent [20.0 - 60.0]% points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 33,
+          image: "/gears/offensive.png",
+          label: "Aspect de tremblements de terre",
+          description:
+            "Choc terrestre génère un tremblement de terre qui inflige [167 - 287] points de dégâts physiques en 4 s. Lorsque vous vous trouvez au milieu d'un tremblement de terre et pendant 4 s après l'avoir quitté, vous infligez [20 - 60]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 34,
+          image: "/gears/offensive.png",
+          label: "Aspect de trombe mortelle",
+          description:
+            "Les chances d'infliger un coup critique et les dégâts critiques de Tourbillon sont augmentés de [5.5 - 10]%[x] par seconde de canalisation de la compétence, jusqu'à un maximum de [28 - 50]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 35,
+          image: "/gears/offensive.png",
+          label: "Aspect de vents violents",
+          description:
+            "Vos compétences de cri créent 3 tourbillons de poussière qui infligeant [60 - 120] points de dégâts aux adversaires sur leur passage. Vos tourbillons de poussière sont [5 - 25]% plus grands et infligent 1%[x] de dégâts supplémentaires par tranche de 1% d'agrandissement.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 36,
+          image: "/gears/offensive.png",
+          label: "Aspect de vétéran du combat",
+          description:
+            "Chaque fois qu'une compétence principale inflige des dégâts directs à une cible, votre prochaine utilisation de Charge, Bond ou Coup de pied inflige [4.0 - 10.0]%[x] de dégâts supplémentaires, jusqu'à un maximum de [20 - 50]%[x].",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 37,
+          image: "/gears/offensive.png",
+          label: "Aspect de vindicte",
+          description:
+            "Les cibles à distance ont 10% de chances d'être étourdies pendant 2 s lorsqu'elles vous infligent des dégâts. Vous infligez [15 - 35]%[x] de dégâts supplémentaires aux cibles étourdies ou renversées.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 38,
+          image: "/gears/offensive.png",
+          label: "Aspect des échos ancestraux",
+          description:
+            "Coup de chance : Bond, Soulèvement et Tourbillon ont jusqu'à [45 - 65]% de chances d'invoquer un Ancien qui répétera la même compétence. Cet effet ne peut se produire qu'une fois toutes les 5 s. Vos invocations infligent [20 - 40]% de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 39,
+          image: "/gears/offensive.png",
+          label: "Aspect des éléments",
+          description:
+            "Augmente les dégâts infligés par un ensemble de types de dégâts de [15 - 35]%[x] pendant 7 s. Cet effet alterne entre deux ensembles : feu, foudre et physiques ; froid, poison et ombre.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 40,
+          image: "/gears/offensive.png",
+          label: "Aspect diabolique",
+          description:
+            "Après la génération de 100 points de fureur, les prochains dégâts directs que vous infligez génèrent 2 tourbillons de poussière qui infligent [60 - 105] points de dégâts aux adversaires dans leur sillage.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 41,
+          image: "/gears/offensive.png",
+          label: "Aspect du combat",
+          description:
+            "Les cibles tuées dans les 2 s après avoir été touchées par Coup de pied ou Charge explosent en infligeant [375 - 488] points de dégâts aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 42,
+          image: "/gears/offensive.png",
+          label: "Aspect du crépuscule",
+          description:
+            "Lorsque vous infligez des dégâts avec une compétence de base, vous recevez 4% de vitesse d'attaque supplémentaire pendant 10 s, jusqu'à un maximum de 5 fois. Une fois ce seuil atteint, vous sombrez dans une rage de sang vampirique et obtenez un bonus de [40 - 60]%[x] aux dégâts des compétences de base et de 15% à la vitesse de déplacement pendant 10 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 43,
+          image: "/gears/offensive.png",
+          label: "Aspect du fouette-vent",
+          description:
+            "L'utilisation de Coup double génère un tourbillon de poussière qui inflige [53 - 83] points de dégâts aux adversaires dans son sillage.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 44,
+          image: "/gears/offensive.png",
+          label: "Aspect du frappe-terre",
+          description:
+            "Après avoir changé d'arme 8 fois, votre prochaine compétence, hors compétences de base, accablera et infligera [15 - 35]%[x] de dégâts d'accablement supplémentaires.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 45,
+          image: "/gears/offensive.png",
+          label: "Aspect du tourbillon de poussière",
+          description:
+            "Tourbillon laisse derrière lui des tourbillons de poussière qui infligent [120 - 210] points de dégâts aux adversaires dans leur sillage. Les cibles touchées par les tourbillons de poussière subissent 25%[x] de dégâts supplémentaires de toutes vos autres sources pendant 3 s.",
+          category: "Attaque",
+          class: "Barbare",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+        {
+          id: 46,
+          image: "/gears/offensive.png",
+          label: "Aspect expéditif",
+          description:
+            "La vitesse d'attaque des compétences de base est augmentée de [15 - 35]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
+        },
+      ],
+    },
   },
   druid: {
     Season8: {
@@ -24309,6 +28561,4769 @@ export const aspectMap = {
           label: "Aspect du Souffle de Vent",
           description: "Légendaire Offensif",
           category: "Offensif",
+          allowedGear: ["Offhand"],
+        },
+      ],
+    },
+    Season11: {
+      left: [
+        {
+          id: 1,
+          image: "/gears/utility.png",
+          label: "Aspect balistique",
+          description:
+            "Tant que vous bénéficiez d'une fortification, vos compétences de terre gagnent +2 rangs.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 2,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 3,
+          image: "/gears/defensive.png",
+          label: "Aspect d'approche sournoise",
+          description:
+            "Lorsque vous cumulez une perte de 50 % de votre maximum de vie, vous lancez automatiquement une compétence équipée de défense, de subterfuge ou macabre avant de subir les dégâts. Ne se produit qu'une fois toutes les [45 - 30] s et ne peut pas lancer de compétences de mobilité.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 4,
+          image: "/gears/defensive.png",
+          label: "Aspect d'assimilation",
+          description:
+            "Vous avez 8% de chances supplémentaires d'esquiver. Lorsque vous esquivez, vous obtenez une fortification équivalente à [5 - 12]% de votre maximum de points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 5,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 6,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 7,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 8,
+          image: "/gears/defensive.png",
+          label: "Aspect d'immortalité",
+          description:
+            "Lorsque vous utilisez une compétence, vous récupérez [0.5 - 2.5]% de vos points de vie. Ce bonus double si vous disposez de moins de 50% de vos points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 9,
+          image: "/gears/defensive.png",
+          label: "Aspect de barrière réfléchissante",
+          description:
+            "Après avoir subi des dégâts directs, vous avez [5.0 - 12.0]% de chances d'obtenir une barrière équivalente à 20% de votre maximum de points de vie pendant 10 s. Ces chances sont doublées contre les adversaires à distance.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 10,
+          image: "/gears/utility.png",
+          label: "Aspect de change-tempête",
+          description:
+            "Tant qu'Ouragan est actif, vos compétences de métamorphose gagnent +5 rangs.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 11,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1 456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 12,
+          image: "/gears/defensive.png",
+          label: "Aspect de désobéissance",
+          description:
+            "Votre armure est augmentée de [0.4 - 0.8]%[+] pendant 4 s lorsque vous infligez n'importe quel type de dégâts, jusqu'à un maximum de [25.0 - 46.0]%[+].",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 13,
+          image: "/gears/defensive.png",
+          label: "Aspect de force cyclonique",
+          description:
+            "Armure cyclonique confère aussi une réduction des dégâts physiques et est également lancée sur les forces alliées proches.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 14,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 15,
+          image: "/gears/defensive.png",
+          label: "Aspect de garde-terre",
+          description:
+            "Vous gagnez un bonus de [10 - 30]% à votre prochain Rempart de terre pour chaque cible à laquelle vous avez infligé un effet de perte de contrôle, jusqu'à un maximum de 100%.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 16,
+          image: "/gears/utility.png",
+          label: "Aspect de la terreur ursine",
+          description:
+            "Pulvérisation est désormais aussi une compétence de terre. Lorsque la compétence accable, le temps de recharge de vos compétences de terre est réduit de [0.50 - 1.50] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 17,
+          image: "/gears/defensive.png",
+          label: "Aspect de lien spirituel",
+          description:
+            "[10.0 - 17.5]% des dégâts que vous devriez subir sont répartis entre vos compagnons. Vos compagnons ne peuvent pas mourir.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 18,
+          image: "/gears/utility.png",
+          label: "Aspect de loup féroce",
+          description:
+            "Rage du grizzly est désormais une compétence de lycanthrope et vous transforme en lycanthrope féroce. Les lycanthropes féroces obtiennent [20 - 40]%[+] de vitesse de déplacement et de réduction du coût en esprit au lieu de réduction des dégâts. En outre, les victimes vous rendent 10% de votre maximum de vie.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 19,
+          image: "/gears/defensive.png",
+          label: "Aspect de marchepeau",
+          description:
+            "Quand vous utilisez une compétence de métamorphose qui vous fait changer de forme, vous récupérez [5 - 25]% de votre maximum de points de vie. Si vous avez déjà tous vos points de vie, vous obtenez le même montant en fortification.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 20,
+          image: "/gears/defensive.png",
+          label: "Aspect de mastodonte",
+          description:
+            "Vous obtenez [583 - 816] points d'armure, mais le temps de recharge d'Esquive augmente de 100%.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 21,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 22,
+          image: "/gears/defensive.png",
+          label: "Aspect de mutilation enfiévrée",
+          description:
+            "Lorsque vous touchez au moins 1 adversaire avec Mutilation, sa vitesse d'attaque est augmentée de [1.0 - 3.0]%[+] et vous obtenez [1.0 - 5.0]%[x] de réduction des dégâts pendant 5 s. Cumulable jusqu'à 5 fois.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 23,
+          image: "/gears/defensive.png",
+          label: "Aspect de pierre de guérison",
+          description:
+            "La durée de Rempart de terre est augmentée de 6 s. De plus, tuer une cible rend [40 - 302] points de santé à la barrière de votre rempart de terre actif.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 24,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 25,
+          image: "/gears/utility.png",
+          label: "Aspect de sables mouvants",
+          description:
+            "Les cibles touchées par des compétences de terre sont ralenties de [20 - 60]% pendant 5 s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 26,
+          image: "/gears/defensive.png",
+          label: "Aspect de sagesse par le nombre",
+          description:
+            "Vos chances d'esquiver sont augmentées de 8 %. Vous récupérez [5 - 25]% de votre maximum de vie en cas d'esquive réussie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 27,
+          image: "/gears/defensive.png",
+          label: "Aspect de toute-puissance",
+          description:
+            "Les compétences de base confèrent 20.0% de réduction des dégâts pendant [2.0 - 10.0] s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 28,
+          image: "/gears/defensive.png",
+          label: "Aspect du cœur prudent",
+          description:
+            "Après avoir subi des dégâts équivalant à au moins 20 % de votre maximum de vie à la fois, vous devenez insensible pendant [2.5 - 4.0] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 29,
+          image: "/gears/utility.png",
+          label: "Aspect du loup agile",
+          description:
+            "Déchiquetage bénéficie d'une 4e attaque rapide qui frappe l'ensemble des adversaires à proximité, les renverse pendant 2 s et inflige [20 - 60]%[x] points de dégâts supplémentaires.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 30,
+          image: "/gears/defensive.png",
+          label: "Aspect du Protecteur",
+          description:
+            "Le fait de blesser une cible adverse élite vous octroie une barrière qui absorbe jusqu'à [655 - 5 898] points de dégâts pendant 10 s. Cet effet ne peut se produire qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 31,
+          image: "/gears/utility.png",
+          label: "Aspect du sombre hurlement",
+          description:
+            "Rugissement débilitant est désormais une compétence de lycanthrope. De plus, Rugissement débilitant immobilise les cibles empoisonnées pendant [2.5 - 4.5] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 32,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 33,
+          image: "/gears/defensive.png",
+          label: "Aspect protecteur",
+          description:
+            "Lorsque vous n'êtes pas en bonne santé, vous invoquez une bulle protectrice qui rend insensible l'ensemble des personnages-joueurs à l'intérieur. La bulle dure [2.5 - 6.0] s et ne peut se former qu'une fois toutes les 90 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 34,
+          image: "/gears/utility.png",
+          label: "Aspect symbiotique",
+          description:
+            "Lorsque la compétence passive principale Fureur de la nature déclenche gratuitement une compétence, vos temps de recharge non ultimes du type opposé sont réduits de [2.5 - 6.0] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 35,
+          image: "/gears/defensive.png",
+          label: "Aspect vigoureux",
+          description:
+            "Vous gagnez [7.5 - 17.5]% de réduction des dégâts tant que vous êtes sous forme de lycanthrope.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Barre"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/utility.png",
+          label: "Aspect balistique",
+          description:
+            "Tant que vous bénéficiez d'une fortification, vos compétences de terre gagnent +2 rangs.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 2,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 3,
+          image: "/gears/defensive.png",
+          label: "Aspect d'approche sournoise",
+          description:
+            "Lorsque vous cumulez une perte de 50 % de votre maximum de vie, vous lancez automatiquement une compétence équipée de défense, de subterfuge ou macabre avant de subir les dégâts. Ne se produit qu'une fois toutes les [45 - 30] s et ne peut pas lancer de compétences de mobilité.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 4,
+          image: "/gears/defensive.png",
+          label: "Aspect d'assimilation",
+          description:
+            "Vous avez 8% de chances supplémentaires d'esquiver. Lorsque vous esquivez, vous obtenez une fortification équivalente à [5 - 12]% de votre maximum de points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 5,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 6,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 7,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 8,
+          image: "/gears/defensive.png",
+          label: "Aspect d'immortalité",
+          description:
+            "Lorsque vous utilisez une compétence, vous récupérez [0.5 - 2.5]% de vos points de vie. Ce bonus double si vous disposez de moins de 50% de vos points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 9,
+          image: "/gears/defensive.png",
+          label: "Aspect de barrière réfléchissante",
+          description:
+            "Après avoir subi des dégâts directs, vous avez [5.0 - 12.0]% de chances d'obtenir une barrière équivalente à 20% de votre maximum de points de vie pendant 10 s. Ces chances sont doublées contre les adversaires à distance.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 10,
+          image: "/gears/utility.png",
+          label: "Aspect de change-tempête",
+          description:
+            "Tant qu'Ouragan est actif, vos compétences de métamorphose gagnent +5 rangs.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 11,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1 456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 12,
+          image: "/gears/defensive.png",
+          label: "Aspect de désobéissance",
+          description:
+            "Votre armure est augmentée de [0.4 - 0.8]%[+] pendant 4 s lorsque vous infligez n'importe quel type de dégâts, jusqu'à un maximum de [25.0 - 46.0]%[+].",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 13,
+          image: "/gears/defensive.png",
+          label: "Aspect de force cyclonique",
+          description:
+            "Armure cyclonique confère aussi une réduction des dégâts physiques et est également lancée sur les forces alliées proches.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 14,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 15,
+          image: "/gears/defensive.png",
+          label: "Aspect de garde-terre",
+          description:
+            "Vous gagnez un bonus de [10 - 30]% à votre prochain Rempart de terre pour chaque cible à laquelle vous avez infligé un effet de perte de contrôle, jusqu'à un maximum de 100%.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 16,
+          image: "/gears/utility.png",
+          label: "Aspect de la terreur ursine",
+          description:
+            "Pulvérisation est désormais aussi une compétence de terre. Lorsque la compétence accable, le temps de recharge de vos compétences de terre est réduit de [0.50 - 1.50] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 17,
+          image: "/gears/defensive.png",
+          label: "Aspect de lien spirituel",
+          description:
+            "[10.0 - 17.5]% des dégâts que vous devriez subir sont répartis entre vos compagnons. Vos compagnons ne peuvent pas mourir.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 18,
+          image: "/gears/utility.png",
+          label: "Aspect de loup féroce",
+          description:
+            "Rage du grizzly est désormais une compétence de lycanthrope et vous transforme en lycanthrope féroce. Les lycanthropes féroces obtiennent [20 - 40]%[+] de vitesse de déplacement et de réduction du coût en esprit au lieu de réduction des dégâts. En outre, les victimes vous rendent 10% de votre maximum de vie.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 19,
+          image: "/gears/defensive.png",
+          label: "Aspect de marchepeau",
+          description:
+            "Quand vous utilisez une compétence de métamorphose qui vous fait changer de forme, vous récupérez [5 - 25]% de votre maximum de points de vie. Si vous avez déjà tous vos points de vie, vous obtenez le même montant en fortification.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 20,
+          image: "/gears/defensive.png",
+          label: "Aspect de mastodonte",
+          description:
+            "Vous obtenez [583 - 816] points d'armure, mais le temps de recharge d'Esquive augmente de 100%.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 21,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 22,
+          image: "/gears/defensive.png",
+          label: "Aspect de mutilation enfiévrée",
+          description:
+            "Lorsque vous touchez au moins 1 adversaire avec Mutilation, sa vitesse d'attaque est augmentée de [1.0 - 3.0]%[+] et vous obtenez [1.0 - 5.0]%[x] de réduction des dégâts pendant 5 s. Cumulable jusqu'à 5 fois.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 23,
+          image: "/gears/defensive.png",
+          label: "Aspect de pierre de guérison",
+          description:
+            "La durée de Rempart de terre est augmentée de 6 s. De plus, tuer une cible rend [40 - 302] points de santé à la barrière de votre rempart de terre actif.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 24,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 25,
+          image: "/gears/utility.png",
+          label: "Aspect de sables mouvants",
+          description:
+            "Les cibles touchées par des compétences de terre sont ralenties de [20 - 60]% pendant 5 s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 26,
+          image: "/gears/defensive.png",
+          label: "Aspect de sagesse par le nombre",
+          description:
+            "Vos chances d'esquiver sont augmentées de 8 %. Vous récupérez [5 - 25]% de votre maximum de vie en cas d'esquive réussie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 27,
+          image: "/gears/defensive.png",
+          label: "Aspect de toute-puissance",
+          description:
+            "Les compétences de base confèrent 20.0% de réduction des dégâts pendant [2.0 - 10.0] s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 28,
+          image: "/gears/defensive.png",
+          label: "Aspect du cœur prudent",
+          description:
+            "Après avoir subi des dégâts équivalant à au moins 20 % de votre maximum de vie à la fois, vous devenez insensible pendant [2.5 - 4.0] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 29,
+          image: "/gears/utility.png",
+          label: "Aspect du loup agile",
+          description:
+            "Déchiquetage bénéficie d'une 4e attaque rapide qui frappe l'ensemble des adversaires à proximité, les renverse pendant 2 s et inflige [20 - 60]%[x] points de dégâts supplémentaires.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 30,
+          image: "/gears/defensive.png",
+          label: "Aspect du Protecteur",
+          description:
+            "Le fait de blesser une cible adverse élite vous octroie une barrière qui absorbe jusqu'à [655 - 5 898] points de dégâts pendant 10 s. Cet effet ne peut se produire qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 31,
+          image: "/gears/utility.png",
+          label: "Aspect du sombre hurlement",
+          description:
+            "Rugissement débilitant est désormais une compétence de lycanthrope. De plus, Rugissement débilitant immobilise les cibles empoisonnées pendant [2.5 - 4.5] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 32,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 33,
+          image: "/gears/defensive.png",
+          label: "Aspect protecteur",
+          description:
+            "Lorsque vous n'êtes pas en bonne santé, vous invoquez une bulle protectrice qui rend insensible l'ensemble des personnages-joueurs à l'intérieur. La bulle dure [2.5 - 6.0] s et ne peut se former qu'une fois toutes les 90 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 34,
+          image: "/gears/utility.png",
+          label: "Aspect symbiotique",
+          description:
+            "Lorsque la compétence passive principale Fureur de la nature déclenche gratuitement une compétence, vos temps de recharge non ultimes du type opposé sont réduits de [2.5 - 6.0] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 35,
+          image: "/gears/defensive.png",
+          label: "Aspect vigoureux",
+          description:
+            "Vous gagnez [7.5 - 17.5]% de réduction des dégâts tant que vous êtes sous forme de lycanthrope.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Armure de poitrine"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/utility.png",
+          label: "Aspect balistique",
+          description:
+            "Tant que vous bénéficiez d'une fortification, vos compétences de terre gagnent +2 rangs.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 2,
+          image: "/gears/offensive.png",
+          label: "Aspect d'abus",
+          description:
+            "La durée des effets de perte de contrôle que vous infligez est augmentée de 20%. Tant que les adversaires sont inarrêtables, vous leur infligez [25 - 45]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 3,
+          image: "/gears/offensive.png",
+          label: "Aspect d'accélération",
+          description:
+            "Les coups critiques avec les compétences principales augmentent votre vitesse d'attaque de [10.0 - 30.0]%[+] pendant 5 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 4,
+          image: "/gears/offensive.png",
+          label: "Aspect d'activité sismique",
+          description:
+            "Pointe de terre inflige [50 - 70]%[x] de dégâts supplémentaires et projette 2 rangées de pointes en ligne droite.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 5,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 6,
+          image: "/gears/offensive.png",
+          label: "Aspect d'arrogance",
+          description:
+            "Vous infligez [10 - 30]%[x] de dégâts supplémentaires tant que vous avez une barrière active.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 7,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 8,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 9,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 10,
+          image: "/gears/offensive.png",
+          label: "Aspect d'équilibre naturel",
+          description:
+            "Utiliser une compétence de tempête augmente les dégâts critiques de vos compétences de terre de [50.0 - 70.0]%[x] pendant 4 s. Utiliser une compétence de terre augmente les chances d'infliger un coup critique de vos compétences de tempête de [10.0 - 15.0]%[+] pendant 4 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 11,
+          image: "/gears/offensive.png",
+          label: "Aspect d'explosion anticlinale",
+          description:
+            "Explosion de pierres inflige [15 - 35]%[x] de dégâts supplémentaires et déclenche un accablement garanti lorsqu'elle explose à sa taille maximale.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 12,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hirsutisme",
+          description:
+            "Les dégâts d'épines infligés ont [25 - 45]% de chances d'infliger des dégâts aux adversaires autour de vous et de vos serviteurs.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 13,
+          image: "/gears/offensive.png",
+          label: "Aspect d'onde de choc",
+          description:
+            "Pulvérisation génère aussi une onde de choc qui se propage vers l'avant en infligeant [80 - 120]% de ses dégâts aux cibles sur son passage.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 14,
+          image: "/gears/offensive.png",
+          label: "Aspect de calme intérieur",
+          description:
+            "Vous infligez [5.0 - 13.0]%[x] de dégâts supplémentaires. Ce bonus est triplé lorsque vous restez immobile pendant 3 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 15,
+          image: "/gears/offensive.png",
+          label: "Aspect de cavalcade",
+          description:
+            "Vous gagnez 1 compagnon supplémentaire. De plus, les compétences de compagnon infligent [15 - 35]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 16,
+          image: "/gears/utility.png",
+          label: "Aspect de change-tempête",
+          description:
+            "Tant qu'Ouragan est actif, vos compétences de métamorphose gagnent +5 rangs.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 17,
+          image: "/gears/offensive.png",
+          label: "Aspect de châtiment",
+          description:
+            "Vos chances d'infliger un coup critique aux cibles blessées sont augmentées de [13 - 23]%[+]. Lorsque vous êtes en bonne santé, vous bénéficiez d'une augmentation de la durée des effets de perte de contrôle [25 - 45]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 18,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1 456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 19,
+          image: "/gears/offensive.png",
+          label: "Aspect de conduction runomancienne",
+          description:
+            "Lorsque vos compétences de tempête infligent un coup critique, des éclats de foudre frappent vos adversaires à intervalles réguliers pendant 3 s et leur infligent [375 - 675] points de dégâts de foudre. Vos éclats de foudre infligent [30 - 50]%[x] points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 20,
+          image: "/gears/offensive.png",
+          label: "Aspect de défenses fracassées",
+          description:
+            "Explosion de pierres permet à vos autres compétences d'infliger [30 - 50]%[x] de dégâts supplémentaires aux adversaires pendant 5 s. Le coût en esprit d'Explosion de pierres est réduit de 10 points.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 21,
+          image: "/gears/offensive.png",
+          label: "Aspect de destin inévitable",
+          description:
+            "Lorsqu'une cible tombe à moins de 35% de points de vie sous l'effet d'un de vos dégâts sur la durée, une explosion se produit toutes les 7 s, infligeant [300 - 525] points de dégâts pour chaque élément qui l'affecte.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 22,
+          image: "/gears/offensive.png",
+          label: "Aspect de force brute",
+          description:
+            "Après avoir atteint 15 adversaires avec vos compétences de métamorphose, la prochaine fois que vous utiliserez une compétence d'ursoïde, vous infligerez [40 - 60]%[x] de dégâts supplémentaires et étourdirez vos cibles pendant 3 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 23,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 24,
+          image: "/gears/offensive.png",
+          label: "Aspect de funambule",
+          description:
+            "Les compétences infligent jusqu'à [5 - 25]%[x] de dégâts supplémentaires en fonction de votre ressource principale disponible à leur lancement, pour un résultat maximal lorsque votre ressource principale est au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 25,
+          image: "/gears/offensive.png",
+          label: "Aspect de griffes électriques",
+          description:
+            "Lorsque vous vous métamorphosez en un nouvel animal, vous libérez un éclat de foudre qui inflige 600 points de dégâts de foudre. Vos éclats de foudre infligent [20 - 40]%[x] de dégâts supplémentaires et étourdissent pendant 2 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 26,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'alpha",
+          description:
+            "Vos compagnons loups sont maintenant des compagnons lycanthropes. Ils infligent [100 - 140]%[x] de dégâts supplémentaires et peuvent répandre le virus rabique.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 27,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'attente",
+          description:
+            "Après avoir attaqué des adversaires avec une compétence de base, les dégâts de votre prochaine compétence principale lancée dans les 5 s qui suivent sont augmentés de [5 - 12]%[x], jusqu'à 30%[x] au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 28,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'oiseau des tempêtes",
+          description:
+            "Vos corbeaux infligent désormais des dégâts de foudre augmentés de [60 - 100]%. La compétence active de Corbeaux inflige la totalité de ses dégâts en moitié moins de temps et étourdit les adversaires dans sa zone d'effet.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 29,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'ours enragé",
+          description:
+            "Tant que Rage du grizzly est active, vos dégâts directs sont convertis en dégâts de poison, vous infligez [40 - 80]%[x] de dégâts de poison supplémentaires et vous répandez Morsure rabique de manière passive.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 30,
+          image: "/gears/offensive.png",
+          label: "Aspect de la bête humaine enragée",
+          description:
+            "La durée de Rage du grizzly est augmentée de [3.0 - 10.0] s. De plus, les coups critiques portés alors que Rage du grizzly est active infligent 5%[x] de dégâts critiques supplémentaires, jusqu'à un maximum de 100%[x].",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 31,
+          image: "/gears/offensive.png",
+          label: "Aspect de la bête trouble",
+          description:
+            "Déchiquetage inflige [55 - 75]%[x] de dégâts supplémentaires et a 33% de chances de porter un coup supplémentaire, jusqu'à 4 fois.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 32,
+          image: "/gears/offensive.png",
+          label: "Aspect de la dette du métamorphe",
+          description:
+            "Vous infligez [25 - 65]%[x] de dégâts supplémentaires lorsque vous attaquez une cible empoisonnée sous forme d'ursoïde ou une cible sous l'effet d'une perte de contrôle sous forme de lycanthrope.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 33,
+          image: "/gears/offensive.png",
+          label: "Aspect de la fureur déchaînée",
+          description:
+            "L'utilisation d'une compétence ultime augmente les dégâts de vos compétences ultimes de [6.0 - 10.0]%[x], jusqu'à un maximum de [60 - 100]%[x]. Lorsque vous avez cumulé cet effet 10 fois, il se réinitialise tout comme vos temps de recharge.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 34,
+          image: "/gears/offensive.png",
+          label: "Aspect de la mort insidieuse",
+          description:
+            "Vous infligez aux adversaires [5.0 - 20.0]%[x] de dégâts supplémentaires sur la durée pour chaque effet de perte de contrôle différent qui leur est appliqué. Vous infligez plutôt [10 - 40]%[x] aux adversaires inarrêtables et aux boss stupéfiés.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 35,
+          image: "/gears/offensive.png",
+          label: "Aspect de la nature sauvage",
+          description:
+            "Les compétences de lycanthrope sont considérées comme des compétences de tempête et les compétences d'ursoïde comme des compétences de terre pour la compétence passive principale Fureur de la nature.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 36,
+          image: "/gears/offensive.png",
+          label: "Aspect de la puissance tempétueuse",
+          description:
+            "La compétence passive principale Puissance tectonique s'applique aussi à vos compétences de tempête.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 37,
+          image: "/gears/offensive.png",
+          label: "Aspect de la réplique",
+          description:
+            "Chacun des piliers de terre d'Éboulement frappe une seconde fois et inflige [5.5 - 15.5]% de dégâts supplémentaires par coup.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 38,
+          image: "/gears/offensive.png",
+          label: "Aspect de la tempête",
+          description:
+            "Les dégâts d'Ouragan augmentent de [15.0 - 25.0]%[x] par seconde où il reste actif.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 39,
+          image: "/gears/offensive.png",
+          label: "Aspect de la terre piétinée",
+          description:
+            "Piétinement rend désormais la terre, ce qui génère 6 piliers d'éboulement qui infligent [100 - 140]% des dégâts normaux. Piétinement est désormais également une compétence de magie naturelle et de terre.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 40,
+          image: "/gears/utility.png",
+          label: "Aspect de la terreur ursine",
+          description:
+            "Pulvérisation est désormais aussi une compétence de terre. Lorsque la compétence accable, le temps de recharge de vos compétences de terre est réduit de [0.50 - 1.50] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 41,
+          image: "/gears/utility.png",
+          label: "Aspect de loup féroce",
+          description:
+            "Rage du grizzly est désormais une compétence de lycanthrope et vous transforme en lycanthrope féroce. Les lycanthropes féroces obtiennent [20 - 40]%[+] de vitesse de déplacement et de réduction du coût en esprit au lieu de réduction des dégâts. En outre, les victimes vous rendent 10% de votre maximum de vie.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 42,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 43,
+          image: "/gears/offensive.png",
+          label: "Aspect de pluie lupine",
+          description:
+            "L'utilisation d'Ouragan invoque également un ouragan plus petit à l'emplacement de vos loups pendant 8 s. Ces ouragans infligent [15.0 - 25.0]% de vos dégâts d'Ouragan par loup actif.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 44,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 45,
+          image: "/gears/offensive.png",
+          label: "Aspect de querelleur",
+          description:
+            "L'utilisation d'une compétence ultime augmente vos dégâts de [10 - 30]%[x] pendant 8 s. Vos compétences ultimes bénéficient de 2 rangs supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 46,
+          image: "/gears/offensive.png",
+          label: "Aspect de représailles",
+          description:
+            "Vos compétences principales infligent jusqu'à [35 - 75]%[x] de dégâts supplémentaires en fonction de votre montant de fortification.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 47,
+          image: "/gears/offensive.png",
+          label: "Aspect de roche écrasante",
+          description:
+            "Les compétences de terre infligent [35 - 75]%[x] de dégâts supplémentaires aux adversaires sous l'effet d'une perte de contrôle.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 48,
+          image: "/gears/offensive.png",
+          label: "Aspect de roche métamorphique",
+          description:
+            "Rocher est désormais aussi une compétence principale qui coûte 40 points d'esprit et qui inflige [120 - 160]% des dégâts normaux.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 49,
+          image: "/gears/utility.png",
+          label: "Aspect de sables mouvants",
+          description:
+            "Les cibles touchées par des compétences de terre sont ralenties de [20 - 60]% pendant 5 s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 50,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang bouillonnant",
+          description:
+            "Lorsque vos compétences principales accablent les adversaires, vous faites apparaître 3 gouttes de sang instable. Ramassez-en une pour la faire exploser et infliger [263 - 938] points de dégâts physiques autour de vous. Toutes les 20 s, votre prochaine compétence accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 51,
+          image: "/gears/offensive.png",
+          label: "Aspect de sauvagerie",
+          description:
+            "Lorsque vous utilisez une compétence de compagnon, vous avez [20 - 40]% de chances d'activer une compétence de compagnon équipée et de réduire son temps de recharge de 5 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 52,
+          image: "/gears/offensive.png",
+          label: "Aspect de toucher maudit",
+          description:
+            "Coup de chance : vos compétences ont jusqu'à [20.0 - 40.0]% de chances d'infliger aux adversaires une malédiction vampirique. Toute cible affectée par une malédiction vampirique est également vulnérable. Les âmes stockées par la malédiction vampirique infligent [20.0 - 60.0]% points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 53,
+          image: "/gears/offensive.png",
+          label: "Aspect de vindicte",
+          description:
+            "Les cibles à distance ont 10% de chances d'être étourdies pendant 2 s lorsqu'elles vous infligent des dégâts. Vous infligez [15 - 35]%[x] de dégâts supplémentaires aux cibles étourdies ou renversées.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 54,
+          image: "/gears/offensive.png",
+          label: "Aspect de virevolte",
+          description:
+            "Les coups critiques d'Orage et d'Éclat de foudre ont 50% de chances d'invoquer 3 éclairs virevoltants qui traquent les adversaires dans la zone et leur infligent [233 - 300] points de dégâts de foudre. Vos éclairs virevoltants infligent 30%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 55,
+          image: "/gears/offensive.png",
+          label: "Aspect des éléments",
+          description:
+            "Augmente les dégâts infligés par un ensemble de types de dégâts de [15 - 35]%[x] pendant 7 s. Cet effet alterne entre deux ensembles : feu, foudre et physiques ; froid, poison et ombre.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 56,
+          image: "/gears/offensive.png",
+          label: "Aspect des griffes de la tempête",
+          description:
+            "Les coups critiques effectués avec Déchiquetage infligent [40 - 60]% de leurs dégâts sous forme de dégâts de foudre à la cible et aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 57,
+          image: "/gears/offensive.png",
+          label: "Aspect du berger",
+          description:
+            "Les compétences de compagnon infligent [5.0 - 13.0]%[x] de dégâts supplémentaires par compagnon dont vous disposez.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 58,
+          image: "/gears/offensive.png",
+          label: "Aspect du crépuscule",
+          description:
+            "Lorsque vous infligez des dégâts avec une compétence de base, vous recevez 4% de vitesse d'attaque supplémentaire pendant 10 s, jusqu'à un maximum de 5 fois. Une fois ce seuil atteint, vous sombrez dans une rage de sang vampirique et obtenez un bonus de [40 - 60]%[x] aux dégâts des compétences de base et de 15% à la vitesse de déplacement pendant 10 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 59,
+          image: "/gears/offensive.png",
+          label: "Aspect du déluge imminent",
+          description:
+            "Coup de tonnerre se propage à deux fois plus de cibles et celles-ci subissent [30 - 50]%[x] de dégâts supplémentaires de vos autres compétences pendant 6 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 60,
+          image: "/gears/offensive.png",
+          label: "Aspect du hurleur nocturne",
+          description:
+            "Hurlement sanglant augmente de [10.0 - 18.0]%[+] vos chances d'infliger un coup critique. De plus, Hurlement sanglant affecte aussi les personnages-joueurs proches pendant 3 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 61,
+          image: "/gears/utility.png",
+          label: "Aspect du loup agile",
+          description:
+            "Déchiquetage bénéficie d'une 4e attaque rapide qui frappe l'ensemble des adversaires à proximité, les renverse pendant 2 s et inflige [20 - 60]%[x] points de dégâts supplémentaires.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 62,
+          image: "/gears/utility.png",
+          label: "Aspect du sombre hurlement",
+          description:
+            "Rugissement débilitant est désormais une compétence de lycanthrope. De plus, Rugissement débilitant immobilise les cibles empoisonnées pendant [2.5 - 4.5] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 63,
+          image: "/gears/offensive.png",
+          label: "Aspect du traque-tempêtes",
+          description:
+            "Tornade attire les cibles non élites et inflige [20.0 - 40.0]%[x] de dégâts supplémentaires. Chaque adversaire ou objet qui se trouve à l'intérieur de la tornade augmente les dégâts de 10%[x] supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 64,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 65,
+          image: "/gears/offensive.png",
+          label: "Aspect expéditif",
+          description:
+            "La vitesse d'attaque des compétences de base est augmentée de [15 - 35]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 66,
+          image: "/gears/offensive.png",
+          label: "Aspect Rage lunaire",
+          description:
+            "Lorsque vous tuez une cible, vous avez 5% de chances d'invoquer un compagnon loup à vos côtés pendant [20 - 35] s. Cet effet bénéficie d'un coup de chance contre les boss. 3 loups supplémentaires au maximum. De plus, vous gagnez 3 rangs pour vos loups.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 67,
+          image: "/gears/offensive.png",
+          label: "Aspect souterrain",
+          description:
+            "La compétence active de Lierre empoisonné lance également Éboulement dans un cercle autour de vous. Les compétences de terre infligent [15 - 35]% de dégâts supplémentaires aux cibles empoisonnées.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 68,
+          image: "/gears/offensive.png",
+          label: "Aspect surchargé",
+          description:
+            "Vos dégâts de foudre directs augmentent les dégâts infligés par vos compétences de tempête de [0.80 - 1.60]%[x], jusqu'à un maximum de 0.00%[x]. Une fois le maximum de cumuls atteint, la cible devient vulnérable.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 69,
+          image: "/gears/utility.png",
+          label: "Aspect symbiotique",
+          description:
+            "Lorsque la compétence passive principale Fureur de la nature déclenche gratuitement une compétence, vos temps de recharge non ultimes du type opposé sont réduits de [2.5 - 6.0] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+        {
+          id: 70,
+          image: "/gears/offensive.png",
+          label: "Aspect virulent",
+          description:
+            "Lorsque Morsure rabique infecte une cible adverse, son temps de recharge est réduit de [0.20 - 1.00] s. La réduction du temps de recharge est triplée lorsque vous infectez des cibles élites. Vous infligez [25 - 50]%[x] de dégâts supplémentaires aux cibles adverses infectées par Morsure rabique.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Gants"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/utility.png",
+          label: "Aspect balistique",
+          description:
+            "Tant que vous bénéficiez d'une fortification, vos compétences de terre gagnent +2 rangs.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 2,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 3,
+          image: "/gears/defensive.png",
+          label: "Aspect d'approche sournoise",
+          description:
+            "Lorsque vous cumulez une perte de 50 % de votre maximum de vie, vous lancez automatiquement une compétence équipée de défense, de subterfuge ou macabre avant de subir les dégâts. Ne se produit qu'une fois toutes les [45 - 30] s et ne peut pas lancer de compétences de mobilité.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 4,
+          image: "/gears/defensive.png",
+          label: "Aspect d'assimilation",
+          description:
+            "Vous avez 8% de chances supplémentaires d'esquiver. Lorsque vous esquivez, vous obtenez une fortification équivalente à [5 - 12]% de votre maximum de points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 5,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%[x]. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 6,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu’il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 7,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 8,
+          image: "/gears/defensive.png",
+          label: "Aspect d'immortalité",
+          description:
+            "Lorsque vous utilisez une compétence, vous récupérez [0.5 - 2.5]% de vos points de vie. Ce bonus double si vous disposez de moins de 50% de vos points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 9,
+          image: "/gears/defensive.png",
+          label: "Aspect de barrière réfléchissante",
+          description:
+            "Après avoir subi des dégâts directs, vous avez [5.0 - 12.0]% de chances d'obtenir une barrière équivalente à 20% de votre maximum de points de vie pendant 10 s. Ces chances sont doublées contre les adversaires à distance.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 10,
+          image: "/gears/utility.png",
+          label: "Aspect de change-tempête",
+          description:
+            "Tant qu'Ouragan est actif, vos compétences de métamorphose gagnent +5 rangs.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 11,
+          image: "/gears/offensive.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1.456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 12,
+          image: "/gears/defensive.png",
+          label: "Aspect de désobéissance",
+          description:
+            "Votre armure est augmentée de [0.4 - 0.8]%[+] pendant 4 s lorsque vous infligez n'importe quel type de dégâts, jusqu'à un maximum de [25.0 - 46.0]%[+].",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 13,
+          image: "/gears/defensive.png",
+          label: "Aspect de force cyclonique",
+          description:
+            "Armure cyclonique confère aussi une réduction des dégâts physiques et est également lancée sur les forces alliées proches.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 14,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébètement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+
+        {
+          id: 15,
+          image: "/gears/defensive.png",
+          label: "Aspect de garde-terre",
+          description:
+            "Vous gagnez un bonus de [10 - 30]% à votre prochain Rempart de terre pour chaque cible à laquelle vous avez infligé un effet de perte de contrôle, jusqu'à un maximum de 100%.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 16,
+          image: "/gears/utility.png",
+          label: "Aspect de la terreur ursine",
+          description:
+            "Pulvérisation est désormais aussi une compétence de terre. Lorsque la compétence accable, le temps de recharge de vos compétences de terre est réduit de [0.50 - 1.50] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 17,
+          image: "/gears/defensive.png",
+          label: "Aspect de lien spirituel",
+          description:
+            "[10.0 - 17.5]% des dégâts que vous devriez subir sont répartis entre vos compagnons. Vos compagnons ne peuvent pas mourir.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 18,
+          image: "/gears/utility.png",
+          label: "Aspect de loup féroce",
+          description:
+            "Rage du grizzly est désormais une compétence de lycanthrope et vous transforme en lycanthrope féroce. Les lycanthropes féroces obtiennent [20 - 40]%[+] de vitesse de déplacement et de réduction du coût en esprit au lieu de réduction des dégâts. En outre, les victimes vous rendent 10% de votre maximum de points de vie.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 19,
+          image: "/gears/defensive.png",
+          label: "Aspect de marchepeau",
+          description:
+            "Quand vous utilisez une compétence de métamorphose qui vous fait changer de forme, vous récupérez [5 - 25]% de votre maximum de points de vie. Si vous avez déjà tous vos points de vie, vous obtenez le même montant en points de fortification.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 20,
+          image: "/gears/defensive.png",
+          label: "Aspect de mastodonte",
+          description:
+            "Vous obtenez [583 - 816] points d'armure, mais le temps de recharge d'Esquive augmente de 100%.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 21,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 22,
+          image: "/gears/defensive.png",
+          label: "Aspect de mutation enfiévrée",
+          description:
+            "Lorsque vous touchez au moins 1 adversaire avec Mutation, sa vitesse d'attaque est augmentée de [1.0 - 3.0]%[+] et vous obtenez [1.0 - 5.0]%[x] de réduction des dégâts pendant 5 s. Cumulable jusqu'à 5 fois.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 23,
+          image: "/gears/defensive.png",
+          label: "Aspect de pierre de guérison",
+          description:
+            "La durée de Rempart de terre est augmentée de 6 s. De plus, tuer une cible rend [40 - 302] points de santé à la barrière de votre rempart de terre actif.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 24,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 25,
+          image: "/gears/utility.png",
+          label: "Aspect de sables mouvants",
+          description:
+            "Les cibles touchées par des compétences de terre sont ralenties de [20 - 60]% pendant 5 s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 26,
+          image: "/gears/defensive.png",
+          label: "Aspect de sagesse par le nombre",
+          description:
+            "Vos chances d'esquiver sont augmentées de 8%. Vous récupérez [5 - 25]% de votre maximum de vie en cas d'esquive réussie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 27,
+          image: "/gears/defensive.png",
+          label: "Aspect de toute-puissance",
+          description:
+            "Les compétences de base confèrent 20.0% de réduction des dégâts pendant [2.0 - 10.0] s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 28,
+          image: "/gears/defensive.png",
+          label: "Aspect du cœur prudent",
+          description:
+            "Après avoir subi des dégâts équivalant à au moins 20% de votre maximum de vie à la fois, vous devenez insensible pendant [2.5 - 4.0] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 29,
+          image: "/gears/utility.png",
+          label: "Aspect du loup agile",
+          description:
+            "Déchiquetage bénéficie d'une 4e attaque rapide qui frappe l'ensemble des adversaires à proximité, les renverse pendant 2 s et inflige [20 - 60]%[x] points de dégâts supplémentaires.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 30,
+          image: "/gears/defensive.png",
+          label: "Aspect du protecteur",
+          description:
+            "Le fait de blesser une cible adverse élite vous octroie une barrière qui absorbe jusqu'à [655 - 5.898] points de dégâts pendant 10 s. Cet effet ne peut se produire qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 31,
+          image: "/gears/utility.png",
+          label: "Aspect du sombre hurlement",
+          description:
+            "Rugissement débilitant est désormais une compétence de lycanthrope. De plus, Rugissement débilitant immobilise les cibles empoisonnées pendant [2.5 - 4.5] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 32,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 33,
+          image: "/gears/defensive.png",
+          label: "Aspect protecteur",
+          description:
+            "Lorsque vous n'êtes pas en bonne santé, vous invoquez une bulle protectrice qui rend insensible l'ensemble des personnages-joueurs à l'intérieur. La bulle dure [2.5 - 6.0] s et ne peut se former qu'une fois toutes les 90 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 34,
+          image: "/gears/utility.png",
+          label: "Aspect symbiotique",
+          description:
+            "Lorsque la compétence passive principale Fureur de la nature déclenche gratuitement une compétence, vos temps de recharge non ultimes du type opposé sont réduits de [2.5 - 6.0] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 35,
+          image: "/gears/defensive.png",
+          label: "Aspect vigoureux",
+          description:
+            "Vous gagnez [7.5 - 17.5]% de réduction des dégâts tant que vous êtes sous forme de lycanthrope.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Pantalon"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/defensive.png",
+          label: "Aspect ballistique",
+          description:
+            "Tant que vous bénéficiez d'une fortification, vos compétences de terre gagnent +2 rangs.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 2,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l’un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 3,
+          image: "/gears/mobility.png",
+          label: "Aspect d'arpenteur spectral",
+          description:
+            "Lorsque vous êtes inarrêtable et pendant les 4 s qui suivent la fin de cet effet, votre vitesse de déplacement augmente de [10 - 30]%[+] et vous pouvez vous mouvoir librement.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 4,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance mercenaire en renfort",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois tous les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 5,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu’il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu’une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 6,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 7,
+          image: "/gears/mobility.png",
+          label: "Aspect de carnage",
+          description:
+            "Vous obtenez 20% de vitesse de déplacement. Ce bonus disparaît pendant [5.0 - 2.0] s après avoir subi des dégâts d’un personnage adverse à proximité.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 8,
+          image: "/gears/utility.png",
+          label: "Aspect de change-tempête",
+          description:
+            "Tant qu’Ouragan est actif, vos compétences de métamorphose gagnent +5 rangs.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 9,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1 456] points de dégâts d’épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 10,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d’hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu’une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 11,
+          image: "/gears/mobility.png",
+          label: "Aspect de la frappe du vent",
+          description:
+            "Les coups critiques augmentent votre vitesse de déplacement de [8.5 - 19.0]%[+] pendant 1 s, jusqu’à 6 s.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 12,
+          image: "/gears/utility.png",
+          label: "Aspect de la terreur ursine",
+          description:
+            "Pulvérisation est désormais aussi une compétence de terre. Lorsque la compétence accable, le temps de recharge de vos compétences de terre est réduit de [0.50 - 1.50] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 13,
+          image: "/gears/utility.png",
+          label: "Aspect de loup féroce",
+          description:
+            "Rage du grizzly est désormais une compétence de lycanthrope et vous transforme en lycanthrope féroce. Les lycanthropes féroces obtiennent [20 - 40]%[+] de vitesse de déplacement et de réduction du coût en esprit au lieu de réduction des dégâts. En outre, les victimes vous rendent 10% de votre maximum de points de vie.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 14,
+          image: "/gears/mobility.png",
+          label: "Aspect de métamorphose",
+          description:
+            "Pendant une esquive, vous vous transformez en une nuée de chauves-souris et devenez inarrêtable pendant 2.5 s. Les adversaires sur votre chemin subissent 300 points de dégâts physiques ainsi qu’une malédiction vampirique. Le temps de recharge d’Esquive est augmenté de [10.0 - 4.0] s.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 15,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 16,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 17,
+          image: "/gears/utility.png",
+          label: "Aspect de sables mouvants",
+          description:
+            "Les cibles touchées par des compétences de terre sont ralenties de [20 - 60]% pendant 5 s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 18,
+          image: "/gears/mobility.png",
+          label: "Aspect de sauvagerie précipitée",
+          description:
+            "Lorsque vous lancez une compétence de compagnon, vous gagnez [5.0 - 20.0]%[+] de vitesse de déplacement pendant 5 s, jusqu’à un maximum de [15.0 - 60.0]%[+].",
+          category: "Mobilité",
+          class: "Druide",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 19,
+          image: "/gears/utility.png",
+          label: "Aspect du loup agile",
+          description:
+            "Déchiquetage bénéficie d’une 4e attaque rapide qui frappe l’ensemble des adversaires à proximité, les renverse pendant 2 s et inflige [20 - 60]%[x] points de dégâts supplémentaires.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 20,
+          image: "/gears/utility.png",
+          label: "Aspect du sombre hurlement",
+          description:
+            "Rugissement débilitant est désormais une compétence de lycanthrope. De plus, Rugissement débilitant immobilise les cibles empoisonnées pendant [2.5 - 4.5] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 21,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l’on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l’état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 22,
+          image: "/gears/mobility.png",
+          label: "Aspect lâche",
+          description:
+            "Votre vitesse de déplacement est augmentée de [25 - 45]%[x] lorsque vous vous éloignez de cibles ralenties ou glacées.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 23,
+          image: "/gears/utility.png",
+          label: "Aspect symbiotique",
+          description:
+            "Lorsque la compétence passive principale Fureur de la nature déclenche gratuitement une compétence, vos temps de recharge non ultimes du type opposé sont réduits de [2.5 - 6.0] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Bottes"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/offensive.png",
+          label: "Aspect d'abus",
+          description:
+            "La durée des effets de perte de contrôle que vous infligez est augmentée de 20%. Tant que les adversaires sont inarrêtables, vous leur infligez [25 - 45]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 2,
+          image: "/gears/offensive.png",
+          label: "Aspect d'accélération",
+          description:
+            "Les coups critiques avec les compétences principales augmentent votre vitesse d'attaque de [10.0 - 30.0]%[+] pendant 5 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 3,
+          image: "/gears/offensive.png",
+          label: "Aspect d'activité sismique",
+          description:
+            "Pointe de terre inflige [50 - 70]%[x] de dégâts supplémentaires et projette 2 rangées de pointes en ligne droite.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 4,
+          image: "/gears/offensive.png",
+          label: "Aspect d'arrogance",
+          description:
+            "Vous infligez [10 - 30]%[x] de dégâts supplémentaires tant que vous avez une barrière active.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 5,
+          image: "/gears/offensive.png",
+          label: "Aspect d'équilibre naturel",
+          description:
+            "Utiliser une compétence de tempête augmente les dégâts critiques de vos compétences de terre de [50.0 - 70.0]%[x] pendant 4 s.\nUtiliser une compétence de terre augmente les chances d'infliger un coup critique de vos compétences de tempête de [10.0 - 15.0]%[+] pendant 4 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 6,
+          image: "/gears/offensive.png",
+          label: "Aspect d'explosion anticlinale",
+          description:
+            "Explosion de pierres inflige [15 - 35]%[x] de dégâts supplémentaires et déclenche un accablement garanti lorsqu'elle explose à sa taille maximale.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 7,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hirsutisme",
+          description:
+            "Les dégâts d'épines infligés ont [25 - 45]% de chances d'infliger des dégâts aux adversaires autour de vous et de vos serviteurs.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 8,
+          image: "/gears/offensive.png",
+          label: "Aspect d'onde de choc",
+          description:
+            "Pulvérisation génère aussi une onde de choc qui se propage vers l'avant en infligeant [80 - 120]% de ses dégâts aux cibles sur son passage.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 9,
+          image: "/gears/offensive.png",
+          label: "Aspect de calme intérieur",
+          description:
+            "Vous infligez [5.0 - 13.0]%[x] de dégâts supplémentaires. Ce bonus est triplé lorsque vous restez immobile pendant 3 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 10,
+          image: "/gears/offensive.png",
+          label: "Aspect de cavalcade",
+          description:
+            "Vous gagnez 1 compagnon supplémentaire. De plus, les compétences de compagnon infligent [15 - 35]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 11,
+          image: "/gears/offensive.png",
+          label: "Aspect de châtiment",
+          description:
+            "Vos chances d'infliger un coup critique aux cibles blessées sont augmentées de [13 - 23]%[+]. Lorsque vous êtes en bonne santé, vous bénéficiez d'une augmentation de la durée des effets de perte de contrôle de [25 - 45]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 12,
+          image: "/gears/offensive.png",
+          label: "Aspect de conduction rumomancienne",
+          description:
+            "Lorsque vos compétences de tempête infligent un coup critique, des éclats de foudre frappent vos adversaires à intervalles réguliers pendant 3 s et leur infligent [375 - 675] points de dégâts de foudre.\nVos éclats de foudre infligent [30 - 50]%[x] points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 13,
+          image: "/gears/offensive.png",
+          label: "Aspect de défenses fracassées",
+          description:
+            "Explosion de pierres permet à vos autres compétences d'infliger [30 - 50]%[x] de dégâts supplémentaires aux adversaires pendant 5 s. Le coût en esprit d'Explosion de pierres est réduit de 10 points.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 14,
+          image: "/gears/offensive.png",
+          label: "Aspect de destin inévitable",
+          description:
+            "Lorsqu'une cible tombe à moins de 35% de points de vie sous l'effet d'un de vos dégâts sur la durée, une explosion se produit toutes les 7 s, infligeant [300 - 525] points de dégâts pour chaque élément qui l'affecte.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 15,
+          image: "/gears/offensive.png",
+          label: "Aspect de force brute",
+          description:
+            "Après avoir atteint 15 adversaires avec vos compétences de métamorphose, la prochaine fois que vous utiliserez une compétence d'ursidé, vous infligerez [40 - 60]%[x] de dégâts supplémentaires et étourdirez vos cibles pendant 3 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 16,
+          image: "/gears/offensive.png",
+          label: "Aspect de funambule",
+          description:
+            "Les compétences infligent jusqu'à [5 - 25]%[x] de dégâts supplémentaires en fonction de votre ressource principale disponible à leur lancement, pour un résultat maximal lorsque votre ressource principale est au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 17,
+          image: "/gears/offensive.png",
+          label: "Aspect de griffes électriques",
+          description:
+            "Lorsque vous vous métamorphosez en un nouvel animal, vous libérez un éclat de foudre qui inflige 600 points de dégâts de foudre.\nVos éclats de foudre infligent [20 - 40]%[x] de dégâts supplémentaires et étourdissent pendant 2 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 18,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'alpha",
+          description:
+            "Vos compagnons loups sont maintenant des compagnons lycanthropes. Ils infligent [100 - 140]%[x] de dégâts supplémentaires et peuvent répandre le virus rabique.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 19,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'attente",
+          description:
+            "Après avoir attaqué des adversaires avec une compétence de base, les dégâts de votre prochaine compétence principale lancée dans les 5 s qui suivent sont augmentés de [5 - 12]%[x], jusqu'à 30%[x] au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 20,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'oiseau des tempêtes",
+          description:
+            "Vos corbeaux infligent désormais des dégâts de foudre augmentés de [60 - 100]%. La compétence active de Corbeaux inflige la totalité de ses dégâts en moitié moins de temps et étourdit les adversaires dans sa zone d'effet.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 21,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'ours enragé",
+          description:
+            "Tant que Rage du grizzly est active, vos dégâts directs sont convertis en dégâts de poison, vous infligez [40 - 80]%[x] de dégâts de poison supplémentaires et vous répandez Morsure rabique de manière passive.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 22,
+          image: "/gears/offensive.png",
+          label: "Aspect de la bête humaine enragée",
+          description:
+            "La durée de Rage du grizzly est augmentée de [3.0 - 10.0] s. De plus, les coups critiques portés alors que Rage du grizzly est active infligent 5%[x] de dégâts critiques supplémentaires, jusqu'à un maximum de 100%[x].",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 23,
+          image: "/gears/offensive.png",
+          label: "Aspect de la bête trouble",
+          description:
+            "Déchiquetage inflige [55 - 75]%[x] de dégâts supplémentaires et a 33% de chances de porter un coup supplémentaire, jusqu'à 4 fois.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 24,
+          image: "/gears/offensive.png",
+          label: "Aspect de la dette du métamorphe",
+          description:
+            "Vous infligez [25 - 65]%[x] de dégâts supplémentaires lorsque vous attaquez une cible empoisonnée sous forme d'ursidé ou une cible sous l'effet d'une perte de contrôle sous forme de lycanthrope.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 25,
+          image: "/gears/offensive.png",
+          label: "Aspect de la fureur déchaînée",
+          description:
+            "L'utilisation d'une compétence ultime augmente les dégâts de vos compétences ultimes de [6.0 - 10.0]%[x], jusqu'à un maximum de [60 - 100]%[x]. Lorsque vous avez accumulé cet effet 10 fois, il se réinitialise tout comme vos temps de recharge.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 26,
+          image: "/gears/offensive.png",
+          label: "Aspect de la mort insidieuse",
+          description:
+            "Vous infligez aux adversaires [5.0 - 20.0]%[x] de dégâts supplémentaires sur la durée pour chaque effet de perte de contrôle différent qui leur est appliqué. Vous infligez plutôt [10 - 40]%[x] de dégâts supplémentaires sur la durée aux adversaires inarrêtables et aux boss stupéfiés.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 27,
+          image: "/gears/offensive.png",
+          label: "Aspect de la nature sauvage",
+          description:
+            "Les compétences de lycanthrope sont considérées comme des compétences de tempête et les compétences d'ursidé comme des compétences de terre pour la compétence passive principale Fureur de la nature.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 28,
+          image: "/gears/offensive.png",
+          label: "Aspect de la puissance tempêtueuse",
+          description:
+            "La compétence passive principale Puissance tectonique s'applique aussi à vos compétences de tempête.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 29,
+          image: "/gears/offensive.png",
+          label: "Aspect de la réplique",
+          description:
+            "Chacun des piliers de terre d'Éboulement frappe une seconde fois et inflige [5.5 - 15.5]% de dégâts supplémentaires par coup.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 30,
+          image: "/gears/offensive.png",
+          label: "Aspect de la tempête",
+          description:
+            "Les dégâts d'Ouragan augmentent de [15.0 - 25.0]%[x] par seconde où il reste actif.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 31,
+          image: "/gears/offensive.png",
+          label: "Aspect de la terre piétinée",
+          description:
+            "Piétinement fend désormais la terre, ce qui génère 6 piliers d'éboulement qui infligent [100 - 140]% des dégâts normaux.\nPiétinement est désormais également une compétence de magie naturelle et de terre.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 32,
+          image: "/gears/offensive.png",
+          label: "Aspect de pluie lupine",
+          description:
+            "L'utilisation d'Ouragan invoque également un ouragan plus petit à l'emplacement de vos loups pendant 8 s. Ces ouragans infligent [15.0 - 25.0]% de vos dégâts d'Ouragan par loup actif.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 33,
+          image: "/gears/offensive.png",
+          label: "Aspect de querelleur",
+          description:
+            "L'utilisation d'une compétence ultime augmente vos dégâts de [10 - 30]%[x] pendant 8 s. Vos compétences ultimes bénéficient de 2 rangs supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 34,
+          image: "/gears/offensive.png",
+          label: "Aspect de représailles",
+          description:
+            "Vos compétences principales infligent jusqu'à [35 - 75]%[x] de dégâts supplémentaires en fonction de votre montant de fortification.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 35,
+          image: "/gears/offensive.png",
+          label: "Aspect de roche écrasante",
+          description:
+            "Les compétences de terre infligent [35 - 75]%[x] de dégâts supplémentaires aux adversaires sous l'effet d'une perte de contrôle.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 36,
+          image: "/gears/offensive.png",
+          label: "Aspect de roche métamorphique",
+          description:
+            "Rocher est désormais aussi une compétence principale qui coûte 40 points d'esprit et qui inflige [120 - 160]% des dégâts normaux.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 37,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang bouillonnant",
+          description:
+            "Lorsque vos compétences principales accablent les adversaires, vous faites apparaître 3 gouttes de sang instable. Ramassez-en une pour la faire exploser et infliger [263 - 938] points de dégâts physiques autour de vous.\nToutes les 20 s, votre prochaine compétence accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 38,
+          image: "/gears/offensive.png",
+          label: "Aspect de sauvagerie",
+          description:
+            "Lorsque vous utilisez une compétence de compagnon, vous avez [20 - 40]% de chances d'activer une compétence de compagnon équipée et de réduire son temps de recharge de 5 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 39,
+          image: "/gears/offensive.png",
+          label: "Aspect de toucher maudit",
+          description:
+            "Coup de chance : vos compétences ont jusqu'à [20.0 - 40.0]% de chances d'infliger aux adversaires une malédiction vampirique. Toute cible affectée par une malédiction vampirique est également vulnérable.\nLes âmes stockées par la malédiction vampirique infligent [20.0 - 60.0]% points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 40,
+          image: "/gears/offensive.png",
+          label: "Aspect de vindicte",
+          description:
+            "Les cibles à distance ont 10% de chances d'être étourdies pendant 2 s lorsqu'elles vous infligent des dégâts.\nVous infligez [15 - 35]%[x] de dégâts supplémentaires aux cibles étourdies ou renversées.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 41,
+          image: "/gears/offensive.png",
+          label: "Aspect de virevolte",
+          description:
+            "Les coups critiques d'Orage et d'éclat de foudre ont 50% de chances d'invoquer 3 éclairs virevoltants qui traquent les adversaires dans la zone et leur infligent [233 - 300] points de dégâts de foudre.\nVos éclairs virevoltants infligent 30%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 42,
+          image: "/gears/offensive.png",
+          label: "Aspect des éléments",
+          description:
+            "Augmente les dégâts infligés par un ensemble de types de dégâts de [15 - 35]%[x] pendant 7 s. Cet effet alterne entre deux ensembles :\n• Feu, foudre et physiques ;\n• Froid, poison et ombre.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 43,
+          image: "/gears/offensive.png",
+          label: "Aspect des griffes de la tempête",
+          description:
+            "Les coups critiques effectués avec Déchiquetage infligent [40 - 60]% de leurs dégâts sous forme de dégâts de foudre à la cible et aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 44,
+          image: "/gears/offensive.png",
+          label: "Aspect du berger",
+          description:
+            "Les compétences de compagnon infligent [5.0 - 13.0]%[x] de dégâts supplémentaires par compagnon dont vous disposez.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 45,
+          image: "/gears/offensive.png",
+          label: "Aspect du crépuscule",
+          description:
+            "Lorsque vous infligez des dégâts avec une compétence de base, vous recevez 4% de vitesse d'attaque supplémentaire pendant 10 s, jusqu'à un maximum de 5 fois. Une fois ce seuil atteint, vous sombrez dans une rage de sang vampirique et obtenez un bonus de [40 - 60]%[x] aux dégâts des compétences de base et de 15% à la vitesse de déplacement pendant 10 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 46,
+          image: "/gears/offensive.png",
+          label: "Aspect du déluge imminent",
+          description:
+            "Coup de tonnerre se propage à deux fois plus de cibles et celles-ci subissent [30 - 50]%[x] de dégâts supplémentaires de vos autres compétences pendant 6 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 47,
+          image: "/gears/offensive.png",
+          label: "Aspect du hurleur nocturne",
+          description:
+            "Hurlement sanglant augmente de [10.0 - 18.0]%[+] vos chances d'infliger un coup critique. De plus, Hurlement sanglant affecte aussi les personnages-joueurs proches pendant 3 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 48,
+          image: "/gears/offensive.png",
+          label: "Aspect du traque-tempêtes",
+          description:
+            "Tornade attire les cibles non élites et inflige [20.0 - 40.0]%[x] de dégâts supplémentaires. Chaque adversaire ou objet qui se trouve à l'intérieur de la tornade augmente les dégâts de 10%[x] supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 49,
+          image: "/gears/offensive.png",
+          label: "Aspect expéditif",
+          description:
+            "La vitesse d'attaque des compétences de base est augmentée de [15 - 35]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 50,
+          image: "/gears/offensive.png",
+          label: "Aspect Rage lunaire",
+          description:
+            "Lorsque vous tuez une cible, vous avez 5% de chances d'invoquer un compagnon loup à vos côtés pendant [20 - 35] s. Cet effet bénéficie d'un coup de chance contre les boss. 3 loups supplémentaires au maximum.\nDe plus, vous gagnez 3 rangs pour vos loups.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 51,
+          image: "/gears/offensive.png",
+          label: "Aspect souterrain",
+          description:
+            "La compétence active de Lierre empoisonné lance également Éboulement dans un cercle autour de vous. Les compétences de terre infligent [15 - 35]% de dégâts supplémentaires aux cibles empoisonnées.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 52,
+          image: "/gears/offensive.png",
+          label: "Aspect surchargé",
+          description:
+            "Vos dégâts de foudre directs augmentent les dégâts infligés par vos compétences de tempête de [0.80 - 1.60]%[x], jusqu'à un maximum de 0.00%[x]. Une fois le maximum de cumuls atteint, la cible devient vulnérable.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 53,
+          image: "/gears/offensive.png",
+          label: "Aspect virulent",
+          description:
+            "Lorsque Morsure rabique infecte une cible adverse, son temps de recharge est réduit de [0.20 - 1.00] s. La réduction du temps de recharge est triplée lorsque vous infectez des cibles élites. Vous infligez [25 - 50]%[x] de dégâts supplémentaires aux cibles infectées par Morsure rabique.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Arme"],
+        },
+      ],
+      right: [
+        {
+          id: 1,
+          image: "/gears/utility.png",
+          label: "Aspect balistique",
+          description:
+            "Tant que vous bénéficiez d'une fortification, vos compétences de terre gagnent +2 rangs.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 2,
+          image: "/gears/offensive.png",
+          label: "Aspect d'abus",
+          description:
+            "La durée des effets de perte de contrôle que vous infligez est augmentée de 20%. Tant que les adversaires sont inarrêtables, vous leur infligez [25 - 45]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 3,
+          image: "/gears/offensive.png",
+          label: "Aspect d'accélération",
+          description:
+            "Les coups critiques avec les compétences principales augmentent votre vitesse d'attaque de [10.0 - 30.0]%[+] pendant 5 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 4,
+          image: "/gears/offensive.png",
+          label: "Aspect d'activité sismique",
+          description:
+            "Pointe de terre inflige [50 - 70]%[x] de dégâts supplémentaires et projette 2 rangées de pointes en ligne droite.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 5,
+          image: "/gears/resource.png",
+          label: "Aspect d'adaptabilité",
+          description:
+            "Les compétences de base génèrent 5 points de ressource principale supplémentaire, une fois par compétence. Les compétences de base infligent [0.40 - 0.60]%[x] de dégâts supplémentaires pour chaque point de ressource principale dont vous disposez, dans la limite de 500 points de ressource.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 6,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 7,
+          image: "/gears/defensive.png",
+          label: "Aspect d'approche sournoise",
+          description:
+            "Lorsque vous cumulez une perte de 50 % de votre maximum de vie, vous lancez automatiquement une compétence équipée de défense, de subterfuge ou macabre avant de subir les dégâts. Ne se produit qu'une fois toutes les [45 - 30] s et ne peut pas lancer de compétences de mobilité.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 8,
+          image: "/gears/mobility.png",
+          label: "Aspect d'arpenteur spectral",
+          description:
+            "Lorsque vous êtes inarrêtable et pendant les 4 s qui suivent la fin de cet effet, votre vitesse de déplacement augmente de [10 - 30]%[+] et vous pouvez vous mouvoir librement.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 9,
+          image: "/gears/offensive.png",
+          label: "Aspect d'arrogance",
+          description:
+            "Vous infligez [10 - 30]%[x] de dégâts supplémentaires tant que vous avez une barrière active.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 10,
+          image: "/gears/defensive.png",
+          label: "Aspect d'assimilation",
+          description:
+            "Vous avez 8% de chances supplémentaires d'esquiver. Lorsque vous esquivez, vous obtenez une fortification équivalente à [5 - 12]% de votre maximum de points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 11,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%[x]. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 12,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 13,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givréés",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 14,
+          image: "/gears/offensive.png",
+          label: "Aspect d'équilibre naturel",
+          description:
+            "Utiliser une compétence de tempête augmente les dégâts critiques de vos compétences de terre de [50.0 - 70.0]%[x] pendant 4 s. Utiliser une compétence de terre augmente les chances d'infliger un coup critique de vos compétences de tempête de [10.0 - 15.0]%[+] pendant 4 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 15,
+          image: "/gears/offensive.png",
+          label: "Aspect d'explosion anticlinale",
+          description:
+            "Explosion de pierres inflige [15 - 35]%[x] de dégâts supplémentaires et déclenche un accablement garanti lorsqu'elle explose à sa taille maximale.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 16,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hirsutisme",
+          description:
+            "Les dégâts d'épines infligés ont [25 - 45]% de chances d'infliger des dégâts aux adversaires autour de vous et de vos serviteurs.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 17,
+          image: "/gears/defensive.png",
+          label: "Aspect d'immortalité",
+          description:
+            "Lorsque vous utilisez une compétence, vous récupérez [0.5 - 2.5]% de vos points de vie. Ce bonus double si vous disposez de moins de 50% de vos points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 18,
+          image: "/gears/offensive.png",
+          label: "Aspect d'onde de choc",
+          description:
+            "Pulvérisation génère aussi une onde de choc qui se propage vers l'avant en infligeant [80 - 120]% de ses dégâts aux cibles sur son passage.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 19,
+          image: "/gears/defensive.png",
+          label: "Aspect de barrière réfléchissante",
+          description:
+            "Après avoir subi des dégâts directs, vous avez [5.0 - 12.0]% de chances d'obtenir une barrière équivalente à 20% de votre maximum de points de vie pendant 10 s. Ces chances sont doublées contre les adversaires à distance.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 20,
+          image: "/gears/offensive.png",
+          label: "Aspect de calme intérieur",
+          description:
+            "Vous infligez [5.0 - 13.0]%[x] de dégâts supplémentaires. Ce bonus est triplé lorsque vous restez immobile pendant 3 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 21,
+          image: "/gears/mobility.png",
+          label: "Aspect de carnage",
+          description:
+            "Vous obtenez 20% de vitesse de déplacement. Ce bonus disparaît pendant [5.0 - 2.0] s après avoir subi des dégâts d'un personnage adverse à proximité.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 22,
+          image: "/gears/offensive.png",
+          label: "Aspect de cavalcade",
+          description:
+            "Vous gagnez 1 compagnon supplémentaire. De plus, les compétences de compagnon infligent [15 - 35]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 23,
+          image: "/gears/utility.png",
+          label: "Aspect de change-tempête",
+          description:
+            "Tant qu'Ouragan est actif, vos compétences de métamorphose gagnent +5 rangs.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 24,
+          image: "/gears/offensive.png",
+          label: "Aspect de châtiment",
+          description:
+            "Vos chances d'infliger un coup critique aux cibles blessées sont augmentées de [13 - 23]%[+]. Lorsque vous êtes en bonne santé, vous bénéficiez d'une augmentation de la durée des effets de perte de contrôle de [25 - 45]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 25,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1 456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 26,
+          image: "/gears/offensive.png",
+          label: "Aspect de conduction rumomancienne",
+          description:
+            "Lorsque vos compétences de tempête infligent un coup critique, des éclats de foudre frappent vos adversaires à intervalles réguliers pendant 3 s et leur infligent [375 - 675] points de dégâts de foudre. Vos éclats de foudre infligent [30 - 50]%[x] points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 27,
+          image: "/gears/offensive.png",
+          label: "Aspect de défenses fracassées",
+          description:
+            "Explosion de pierres permet à vos autres compétences d'infliger [30 - 50]%[x] de dégâts supplémentaires aux adversaires pendant 5 s. Le coût en esprit d'Explosion de pierres est réduit de 10 points.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 28,
+          image: "/gears/defensive.png",
+          label: "Aspect de désobéissance",
+          description:
+            "Votre armure est augmentée de [0.4 - 0.8]%[+] pendant 4 s lorsque vous infligez n'importe quel type de dégâts, jusqu'à un maximum de [25.0 - 46.0]%[+].",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 29,
+          image: "/gears/offensive.png",
+          label: "Aspect de destin inévitable",
+          description:
+            "Lorsqu'une cible tombe à moins de 35% de points de vie sous l'effet d'un de vos dégâts sur la durée, une explosion se produit toutes les 7 s, infligeant [300 - 525] points de dégâts pour chaque élément qui l'affecte.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 30,
+          image: "/gears/offensive.png",
+          label: "Aspect de force brute",
+          description:
+            "Après avoir atteint 15 adversaires avec vos compétences de métamorphose, la prochaine fois que vous utiliserez une compétence d'ursoïde, vous infligerez [40 - 60]%[x] de dégâts supplémentaires et étourdirez vos cibles pendant 3 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 31,
+          image: "/gears/defensive.png",
+          label: "Aspect de force cyclonique",
+          description:
+            "Armure cyclonique confère aussi une réduction des dégâts physiques et est également lancée sur les forces alliées proches.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 32,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 33,
+          image: "/gears/offensive.png",
+          label: "Aspect de funambule",
+          description:
+            "Les compétences infligent jusqu'à [5 - 25]%[x] de dégâts supplémentaires en fonction de votre ressource principale disponible à leur lancement, pour un résultat maximal lorsque votre ressource principale est au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 34,
+          image: "/gears/defensive.png",
+          label: "Aspect de garde-terre",
+          description:
+            "Vous gagnez un bonus de [10 - 30]% à votre prochain Rempart de terre pour chaque cible à laquelle vous avez infligé un effet de perte de contrôle, jusqu'à un maximum de 100%.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 35,
+          image: "/gears/offensive.png",
+          label: "Aspect de griffes électriques",
+          description:
+            "Lorsque vous vous métamorphosez en un nouvel animal, vous libérez un éclat de foudre qui inflige 600 points de dégâts de foudre. Vos éclats de foudre infligent [20 - 40]%[x] de dégâts supplémentaires et étourdissent pendant 2 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 36,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'alpha",
+          description:
+            "Vos compagnons loups sont maintenant des compagnons lycanthropes. Ils infligent [100 - 140]%[x] de dégâts supplémentaires et peuvent répandre le virus rabique.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 37,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'attente",
+          description:
+            "Après avoir attaqué des adversaires avec une compétence de base, les dégâts de votre prochaine compétence principale lancée dans les 5 s qui suivent sont augmentés de [5 - 12]%[x], jusqu'à 30%[x] au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 38,
+          image: "/gears/resource.png",
+          label: "Aspect de l'insatiable",
+          description:
+            "Lorsque vous infligez un coup critique à l'adversaire avec Déchiquetage, vous obtenez 15 points d'esprit. À 100 points d'esprit, vos compétences de lycanthrope infligent [20.0 - 40.0]%[x] de dégâts supplémentaires, jusqu'à ce que vous retombiez en dessous de 30 points d'esprit.",
+          category: "Ressource",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 39,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'oiseau des tempêtes",
+          description:
+            "Vos corbeaux infligent désormais des dégâts de foudre augmentés de [60 - 100]%. La compétence active de Corbeaux inflige la totalité de ses dégâts en moitié moins de temps et étourdit les adversaires dans sa zone d'effet.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 40,
+          image: "/gears/resource.png",
+          label: "Aspect de l'ombre",
+          description:
+            "Vous récupérez [1.0 - 8.0] de votre ressource principale lorsque vous infligez un effet de perte de contrôle à une cible adverse.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 41,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'ours enragé",
+          description:
+            "Tant que Rage du grizzly est active, vos dégâts directs sont convertis en dégâts de poison. Vous infligez [40 - 80]%[x] de dégâts de poison supplémentaires et vous répandez Morsure rabique de manière passive.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 42,
+          image: "/gears/offensive.png",
+          label: "Aspect de la bête humaine enragée",
+          description:
+            "La durée de Rage du grizzly est augmentée de [3.0 - 10.0] s. De plus, les coups critiques portés alors que Rage du grizzly est active infligent 5%[x] de dégâts critiques supplémentaires, jusqu'à un maximum de 100%[x].",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 43,
+          image: "/gears/offensive.png",
+          label: "Aspect de la bête trouble",
+          description:
+            "Déchiquetage inflige [55 - 75]%[x] de dégâts supplémentaires et a 33% de chances de porter un coup supplémentaire, jusqu'à 4 fois.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 44,
+          image: "/gears/resource.png",
+          label: "Aspect de la brise légère",
+          description:
+            "Vent cisaillant inflige désormais [165 - 345] points de dégâts de poison en 4 s. Coup de chance : Vent cisaillant a jusqu'à [6.0 - 14.0]% de chances de vous rendre tous vos points d'esprit.",
+          category: "Ressource",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 45,
+          image: "/gears/offensive.png",
+          label: "Aspect de la dette du métamorphe",
+          description:
+            "Vous infligez [25 - 65]%[x] de dégâts supplémentaires lorsque vous attaquez une cible empoisonnée sous forme d'ursoïde ou une cible sous l'effet d'une perte de contrôle sous forme de lycanthrope.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 46,
+          image: "/gears/mobility.png",
+          label: "Aspect de la frappe du vent",
+          description:
+            "Les coups critiques augmentent votre vitesse de déplacement de [8.5 - 19.0]%[+] pendant 1 s, jusqu'à 6 s.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 47,
+          image: "/gears/offensive.png",
+          label: "Aspect de la fureur déchaînée",
+          description:
+            "L'utilisation d'une compétence ultime augmente les dégâts de vos compétences ultimes de [6.0 - 10.0]%[x], jusqu'à un maximum de [60 - 100]%[x]. Lorsque vous avez cumulé cet effet 10 fois, il se réinitialise tout comme vos temps de recharge.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 48,
+          image: "/gears/offensive.png",
+          label: "Aspect de la mort insidieuse",
+          description:
+            "Vous infligez aux adversaires [5.0 - 20.0]%[x] de dégâts supplémentaires sur la durée pour chaque effet de perte de contrôle différent qui leur est appliqué. Vous infligez plutôt [10 - 40]%[x] de dégâts supplémentaires sur la durée aux adversaires inarrêtables et aux boss stupéfiés.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 49,
+          image: "/gears/offensive.png",
+          label: "Aspect de la nature sauvage",
+          description:
+            "Les compétences de lycanthrope sont considérées comme des compétences de tempête et les compétences d'ursoïde comme des compétences de terre pour la compétence passive principale Fureur de la nature.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 50,
+          image: "/gears/offensive.png",
+          label: "Aspect de la puissance tempêtueuse",
+          description:
+            "La compétence passive principale Puissance tectonique s'applique aussi à vos compétences de tempête.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 51,
+          image: "/gears/offensive.png",
+          label: "Aspect de la réplique",
+          description:
+            "Chacun des piliers de terre d'Éboulement frappe une seconde fois et inflige [5.5 - 15.5]% de dégâts supplémentaires par coup.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 52,
+          image: "/gears/resource.png",
+          label: "Aspect de la sombre danse",
+          description:
+            "Toutes les 5 s, votre prochaine compétence principale coûte [117 - 29] points de vie au lieu de puiser dans votre ressource principale, uniquement si vous disposez d'au moins 60% de votre maximum de points de vie. Les compétences qui consomment des points de vie infligent 80%[x] de dégâts supplémentaires.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 53,
+          image: "/gears/offensive.png",
+          label: "Aspect de la tempête",
+          description:
+            "Les dégâts d'Ouragan augmentent de [15.0 - 25.0]%[x] par seconde où il reste actif.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 54,
+          image: "/gears/offensive.png",
+          label: "Aspect de la terre piétinée",
+          description:
+            "Piétinement fend désormais la terre, ce qui génère 6 piliers d'Éboulement qui infligent [100 - 140]% des dégâts normaux. Piétinement est désormais également une compétence de magie naturelle et de terre.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 55,
+          image: "/gears/utility.png",
+          label: "Aspect de la terreur ursine",
+          description:
+            "Pulvérisation est désormais aussi une compétence de terre. Lorsque la compétence accable, le temps de recharge de vos compétences de terre est réduit de [0.50 - 1.50] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 56,
+          image: "/gears/defensive.png",
+          label: "Aspect de lien spirituel",
+          description:
+            "[10.0 - 17.5]% des dégâts que vous devriez subir sont répartis entre vos compagnons. Vos compagnons ne peuvent pas mourir.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 57,
+          image: "/gears/utility.png",
+          label: "Aspect de loup féroce",
+          description:
+            "Rage du grizzly est désormais une compétence de lycanthrope et vous transforme en lycanthrope féroce. Les lycanthropes féroces obtiennent [20 - 40]%[+] de vitesse de déplacement et de réduction du coût en esprit au lieu de réduction des dégâts. En outre, les victimes vous rendent 10% de votre maximum de points de vie.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 58,
+          image: "/gears/resource.png",
+          label: "Aspect de lumière stellaire",
+          description:
+            "Vous gagnez [25.0 - 45.0] points de votre ressource principale pour chaque tranche de 20% de points de vie soignés ou pour chaque tranche de 10% de points de vie soignés lorsque vous disposez de tous vos points de vie, jusqu'à un maximum de 300 de points de ressources par seconde.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 59,
+          image: "/gears/defensive.png",
+          label: "Aspect de marchepeau",
+          description:
+            "Quand vous utilisez une compétence de métamorphose qui vous fait changer de forme, vous récupérez [5 - 25]% de votre maximum de points de vie. Si vous avez déjà tous vos points de vie, vous obtenez le même montant en points de fortification.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 60,
+          image: "/gears/defensive.png",
+          label: "Aspect de mastodonte",
+          description:
+            "Vous obtenez [583 - 816] points d'armure, mais le temps de recharge d'Esquive augmente de 100%.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 61,
+          image: "/gears/mobility.png",
+          label: "Aspect de métamorphose",
+          description:
+            "Pendant une esquive, vous vous transformez en une nuée de chauves-souris et devenez inarrêtable pendant 2.5 s. Les adversaires sur votre chemin subissent 300 points de dégâts physiques ainsi qu'une malédiction vampirique. Le temps de recharge d'Esquive est augmenté de [10.0 - 4.0] s.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 62,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 63,
+          image: "/gears/defensive.png",
+          label: "Aspect de mutilation enfiévrée",
+          description:
+            "Lorsque vous touchez au moins 1 adversaire avec Mutilation, sa vitesse d'attaque est augmentée de [1.0 - 3.0]%[+] et vous obtenez [1.0 - 5.0]%[x] de réduction des dégâts pendant 5 s. Cumulable jusqu'à 5 fois.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 64,
+          image: "/gears/defensive.png",
+          label: "Aspect de pierre de guérison",
+          description:
+            "La durée de Rempart de terre est augmentée de 6 s. De plus, tuer une cible rend [40 - 302] points de santé à la barrière de votre Rempart de terre actif.",
+          category: "Défense",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 65,
+          image: "/gears/offensive.png",
+          label: "Aspect de pluie lupine",
+          description:
+            "L'utilisation d'Ouragan invoque également un ouragan plus petit à l'emplacement de vos loups pendant 8 s. Ces ouragans infligent [15.0 - 25.0]% de vos dégâts d'Ouragan par loup actif.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 66,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 67,
+          image: "/gears/offensive.png",
+          label: "Aspect de querelleur",
+          description:
+            "L'utilisation d'une compétence ultime augmente vos dégâts de [10 - 30]%[x] pendant 8 s. Vos compétences ultimes bénéficient de 2 rangs supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 68,
+          image: "/gears/resource.png",
+          label: "Aspect de rage vorace",
+          description:
+            "Lorsque vous tuez une cible avec une compétence principale, vous recevez [15.0 - 35.0]% de son coût de base. Cet effet ne peut se produire qu'une fois par utilisation.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 69,
+          image: "/gears/resource.png",
+          label: "Aspect de rajeunissement",
+          description:
+            "Lorsque vous passez à moins de 20 points d'esprit, vous avez [15 - 30]% de chances de récupérer tous vos points d'esprit.",
+          category: "Ressource",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 70,
+          image: "/gears/resource.png",
+          label: "Aspect de renforcement exprimé",
+          description:
+            "Vos compétences de cri génèrent [5.0 - 12.0] points de ressource principale par seconde tant qu'elles sont actives.",
+          category: "Ressource",
+          class: "Barbare, Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 71,
+          image: "/gears/offensive.png",
+          label: "Aspect de représailles",
+          description:
+            "Vos compétences principales infligent jusqu'à [35 - 75]%[x] de dégâts supplémentaires en fonction de votre montant de fortification.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 72,
+          image: "/gears/offensive.png",
+          label: "Aspect de roche écrasante",
+          description:
+            "Les compétences de terre infligent [35 - 75]%[x] de dégâts supplémentaires aux adversaires sous l'effet d'une perte de contrôle.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 73,
+          image: "/gears/offensive.png",
+          label: "Aspect de roche métamorphique",
+          description:
+            "Rocher est désormais aussi une compétence principale qui coûte 40 points d'esprit et qui inflige [120 - 160]% des dégâts normaux.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 74,
+          image: "/gears/utility.png",
+          label: "Aspect de sables mouvants",
+          description:
+            "Les cibles touchées par des compétences de terre sont ralenties de [20 - 60]% pendant 5 s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 75,
+          image: "/gears/defensive.png",
+          label: "Aspect de sagesse par le nombre",
+          description:
+            "Vos chances d'esquiver sont augmentées de 8%. Vous récupérez [5 - 25]% de votre maximum de vie en cas d'esquive réussie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 76,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang bouillonnant",
+          description:
+            "Lorsque vos compétences principales accablent les adversaires, vous faites apparaître 3 gouttes de sang instable. Ramassez-en une pour la faire exploser et infliger [263 - 938] points de dégâts physiques autour de vous.\nToutes les 20 s, votre prochaine compétence accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 77,
+          image: "/gears/offensive.png",
+          label: "Aspect de sauvagerie",
+          description:
+            "Lorsque vous utilisez une compétence de compagnon, vous avez [20 - 40]% de chances d'activer une compétence de compagnon équipée et de réduire son temps de recharge de 5 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 78,
+          image: "/gears/mobility.png",
+          label: "Aspect de sauvagerie précipitée",
+          description:
+            "Lorsque vous lancez une compétence de compagnon, vous gagnez [5.0 - 20.0]%[+] de vitesse de déplacement pendant 5 s, jusqu'à un maximum de [15.0 - 60.0]%[+].",
+          category: "Mobilité",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 79,
+          image: "/gears/offensive.png",
+          label: "Aspect de toucher maudit",
+          description:
+            "Coup de chance : vos compétences ont jusqu'à [20.0 - 40.0]% de chances d'infliger aux adversaires une malédiction vampirique. Toute cible affectée par une malédiction vampirique est également vulnérable.\nLes âmes stockées par la malédiction vampirique infligent [20.0 - 60.0]% points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 80,
+          image: "/gears/defensive.png",
+          label: "Aspect de toute-puissance",
+          description:
+            "Les compétences de base confèrent 20.0% de réduction des dégâts pendant [2.0 - 10.0] s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 81,
+          image: "/gears/offensive.png",
+          label: "Aspect de vindicte",
+          description:
+            "Les cibles à distance ont 10% de chances d'être étourdies pendant 2 s lorsqu'elles vous infligent des dégâts.\nVous infligez [15 - 35]%[x] de dégâts supplémentaires aux cibles étourdies ou renversées.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 82,
+          image: "/gears/offensive.png",
+          label: "Aspect de virevolte",
+          description:
+            "Les coups critiques d'Orage et d'Éclat de foudre ont 50% de chances d'invoquer 3 éclairs virevoltants qui traquent les adversaires dans la zone et leur infligent [233 - 300] points de dégâts de foudre.\nVos éclairs virevoltants infligent 30%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 83,
+          image: "/gears/offensive.png",
+          label: "Aspect des éléments",
+          description:
+            "Augmente les dégâts infligés par un ensemble de types de dégâts de [15 - 35]%[x] pendant 7 s. Cet effet alterne entre deux ensembles :\n• feu, foudre et physiques ;\n• froid, poison et ombre.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 84,
+          image: "/gears/offensive.png",
+          label: "Aspect des griffes de la tempête",
+          description:
+            "Les coups critiques effectués avec Déchiquetage infligent [40 - 60]% de leurs dégâts sous forme de dégâts de foudre à la cible et aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 85,
+          image: "/gears/offensive.png",
+          label: "Aspect du berger",
+          description:
+            "Les compétences de compagnon infligent [5.0 - 13.0]%[x] de dégâts supplémentaires par compagnon dont vous disposez.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 86,
+          image: "/gears/resource.png",
+          label: "Aspect du chef de guerre",
+          description:
+            "Chaque fois que vous utilisez une compétence de cri, son temps de recharge est réduit de [10.0 - 30.0]% par adversaire à proximité, jusqu'à un maximum de 70.0%.",
+          category: "Ressource",
+          class: "Barbare, Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 87,
+          image: "/gears/defensive.png",
+          label: "Aspect du cœur prudent",
+          description:
+            "Après avoir subi des dégâts équivalant à au moins 20% de votre maximum de vie à la fois, vous devenez insensible pendant [2.5 - 4.0] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 88,
+          image: "/gears/offensive.png",
+          label: "Aspect du crépuscule",
+          description:
+            "Lorsque vous infligez des dégâts avec une compétence de base, vous recevez 4% de vitesse d'attaque supplémentaire pendant 10 s, jusqu'à un maximum de 5 fois. Une fois ce seuil atteint, vous sombrez dans une rage de sang vampirique et obtenez un bonus de [40 - 60]%[x] aux dégâts des compétences de base et de 15% à la vitesse de déplacement pendant 10 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 89,
+          image: "/gears/offensive.png",
+          label: "Aspect du déluge imminent",
+          description:
+            "Coup de tonnerre se propage à deux fois plus de cibles et celles-ci subissent [30 - 50]%[x] de dégâts supplémentaires de vos autres compétences pendant 6 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 90,
+          image: "/gears/offensive.png",
+          label: "Aspect du hurleur nocturne",
+          description:
+            "Hurlement sanglant augmente de [10.0 - 18.0]%[+] vos chances d'infliger un coup critique. De plus, Hurlement sanglant affecte aussi les personnages-joueurs proches pendant 3 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 91,
+          image: "/gears/utility.png",
+          label: "Aspect du loup agile",
+          description:
+            "Déchiquetage bénéficie d'une 4e attaque rapide qui frappe l'ensemble des adversaires à proximité, les renverse pendant 2 s et inflige [20 - 60]%[x] points de dégâts supplémentaires.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 92,
+          image: "/gears/defensive.png",
+          label: "Aspect du Protecteur",
+          description:
+            "Le fait de blesser une cible adverse élite vous octroie une barrière qui absorbe jusqu'à [655 - 5 898] points de dégâts pendant 10 s. Cet effet ne peut se produire qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 93,
+          image: "/gears/utility.png",
+          label: "Aspect du sombre hurlement",
+          description:
+            "Rugissement débilitant est désormais une compétence de lycanthrope. De plus, Rugissement débilitant immobilise les cibles empoisonnées pendant [2.5 - 4.5] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 94,
+          image: "/gears/offensive.png",
+          label: "Aspect du traque-tempêtes",
+          description:
+            "Tornade attire les cibles non élites et inflige [20.0 - 40.0]%[x] de dégâts supplémentaires. Chaque adversaire ou objet qui se trouve à l'intérieur de la tornade augmente les dégâts de 10%[x] supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 95,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 96,
+          image: "/gears/resource.png",
+          label: "Aspect équilibré",
+          description:
+            "Votre maximum d'esprit est augmenté de 50 points. Si vous lancez une compétence à temps de recharge, votre génération d'esprit est augmentée de [15 - 25] pendant 8 s.",
+          category: "Ressource",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 97,
+          image: "/gears/offensive.png",
+          label: "Aspect expéditif",
+          description:
+            "La vitesse d'attaque des compétences de base est augmentée de [15 - 35]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 98,
+          image: "/gears/mobility.png",
+          label: "Aspect lâche",
+          description:
+            "Votre vitesse de déplacement est augmentée de [25 - 45]%[x] lorsque vous vous éloignez de cibles ralenties ou glacées.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 99,
+          image: "/gears/resource.png",
+          label: "Aspect mutilé",
+          description:
+            "Sous forme ursoïde, votre régénération d'esprit atteint [4.0 - 12.0]% par seconde.",
+          category: "Ressource",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 100,
+          image: "/gears/defensive.png",
+          label: "Aspect protecteur",
+          description:
+            "Lorsque vous n'êtes pas en bonne santé, vous invoquez une bulle protectrice qui rend insensible l'ensemble des personnages-joueurs à l'intérieur. La bulle dure [2.5 - 6.0] s et ne peut se former qu'une fois toutes les 90 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 89,
+          image: "/gears/offensive.png",
+          label: "Aspect du déluge imminent",
+          description:
+            "Coup de tonnerre se propage à deux fois plus de cibles et celles-ci subissent [30 - 50]%[x] de dégâts supplémentaires de vos autres compétences pendant 6 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 90,
+          image: "/gears/offensive.png",
+          label: "Aspect du hurleur nocturne",
+          description:
+            "Hurlement sanglant augmente de [10.0 - 18.0]%[+] vos chances d'infliger un coup critique. De plus, Hurlement sanglant affecte aussi les personnages-joueurs proches pendant 3 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 91,
+          image: "/gears/utility.png",
+          label: "Aspect du loup agile",
+          description:
+            "Déchiquetage bénéficie d'une 4e attaque rapide qui frappe l'ensemble des adversaires à proximité, les renverse pendant 2 s et inflige [20 - 60]%[x] points de dégâts supplémentaires.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 92,
+          image: "/gears/defensive.png",
+          label: "Aspect du Protecteur",
+          description:
+            "Le fait de blesser une cible adverse élite vous octroie une barrière qui absorbe jusqu'à [655 - 5 898] points de dégâts pendant 10 s. Cet effet ne peut se produire qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 93,
+          image: "/gears/utility.png",
+          label: "Aspect du sombre hurlement",
+          description:
+            "Rugissement débilitant est désormais une compétence de lycanthrope. De plus, Rugissement débilitant immobilise les cibles empoisonnées pendant [2.5 - 4.5] s.",
+          category: "Attributs",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 94,
+          image: "/gears/offensive.png",
+          label: "Aspect du traque-tempêtes",
+          description:
+            "Tornade attire les cibles non élites et inflige [20.0 - 40.0]%[x] de dégâts supplémentaires. Chaque adversaire ou objet qui se trouve à l'intérieur de la tornade augmente les dégâts de 10%[x] supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Amulette"],
+        },
+
+        {
+          id: 101,
+          image: "/gears/offensive.png",
+          label: "Accelerating Aspect",
+          description:
+            "Critical Strikes with Core Skills increase your Attack Speed by [10.0 - 30.0]%[+] for 5 seconds.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 102,
+          image: "/gears/offensive.png",
+          label: "Aspect of Accursed Touch",
+          description:
+            "Lucky Hit: Up to a [20.0 - 40.0]% chance for your Skills to inflict Vampiric Curse on enemies. Enemies afflicted with Vampiric Curse are also Vulnerable.\nVampiric Curse's stored souls deal [20.0 - 60.0]% increased damage.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 103,
+          image: "/gears/resource.png",
+          label: "Aspect of Adaptability",
+          description:
+            "Basic Skills generate 5 additional Primary Resource, once per Skill.\nBasic Skills deal [0.40 - 0.60]%[x] increased damage for each point of Primary Resource you have, up to 500 Resource.",
+          category: "Resource",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 104,
+          image: "/gears/offensive.png",
+          label: "Aspect of Anticline Burst",
+          description:
+            "Stone Burst deals [15 - 35]%[x] increased damage and is guaranteed to Overpower when it detonates at Maximum size.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 105,
+          image: "/gears/offensive.png",
+          label: "Aspect of Apogeic Furor",
+          description:
+            "Casting an Ultimate Skill increases your Ultimate damage by [6.0 - 10.0]%[x], up to [60 - 100]%[x]. At 10 stacks, your Cooldowns and this bonus are reset.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 106,
+          image: "/gears/offensive.png",
+          label: "Aspect of Creeping Death",
+          description:
+            "You deal [5.0 - 20.0]%[x] increased damage over time to enemies for each different Crowd Control effect they’re afflicted by. Unstoppable enemies and Staggered Bosses take [10 - 40]%[x] increased damage over time from you instead.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 107,
+          image: "/gears/offensive.png",
+          label: "Aspect of Electrified Claws",
+          description:
+            "Shapeshifting into a new animal form causes a Lightning Bolt to strike a Nearby enemy dealing 600 Lightning damage.\nYour Lightning Bolts deal [20 - 40]%[x] increased damage and Stun for 2 seconds.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 108,
+          image: "/gears/offensive.png",
+          label: "Aspect of Elements",
+          description:
+            "Gain [15 - 35]%[x] increased damage to a set of damage types for 7 seconds. This effect alternates between 2 sets:\n• Fire, Lightning, and Physical.\n• Cold, Poison, and Shadow.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 109,
+          image: "/gears/offensive.png",
+          label: "Aspect of Impending Deluge",
+          description:
+            "Storm Strike’s chains to twice as many targets and increases the damage the targets take from your other Skills by [30 - 50]%[x] for 6 seconds.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 110,
+          image: "/gears/offensive.png",
+          label: "Aspect of Inevitable Fate",
+          description:
+            "When an enemy falls below 35% Life while afflicted with any of your damage over time effects, an explosion occurs every 7 seconds, dealing [300 - 525] damage for each Element they’re afflicted by.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 111,
+          image: "/gears/offensive.png",
+          label: "Aspect of Inner Calm",
+          description:
+            "Deal [5.0 - 13.0]%[x] increased damage. Triple this bonus after standing still for 3 seconds.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 112,
+          image: "/gears/offensive.png",
+          label: "Aspect of Metamorphic Stone",
+          description:
+            "Boulder is now also a Core Skill and costs 40 Spirit to cast dealing [120 - 160]% of normal damage.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 113,
+          image: "/gears/offensive.png",
+          label: "Aspect of Natural Balance",
+          description:
+            "Casting a Storm Skill grants your Earth Skills [50.0 - 70.0]%[x] Critical Strike Damage for 4 seconds.\nCasting a Earth Skill increases the Critical Strike Chance of Storm Skills by [10.0 - 15.0]%[+] for 4 seconds.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 114,
+          image: "/gears/offensive.png",
+          label: "Aspect of Nature's Savagery",
+          description:
+            "Werewolf Skills function as Storm Skills and Werebear Skills function as Earth Skills for the Nature’s Fury Key Passive.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 115,
+          image: "/gears/offensive.png",
+          label: "Aspect of Retaliation",
+          description:
+            "Your Core Skills deal up to [35 - 75]%[x] increased damage based on your amount of Fortify.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 116,
+          image: "/gears/offensive.png",
+          label: "Aspect of Retribution",
+          description:
+            "Distant enemies have a 10% chance to be Stunned for 2 seconds when they hit you.\nYou deal [15 - 35]%[x] increased damage to Stunned or Knocked Down enemies.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 117,
+          image: "/gears/offensive.png",
+          label: "Aspect of Shattered Defenses",
+          description:
+            "Stone Burst causes enemies to take [30 - 50]%[x] increased damage from your other Skills for 5 seconds. Stone Burst’s Spirit cost is reduced by 10.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 118,
+          image: "/gears/offensive.png",
+          label: "Aspect of The Aftershock",
+          description:
+            "Landslide’s earth pillars each strike a second time and deal an additional [5.5 - 15.5]% bonus damage per hit.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 119,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Alpha",
+          description:
+            "Your Wolf Companions are now Werewolf Companions. Werewolf Companions deal [100 - 140]%[x] additional damage and can spread Rabies.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 120,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Blurred Beast",
+          description:
+            "Shred deals [55 - 75]%[x] more damage, and Shred has a 33% chance to land an additional strike, up to 4 times.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 121,
+          image: "/gears/resource.png",
+          label: "Aspect of the Calm Breeze",
+          description:
+            "Wind Shear now deals [165 - 345] Poisoning damage over 4 seconds.\nLucky Hit: Wind Shear has up to a [6.0 - 14.0]% chance to fully restore your Spirit.",
+          category: "Resource",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 122,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Changeling's Debt",
+          description:
+            "You deal [25 - 65]%[x] increased damage while hitting a Poisoned enemy as a Werebear or a Crowd Controlled enemy as a Werewolf.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 123,
+          image: "/gears/resource.png",
+          label: "Aspect of the Dark Dance",
+          description:
+            "Every 5 seconds, your next Core Skill costs [117 - 29] Life instead of Primary Resource. Will only occur if you have at least 60% of your Maximum Life.\nSkills that consume Life deal 80%[x] increased damage.",
+          category: "Resource",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 124,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Expectant",
+          description:
+            "After attacking enemies with a Basic Skill, increase the damage of your next Core Skill cast within 5 seconds by [5 - 12]%[x], up to 30%[x].",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 125,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Moonrise",
+          description:
+            "Damaging an enemy with a Basic Skill grants you 4% Attack Speed for 10 seconds, stacking up to 5 times. Upon reaching maximum stacks, you enter a Vampiric Bloodrage, gaining [40 - 60]%[x] Basic Skill damage and 15% Movement Speed for 10 seconds.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 126,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Rabid Bear",
+          description:
+            "While Grizzly Rage is active, your direct damage is converted into Poison damage, you deal [40 - 80]%[x] more Poison damage, and you passively spread Rabies.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 127,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Rampaging Werebeast",
+          description:
+            "The duration of Grizzly Rage is increased by [3.0 - 10.0] seconds. In addition, Critical Strikes while Grizzly Rage is active increase your Critical Strike Damage by 5%[x] for the duration, up to a maximum of 100%[x].",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 128,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Stampede",
+          description:
+            "Gain 1 additional Companion. In addition, your Companion Skills deal [15 - 35]%[x] bonus damage.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 129,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Tempest",
+          description:
+            "Hurricane damage is increased by [15.0 - 25.0]%[x] each second while active.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 130,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Trampled Earth",
+          description:
+            "Trample now sunders the earth, forming 6 Landslide pillars that deal [100 - 140]% of normal damage.\nTrample is now also a Nature Magic and Earth Skill.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 131,
+          image: "/gears/resource.png",
+          label: "Aspect of the Umbral",
+          description:
+            "Restore [1.0 - 8.0] of your Primary Resource when you Crowd Control an enemy.",
+          category: "Resource",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 132,
+          image: "/gears/resource.png",
+          label: "Aspect of the Unsatiated",
+          description:
+            "After Critically Striking an enemy with Shred, you gain 15 Spirit. While at 100 Spirit, your Werewolf Skills deal [20.0 - 40.0]%[x] increased damage until you go below 30 Spirit.",
+          category: "Resource",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 133,
+          image: "/gears/offensive.png",
+          label: "Aspect of the Wildrage",
+          description:
+            "Casting a Companion Skill has a [20 - 40]% chance to activate an equipped Companion Skill and reduce its Cooldown by 5 seconds.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 134,
+          image: "/gears/resource.png",
+          label: "Aspect of Vocalized Empowerment",
+          description:
+            "Your Shout Skills generate [5.0 - 12.0] Primary Resource per second while active.",
+          category: "Resource",
+          class: "Barbarian, Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 135,
+          image: "/gears/resource.png",
+          label: "Aspect of Voracious Rage",
+          description:
+            "Killing an enemy with a Core Skill refunds [15.0 - 35.0]% of its base cost. Can only happen once per Skill cast.",
+          category: "Resource",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 136,
+          image: "/gears/offensive.png",
+          label: "Aspect of Wolf's Rain",
+          description:
+            "Casting Hurricane also spawns a smaller hurricane on your Wolves for 8 seconds. These hurricanes deal [15.0 - 25.0]% of Hurricane’s damage for each active Wolf.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 137,
+          image: "/gears/resource.png",
+          label: "Balanced Aspect",
+          description:
+            "Your Maximum Spirit is increased by 50. Casting a Skill with a Cooldown increases Spirit Generation by [15 - 25] for 8 seconds.",
+          category: "Resource",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 138,
+          image: "/gears/offensive.png",
+          label: "Blood Boiling Aspect",
+          description:
+            "When your Core Skills Overpower any number of enemies, you spawn 3 Volatile Blood Drops. Collecting a Volatile Blood Drop causes it to explode, dealing [263 - 938] Physical damage around you.\nEvery 20 seconds, your next Skill is guaranteed to Overpower.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 139,
+          image: "/gears/resource.png",
+          label: "Bold Chieftain's Aspect",
+          description:
+            "Whenever you cast a Shout Skill, its active Cooldown is reduced by [10.0 - 30.0]% per Nearby enemy, up to a maximum of 70.0%.",
+          category: "Resource",
+          class: "Barbarian, Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 140,
+          image: "/gears/offensive.png",
+          label: "Conceited Aspect",
+          description:
+            "Deal [10 - 30]%[x] increased damage while you have a Barrier active.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 141,
+          image: "/gears/offensive.png",
+          label: "Crashstone Aspect",
+          description:
+            "Earth Skills deal [35 - 75]%[x] increased damage to Crowd Controlled enemies.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 142,
+          image: "/gears/offensive.png",
+          label: "Edgemaster's Aspect",
+          description:
+            "Skills deal up to [5 - 25]%[x] increased damage based on your available Primary Resource when cast, receiving the maximum benefit while you have full Primary Resource.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 143,
+          image: "/gears/offensive.png",
+          label: "Exploiter's Aspect",
+          description:
+            "You have 20%[+] increased Crowd Control Duration. While enemies are Unstoppable, you deal [25 - 45]%[x] increased damage to them.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 144,
+          image: "/gears/offensive.png",
+          label: "Lightning Dancer's Aspect",
+          description:
+            "Lightning Storm and Lightning Bolt Critical Strikes have a 50% chance to spawn 3 Dancing Bolts that seek enemies in the area dealing [233 - 300] Lightning damage.\nYour Dancing Bolts deal 30%[x] increased damage.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 145,
+          image: "/gears/resource.png",
+          label: "Mangled Aspect",
+          description:
+            "While in Werebear form, you gain [4.0 - 12.0]% Maximum Spirit Generation per second.",
+          category: "Resource",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 146,
+          image: "/gears/offensive.png",
+          label: "Mighty Storm's Aspect",
+          description:
+            "The Earthen Might Key Passive also applies to your Storm Skills.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 147,
+          image: "/gears/offensive.png",
+          label: "Moonrage Aspect",
+          description:
+            "Kills have a 5% chance to summon a Wolf Companion to your side for [20 - 35] seconds. This effect is a Lucky Hit against bosses. Maximum 3 additional wolves.\nIn addition, gain +3 Ranks to Wolves.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 148,
+          image: "/gears/offensive.png",
+          label: "Needleflare Aspect",
+          description:
+            "Thorns damage dealt has a [25 - 45]% chance to deal damage to all enemies around you and your Minions.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 149,
+          image: "/gears/offensive.png",
+          label: "Nighthowler's Aspect",
+          description:
+            "Blood Howl increases Critical Strike Chance by [10.0 - 18.0]%[+]. In addition, Blood Howl also affects Nearby Players for 3 seconds.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 150,
+          image: "/gears/offensive.png",
+          label: "Overcharged Aspect",
+          description:
+            "Your direct Lightning damage makes your Storm Skills deal [0.80 - 1.60]%[x] more damage to the enemy, up to 0.00%[x]. At maximum stacks, the target becomes Vulnerable.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 151,
+          image: "/gears/offensive.png",
+          label: "Rapid Aspect",
+          description: "Basic Skills gain [15 - 35]%[+] Attack Speed.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 152,
+          image: "/gears/offensive.png",
+          label: "Raw Might Aspect",
+          description:
+            "After hitting 15 enemies with your Shapeshifting Skills, your next Werebear Skill will deal [40 - 60]%[x] more damage and Stun enemies for 3 seconds.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 153,
+          image: "/gears/resource.png",
+          label: "Rejuvenating Aspect",
+          description:
+            "When falling below 20 Spirit, there is a [15 - 30]% chance to fully restore your Spirit.",
+          category: "Resource",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 154,
+          image: "/gears/offensive.png",
+          label: "Runeworker's Conduit Aspect",
+          description:
+            "Critical Strikes with Storm Skills cause Lightning Bolts to periodically strike close enemies for 3 seconds, each dealing [375 - 675] Lightning damage.\nYour Lightning Bolts deal [30 - 50]%[x] increased damage.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 155,
+          image: "/gears/offensive.png",
+          label: "Seismic-shift Aspect",
+          description:
+            "Earth Spike deals [50 - 70]%[x] increased damage and launches 2 rows of spikes in a line.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 156,
+          image: "/gears/offensive.png",
+          label: "Shepherd's Aspect",
+          description:
+            "Companion Skills deal an additional [5.0 - 13.0]%[x] damage per Companion you have.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 157,
+          image: "/gears/offensive.png",
+          label: "Shockwave Aspect",
+          description:
+            "Pulverize creates a shockwave that travels forward, dealing [80 - 120]% of its damage to targets in the path.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 158,
+          image: "/gears/offensive.png",
+          label: "Smiting Aspect",
+          description:
+            "You have [13 - 23]%[+] increased Critical Strike Chance against Injured enemies. While you are Healthy, you gain [25 - 45]%[+] increased Crowd Control Duration.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 159,
+          image: "/gears/resource.png",
+          label: "Starlight Aspect",
+          description:
+            "Gain [25.0 - 45.0] of your Primary Resource for every 20% of your Life that you Heal or every 120% Life that you Overheal while at Maximum Life, up to 300 Resource per second.",
+          category: "Resource",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 160,
+          image: "/gears/offensive.png",
+          label: "Stormchaser's Aspect",
+          description:
+            "Tornado drags non-Elite enemies with it and deals [20.0 - 40.0]%[x] increased damage. Each enemy or object inside of the Tornado increases the damage by an additional 10%[x].",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 161,
+          image: "/gears/offensive.png",
+          label: "Stormclaw's Aspect",
+          description:
+            "Critical Strikes with Shred deal [40 - 60]% of the damage dealt as Lightning damage to the target and surrounding enemies.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 162,
+          image: "/gears/offensive.png",
+          label: "Stormcrow's Aspect",
+          description:
+            "Ravens now deal Lightning damage which is increased by [60 - 100]%. Ravens Active deals its full damage in half the time, and enemies inside it are Stunned.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 163,
+          image: "/gears/offensive.png",
+          label: "Subterranean Aspect",
+          description:
+            "Poison Creeper’s active also casts Landslide in a circle around you. Earth Skills deal [15 - 35]% increased damage to Poisoned enemies.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 164,
+          image: "/gears/offensive.png",
+          label: "Vehement Brawler's Aspect",
+          description:
+            "Casting an Ultimate Skill increases your damage by [10 - 30]%[x] for 8 seconds. Gain 2 additional Ultimate Skill Ranks.",
+          category: "Offensive",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 165,
+          image: "/gears/offensive.png",
+          label: "Virulent Aspect",
+          description:
+            "When Rabies infects an enemy, reduce its Cooldown by [0.20 - 1.00] seconds, tripled when infecting Elite enemies. You deal [25 - 50]%[x] increased damage to enemies affected by Rabies.",
+          category: "Offensive",
+          class: "Druid",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/offensive.png",
+          label: "Aspect d'abus",
+          description:
+            "La durée des effets de perte de contrôle que vous infligez est augmentée de 20%. Tant que les adversaires sont inarrêtables, vous leur infligez [25 - 45]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 2,
+          image: "/gears/offensive.png",
+          label: "Aspect d'accélération",
+          description:
+            "Les coups critiques avec les compétences principales augmentent votre vitesse d'attaque de [10.0 - 30.0]%[+] pendant 5 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 3,
+          image: "/gears/offensive.png",
+          label: "Aspect d'activité sismique",
+          description:
+            "Pointe de terre inflige [50 - 70]%[x] de dégâts supplémentaires et projette 2 rangées de pointes en ligne droite.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 4,
+          image: "/gears/offensive.png",
+          label: "Aspect d'arrogance",
+          description:
+            "Vous infligez [10 - 30]%[x] de dégâts supplémentaires tant que vous avez une barrière active.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 5,
+          image: "/gears/offensive.png",
+          label: "Aspect d'équilibre naturel",
+          description:
+            "Utiliser une compétence de tempête augmente les dégâts critiques de vos compétences de terre de [50.0 - 70.0]%[x] pendant 4 s.\nUtiliser une compétence de terre augmente les chances d'infliger un coup critique de vos compétences de tempête de [10.0 - 15.0]%[+] pendant 4 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 6,
+          image: "/gears/offensive.png",
+          label: "Aspect d'explosion anticlinale",
+          description:
+            "Explosion de pierres inflige [15 - 35]%[x] de dégâts supplémentaires et déclenche un accablement garanti lorsqu'elle explose à sa taille maximale.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 7,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hirsutisme",
+          description:
+            "Les dégâts d'épines infligés ont [25 - 45]% de chances d'infliger des dégâts aux adversaires autour de vous et de vos serviteurs.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 8,
+          image: "/gears/offensive.png",
+          label: "Aspect d'onde de choc",
+          description:
+            "Pulvérisation génère aussi une onde de choc qui se propage vers l'avant en infligeant [80 - 120]% de ses dégâts aux cibles sur son passage.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 9,
+          image: "/gears/offensive.png",
+          label: "Aspect de calme intérieur",
+          description:
+            "Vous infligez [5.0 - 13.0]%[x] de dégâts supplémentaires. Ce bonus est triplé lorsque vous restez immobile pendant 3 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 10,
+          image: "/gears/offensive.png",
+          label: "Aspect de cavalcade",
+          description:
+            "Vous gagnez 1 compagnon supplémentaire. De plus, les compétences de compagnon infligent [15 - 35]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 11,
+          image: "/gears/offensive.png",
+          label: "Aspect de châtiment",
+          description:
+            "Vos chances d'infliger un coup critique aux cibles blessées sont augmentées de [13 - 23]%[+]. Lorsque vous êtes en bonne santé, vous bénéficiez d'une augmentation de la durée des effets de perte de contrôle de [25 - 45]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 12,
+          image: "/gears/offensive.png",
+          label: "Aspect de conduction rumomancienne",
+          description:
+            "Lorsque vos compétences de tempête infligent un coup critique, des éclats de foudre frappent vos adversaires à intervalles réguliers pendant 3 s et leur infligent [375 - 675] points de dégâts de foudre.\nVos éclats de foudre infligent [30 - 50]%[x] points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 13,
+          image: "/gears/offensive.png",
+          label: "Aspect de défenses fracassées",
+          description:
+            "Explosion de pierres permet à vos autres compétences d'infliger [30 - 50]%[x] de dégâts supplémentaires aux adversaires pendant 5 s. Le coût en esprit d'Explosion de pierres est réduit de 10 points.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 14,
+          image: "/gears/offensive.png",
+          label: "Aspect de destin inévitable",
+          description:
+            "Lorsqu'une cible tombe à moins de 35% de points de vie sous l'effet d'un de vos dégâts sur la durée, une explosion se produit toutes les 7 s, infligeant [300 - 525] points de dégâts pour chaque élément qui l'affecte.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 15,
+          image: "/gears/offensive.png",
+          label: "Aspect de force brute",
+          description:
+            "Après avoir atteint 15 adversaires avec vos compétences de métamorphose, la prochaine fois que vous utiliserez une compétence d'ursidé, vous infligerez [40 - 60]%[x] de dégâts supplémentaires et étourdirez vos cibles pendant 3 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 16,
+          image: "/gears/offensive.png",
+          label: "Aspect de funambule",
+          description:
+            "Les compétences infligent jusqu'à [5 - 25]%[x] de dégâts supplémentaires en fonction de votre ressource principale disponible à leur lancement, pour un résultat maximal lorsque votre ressource principale est au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 17,
+          image: "/gears/offensive.png",
+          label: "Aspect de griffes électriques",
+          description:
+            "Lorsque vous vous métamorphosez en un nouvel animal, vous libérez un éclat de foudre qui inflige 600 points de dégâts de foudre.\nVos éclats de foudre infligent [20 - 40]%[x] de dégâts supplémentaires et étourdissent pendant 2 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 18,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'alpha",
+          description:
+            "Vos compagnons loups sont maintenant des compagnons lycanthropes. Ils infligent [100 - 140]%[x] de dégâts supplémentaires et peuvent répandre le virus rabique.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 19,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'attente",
+          description:
+            "Après avoir attaqué des adversaires avec une compétence de base, les dégâts de votre prochaine compétence principale lancée dans les 5 s qui suivent sont augmentés de [5 - 12]%[x], jusqu'à 30%[x] au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 20,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'oiseau des tempêtes",
+          description:
+            "Vos corbeaux infligent désormais des dégâts de foudre augmentés de [60 - 100]%. La compétence active de Corbeaux inflige la totalité de ses dégâts en moitié moins de temps et étourdit les adversaires dans sa zone d'effet.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 21,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'ours enragé",
+          description:
+            "Tant que Rage du grizzly est active, vos dégâts directs sont convertis en dégâts de poison, vous infligez [40 - 80]%[x] de dégâts de poison supplémentaires et vous répandez Morsure rabique de manière passive.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 22,
+          image: "/gears/offensive.png",
+          label: "Aspect de la bête humaine enragée",
+          description:
+            "La durée de Rage du grizzly est augmentée de [3.0 - 10.0] s. De plus, les coups critiques portés alors que Rage du grizzly est active infligent 5%[x] de dégâts critiques supplémentaires, jusqu'à un maximum de 100%[x].",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 23,
+          image: "/gears/offensive.png",
+          label: "Aspect de la bête trouble",
+          description:
+            "Déchiquetage inflige [55 - 75]%[x] de dégâts supplémentaires et a 33% de chances de porter un coup supplémentaire, jusqu'à 4 fois.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 24,
+          image: "/gears/offensive.png",
+          label: "Aspect de la dette du métamorphe",
+          description:
+            "Vous infligez [25 - 65]%[x] de dégâts supplémentaires lorsque vous attaquez une cible empoisonnée sous forme d'ursidé ou une cible sous l'effet d'une perte de contrôle sous forme de lycanthrope.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 25,
+          image: "/gears/offensive.png",
+          label: "Aspect de la fureur déchaînée",
+          description:
+            "L'utilisation d'une compétence ultime augmente les dégâts de vos compétences ultimes de [6.0 - 10.0]%[x], jusqu'à un maximum de [60 - 100]%[x]. Lorsque vous avez accumulé cet effet 10 fois, il se réinitialise tout comme vos temps de recharge.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 26,
+          image: "/gears/offensive.png",
+          label: "Aspect de la mort insidieuse",
+          description:
+            "Vous infligez aux adversaires [5.0 - 20.0]%[x] de dégâts supplémentaires sur la durée pour chaque effet de perte de contrôle différent qui leur est appliqué. Vous infligez plutôt [10 - 40]%[x] de dégâts supplémentaires sur la durée aux adversaires inarrêtables et aux boss stupéfiés.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 27,
+          image: "/gears/offensive.png",
+          label: "Aspect de la nature sauvage",
+          description:
+            "Les compétences de lycanthrope sont considérées comme des compétences de tempête et les compétences d'ursidé comme des compétences de terre pour la compétence passive principale Fureur de la nature.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 28,
+          image: "/gears/offensive.png",
+          label: "Aspect de la puissance tempêtueuse",
+          description:
+            "La compétence passive principale Puissance tectonique s'applique aussi à vos compétences de tempête.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 29,
+          image: "/gears/offensive.png",
+          label: "Aspect de la réplique",
+          description:
+            "Chacun des piliers de terre d'Éboulement frappe une seconde fois et inflige [5.5 - 15.5]% de dégâts supplémentaires par coup.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 30,
+          image: "/gears/offensive.png",
+          label: "Aspect de la tempête",
+          description:
+            "Les dégâts d'Ouragan augmentent de [15.0 - 25.0]%[x] par seconde où il reste actif.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 31,
+          image: "/gears/offensive.png",
+          label: "Aspect de la terre piétinée",
+          description:
+            "Piétinement fend désormais la terre, ce qui génère 6 piliers d'éboulement qui infligent [100 - 140]% des dégâts normaux.\nPiétinement est désormais également une compétence de magie naturelle et de terre.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 32,
+          image: "/gears/offensive.png",
+          label: "Aspect de pluie lupine",
+          description:
+            "L'utilisation d'Ouragan invoque également un ouragan plus petit à l'emplacement de vos loups pendant 8 s. Ces ouragans infligent [15.0 - 25.0]% de vos dégâts d'Ouragan par loup actif.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 33,
+          image: "/gears/offensive.png",
+          label: "Aspect de querelleur",
+          description:
+            "L'utilisation d'une compétence ultime augmente vos dégâts de [10 - 30]%[x] pendant 8 s. Vos compétences ultimes bénéficient de 2 rangs supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 34,
+          image: "/gears/offensive.png",
+          label: "Aspect de représailles",
+          description:
+            "Vos compétences principales infligent jusqu'à [35 - 75]%[x] de dégâts supplémentaires en fonction de votre montant de fortification.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 35,
+          image: "/gears/offensive.png",
+          label: "Aspect de roche écrasante",
+          description:
+            "Les compétences de terre infligent [35 - 75]%[x] de dégâts supplémentaires aux adversaires sous l'effet d'une perte de contrôle.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 36,
+          image: "/gears/offensive.png",
+          label: "Aspect de roche métamorphique",
+          description:
+            "Rocher est désormais aussi une compétence principale qui coûte 40 points d'esprit et qui inflige [120 - 160]% des dégâts normaux.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 37,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang bouillonnant",
+          description:
+            "Lorsque vos compétences principales accablent les adversaires, vous faites apparaître 3 gouttes de sang instable. Ramassez-en une pour la faire exploser et infliger [263 - 938] points de dégâts physiques autour de vous.\nToutes les 20 s, votre prochaine compétence accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 38,
+          image: "/gears/offensive.png",
+          label: "Aspect de sauvagerie",
+          description:
+            "Lorsque vous utilisez une compétence de compagnon, vous avez [20 - 40]% de chances d'activer une compétence de compagnon équipée et de réduire son temps de recharge de 5 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 39,
+          image: "/gears/offensive.png",
+          label: "Aspect de toucher maudit",
+          description:
+            "Coup de chance : vos compétences ont jusqu'à [20.0 - 40.0]% de chances d'infliger aux adversaires une malédiction vampirique. Toute cible affectée par une malédiction vampirique est également vulnérable.\nLes âmes stockées par la malédiction vampirique infligent [20.0 - 60.0]% points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 40,
+          image: "/gears/offensive.png",
+          label: "Aspect de vindicte",
+          description:
+            "Les cibles à distance ont 10% de chances d'être étourdies pendant 2 s lorsqu'elles vous infligent des dégâts.\nVous infligez [15 - 35]%[x] de dégâts supplémentaires aux cibles étourdies ou renversées.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 41,
+          image: "/gears/offensive.png",
+          label: "Aspect de virevolte",
+          description:
+            "Les coups critiques d'Orage et d'éclat de foudre ont 50% de chances d'invoquer 3 éclairs virevoltants qui traquent les adversaires dans la zone et leur infligent [233 - 300] points de dégâts de foudre.\nVos éclairs virevoltants infligent 30%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 42,
+          image: "/gears/offensive.png",
+          label: "Aspect des éléments",
+          description:
+            "Augmente les dégâts infligés par un ensemble de types de dégâts de [15 - 35]%[x] pendant 7 s. Cet effet alterne entre deux ensembles :\n• Feu, foudre et physiques ;\n• Froid, poison et ombre.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 43,
+          image: "/gears/offensive.png",
+          label: "Aspect des griffes de la tempête",
+          description:
+            "Les coups critiques effectués avec Déchiquetage infligent [40 - 60]% de leurs dégâts sous forme de dégâts de foudre à la cible et aux adversaires à proximité.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 44,
+          image: "/gears/offensive.png",
+          label: "Aspect du berger",
+          description:
+            "Les compétences de compagnon infligent [5.0 - 13.0]%[x] de dégâts supplémentaires par compagnon dont vous disposez.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 45,
+          image: "/gears/offensive.png",
+          label: "Aspect du crépuscule",
+          description:
+            "Lorsque vous infligez des dégâts avec une compétence de base, vous recevez 4% de vitesse d'attaque supplémentaire pendant 10 s, jusqu'à un maximum de 5 fois. Une fois ce seuil atteint, vous sombrez dans une rage de sang vampirique et obtenez un bonus de [40 - 60]%[x] aux dégâts des compétences de base et de 15% à la vitesse de déplacement pendant 10 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 46,
+          image: "/gears/offensive.png",
+          label: "Aspect du déluge imminent",
+          description:
+            "Coup de tonnerre se propage à deux fois plus de cibles et celles-ci subissent [30 - 50]%[x] de dégâts supplémentaires de vos autres compétences pendant 6 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 47,
+          image: "/gears/offensive.png",
+          label: "Aspect du hurleur nocturne",
+          description:
+            "Hurlement sanglant augmente de [10.0 - 18.0]%[+] vos chances d'infliger un coup critique. De plus, Hurlement sanglant affecte aussi les personnages-joueurs proches pendant 3 s.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 48,
+          image: "/gears/offensive.png",
+          label: "Aspect du traque-tempêtes",
+          description:
+            "Tornade attire les cibles non élites et inflige [20.0 - 40.0]%[x] de dégâts supplémentaires. Chaque adversaire ou objet qui se trouve à l'intérieur de la tornade augmente les dégâts de 10%[x] supplémentaires.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 49,
+          image: "/gears/offensive.png",
+          label: "Aspect expéditif",
+          description:
+            "La vitesse d'attaque des compétences de base est augmentée de [15 - 35]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 50,
+          image: "/gears/offensive.png",
+          label: "Aspect Rage lunaire",
+          description:
+            "Lorsque vous tuez une cible, vous avez 5% de chances d'invoquer un compagnon loup à vos côtés pendant [20 - 35] s. Cet effet bénéficie d'un coup de chance contre les boss. 3 loups supplémentaires au maximum.\nDe plus, vous gagnez 3 rangs pour vos loups.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 51,
+          image: "/gears/offensive.png",
+          label: "Aspect souterrain",
+          description:
+            "La compétence active de Lierre empoisonné lance également Éboulement dans un cercle autour de vous. Les compétences de terre infligent [15 - 35]% de dégâts supplémentaires aux cibles empoisonnées.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 52,
+          image: "/gears/offensive.png",
+          label: "Aspect surchargé",
+          description:
+            "Vos dégâts de foudre directs augmentent les dégâts infligés par vos compétences de tempête de [0.80 - 1.60]%[x], jusqu'à un maximum de 0.00%[x]. Une fois le maximum de cumuls atteint, la cible devient vulnérable.",
+          category: "Attaque",
+          class: "Druide",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 53,
+          image: "/gears/offensive.png",
+          label: "Aspect virulent",
+          description:
+            "Lorsque Morsure rabique infecte une cible adverse, son temps de recharge est réduit de [0.20 - 1.00] s. La réduction du temps de recharge est triplée lorsque vous infectez des cibles élites. Vous infligez [25 - 50]%[x] de dégâts supplémentaires aux cibles infectées par Morsure rabique.",
+          category: "Attaque",
+          class: "Druide",
           allowedGear: ["Offhand"],
         },
       ],
@@ -33368,6 +42383,4803 @@ export const aspectMap = {
           description: "Légendaire Utilitaire",
           category: "Utilitaire",
           allowedGear: ["Offhand"],
+        },
+      ],
+    },
+    Season11: {
+      left: [
+        {
+          id: 201,
+          image: "/gears/utility.png",
+          label: "Aspect aphotique",
+          description:
+            "Vos prêtres squelettes renforcent désormais les attaques de vos guerriers squelettes. Celles-ci infligent des dégâts d'ombre et ont [5.0 - 25.0]% de chances d'étourdir les adversaires pendant 1.5 s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 202,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 203,
+          image: "/gears/defensive.png",
+          label: "Aspect d'approche sournoise",
+          description:
+            "Lorsque vous cumulez une perte de 50 % de votre maximum de vie, vous lancez automatiquement une compétence équipée de défense, de subterfuge ou macabre avant de subir les dégâts. Ne se produit qu'une fois toutes les [45 - 30] s et ne peut pas lancer de compétences de mobilité.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 204,
+          image: "/gears/defensive.png",
+          label: "Aspect d'assimilation",
+          description:
+            "Vous avez 8% de chances supplémentaires d'esquiver. Lorsque vous esquivez, vous obtenez une fortification équivalente à [5 - 12]% de votre maximum de points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 205,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%[x]. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 206,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 207,
+          image: "/gears/utility.png",
+          label: "Aspect d'aura maudite",
+          description:
+            "Une aura ténébreuse vous entoure, infligeant Décrépitude et Vierge de fer aux adversaires qui la touchent.\nLes malédictions infligées de la sorte affectent les cibles à proximité toutes les [2.5 - 0.5] s et durent 4 s en dehors de l'aura.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 208,
+          image: "/gears/defensive.png",
+          label: "Aspect d'embaumement",
+          description:
+            "Consommer un cadavre a [15 - 35]% de chances de faire apparaître un orbe de sang.",
+          category: "Défense",
+          class: "Nécromancien",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 209,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 210,
+          image: "/gears/defensive.png",
+          label: "Aspect d'immortalité",
+          description:
+            "Lorsque vous utilisez une compétence, vous récupérez [0.5 - 2.5]% de vos points de vie. Ce bonus double si vous disposez de moins de 50% de vos points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 211,
+          image: "/gears/defensive.png",
+          label: "Aspect d'os durcis",
+          description:
+            "Votre réduction des dégâts est augmentée de [10 - 30]%.",
+          category: "Défense",
+          class: "Nécromancien",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 212,
+          image: "/gears/defensive.png",
+          label: "Aspect de barrière réfléchissante",
+          description:
+            "Après avoir subi des dégâts directs, vous avez [5.0 - 12.0]% de chances d'obtenir une barrière équivalente à 20% de votre maximum de points de vie pendant 10 s. Ces chances sont doublées contre les adversaires à distance.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 213,
+          image: "/gears/utility.png",
+          label: "Aspect de brume explosive",
+          description:
+            "Brume de sang déclenche Explosion macabre sur les cadavres proches. Lorsque Brume de sang fait exploser un cadavre, son temps de recharge est réduit de [0.1 - 0.8] s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 214,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1 456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 215,
+          image: "/gears/defensive.png",
+          label: "Aspect de désobéissance",
+          description:
+            "Votre armure est augmentée de [0.4 - 0.8]%[+] pendant 4 s lorsque vous infligez n'importe quel type de dégâts, jusqu'à un maximum de [25.0 - 46.0]%[+].",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 216,
+          image: "/gears/utility.png",
+          label: "Aspect de domination occulte",
+          description:
+            "Votre nombre maximum de guerriers squelettes et de mages squelettes est augmenté de 2.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 217,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 218,
+          image: "/gears/defensive.png",
+          label: "Aspect de la tempête protectrice",
+          description:
+            "Chaque fois que Tempête d'os inflige des dégâts aux adversaires, vous obtenez une barrière à hauteur de [1.0 - 8.0]% de votre maximum de points de vie pendant 10 s.",
+          category: "Défense",
+          class: "Nécromancien",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 219,
+          image: "/gears/defensive.png",
+          label: "Aspect de mastodonte",
+          description:
+            "Vous obtenez [583 - 816] points d'armure, mais le temps de recharge d'Esquive augmente de 100%.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 220,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 221,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 222,
+          image: "/gears/defensive.png",
+          label: "Aspect de sagesse par le nombre",
+          description:
+            "Vos chances d'esquiver sont augmentées de 8 %. Vous récupérez [5 - 25]% de votre maximum de vie en cas d'esquive réussie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 223,
+          image: "/gears/defensive.png",
+          label: "Aspect de strates protectrices",
+          description:
+            "Votre réduction des dégâts bloqués est augmentée de [20 - 40]%[+] tant que vous avez une barrière.",
+          category: "Défense",
+          class: "Nécromancien, Sacresprit",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 224,
+          image: "/gears/defensive.png",
+          label: "Aspect de toute-puissance",
+          description:
+            "Les compétences de base confèrent 20.0% de réduction des dégâts pendant [2.0 - 10.0] s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 225,
+          image: "/gears/utility.png",
+          label: "Aspect des cherche-sangs",
+          description:
+            "Vos prêtres squelettes vous renforcent désormais à [55 - 75]% d'efficacité.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 226,
+          image: "/gears/defensive.png",
+          label: "Aspect du cœur prudent",
+          description:
+            "Après avoir subi des dégâts équivalant à au moins 20 % de votre maximum de vie à la fois, vous devenez insensible pendant [2.5 - 4.0] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 227,
+          image: "/gears/utility.png",
+          label: "Aspect du porte-froid",
+          description:
+            "Toutes les 4 s, vos mages squelettes lancent un blizzard qui inflige [135 - 180] points de dégâts de froid et qui glace en continu les adversaires à hauteur de 6% en 8 s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 228,
+          image: "/gears/defensive.png",
+          label: "Aspect du Protecteur",
+          description:
+            "Le fait de blesser une cible adverse élite vous octroie une barrière qui absorbe jusqu'à [655 - 5 898] points de dégâts pendant 10 s. Cet effet ne peut se produire qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 229,
+          image: "/gears/utility.png",
+          label: "Aspect du vide",
+          description:
+            "Une fois générée, la zone souillée de Chancre attire les adversaires proches et a [35 - 55]% de chances de les étourdir pendant 3 s lorsqu'elle apparaît.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 230,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 231,
+          image: "/gears/utility.png",
+          label: "Aspect massif",
+          description:
+            "Votre golem a [2 - 18]% de chances de réduire son temps de recharge actif de 2 s et [1.0 - 9.0]% de chances de générer un cadavre chaque fois qu'il inflige des dégâts à une cible adverse avec son attaque normale.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 232,
+          image: "/gears/defensive.png",
+          label: "Aspect protecteur",
+          description:
+            "Lorsque vous n'êtes pas en bonne santé, vous invoquez une bulle protectrice qui rend insensible l'ensemble des personnages-joueurs à l'intérieur. La bulle dure [2.5 - 6.0] s et ne peut se former qu'une fois toutes les 90 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 233,
+          image: "/gears/utility.png",
+          label: "Aspect tortionnaire",
+          description:
+            "Vierge de fer est désormais aussi une compétence de ténèbres et inflige des dégâts d'ombre. Les cibles ont [10 - 30]% de chances d'être étourdies pendant 1 s lorsqu'elles subissent des dégâts occasionnés par Vierge de fer.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Helm"],
+        },
+        {
+          id: 1,
+          image: "/gears/utility.png",
+          label: "Aspect aphotique",
+          description:
+            "Vos prêtres squelettes renforcent désormais les attaques de vos guerriers squelettes. Celles-ci infligent des dégâts d'ombre et ont [5.0 - 25.0]% de chances d'étourdir les adversaires pendant 1.5 s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 2,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 3,
+          image: "/gears/defensive.png",
+          label: "Aspect d'approche sournoise",
+          description:
+            "Lorsque vous cumulez une perte de 50 % de votre maximum de vie, vous lancez automatiquement une compétence équipée de défense, de subterfuge ou macabre avant de subir les dégâts. Ne se produit qu'une fois toutes les [45 - 30] s et ne peut pas lancer de compétences de mobilité.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 4,
+          image: "/gears/defensive.png",
+          label: "Aspect d'assimilation",
+          description:
+            "Vous avez 8% de chances supplémentaires d'esquiver. Lorsque vous esquivez, vous obtenez une fortification équivalente à [5 - 12]% de votre maximum de points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 5,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%[x]. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 6,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 7,
+          image: "/gears/utility.png",
+          label: "Aspect d'aura maudite",
+          description:
+            "Une aura ténébreuse vous entoure, infligeant Décrépitude et Vierge de fer aux adversaires qui la touchent.\nLes malédictions infligées de la sorte affectent les cibles à proximité toutes les [2.5 - 0.5] s et durent 4 s en dehors de l'aura.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 8,
+          image: "/gears/defensive.png",
+          label: "Aspect d'embaumement",
+          description:
+            "Consommer un cadavre a [15 - 35]% de chances de faire apparaître un orbe de sang.",
+          category: "Défense",
+          class: "Nécromancien",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 9,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 10,
+          image: "/gears/defensive.png",
+          label: "Aspect d'immortalité",
+          description:
+            "Lorsque vous utilisez une compétence, vous récupérez [0.5 - 2.5]% de vos points de vie. Ce bonus double si vous disposez de moins de 50% de vos points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 11,
+          image: "/gears/defensive.png",
+          label: "Aspect d'os durcis",
+          description:
+            "Votre réduction des dégâts est augmentée de [10 - 30]%.",
+          category: "Défense",
+          class: "Nécromancien",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 12,
+          image: "/gears/defensive.png",
+          label: "Aspect de barrière réfléchissante",
+          description:
+            "Après avoir subi des dégâts directs, vous avez [5.0 - 12.0]% de chances d'obtenir une barrière équivalente à 20% de votre maximum de points de vie pendant 10 s. Ces chances sont doublées contre les adversaires à distance.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 13,
+          image: "/gears/utility.png",
+          label: "Aspect de brume explosive",
+          description:
+            "Brume de sang déclenche Explosion macabre sur les cadavres proches. Lorsque Brume de sang fait exploser un cadavre, son temps de recharge est réduit de [0.1 - 0.8] s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 14,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1 456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 15,
+          image: "/gears/defensive.png",
+          label: "Aspect de désobéissance",
+          description:
+            "Votre armure est augmentée de [0.4 - 0.8]%[+] pendant 4 s lorsque vous infligez n'importe quel type de dégâts, jusqu'à un maximum de [25.0 - 46.0]%[+].",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 16,
+          image: "/gears/utility.png",
+          label: "Aspect de domination occulte",
+          description:
+            "Votre nombre maximum de guerriers squelettes et de mages squelettes est augmenté de 2.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 17,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 18,
+          image: "/gears/defensive.png",
+          label: "Aspect de la tempête protectrice",
+          description:
+            "Chaque fois que Tempête d'os inflige des dégâts aux adversaires, vous obtenez une barrière à hauteur de [1.0 - 8.0]% de votre maximum de points de vie pendant 10 s.",
+          category: "Défense",
+          class: "Nécromancien",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 19,
+          image: "/gears/defensive.png",
+          label: "Aspect de mastodonte",
+          description:
+            "Vous obtenez [583 - 816] points d'armure, mais le temps de recharge d'Esquive augmente de 100%.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 20,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 21,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 22,
+          image: "/gears/defensive.png",
+          label: "Aspect de sagesse par le nombre",
+          description:
+            "Vos chances d'esquiver sont augmentées de 8 %. Vous récupérez [5 - 25]% de votre maximum de vie en cas d'esquive réussie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 23,
+          image: "/gears/defensive.png",
+          label: "Aspect de strates protectrices",
+          description:
+            "Votre réduction des dégâts bloqués est augmentée de [20 - 40]%[+] tant que vous avez une barrière.",
+          category: "Défense",
+          class: "Nécromancien, Sacresprit",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 24,
+          image: "/gears/defensive.png",
+          label: "Aspect de toute-puissance",
+          description:
+            "Les compétences de base confèrent 20.0% de réduction des dégâts pendant [2.0 - 10.0] s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 25,
+          image: "/gears/utility.png",
+          label: "Aspect des cherche-sangs",
+          description:
+            "Vos prêtres squelettes vous renforcent désormais à [55 - 75]% d'efficacité.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 26,
+          image: "/gears/defensive.png",
+          label: "Aspect du cœur prudent",
+          description:
+            "Après avoir subi des dégâts équivalant à au moins 20 % de votre maximum de vie à la fois, vous devenez insensible pendant [2.5 - 4.0] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 27,
+          image: "/gears/utility.png",
+          label: "Aspect du porte-froid",
+          description:
+            "Toutes les 4 s, vos mages squelettes lancent un blizzard qui inflige [135 - 180] points de dégâts de froid et qui glace en continu les adversaires à hauteur de 6% en 8 s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 28,
+          image: "/gears/defensive.png",
+          label: "Aspect du Protecteur",
+          description:
+            "Le fait de blesser une cible adverse élite vous octroie une barrière qui absorbe jusqu'à [655 - 5 898] points de dégâts pendant 10 s. Cet effet ne peut se produire qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 29,
+          image: "/gears/utility.png",
+          label: "Aspect du vide",
+          description:
+            "Une fois générée, la zone souillée de Chancre attire les adversaires proches et a [35 - 55]% de chances de les étourdir pendant 3 s lorsqu'elle apparaît.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 30,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 31,
+          image: "/gears/utility.png",
+          label: "Aspect massif",
+          description:
+            "Votre golem a [2 - 18]% de chances de réduire son temps de recharge actif de 2 s et [1.0 - 9.0]% de chances de générer un cadavre chaque fois qu'il inflige des dégâts à une cible adverse avec son attaque normale.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 32,
+          image: "/gears/defensive.png",
+          label: "Aspect protecteur",
+          description:
+            "Lorsque vous n'êtes pas en bonne santé, vous invoquez une bulle protectrice qui rend insensible l'ensemble des personnages-joueurs à l'intérieur. La bulle dure [2.5 - 6.0] s et ne peut se former qu'une fois toutes les 90 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Chest Armor"],
+        },
+        {
+          id: 33,
+          image: "/gears/utility.png",
+          label: "Aspect tortionnaire",
+          description:
+            "Vierge de fer est désormais aussi une compétence de ténèbres et inflige des dégâts d'ombre. Les cibles ont [10 - 30]% de chances d'être étourdies pendant 1 s lorsqu'elles subissent des dégâts occasionnés par Vierge de fer.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Chest Armor"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/utility.png",
+          label: "Aspect aphotique",
+          description:
+            "Vos prêtres squelettes renforcent désormais les attaques de vos guerriers squelettes. Celles-ci infligent des dégâts d'ombre et ont [5.0 - 25.0]% de chances d'étourdir les adversaires pendant 1.5 s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 2,
+          image: "/gears/offensive.png",
+          label: "Aspect baigné de sang",
+          description:
+            "La nova d'Afflux sanguin explose à nouveau après un bref instant, infligeant [30 - 110]%[x] de dégâts en moins.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 3,
+          image: "/gears/offensive.png",
+          label: "Aspect cadavérique",
+          description:
+            "Consommer un cadavre augmente les dégâts que vous infligez de [3.5 - 7]%] pendant 5 s, jusqu'à un maximum de [18 - 35]%[x].",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 4,
+          image: "/gears/offensive.png",
+          label: "Aspect d'abus",
+          description:
+            "La durée des effets de perte de contrôle que vous infligez est augmentée de 20%. Tant que les adversaires sont inarrêtables, vous leur infligez [25 - 45]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 5,
+          image: "/gears/offensive.png",
+          label: "Aspect d'accélération",
+          description:
+            "Les coups critiques avec les compétences principales augmentent votre vitesse d'attaque de [10.0 - 30.0]%[+] pendant 5 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 6,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 7,
+          image: "/gears/offensive.png",
+          label: "Aspect d'appétit funeste",
+          description:
+            "La compétence active de votre golem provoque également son éruption, ce qui inflige [300 - 600] points de dégâts physiques aux cibles adverses à proximité.\nVotre golem consomme des cadavres pour réduire de 1 s son temps de recharge restant et inflige 0%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 8,
+          image: "/gears/offensive.png",
+          label: "Aspect d'arrogance",
+          description:
+            "Vous infligez [10 - 30]%[x] de dégâts supplémentaires tant que vous avez une barrière active.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 9,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%[x]. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 10,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 11,
+          image: "/gears/utility.png",
+          label: "Aspect d'aura maudite",
+          description:
+            "Une aura ténébreuse vous entoure, infligeant Décrépitude et Vierge de fer aux adversaires qui la touchent.\nLes malédictions infligées de la sorte affectent les cibles à proximité toutes les [2.5 - 0.5] s et durent 4 s en dehors de l'aura.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 12,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 13,
+          image: "/gears/offensive.png",
+          label: "Aspect d'explosion osseuse",
+          description:
+            "Lorsqu'un fragment de Prison d'os est détruit ou expire, celui-ci inflige [113 - 203] points de dégâts dans la zone autour de lui.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 14,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hirsutisme",
+          description:
+            "Les dégâts d'épines infligés ont [25 - 45]% de chances d'infliger des dégâts aux adversaires autour de vous et de vos serviteurs.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 15,
+          image: "/gears/offensive.png",
+          label: "Aspect d'humérus putréfié",
+          description:
+            "Vos compétences d'os infligent désormais des dégâts d'ombre au lieu de dégâts physiques. Les cibles adverses subissent [15 - 25]%[x] de dégâts d'ombre supplémentaires après avoir été frappées par une compétence d'os.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 16,
+          image: "/gears/offensive.png",
+          label: "Aspect d'ombre ultime",
+          description:
+            "Tempête d'os et Vague de sang sont désormais également des compétences de ténèbres. Elles infligent des dégâts d'ombre et bénéficient d'effets supplémentaires :\n• Les cibles touchées par Tempête d'os subissent [120 - 420] points de dégâts de corruption en 2 s.\n• Vague de sang laisse un sol souillé sur son passage, qui inflige [1 920 - 6 720] points de dégâts de corruption en 4 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 17,
+          image: "/gears/offensive.png",
+          label: "Aspect d'ombrebrume",
+          description:
+            "Vos serviteurs infligent 38 points de dégâts de corruption par seconde aux adversaires autour d'eux. Les dégâts sur la durée durent [2.0 - 5.0] s après avoir quitté l'aura.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 18,
+          image: "/gears/utility.png",
+          label: "Aspect de brume explosive",
+          description:
+            "Brume de sang déclenche Explosion macabre sur les cadavres proches. Lorsque Brume de sang fait exploser un cadavre, son temps de recharge est réduit de [0.1 - 0.8] s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 19,
+          image: "/gears/offensive.png",
+          label: "Aspect de calme intérieur",
+          description:
+            "Vous infligez [5.0 - 13.0]%[x] de dégâts supplémentaires. Ce bonus est triplé lorsque vous restez immobile pendant 3 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 20,
+          image: "/gears/offensive.png",
+          label: "Aspect de châtiment",
+          description:
+            "Vos chances d'infliger un coup critique aux cibles blessées sont augmentées de [13 - 23]%[+]. Lorsque vous êtes en bonne santé, vous bénéficiez d'une augmentation de la durée des effets de perte de contrôle de [25 - 45]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 21,
+          image: "/gears/offensive.png",
+          label: "Aspect de commandement inflexible",
+          description:
+            "Tant qu'Armée de morts est active, vos serviteurs subissent 90% de dégâts en moins et vous infligez [70 - 110]%[x] de dégâts d'invocation supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 22,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1 456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 23,
+          image: "/gears/offensive.png",
+          label: "Aspect de délabrement",
+          description:
+            "Chaque fois que la capacité passive principale Chancre d'ombre inflige des dégâts aux adversaires, elle augmente les dégâts du prochain Chancre d'ombre infligés dans les 10 s de [30 - 50]%[x], cet effet pouvant se cumuler jusqu'à 5 fois.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 24,
+          image: "/gears/offensive.png",
+          label: "Aspect de dents de scie",
+          description:
+            "La compétence passive principale Essence ossifiée augmente aussi les dégâts critiques de vos compétences d'os de 1%[x] par point d'essence au-dessus de 50, jusqu'à un maximum de [25 - 45]%[x].",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 25,
+          image: "/gears/offensive.png",
+          label: "Aspect de désossement",
+          description:
+            "Lance d'os inflige [30 - 50]%[x] de dégâts supplémentaires aux adversaires se trouvant dans une Prison d'os et la première Lance d'os à atteindre chaque adversaire à l'intérieur de la prison accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 26,
+          image: "/gears/offensive.png",
+          label: "Aspect de destin inévitable",
+          description:
+            "Lorsqu'une cible tombe à moins de 35% de points de vie sous l'effet d'un de vos dégâts sur la durée, une explosion se produit toutes les 7 s, infligeant [300 - 525] points de dégâts pour chaque élément qui l'affecte.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 27,
+          image: "/gears/utility.png",
+          label: "Aspect de domination occulte",
+          description:
+            "Votre nombre maximum de guerriers squelettes et de mages squelettes est augmenté de 2.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 28,
+          image: "/gears/offensive.png",
+          label: "Aspect de force détournée",
+          description:
+            "Vos dégâts critiques augmentent à hauteur de [30 - 70]%[x] de vos chances de bloquer. Si vous bloquez une attaque, ce bonus est doublé pendant 10 s.",
+          category: "Attaque",
+          class: "Nécromancien, Sacresprit",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 29,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 30,
+          image: "/gears/offensive.png",
+          label: "Aspect de funambule",
+          description:
+            "Les compétences infligent jusqu'à [5 - 25]%[x] de dégâts supplémentaires en fonction de votre ressource principale disponible à leur lancement, pour un résultat maximal lorsque votre ressource principale est au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 31,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'attente",
+          description:
+            "Après avoir attaqué des adversaires avec une compétence de base, les dégâts de votre prochaine compétence principale lancée dans les 5 s qui suivent sont augmentés de [5 - 12]%[x], jusqu'à 30%[x] au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 32,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'émissaire de Rathma",
+          description:
+            "Votre vitesse d'attaque augmente de [35 - 55]%[+] pendant 4 s chaque fois que vos compétences de sang infligent des dégâts d'accablement.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 33,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'esprit incarcéré",
+          description:
+            "Si Esprit d'os explose à l'intérieur d'une prison d'os, il explose une seconde fois, infligeant [40.0 - 80.0]% de dégâts normaux.\nEsprit d'os cherche désormais en priorité les adversaires dans la prison d'os.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 34,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'esprit phasique",
+          description:
+            "Quand Esprit d'os explose, il fait apparaître 3 esprits qui se jettent sur les adversaires à proximité et leur infligent [20 - 40]% de ses dégâts. Cet effet ne peut survenir qu'une fois par lancer.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 35,
+          image: "/gears/offensive.png",
+          label: "Aspect de la faucheuse libératrice",
+          description:
+            "Lorsque vous infligez des dégâts avec Section, vous avez [15 - 35]% de chances de créer une flaque de chancre sous la cible, ce qui inflige [70 - 190]%[x] de dégâts supplémentaires. Cet effet ne peut se produire qu'une fois toutes les 3 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 36,
+          image: "/gears/offensive.png",
+          label: "Aspect de la fureur déchaînée",
+          description:
+            "L'utilisation d'une compétence ultime augmente les dégâts de vos compétences ultimes de [6.0 - 10.0]%[x], jusqu'à un maximum de [60 - 100]%[x]. Lorsque vous avez cumulé cet effet 10 fois, il se réinitialise tout comme vos temps de recharge.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 37,
+          image: "/gears/offensive.png",
+          label: "Aspect de la mort insidieuse",
+          description:
+            "Vous infligez aux adversaires [5.0 - 20.0]%[x] de dégâts supplémentaires sur la durée pour chaque effet de perte de contrôle différent qui leur est appliqué. Vous infligez plutôt [10 - 40]%[x] de dégâts supplémentaires sur la durée aux adversaires inarrêtables et aux boss stupéfiés.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 38,
+          image: "/gears/offensive.png",
+          label: "Aspect de lotiforme",
+          description:
+            "Au lieu de revenir, Section se divise en 3 spectres qui se déploient à partir de la cible. Section inflige [180 - 240]% des dégâts normaux.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 39,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 40,
+          image: "/gears/offensive.png",
+          label: "Aspect de mort inopinée",
+          description:
+            "Chaque pour cent de votre maximum de points vie que vous récupérez au-delà de 100% ajoute 0.5%[x] de dégâts critiques à votre prochain coup critique, jusqu'à un bonus maximum de [30 - 70]%[x].\nVous pouvez désormais boire des potions de soins, même si vous avez tous vos points de vie.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 41,
+          image: "/gears/offensive.png",
+          label: "Aspect de pointes d'hémorragie",
+          description:
+            "Lorsque vous lancez Prélèvement, vous consommez des orbes de sang afin d'invoquer également des lances depuis ces orbes. Chaque lance de sang additionnelle inflige [60 - 100]% des dégâts normaux et cible en priorité les cibles non empalées.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 42,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 43,
+          image: "/gears/offensive.png",
+          label: "Aspect de querelleur",
+          description:
+            "L'utilisation d'une compétence ultime augmente vos dégâts de [10 - 30]%[x] pendant 8 s. Vos compétences ultimes bénéficient de 2 rangs supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 44,
+          image: "/gears/offensive.png",
+          label: "Aspect de raz-de-marée",
+          description:
+            "Vague de sang projette deux vagues supplémentaires, chacune infligeant [40 - 100]% de dégâts normaux, mais vous ne pouvez plus en lancer tant que la dernière vague n'est pas passée.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 45,
+          image: "/gears/offensive.png",
+          label: "Aspect de réanimation",
+          description:
+            "Tant qu'ils sont en vie, vos serviteurs infligent des dégâts accrus, jusqu'à une augmentation maximale de [40 - 60]%[x] après 10 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 46,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang bouillonnant",
+          description:
+            "Lorsque vos compétences principales accablent les adversaires, vous faites apparaître 3 gouttes de sang instable. Ramassez-en une pour la faire exploser et infliger [263 - 938] points de dégâts physiques autour de vous.\nToutes les 20 s, votre prochaine compétence accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 47,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang insatiable",
+          description:
+            "Chaque fois que Prélèvement touche en premier une cible déjà atteinte par cette compétence, déclenche un nouveau Prélèvement infligeant [60 - 100]% des dégâts normaux à un personnage ennemi à proximité.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 48,
+          image: "/gears/offensive.png",
+          label: "Aspect de servitude et sacrifice",
+          description:
+            "Les guerriers squelettes explosent en mourant, ce qui inflige [300 - 450] points de dégâts physiques supplémentaires aux adversaires à proximité. En combat, les squelettes perdent 25% de points de vie par seconde.\nLes mages squelettes subissent 90% de dégâts en moins et ils infligent [50.0 - 100.0]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 49,
+          image: "/gears/offensive.png",
+          label: "Aspect de toucher maudit",
+          description:
+            "Coup de chance : vos compétences ont jusqu'à [20.0 - 40.0]% de chances d'infliger aux adversaires une malédiction vampirique. Toute cible affectée par une malédiction vampirique est également vulnérable.\nLes âmes stockées par la malédiction vampirique infligent [20.0 - 60.0]% points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 50,
+          image: "/gears/offensive.png",
+          label: "Aspect de vindicte",
+          description:
+            "Les cibles à distance ont 10% de chances d'être étourdies pendant 2 s lorsqu'elles vous infligent des dégâts.\nVous infligez [15 - 35]%[x] de dégâts supplémentaires aux cibles étourdies ou renversées.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 51,
+          image: "/gears/utility.png",
+          label: "Aspect des cherche-sangs",
+          description:
+            "Vos prêtres squelettes vous renforcent désormais à [55 - 75]% d'efficacité.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 52,
+          image: "/gears/offensive.png",
+          label: "Aspect des damnés",
+          description:
+            "Vos dégâts d'ombre sont augmentés de [35 - 55]%[x] contre les cibles affectées par une malédiction.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 53,
+          image: "/gears/offensive.png",
+          label: "Aspect des éléments",
+          description:
+            "Augmente les dégâts infligés par un ensemble de types de dégâts de [15 - 35]%[x] pendant 7 s. Cet effet alterne entre deux ensembles :\n• feu, foudre et physiques ;\n• froid, poison et ombre.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 54,
+          image: "/gears/offensive.png",
+          label: "Aspect des morts frénétiques",
+          description:
+            "Chaque fois qu'un de vos serviteurs blesse une cible, sa vitesse d'attaque augmente de [10.0 - 18.0]%[+] pendant 3 s, jusqu'à un maximum de [30.0 - 54.0]%[+].",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 55,
+          image: "/gears/offensive.png",
+          label: "Aspect des ténèbres descendantes",
+          description:
+            "Prison d'os est désormais une compétence de ténèbres qui crée des chancres pendant 6 s. Vos chancres infligent [40 - 60]%[x] de dégâts supplémentaires tant que Prison d'os est active.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 56,
+          image: "/gears/offensive.png",
+          label: "Aspect des veines rapaces",
+          description:
+            "Vos chances d'infliger un coup critique sont augmentées de [5 - 25]%[+] pendant 6 s lorsque vous lancez Vrilles nécrophages. Vous infligez [10 - 50]%[x] de dégâts critiques supplémentaires aux cibles blessées par Vrilles nécrophages pendant 6 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 57,
+          image: "/gears/offensive.png",
+          label: "Aspect du crépuscule",
+          description:
+            "Lorsque vous infligez des dégâts avec une compétence de base, vous recevez 4% de vitesse d'attaque supplémentaire pendant 10 s, jusqu'à un maximum de 5 fois. Une fois ce seuil atteint, vous sombrez dans une rage de sang vampirique et obtenez un bonus de [40 - 60]%[x] aux dégâts des compétences de base et de 15% à la vitesse de déplacement pendant 10 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 58,
+          image: "/gears/offensive.png",
+          label: "Aspect du déluge d'os",
+          description:
+            "Tempête d'os consomme jusqu'à 8 cadavres pour augmenter sa durée jusqu'à un maximum de [5.0 - 15.0] s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 59,
+          image: "/gears/offensive.png",
+          label: "Aspect du grand festin",
+          description:
+            "Lorsque vous possédez des serviteurs actifs, vos invocations infligent [35 - 55]%[x] de dégâts supplémentaires, mais chaque serviteur vous draine 2 points d'essence par seconde.\nSi vous n'avez pas de serviteur actif, vous infligez [35 - 55]%[x] de dégâts supplémentaires, mais 14 points d'essence sont drainés par seconde.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 60,
+          image: "/gears/utility.png",
+          label: "Aspect du porte-froid",
+          description:
+            "Toutes les 4 s, vos mages squelettes lancent un blizzard qui inflige [135 - 180] points de dégâts de froid et qui glace en continu les adversaires à hauteur de 6% en 8 s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 61,
+          image: "/gears/offensive.png",
+          label: "Aspect du traqueur de sang",
+          description:
+            "Prélèvement inflige [5.0 - 15.0]%[x] de dégâts supplémentaires à sa cible principale par cible empalée.\nTant que vous êtes en bonne santé vos prélèvements infligent [15 - 35]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 62,
+          image: "/gears/utility.png",
+          label: "Aspect du vide",
+          description:
+            "Une fois générée, la zone souillée de chancre attire les adversaires proches et a [35 - 55]% de chances de les étourdir pendant 3 s lorsqu'elle apparaît.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 63,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 64,
+          image: "/gears/offensive.png",
+          label: "Aspect expéditif",
+          description:
+            "La vitesse d'attaque des compétences de base est augmentée de [15 - 35]%[+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 65,
+          image: "/gears/offensive.png",
+          label: "Aspect fracturant",
+          description:
+            "L'attaque principale de Lance d'os rend vulnérables les cibles touchées après la première cible pendant 3 s. Les éclats osseux de Lance d'os infligent [30 - 70]% de dégâts supplémentaires aux adversaires vulnérables et les transpercent.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 66,
+          image: "/gears/offensive.png",
+          label: "Aspect hérissé",
+          description:
+            "Lorsque vous esquivez ou bloquez une attaque, vous infligez à l'adversaire [100 - 200]% de dégâts d'épines.",
+          category: "Attaque",
+          class: "Nécromancien, Sacresprit",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 67,
+          image: "/gears/utility.png",
+          label: "Aspect massif",
+          description:
+            "Votre golem a [2 - 18]% de chances de réduire son temps de recharge actif de 2 s et [1.0 - 9.0]% de chances de générer un cadavre chaque fois qu'il inflige des dégâts à une cible adverse avec son attaque normale.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 68,
+          image: "/gears/offensive.png",
+          label: "Aspect putréfié",
+          description:
+            "Décomposition peut atteindre jusqu'à 4 cibles supplémentaires qu'elle fait exploser. Les explosions déclenchées par Décomposition infligent [15 - 35]%[x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 69,
+          image: "/gears/offensive.png",
+          label: "Aspect putrescent",
+          description:
+            "Les attaques consécutives avec la compétence passive principale Chancre d'ombre infligent [25.0 - 35.0]%[x] de dégâts supplémentaires à chaque coup. Cet effet se réinitialise 6 s après le premier coup.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 70,
+          image: "/gears/offensive.png",
+          label: "Aspect sacrificiel",
+          description: "Vos bonus de Sacrifice sont augmentés de [35 - 55]%.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 71,
+          image: "/gears/utility.png",
+          label: "Aspect tortionnaire",
+          description:
+            "Vierge de fer est désormais aussi une compétence de ténèbres et inflige des dégâts d'ombre. Les cibles ont [10 - 30]% de chances d'être étourdies pendant 1 s lorsqu'elles subissent des dégâts occasionnés par Vierge de fer.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Gloves"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/utility.png",
+          label: "Aspect aphotique",
+          description:
+            "Vos prêtres squelettes renforcent désormais les attaques de vos guerriers squelettes. Celles-ci infligent des dégâts d'ombre et ont [5.0 - 25.0]% de chances d'étourdir les adversaires pendant 1.5 s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 2,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 3,
+          image: "/gears/defensive.png",
+          label: "Aspect d'approche sournoise",
+          description:
+            "Lorsque vous cumulez une perte de 50 % de votre maximum de vie, vous lancez automatiquement une compétence équipée de défense, de subterfuge ou macabre avant de subir les dégâts. Ne se produit qu'une fois toutes les [45 - 30] s et ne peut pas lancer de compétences de mobilité.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 4,
+          image: "/gears/defensive.png",
+          label: "Aspect d'assimilation",
+          description:
+            "Vous avez 8% de chances supplémentaires d'esquiver. Lorsque vous esquivez, vous obtenez une fortification équivalente à [5 - 12]% de votre maximum de points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 5,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33]%. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 6,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 7,
+          image: "/gears/utility.png",
+          label: "Aspect d'aura maudite",
+          description:
+            "Une aura ténébreuse vous entoure, infligeant Décrépitude et Vierge de fer aux adversaires qui la touchent. Les malédictions infligées de la sorte affectent les cibles à proximité toutes les [2.5 - 0.3] s et durent 4 s en dehors de l'aura.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 8,
+          image: "/gears/defensive.png",
+          label: "Aspect d'embaumement",
+          description:
+            "Consommer un cadavre a [15 - 35]% de chances de faire apparaître un orbe de sang.",
+          category: "Défense",
+          class: "Nécromancien",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 9,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 10,
+          image: "/gears/defensive.png",
+          label: "Aspect d'immortalité",
+          description:
+            "Lorsque vous utilisez une compétence, vous récupérez [0.5 - 2.5]% de vos points de vie. Ce bonus double si vous disposez de moins de 50% de vos points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 11,
+          image: "/gears/defensive.png",
+          label: "Aspect d'os durcis",
+          description:
+            "Votre réduction des dégâts est augmentée de [10 - 30]%.",
+          category: "Défense",
+          class: "Nécromancien",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 12,
+          image: "/gears/defensive.png",
+          label: "Aspect de barrière réfléchissante",
+          description:
+            "Après avoir subi des dégâts directs, vous avez [5.0 - 12.0]% de chances d'obtenir une barrière équivalente à 20% de votre maximum de points de vie pendant 10 s. Ces chances sont doublées contre les adversaires à distance.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 13,
+          image: "/gears/utility.png",
+          label: "Aspect de brume explosive",
+          description:
+            "Brume de sang déclenche Explosion macabre sur les cadavres proches. Lorsque Brume de sang fait exploser un cadavre, son temps de recharge est réduit de [0.1 - 0.8] s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 14,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace concentration",
+          description:
+            "Vous gagnez [583 - 1.456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 15,
+          image: "/gears/defensive.png",
+          label: "Aspect de désobéissance",
+          description:
+            "Votre armure est augmentée de [0.4 - 0.8]%[+]] pendant 4 s lorsque vous infligez n'importe quel type de dégâts, jusqu'à un maximum de [25.0 - 46.0]%[+].",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 16,
+          image: "/gears/utility.png",
+          label: "Aspect de domination occulte",
+          description:
+            "Votre nombre maximum de guerriers squelettes et de mages squelettes est augmenté de 2.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 17,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'hébétement durent [20 - 40]%[+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]%[+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 18,
+          image: "/gears/defensive.png",
+          label: "Aspect de la tempête protectrice",
+          description:
+            "Chaque fois que Tempête d'os inflige des dégâts aux adversaires, vous obtenez une barrière à hauteur de [1.0 - 8.0]% de votre maximum de points de vie pendant 10 s.",
+          category: "Défense",
+          class: "Nécromancien",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 19,
+          image: "/gears/defensive.png",
+          label: "Aspect de mastodonte",
+          description:
+            "Vous obtenez [583 - 816] points d'armure, mais le temps de recharge d'Esquive augmente de 100%.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 20,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 21,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10%[x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 22,
+          image: "/gears/defensive.png",
+          label: "Aspect de sagesse par le nombre",
+          description:
+            "Vos chances d'esquiver sont augmentées de 8 %. Vous récupérez [5 - 25]% de votre maximum de vie en cas d'esquive réussie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 23,
+          image: "/gears/defensive.png",
+          label: "Aspect de strates protectrices",
+          description:
+            "Votre réduction des dégâts bloqués est augmentée de [20 - 40]%[+] tant que vous avez une barrière.",
+          category: "Défense",
+          class: "Nécromancien, Sacresprit",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 24,
+          image: "/gears/defensive.png",
+          label: "Aspect de toute-puissance",
+          description:
+            "Les compétences de base confèrent 20.0% de réduction des dégâts pendant [2.0 - 10.0] s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 25,
+          image: "/gears/utility.png",
+          label: "Aspect des cherches-sangs",
+          description:
+            "Vos prêtres squelettes vous renforcent désormais à [55 - 75]% d'efficacité.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 26,
+          image: "/gears/defensive.png",
+          label: "Aspect du cœur prudent",
+          description:
+            "Après avoir subi des dégâts équivalant à au moins 20 % de votre maximum de vie à la fois, vous devenez insensible pendant [2.5 - 4.0] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 27,
+          image: "/gears/utility.png",
+          label: "Aspect du porte-froid",
+          description:
+            "Toutes les 4 s, vos mages squelettes lancent un blizzard qui inflige [135 - 180] points de dégâts de froid et qui glace en continu les adversaires à hauteur de 6% en 8 s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 28,
+          image: "/gears/defensive.png",
+          label: "Aspect du Protecteur",
+          description:
+            "Le fait de blesser une cible adverse élite vous octroie une barrière qui absorbe jusqu'à [655 - 5.898] points de dégâts pendant 10 s. Cet effet ne peut se produire qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 29,
+          image: "/gears/utility.png",
+          label: "Aspect du vide",
+          description:
+            "Une fois générée, la zone souillée de chancre attire les adversaires proches et a [35 - 55]% de chances de les étourdir pendant 3 s lorsqu'elle apparaît.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 30,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 31,
+          image: "/gears/utility.png",
+          label: "Aspect massif",
+          description:
+            "Votre golem a [2 - 18]% de chances de réduire son temps de recharge actif de 2 s et [1.0 - 9.0]% de chances de générer un cadavre chaque fois qu'il inflige des dégâts à une cible adverse avec son attaque normale.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 32,
+          image: "/gears/defensive.png",
+          label: "Aspect protecteur",
+          description:
+            "Lorsque vous n'êtes pas en bonne santé, vous invoquez une bulle protectrice qui rend insensible l'ensemble des personnages-joueurs à l'intérieur. La bulle dure [2.5 - 6.0] s et ne peut se former qu'une fois toutes les 90 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Pants"],
+        },
+        {
+          id: 33,
+          image: "/gears/utility.png",
+          label: "Aspect tortionnaire",
+          description:
+            "Vierge de fer est désormais aussi une compétence de ténèbres et inflige des dégâts d'ombre. Les cibles ont [10 - 30]% de chances d'être étourdies pendant 1 s lorsqu'elles subissent des dégâts occasionnés par Vierge de fer.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Pants"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/utility.png",
+          label: "Aspect aphotique",
+          description:
+            "Vos prêtres squelettes renforcent désormais les attaques de vos guerriers squelettes. Celles-ci infligent des dégâts d'ombre et ont [5.0 - 25.0]% de chances d'étourdir les adversaires pendant 1.5 s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 2,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 3,
+          image: "/gears/mobility.png",
+          label: "Aspect d'anima distillée",
+          description:
+            "Tant que Faille des âmes est active, vous pouvez vous déplacer librement et votre vitesse de déplacement est augmentée de 1%[+] par âme absorbée, jusqu'à un maximum de [40 - 80%] [+]. Cet effet perdure 5 s après la fin de Faille des âmes.",
+          category: "Mobilité",
+          class: "Nécromancien",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 4,
+          image: "/gears/mobility.png",
+          label: "Aspect d'arpenteur spectral",
+          description:
+            "Lorsque vous êtes inarrêtable et pendant les 4 s qui suivent la fin de cet effet, votre vitesse de déplacement augmente de [10 - 30%] [+] et vous pouvez vous déplacer librement.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 5,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33%] [x]. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 6,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 7,
+          image: "/gears/utility.png",
+          label: "Aspect d'aura maudite",
+          description:
+            "Une aura ténébreuse vous entoure, infligeant Décrépitude et Vierge de fer aux adversaires qui la touchent. Les malédictions infligées de la sorte affectent les cibles à proximité toutes les [2.5 - 0.3] s et durent 4 s en dehors de l'aura.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 8,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givréés",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 9,
+          image: "/gears/mobility.png",
+          label: "Aspect de bain de sang",
+          description:
+            "Brume de sang laisse un sol souillé sur son passage qui dure 8 s et inflige [53 - 83] points de dégâts d'ombre par seconde. Votre vitesse de déplacement est augmentée de 30%[+] lorsque Brume de sang est active et que vous vous tenez sur ce sol souillé.",
+          category: "Mobilité",
+          class: "Nécromancien",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 10,
+          image: "/gears/utility.png",
+          label: "Aspect de brume explosive",
+          description:
+            "Brume de sang déclenche Explosion macabre sur les cadavres proches. Lorsque Brume de sang fait exploser un cadavre, son temps de recharge est réduit de [0.1 - 0.8] s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 11,
+          image: "/gears/mobility.png",
+          label: "Aspect de cadavre insidieux",
+          description:
+            "Consommer un cadavre augmente votre vitesse de déplacement de [20.0 - 40.0]% pendant 8 s.",
+          category: "Mobilité",
+          class: "Nécromancien",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 12,
+          image: "/gears/mobility.png",
+          label: "Aspect de carnage",
+          description:
+            "Vous obtenez 20% de vitesse de déplacement. Ce bonus disparaît pendant [5.0 - 2.0] s après avoir subi des dégâts d'un personnage adverse à proximité.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 13,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1.456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 14,
+          image: "/gears/utility.png",
+          label: "Aspect de domination occulte",
+          description:
+            "Votre nombre maximum de guerriers squelettes et de mages squelettes est augmenté de 2.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 15,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'Hébétement durent [20 - 40]% [+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]% [+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 16,
+          image: "/gears/mobility.png",
+          label: "Aspect de la Faucheuse intraitable",
+          description:
+            "Section vous projette désormais en avant pour attaquer. Elle est désormais aussi une compétence de mobilité et ne consomme pas de points d'essence, mais elle a un temps de recharge de [13.5 - 3.5] s.",
+          category: "Mobilité",
+          class: "Nécromancien",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 17,
+          image: "/gears/mobility.png",
+          label: "Aspect de la frappe du vent",
+          description:
+            "Les coups critiques augmentent votre vitesse de déplacement de [8.5 - 19.0]% [+] pendant 1 s, jusqu'à 6 s.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 18,
+          image: "/gears/mobility.png",
+          label: "Aspect de métamorphose",
+          description:
+            "Pendant une esquive, vous vous transformez en une nuée de chauves-souris et devenez inarrêtable pendant 2.5 s. Les adversaires sur votre chemin subissent 300 points de dégâts physiques ainsi qu'une malédiction vampirique. Le temps de recharge d'Esquive est augmenté de [10.0 - 4.0] s.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 19,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 20,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10% [x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 21,
+          image: "/gears/utility.png",
+          label: "Aspect des cherche-sang",
+          description:
+            "Vos prêtres squelettes vous renforcent désormais à [55 - 75]% d'efficacité.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 22,
+          image: "/gears/mobility.png",
+          label: "Aspect du lien impie",
+          description:
+            "Au lancement de la compétence active de votre golem, un lien se crée entre vous et lui pendant 5 s. Tant que ce lien est actif, vous et votre golem devenez inarrêtables et obtenez [25.0 - 45.0]% de vitesse de déplacement.",
+          category: "Mobilité",
+          class: "Nécromancien",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 23,
+          image: "/gears/utility.png",
+          label: "Aspect du porte-froid",
+          description:
+            "Toutes les 4 s, vos mages squelettes lancent un blizzard qui inflige [135 - 180] points de dégâts de froid et qui glace en continu les adversaires à hauteur de 6% en 8 s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 24,
+          image: "/gears/utility.png",
+          label: "Aspect du vide",
+          description:
+            "Une fois générée, la zone souillée de chancre attire les adversaires proches et a [35 - 55]% de chances de les étourdir pendant 3 s lorsqu'elle apparaît.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 25,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 26,
+          image: "/gears/mobility.png",
+          label: "Aspect lâche",
+          description:
+            "Votre vitesse de déplacement est augmentée de [25 - 45]% [x] lorsque vous vous éloignez de cibles ralenties ou glacées.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 27,
+          image: "/gears/utility.png",
+          label: "Aspect massif",
+          description:
+            "Votre golem a [2 - 18]% de chances de réduire son temps de recharge actif de 2 s et [1.0 - 9.0]% de chances de générer un cadavre chaque fois qu'il inflige des dégâts à une cible adverse avec son attaque normale.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Boots"],
+        },
+        {
+          id: 28,
+          image: "/gears/utility.png",
+          label: "Aspect tortionnaire",
+          description:
+            "Vierge de fer est désormais aussi une compétence de ténèbres et inflige des dégâts d'ombre. Les cibles ont [10 - 30]% de chances d'être étourdies pendant 1 s lorsqu'elles subissent des dégâts occasionnés par Vierge de fer.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Boots"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/offensive.png",
+          label: "Aspect baigné de sang",
+          description:
+            "La nova d'Afflux sanguin explose à nouveau après un bref instant, infligeant [30 - 10]% [x] de dégâts en moins.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 2,
+          image: "/gears/offensive.png",
+          label: "Aspect cadavérique",
+          description:
+            "Consommer un cadavre augmente les dégâts que vous infligez de [3.5 - 7]% [x] pendant 5 s, jusqu'à un maximum de [18 - 35]% [x].",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 3,
+          image: "/gears/offensive.png",
+          label: "Aspect d'abus",
+          description:
+            "La durée des effets de perte de contrôle que vous infligez est augmentée de 20%. Tant que les adversaires sont inarrêtables, vous leur infligez [25 - 45]% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 4,
+          image: "/gears/offensive.png",
+          label: "Aspect d'accélération",
+          description:
+            "Les coups critiques avec les compétences principales augmentent votre vitesse d'attaque de [10.0 - 30.0]% [+] pendant 5 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 5,
+          image: "/gears/offensive.png",
+          label: "Aspect d'appétit funeste",
+          description:
+            "La compétence active de votre golem provoque également son éruption, ce qui inflige [300 - 600] points de dégâts physiques aux cibles adverses à proximité. Votre golem consomme des cadavres pour réduire de 1 s son temps de recharge restant et inflige 0% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 6,
+          image: "/gears/offensive.png",
+          label: "Aspect d'arrogance",
+          description:
+            "Vous infligez [10 - 30]% [x] de dégâts supplémentaires tant que vous avez une barrière active.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 7,
+          image: "/gears/offensive.png",
+          label: "Aspect d'explosion osseuse",
+          description:
+            "Lorsqu'un fragment de Prison d'os est détruit ou expire, celui-ci inflige [113 - 203] points de dégâts dans la zone autour de lui.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 8,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hirsutisme",
+          description:
+            "Les dégâts d'épines infligés ont [25 - 45]% de chances d'infliger des dégâts aux adversaires autour de vous et de vos serviteurs.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 9,
+          image: "/gears/offensive.png",
+          label: "Aspect d'humérus putréfié",
+          description:
+            "Vos compétences d'os infligent désormais des dégâts d'ombre au lieu de dégâts physiques. Les cibles adverses subissent [15 - 25]% [x] de dégâts d'ombre supplémentaires après avoir été frappées par une compétence d'os.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 10,
+          image: "/gears/offensive.png",
+          label: "Aspect d'ombre ultime",
+          description:
+            "Tempête d'os et Vague de sang sont désormais également des compétences de ténèbres. Elles infligent des dégâts d'ombre et bénéficient d'effets supplémentaires : Les cibles touchées par Tempête d'os subissent [120 - 420] points de dégâts de corruption en 2 s. Vague de sang laisse un sol souillé sur son passage, qui inflige [1.920 - 6.720] points de dégâts de corruption en 4 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 11,
+          image: "/gears/offensive.png",
+          label: "Aspect d'ombrebrume",
+          description:
+            "Vos serviteurs infligent 38 points de dégâts de corruption par seconde aux adversaires autour d'eux. Les dégâts sur la durée durent [2.0 - 5.0] s après avoir quitté l'aura.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 12,
+          image: "/gears/offensive.png",
+          label: "Aspect de calme intérieur",
+          description:
+            "Vous infligez [5.0 - 13.0]% [x] de dégâts supplémentaires. Ce bonus est triplé lorsque vous restez immobile pendant 3 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 13,
+          image: "/gears/offensive.png",
+          label: "Aspect de châtiment",
+          description:
+            "Vos chances d'infliger un coup critique aux cibles blessées sont augmentées de [13 - 23]% [+]. Lorsque vous êtes en bonne santé, vous bénéficiez d'une augmentation de la durée des effets de perte de contrôle de [25 - 45]% [+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 14,
+          image: "/gears/offensive.png",
+          label: "Aspect de commandement inflexible",
+          description:
+            "Tant qu'Armée de morts est active, vos serviteurs subissent 90% de dégâts en moins et vous infligez [70 - 110]% [x] de dégâts d'invocation supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 15,
+          image: "/gears/offensive.png",
+          label: "Aspect de délabrement",
+          description:
+            "Chaque fois que la capacité passive principale Chancre d'ombre inflige des dégâts aux adversaires, elle augmente les dégâts du prochain Chancre d'ombre infligés dans les 10 s de [30 - 50]% [x], cet effet pouvant se cumuler jusqu'à 5 fois.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 16,
+          image: "/gears/offensive.png",
+          label: "Aspect de dents de scie",
+          description:
+            "La compétence passive principale Essence ossifiée augmente aussi les dégâts critiques de vos compétences d'os de 1% [x] par point d'essence au-dessus de 50, jusqu'à un maximum de [25 - 45]% [x].",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 17,
+          image: "/gears/offensive.png",
+          label: "Aspect de désossement",
+          description:
+            "Lance d'os inflige [30 - 50]% [x] de dégâts supplémentaires aux adversaires se trouvant dans une Prison d'os et la première lance d'os à atteindre chaque adversaire à l'intérieur de la prison accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 18,
+          image: "/gears/offensive.png",
+          label: "Aspect de destin inévitable",
+          description:
+            "Lorsqu'une cible tombe à moins de 35% de points de vie sous l'effet d'un de vos dégâts sur la durée, une explosion se produit toutes les 7 s, infligeant [300 - 525] points de dégâts pour chaque élément qui l'affecte.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 19,
+          image: "/gears/offensive.png",
+          label: "Aspect de force détournée",
+          description:
+            "Vos dégâts critiques augmentent à hauteur de [30 - 70]% [x] de vos chances de bloquer. Si vous bloquez une attaque, ce bonus est doublé pendant 10 s.",
+          category: "Attaque",
+          class: "Nécromancien, Sacresprit",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 20,
+          image: "/gears/offensive.png",
+          label: "Aspect de funambule",
+          description:
+            "Les compétences infligent jusqu'à [5 - 25]% [x] de dégâts supplémentaires en fonction de votre ressource principale disponible à leur lancement, pour un résultat maximal lorsque votre ressource principale est au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 21,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'attente",
+          description:
+            "Après avoir attaqué des adversaires avec une compétence de base, les dégâts de votre prochaine compétence principale lancée dans les 5 s qui suivent sont augmentés de [5 - 12]% [x], jusqu'à 30% [x] au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 22,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'émissaire de Rathma",
+          description:
+            "Votre vitesse d'attaque augmente de [35 - 55]% [+] pendant 4 s chaque fois que vos compétences de sang infligent des dégâts d'accablement.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 23,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'esprit incarcéré",
+          description:
+            "Si Esprit d'os explose à l'intérieur d'une prison d'os, il explose une seconde fois, infligeant [40.0 - 80.0]% de dégâts normaux. Esprit d'os cherche désormais en priorité les adversaires dans la prison d'os.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 24,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'esprit physique",
+          description:
+            "Quand Esprit d'os explose, il fait apparaître 3 esprits qui se jettent sur les adversaires à proximité et leur infligent [20 - 40]% de ses dégâts. Cet effet ne peut survenir qu'une fois par lancer.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 25,
+          image: "/gears/offensive.png",
+          label: "Aspect de la faucheuse libératrice",
+          description:
+            "Lorsque vous infligez des dégâts avec Section, vous avez [15 - 35]% de chances de créer une flaque de chancre sous la cible, ce qui inflige [70 - 190]% [x] de dégâts supplémentaires. Cet effet ne peut se produire qu'une fois toutes les 3 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 26,
+          image: "/gears/offensive.png",
+          label: "Aspect de la fureur déchaînée",
+          description:
+            "L'utilisation d'une compétence ultime augmente les dégâts de vos compétences ultimes de [6.0 - 10.0]% [x], jusqu'à un maximum de [60 - 100]% [x]. Lorsque vous avez cumulé cet effet 10 fois, il se réinitialise tout comme vos temps de recharge.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 27,
+          image: "/gears/offensive.png",
+          label: "Aspect de la mort insidieuse",
+          description:
+            "Vous infligez aux adversaires [5.0 - 20.0]% [x] de dégâts supplémentaires sur la durée pour chaque effet de perte de contrôle différent qui leur est appliqué. Vous infligez plutôt [10 - 40]% [x] de dégâts supplémentaires sur la durée aux adversaires inarrêtables et aux boss stupéfiés.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 28,
+          image: "/gears/offensive.png",
+          label: "Aspect de lotiforme",
+          description:
+            "Au lieu de revenir, Section se divise en 3 spectres qui se déploient à partir de la cible. Section inflige [180 - 240]% des dégâts normaux.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 29,
+          image: "/gears/offensive.png",
+          label: "Aspect de mort inopinée",
+          description:
+            "Chaque pour cent de votre maximum de points de vie que vous récupérez au-delà de 100% ajoute 0.5% [x] de dégâts critiques à votre prochain coup critique, jusqu'à un bonus maximum de [30 - 70]% [x].",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 30,
+          image: "/gears/offensive.png",
+          label: "Aspect de points d'hémorragie",
+          description:
+            "Lorsque vous lancez Prélèvement, vous consommez des orbes de sang afin d'invoquer également des lances depuis ces orbes. Chaque lance de sang additionnelle inflige [60 - 100]% des dégâts normaux et cible en priorité les cibles non empalées.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 31,
+          image: "/gears/offensive.png",
+          label: "Aspect de querelleur",
+          description:
+            "L'utilisation d'une compétence ultime augmente vos dégâts de [10 - 30]% [x] pendant 8 s. Vos compétences ultimes bénéficient de 2 rangs supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 32,
+          image: "/gears/offensive.png",
+          label: "Aspect de raz-de-marée",
+          description:
+            "Vague de sang projette deux vagues supplémentaires, chacune infligeant [40 - 100]% de dégâts normaux, mais vous ne pouvez plus en lancer tant que la dernière vague n'est pas passée.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 33,
+          image: "/gears/offensive.png",
+          label: "Aspect de réanimation",
+          description:
+            "Tant qu'ils sont en vie, vos serviteurs infligent des dégâts accrus, jusqu'à une augmentation maximale de [40 - 60]% [x] après 10 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 34,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang bouillonnant",
+          description:
+            "Lorsque vos compétences principales accablent les adversaires, vous faites apparaître 3 gouttes de sang instable. Ramassez-en une pour la faire exploser et infliger [263 - 938] points de dégâts physiques autour de vous. Toutes les 20 s, votre prochaine compétence accablera obligatoirement vos adversaires. Toutes les 20 s, Prélèvement touche compétence accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 35,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang instable",
+          description:
+            "Chaque fois que Prélèvement touche en premier une cible déjà atteinte par cette compétence, déclenche un nouveau Prélèvement infligeant [60 - 100]% des dégâts normaux à un personnage ennemi à proximité.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 36,
+          image: "/gears/offensive.png",
+          label: "Aspect de servitude et sacrifice",
+          description:
+            "Les guerriers squelettes explosent en mourant, ce qui inflige [300 - 450] points de dégâts physiques supplémentaires aux adversaires à proximité. En combat, les squelettes perdent 25% de points de vie par seconde. Les mages squelettes subissent 90% de dégâts en moins et infligent [50.0 - 100.0]% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 37,
+          image: "/gears/offensive.png",
+          label: "Aspect de toucher maudit",
+          description:
+            "Coup de chance : vos malédictions ont jusqu'à [20.0 - 40.0]% de chances d'infliger aux adversaires une malédiction vampirique. Toute cible affectée par une malédiction vampirique est également vulnérable. Les âmes stockées par la malédiction vampirique infligent [20.0 - 60.0]% points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 38,
+          image: "/gears/offensive.png",
+          label: "Aspect de vindicte",
+          description:
+            "Les cibles à distance ont 10% de chances d'être étourdies pendant 2 s lorsqu'elles vous infligent des dégâts. Vous infligez [15 - 35]% [x] de dégâts supplémentaires aux cibles étourdies ou renversées.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 39,
+          image: "/gears/offensive.png",
+          label: "Aspect des damnés",
+          description:
+            "Vos dégâts d'ombre sont augmentés de [35 - 55]% [x] contre les cibles affectées par une malédiction.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 40,
+          image: "/gears/offensive.png",
+          label: "Aspect des éléments",
+          description:
+            "Augmente les dégâts infligés par un ensemble de types de dégâts de [15 - 35]% [x] pendant 7 s. Cet effet alterne entre deux ensembles : feu, foudre et physiques ; froid, poison et ombre.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 41,
+          image: "/gears/offensive.png",
+          label: "Aspect des morts frénétiques",
+          description:
+            "Chaque fois qu'un de vos serviteurs blesse une cible, sa vitesse d'attaque augmente de [10.0 - 18.0]% [+] pendant 3 s, jusqu'à un maximum de [30.0 - 54.0]% [+].",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 42,
+          image: "/gears/offensive.png",
+          label: "Aspect des ténèbres descendantes",
+          description:
+            "Prison d'os est désormais une compétence de ténèbres qui crée des chancres pendant 6 s. Vos chancres infligent [40 - 60]% [x] de dégâts supplémentaires tant que Prison d'os est active.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 43,
+          image: "/gears/offensive.png",
+          label: "Aspect des veines rapaces",
+          description:
+            "Vos chances d'infliger un coup critique sont augmentées de [5 - 25]% [+] pendant 6 s lorsque vous lancez Vrilles nécrophages. Vous infligez [10 - 50]% [x] de dégâts critiques supplémentaires aux cibles blessées par Vrilles nécrophages pendant 6 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 44,
+          image: "/gears/offensive.png",
+          label: "Aspect du crépuscule",
+          description:
+            "Lorsque vous infligez des dégâts avec une compétence de base, vous recevez 4% de vitesse d'attaque supplémentaire pendant 10 s, jusqu'à un maximum de 5 fois. Une fois ce seuil atteint, vous sombrez dans une rage de sang vampirique et obtenez un bonus de [40 - 60]% [x] aux dégâts des compétences de base et de 15% à la vitesse de déplacement pendant 10 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 45,
+          image: "/gears/offensive.png",
+          label: "Aspect du déluge d'os",
+          description:
+            "Tempête d'os consomme jusqu'à 8 cadavres pour augmenter sa durée jusqu'à un maximum de [5.0 - 15.0] s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 46,
+          image: "/gears/offensive.png",
+          label: "Aspect du grand festin",
+          description:
+            "Lorsque vous possédez des serviteurs actifs, vos invocations infligent [35 - 55]% [x] de dégâts supplémentaires, mais chaque serviteur vous draine 2 points d'essence par seconde. Si vous n'avez pas de serviteur actif, vous infligez [35 - 55]% [x] de dégâts supplémentaires, mais 14 points d'essence sont drainés par seconde.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 47,
+          image: "/gears/offensive.png",
+          label: "Aspect du traqueur de sang",
+          description:
+            "Prélèvement inflige [5.0 - 15.0]% [x] de dégâts supplémentaires à sa cible principale par cible empalée. Tant que vous êtes en bonne santé, vos prélèvements infligent [15 - 35]% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 48,
+          image: "/gears/offensive.png",
+          label: "Aspect expéditif",
+          description:
+            "La vitesse d'attaque des compétences de base est augmentée de [15 - 35]% [+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 49,
+          image: "/gears/offensive.png",
+          label: "Aspect fracturant",
+          description:
+            "L'attaque principale de Lance d'os rend vulnérables les cibles touchées après la première cible pendant 3 s. Les éclats osseux de Lance d'os infligent [30 - 70]% de dégâts supplémentaires aux adversaires vulnérables et les transpercent.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 50,
+          image: "/gears/offensive.png",
+          label: "Aspect hérissé",
+          description:
+            "Lorsque vous esquivez ou bloquez une attaque, vous infligez à l'adversaire [100 - 200]% de dégâts d'épines.",
+          category: "Attaque",
+          class: "Nécromancien, Sacresprit",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 51,
+          image: "/gears/offensive.png",
+          label: "Aspect putréfié",
+          description:
+            "Décomposition peut atteindre jusqu'à 4 cibles supplémentaires qu'elle fait exploser. Les explosions déclenchées par Décomposition infligent [15 - 35]% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 52,
+          image: "/gears/offensive.png",
+          label: "Aspect putrescent",
+          description:
+            "Les attaques consécutives avec la capacité passive principale Chancre d'ombre infligent [25.0 - 35.0]% [x] de dégâts supplémentaires à chaque coup. Cet effet se réinitialise 6 s après le premier coup.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+        {
+          id: 53,
+          image: "/gears/offensive.png",
+          label: "Aspect sacrificiel",
+          description: "Vos bonus de Sacrifice sont augmentés de [35 - 55]%.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Arme"],
+        },
+      ],
+      right: [
+        {
+          id: 1,
+          image: "/gears/utility.png",
+          label: "Aspect aphotique",
+          description:
+            "Vos prêtres squelettes renforcent désormais les attaques de vos guerriers squelettes. Celles-ci infligent des dégâts d'ombre et ont [5.0 - 25.0]% de chances d'étourdir les adversaires pendant 1.5 s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 2,
+          image: "/gears/offensive.png",
+          label: "Aspect baigné de sang",
+          description:
+            "La nova d'Afflux sanguin explose à nouveau après un bref instant, infligeant [30 - 10]% [x] de dégâts en moins.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 3,
+          image: "/gears/offensive.png",
+          label: "Aspect cadavérique",
+          description:
+            "Consommer un cadavre augmente les dégâts que vous infligez de [3.5 - 7]% [x] pendant 5 s, jusqu'à un maximum de [18 - 35]% [x].",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 4,
+          image: "/gears/offensive.png",
+          label: "Aspect d'abus",
+          description:
+            "La durée des effets de perte de contrôle que vous infligez est augmentée de 20%. Tant que les adversaires sont inarrêtables, vous leur infligez [25 - 45]% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 5,
+          image: "/gears/offensive.png",
+          label: "Aspect d'accélération",
+          description:
+            "Les coups critiques avec les compétences principales augmentent votre vitesse d'attaque de [10.0 - 30.0]% [+] pendant 5 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 6,
+          image: "/gears/utility.png",
+          label: "Aspect d'adaptabilité",
+          description:
+            "Les compétences de base génèrent 5 points de ressource principale supplémentaires, une fois par compétence.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 7,
+          image: "/gears/utility.png",
+          label: "Aspect d'agitation",
+          description:
+            "Après avoir utilisé 5 compétences de base, l'un de vos temps de recharge en cours est réduit de [1.0 - 2.5] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 8,
+          image: "/gears/mobility.png",
+          label: "Aspect d'anima distillée",
+          description:
+            "Tant que Faille des âmes est active, vous pouvez vous déplacer librement et votre vitesse de déplacement est augmentée de 1%[+] par âme absorbée, jusqu'à un maximum de [40 - 80%] [+]. Cet effet perdure 5 s après la fin de Faille des âmes.",
+          category: "Mobilité",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 9,
+          image: "/gears/offensive.png",
+          label: "Aspect d'appétit funeste",
+          description:
+            "La compétence active de votre golem provoque également son éruption, ce qui inflige [300 - 600] points de dégâts physiques aux cibles adverses à proximité. Votre golem consomme des cadavres pour réduire de 1 s son temps de recharge restant et inflige 0% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 10,
+          image: "/gears/defensive.png",
+          label: "Aspect d'approche sournoise",
+          description:
+            "Lorsque vous cumulez une perte de 50 % de votre maximum de vie, vous lancez automatiquement une compétence équipée de défense, de subterfuge ou macabre avant de subir les dégâts. Ne se produit qu'une fois toutes les [45 - 30] s et ne peut pas lancer de compétences de mobilité.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 11,
+          image: "/gears/mobility.png",
+          label: "Aspect d'arpenteur spectral",
+          description:
+            "Lorsque vous êtes inarrêtable et pendant les 4 s qui suivent la fin de cet effet, votre vitesse de déplacement augmente de [10 - 30%] [+] et vous pouvez vous déplacer librement.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 12,
+          image: "/gears/offensive.png",
+          label: "Aspect d'arrogance",
+          description:
+            "Vous infligez [10 - 30]% [x] de dégâts supplémentaires tant que vous avez une barrière active.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 13,
+          image: "/gears/defensive.png",
+          label: "Aspect d'assimilation",
+          description:
+            "Vous avez 8% de chances supplémentaires d'esquiver. Lorsque vous esquivez, vous obtenez une fortification équivalente à [5 - 12]% de votre maximum de points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 14,
+          image: "/gears/utility.png",
+          label: "Aspect d'assistance",
+          description:
+            "Le temps de recharge de votre renfort est réduit de [23 - 33%] [x]. Après avoir utilisé votre compétence ultime, vous appelez votre mercenaire en renfort. Cet effet ne peut pas se produire plus d'une fois toutes les 30 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 15,
+          image: "/gears/utility.png",
+          label: "Aspect d'audace",
+          description:
+            "Lorsqu'il y a au moins 5 adversaires à proximité, vous les étourdissez pendant [2.5 - 4.5] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 16,
+          image: "/gears/utility.png",
+          label: "Aspect d'aura maudite",
+          description:
+            "Une aura ténébreuse vous entoure, infligeant Décrépitude et Vierge de fer aux adversaires qui la touchent. Les malédictions infligées de la sorte affectent les cibles à proximité toutes les [2.5 - 0.3] s et durent 4 s en dehors de l'aura.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 17,
+          image: "/gears/defensive.png",
+          label: "Aspect d'embaumement",
+          description:
+            "Consommer un cadavre a [15 - 35]% de chances de faire apparaître un orbe de sang.",
+          category: "Défense",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 18,
+          image: "/gears/utility.png",
+          label: "Aspect d'enjambées givrées",
+          description:
+            "Lorsque vous avez moins de [45 - 60]% de points de vie, votre esquive gèle les adversaires proches, leur inflige 450 points de dégâts de froid et les rend vulnérables pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 19,
+          image: "/gears/offensive.png",
+          label: "Aspect d'explosion osseuse",
+          description:
+            "Lorsqu'un fragment de Prison d'os est détruit ou expire, celui-ci inflige [113 - 203] points de dégâts dans la zone autour de lui.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 20,
+          image: "/gears/resource.png",
+          label: "Aspect d'hémorragie",
+          description:
+            "Les orbes de sang réduisent le temps de recharge de votre compétence ultime de [1.00 - 3.00] s.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 21,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hirsutisme",
+          description:
+            "Les dégâts d'épines infligés ont [25 - 45]% de chances d'infliger des dégâts aux adversaires autour de vous et de vos serviteurs.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 22,
+          image: "/gears/offensive.png",
+          label: "Aspect d'humérus putréfié",
+          description:
+            "Vos compétences d'os infligent désormais des dégâts d'ombre au lieu de dégâts physiques. Les cibles adverses subissent [15 - 25]% [x] de dégâts d'ombre supplémentaires après avoir été frappées par une compétence d'os.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 23,
+          image: "/gears/defensive.png",
+          label: "Aspect d'immortalité",
+          description:
+            "Lorsque vous utilisez une compétence, vous récupérez [0.5 - 2.5]% de vos points de vie. Ce bonus est doublé si vous disposez de moins de 50% de vos points de vie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 24,
+          image: "/gears/offensive.png",
+          label: "Aspect d'ombre ultime",
+          description:
+            "Tempête d'os et Vague de sang sont désormais également des compétences de ténèbres. Elles infligent des dégâts d'ombre et bénéficient d'effets supplémentaires : Les cibles touchées par Tempête d'os subissent [120 - 420] points de dégâts de corruption en 2 s. Vague de sang laisse un sol souillé sur son passage, qui inflige [1.920 - 6.720] points de dégâts de corruption en 4 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 25,
+          image: "/gears/offensive.png",
+          label: "Aspect d'ombrebrume",
+          description:
+            "Vos serviteurs infligent 38 points de dégâts de corruption par seconde aux adversaires autour d'eux. Les dégâts sur la durée durent [2.0 - 5.0] s après avoir quitté l'aura.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 26,
+          image: "/gears/defensive.png",
+          label: "Aspect d'os durcis",
+          description:
+            "Votre réduction des dégâts est augmentée de [10 - 30]%.",
+          category: "Défense",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 27,
+          image: "/gears/mobility.png",
+          label: "Aspect de bain de sang",
+          description:
+            "Brume de sang laisse un sol souillé sur son passage qui dure 8 s et inflige [53 - 83] points de dégâts d'ombre par seconde. Votre vitesse de déplacement est augmentée de 30%[+] lorsque Brume de sang est active et que vous vous tenez sur ce sol souillé.",
+          category: "Mobilité",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 28,
+          image: "/gears/defensive.png",
+          label: "Aspect de barrière réfléchissante",
+          description:
+            "Après avoir subi des dégâts directs, vous avez [5.0 - 12.0]% de chances d'obtenir une barrière équivalente à 20% de votre maximum de points de vie pendant 10 s. Ces chances sont doublées contre les adversaires à distance.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 29,
+          image: "/gears/utility.png",
+          label: "Aspect de brume explosive",
+          description:
+            "Brume de sang déclenche Explosion macabre sur les cadavres proches. Lorsque Brume de sang fait exploser un cadavre, son temps de recharge est réduit de [0.1 - 0.8] s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 30,
+          image: "/gears/mobility.png",
+          label: "Aspect de cadavre insidieux",
+          description:
+            "Consommer un cadavre augmente votre vitesse de déplacement de [20.0 - 40.0]% pendant 8 s.",
+          category: "Mobilité",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 31,
+          image: "/gears/offensive.png",
+          label: "Aspect de calme intérieur",
+          description:
+            "Vous infligez [5.0 - 13.0]% [x] de dégâts supplémentaires. Ce bonus est triplé lorsque vous restez immobile pendant 3 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 32,
+          image: "/gears/mobility.png",
+          label: "Aspect de carnage",
+          description:
+            "Vous obtenez 20% de vitesse de déplacement. Ce bonus disparaît pendant [5.0 - 2.0] s après avoir subi des dégâts d'un personnage adverse à proximité.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 33,
+          image: "/gears/resource.png",
+          label: "Aspect de chair mise à nu",
+          description:
+            "Coup de chance : vous avez jusqu'à 10% de chances de générer [35.0 - 55.0] points d'essence lorsque vous touchez une cible vulnérable.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 34,
+          image: "/gears/offensive.png",
+          label: "Aspect de châtiment",
+          description:
+            "Vos chances d'infliger un coup critique aux cibles blessées sont augmentées de [13 - 23]% [+]. Lorsque vous êtes en bonne santé, vous bénéficiez d'une augmentation de la durée des effets de perte de contrôle de [25 - 45]% [+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 35,
+          image: "/gears/offensive.png",
+          label: "Aspect de commandement inflexible",
+          description:
+            "Tant qu'Armée de morts est active, vos serviteurs subissent 90% de dégâts en moins et vous infligez [70 - 110]% [x] de dégâts d'invocation supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 36,
+          image: "/gears/utility.png",
+          label: "Aspect de concentration tenace",
+          description:
+            "Vous gagnez [583 - 1.456] points de dégâts d'épines lorsque vous canalisez une compétence et pendant les 3 s suivantes.",
+          category: "Attributs",
+          class: "Barbare, Druide, Nécromancien, Sorcier, Voleur",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 37,
+          image: "/gears/resource.png",
+          label: "Aspect de déchiquetage",
+          description:
+            "Lorsque Décomposition explose, vous obtenez [25.0 - 45.0] points d'essence.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 38,
+          image: "/gears/offensive.png",
+          label: "Aspect de délabrement",
+          description:
+            "Chaque fois que la capacité passive principale Chancre d'ombre inflige des dégâts aux adversaires, elle augmente les dégâts du prochain Chancre d'ombre infligés dans les 10 s de [30 - 50]% [x], cet effet pouvant se cumuler jusqu'à 5 fois.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 39,
+          image: "/gears/offensive.png",
+          label: "Aspect de dents de scie",
+          description:
+            "La compétence passive principale Essence ossifiée augmente aussi les dégâts critiques de vos compétences d'os de 1% [x] par point d'essence au-dessus de 50, jusqu'à un maximum de [25 - 45]% [x].",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 40,
+          image: "/gears/defensive.png",
+          label: "Aspect de désobéissance",
+          description:
+            "Votre armure est augmentée de [0.4 - 0.8]% [+] pendant 4 s lorsque vous infligez n'importe quel type de dégâts, jusqu'à un maximum de [25.0 - 46.0]% [+].",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 41,
+          image: "/gears/offensive.png",
+          label: "Aspect de désossement",
+          description:
+            "Lance d'os inflige [30 - 50]% [x] de dégâts supplémentaires aux adversaires se trouvant dans une Prison d'os et la première lance d'os à atteindre chaque adversaire à l'intérieur de la prison accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 42,
+          image: "/gears/offensive.png",
+          label: "Aspect de destin inévitable",
+          description:
+            "Lorsqu'une cible tombe à moins de 35% de points de vie sous l'effet d'un de vos dégâts sur la durée, une explosion se produit toutes les 7 s, infligeant [300 - 525] points de dégâts pour chaque élément qui l'affecte.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 43,
+          image: "/gears/utility.png",
+          label: "Aspect de domination occulte",
+          description:
+            "Votre nombre maximum de guerriers squelettes et de mages squelettes est augmenté de 2.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 44,
+          image: "/gears/offensive.png",
+          label: "Aspect de force détournée",
+          description:
+            "Vos dégâts critiques augmentent à hauteur de [30 - 70]% [x] de vos chances de bloquer. Si vous bloquez une attaque, ce bonus est doublé pendant 10 s.",
+          category: "Attaque",
+          class: "Nécromancien, Sacresprit",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 45,
+          image: "/gears/utility.png",
+          label: "Aspect de frappes traumatisantes",
+          description:
+            "Vos effets d'Hébétement durent [20 - 40]% [+] plus longtemps. Lorsqu'une cible adverse est hébétée, votre vitesse de déplacement est augmentée de [20 - 40]% [+] pendant 3 s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 46,
+          image: "/gears/offensive.png",
+          label: "Aspect de funambule",
+          description:
+            "Les compétences infligent jusqu'à [5 - 25]% [x] de dégâts supplémentaires en fonction de votre ressource principale disponible à leur lancement, pour un résultat maximal lorsque votre ressource principale est au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 47,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'attente",
+          description:
+            "Après avoir attaqué des adversaires avec une compétence de base, les dégâts de votre prochaine compétence principale lancée dans les 5 s qui suivent sont augmentés de [5 - 12]% [x], jusqu'à 30% [x] au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 48,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'émissaire de Rathma",
+          description:
+            "Votre vitesse d'attaque augmente de [35 - 55]% [+] pendant 4 s chaque fois que vos compétences de sang infligent des dégâts d'accablement.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 49,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'esprit incarcéré",
+          description:
+            "Si Esprit d'os explose à l'intérieur d'une prison d'os, il explose une seconde fois, infligeant [40.0 - 80.0]% de dégâts normaux. Esprit d'os cherche désormais en priorité les adversaires dans la prison d'os.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 50,
+          image: "/gears/resource.png",
+          label: "Aspect de l'esprit fragmenté",
+          description:
+            "Lancer Esprit d'os projette également 18 éclats d'os de toutes parts, ce qui inflige [200 - 600]% [x] de dégâts supplémentaires et génère 6 points d'essence par adversaire touché.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 1,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'esprit physique",
+          description:
+            "Quand Esprit d'os explose, il fait apparaître 3 esprits qui se jettent sur les adversaires à proximité et leur infligent [20 - 40]% de ses dégâts. Cet effet ne peut survenir qu'une fois par lancer.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 2,
+          image: "/gears/resource.png",
+          label: "Aspect de l'ombre",
+          description:
+            "Vous récupérez [1.0 - 8.0]% de votre ressource principale lorsque vous infligez un effet de perte de contrôle à une cible adverse.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 3,
+          image: "/gears/resource.png",
+          label: "Aspect de l'ombre éternelle",
+          description:
+            "Coup de chance : vos effets de corruption ont [15.0 - 35.0]% de chances de générer 3 points d'essence. Les dégâts de la compétence passive principale de Chancre d'ombre génèrent toujours 2 points d'essence.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 4,
+          image: "/gears/mobility.png",
+          label: "Aspect de la Faucheuse intraitable",
+          description:
+            "Section vous projette désormais en avant pour attaquer. Elle est désormais aussi une compétence de mobilité et ne consomme pas de points d'essence, mais elle a un temps de recharge de [13.5 - 3.5] s.",
+          category: "Mobilité",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 5,
+          image: "/gears/offensive.png",
+          label: "Aspect de la faucheuse libératrice",
+          description:
+            "Lorsque vous infligez des dégâts avec Section, vous avez [15 - 35]% de chances de créer une flaque de chancre sous la cible, ce qui inflige [70 - 190]% [x] de dégâts supplémentaires. Cet effet ne peut se produire qu'une fois toutes les 3 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 6,
+          image: "/gears/mobility.png",
+          label: "Aspect de la frappe du vent",
+          description:
+            "Les coups critiques augmentent votre vitesse de déplacement de [8.5 - 19.0]% [+] pendant 1 s, jusqu'à 6 s.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 7,
+          image: "/gears/offensive.png",
+          label: "Aspect de la fureur déchaînée",
+          description:
+            "L'utilisation d'une compétence ultime augmente les dégâts de vos compétences ultimes de [6.0 - 10.0]% [x], jusqu'à un maximum de [60 - 100]% [x]. Lorsque vous avez cumulé cet effet 10 fois, il se réinitialise tout comme vos temps de recharge.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 8,
+          image: "/gears/offensive.png",
+          label: "Aspect de la mort insidieuse",
+          description:
+            "Vous infligez aux adversaires [5.0 - 20.0]% [x] de dégâts supplémentaires sur la durée pour chaque effet de perte de contrôle différent qui leur est appliqué. Vous infligez plutôt [10 - 40]% [x] de dégâts supplémentaires sur la durée aux adversaires inarrêtables et aux boss stupéfiés.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 9,
+          image: "/gears/resource.png",
+          label: "Aspect de la sombre danse",
+          description:
+            "Toutes les 5 s, votre prochaine compétence principale coûte [117 - 29] points de vie au lieu de puiser dans votre ressource principale, uniquement si vous disposez d'au moins 60% de votre maximum de points de vie. Les compétences qui consomment des points de vie infligent 80% [x] de dégâts supplémentaires.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 10,
+          image: "/gears/defensive.png",
+          label: "Aspect de la tempête protectrice",
+          description:
+            "Chaque fois que Tempête d'os inflige des dégâts aux adversaires, vous obtenez une barrière à hauteur de [1.0 - 8.0]% de votre maximum de points de vie pendant 10 s.",
+          category: "Défense",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 11,
+          image: "/gears/offensive.png",
+          label: "Aspect de lotiforme",
+          description:
+            "Au lieu de revenir, Section se divise en 3 spectres qui se déploient à partir de la cible. Section inflige [180 - 240]% des dégâts normaux.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 12,
+          image: "/gears/resource.png",
+          label: "Aspect de lumière stellaire",
+          description:
+            "Vous gagnez [25.0 - 45.0] points de votre ressource principale pour chaque tranche de 20% de points de vie soignés ou pour chaque tranche de 120% de points de vie soignés lorsque vous disposez de tous vos points de vie, jusqu'à un maximum de 300 points de ressources par seconde.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 13,
+          image: "/gears/defensive.png",
+          label: "Aspect de mastodonte",
+          description:
+            "Vous obtenez [583 - 816] points d'armure, mais le temps de recharge d'Esquive augmente de 100%.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 14,
+          image: "/gears/mobility.png",
+          label: "Aspect de métamorphose",
+          description:
+            "Pendant une esquive, vous vous transformez en une nuée de chauves-souris et devenez inarrêtable pendant 2.5 s. Les adversaires sur votre chemin subissent 300 points de dégâts physiques ainsi qu'une malédiction vampirique. Le temps de recharge d'Esquive est augmenté de [10.0 - 4.0] s.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 15,
+          image: "/gears/utility.png",
+          label: "Aspect de misère partagée",
+          description:
+            "Coup de chance : lorsque vous touchez une cible subissant une perte de contrôle, vous avez [35 - 55]% de chances que cet effet se propage à une autre cible non affectée.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 16,
+          image: "/gears/offensive.png",
+          label: "Aspect de mort inopinée",
+          description:
+            "Chaque pour cent de votre maximum de points de vie que vous récupérez au-delà de 100% ajoute 0.5% [x] de dégâts critiques à votre prochain coup critique, jusqu'à un bonus maximum de [30 - 70]% [x]. Vous pouvez désormais boire des potions de soins, même si vous avez tous vos points de vie.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 17,
+          image: "/gears/offensive.png",
+          label: "Aspect de points d'hémorragie",
+          description:
+            "Lorsque vous lancez Prélèvement, vous consommez des orbes de sang afin d'invoquer également des lances depuis ces orbes. Chaque lance de sang additionnelle inflige [60 - 100]% des dégâts normaux et cible en priorité les cibles non empalées.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 18,
+          image: "/gears/utility.png",
+          label: "Aspect de projection furieuse",
+          description:
+            "Toutes les [3.5 - 2.0] s, vous attirez les adversaires à distance vers vous et leur infligez 10% [x] de dégâts supplémentaires pendant 3 s. Cet effet ne peut pas se produire lorsque vous êtes sous Camouflage.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 19,
+          image: "/gears/offensive.png",
+          label: "Aspect de querelleur",
+          description:
+            "L'utilisation d'une compétence ultime augmente vos dégâts de [10 - 30]% [x] pendant 8 s. Vos compétences ultimes bénéficient de 2 rangs supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 20,
+          image: "/gears/resource.png",
+          label: "Aspect de rage vorace",
+          description:
+            "Lorsque vous tuez une cible avec une compétence principale, vous recevez [15.0 - 35.0]% de son coût de base. Cet effet ne peut se produire qu'une fois par utilisation.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 21,
+          image: "/gears/offensive.png",
+          label: "Aspect de raz-de-marée",
+          description:
+            "Vague de sang projette deux vagues supplémentaires, chacune infligeant [40 - 100]% de dégâts normaux, mais vous ne pouvez plus en lancer tant que la dernière vague n'est pas passée.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 22,
+          image: "/gears/offensive.png",
+          label: "Aspect de réanimation",
+          description:
+            "Tant qu'ils sont en vie, vos serviteurs infligent des dégâts accrus, jusqu'à une augmentation maximale de [40 - 60]% [x] après 10 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 23,
+          image: "/gears/resource.png",
+          label: "Aspect de requiem",
+          description:
+            "Votre maximum d'essence est augmenté de [2.0 - 10.0] points par serviteur actif.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 24,
+          image: "/gears/defensive.png",
+          label: "Aspect de sagesse par le nombre",
+          description:
+            "Vos chances d'esquiver sont augmentées de 8%. Vous récupérez [5 - 25]% de votre maximum de vie en cas d'esquive réussie.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 25,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang bouillonnant",
+          description:
+            "Lorsque vos compétences principales accablent les adversaires, vous faites apparaître 3 gouttes de sang instable. Ramassez-en une pour la faire exploser et infliger [263 - 938] points de dégâts physiques autour de vous. Toutes les 20 s, votre prochaine compétence accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 26,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang instable",
+          description:
+            "Chaque fois que Prélèvement touche en premier une cible déjà atteinte par cette compétence, déclenche un nouveau Prélèvement infligeant [60 - 100]% des dégâts normaux à un personnage ennemi à proximité.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 27,
+          image: "/gears/resource.png",
+          label: "Aspect de sang tout-puissant",
+          description:
+            "Les orbes de sang octroient [10.0 - 30.0] points d'essence.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 28,
+          image: "/gears/offensive.png",
+          label: "Aspect de servitude et sacrifice",
+          description:
+            "Les guerriers squelettes explosent en mourant, ce qui inflige [300 - 450] points de dégâts physiques supplémentaires aux adversaires à proximité. En combat, les squelettes perdent 25% de points de vie par seconde. Les mages squelettes subissent 90% de dégâts en moins et infligent [50.0 - 100.0]% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 29,
+          image: "/gears/defensive.png",
+          label: "Aspect de strates protectrices",
+          description:
+            "Votre réduction des dégâts bloqués est augmentée de [20 - 40]% [+] tant que vous avez une barrière.",
+          category: "Défense",
+          class: "Nécromancien, Sacresprit",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 30,
+          image: "/gears/offensive.png",
+          label: "Aspect de toucher maudit",
+          description:
+            "Coup de chance : vos malédictions ont jusqu'à [20.0 - 40.0]% de chances d'infliger aux adversaires une malédiction vampirique. Toute cible affectée par une malédiction vampirique est également vulnérable. Les âmes stockées par la malédiction vampirique infligent [20.0 - 60.0]% points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 31,
+          image: "/gears/resource.png",
+          label: "Aspect de tourment",
+          description:
+            "Les coups critiques infligés avec des compétences d'os augmentent votre régénération d'essence de [95.0 - 195.0]% [x] pendant 4 s.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 32,
+          image: "/gears/defensive.png",
+          label: "Aspect de toute-puissance",
+          description:
+            "Les compétences de base confèrent 20.0% de réduction des dégâts pendant [2.0 - 10.0] s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 33,
+          image: "/gears/offensive.png",
+          label: "Aspect de vindicte",
+          description:
+            "Les cibles à distance ont 10% de chances d'être étourdies pendant 2 s lorsqu'elles vous infligent des dégâts. Vous infligez [15 - 35]% [x] de dégâts supplémentaires aux cibles étourdies ou renversées.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 34,
+          image: "/gears/utility.png",
+          label: "Aspect des cherche-sang",
+          description:
+            "Vos prêtres squelettes vous renforcent désormais à [55 - 75]% d'efficacité.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 35,
+          image: "/gears/offensive.png",
+          label: "Aspect des damnés",
+          description:
+            "Vos dégâts d'ombre sont augmentés de [35 - 55]% [x] contre les cibles affectées par une malédiction.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 36,
+          image: "/gears/offensive.png",
+          label: "Aspect des éléments",
+          description:
+            "Augmente les dégâts infligés par un ensemble de types de dégâts de [15 - 35]% [x] pendant 7 s. Cet effet alterne entre deux ensembles : feu, foudre et physiques ; froid, poison et ombre.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 37,
+          image: "/gears/offensive.png",
+          label: "Aspect des morts frénétiques",
+          description:
+            "Chaque fois qu'un de vos serviteurs blesse une cible, sa vitesse d'attaque augmente de [10.0 - 18.0]% [+] pendant 3 s, jusqu'à un maximum de [30.0 - 54.0]% [+].",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 38,
+          image: "/gears/offensive.png",
+          label: "Aspect des ténèbres descendantes",
+          description:
+            "Prison d'os est désormais une compétence de ténèbres qui crée des chancres pendant 6 s. Vos chancres infligent [40 - 60]% [x] de dégâts supplémentaires tant que Prison d'os est active.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 39,
+          image: "/gears/offensive.png",
+          label: "Aspect des veines rapaces",
+          description:
+            "Vos chances d'infliger un coup critique sont augmentées de [5 - 25]% [+] pendant 6 s lorsque vous lancez Vrilles nécrophages. Vous infligez [10 - 50]% [x] de dégâts critiques supplémentaires aux cibles blessées par Vrilles nécrophages pendant 6 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 40,
+          image: "/gears/defensive.png",
+          label: "Aspect du cœur prudent",
+          description:
+            "Après avoir subi des dégâts équivalant à au moins 20% de votre maximum de vie à la fois, vous devenez insensible pendant [2.5 - 4.0] s. Ne se produit qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 41,
+          image: "/gears/offensive.png",
+          label: "Aspect du crépuscule",
+          description:
+            "Lorsque vous infligez des dégâts avec une compétence de base, vous recevez 4% de vitesse d'attaque supplémentaire pendant 10 s, jusqu'à un maximum de 5 fois. Une fois ce seuil atteint, vous sombrez dans une rage de sang vampirique et obtenez un bonus de [40 - 60]% [x] aux dégâts des compétences de base et de 15% à la vitesse de déplacement pendant 10 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 42,
+          image: "/gears/offensive.png",
+          label: "Aspect du déluge d'os",
+          description:
+            "Tempête d'os consomme jusqu'à 8 cadavres pour augmenter sa durée jusqu'à un maximum de [5.0 - 15.0] s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 43,
+          image: "/gears/offensive.png",
+          label: "Aspect du grand festin",
+          description:
+            "Lorsque vous possédez des serviteurs actifs, vos invocations infligent [35 - 55]% [x] de dégâts supplémentaires, mais chaque serviteur vous draine 2 points d'essence par seconde. Si vous n'avez pas de serviteur actif, vous infligez [35 - 55]% [x] de dégâts supplémentaires, mais 14 points d'essence sont drainés par seconde.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 44,
+          image: "/gears/mobility.png",
+          label: "Aspect du lien impie",
+          description:
+            "Au lancement de la compétence active de votre golem, un lien se crée entre vous et lui pendant 5 s. Tant que ce lien est actif, vous et votre golem devenez inarrêtables et obtenez [25.0 - 45.0]% de vitesse de déplacement.",
+          category: "Mobilité",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 45,
+          image: "/gears/utility.png",
+          label: "Aspect du porte-froid",
+          description:
+            "Toutes les 4 s, vos mages squelettes lancent un blizzard qui inflige [135 - 180] points de dégâts de froid et qui glace en continu les adversaires à hauteur de 6% en 8 s.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 46,
+          image: "/gears/defensive.png",
+          label: "Aspect du Protector",
+          description:
+            "Le fait de blesser une cible adverse élite vous octroie une barrière qui absorbe jusqu'à [655 - 5.898] points de dégâts pendant 10 s. Cet effet ne peut se produire qu'une fois toutes les 20 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 47,
+          image: "/gears/offensive.png",
+          label: "Aspect du traqueur de sang",
+          description:
+            "Prélèvement inflige [5.0 - 15.0]% [x] de dégâts supplémentaires à sa cible principale par cible empalée. Tant que vous êtes en bonne santé, vos prélèvements infligent [15 - 35]% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 48,
+          image: "/gears/utility.png",
+          label: "Aspect du vide",
+          description:
+            "Une fois générée, la zone souillée de chancre attire les adversaires proches et a [35 - 55]% de chances de les étourdir pendant 3 s lorsqu'elle apparaît.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 49,
+          image: "/gears/utility.png",
+          label: "Aspect élusif",
+          description:
+            "Si l'on vous blesse lorsque vous subissez des effets de perte de contrôle, vous obtenez l'état inarrêtable pendant 4 s. Cet effet a un temps de recharge de [40 - 20] s.",
+          category: "Attributs",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 50,
+          image: "/gears/offensive.png",
+          label: "Aspect expéditif",
+          description:
+            "La vitesse d'attaque des compétences de base est augmentée de [15 - 35]% [+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 51,
+          image: "/gears/offensive.png",
+          label: "Aspect fracturant",
+          description:
+            "L'attaque principale de Lance d'os rend vulnérables les cibles touchées après la première cible pendant 3 s. Les éclats osseux de Lance d'os infligent [30 - 70]% de dégâts supplémentaires aux adversaires vulnérables et les transpercent.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 52,
+          image: "/gears/offensive.png",
+          label: "Aspect hérissé",
+          description:
+            "Lorsque vous esquivez ou bloquez une attaque, vous infligez à l'adversaire [100 - 200]% de dégâts d'épines.",
+          category: "Attaque",
+          class: "Nécromancien, Sacresprit",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 53,
+          image: "/gears/mobility.png",
+          label: "Aspect lâche",
+          description:
+            "Votre vitesse de déplacement est augmentée de [25 - 45]% [x] lorsque vous vous éloignez de cibles ralenties ou glacées.",
+          category: "Mobilité",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 54,
+          image: "/gears/utility.png",
+          label: "Aspect massif",
+          description:
+            "Votre golem a [2 - 18]% de chances de réduire son temps de recharge actif de 2 s et [1.0 - 9.0]% de chances de générer un cadavre chaque fois qu'il inflige des dégâts à une cible adverse avec son attaque normale.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 55,
+          image: "/gears/defensive.png",
+          label: "Aspect protecteur",
+          description:
+            "Lorsque vous n'êtes pas en bonne santé, vous invoquez une bulle protectrice qui rend insensible l'ensemble des personnages-joueurs à l'intérieur. La bulle dure [2.5 - 6.0] s et ne peut se former qu'une fois toutes les 90 s.",
+          category: "Défense",
+          class: "Tous",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 56,
+          image: "/gears/offensive.png",
+          label: "Aspect putréfié",
+          description:
+            "Décomposition peut atteindre jusqu'à 4 cibles supplémentaires qu'elle fait exploser. Les explosions déclenchées par Décomposition infligent [15 - 35]% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 57,
+          image: "/gears/offensive.png",
+          label: "Aspect putrescent",
+          description:
+            "Les attaques consécutives avec la capacité passive principale Chancre d'ombre infligent [25.0 - 35.0]% [x] de dégâts supplémentaires à chaque coup. Cet effet se réinitialise 6 s après le premier coup.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 58,
+          image: "/gears/offensive.png",
+          label: "Aspect sacrificiel",
+          description: "Vos bonus de Sacrifice sont augmentés de [35 - 55]%.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 59,
+          image: "/gears/utility.png",
+          label: "Aspect tortionnaire",
+          description:
+            "Vierge de fer est désormais aussi une compétence de ténèbres et inflige des dégâts d'ombre. Les cibles ont [10 - 30]% de chances d'être étourdies pendant 1 s lorsqu'elles subissent des dégâts occasionnés par Vierge de fer.",
+          category: "Attributs",
+          class: "Nécromancien",
+          allowedGear: ["Amulette"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/offensive.png",
+          label: "Aspect baigné de sang",
+          description:
+            "La nova d'Afflux sanguin explose à nouveau après un bref instant, infligeant [30 - 10]% [x] de dégâts en moins.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 2,
+          image: "/gears/offensive.png",
+          label: "Aspect cadavérique",
+          description:
+            "Consommer un cadavre augmente les dégâts que vous infligez de [3.5 - 7]% [x] pendant 5 s, jusqu'à un maximum de [18 - 35]% [x].",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 3,
+          image: "/gears/offensive.png",
+          label: "Aspect d'abus",
+          description:
+            "La durée des effets de perte de contrôle que vous infligez est augmentée de 20%. Tant que les adversaires sont inarrêtables, vous leur infligez [25 - 45]% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 4,
+          image: "/gears/offensive.png",
+          label: "Aspect d'accélération",
+          description:
+            "Les coups critiques avec les compétences principales augmentent votre vitesse d'attaque de [10.0 - 30.0]% [+] pendant 5 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 5,
+          image: "/gears/offensive.png",
+          label: "Aspect d'appétit funeste",
+          description:
+            "La compétence active de votre golem provoque également son éruption, ce qui inflige [300 - 600] points de dégâts physiques aux cibles adverses à proximité. Votre golem consomme des cadavres pour réduire de 1 s son temps de recharge restant et inflige 0% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 6,
+          image: "/gears/offensive.png",
+          label: "Aspect d'arrogance",
+          description:
+            "Vous infligez [10 - 30]% [x] de dégâts supplémentaires tant que vous avez une barrière active.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 7,
+          image: "/gears/offensive.png",
+          label: "Aspect d'explosion osseuse",
+          description:
+            "Lorsqu'un fragment de Prison d'os est détruit ou expire, celui-ci inflige [113 - 203] points de dégâts dans la zone autour de lui.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 8,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hirsutisme",
+          description:
+            "Les dégâts d'épines infligés ont [25 - 45]% de chances d'infliger des dégâts aux adversaires autour de vous et de vos serviteurs.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 9,
+          image: "/gears/offensive.png",
+          label: "Aspect d'humérus putréfié",
+          description:
+            "Vos compétences d'os infligent désormais des dégâts d'ombre au lieu de dégâts physiques. Les cibles adverses subissent [15 - 25]% [x] de dégâts d'ombre supplémentaires après avoir été frappées par une compétence d'os.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 10,
+          image: "/gears/offensive.png",
+          label: "Aspect d'ombre ultime",
+          description:
+            "Tempête d'os et Vague de sang sont désormais également des compétences de ténèbres. Elles infligent des dégâts d'ombre et bénéficient d'effets supplémentaires : Les cibles touchées par Tempête d'os subissent [120 - 420] points de dégâts de corruption en 2 s. Vague de sang laisse un sol souillé sur son passage, qui inflige [1.920 - 6.720] points de dégâts de corruption en 4 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 11,
+          image: "/gears/offensive.png",
+          label: "Aspect d'ombrebrume",
+          description:
+            "Vos serviteurs infligent 38 points de dégâts de corruption par seconde aux adversaires autour d'eux. Les dégâts sur la durée durent [2.0 - 5.0] s après avoir quitté l'aura.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 12,
+          image: "/gears/offensive.png",
+          label: "Aspect de calme intérieur",
+          description:
+            "Vous infligez [5.0 - 13.0]% [x] de dégâts supplémentaires. Ce bonus est triplé lorsque vous restez immobile pendant 3 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 13,
+          image: "/gears/offensive.png",
+          label: "Aspect de châtiment",
+          description:
+            "Vos chances d'infliger un coup critique aux cibles blessées sont augmentées de [13 - 23]% [+]. Lorsque vous êtes en bonne santé, vous bénéficiez d'une augmentation de la durée des effets de perte de contrôle de [25 - 45]% [+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 14,
+          image: "/gears/offensive.png",
+          label: "Aspect de commandement inflexible",
+          description:
+            "Tant qu'Armée de morts est active, vos serviteurs subissent 90% de dégâts en moins et vous infligez [70 - 110]% [x] de dégâts d'invocation supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 15,
+          image: "/gears/offensive.png",
+          label: "Aspect de délabrement",
+          description:
+            "Chaque fois que la capacité passive principale Chancre d'ombre inflige des dégâts aux adversaires, elle augmente les dégâts du prochain Chancre d'ombre infligés dans les 10 s de [30 - 50]% [x], cet effet pouvant se cumuler jusqu'à 5 fois.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 16,
+          image: "/gears/offensive.png",
+          label: "Aspect de dents de scie",
+          description:
+            "La compétence passive principale Essence ossifiée augmente aussi les dégâts critiques de vos compétences d'os de 1% [x] par point d'essence au-dessus de 50, jusqu'à un maximum de [25 - 45]% [x].",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 17,
+          image: "/gears/offensive.png",
+          label: "Aspect de désossement",
+          description:
+            "Lance d'os inflige [30 - 50]% [x] de dégâts supplémentaires aux adversaires se trouvant dans une Prison d'os et la première lance d'os à atteindre chaque adversaire à l'intérieur de la prison accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 18,
+          image: "/gears/offensive.png",
+          label: "Aspect de destin inévitable",
+          description:
+            "Lorsqu'une cible tombe à moins de 35% de points de vie sous l'effet d'un de vos dégâts sur la durée, une explosion se produit toutes les 7 s, infligeant [300 - 525] points de dégâts pour chaque élément qui l'affecte.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 19,
+          image: "/gears/offensive.png",
+          label: "Aspect de force détournée",
+          description:
+            "Vos dégâts critiques augmentent à hauteur de [30 - 70]% [x] de vos chances de bloquer. Si vous bloquez une attaque, ce bonus est doublé pendant 10 s.",
+          category: "Attaque",
+          class: "Nécromancien, Sacresprit",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 20,
+          image: "/gears/offensive.png",
+          label: "Aspect de funambule",
+          description:
+            "Les compétences infligent jusqu'à [5 - 25]% [x] de dégâts supplémentaires en fonction de votre ressource principale disponible à leur lancement, pour un résultat maximal lorsque votre ressource principale est au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 21,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'attente",
+          description:
+            "Après avoir attaqué des adversaires avec une compétence de base, les dégâts de votre prochaine compétence principale lancée dans les 5 s qui suivent sont augmentés de [5 - 12]% [x], jusqu'à 30% [x] au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 22,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'émissaire de Rathma",
+          description:
+            "Votre vitesse d'attaque augmente de [35 - 55]% [+] pendant 4 s chaque fois que vos compétences de sang infligent des dégâts d'accablement.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 23,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'esprit incarcéré",
+          description:
+            "Si Esprit d'os explose à l'intérieur d'une prison d'os, il explose une seconde fois, infligeant [40.0 - 80.0]% de dégâts normaux. Esprit d'os cherche désormais en priorité les adversaires dans la prison d'os.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 24,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'esprit physique",
+          description:
+            "Quand Esprit d'os explose, il fait apparaître 3 esprits qui se jettent sur les adversaires à proximité et leur infligent [20 - 40]% de ses dégâts. Cet effet ne peut survenir qu'une fois par lancer.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 25,
+          image: "/gears/offensive.png",
+          label: "Aspect de la faucheuse libératrice",
+          description:
+            "Lorsque vous infligez des dégâts avec Section, vous avez [15 - 35]% de chances de créer une flaque de chancre sous la cible, ce qui inflige [70 - 190]% [x] de dégâts supplémentaires. Cet effet ne peut se produire qu'une fois toutes les 3 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 26,
+          image: "/gears/offensive.png",
+          label: "Aspect de la fureur déchaînée",
+          description:
+            "L'utilisation d'une compétence ultime augmente les dégâts de vos compétences ultimes de [6.0 - 10.0]% [x], jusqu'à un maximum de [60 - 100]% [x]. Lorsque vous avez cumulé cet effet 10 fois, il se réinitialise tout comme vos temps de recharge.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 27,
+          image: "/gears/offensive.png",
+          label: "Aspect de la mort insidieuse",
+          description:
+            "Vous infligez aux adversaires [5.0 - 20.0]% [x] de dégâts supplémentaires sur la durée pour chaque effet de perte de contrôle différent qui leur est appliqué. Vous infligez plutôt [10 - 40]% [x] de dégâts supplémentaires sur la durée aux adversaires inarrêtables et aux boss stupéfiés.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 28,
+          image: "/gears/offensive.png",
+          label: "Aspect de lotiforme",
+          description:
+            "Au lieu de revenir, Section se divise en 3 spectres qui se déploient à partir de la cible. Section inflige [180 - 240]% des dégâts normaux.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 29,
+          image: "/gears/offensive.png",
+          label: "Aspect de mort inopinée",
+          description:
+            "Chaque pour cent de votre maximum de points de vie que vous récupérez au-delà de 100% ajoute 0.5% [x] de dégâts critiques à votre prochain coup critique, jusqu'à un bonus maximum de [30 - 70]% [x].",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 30,
+          image: "/gears/offensive.png",
+          label: "Aspect de points d'hémorragie",
+          description:
+            "Lorsque vous lancez Prélèvement, vous consommez des orbes de sang afin d'invoquer également des lances depuis ces orbes. Chaque lance de sang additionnelle inflige [60 - 100]% des dégâts normaux et cible en priorité les cibles non empalées.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 31,
+          image: "/gears/offensive.png",
+          label: "Aspect de querelleur",
+          description:
+            "L'utilisation d'une compétence ultime augmente vos dégâts de [10 - 30]% [x] pendant 8 s. Vos compétences ultimes bénéficient de 2 rangs supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 32,
+          image: "/gears/offensive.png",
+          label: "Aspect de raz-de-marée",
+          description:
+            "Vague de sang projette deux vagues supplémentaires, chacune infligeant [40 - 100]% de dégâts normaux, mais vous ne pouvez plus en lancer tant que la dernière vague n'est pas passée.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 33,
+          image: "/gears/offensive.png",
+          label: "Aspect de réanimation",
+          description:
+            "Tant qu'ils sont en vie, vos serviteurs infligent des dégâts accrus, jusqu'à une augmentation maximale de [40 - 60]% [x] après 10 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 34,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang bouillonnant",
+          description:
+            "Lorsque vos compétences principales accablent les adversaires, vous faites apparaître 3 gouttes de sang instable. Ramassez-en une pour la faire exploser et infliger [263 - 938] points de dégâts physiques autour de vous. Toutes les 20 s, votre prochaine compétence accablera obligatoirement vos adversaires. Toutes les 20 s, Prélèvement touche compétence accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 35,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang instable",
+          description:
+            "Chaque fois que Prélèvement touche en premier une cible déjà atteinte par cette compétence, déclenche un nouveau Prélèvement infligeant [60 - 100]% des dégâts normaux à un personnage ennemi à proximité.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 36,
+          image: "/gears/offensive.png",
+          label: "Aspect de servitude et sacrifice",
+          description:
+            "Les guerriers squelettes explosent en mourant, ce qui inflige [300 - 450] points de dégâts physiques supplémentaires aux adversaires à proximité. En combat, les squelettes perdent 25% de points de vie par seconde. Les mages squelettes subissent 90% de dégâts en moins et infligent [50.0 - 100.0]% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 37,
+          image: "/gears/offensive.png",
+          label: "Aspect de toucher maudit",
+          description:
+            "Coup de chance : vos malédictions ont jusqu'à [20.0 - 40.0]% de chances d'infliger aux adversaires une malédiction vampirique. Toute cible affectée par une malédiction vampirique est également vulnérable. Les âmes stockées par la malédiction vampirique infligent [20.0 - 60.0]% points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 38,
+          image: "/gears/offensive.png",
+          label: "Aspect de vindicte",
+          description:
+            "Les cibles à distance ont 10% de chances d'être étourdies pendant 2 s lorsqu'elles vous infligent des dégâts. Vous infligez [15 - 35]% [x] de dégâts supplémentaires aux cibles étourdies ou renversées.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 39,
+          image: "/gears/offensive.png",
+          label: "Aspect des damnés",
+          description:
+            "Vos dégâts d'ombre sont augmentés de [35 - 55]% [x] contre les cibles affectées par une malédiction.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 40,
+          image: "/gears/offensive.png",
+          label: "Aspect des éléments",
+          description:
+            "Augmente les dégâts infligés par un ensemble de types de dégâts de [15 - 35]% [x] pendant 7 s. Cet effet alterne entre deux ensembles : feu, foudre et physiques ; froid, poison et ombre.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 41,
+          image: "/gears/offensive.png",
+          label: "Aspect des morts frénétiques",
+          description:
+            "Chaque fois qu'un de vos serviteurs blesse une cible, sa vitesse d'attaque augmente de [10.0 - 18.0]% [+] pendant 3 s, jusqu'à un maximum de [30.0 - 54.0]% [+].",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 42,
+          image: "/gears/offensive.png",
+          label: "Aspect des ténèbres descendantes",
+          description:
+            "Prison d'os est désormais une compétence de ténèbres qui crée des chancres pendant 6 s. Vos chancres infligent [40 - 60]% [x] de dégâts supplémentaires tant que Prison d'os est active.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 43,
+          image: "/gears/offensive.png",
+          label: "Aspect des veines rapaces",
+          description:
+            "Vos chances d'infliger un coup critique sont augmentées de [5 - 25]% [+] pendant 6 s lorsque vous lancez Vrilles nécrophages. Vous infligez [10 - 50]% [x] de dégâts critiques supplémentaires aux cibles blessées par Vrilles nécrophages pendant 6 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 44,
+          image: "/gears/offensive.png",
+          label: "Aspect du crépuscule",
+          description:
+            "Lorsque vous infligez des dégâts avec une compétence de base, vous recevez 4% de vitesse d'attaque supplémentaire pendant 10 s, jusqu'à un maximum de 5 fois. Une fois ce seuil atteint, vous sombrez dans une rage de sang vampirique et obtenez un bonus de [40 - 60]% [x] aux dégâts des compétences de base et de 15% à la vitesse de déplacement pendant 10 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 45,
+          image: "/gears/offensive.png",
+          label: "Aspect du déluge d'os",
+          description:
+            "Tempête d'os consomme jusqu'à 8 cadavres pour augmenter sa durée jusqu'à un maximum de [5.0 - 15.0] s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 46,
+          image: "/gears/offensive.png",
+          label: "Aspect du grand festin",
+          description:
+            "Lorsque vous possédez des serviteurs actifs, vos invocations infligent [35 - 55]% [x] de dégâts supplémentaires, mais chaque serviteur vous draine 2 points d'essence par seconde. Si vous n'avez pas de serviteur actif, vous infligez [35 - 55]% [x] de dégâts supplémentaires, mais 14 points d'essence sont drainés par seconde.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 47,
+          image: "/gears/offensive.png",
+          label: "Aspect du traqueur de sang",
+          description:
+            "Prélèvement inflige [5.0 - 15.0]% [x] de dégâts supplémentaires à sa cible principale par cible empalée. Tant que vous êtes en bonne santé, vos prélèvements infligent [15 - 35]% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 48,
+          image: "/gears/offensive.png",
+          label: "Aspect expéditif",
+          description:
+            "La vitesse d'attaque des compétences de base est augmentée de [15 - 35]% [+].",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 49,
+          image: "/gears/offensive.png",
+          label: "Aspect fracturant",
+          description:
+            "L'attaque principale de Lance d'os rend vulnérables les cibles touchées après la première cible pendant 3 s. Les éclats osseux de Lance d'os infligent [30 - 70]% de dégâts supplémentaires aux adversaires vulnérables et les transpercent.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 50,
+          image: "/gears/offensive.png",
+          label: "Aspect hérissé",
+          description:
+            "Lorsque vous esquivez ou bloquez une attaque, vous infligez à l'adversaire [100 - 200]% de dégâts d'épines.",
+          category: "Attaque",
+          class: "Nécromancien, Sacresprit",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 51,
+          image: "/gears/offensive.png",
+          label: "Aspect putréfié",
+          description:
+            "Décomposition peut atteindre jusqu'à 4 cibles supplémentaires qu'elle fait exploser. Les explosions déclenchées par Décomposition infligent [15 - 35]% [x] de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 52,
+          image: "/gears/offensive.png",
+          label: "Aspect putrescent",
+          description:
+            "Les attaques consécutives avec la capacité passive principale Chancre d'ombre infligent [25.0 - 35.0]% [x] de dégâts supplémentaires à chaque coup. Cet effet se réinitialise 6 s après le premier coup.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+        {
+          id: 53,
+          image: "/gears/offensive.png",
+          label: "Aspect sacrificiel",
+          description: "Vos bonus de Sacrifice sont augmentés de [35 - 55]%.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Offhand"],
+        },
+
+        {
+          id: 1,
+          image: "/gears/offensive.png",
+          label: "Aspect baigné de sang",
+          description:
+            "La nova d'Afflux sanguin explose à nouveau après un bref instant, infligeant [30 - 100]% de dégâts en moins.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 2,
+          image: "/gears/offensive.png",
+          label: "Aspect cadavérique",
+          description:
+            "Consommer un cadavre augmente les dégâts que vous infligez de [3.5 - 7]% pendant 5 s, jusqu’à un maximum de [18 - 35]%.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 3,
+          image: "/gears/offensive.png",
+          label: "Aspect d'abus",
+          description:
+            "La durée des effets de perte de contrôle que vous infligez est augmentée de 20%. Tant que les adversaires sont inarrêtables, vous leur infligez [25 - 45]% de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 4,
+          image: "/gears/offensive.png",
+          label: "Aspect d'accélération",
+          description:
+            "Les coups critiques avec les compétences principales augmentent votre vitesse d'attaque de [10.0 - 30.0]% pendant 5 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 5,
+          image: "/gears/resource.png",
+          label: "Aspect d'adaptabilité",
+          description:
+            "Les compétences de base génèrent 5 points de ressource principale supplémentaire, une fois par compétence. Les compétences de base infligent [0.40 - 0.60]% de dégâts supplémentaires pour chaque point de ressource principale dont vous disposez, dans la limite de 500 points de ressource.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 6,
+          image: "/gears/offensive.png",
+          label: "Aspect d'appétit funeste",
+          description:
+            "La compétence active de votre golem provoque également son éruption, ce qui inflige [300 - 600] points de dégâts physiques aux cibles adverses à proximité. Votre golem consomme des cadavres pour réduire de 1 s son temps de recharge restant et inflige 0% de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 7,
+          image: "/gears/offensive.png",
+          label: "Aspect d'arrogance",
+          description:
+            "Vous infligez [10 - 30]% de dégâts supplémentaires tant que vous avez une barrière active.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 8,
+          image: "/gears/offensive.png",
+          label: "Aspect d'explosion osseuse",
+          description:
+            "Lorsqu’un fragment de Prison d’os est détruit ou expire, celui-ci inflige [113 - 203] points de dégâts dans la zone autour de lui.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 9,
+          image: "/gears/resource.png",
+          label: "Aspect d'hémorragie",
+          description:
+            "Les orbes de sang réduisent le temps de recharge de votre compétence ultime de [1.00 - 3.00] s.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 10,
+          image: "/gears/offensive.png",
+          label: "Aspect d'hirsutisme",
+          description:
+            "Les dégâts d'épines infligés ont [25 - 45]% de chances d'infliger des dégâts aux adversaires autour de vous et de vos serviteurs.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 11,
+          image: "/gears/offensive.png",
+          label: "Aspect d'humerus putréfié",
+          description:
+            "Vos compétences d’os infligent désormais des dégâts d’ombre au lieu de dégâts physiques. Les cibles adverses subissent [15 - 25]% de dégâts d’ombre supplémentaires après avoir été frappées par une compétence d’os.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 12,
+          image: "/gears/offensive.png",
+          label: "Aspect d'ombre ultime",
+          description:
+            "Tempête d’os et Vague de sang sont désormais également des compétences de ténèbres. Elles infligent des dégâts d’ombre et bénéficient d’effets supplémentaires :\n• Les cibles touchées par Tempête d’os subissent [120 - 420] points de dégâts de corruption en 2 s.\n• Vague de sang laisse un sol souillé sur son passage, qui inflige [1 920 - 6 720] points de dégâts de corruption en 4 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 13,
+          image: "/gears/offensive.png",
+          label: "Aspect d'ombrebrume",
+          description:
+            "Vos serviteurs infligent 38 points de dégâts de corruption par seconde aux adversaires autour d’eux. Les dégâts sur la durée durent [2.0 - 5.0] s après avoir quitté l’aura.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 14,
+          image: "/gears/offensive.png",
+          label: "Aspect de calme intérieur",
+          description:
+            "Vous infligez [5.0 - 13.0]% de dégâts supplémentaires. Ce bonus est triplé lorsque vous restez immobile pendant 3 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 15,
+          image: "/gears/resource.png",
+          label: "Aspect de chair mise à nu",
+          description:
+            "Coup de chance : vous avez jusqu’à 10% de chances de générer [35.0 - 55.0] points d’essence lorsque vous touchez une cible vulnérable.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 16,
+          image: "/gears/offensive.png",
+          label: "Aspect de châtiment",
+          description:
+            "Vos chances d’infliger un coup critique aux cibles blessées sont augmentées de [13 - 23]%. Lorsque vous êtes en bonne santé, vous bénéficiez d’une augmentation de la durée des effets de perte de contrôle de [25 - 45]%.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 17,
+          image: "/gears/offensive.png",
+          label: "Aspect de commandement inflexible",
+          description:
+            "Tant qu’Armée des morts est active, vos serviteurs subissent 90% de dégâts en moins et vous infligez [70 - 110]% de dégâts d’invocation supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 18,
+          image: "/gears/resource.png",
+          label: "Aspect de déchiquetage",
+          description:
+            "Lorsque Décomposition explose, vous obtenez [25.0 - 45.0] points d’essence.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 19,
+          image: "/gears/offensive.png",
+          label: "Aspect de délabrement",
+          description:
+            "Chaque fois que la capacité passive principale Chancre d’ombre inflige des dégâts aux adversaires, elle augmente les dégâts du prochain Chancre d’ombre infligés dans les 10 s de [30 - 50]%, cet effet pouvant se cumuler jusqu’à 5 fois.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 20,
+          image: "/gears/offensive.png",
+          label: "Aspect de dents de scie",
+          description:
+            "La compétence passive principale Essence ossifiée augmente aussi les dégâts critiques de vos compétences d’os de 1% par point d’essence au-dessus de 50, jusqu’à un maximum de [25 - 45]%.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 21,
+          image: "/gears/offensive.png",
+          label: "Aspect de désossement",
+          description:
+            "Lance d’os inflige [30 - 50]% de dégâts supplémentaires aux adversaires se trouvant dans une Prison d’os et la première lance d’os à atteindre chaque adversaire à l’intérieur de la prison accable obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 22,
+          image: "/gears/offensive.png",
+          label: "Aspect de destin inévitable",
+          description:
+            "Lorsqu’une cible tombe à moins de 35% de points de vie sous l’effet d’un de vos dégâts sur la durée, une explosion se produit toutes les 7 s, infligeant [300 - 525] points de dégâts pour chaque élément qui l’affecte.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 23,
+          image: "/gears/offensive.png",
+          label: "Aspect de force détournée",
+          description:
+            "Vos dégâts critiques augmentent à hauteur de [30 - 70]% de vos chances de bloquer. Si vous bloquez une attaque, ce bonus est doublé pendant 10 s.",
+          category: "Attaque",
+          class: "Nécromancien, Sacresprit",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 24,
+          image: "/gears/offensive.png",
+          label: "Aspect de funambule",
+          description:
+            "Les compétences infligent jusqu’à [5 - 25]% de dégâts supplémentaires en fonction de votre ressource principale disponible à leur lancement, pour un résultat maximal lorsque votre ressource principale est au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 25,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'attente",
+          description:
+            "Après avoir attaqué des adversaires avec une compétence de base, les dégâts de votre prochaine compétence principale lancée dans les 5 s qui suivent sont augmentés de [5 - 12]% jusqu’à 30% au maximum.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 26,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'émissaire de Rathma",
+          description:
+            "Votre vitesse d’attaque augmente de [35 - 55]% pendant 4 s chaque fois que vos compétences de sang infligent des dégâts d’accablement.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 27,
+          image: "/gears/resource.png",
+          label: "Aspect de l'esprit fragmenté",
+          description:
+            "Lancer Esprit d’os projette également 18 éclats d’os de toutes parts, ce qui inflige [200 - 600]% de dégâts supplémentaires et génère 6 points d’essence par adversaire touché.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 28,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'esprit incarcéré",
+          description:
+            "Si Esprit d’os explose à l’intérieur d’une prison d’os, il explose une seconde fois, infligeant [40.0 - 80.0]% de dégâts normaux. Esprit d’os cherche désormais en priorité les adversaires dans la prison d’os.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 29,
+          image: "/gears/offensive.png",
+          label: "Aspect de l'esprit phasique",
+          description:
+            "Quand Esprit d’os explose, il fait apparaître 3 esprits qui se jettent sur les adversaires à proximité et leur infligent [20 - 40]% de ses dégâts. Cet effet ne peut survenir qu’une fois par lancer.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 30,
+          image: "/gears/resource.png",
+          label: "Aspect de l'ombre",
+          description:
+            "Vous récupérez [1.0 - 8.0] de votre ressource principale lorsque vous infligez un effet de perte de contrôle à une cible adverse.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 31,
+          image: "/gears/resource.png",
+          label: "Aspect de l'ombre éternelle",
+          description:
+            "Coup de chance : vos effets de corruption ont [15.0 - 35.0]% de chances de générer 3 points d’essence. Les dégâts de la compétence passive principale de Chancre d’ombre généreront toujours 2 points d’essence.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 32,
+          image: "/gears/offensive.png",
+          label: "Aspect de la faucheuse libératrice",
+          description:
+            "Lorsque vous infligez des dégâts avec Section, vous avez [15 - 35]% de chances de créer une flaque de chancre sous la cible, ce qui inflige [70 - 190]% de dégâts supplémentaires. Cet effet ne peut se produire qu’une fois toutes les 3 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 33,
+          image: "/gears/offensive.png",
+          label: "Aspect de la fureur déchaînée",
+          description:
+            "L’utilisation d’une compétence ultime augmente les dégâts de vos compétences ultimes de [6.0 - 10.0]% jusqu’à un maximum de [60 - 100]%. Lorsque vous avez cumulé cet effet 10 fois, il se réinitialise tout comme vos temps de recharge.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 34,
+          image: "/gears/offensive.png",
+          label: "Aspect de la mort insidieuse",
+          description:
+            "Vous infligez aux adversaires [5.0 - 20.0]% de dégâts supplémentaires sur la durée pour chaque effet de perte de contrôle différent qui leur est appliqué. Vous infligez plutôt [10 - 40]% de dégâts supplémentaires sur la durée aux adversaires inarrêtables et aux boss stupéfiés.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 35,
+          image: "/gears/resource.png",
+          label: "Aspect de la sombre danse",
+          description:
+            "Toutes les 5 s, votre prochaine compétence principale coûte [117 - 29] points de vie au lieu de puiser dans votre ressource principale, uniquement si vous disposez d’au moins 60% de votre maximum de vie. Les compétences qui consomment des points de vie infligent 80% de dégâts supplémentaires.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 36,
+          image: "/gears/offensive.png",
+          label: "Aspect de lotiforme",
+          description:
+            "Au lieu de revenir, Section se divise en 3 spectres qui se déploient à partir de la cible. Section inflige [180 - 240]% de dégâts normaux.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 37,
+          image: "/gears/resource.png",
+          label: "Aspect de lumière stellaire",
+          description:
+            "Vous gagnez [25.0 - 45.0] points de votre ressource principale pour chaque tranche de 20% de points de vie soignés ou pour chaque tranche de 100% de points de vie au-delà de 100% ajouté 0.5% de dégâts critiques à votre prochain coup critique, jusqu’à un bonus maximum de [30 - 70%.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 38,
+          image: "/gears/offensive.png",
+          label: "Aspect de mort inopinée",
+          description:
+            "Chaque pour cent de votre maximum de points de vie que vous récupérez au-delà de 100% ajoute 0.5% de dégâts critiques à votre prochain coup critique, jusqu’à un bonus maximum de [30 - 70]%.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 39,
+          image: "/gears/offensive.png",
+          label: "Aspect de pointes d'hémorragie",
+          description:
+            "Lorsque vous lancez Prélèvement, vous consommez des orbes de sang afin d’invoquer également des lances depuis ces orbes. Chaque lance de sang additionnelle inflige [60 - 100]% des dégâts normaux et cible en priorité les cibles non empalées.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 40,
+          image: "/gears/offensive.png",
+          label: "Aspect de querelleur",
+          description:
+            "L’utilisation d’une compétence ultime augmente vos dégâts de [10 - 30]% pendant 8 s. Vos compétences ultimes bénéficient de 2 rangs supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 41,
+          image: "/gears/resource.png",
+          label: "Aspect de rage vorace",
+          description:
+            "Lorsque vous tuez une cible avec une compétence principale, vous recevez [15.0 - 35.0]% de son coût de base. Cet effet ne peut se produire qu’une fois par utilisation.",
+          category: "Ressource",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 42,
+          image: "/gears/offensive.png",
+          label: "Aspect de raz-de-marée",
+          description:
+            "Vague de sang projette deux vagues supplémentaires, chacune infligeant [40 - 100]% de dégâts normaux, mais vous ne pouvez plus en lancer tant que la dernière vague n’est pas passée.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 43,
+          image: "/gears/offensive.png",
+          label: "Aspect de réanimation",
+          description:
+            "Tant qu’ils sont en vie, vos serviteurs infligent des dégâts accrus, jusqu’à une augmentation maximale de [40 - 60]% après 10 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 44,
+          image: "/gears/resource.png",
+          label: "Aspect de requiem",
+          description:
+            "Votre maximum d’essence est augmenté de [2.0 - 10.0] points par serviteur actif.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 45,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang bouillonnant",
+          description:
+            "Lorsque vos compétences principales accablent les adversaires, vous faites apparaître 3 gouttes de sang instable. Ramassez-en une pour la faire exploser et infliger [263 - 938] points de dégâts physiques autour de vous.\nToutes les 20 s, votre prochaine compétence accablera obligatoirement vos adversaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 46,
+          image: "/gears/offensive.png",
+          label: "Aspect de sang insatiable",
+          description:
+            "Chaque fois que Prélèvement touche en premier une cible déjà atteinte par cette compétence, déclenche un nouveau Prélèvement infligeant [60 - 100]% des dégâts normaux à un personnage ennemi à proximité.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 47,
+          image: "/gears/resource.png",
+          label: "Aspect de sang tout-puissant",
+          description:
+            "Les orbes de sang octroient [10.0 - 30.0] points d’essence.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 48,
+          image: "/gears/offensive.png",
+          label: "Aspect de servitude et sacrifice",
+          description:
+            "Les guerriers squelettes explosent en mourant, ce qui inflige [300 - 450] points de dégâts physiques supplémentaires aux adversaires à proximité. En combat, les squelettes perdent 25% de points de vie par seconde.\nLes mages squelettes subissent 90% de dégâts en moins et ils infligent [50.0 - 100.0]% de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 49,
+          image: "/gears/offensive.png",
+          label: "Aspect de toucher maudit",
+          description:
+            "Coup de chance : vos compétences ont jusqu’à [20.0 - 40.0]% de chances d’infliger aux adversaires une malédiction vampirique. Toute cible affectée par une malédiction vampirique est également vulnérable.\nLes âmes stockées par la malédiction vampirique infligent [20.0 - 60.0]% points de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 50,
+          image: "/gears/resource.png",
+          label: "Aspect de tourment",
+          description:
+            "Les coups critiques infligés avec des compétences d’os augmentent votre régénération d’essence de [95.0 - 195.0]% pendant 4 s.",
+          category: "Ressource",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 51,
+          image: "/gears/offensive.png",
+          label: "Aspect de vindicte",
+          description:
+            "Les cibles à distance ont 10% de chances d’être étourdies pendant 2 s lorsqu’elles vous infligent des dégâts.\nVous infligez [15 - 35]% de dégâts supplémentaires aux cibles étourdies ou renversées.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 52,
+          image: "/gears/offensive.png",
+          label: "Aspect des damnés",
+          description:
+            "Vos dégâts d’ombre sont augmentés de [35 - 55]% contre les cibles affectées par une malédiction.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 53,
+          image: "/gears/offensive.png",
+          label: "Aspect des éléments",
+          description:
+            "Augmente les dégâts infligés par un ensemble de types de dégâts de [15 - 35]% pendant 7 s. Cet effet alterne entre deux ensembles :\n• Feu, foudre et physiques\n• Froid, poison et ombre.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 54,
+          image: "/gears/offensive.png",
+          label: "Aspect des morts frénétiques",
+          description:
+            "Chaque fois qu’un de vos serviteurs blesse une cible, sa vitesse d’attaque augmente de [10.0 - 18.0]% pendant 3 s, jusqu’à un maximum de [30.0 - 54.0]%.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 55,
+          image: "/gears/offensive.png",
+          label: "Aspect des ténèbres descendantes",
+          description:
+            "Prison d’os est désormais une compétence de ténèbres qui crée des chancre pendant 6 s. Vos chancre infligent [40 - 60]% de dégâts supplémentaires tant que Prison d’os est active.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 56,
+          image: "/gears/offensive.png",
+          label: "Aspect des veines rapaces",
+          description:
+            "Vos chances d’infliger un coup critique sont augmentées de [15 - 25]% pendant 6 s lorsque vous lancez Vrilles nécrophages. Vous infligez [10 - 50]% de dégâts critiques supplémentaires aux cibles blessées par Vrilles nécrophages pendant 6 s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 57,
+          image: "/gears/offensive.png",
+          label: "Aspect du crépuscule",
+          description:
+            "Lorsque vous infligez des dégâts avec une compétence de base, vous recevez 4% de vitesse d’attaque supplémentaire pendant 10 s, jusqu’à un maximum de 5 fois. Une fois ce seuil atteint, vous sombrez dans une rage vampirique et obtenez un bonus de [40 - 60]% aux dégâts des compétences de base et de 15% à la vitesse de déplacement pendant 10 s.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 58,
+          image: "/gears/offensive.png",
+          label: "Aspect du déluge d’os",
+          description:
+            "Tempête d’os consomme jusqu’à 8 cadavres pour augmenter sa durée jusqu’à un maximum de [5.0 - 15.0] s.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 59,
+          image: "/gears/offensive.png",
+          label: "Aspect du grand festin",
+          description:
+            "Lorsque vous possédez des serviteurs actifs, vos invocations infligent [35 - 55]% de dégâts supplémentaires, mais chaque serviteur vous draine 2 points d’essence par seconde.\nSi vous n’avez pas de serviteur actif, vous infligez [35 - 55]% de dégâts supplémentaires, mais 14 points d’essence sont drainés par seconde.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 60,
+          image: "/gears/offensive.png",
+          label: "Aspect du traqueur de sang",
+          description:
+            "Prélèvement inflige [5.0 - 15.0]% de dégâts supplémentaires à sa cible principale par cible empalée.\nTant que vous êtes en bonne santé, vos prélèvements infligent [15 - 35]% de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 61,
+          image: "/gears/offensive.png",
+          label: "Aspect expéditif",
+          description:
+            "La vitesse d’attaque des compétences de base est augmentée de [15 - 35]%.",
+          category: "Attaque",
+          class: "Tous",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 62,
+          image: "/gears/offensive.png",
+          label: "Aspect fracturant",
+          description:
+            "L’attaque principale de Lance d’os rend vulnérables les cibles touchées après la première cible pendant 3 s. Les éclats osseux de Lance d’os infligent [30 - 70]% de dégâts supplémentaires aux adversaires vulnérables et les transpercent.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 63,
+          image: "/gears/offensive.png",
+          label: "Aspect hérissé",
+          description:
+            "Lorsque vous esquivez ou bloquez une attaque, vous infligez à l’adversaire [100 - 200]% de dégâts d’épines.",
+          category: "Attaque",
+          class: "Nécromancien, Sacresprit",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 64,
+          image: "/gears/offensive.png",
+          label: "Aspect putréfié",
+          description:
+            "Décomposition peut atteindre jusqu’à 4 cibles supplémentaires qu’elle fait exploser. Les explosions déclenchées par Décomposition infligent [15 - 35]% de dégâts supplémentaires.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 65,
+          image: "/gears/offensive.png",
+          label: "Aspect putrescent",
+          description:
+            "Les attaques consécutives avec la compétence passive principale Chancre d’ombre infligent [25.0 - 35.0]% de dégâts supplémentaires à chaque coup. Cet effet se réinitialise 6 s après le premier coup.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 66,
+          image: "/gears/offensive.png",
+          label: "Aspect sacrificiel",
+          description: "Vos bonus de Sacrifice sont augmentés de [35 - 55]%.",
+          category: "Attaque",
+          class: "Nécromancien",
+          allowedGear: ["Anneau 1", "Anneau 2"],
         },
       ],
     },

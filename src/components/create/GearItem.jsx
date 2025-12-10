@@ -207,19 +207,27 @@ export default function GearItem({
                           {/* Hover Popup */}
                           {hoveredAspect === aspect && (
                             <div className="absolute z-50 w-64 bg-[#1f2025] border border-[#424243] rounded-md p-3 shadow-lg left-1/2 -translate-x-1/2 top-full mt-2 text-white">
-                              <img
-                                src={aspect.image}
-                                alt={aspect.label}
-                                className="w-12 h-12 object-contain mb-2"
-                              />
-                              <h4 className="font-bold text-lg">
-                                {aspect.label}
-                              </h4>
+                              <div className="flex gap-4">
+                                <img
+                                  src={aspect.image}
+                                  alt={aspect.label}
+                                  className="w-12 h-12 object-contain mb-2"
+                                />
+                                <div className="">
+                                  <h4 className="font-semibold">
+                                    {aspect.label}
+                                  </h4>
+                                  <h4 className="text-gray-500 ">{aspect.class}</h4>
+                                </div>
+                              </div>
+                              <hr className="border-gray-700 my-3" />
+
                               <p className="text-sm text-[#a3a4a5]">
                                 {aspect.description}
                               </p>
+                              <hr className="border-gray-700 my-3" />
                               <p className="text-sm text-[#a3a4a5] mt-1">
-                                Category: {aspect.category}
+                                {aspect.allowedGear}
                               </p>
                             </div>
                           )}
