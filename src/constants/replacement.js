@@ -206,15 +206,16 @@ glyph_ids: [4,5,8,12,13,14,15,19,23],dex
 
 
 
-allowedGear: ["Barre"],
-allowedGear: ["Armure de poitrine"],
+allowedGear: ["Helm"],
+allowedGear: ["Chest Armor"],
 allowedGear: ["Gloves"],
-allowedGear: ["Pantalon"],
- allowedGear: ["Bottes"],
- allowedGear: ["Arme"],
+allowedGear: ["Pants"],
+ allowedGear: ["Boots"],
+ allowedGear: ["Ranged Weapon"],
 
   allowedGear: ["Amulette"],
  allowedGear: ["Anneau 1", "Anneau 2"],
+ allowedGear: ["Arme à double usage 1", "Arme à double usage 2"],
  allowedGear: ["Offhand"],
 
 
