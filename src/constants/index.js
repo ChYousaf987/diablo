@@ -945,13 +945,31 @@ export const bossPowers9main = [
 export const bossPowers11Top = [
   {
     id: 1,
-    label: "l'essence des mensonges",
-    image: "/gears/essence-of-lies.webp",
+    label: "Essence des Ombres",
+    image: "/gears/essence-of-shadows.webp",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "chance d’amélioration supplémentaire dans la fosse. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang </b>: les chances d’amélioration supplémentaire augmentent.",
+    ],
+    purified:
+      "vous bénéficiez d’une fortification à hauteur de 1 % de votre maximum de points de vie par seconde.",
+    corrupted:
+      "les yeux de Bélial regorgent de malveillance et projettent des rayons qui vous infligent des dégâts à hauteur de 10 % de votre maximum de points de vie par seconde.",
   },
   {
     id: 2,
     label: "essence des ombres",
     image: "/gears/essence-of-shadows.webp",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "lorsque vous triomphez de la fosse, vous gagnez des quantités colossales d’or. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang </b>: la quantité d’or obtenue augmente.",
+    ],
+    purified:
+      "toutes les 12 s, vous devenez brièvement inarrêtable lorsque vous êtes sous l’effet d’une perte de contrôle.",
+    corrupted:
+      "les apparitions de Bélial sont renforcées et leurs attaques peuvent vous hébéter pendant 3 s ou vous repousser.",
   },
   // Add more unique to top
 ];
@@ -961,13 +979,32 @@ export const bossPowers11Bottom = [
     id: 1,
     label: "essence du feu infernal",
     image: "/gears/essence-of-hellfire.webp",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "lorsque vous survivez à un combat contre un boss mondial, vous gagnez des clés d’activité. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang</b> : vous recevez des clés de donjon de meilleure qualité.",
+      "<b>Rang 2 </b>: la cache hebdomadaire contient une énorme quantité de clés d’activité.",
+      "<b>Rang 5 </b>: davantage de boussoles et de tributs apparaissent dans tout Sanctuaire.",
+    ],
+    purified: "votre armure augmente de 20 %.",
+    corrupted: "vous êtes vulnérable lorsque vous affrontez des boss mondiaux.",
   },
   {
     id: 2,
     label: "essence du péché",
     image: "/gears/essence-of-sin.webp",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "lorsque vous survivez à un combat contre un boss mondial, vous gagnez des clés de repaire de boss. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang </b>: vous recevez des clés de repaire de boss de meilleure qualité.",
+      "<b>Rang 2</b> : la cache hebdomadaire contient une énorme quantité de clés de repaire de boss.",
+      "<b>Rang 5</b> : davantage de clés de repaire de boss apparaissent dans tout Sanctuaire.",
+    ],
+    purified:
+      " vos dégâts directs ont 10 % de chances d’étourdir les adversaires pendant 1 s.",
+    corrupted:
+      "lors d’un combat contre un boss mondial, des météorites s’abattent sur vous.",
   },
-  // Add more unique to bottom
 ];
 
 export const bossPowers11Left = [
@@ -975,11 +1012,28 @@ export const bossPowers11Left = [
     id: 1,
     label: "essence de la douleur",
     image: "/gears/essence-of-pain.webp",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "dans une vague infernale, les tourments de Duriel peuvent octroyer des objets à sertir. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang </b>: vous obtenez des runes et des gemmes de meilleure qualité.",
+    ],
+    purified:
+      "une fois toutes les 20 s, vous obtenez brièvement une barrière maximale après avoir subi une blessure.",
+    corrupted:
+      "les tourments de Duriel vous tendent des embuscades plus souvent et leurs attaques ont 100 % de chances de détruire votre barrière ou votre fortification.",
   },
   {
     id: 2,
     label: "essence de la misère",
     image: "/gears/essence-of-squalor.png",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "dans une vague infernale, les asticots peuvent octroyer des globes d’expérience. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang </b>: les globes d’expérience sont désormais plus puissants.",
+    ],
+    purified: "vous récupérez une potion de soins toutes les 20 s.",
+    corrupted:
+      "les météorites génèrent des asticots. Toutes les attaques des asticots consomment l’une de vos potions de soins.",
   },
   // Add more
 ];
@@ -989,11 +1043,27 @@ export const bossPowers11Right = [
     id: 1,
     label: "essence de l'angoisse",
     image: "/gears/essence-of-anguish.webp",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "vous gagnez des oboles lorsque vous obtenez de l’harmonie dans les bas-fonds. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang</b> : la quantité d’oboles obtenue augmente.",
+    ],
+    purified: "votre vitesse de déplacement augmente de 30 %.",
+    corrupted:
+      "les manifestations de l’Angoisse rôdent dans les bas-fonds et vous attachent des siphons de foudre qui vous ralentissent de 70 % si vous vous trouvez à proximité.",
   },
   {
     id: 2,
     label: "essence des cris",
     image: "/gears/essence-of-screams.webp",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "vous gagnez des matériaux de recyclage lorsque vous obtenez de l’harmonie dans les bas-fonds. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang</b> : vous obtenez des matériaux de recyclage de meilleure qualité.",
+    ],
+    purified: "vos résistances augmentent de 20 %.",
+    corrupted:
+      "les âmes agonisantes enragent et déclenchent désormais des explosions qui vous entraînent vers leur centre et électrifient le sol, ce qui vous inflige des dégâts à hauteur de 12 % de votre maximum de points de vie par seconde.",
   },
   // Add more
 ];
@@ -1003,11 +1073,28 @@ export const bossPowers11MidLeft = [
     id: 1,
     label: "essence de la douleur",
     image: "/gears/essence-of-pain.webp",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "dans une vague infernale, les tourments de Duriel peuvent octroyer des objets à sertir. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang </b>: vous obtenez des runes et des gemmes de meilleure qualité.",
+    ],
+    purified:
+      "une fois toutes les 20 s, vous obtenez brièvement une barrière maximale après avoir subi une blessure.",
+    corrupted:
+      "les tourments de Duriel vous tendent des embuscades plus souvent et leurs attaques ont 100 % de chances de détruire votre barrière ou votre fortification.",
   },
   {
     id: 2,
     label: "essence de la misère",
     image: "/gears/essence-of-squalor.png",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "dans une vague infernale, les asticots peuvent octroyer des globes d’expérience. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang </b>: les globes d’expérience sont désormais plus puissants.",
+    ],
+    purified: "vous récupérez une potion de soins toutes les 20 s.",
+    corrupted:
+      "les météorites génèrent des asticots. Toutes les attaques des asticots consomment l’une de vos potions de soins.",
   },
   // Add more
 ];
@@ -1015,13 +1102,31 @@ export const bossPowers11MidLeft = [
 export const bossPowers11MidTop = [
   {
     id: 1,
-    label: "l'essence des mensonges",
-    image: "/gears/essence-of-lies.webp",
+    label: "Essence des Ombres",
+    image: "/gears/essence-of-shadows.webp",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "chance d’amélioration supplémentaire dans la fosse. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang </b>: les chances d’amélioration supplémentaire augmentent.",
+    ],
+    purified:
+      "vous bénéficiez d’une fortification à hauteur de 1 % de votre maximum de points de vie par seconde.",
+    corrupted:
+      "les yeux de Bélial regorgent de malveillance et projettent des rayons qui vous infligent des dégâts à hauteur de 10 % de votre maximum de points de vie par seconde.",
   },
   {
     id: 2,
     label: "essence des ombres",
     image: "/gears/essence-of-shadows.webp",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "lorsque vous triomphez de la fosse, vous gagnez des quantités colossales d’or. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang </b>: la quantité d’or obtenue augmente.",
+    ],
+    purified:
+      "toutes les 12 s, vous devenez brièvement inarrêtable lorsque vous êtes sous l’effet d’une perte de contrôle.",
+    corrupted:
+      "les apparitions de Bélial sont renforcées et leurs attaques peuvent vous hébéter pendant 3 s ou vous repousser.",
   },
   // Add more
 ];
@@ -1031,11 +1136,31 @@ export const bossPowers11MidBottom = [
     id: 1,
     label: "essence du feu infernal",
     image: "/gears/essence-of-hellfire.webp",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "lorsque vous survivez à un combat contre un boss mondial, vous gagnez des clés d’activité. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang</b> : vous recevez des clés de donjon de meilleure qualité.",
+      "<b>Rang 2 </b>: la cache hebdomadaire contient une énorme quantité de clés d’activité.",
+      "<b>Rang 5 </b>: davantage de boussoles et de tributs apparaissent dans tout Sanctuaire.",
+    ],
+    purified: "votre armure augmente de 20 %.",
+    corrupted: "vous êtes vulnérable lorsque vous affrontez des boss mondiaux.",
   },
   {
     id: 2,
     label: "essence du péché",
     image: "/gears/essence-of-sin.webp",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "lorsque vous survivez à un combat contre un boss mondial, vous gagnez des clés de repaire de boss. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang </b>: vous recevez des clés de repaire de boss de meilleure qualité.",
+      "<b>Rang 2</b> : la cache hebdomadaire contient une énorme quantité de clés de repaire de boss.",
+      "<b>Rang 5</b> : davantage de clés de repaire de boss apparaissent dans tout Sanctuaire.",
+    ],
+    purified:
+      " vos dégâts directs ont 10 % de chances d’étourdir les adversaires pendant 1 s.",
+    corrupted:
+      "lors d’un combat contre un boss mondial, des météorites s’abattent sur vous.",
   },
   // Add more
 ];
@@ -1045,11 +1170,27 @@ export const bossPowers11MidRight = [
     id: 1,
     label: "essence de l'angoisse",
     image: "/gears/essence-of-anguish.webp",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "vous gagnez des oboles lorsque vous obtenez de l’harmonie dans les bas-fonds. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang</b> : la quantité d’oboles obtenue augmente.",
+    ],
+    purified: "votre vitesse de déplacement augmente de 30 %.",
+    corrupted:
+      "les manifestations de l’Angoisse rôdent dans les bas-fonds et vous attachent des siphons de foudre qui vous ralentissent de 70 % si vous vous trouvez à proximité.",
   },
   {
     id: 2,
     label: "essence des cris",
     image: "/gears/essence-of-screams.webp",
+    type: "Divine Gift • Every Class", // This line under the name
+    rewards: [
+      "vous gagnez des matériaux de recyclage lorsque vous obtenez de l’harmonie dans les bas-fonds. Cet effet est doublé par le don purifié.",
+      "<b>Améliorations de rang</b> : vous obtenez des matériaux de recyclage de meilleure qualité.",
+    ],
+    purified: "vos résistances augmentent de 20 %.",
+    corrupted:
+      "les âmes agonisantes enragent et déclenchent désormais des explosions qui vous entraînent vers leur centre et électrifient le sol, ce qui vous inflige des dégâts à hauteur de 12 % de votre maximum de points de vie par seconde.",
   },
   // Add more
 ];
