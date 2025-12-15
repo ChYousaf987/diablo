@@ -959,7 +959,7 @@ export const bossPowers11Top = [
   },
   {
     id: 2,
-    label: "essence des ombres",
+    label: "Essence des ombres",
     image: "/gears/essence-of-shadows.webp",
     type: "Divine Gift • Every Class", // This line under the name
     rewards: [
