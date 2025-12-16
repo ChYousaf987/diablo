@@ -1,11 +1,14 @@
 // ParagonBoard.js
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { updateParagonBoard, clearBoardGlyphs } from "@/lib/redux/slice";
 import CardParagonHover from "./CardParagonHover";
 import CardParagonModal from "./CardParagonModal";
 import CardGlyphModal from "./CardGlyphModal";
 import { useAppSelector } from "@/lib/hooks";
 import { selectGlyphs, selectParagonBuilds } from "@/lib/redux/slice";
 import Image from "next/image";
+import { FiRotateCw, FiTrash2, FiX } from "react-icons/fi";
 
 // Define glyph socket numbers per class and board
 const glyphSocketNumbers = {
@@ -80,9 +83,54 @@ const glyphSocketNumbers = {
   },
 };
 
-const ParagonBoard = ({ item, style }) => {
+const ParagonBoard = ({ item, style, onRotate, onDelete, onRemove }) => {
+  // Local state to hide board after delete if no onDelete prop is provided
+  const [isVisible, setIsVisible] = useState(true);
   const glyphs = useAppSelector(selectGlyphs);
   const paragon_builds = useAppSelector(selectParagonBuilds);
+  const dispatch = useDispatch();
+
+  // Handler for Rotate
+  const [rotation, setRotation] = useState(0);
+  const handleRotate = () => {
+    // Rotate the board visually by 90 degrees
+    setRotation((prev) => (prev + 90) % 360);
+    // If you want to update Redux or parent, call onRotate or dispatch here
+    if (typeof onRotate === "function") {
+      onRotate(item);
+    }
+  };
+
+  // Handler for Delete
+  const handleDelete = () => {
+    if (typeof onDelete === "function") {
+      onDelete(item);
+    } else {
+      // Hide this board from UI (simulate delete)
+      setIsVisible(false);
+    }
+  };
+
+  // Handler for Remove
+  const handleRemove = () => {
+    // Remove all glyphs from this board
+    if (typeof onRemove === "function") {
+      onRemove(item);
+    } else {
+      // Remove all glyphs from this board (set glyph_id to null for all nodes)
+      if (item && item.bord) {
+        item.bord.forEach((row) => {
+          row.forEach((node) => {
+            if (node && node.is_glyph_socket) {
+              node.glyph_id = null;
+            }
+          });
+        });
+        // If you want to update Redux, dispatch here
+        // dispatch(clearBoardGlyphs({ boardId: item.id }));
+      }
+    }
+  };
 
   const findItemIndex = (items, index) => {
     return items.find((item) => item && item.index === index) || null;
@@ -199,27 +247,58 @@ const ParagonBoard = ({ item, style }) => {
 
   const demansions = { top: item.top, left: item.left };
 
+  if (!isVisible) return null;
   return (
     <div
       className="flex flex-col items-center justify-center w-fit border-2 relative border-red-600"
-      style={style}
+      style={{ ...style, transform: `rotate(${rotation}deg)` }}
     >
-      <div className="text-white text-sm absolute top-1 left-1 bg-[#26272d] px-2 py-1 rounded-lg">
-        {item.label} |
-        <span className="text-xs text-yellow-600"> Str:{item.str}</span>
-        <span className="text-xs">
-          {" "}
-          <b>•</b> Dex:{item.dex}
-        </span>
-        <span className="text-xs">
-          {" "}
-          <b>•</b> Int:{item.int}
-        </span>
-        <span className="text-xs">
-          {" "}
-          <b>•</b> Will:{item.will}
-        </span>
+      <div className="w-full flex items-center justify-between px-3 py-1 rounded-lg bg-black/40">
+        {/* LEFT SIDE – Label & Stats */}
+        <div className="text-white text-sm flex items-center gap-1">
+          <div className="flex items-center gap-2">
+            <span className="bg-gray-700 px-2 py-0.5 rounded text-xs">
+              {boardNumber} ▼
+            </span>
+            <span className="font-bold">{item.label || "Unknown Board"}</span>
+          </div>
+          <p className="text-gray-500">|</p>
+          <div className="flex items-center gap-3">
+            <span className="">Str {item.str || 0}</span>
+            <span className="">Dex {item.dex || 0}</span>
+            <span className="">Int {item.int || 0}</span>
+            <span className="">Will {item.will || 0}</span>
+          </div>
+        </div>
+
+        {/* RIGHT SIDE – Action Icons (Diablo style) */}
+        <div className="flex items-center gap-5 text-white">
+          <button
+            className="hover:text-yellow-400 bg-gray-700 p-1.5 rounded-full transition"
+            title="Rotate Board"
+            onClick={handleRotate}
+          >
+            <FiRotateCw size={16} />
+          </button>
+
+          <button
+            className="hover:text-red-500 bg-gray-700 p-1.5 rounded-full transition"
+            title="Delete Board"
+            onClick={handleDelete}
+          >
+            <FiTrash2 size={16} />
+          </button>
+
+          <button
+            className="hover:text-red-600 bg-gray-700 p-1.5 rounded-full transition"
+            title="Remove Board"
+            onClick={handleRemove}
+          >
+            <FiX size={16} />
+          </button>
+        </div>
       </div>
+
       <div className="w-[100%] relative">
         {hasSelectedGlyph && (
           <Image

@@ -7,7 +7,7 @@ import {
   updateOptionSkillScore,
 } from "@/lib/redux/slice";
 import { useAppSelector } from "@/lib/hooks";
-import { generateConnections, sumScores, hasParentRank } from "@/lib/utils";
+import { generateConnections, sumScores } from "@/lib/utils";
 import { levelRanges } from "@/constants";
 import ReactDOM from "react-dom";
 
@@ -20,91 +20,14 @@ export default function CardSkillTreeHover({
 }) {
   const dispatch = useDispatch();
   const optionSkills = useAppSelector(selectOptionSkills);
-  const level = sumScores(optionSkills);
-  const isClickable = type !== "child" || hasParentRank(optionSkills, item);
+  const totalLevel = sumScores(optionSkills);
+  const maxTotalLevel = 71; // Adjust if your max changes
+
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [popupPosition, setPopupPosition] = useState({ top: 0, left: 0 });
   const triggerRef = useRef(null);
 
-  useEffect(() => {
-    console.log("Rendered item:", {
-      id: item.id,
-      label: item.label,
-      rank: item.rank,
-      parent_id: item.parent_id,
-      isClickable,
-    });
-  }, [item, isClickable]);
-
-  const handleScoreUpdate = (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-
-    console.log(
-      `Attempting to update ${item.label} (ID: ${
-        item.id
-      }), isClickable: ${isClickable}, type: ${type}, parent rank: ${
-        item.parent_id ? findParentRank(optionSkills, item.parent_id) : "N/A"
-      }`
-    );
-
-    if (!isClickable) {
-      console.log(`Cannot update ${item.label}: Parent rank must be > 0`, {
-        item,
-        parentRank: item.parent_id
-          ? findParentRank(optionSkills, item.parent_id)
-          : "N/A",
-      });
-      return;
-    }
-
-    let newScore;
-    const canIncreaseScore =
-      event.button === 0 && item.rank < item.max_rank && level < 71;
-    const canDecreaseScore = event.button === 2 && item.rank > 0;
-
-    if (canIncreaseScore) {
-      newScore = item.rank + 1;
-      console.log(
-        `Increasing ${item.label} (ID: ${item.id}) rank to ${newScore}`,
-        { level, currentRank: item.rank }
-      );
-    } else if (canDecreaseScore) {
-      newScore = item.rank - 1;
-      console.log(
-        `Decreasing ${item.label} (ID: ${item.id}) rank to ${newScore}`,
-        { level, currentRank: item.rank }
-      );
-      if (children) {
-        const parent = children.find((child) => child.id === item.id);
-        if (parent && parent.rank === 0) {
-          children.forEach((child) => {
-            if (child.rank > 0) {
-              dispatch(
-                updateOptionSkillScore({ skillId: child.id, newScore: 0 })
-              );
-              console.log(
-                `Resetting child ${child.label} (ID: ${child.id}) rank to 0`
-              );
-            }
-          });
-        }
-      }
-    }
-
-    if (newScore !== undefined) {
-      dispatch(updateOptionSkillScore({ skillId: item.id, newScore }));
-      const newLevel =
-        sumScores(optionSkills) +
-        (canIncreaseScore ? 1 : canDecreaseScore ? -1 : 0);
-      dispatch(updateLevel(newLevel));
-      console.log(
-        `Updated ${item.label} (ID: ${item.id}) to rank ${newScore}, new level: ${newLevel}`
-      );
-      connectionColoring(newLevel, item, optionSkills);
-    }
-  };
-
+  // Helper: Find rank of parent by parent_id
   const findParentRank = (skills, parentId) => {
     for (const skill of skills) {
       if (skill.id === parentId) return skill.rank;
@@ -134,12 +57,92 @@ export default function CardSkillTreeHover({
     return 0;
   };
 
-  const findParentItem = (items) => {
-    const parents = items.filter((item) => {
-      const isChild = items.some((i) => i.id === item.parent_id);
-      return !isChild;
+  // === MAIN CLICKABILITY LOGIC ===
+  const isCategoryUnlocked = totalLevel >= min_score;
+
+  const isChildType = type === "child" || type === "secondOptionChild";
+  const parentHasRank =
+    !isChildType ||
+    (item.parent_id && findParentRank(optionSkills, item.parent_id) > 0);
+
+  const canIncrease = item.rank < item.max_rank && totalLevel < maxTotalLevel;
+  const canDecrease = item.rank > 0;
+
+  const isClickable =
+    isCategoryUnlocked && parentHasRank && (canIncrease || canDecrease);
+
+  // Visual dimming: dim if locked category, or zero rank small node, or not clickable
+  const isDimmed =
+    (item.rank === 0 && size === 20) || !isCategoryUnlocked || !parentHasRank;
+
+  useEffect(() => {
+    console.log("Rendered item:", {
+      id: item.id,
+      label: item.label,
+      rank: item.rank,
+      type,
+      min_score,
+      totalLevel,
+      isCategoryUnlocked,
+      parentHasRank,
+      isClickable,
     });
-    return parents.length > 0 ? parents[0] : null;
+  }, [
+    item,
+    type,
+    min_score,
+    totalLevel,
+    isCategoryUnlocked,
+    parentHasRank,
+    isClickable,
+  ]);
+
+  const handleScoreUpdate = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    if (!isClickable) {
+      console.log("Click blocked: node not clickable", {
+        item,
+        totalLevel,
+        min_score,
+      });
+      return;
+    }
+
+    let newScore = item.rank;
+    const isLeftClick = event.button === 0;
+    const isRightClick = event.button === 2;
+
+    if (isLeftClick && canIncrease) {
+      newScore = item.rank + 1;
+    } else if (isRightClick && canDecrease) {
+      newScore = item.rank - 1;
+
+      // If decreasing parent to 0, reset all its children
+      if (children && newScore === 0) {
+        children.forEach((child) => {
+          if (child.rank > 0) {
+            dispatch(
+              updateOptionSkillScore({ skillId: child.id, newScore: 0 })
+            );
+          }
+        });
+      }
+    } else {
+      return; // No valid action
+    }
+
+    dispatch(updateOptionSkillScore({ skillId: item.id, newScore }));
+
+    const levelChange = isLeftClick ? 1 : -1;
+    const newTotalLevel = totalLevel + levelChange;
+    dispatch(updateLevel(newTotalLevel));
+
+    console.log(
+      `Updated ${item.label} to rank ${newScore}, new total level: ${newTotalLevel}`
+    );
+    connectionColoring(newTotalLevel, item, optionSkills);
   };
 
   const connectionColoring = (level, item) => {
@@ -154,27 +157,16 @@ export default function CardSkillTreeHover({
       }
     };
 
-    const applyStylesOption = (option, level) => {
-      const width = level === 0 ? "0%" : "100%";
+    const applyStylesOption = (option, width) => {
       applyStyles(`steps_${option.id}`, width);
     };
 
-    const applyStylesChild = (item, level, options) => {
-      const option = options.find((t) => t.to === `${item.from}`);
-      if (option) applyStylesOption(option, level);
+    const optionConn = Options.find((o) => o.to === `node${item.id}`);
+    if (optionConn) applyStylesOption(optionConn, level > 0 ? "100%" : "0%");
 
-      applyStyles(`steps_${item.id}`, level === 0 ? "0%" : "100%");
-    };
+    const childConn = Child.find((c) => c.to === `node${item.id}`);
+    if (childConn) applyStylesOption(childConn, level > 0 ? "100%" : "0%");
 
-    // Apply styles to option
-    const option = Options.find((option) => option.to === `node${item.id}`);
-    if (option) applyStylesOption(option, level);
-
-    // Apply styles to child
-    const child = Child.find((child) => child.to === `node${item.id}`);
-    if (child) applyStylesChild(child, level, Options);
-
-    // Apply styles based on level ranges
     for (const range of levelRanges) {
       if (level >= range.min && level <= range.max) {
         applyStyles(
@@ -193,7 +185,7 @@ export default function CardSkillTreeHover({
       const scrollY = window.scrollY || window.pageYOffset;
       setPopupPosition({
         top: rect.bottom + scrollY + 4,
-        left: rect.left + scrollX - 96, // Center by offsetting half the popup width (192px / 2)
+        left: rect.left + scrollX - 96,
       });
       setIsPopupVisible(true);
     }
@@ -208,9 +200,7 @@ export default function CardSkillTreeHover({
       <div
         ref={triggerRef}
         className={`flex flex-col justify-center items-center text-white ${
-          (item.rank === 0 && size === 20) || level < min_score || !isClickable
-            ? "opacity-50"
-            : ""
+          isDimmed ? "opacity-50" : ""
         }`}
         onMouseEnter={handleMouseEnter}
       >
@@ -222,32 +212,21 @@ export default function CardSkillTreeHover({
           onContextMenu={isClickable ? handleScoreUpdate : undefined}
         >
           <Image
-            src={`${item.image}`}
+            src={item.image}
             className="object-contain transition-all bg-[#1f2025] hover:scale-105 rounded-sm"
-            alt="logo"
+            alt={item.label}
             width={size}
             height={size}
           />
         </div>
-        {size === 20 && item.rank > 0 && (
-          <span
-            className={`${
-              size === 40 ? "-mt-5" : ""
-            } text-[8px] bg-red-500 px-0.5`}
-          >
-            {item.rank} / {item.max_rank}
-          </span>
-        )}
-        {(size === 40 || size === 30) && (
-          <span
-            className={`${
-              size === 40 ? "-mt-5" : ""
-            } text-[8px] bg-red-500 px-0.5`}
-          >
+
+        {(size === 20 || size === 30 || size === 40) && item.rank > 0 && (
+          <span className="text-[8px] bg-red-500 px-0.5 -mt-5">
             {item.rank} / {item.max_rank}
           </span>
         )}
       </div>
+
       {isPopupVisible &&
         ReactDOM.createPortal(
           <div
@@ -255,19 +234,21 @@ export default function CardSkillTreeHover({
             style={{
               top: `${popupPosition.top}px`,
               left: `${popupPosition.left}px`,
-              zIndex: 2000, // Higher z-index to ensure it stays on top
+              zIndex: 2000,
             }}
           >
             <div className="flex gap-4 items-center mb-2">
               <img
                 src={item.image}
                 alt={item.label}
-                className="w-12 h-12 object-contain mb-2"
+                className="w-12 h-12 object-contain"
               />
               <h4 className="font-bold text-lg">{item.label}</h4>
             </div>
             <p className="text-sm text-[#a3a4a5]">
-              {item.rank || (item.powers && item.powers.join(", "))}
+              {item.rank !== undefined
+                ? `${item.rank} / ${item.max_rank}`
+                : item.powers?.join(", ")}
             </p>
 
             {item.details && item.details.length > 0 && (
@@ -277,14 +258,9 @@ export default function CardSkillTreeHover({
                 ))}
               </div>
             )}
-            <hr className="my-3"/>
-            <p className="text-sm flex gap-1 text-end justify-end text-[#a3a4a5] mt-1">
-              {item.detail}
-            </p>
-            <p className="text-sm text-end text-[#a3a4a5] mt-1">
-              {" "}
-              {item.footer}
-            </p>
+            <hr className="my-3" />
+            <p className="text-sm text-[#a3a4a5] text-right">{item.detail}</p>
+            <p className="text-sm text-[#a3a4a5] text-right">{item.footer}</p>
           </div>,
           document.body
         )}
