@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { usePopper } from "react-popper";
 import Image from "next/image";
+import { createPortal } from "react-dom"; // <-- Yeh add karo
 import {
   selectParagonBuilds,
   selectGlyphs,
@@ -14,24 +15,42 @@ export default function CardParagonHover({ item, size = 30 }) {
   const dispatch = useAppDispatch();
   const paragon_builds = useAppSelector(selectParagonBuilds);
   const glyphs = useAppSelector(selectGlyphs);
+
   const [referenceElement, setReferenceElement] = useState(null);
   const [popperElement, setPopperElement] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
-  const { styles, attributes } = usePopper(referenceElement, popperElement, {
-    placement: "top",
-    modifiers: [
-      { name: "offset", options: { offset: [0, 8] } },
-      { name: "preventOverflow", options: { padding: 8 } },
-    ],
-  });
+  const { styles, attributes, update } = usePopper(
+    referenceElement,
+    popperElement,
+    {
+      placement: "top",
+      modifiers: [
+        { name: "offset", options: { offset: [0, 8] } },
+        { name: "preventOverflow", options: { padding: 8 } },
+        {
+          name: "flip",
+          options: { fallbackPlacements: ["bottom", "left", "right"] },
+        },
+      ],
+    }
+  );
 
-  // Extract board number and prefix
+  // Mouse enter/leave pe update trigger karo for smooth positioning
+  const handleMouseEnter = () => {
+    setIsOpen(true);
+    update?.();
+  };
+
+  const handleMouseLeave = () => {
+    setIsOpen(false);
+  };
+
+  // --- Same logic as before (no change) ---
   const boardNumber =
     item.id && typeof item.id === "string" && item.id.includes("_")
       ? parseInt(item.id.split("_")[1], 10)
       : 1;
-
   const prefix = item.id ? item.id.split("_")[0] : "barbarian";
 
   const socketNumbers = {
@@ -111,7 +130,7 @@ export default function CardParagonHover({ item, size = 30 }) {
 
   const currentBoard = paragon_builds.find((board) => board.id === boardNumber);
   const glyphSocketNode = currentBoard?.bord
-    .flat()
+    ?.flat()
     .find((node) => node && node.id === glyphSocketId);
   const selectedGlyphId = glyphSocketNode?.glyph_id;
 
@@ -135,7 +154,7 @@ export default function CardParagonHover({ item, size = 30 }) {
     ? findItemsInBordByIds(paragon_builds, item.activable_ids)
     : null;
   const is_active = parent_of_item
-    ? parent_of_item.some((item) => item.active)
+    ? parent_of_item.some((i) => i.active)
     : false;
 
   const handleUpdate = (event) => {
@@ -157,116 +176,107 @@ export default function CardParagonHover({ item, size = 30 }) {
   let bgClass = "";
 
   if (item.is_glyph_socket) {
-    if (item.glyph_id !== undefined && item.glyph_id !== null) {
-      highlightClass = "shadow-lg hover:scale-105 transition-all";
-      bgClass = "";
-    } else {
-      highlightClass =
-        "bg-opacity-30 shadow-lg hover:bg-opacity-50 hover:scale-105 transition-all";
-    }
+    highlightClass = item.glyph_id
+      ? "shadow-lg hover:scale-105 transition-all"
+      : "bg-opacity-30 shadow-lg hover:bg-opacity-50 hover:scale-105 transition-all";
   } else {
     const hasMatchingGlyphId = item.glyph_ids?.includes(selectedGlyphId);
     if (hasMatchingGlyphId) {
       highlightClass =
-        "border-2 border-green-800 text-green-500 bg-[#204522] shadow-lg shadow-green-500/50";
+        "border-2 border-green-800 bg-[#204522] shadow-lg shadow-green-500/50";
       bgClass = "card-board-green-bg";
     } else {
       highlightClass = item.active
-        ? "border-4 border-green-500 text-green-500 shadow-lg shadow-green-500/50"
+        ? "border-4 border-green-500 shadow-lg shadow-green-500/50"
         : "bg-opacity-30 shadow-lg shadow-gray-500/50 hover:shadow-gray-500/70 hover:bg-opacity-50 hover:scale-105 transition-all";
       bgClass = item.active ? "card-board-green-bg" : "";
     }
   }
 
+  const imageSrc =
+    item.is_glyph_socket && selectedGlyphs[0]?.image
+      ? selectedGlyphs[0].image
+      : item.image;
+
+  // Tooltip content
+  const tooltipContent = isOpen && (
+    <div
+      ref={setPopperElement}
+      style={{ ...styles.popper, zIndex: 9999 }}
+      {...attributes.popper}
+      className="bg-[#15161A] text-white max-w-[280px] p-4 rounded-lg shadow-2xl border border-gray-700"
+    >
+      <div className="flex items-center gap-3 mb-3 border-b border-gray-600 pb-3">
+        <Image
+          src={imageSrc}
+          width={48}
+          height={48}
+          alt={item.label}
+          className="rounded-sm bg-[#1f2025] border border-gray-600"
+        />
+        <div>
+          <div className="font-bold text-yellow-400">{item.label}</div>
+          {item.secondLabel && (
+            <div className="text-sm text-gray-300">{item.secondLabel}</div>
+          )}
+        </div>
+      </div>
+
+      {item.options && item.options.length > 0 && (
+        <ul className="text-sm space-y-1">
+          {item.options.map((detail, index) => (
+            <li key={index} dangerouslySetInnerHTML={{ __html: detail }} />
+          ))}
+        </ul>
+      )}
+
+      {item.is_glyph_socket && item.glyph_id && (
+        <div className="mt-3 pt-2 border-t border-gray-600 text-green-400 text-xs font-semibold">
+          ✓ Glyph Equipped
+        </div>
+      )}
+    </div>
+  );
+
   return (
-    <div className="flex">
+    <>
+      {/* Main Node */}
       <div
         ref={setReferenceElement}
-        className={`flex flex-col justify-center bg-[#1a1b1f] items-center text-white ${
+        className={`flex flex-col justify-center items-center text-white ${
           bgClass || tile_bg
         } p-1 ${highlightClass}`}
-        onMouseEnter={() => setIsOpen(true)}
-        onMouseLeave={() => setIsOpen(false)}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         {!item.is_icon ? (
           <div
-            onClick={(e) => {
-              if (item.link === false && !item.is_glyph_socket) {
-                handleUpdate(e);
-              }
-            }}
+            onClick={(e) =>
+              item.link === false && !item.is_glyph_socket && handleUpdate(e)
+            }
             onContextMenu={item.link === false ? handleUpdate : null}
-            className={`${item.link ? "card-board-legendary" : tile_bg} ${
-              is_active || item.activable_ids == null ? "" : ""
+            className={`${
+              item.link ? "card-board-legendary" : tile_bg
             } w-full h-full opacity-70 hover:opacity-100 cursor-pointer`}
           >
             <img
-              src={
-                item.is_glyph_socket && selectedGlyphs[0]?.image
-                  ? selectedGlyphs[0].image
-                  : item.image
-              }
+              src={imageSrc}
               style={{ filter: filterStyle }}
-              className={`w-full z-0`}
-              alt="logo"
+              className="w-full z-0"
+              alt={item.label}
             />
           </div>
         ) : (
           <img
-            src={
-              item.is_glyph_socket && selectedGlyphs[0]?.image
-                ? selectedGlyphs[0].image
-                : item.image
-            }
-            className={`w-full z-0 cursor-pointer`}
-            alt="logo"
+            src={imageSrc}
+            className="w-full z-0 cursor-pointer"
+            alt={item.label}
           />
         )}
       </div>
-      {isOpen && (
-        <div
-          ref={setPopperElement}
-          style={{ ...styles.popper, zIndex: 9999 }}
-          {...attributes.popper}
-          className="bg-[#15161A] text-white max-w-[250px] w-full p-1 rounded-md shadow-lg"
-        >
-          {!item.is_icon ? (
-            <div>
-              <div className="flex justify-center items-center gap-3 border-b-[.5px] py-2">
-                <Image
-                  src={
-                    item.is_glyph_socket && selectedGlyphs[0]?.image
-                      ? selectedGlyphs[0].image
-                      : item.image
-                  }
-                  className="transition-all bg-[#1f2025] hover:scale-105 rounded-sm"
-                  alt="logo"
-                  width={40}
-                  height={40}
-                />
-                <div className="flex flex-col items-start">
-                  <span className="font-bold">{item.label}</span>
-                  <span className="font-bold">{item.secondLabel}</span>
-                </div>
-              </div>
-              <ul className="px-3 my-2">
-                {item.options &&
-                  item.options.map((detail, index) => (
-                    <li
-                      key={index}
-                      className="text-sm mb-2"
-                      dangerouslySetInnerHTML={{ __html: detail }}
-                    />
-                  ))}
-              </ul>
-            </div>
-          ) : (
-            <div className="flex justify-center items-center gap-3 border-b-[.5px] py-2">
-              {item.label}
-            </div>
-          )}
-        </div>
-      )}
-    </div>
+
+      {/* Portal: Tooltip rendered outside transform container */}
+      {tooltipContent && createPortal(tooltipContent, document.body)}
+    </>
   );
 }

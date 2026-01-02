@@ -175,6 +175,16 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de volonté achetés à l’intérieur de l’ensemble, vous infligez +2.6% de dégâts lorsque vous êtes en bonne santé.",
+    additional_bonus: [
+      "Vous infligez 5%[x] de dégâts supplémentaires et les soins des potions sont augmentés de 5%[+] pour chaque potion de soins manquante.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +25 volonté",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts lorsque vous êtes en bonne santé de 0.8%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 2,
@@ -183,6 +193,16 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Confère un bonus de 25.0% à tous les nœuds magiques de l’ensemble.",
+    additional_bonus: [
+      "Vous infligez 8%[x] de dégâts supplémentaires lorsque vous maniez des armes à une main.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +40 force",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts de 0.5%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 3,
@@ -191,6 +211,16 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de force achetés à l’intérieur de l’ensemble, vos tremblements de terre infligent 13.2%[+] de dégâts supplémentaires.",
+    additional_bonus: [
+      "Pour chaque tremblement de terre actif, vous infligez 3%[x] de dégâts supplémentaires aux boss et aux adversaires subissant un effet de perte de contrôle, jusqu’à 15%[x].",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +40 force",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts de Tremblement de terre de 2.4%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 4,
@@ -199,6 +229,16 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de force achetés à l’intérieur de l’ensemble, vous infligez +1.3% de dégâts lorsque vous maniez une épée.",
+    additional_bonus: [
+      "Lorsque vous maniez une épée, vous gagnez 5 points de fureur chaque fois que vous tuez une cible.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +40 force",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts de 0.5%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 5,
@@ -207,14 +247,34 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de force achetés à l’intérieur de l’ensemble, vous infligez +1.3% de dégâts lorsque vous maniez une arme d’hast.",
+    additional_bonus: [
+      "Lorsque vous maniez une arme d’hast, vous infligez 15%[x] de dégâts supplémentaires.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +40 force",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts de 0.5%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 6,
-    label: "Bruyage",
+    label: "Broyage",
     image: "/paragon/barbarian/glyph6.png",
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de force achetés à l’intérieur de l’ensemble, vous infligez +1.3% de dégâts lorsque vous maniez une masse.",
+    additional_bonus: [
+      "Lorsque vous maniez une masse, vous infligez 20%[x] de dégâts d’accablement supplémentaires.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +40 force",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts de 0.5%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 7,
@@ -223,6 +283,16 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Octroie un bonus de +20.0% à tous les nœuds ordinaires à portée.",
+    additional_bonus: [
+      "Vous infligez 10%[x] de dégâts supplémentaires aux élites.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +40 force",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts infligés aux élites de 2.8%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 8,
@@ -231,6 +301,16 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de dextérité achetés à l’intérieur de l’ensemble, vous infligez +3.0% de dégâts critiques.",
+    additional_bonus: [
+      "Les compétences qui infligent des coups critiques génèrent 3 points de fureur.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +25 dextérité",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts critiques de 2.8%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 9,
@@ -239,6 +319,16 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de force achetés à l’intérieur de l’ensemble, vous infligez +1.32% de dégâts lorsque vous maniez une hache.",
+    additional_bonus: [
+      "Lorsque vous maniez une hache, vous infligez 12%[x] de dégâts critiques supplémentaires.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +40 force",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts de 0.5%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 10,
@@ -247,6 +337,16 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de volonté achetés à l’intérieur de l’ensemble, vous infligez +3.0% de dégâts d’accablement.",
+    additional_bonus: [
+      "Toutes les 6 s, votre prochaine attaque accablera.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +25 volonté",
+    ],
+    Legendary_Bonus: [
+      "Vous infligez 0.8%[x] de dégâts d’accablement supplémentaires.",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 11,
@@ -255,6 +355,16 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de dextérité achetés à l’intérieur de l’ensemble, les compétences qui vous font changer d’arme infligent +2.7% de dégâts.",
+    additional_bonus: [
+      "Changer d’arme vous confère 18% de chances que les dégâts de la compétence infligent un coup critique.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +25 dextérité",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts de 0.5%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 12,
@@ -685,7 +795,7 @@ export const optionSkills = [
     options: [
       {
         id: 1,
-        image: "/skill-tech/bash.png",
+        image: "/skill-tech/bas.png",
         label: "Coup",
         details: [
           "Génération de Furie : 15",
@@ -842,12 +952,12 @@ export const optionSkills = [
 ];
 
 export const levelRanges = [
-  { min: 0, max: 2, index: 0 },
-  { min: 2, max: 6, index: 1 },
-  { min: 6, max: 11, index: 2 },
-  { min: 11, max: 16, index: 3 },
-  { min: 16, max: 23, index: 4 },
-  { min: 23, max: 33, index: 5 },
+  { min: 0, max: 1, index: 0 },
+  { min: 1, max: 2, index: 1 },
+  { min: 2, max: 3, index: 2 },
+  { min: 3, max: 4, index: 3 },
+  { min: 4, max: 5, index: 4 },
+  { min: 5, max: 6, index: 5 },
 ];
 
 export const bossPowers = [
