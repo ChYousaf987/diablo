@@ -193,8 +193,7 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
-    bonus:
-      "Confère un bonus de 25.0% à tous les nœuds magiques de l’ensemble.",
+    bonus: "Confère un bonus de 25.0% à tous les nœuds magiques de l’ensemble.",
     additional_bonus: [
       "Vous infligez 8%[x] de dégâts supplémentaires lorsque vous maniez des armes à une main.",
       "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +40 force",
@@ -283,8 +282,7 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
-    bonus:
-      "Octroie un bonus de +20.0% à tous les nœuds ordinaires à portée.",
+    bonus: "Octroie un bonus de +20.0% à tous les nœuds ordinaires à portée.",
     additional_bonus: [
       "Vous infligez 10%[x] de dégâts supplémentaires aux élites.",
       "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +40 force",
@@ -373,6 +371,16 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de dextérité achetés à l’intérieur de l’ensemble, vous infligez +2.0% de dégâts aux cibles vulnérables.",
+    additional_bonus: [
+      "Lorsque vous infligez des dégâts à une cible, celle-ci devient vulnérable pendant 3 s. Cet effet ne peut toucher une même cible qu’une fois toutes les 5 s.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +25 dextérité",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts infligés aux cibles vulnérables de 0.5%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 13,
@@ -381,6 +389,16 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de force achetés à l’intérieur de l’ensemble, vous infligez +1.3% de dégâts tant que vous êtes sous l’effet de Rage du berserker.",
+    additional_bonus: [
+      "Sous l’effet de Rage du berserker, les dégâts que vous infligez aux monstres élites sont réduits de 10%.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +40 force",
+    ],
+    Legendary_Bonus: [
+      "Vous infligez 0.8%[x] de dégâts supplémentaires aux adversaires à proximité.",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 14,
@@ -389,14 +407,32 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus: "Confère un bonus de 25.0% à tous les nœuds rares de l’ensemble.",
+    additional_bonus: [
+      "Toucher une cible avec une compétence de maîtrise d’arme réduit le temps de recharge actif d’une autre compétence de maîtrise d’arme aléatoire de 2 s.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +25 dextérité",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts des compétences de maîtrise d’arme de 2.8%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 15,
     label: "Mobilisation",
-    image: "/paragon/barbarian/glyph12.png",
+    image: "/paragon/barbarian/glyph23.png",
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus: "Confère un bonus de 25.0% à tous les nœuds magiques de l’ensemble.",
+    additional_bonus: [
+      "Après avoir lancé une compétence de cri, le temps de recharge actif de toutes les compétences autres que cri est réduit de 2.0 s.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +40 force",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts de 0.5%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 16,
@@ -405,6 +441,15 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus: "Confère un bonus de 25.0% à tous les nœuds magiques de l’ensemble.",
+    additional_bonus: [
+      "Vous infligez 8%[x] de dégâts supplémentaires lorsque vous maniez des armes à deux mains.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +40 force",
+    ],
+    Legendary_Bonus: [
+      "Vous infligez 3.2%[x] de dégâts supplémentaires aux adversaires en bonne santé.",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 17,
@@ -413,6 +458,15 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus: "Confère un bonus de 20.0% à tous les nœuds rares de l’ensemble.",
+    additional_bonus: [
+      "Infliger des dégâts d’épines à une cible augmente tous les dégâts qu’elle subit de votre part de 1%[x] pendant 10 s, jusqu’à un maximum de 15%[x].",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +25 volonté",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts de 0.5%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 18,
@@ -421,6 +475,15 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus: "Confère un bonus de 25.0% à tous les nœuds rares de l’ensemble.",
+    additional_bonus: [
+      "Les compétences de combat infligent 25%[x] de dégâts supplémentaires.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +25 volonté",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts des compétences de combat de 5.2%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 19,
@@ -429,6 +492,16 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de dextérité achetés à l’intérieur de l’ensemble, vous infligez +2.0% de dégâts aux cibles qui saignent.",
+    additional_bonus: [
+      "Vos chances d’infliger un coup critique sont augmentées de 10% contre les adversaires qui saignent.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +25 dextérité",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts de 0.5%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 20,
@@ -437,22 +510,52 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de volonté achetés à l’intérieur de l’ensemble, vous infligez +2.0% de dégâts quand vous bénéficiez d’une fortification.",
+    additional_bonus: [
+      "Vous obtenez une réduction des dégâts pouvant aller jusqu’à 15% selon le montant de fortification dont vous disposez.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +25 volonté",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts de 0.5%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 21,
-    label: "Terroire",
+    label: "Territoire",
     image: "/paragon/barbarian/glyph21.png",
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de dextérité achetés à l’intérieur de l’ensemble, vous infligez +2.0% de dégâts aux cibles à proximité.",
+    additional_bonus: [
+      "Vous obtenez 15% de réduction des dégâts contre les adversaires à proximité.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +25 dextérité",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts infligés aux cibles vulnérables de 0.5%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 22,
     label: "Tourbillon",
-    image: "/paragon/barbarian/glyph23.png",
+    image: "/paragon/barbarian/glyph2.png",
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de force achetés à l’intérieur de l’ensemble, vos tourbillons de poussière infligent 13.2%[+] de dégâts supplémentaires.",
+    additional_bonus: [
+      "Après avoir créé un tourbillon de poussière, vous infligez 13%[x] de dégâts supplémentaires pendant 4 s.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +40 force",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts de Tourbillon de poussière de 2.4%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
   {
     id: 23,
@@ -461,6 +564,16 @@ export const glyphs = [
     code: "Glyph",
     radius: 3,
     effects: ["Rare Glyph"],
+    bonus:
+      "Pour chaque tranche de 5 points de volonté achetés à l’intérieur de l’ensemble, vous infligez +2.0% de dégâts de saignement.",
+    additional_bonus: [
+      "Tuer une cible qui saigne vous confère 10% de chances de réduire les temps de recharge actifs de vos compétences, hors compétences ultimes, de 1 s.",
+      "Nécessaire (achat effectué à l’intérieur de l’ensemble) : +25 volonté",
+    ],
+    Legendary_Bonus: [
+      "Augmente les dégâts de 0.5%[x].",
+      "Nécessite l’amélioration légendaire (se débloque au niveau 46).",
+    ],
   },
 ];
 

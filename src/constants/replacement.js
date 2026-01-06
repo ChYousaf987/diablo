@@ -222,4 +222,74 @@ allowedGear: ["Pants"],
 
 
   {}
-  
+  {
+          id: "barbarian_2_58",
+          active: false,
+          index: 3,
+          link: false,
+          image: "/paragon/barbarian/ResistanceAll_active.png",
+          label: "Noeud rare",
+          secondLabel: "Conditionnement au feu",
+          options: [
+            "+10.0% de résistance aux dégâts de feu",
+            "+2.0% de résistance maximum aux dégâts de feu",
+            "Bonus : ajoute +10.0% de résistance aux dégâts de feu si ces conditions sont remplies :",
+            "175/265 dextérité",
+          ],
+          is_icon: true,
+          activable_ids: ["barbarian_2_51", "barbarian_2_57", "barbarian_2_59"],
+          bg: "rare",
+        },
+
+        {
+          id: "barbarian_4_75",
+          active: false,
+          index: 6,
+          link: false,
+          image: "/paragon/barbarian/barbarian.png",
+          label: "Nœud légendaire",
+          is_icon: true,
+          secondLabel: "Carnage",
+          options: [
+            "Rage du berserker octroie également 15% d'agilité et vous infligez 30% de dégâts de feu et physiques supplémentaires.",
+          ],
+          activable_ids: ["barbarian_4_76"],
+          bg: "rare",
+        },
+
+
+
+
+        {
+          id: "barbarian_3_69",
+          activable_ids: ["barbarian_3_73", "barbarian_3_68"],
+          active: false,
+          index: 17,
+          link: false,
+          image: "/paragon/barbarian/Barbarian_active.png",
+
+          bg: "rare",
+          label: "Nœud légendaire",
+          is_icon: true,
+          secondLabel: "Brise-os",
+          options: [
+            "Toutes les 12 secondes, votre prochaine compétence accable obligatoirement. Lorsqu vous accablez l'adversaire, vos compétences ultimes infligent 10% × de dégâts supplémentaires pendant 10, jusqu'à un maximum de 80%.",
+          ],
+        },
+
+
+        {
+          id: "barbarian_4_75",
+          active: false,
+          index: 6,
+          link: false,
+          image: "/paragon/barbarian/barbarian.png",
+          label: "Nœud légendaire",
+          is_icon: true,
+          secondLabel: "Carnage",
+          options: [
+            "Rage du berserker octroie également 15% d'agilité et vous infligez 30% de dégâts de feu et physiques supplémentaires.",
+          ],
+          activable_ids: ["barbarian_4_76"],
+          bg: "rare",
+        },

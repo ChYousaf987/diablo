@@ -4210,7 +4210,7 @@ export const optionSkillsRogue = [
         id: "secondUltimate_7",
         image: "/skill-tree/barbarian/Ultimate/wallop.png",
         label: "Innervation",
-         detail: "  Dégâts physiques",
+        detail: "  Dégâts physiques",
         details: [
           "Coup de chance : vous avez jusqu’à 10 % de chances de gagner 8 points d’énergie.",
         ],
@@ -6248,6 +6248,8 @@ export const optionSParagonRogue = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Rogue_active.png",
+          is_icon: true,
+
           label: "Nœud légendaire",
           secondLabel: "Coup bas",
           options: [
@@ -9113,6 +9115,8 @@ export const optionSParagonRogue = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/Rogue_active.png",
+          is_icon: true,
+
           label: "Nœud légendaire",
           secondLabel: "Savant stratagème",
           options: [
@@ -10837,6 +10841,8 @@ export const optionSParagonRogue = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/Rogue_active.png",
+          is_icon: true,
+
           label: "Nœud légendaire",
           secondLabel: "Danse macabre",
           options: [
@@ -12875,7 +12881,9 @@ export const optionSParagonRogue = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Druid_active.png",
+          image: "/paragon/barbarian/Rogue_active.png",
+          is_icon: true,
+
           activable_ids: ["rogue_5_119"],
           label: "Nœud légendaire",
           secondLabel: "Soif de carnage",
@@ -15067,7 +15075,9 @@ export const optionSParagonRogue = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/Druid_active.png",
+          image: "/paragon/barbarian/Rogue_active.png",
+          is_icon: true,
+
           label: "Nœud légendaire",
           secondLabel: "Foudroiement",
           options: [
@@ -16549,7 +16559,9 @@ export const optionSParagonRogue = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/Druid_active.png",
+          image: "/paragon/barbarian/Rogue_active.png",
+          is_icon: true,
+
           activable_ids: ["rogue_7_75", "rogue_7_91"],
           label: "Nœud légendaire",
           secondLabel: "Vrilles lugubres",
@@ -17680,7 +17692,9 @@ export const optionSParagonRogue = [
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/Druid_active.png",
+          image: "/paragon/barbarian/Rogue_active.png",
+          is_icon: true,
+
           label: "Nœud légendaire",
           secondLabel: "Malveillance décuplée",
           options: [
@@ -20362,7 +20376,9 @@ export const optionSParagonRogue = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/Druid_active.png",
+          image: "/paragon/barbarian/Rogue_active.png",
+          is_icon: true,
+
           label: "Nœud légendaire",
           secondLabel: "Bête intérieure",
           options: [
@@ -22078,7 +22094,9 @@ export const optionSParagonRogue = [
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/Druid_active.png",
+          image: "/paragon/barbarian/Rogue_active.png",
+          is_icon: true,
+
           label: "Nœud légendaire",
           secondLabel: "Malveillance décuplée",
           options: [

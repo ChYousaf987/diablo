@@ -12,6 +12,7 @@ import {
 import CardParagonHover from "./CardParagonHover";
 import { Star } from "lucide-react";
 import Image from "next/image";
+import { GoDotFill } from "react-icons/go";
 
 const CardGlyphModal = ({ item, size, baseDemansions, paragonId }) => {
   const glyphs = useAppSelector(selectGlyphs);
@@ -90,7 +91,6 @@ const CardGlyphModal = ({ item, size, baseDemansions, paragonId }) => {
                     <span className="font-bold text-yellow-600">
                       {glyph.label}
                     </span>
-                    <span className="text-white">{glyph.effects[0]}</span>
                   </div>
                 </div>
 
@@ -107,21 +107,21 @@ const CardGlyphModal = ({ item, size, baseDemansions, paragonId }) => {
           </div>
         </DialogHeader>
 
-        {/* Tooltip - Now INSIDE DialogContent, above overlay */}
+        {/* Tooltip - Positioned near mouse with auto-flip */}
         {hoveredGlyph && (
           <div
             className="fixed pointer-events-none z-50"
             style={{
-              // Smart positioning with flip logic
-              left:
-                window.innerWidth - mousePosition.x < 350
-                  ? `${mousePosition.x - 0}px` // Agar right edge pe hai → left mein show karo
-                  : `${mousePosition.x + -500}px`, // Normal: right mein
-
-              top:
-                window.innerHeight - mousePosition.y < 400
-                  ? `${mousePosition.y - 0}px` // Agar bottom edge pe hai → upar dikhao
-                  : `${mousePosition.y + -70}px`, // Normal: neeche dikhao
+              left: `${
+                window.innerWidth - mousePosition.x < 320
+                  ? mousePosition.x - 320 - 0 // Flip to left
+                  : mousePosition.x + -450 // To the right
+              }px`,
+              top: `${
+                window.innerHeight - mousePosition.y < 300
+                  ? mousePosition.y - 300 - 100 // Flip above
+                  : mousePosition.y + -80 // Below
+              }px`,
             }}
           >
             <div className="bg-[#15161A] text-white max-w-[320px] p-4 rounded-lg shadow-2xl border border-gray-700">
@@ -141,28 +141,38 @@ const CardGlyphModal = ({ item, size, baseDemansions, paragonId }) => {
                 </div>
               </div>
 
-              {hoveredGlyph.effects && hoveredGlyph.effects.length > 0 && (
-                <div className="space-y-2 text-sm">
-                  <div className="text-blue-400 font-semibold">Effects:</div>
-                  {hoveredGlyph.effects.map((eff, i) => (
-                    <div key={i} dangerouslySetInnerHTML={{ __html: eff }} />
-                  ))}
+              <div className="space-y-2 text-sm">
+                <div className="text-blue-400 font-semibold uppercase tracking-wide">
+                  Bonus:
                 </div>
-              )}
 
-              {hoveredGlyph.radius_bonus && (
-                <div className="mt-3 pt-3 border-t border-gray-600">
-                  <div className="text-green-400 font-semibold text-sm">
-                    Radius Bonus:
-                  </div>
-                  <div
-                    className="text-sm mt-1"
-                    dangerouslySetInnerHTML={{
-                      __html: hoveredGlyph.radius_bonus,
-                    }}
-                  />
+                <ul className="list-disc pl-5 text-gray-200">
+                  <li>{hoveredGlyph.bonus}</li>
+                </ul>
+              </div>
+              <div className="space-y-2 text-sm">
+                <div className="text-blue-400 font-semibold uppercase tracking-wide">
+                  Additional Bonus
                 </div>
-              )}
+
+                <ul className="list-disc pl-5 text-gray-200">
+                  {hoveredGlyph.additional_bonus.map((bonus, i) => (
+                    <li key={i}>{bonus}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="space-y-2 text-sm">
+                <div className="text-blue-400 font-semibold uppercase tracking-wide">
+                  Legendary_Bonus:
+                </div>
+
+                <ul className="list-disc pl-5 text-gray-200">
+                  {hoveredGlyph.Legendary_Bonus.map((bonus, i) => (
+                    <li key={i}>{bonus}</li>
+                  ))}
+                </ul>
+              </div>
 
               {hoveredGlyph.upgrade && (
                 <div className="mt-2 text-purple-400 text-xs italic">

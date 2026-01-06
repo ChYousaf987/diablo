@@ -34,7 +34,7 @@ export default function ParagonItemTrigger({
         className={`flex flex-col ${reverse ? "sm:items-end " : "items-start"}`}
       >
         <span className="font-bold text-yellow-600">{item.label}</span>
-        <span className="text-white">{item.description}</span>
+        <span className="text-white">{item.power}</span>
       </div>
     </div>
   );

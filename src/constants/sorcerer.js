@@ -16923,7 +16923,7 @@ export const optionSParagonSorcerer = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/DamageReductionFromVulnerable_active.png",
+          image: "/paragon/barbarian/Sorcerer_active.png",
           activable_ids: ["sorcerer_7_122", "sorcerer_7_137"],
           bg: "rare",
         },

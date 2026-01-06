@@ -5335,7 +5335,7 @@ export const optionSParagonDruid = [
           active: null,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/barbarian.png",
+          image: "/paragon/barbarian/Druid_active.png",
           is_icon: true,
         },
         {
@@ -7242,6 +7242,7 @@ export const optionSParagonDruid = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/Druid_active.png",
+          is_icon: true,
           activable_ids: ["druid_2_157", "druid_2_161"],
           label: "Nœud légendaire",
           secondLabel: "Guide ancestral",
@@ -8425,6 +8426,7 @@ export const optionSParagonDruid = [
           index: 8,
           link: false,
           image: "/paragon/barbarian/Druid_active.png",
+          is_icon: true,
           activable_ids: ["druid_3_75", "druid_3_91"],
           label: "Nœud légendaire",
           secondLabel: "Vrilles lugubres",
@@ -9597,6 +9599,7 @@ export const optionSParagonDruid = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/Druid_active.png",
+          is_icon: true,
           label: "Nœud légendaire",
           secondLabel: "Malveillance décuplée",
           options: [
@@ -12180,6 +12183,7 @@ export const optionSParagonDruid = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/Druid_active.png",
+          is_icon: true,
           label: "Nœud légendaire",
           secondLabel: "Malveillance décuplée",
           options: [
@@ -14862,6 +14866,7 @@ export const optionSParagonDruid = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/Druid_active.png",
+          is_icon: true,
           label: "Nœud légendaire",
           secondLabel: "Bête intérieure",
           options: [
@@ -17922,6 +17927,7 @@ export const optionSParagonDruid = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/Druid_active.png",
+          is_icon: true,
           activable_ids: ["druid_7_119"],
           label: "Nœud légendaire",
           secondLabel: "Soif de carnage",
@@ -19193,6 +19199,7 @@ export const optionSParagonDruid = [
           index: 6,
           link: false,
           image: "/paragon/barbarian/Druid_active.png",
+          is_icon: true,
           label: "Nœud légendaire",
           secondLabel: "Instinct de survie",
           options: [
@@ -22004,6 +22011,7 @@ export const optionSParagonDruid = [
           index: 5,
           link: false,
           image: "/paragon/barbarian/Druid_active.png",
+          is_icon: true,
           label: "Nœud légendaire",
           secondLabel: "Foudroiement",
           options: [
@@ -24030,6 +24038,7 @@ export const optionSParagonDruid = [
           index: 10,
           link: false,
           image: "/paragon/barbarian/Druid_active.png",
+          is_icon: true,
           label: "Nœud légendaire",
           secondLabel: "Indomptable",
           options: [

@@ -6337,7 +6337,7 @@ export const optionSParagonBarbarian = [
           active: null,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/barbarian.png",
+          image: "/paragon/barbarian/Barbarian_active.png",
           label: "Glyph_id: 1,e de socket",
           label: "Glyph_id: 4,e de socket",
           is_icon: true,
@@ -6358,6 +6358,9 @@ export const optionSParagonBarbarian = [
   {
     id: 2,
     label: "Blood Rage",
+    power: "Legendary node",
+    description:
+      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
@@ -7088,6 +7091,7 @@ export const optionSParagonBarbarian = [
           image: "/paragon/barbarian/Barbarian_active.png",
           label: "Nœud légendaire",
           secondLabel: "Rage de sang",
+          is_icon: true,
           options: [
             "Tuer une cible qui saigne vous confère 10% de chances d'obtenir l'effet de Rage du berserker pendant 5 s. Vos dégâts du berserker augmentés de 45% × tant que Rage du berserker est active.",
           ],
@@ -8063,7 +8067,7 @@ export const optionSParagonBarbarian = [
         },
         {
           id: "barbarian_2_58",
-          active: null,
+          active: false,
           index: 3,
           link: false,
           image: "/paragon/barbarian/ResistanceAll_active.png",
@@ -8075,7 +8079,6 @@ export const optionSParagonBarbarian = [
             "Bonus : ajoute +10.0% de résistance aux dégâts de feu si ces conditions sont remplies :",
             "175/265 dextérité",
           ],
-          is_icon: true,
           activable_ids: ["barbarian_2_51", "barbarian_2_57", "barbarian_2_59"],
           bg: "rare",
         },
@@ -8643,6 +8646,9 @@ export const optionSParagonBarbarian = [
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
     str: 70,
     dex: 39,
     int: 10,
@@ -8854,8 +8860,10 @@ export const optionSParagonBarbarian = [
           index: 17,
           link: false,
           image: "/paragon/barbarian/Barbarian_active.png",
+
           bg: "rare",
           label: "Nœud légendaire",
+          is_icon: true,
           secondLabel: "Brise-os",
           options: [
             "Toutes les 12 secondes, votre prochaine compétence accable obligatoirement. Lorsqu vous accablez l'adversaire, vos compétences ultimes infligent 10% × de dégâts supplémentaires pendant 10, jusqu'à un maximum de 80%.",
@@ -11196,6 +11204,9 @@ export const optionSParagonBarbarian = [
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
     str: 70,
     dex: 39,
     int: 10,
@@ -12090,8 +12101,9 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 6,
           link: false,
-          image: "/paragon/barbarian/barbarian.png",
+          image: "/paragon/barbarian/Barbarian_active.png",
           label: "Nœud légendaire",
+          is_icon: true,
           secondLabel: "Carnage",
           options: [
             "Rage du berserker octroie également 15% d'agilité et vous infligez 30% de dégâts de feu et physiques supplémentaires.",
@@ -13227,6 +13239,9 @@ export const optionSParagonBarbarian = [
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
     str: 70,
     dex: 39,
     int: 10,
@@ -14926,9 +14941,10 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/barbarian.png",
+          image: "/paragon/barbarian/Barbarian_active.png",
           label: "Nœud légendaire",
           secondLabel: "Décimation",
+          is_icon: true,
           options: [
             "Vous infligez 20%[x] de dégâts supplémentaires aux adversaires vulnérables. Vos accablements infligent 20%[x] de dégâts supplémentaires.",
           ],
@@ -15367,6 +15383,9 @@ export const optionSParagonBarbarian = [
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
     str: 70,
     dex: 39,
     int: 10,
@@ -15979,8 +15998,9 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/barbarian.png",
+          image: "/paragon/barbarian/Barbarian_active.png",
           label: "Nœud légendaire",
+          is_icon: true,
           secondLabel: "Technique parfaite",
           options: [
             "Les attaques consécutives avec la même arme augmentent vos chances d'infliger un coup critique de 15%[t] et vos dégâts critiques de 30%[x] pendant 4 s.",
@@ -17730,6 +17750,9 @@ export const optionSParagonBarbarian = [
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
     str: 70,
     dex: 39,
     int: 10,
@@ -19709,8 +19732,13 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 10,
           link: false,
-          image: "/paragon/barbarian/barbarian.png",
-
+          image: "/paragon/barbarian/Barbarian_active.png",
+          label: "Nœud légendaire",
+          is_icon: true,
+          secondLabel: "Force of Nature",
+          options: [
+            "Rage du berserker octroie également 15% d'agilité et vous infligez 30% de dégâts de feu et physiques supplémentaires.",
+          ],
           activable_ids: ["barbarian_7_122", "barbarian_7_137"],
           bg: "rare",
         },
@@ -20305,6 +20333,9 @@ export const optionSParagonBarbarian = [
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
     str: 70,
     dex: 39,
     int: 10,
@@ -22531,8 +22562,9 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 5,
           link: false,
-          image: "/paragon/barbarian/barbarian.png",
+          image: "/paragon/barbarian/Barbarian_active.png",
           label: "Nœud légendaire",
+          is_icon: true,
           secondLabel: "Saigné",
           options: [
             "L'application d'un saignement sur une cible vulnérable inflige 45%[x] de dégâts supplémentaires.",
@@ -23128,6 +23160,9 @@ export const optionSParagonBarbarian = [
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
     str: 70,
     dex: 39,
     int: 10,
@@ -24356,8 +24391,9 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 8,
           link: false,
-          image: "/paragon/barbarian/barbarian.png",
+          image: "/paragon/barbarian/Barbarian_active.png",
           label: "Nœud légendaire",
+          is_icon: true,
           secondLabel: "Porte-guerre",
           options: [
             "Pour chaque tranche de 75 points de fureur dépensés, vous obtenez un montant de fortification égal à 15% de votre maximum de points de vie (60).",
@@ -25512,6 +25548,9 @@ export const optionSParagonBarbarian = [
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
     str: 70,
     dex: 39,
     int: 10,
@@ -27903,8 +27942,9 @@ export const optionSParagonBarbarian = [
           active: false,
           index: 17,
           link: false,
-          image: "/paragon/barbarian/barbarian.png",
+          image: "/paragon/barbarian/Barbarian_active.png",
           label: "Nœud légendaire",
+          is_icon: true,
           secondLabel: "Maître d'armes",
           options: [
             "Changer d'arme vous octroie 8% de votre fureur maximum. Vous infligez 30% de dégâts supplémentaires aux cibles adverses blessées et en bonne santé.",
