@@ -5353,10 +5353,13 @@ export const optionSParagonDruid = [
   },
   {
     id: 2,
-    label: "Guidance ancestrale",
+    label: "Guide ancestral ",
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Après avoir dépensé 75 points d’esprit, vous infligez 40%[x] de dégâts supplémentaires pendant 5 s. Vos compétences ultimes infligent 1%[x] de dégâts supplémentaires par point d’esprit.",
     str: 70,
     dex: 39,
     int: 10,
@@ -7372,10 +7375,13 @@ export const optionSParagonDruid = [
   },
   {
     id: 3,
-    label: "Vrilles sinistres",
+    label: "Dévastation terrestre ",
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Vos compétences de terre infligent 70%[x] de dégâts critiques supplémentaires.",
     str: 70,
     dex: 39,
     int: 10,
@@ -9342,10 +9348,13 @@ export const optionSParagonDruid = [
   },
   {
     id: 4,
-    label: "Greffe osseuse",
+    label: "Dévastation terrestre ",
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Vos compétences de terre infligent 70%[x] de dégâts critiques supplémentaires.",
     str: 70,
     dex: 39,
     int: 10,
@@ -11967,10 +11976,13 @@ export const optionSParagonDruid = [
   },
   {
     id: 5,
-    label: "Malice accrue",
+    label: "Malveillance décuplée ",
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Tant qu’une cible adverse empoisonnée se trouve à proximité, vous infligez 35%[x] de dégâts supplémentaires, augmentés de 5%[x] pour chaque cible empoisonnée supplémentaire, jusqu’à un maximum de 4.",
     str: 70,
     dex: 39,
     int: 10,
@@ -14267,10 +14279,13 @@ export const optionSParagonDruid = [
   },
   {
     id: 6,
-    label: "Bête intérieure",
+    label: "Bête intérieure ",
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Après avoir changé de forme, les coûts en esprit de vos compétences sont réduits de 4.5% pendant 10 s, jusqu’à un maximum de 45%. Lorsque vous atteignez 10 cumuls, ce bonus se réinitialise et réduit le temps de recharge de votre compétence ultime de 5 s.",
     str: 70,
     dex: 39,
     int: 10,
@@ -16362,10 +16377,13 @@ export const optionSParagonDruid = [
   },
   {
     id: 7,
-    label: "La soif du carnage",
+    label: "Soif de carnage ",
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Les coups critiques avec les compétences de lycanthrope vous rendent 2 points d’esprit et infligent 50%[x] points de dégâts supplémentaires.",
     str: 70,
     dex: 39,
     int: 10,
@@ -18304,10 +18322,13 @@ export const optionSParagonDruid = [
   },
   {
     id: 8,
-    label: "Instincts de survie",
+    label: "Instinct de survie",
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Sous forme ursoïde, vous infligez 30%[x] de dégâts supplémentaires, ou 45%[x] si vos points de vie sont au maximum. Vous infligez 1%[x] de dégâts d’accablement supplémentaires, jusqu’à un maximum de 25%[x], pour chaque tranche de 1%[x] d’écart entre vos pourcentages de vie actuelle et fortifiée et ceux de l’adversaire.",
     str: 70,
     dex: 39,
     int: 10,
@@ -20195,10 +20216,13 @@ export const optionSParagonDruid = [
   },
   {
     id: 9,
-    label: "Abasourdi",
+    label: "Foudroiement",
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Les compétences de tempête infligent des dégâts supplémentaires à hauteur de 20%[x] de vos bonus de dégâts contre les cibles à proximité et à distance, jusqu’à un maximum de 60%[x].",
     str: 70,
     dex: 39,
     int: 10,
@@ -22440,10 +22464,13 @@ export const optionSParagonDruid = [
   },
   {
     id: 10,
-    label: "Sauvage",
+    label: "Indomptable",
     top: 0,
     left: 0,
     image: "/paragon/barbarian/necromancer.png",
+    power: "Legendary node",
+    description:
+      "Lorsque vous utilisez une compétence de compagnon, les dégâts infligés par les compagnons sont augmentés de 20%[x] pendant 5 s, jusqu’à un maximum de 80%[x].",
     str: 70,
     dex: 39,
     int: 10,

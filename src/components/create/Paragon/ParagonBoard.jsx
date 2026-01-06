@@ -251,7 +251,7 @@ const ParagonBoard = ({ item, style, onRotate, onDelete, onRemove }) => {
   return (
     <div
       className="flex flex-col items-center justify-center w-fit border-2 relative border-red-600"
-      style={{ ...style, transform: `rotate(${rotation}deg)` }}
+      style={{ ...style }}
     >
       <div className="w-full flex items-center justify-between px-3 py-1 rounded-lg bg-black/40">
         {/* LEFT SIDE – Label & Stats */}
@@ -299,7 +299,10 @@ const ParagonBoard = ({ item, style, onRotate, onDelete, onRemove }) => {
         </div>
       </div>
 
-      <div className="w-[100%] relative">
+      <div
+        className="w-[100%] relative"
+        style={{ transform: `rotate(${rotation}deg)` }}
+      >
         {hasSelectedGlyph && (
           <Image
             className="absolute h-[118vh]"
@@ -323,13 +326,19 @@ const ParagonBoard = ({ item, style, onRotate, onDelete, onRemove }) => {
               (colIndex) => {
                 const bord = findItemIndex(items, colIndex);
                 if (!bord) {
-                  return <div key={`empty_${rowIndex}_${colIndex}`} />;
+                  return (
+                    <div
+                      key={`empty_${rowIndex}_${colIndex}`}
+                      className="w-full h-full"
+                    />
+                  );
                 }
+                let content;
                 if (bord.link === true) {
                   // Dynamic gate check
                   const gatePrefix = bord.id.split("_")[0];
                   if (bord.id === `${gatePrefix}_${boardNumber}_1`) {
-                    return (
+                    content = (
                       <CardParagonModal
                         key={`modal_${bord.id}`}
                         item={bord}
@@ -347,7 +356,7 @@ const ParagonBoard = ({ item, style, onRotate, onDelete, onRemove }) => {
                       glyph_id: bord.glyph_id || null,
                       glyph_ids: [], // Glyph sockets use glyph_id, not glyph_ids
                     };
-                    return (
+                    content = (
                       <div className="relative" key={`glyph_${bord.id}`}>
                         <div
                           className={`absolute inset-0 ${
@@ -365,22 +374,33 @@ const ParagonBoard = ({ item, style, onRotate, onDelete, onRemove }) => {
                     );
                   }
                 }
+                if (!content) {
+                  content = (
+                    <CardParagonHover
+                      key={`hover_${bord.id}`}
+                      item={{
+                        ...bord,
+                        glyph_ids:
+                          bord.glyph_ids ||
+                          (bord.glyph_id && !bord.is_glyph_socket
+                            ? [bord.glyph_id]
+                            : []),
+                        glyph_id: bord.is_glyph_socket
+                          ? bord.glyph_id || null
+                          : null,
+                      }}
+                      size={30}
+                    />
+                  );
+                }
                 return (
-                  <CardParagonHover
-                    key={`hover_${bord.id}`}
-                    item={{
-                      ...bord,
-                      glyph_ids:
-                        bord.glyph_ids ||
-                        (bord.glyph_id && !bord.is_glyph_socket
-                          ? [bord.glyph_id]
-                          : []),
-                      glyph_id: bord.is_glyph_socket
-                        ? bord.glyph_id || null
-                        : null,
-                    }}
-                    size={30}
-                  />
+                  <div
+                    key={`cell_${rowIndex}_${colIndex}`}
+                    className="w-full h-full flex justify-center items-center"
+                    style={{ transform: `rotate(-${rotation}deg)` }}
+                  >
+                    {content}
+                  </div>
                 );
               }
             )
