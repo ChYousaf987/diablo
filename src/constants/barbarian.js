@@ -8648,7 +8648,7 @@ export const optionSParagonBarbarian = [
     image: "/paragon/barbarian/necromancer.png",
     power: "Legendary node",
     description:
-      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
+      "Every 12 seconds, your next Skill is guaranteed to Overpower. Whenever you Overpower, your Ultimate Skills deal 10%[x] increased damage for 10 seconds, up to 80%[x].",
     str: 70,
     dex: 39,
     int: 10,
@@ -11206,7 +11206,7 @@ export const optionSParagonBarbarian = [
     image: "/paragon/barbarian/necromancer.png",
     power: "Legendary node",
     description:
-      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
+      "Berserking now additionally grants 15%[+] Attack Speed. You deal 45%[x] increased Fire and Physical damage.",
     str: 70,
     dex: 39,
     int: 10,
@@ -13241,7 +13241,7 @@ export const optionSParagonBarbarian = [
     image: "/paragon/barbarian/necromancer.png",
     power: "Legendary node",
     description:
-      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
+      "You deal 25%[x] increased damage to Vulnerable enemies. Your Overpower deals 25%[x] increased damage.",
     str: 70,
     dex: 39,
     int: 10,
@@ -15385,7 +15385,7 @@ export const optionSParagonBarbarian = [
     image: "/paragon/barbarian/necromancer.png",
     power: "Legendary node",
     description:
-      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
+      "Consecutive attacking with the same weapon increases your Critical Strike chance by 15%[+] and Critical Strike Damage by 45%[x] for 4 seconds.",
     str: 70,
     dex: 39,
     int: 10,
@@ -17752,7 +17752,7 @@ export const optionSParagonBarbarian = [
     image: "/paragon/barbarian/necromancer.png",
     power: "Legendary node",
     description:
-      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
+      "Your Earthquakes deals 45%[x] increased damage and have a 75% chance to spawn a Dust Devil every second that deals 270 damage.",
     str: 70,
     dex: 39,
     int: 10,
@@ -20335,7 +20335,7 @@ export const optionSParagonBarbarian = [
     image: "/paragon/barbarian/necromancer.png",
     power: "Legendary node",
     description:
-      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
+      "Applying a Bleed to a Vulnerable enemy deals 60%[x] increased damage.",
     str: 70,
     dex: 39,
     int: 10,
@@ -23162,7 +23162,7 @@ export const optionSParagonBarbarian = [
     image: "/paragon/barbarian/necromancer.png",
     power: "Legendary node",
     description:
-      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
+      "For every 300 Fury you spend, gain 10% of your Maximum Life (40) as Fortify.",
     str: 70,
     dex: 39,
     int: 10,
@@ -25550,7 +25550,7 @@ export const optionSParagonBarbarian = [
     image: "/paragon/barbarian/necromancer.png",
     power: "Legendary node",
     description:
-      "Killing a Bleeding enemy has 10% chance to grant Berserking for 5 seconds. Your damage is increased by 60%[x] while Berserking.",
+      "Swapping weapons grants you 12 Fury. You deal 45% increased damage to Injured and Healthy enemies.",
     str: 70,
     dex: 39,
     int: 10,
