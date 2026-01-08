@@ -16250,6 +16250,22 @@ export const aspectMap = {
     Season11: {
       left: [
         {
+          id: 1919,
+          image: "/gears/anda.png",
+          label: "Cimier arlequin",
+          description:
+            "Vous gagnez 20% de réduction des dégâts. De plus, vous gagnez +4 rangs à toutes les compétences.",
+          point: [
+            "+800 au maximum de vie",
+            "+18 au maximum de ressource",
+            "20.0% de réduction du temps de recharge",
+            "+350 a larmure",
+          ],
+          category: "Mythique Unique",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
           id: 1,
           image: "/gears/utility.png",
           label: "Aspect d'agitation",
@@ -16450,6 +16466,22 @@ export const aspectMap = {
           allowedGear: ["Barre"],
         },
         {
+          id: 1653,
+          image: "/gears/crown_of_lucion.png",
+          label: "Crown of Lucion",
+          description:
+            "Each time you use a Skill with a Resource Cost, gain [x5-15%] increased damage and Resource Cost is increased by +30% for 4 seconds, stacking up to 5 times.",
+          point: [
+            "[611-657] Maximum Life",
+            "[10-11%] Cooldown Reduction",
+            "[8-10%] Lucky Hit Chance",
+            "[50-62%] Shadow Resistance",
+          ],
+          category: "Unique",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
           id: 21,
           image: "/gears/utility.png",
           label: "Aspect de projection furieuse",
@@ -16460,12 +16492,61 @@ export const aspectMap = {
           allowedGear: ["Barre"],
         },
         {
+          id: 233232,
+          image: "/gears/godslayer_crown.png",
+          label: "Godslayer Crown",
+          description:
+            "When you Stun, Freeze, or Immobilize an Elite, Pull in all Nearby enemies and deal [30-60%] increased damage to them for 3 seconds. Can only occur once every 12 seconds. Against Bosses, this effect triggers when dealing damage instead.",
+          point: [
+            "[62-84%] Damage to Elites",
+            "[10-11%] Cooldown Reduction",
+            "[611-657] Maximum Life",
+            "[63-81] All Stats",
+          ],
+          category: "Unique",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 35343,
+          image: "/gears/harlequin_crest.png",
+          label: "Harlequin Crest",
+          description:
+            "Gain 20% Damage Reduction. In addition, gain +4 Ranks to all Skills.",
+          point: [
+            "25% Cooldown Reduction",
+            "1000 Maximum Life",
+            "22 Maximum Resource",
+            "437 Armor",
+          ],
+          category: "Mythique Unique",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
           id: 22,
           image: "/gears/defensive.png",
           label: "Aspect de sagesse par le nombre",
           description:
             "Vos chances d'esquiver sont augmentées de 8 %. Vous récupérez [5 - 25]% de votre maximum de vie en cas d'esquive réussie.",
           category: "Défense",
+          class: "Tous",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 42939,
+          image: "/gears/heir_of_perdition.png",
+          label: "Heir of Perdition",
+          description:
+            "Succumb to hatred and earn Mother's Favor, increasing your damage dealt by x60%. Slaughter enemies to briefly steal Mother's Favor from surrounding allies.",
+          point: [
+            "200% Damage to Angels and Demons",
+            "25% Critical Strike Chance",
+            "25% Lucky Hit Chance",
+            "25% Movement Speed",
+            "+2 to Core Skills",
+          ],
+          category: "Mythique Unique",
           class: "Tous",
           allowedGear: ["Barre"],
         },
@@ -16537,6 +16618,39 @@ export const aspectMap = {
             "Vous gagnez [2.0 - 6.0]% de réduction des dégâts par adversaire proche qui saigne, jusqu'à une réduction maximum de [10 - 30]%.",
           category: "Défense",
           class: "Barbare",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 15656,
+          image: "/gears/tuskhelm_of_joritz_the_mighty.png",
+          label: "Heaume de défense de Jorit le Tout-Puissant",
+          description:
+            "Lorsqu vous bénéficiez des effets du berserker, vous enragez davantage, ce qui vous octroie [35-50]% [x] de dégâts supplémentaires, 6% de fureur par seconde et 10% de réduction du temps de recharge.",
+          point: [
+            "+103.5 - 135.0% de dégâts pendant Rage du berserker",
+            "+6.0 - 8.0% à la vitesse d'attaque quand vous êtes sous l'effet de Rage du berserker",
+            "+10.5 - 15.0% à la vitesse de déplacement quand vous êtes sous l'effet de Rage du berserker",
+            "+489 - 526 au maximum de vie",
+          ],
+          category: "Unique",
+          class: "Barbare",
+          allowedGear: ["Barre"],
+        },
+        {
+          id: 25656,
+          image: "/gears/ugly_bastard_helm.png",
+          label: "Ugly Bastard Helm",
+          description:
+            "Casting Wrath of the Berserker causes you to explode, dealing 300 Fire damage. While Wrath of the Berserker is active, your direct damage dealt is converted into Fire. You deal 20%[x] increased Fire damage.",
+          point: [
+            "+100.0% Fire Resistance",
+            "+2 à Prolific Fury",
+            "+4.5% Profilic Fury Berserker Cooldown Reduction",
+            "+1 à Aggressive Resistance",
+            "Lucky Hit: Up to a 40% Chance to Deal +750 Hit Up Fire Damage",
+          ],
+          category: "Unique",
+          class: "Barbarian",
           allowedGear: ["Barre"],
         },
         {
@@ -16831,12 +16945,61 @@ export const aspectMap = {
           allowedGear: ["Armure de poitrine"],
         },
         {
+          id: 1919,
+          image: "/gears/chest.png",
+          label: "Puissance de Tyrael",
+          description:
+            "Tant que vous êtes à vie maximale, vos compétences déchaînent un barrage divin infligeant [x] dégâts.",
+          point: [
+            "Ignore la perte de durabilité",
+            "+20% Vitesse de déplacement",
+            "+100 Résistance à tous les éléments",
+            "+25% Réduction des dégâts",
+          ],
+          category: "Mythique Unique",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
           id: 27,
           image: "/gears/defensive.png",
           label: "Aspect du cœur prudent",
           description:
             "Après avoir subi des dégâts équivalant à au moins 20 % de votre maximum de vie à la fois, vous devenez insensible pendant [2.5 - 4.0] s. Ne se produit qu'une fois toutes les 20 s.",
           category: "Défense",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 1920,
+          image: "/gears/chest.png",
+          label: "Brûle-Âme",
+          description:
+            "Votre Potion de soins ne soigne plus instantanément, elle accorde plutôt un Bouclier équivalent à 200% du soin pendant 4 secondes. Vous gagnez [10-30%] de réduction des dégâts tant que vous avez un Bouclier et pouvez boire votre Potion de soins à vie maximale.",
+          point: [
+            "[611-657] Vie maximale",
+            "[282-293] Armure",
+            "[33-50%] Génération de bouclier",
+            "[1-2] Capacité de potion",
+          ],
+          category: "Unique",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 1921,
+          image: "/gears/chest.png",
+          label: "Voile de fausse mort",
+          description:
+            "Si vous n'avez infligé aucun dégât durant les 2 dernières secondes, vous gagnez Furtivité et +40% de vitesse de déplacement.",
+          point: [
+            "+1 à toutes les passifs",
+            "+200 à toutes les caractéristiques",
+            "+416% de dégâts sur l'attaque suivante après être entré en Furtivité",
+            "+1000 Vie maximale",
+            "+13% Génération de ressource",
+          ],
+          category: "Mythique Unique",
           class: "Tous",
           allowedGear: ["Armure de poitrine"],
         },
@@ -16851,12 +17014,60 @@ export const aspectMap = {
           allowedGear: ["Armure de poitrine"],
         },
         {
+          id: 1922,
+          image: "/gears/chest.png",
+          label: "Plaque de rasoir",
+          description:
+            "Les épines ont 10% de chances d'infliger [100-200%] de dégâts accrus.",
+          point: [
+            "[436-601] Épines",
+            "[436-601] Épines",
+            "[436-601] Épines",
+            "[436-601] Épines",
+          ],
+          category: "Unique",
+          class: "Tous",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 1923,
+          image: "/gears/chest.png",
+          label: "Rage de Harrogath",
+          description:
+            "Infliger des dégâts de saignement accélère le rétablissement de vos temps de recharge de [40-60%] pendant 2 secondes.",
+          point: [
+            "[530-571] Vie maximale",
+            "[376-437] Armure",
+            "[134-151] Force",
+            "[551-612] Résistance physique",
+          ],
+          category: "Unique",
+          class: "Barbare",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
           id: 29,
           image: "/gears/defensive.png",
           label: "Aspect du sang de fer",
           description:
             "Vous gagnez [2.0 - 6.0]% de réduction des dégâts par adversaire proche qui saigne, jusqu'à une réduction maximum de [10 - 30]%.",
           category: "Défense",
+          class: "Barbare",
+          allowedGear: ["Armure de poitrine"],
+        },
+        {
+          id: 1924,
+          image: "/gears/chest.png",
+          label: "Manteau de la fureur de la montagne",
+          description:
+            "Marteau des Anciens crée également une ligne sismique infligeant [60-80%] de dégâts et ralentissant les ennemis touchés de [60-80%] pendant 4 s. Les séismes traversés explosent pour leurs dégâts totaux et sont consommés.",
+          point: [
+            "[408-555] Armure",
+            "[5-7] rangs à Marteau des Anciens",
+            "[2-5] rangs à Stance défensive",
+            "[20-28%] de chances pour Séisme d'infliger le double de dégâts",
+          ],
+          category: "Unique",
           class: "Barbare",
           allowedGear: ["Armure de poitrine"],
         },

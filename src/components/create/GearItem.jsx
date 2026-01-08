@@ -96,6 +96,10 @@ export default function GearItem({
     );
   };
 
+  // New: Check if aspect is Mythic Unique or regular Unique
+  const isMythicOrUnique = (aspect) =>
+    aspect.category === "Mythique Unique" || aspect.category === "Unique";
+
   return (
     <>
       {mode === "guest" ? (
@@ -115,7 +119,7 @@ export default function GearItem({
               side={side}
             />
           </DialogTrigger>
-          <DialogContent className="bg-[#1f2025] p-0 dailog-content">
+          <DialogContent className="bg-[#1f2025] p-0 z-[999999] dailog-content">
             <DialogHeader className="w-full">
               <DialogTitle className="flex justify-between items-center gap-3 px-3 py-2">
                 <div className="flex items-center gap-2">
@@ -204,32 +208,81 @@ export default function GearItem({
                                 : ""
                             }`}
                           />
-                          {/* Hover Popup */}
-                          {hoveredAspect === aspect && (
-                            <div className="absolute z-50 w-64 bg-[#1f2025] border border-[#424243] rounded-md p-3 shadow-lg left-1/2 -translate-x-1/2 top-full mt-2 text-white">
-                              <div className="flex gap-4">
-                                <img
-                                  src={aspect.image}
-                                  alt={aspect.label}
-                                  className="w-12 h-12 object-contain mb-2"
-                                />
-                                <div className="">
-                                  <h4 className="font-semibold">
-                                    {aspect.label}
-                                  </h4>
-                                  <h4 className="text-gray-500 ">{aspect.class}</h4>
-                                </div>
-                              </div>
-                              <hr className="border-gray-700 my-3" />
 
-                              <p className="text-sm text-[#a3a4a5]">
-                                {aspect.description}
-                              </p>
-                              <hr className="border-gray-700 my-3" />
-                              <p className="text-sm text-[#a3a4a5] mt-1">
-                                {aspect.allowedGear}
-                              </p>
-                            </div>
+                          {/* Conditional Hover Popup */}
+                          {hoveredAspect === aspect && (
+                            <>
+                              {isMythicOrUnique(aspect) ? (
+                                // New Popup Style for Mythic Unique / Unique (like in-game screenshot)
+                                <div className="absolute z-50 w-80 bg-[#1f2025] border rounded-md p-4 shadow-lg left-1/2 -translate-x-1/2 top-full mt-2 text-white">
+                                  <div className="flex justify-between items-start">
+                                    <div className="space-y-1">
+                                      <h3 className=" font-bold text-purple-400  ">
+                                        {aspect.label}
+                                      </h3>
+                                      <p className="text-sm text-gray-400 ">
+                                        {aspect.category}
+                                      </p>
+
+                                      <div className="text-sm">
+                                        {aspect.point?.map((stat, i) => (
+                                          <p key={i} className="">
+                                            ◦ {stat}
+                                          </p>
+                                        ))}
+                                      </div>
+                                    </div>
+                                    <div className="">
+                                      <img
+                                        src={aspect.image}
+                                        className="w-20 h-20 object-contain mb-2"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+
+                                  <div className="border-t border-gray-700 my-3 pt-2">
+                                    <p className="text-orange-400 font-semibold">
+                                      • Lucky Hit: {aspect.description}
+                                    </p>
+                                  </div>
+
+                                  {aspect.droppedBy && (
+                                    <p className="text-sm text-gray-500 mt-6 text-center">
+                                      Dropped By: {aspect.droppedBy}
+                                    </p>
+                                  )}
+                                </div>
+                              ) : (
+                                // Old Popup Style for regular Aspects
+                                <div className="absolute z-50 w-64 bg-[#1f2025] border border-[#424243] rounded-md p-3 shadow-lg left-1/2 -translate-x-1/2 top-full mt-2 text-white">
+                                  <div className="flex gap-4">
+                                    <img
+                                      src={aspect.image}
+                                      alt={aspect.label}
+                                      className="w-12 h-12 object-contain mb-2"
+                                    />
+                                    <div className="">
+                                      <h4 className="font-semibold">
+                                        {aspect.label}
+                                      </h4>
+                                      <h4 className="text-gray-500 ">
+                                        {aspect.class}
+                                      </h4>
+                                    </div>
+                                  </div>
+                                  <hr className="border-gray-700 my-3" />
+
+                                  <p className="text-sm text-[#a3a4a5]">
+                                    {aspect.description}
+                                  </p>
+                                  <hr className="border-gray-700 my-3" />
+                                  <p className="text-sm text-[#a3a4a5] mt-1">
+                                    {aspect.allowedGear}
+                                  </p>
+                                </div>
+                              )}
+                            </>
                           )}
                         </div>
                       ))
