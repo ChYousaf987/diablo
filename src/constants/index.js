@@ -1485,12 +1485,59 @@ export const catalystPowers = [
 ];
 
 export const aspectspower = [
-  { id: 1, label: "Amethyst", image: "/gears/grand.png" },
-  { id: 2, label: "Emerald", image: "/gears/erald.png" },
-  { id: 3, label: "Ruby", image: "/gears/ruby.png" },
-  { id: 4, label: "Topaz", image: "/gears/graq.png" },
-  { id: 5, label: "Sapphier", image: "/gears/gra.png" },
-  { id: 6, label: "Diamand", image: "/gears/gran.png" },
+  { id: 47, label: "Amethyst", image: "/gears/grand.png" },
+  { id: 48, label: "Emerald", image: "/gears/erald.png" },
+  { id: 49, label: "Ruby", image: "/gears/ruby.png" },
+  { id: 50, label: "Topaz", image: "/gears/graq.png" },
+  { id: 51, label: "Sapphier", image: "/gears/gra.png" },
+  { id: 52, label: "Diamand", image: "/gears/gran.png" },
+  { id: 53, label: "Skull", image: "/gears/grand-skull.webp" },
+  { id: 1, label: "Ahu", image: "/gears/ritual.png" },
+  { id: 2, label: "Bac", image: "/gears/ritual.png" },
+  { id: 3, label: "Cem", image: "/gears/ritual.png" },
+  { id: 4, label: "Cir", image: "/gears/ritual.png" },
+  { id: 5, label: "Feo", image: "/gears/ritual.png" },
+  { id: 6, label: "Igni", image: "/gears/ritual.png" },
+  { id: 7, label: "Lith", image: "/gears/ritual.png" },
+  { id: 8, label: "Moni", image: "/gears/ritual.png" },
+  { id: 9, label: "Nagu", image: "/gears/ritual.png" },
+  { id: 10, label: "Neo", image: "/gears/ritual.png" },
+  { id: 11, label: "Noc", image: "/gears/ritual.png" },
+  { id: 12, label: "Poc", image: "/gears/ritual.png" },
+  { id: 13, label: "Tam", image: "/gears/ritual.png" },
+  { id: 14, label: "Xol", image: "/gears/ritual.png" },
+  { id: 15, label: "Yax", image: "/gears/ritual.png" },
+  { id: 16, label: "Yul", image: "/gears/ritual.png" },
+  { id: 17, label: "Zan", image: "/gears/ritual.png" },
+  { id: 18, label: "Ceh", image: "/gears/invocation.png" },
+  { id: 19, label: "Chac", image: "/gears/invocation.png" },
+  { id: 20, label: "Eom", image: "/gears/invocation.png" },
+  { id: 21, label: "Gar", image: "/gears/invocation.png" },
+  { id: 22, label: "Jah", image: "/gears/invocation.png" },
+  { id: 23, label: "Kel", image: "/gears/invocation.png" },
+  { id: 24, label: "Kry", image: "/gears/invocation.png" },
+  { id: 25, label: "Lac", image: "/gears/invocation.png" },
+  { id: 26, label: "Lum", image: "/gears/invocation.png" },
+  { id: 27, label: "Mot", image: "/gears/invocation.png" },
+  { id: 28, label: "Ner", image: "/gears/invocation.png" },
+  { id: 29, label: "Ohm", image: "/gears/invocation.png" },
+  { id: 30, label: "Qax", image: "/gears/invocation.png" },
+  { id: 31, label: "Qua", image: "/gears/invocation.png" },
+  { id: 32, label: "Que", image: "/gears/invocation.png" },
+  { id: 33, label: "Tal", image: "/gears/invocation.png" },
+  { id: 34, label: "Teb", image: "/gears/invocation.png" },
+  { id: 35, label: "Tec", image: "/gears/invocation.png" },
+  { id: 36, label: "Thul", image: "/gears/invocation.png" },
+  { id: 37, label: "Ton", image: "/gears/invocation.png" },
+  { id: 38, label: "Tun", image: "/gears/invocation.png" },
+  { id: 39, label: "Tzic", image: "/gears/invocation.png" },
+  { id: 40, label: "Vex", image: "/gears/invocation.png" },
+  { id: 41, label: "Wat", image: "/gears/invocation.png" },
+  { id: 42, label: "Xal", image: "/gears/invocation.png" },
+  { id: 43, label: "Xan", image: "/gears/invocation.png" },
+  { id: 44, label: "Yom", image: "/gears/invocation.png" },
+  { id: 45, label: "Zec", image: "/gears/invocation.png" },
+  { id: 46, label: "Zid", image: "/gears/invocation.png" },
 ];
 
 export const aspectsFilter = [
@@ -17473,6 +17520,22 @@ export const aspectMap = {
           allowedGear: ["Gloves"],
         },
         {
+          id: 2001,
+          image: "/gears/bane_of_ahjad-den.png",
+          label: "Bane of Ahjad-Den",
+          description:
+            "Every 6 seconds, your next Mighty Throw detonates its pulses instantly as Fire Damage and deals [200-300]% increased damage.",
+          point: [
+            "[10-15]% Cooldown Reduction",
+            "[5-7] to Mighty Throw",
+            "[142-187]% Critical Strike Damage",
+            "[8-12] Fury Per Second",
+          ],
+          category: "Unique",
+          class: "Barbarian",
+          allowedGear: ["Gloves"],
+        },
+        {
           id: 38,
           image: "/gears/offensive.png",
           label: "Aspect de rupture arbitraire",
@@ -17563,6 +17626,22 @@ export const aspectMap = {
           allowedGear: ["Gloves"],
         },
         {
+          id: 2002,
+          image: "/gears/endurant_faith.png",
+          label: "Endurant Faith",
+          description:
+            "When you would be damaged for at least 40% of your Maximum Life at once, it is instead distributed over the next 3 seconds and reduced by [10-30]%.",
+          point: [
+            "[611-657] Maximum Life",
+            "[8-10]% Lucky Hit Chance",
+            "[20-31]% Healing Received",
+            "[63-81] All Stats",
+          ],
+          category: "Unique",
+          class: "All",
+          allowedGear: ["Gloves"],
+        },
+        {
           id: 47,
           image: "/gears/offensive.png",
           label: "Aspect de vétéran du combat",
@@ -17580,6 +17659,55 @@ export const aspectMap = {
             "Les cibles à distance ont 10% de chances d'être étourdies pendant 2 s lorsqu'elles vous infligent des dégâts. Vous infligez [15 - 35]%[x] de dégâts supplémentaires aux cibles étourdies ou renversées.",
           category: "Attaque",
           class: "Tous",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 2003,
+          image: "/gears/fists_of_fate.png",
+          label: "Fists of Fate",
+          description:
+            "Your attacks randomly deal 1% to [200-300]% of their normal damage.",
+          point: [
+            "[1-64]% Lucky Hit Chance",
+            "[0-10]% Critical Strike Chance",
+            "[0-10]% Attack Speed",
+            "Lucky Hit: Up to a [1-64]% Chance to Make Enemies Vulnerable for 3 Seconds",
+          ],
+          category: "Unique",
+          class: "All",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 2004,
+          image: "/gears/frostburn.png",
+          label: "Frostburn",
+          description:
+            "You deal [15-35]% increased Fire Damage to Chilled enemies and [15-35]% increased Cold Damage to Burning enemies.",
+          point: [
+            "8% Lucky Hit Chance",
+            "Lucky Hit: Up to a 40% Chance to Deal [1125-3000] Fire Damage",
+            "Lucky Hit: Up to a 40% Chance to Deal [1125-3000] Cold Damage",
+            "[178-227]% Fire and Cold Damage",
+            "[13-18]% Attack Speed",
+          ],
+          category: "Unique",
+          class: "All",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 2005,
+          image: "/gears/gohr's_devastating_grips.png",
+          label: "Gohr's Devastating Grips",
+          description:
+            "Whirlwind explodes every 3 seconds as Fire damage dealing [300-600]% increased damage. Critical Strikes with Whirlwind reduce the time until the next explosion by 0.4 seconds down to 1 second.",
+          point: [
+            "[16-28]% Critical Strike Chance Against Close Enemies",
+            "[10-15]% Movement Speed",
+            "[13-18]% Attack Speed",
+            "[3-6] to Whirlwind",
+          ],
+          category: "Unique",
+          class: "Barbarian",
           allowedGear: ["Gloves"],
         },
         {
@@ -17610,6 +17738,22 @@ export const aspectMap = {
             "Après la génération de 100 points de fureur, les prochains dégâts directs que vous infligez génèrent 2 tourbillons de poussière qui infligent [60 - 105] points de dégâts aux adversaires dans leur sillage.",
           category: "Attaque",
           class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 2006,
+          image: "/gears/paingorger's_gauntlets.png",
+          label: "Paingorger's Gauntlets",
+          description:
+            "Damaging enemies with a Non-Basic Skill marks them for 3 seconds. When a Basic Skill first hits a marked enemy, the Basic Skill's damage is echoed to all marked enemies, dealing [75-125]% increased damage.",
+          point: [
+            "[10-12]% Attack Speed",
+            "[2-5] to Basic Skills",
+            "[10-11]% Cooldown Reduction",
+            "Lucky Hit: Up to a [16-28]% Chance to Stun for 2 Seconds",
+          ],
+          category: "Unique",
+          class: "All",
           allowedGear: ["Gloves"],
         },
         {
@@ -17650,6 +17794,22 @@ export const aspectMap = {
             "L'utilisation de Coup double génère un tourbillon de poussière qui inflige [53 - 83] points de dégâts aux adversaires dans son sillage.",
           category: "Attaque",
           class: "Barbare",
+          allowedGear: ["Gloves"],
+        },
+        {
+          id: 2007,
+          image: "/gears/twin_strikes.png",
+          label: "Twin Strikes",
+          description:
+            "After casting Double Swing 4 times, your Double Swing sweeps will continue to hit 2 additional times, each dealing [110-140]% increased damage for 3 seconds.",
+          point: [
+            "[19-25]% Attack Speed",
+            "[11-13]% Critical Strike Chance",
+            "[133-151] Strength",
+            "[2-3] to Double Swing",
+          ],
+          category: "Unique",
+          class: "Barbarian",
           allowedGear: ["Gloves"],
         },
         {
@@ -17703,6 +17863,22 @@ export const aspectMap = {
           allowedGear: ["Gloves"],
         },
 
+        {
+          id: 2008,
+          image: "/gears/arreat's_bearing.png",
+          label: "Arreat's Bearing",
+          description:
+            "Ancients you summon are empowered. Korlic creates an Earthquake that deals [x] Physical damage over 4 seconds when he leaps. Talic leaves behind Dust Devils that deal [x] damage while he whirlwinds. Mawdac ignites the ground Burning enemies for an additional [x] damage over 4 seconds when he upheaves the ground.",
+          point: [
+            "[313-437]% Ultimate Damage",
+            "[29-40]% Call of the Ancients Cooldown Reduction",
+            "[611-657] Maximum Life",
+            "[19-25]% Resistance to All Elements",
+          ],
+          category: "Unique",
+          class: "Barbarian",
+          allowedGear: ["Pantalon"],
+        },
         {
           id: 1,
           image: "/gears/utility.png",
@@ -17824,6 +18000,22 @@ export const aspectMap = {
           allowedGear: ["Pantalon"],
         },
         {
+          id: 2009,
+          image: "/gears/chainscourged_mail.png",
+          label: "Chainscourged Mail",
+          description:
+            "Casting a damaging Brawling Skill disables it afterwards. When all of these Skills that are on your Action Bar are disabled, they become re-enabled with their Cooldowns refreshed. Your Brawling Skills deal [50-100]%[x] increased damage for each disabled Skill.",
+          point: [
+            "[63-81] All Stats",
+            "[530-571] Maximum Life",
+            "[10-11]% Cooldown Reduction",
+            "[2-3] to Brawling Skills",
+          ],
+          category: "Unique",
+          class: "Barbarian",
+          allowedGear: ["Pantalon"],
+        },
+        {
           id: 13,
           image: "/gears/defensive.png",
           label: "Aspect de coups calculés",
@@ -17921,6 +18113,54 @@ export const aspectMap = {
             "Vos chances d'esquiver sont augmentées de 8 %. Vous récupérez [5 - 25]% de votre maximum de vie en cas d'esquive réussie.",
           category: "Défense",
           class: "Tous",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 2010,
+          image: "/gears/tassets_of_the_dawning_sky.png",
+          label: "Tassets of the Dawning Sky",
+          description:
+            "When you take damage from a Non-Physical damage type, you gain [8-15]%[+] Maximum Resistance to that damage type for 6 seconds. This effect can only apply to one damage type at a time.",
+          point: [
+            "[63-81] All Stats",
+            "[16-25]% Movement Speed",
+            "[70-87] Resistance to All Elements",
+            "[9.5-16.5]% Total Resistance",
+          ],
+          category: "Unique",
+          class: "All",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 2011,
+          image: "/gears/temerity.png",
+          label: "Temerity",
+          description:
+            "Effects that Heal you beyond 100% Life grant you a Barrier up to [40-100]% of your Maximum Life that lasts for 8 seconds. You may now drink your Healing Potion while at full Life.",
+          point: [
+            "Lucky Hit: Up to a 15% Chance to Heal [37] Life",
+            "[20-31]% Healing Received",
+            "% Armor",
+            "[530-571] Maximum Life",
+          ],
+          category: "Unique",
+          class: "All",
+          allowedGear: ["Pantalon"],
+        },
+        {
+          id: 2012,
+          image: "/gears/tassets_of_the_dawning_sky.png",
+          label: "Tibault's Will",
+          description:
+            "You deal [10-20]%[x] increased damage while Unstoppable and for 5 seconds after. When you become Unstoppable, gain 100 of your Primary Resource.",
+          point: [
+            "[63-81] All Stats",
+            "[11-13]% Critical Strike Chance",
+            "[10-20] Maximum Resource",
+            "[19-25]% Attack Speed",
+          ],
+          category: "Unique",
+          class: "All",
           allowedGear: ["Pantalon"],
         },
         {
@@ -18024,6 +18264,23 @@ export const aspectMap = {
           allowedGear: ["Pantalon"],
         },
 
+        {
+          id: 2013,
+          image: "/gears/100000_steps.png",
+          label: "100,000 Steps",
+          description:
+            "When activating or refreshing the full Walking Arsenal Key Passive effect, you automatically cast Ground Stomp and gain [50-100] Fury. Can only occur once every 5 seconds.",
+          point: [
+            "Evade Grants 10% Attack Speed for 3 Seconds",
+            "[20-31]% Movement Speed",
+            "[6-8]% Movement Speed per Walking Arsenal Bonus",
+            "[103-131]% Damage to Stunned Enemies",
+            "[43-75]% Ground Stomp Size",
+          ],
+          category: "Unique",
+          class: "Barbarian",
+          allowedGear: ["Bottes"],
+        },
         {
           id: 1,
           image: "/gears/utility.png",
@@ -18135,6 +18392,23 @@ export const aspectMap = {
           allowedGear: ["Bottes"],
         },
         {
+          id: 2014,
+          image: "/gears/flickerstep.png",
+          label: "Flickerstep",
+          description:
+            "Each enemy you Evade through reduces your active Ultimate Cooldown by [2.0-4.0] seconds, up to 10 seconds.",
+          point: [
+            "Attacks Reduce Evade's Cooldown by 2.5 Seconds",
+            "[21-28]% Movement Speed",
+            "[32-43]% Resistance to All Elements",
+            "[611-657] Maximum Life",
+            "[273-373]% Ultimate Damage",
+          ],
+          category: "Unique",
+          class: "All",
+          allowedGear: ["Bottes"],
+        },
+        {
           id: 12,
           image: "/gears/utility.png",
           label: "Aspect de maître d'armes",
@@ -18155,6 +18429,23 @@ export const aspectMap = {
           allowedGear: ["Bottes"],
         },
         {
+          id: 2015,
+          image: "/gears/hooves_of_the_mountain_god.png",
+          label: "Hooves of the Mountain God",
+          description:
+            "Casting a Basic Skill while at Maximum Fury causes your Fury to increasingly Drain until you run out, during which your Basic skills now cleave dealing [70-100]% increased damage.",
+          point: [
+            "Attacks Reduce Evade's Cooldown by 2.5 Seconds",
+            "[21-28]% Movement Speed",
+            "[20-31]% Basic Attack Speed",
+            "[8-12] Fury Per Second",
+            "[2-3] Ranks to Belligerence",
+          ],
+          category: "Unique",
+          class: "Barbarian",
+          allowedGear: ["Bottes"],
+        },
+        {
           id: 14,
           image: "/gears/utility.png",
           label: "Aspect de misère partagée",
@@ -18165,6 +18456,24 @@ export const aspectMap = {
           allowedGear: ["Bottes"],
         },
         {
+          id: 2016,
+          image: "/gears/penitent_greaves.png",
+          label: "Penitent Greaves",
+          description:
+            "You leave behind a trail of frost that Chills enemies. You deal [12-25]% more damage to Chilled enemies.",
+          point: [
+            "Evade Grants 125% Movement Speed for 2 Seconds",
+            "Evade Grants Unhindered for 2 Seconds",
+            "[20-31]% Movement Speed",
+            "[51-68]% Chill Slow Potency",
+            "[5-7]% Critical Strike Chance Against Chilled Enemies",
+            "[58-75]% Cold Resistance from Frost that Chills",
+          ],
+          category: "Unique",
+          class: "All",
+          allowedGear: ["Bottes"],
+        },
+        {
           id: 15,
           image: "/gears/mobility.png",
           label: "Aspect de piétinement perpétuel",
@@ -18172,6 +18481,23 @@ export const aspectMap = {
             "Blesser une cible ennemie avec Coup de pied ou Choc terrestre réinitialise le temps de recharge de Bond.",
           category: "Mobilité",
           class: "Barbare",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 2017,
+          image: "/gears/rakanoth's_wake.png",
+          label: "Rakanoth's Wake",
+          description:
+            "When you cast a Skill with a Cooldown, you explode, dealing [x] Fire damage.",
+          point: [
+            "Attacks Reduce Evade's Cooldown by 1.5 Seconds",
+            "[21-28]% Movement Speed",
+            "[10-11]% Cooldown Reduction",
+            "[18-25]% Resistance to All Elements",
+            "[71-93]% Non-Physical Damage",
+          ],
+          category: "Unique",
+          class: "All",
           allowedGear: ["Bottes"],
         },
         {
@@ -18232,6 +18558,23 @@ export const aspectMap = {
             "Vos chances d'obtenir un coup de chance sont augmentées de [10 - 30]%[+] tant que tous vos bonus de dégâts de votre compétence passive principale Arsenal ambulant sont actifs.",
           category: "Attributs",
           class: "Barbare",
+          allowedGear: ["Bottes"],
+        },
+        {
+          id: 2018,
+          image: "/gears/yens_blessing.png",
+          label: "Yen's Blessing",
+          description:
+            "Casting a Skill has a [40-60]% chance to cast a Non-Mobility, Non-Ultimate Skill that is currently on Cooldown. Can only occur once every 8 seconds.",
+          point: [
+            "3 Maximum Evade Charges",
+            "[21-28]% Movement Speed",
+            "[63-81] All Stats",
+            "[10-15]% Resource Generation",
+            "[19-25]% Resistance to All Elements",
+          ],
+          category: "Unique",
+          class: "All",
           allowedGear: ["Bottes"],
         },
 
@@ -18416,6 +18759,23 @@ export const aspectMap = {
           allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
         },
         {
+          id: 2027,
+          image: "/gears/azurewrath.png",
+          label: "Azurewrath",
+          description:
+            "Your Casts with this weapon apply Vulnerable for 3 seconds and Chill enemies for [10-30]%.",
+          point: [
+            "85% Cold Damage",
+            "Lucky Hit: Up to a 40% Chance to Deal [1375-3375] Cold Damage",
+            "[58-81] All Stats",
+            "[10-12]% Attack Speed",
+            "[58-75]% Cold Resistance",
+          ],
+          category: "Unique 1H Sword",
+          class: "All",
+          allowedGear: ["Bludgeoning Weapon", "Arme à double usage 1"],
+        },
+        {
           id: 19,
           image: "/gears/offensive.png",
           label: "Aspect de funambule",
@@ -18466,6 +18826,23 @@ export const aspectMap = {
           allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
         },
         {
+          id: 2021,
+          image: "/gears/doombringer.png",
+          label: "Doombringer",
+          description:
+            "Lucky Hit: Up to a 25% chance to deal [x] Shadow damage to surrounding enemies and reduce their damage dealt by 20% for 5 seconds.",
+          point: [
+            "100% Damage",
+            "200 All Stats",
+            "12% Damage Reduction",
+            "Lucky Hit: Up to a 15% Chance to Heal 662 Life",
+            "43% Maximum Life",
+          ],
+          category: "Mythique Unique",
+          class: "All",
+          allowedGear: ["Bludgeoning Weapon", "Arme à double usage 1"],
+        },
+        {
           id: 24,
           image: "/gears/offensive.png",
           label: "Aspect de pulsion de mort",
@@ -18506,6 +18883,23 @@ export const aspectMap = {
           allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
         },
         {
+          id: 2022,
+          image: "/gears/ramaladnis_magnum_opus.png",
+          label: "Ramaladni's Magnum Opus",
+          description:
+            "Skills using this weapon deal [0.2-0.5]% increased damage per point of Fury you have, up to 10 Fury. Drains per second.",
+          point: [
+            "50% Damage",
+            "[50-62]% Critical Strike Damage",
+            "[133-151] Strength",
+            "[16-26] Maximum Resource",
+            "[75-87]% Overpower Damage",
+          ],
+          category: "Unique 1H Sword",
+          class: "Barbarian",
+          allowedGear: ["Bludgeoning Weapon", "Arme à double usage 1"],
+        },
+        {
           id: 28,
           image: "/gears/offensive.png",
           label: "Aspect de rupture arbitraire",
@@ -18514,6 +18908,40 @@ export const aspectMap = {
           category: "Attaque",
           class: "Barbare",
           allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 2023,
+          image: "/gears/sabre_of_tassgal.png",
+          label: "Sabre of Tassgal",
+          description:
+            "You gain [3-4]% increased damage, for each damaging Skill you have equipped, and an additional [9-12]% for 15 seconds when each of those Skills is used.",
+          point: [
+            "+50% Damage",
+            "[133-151] Strength",
+            "[78-106]% Physical Damage",
+            "[2-3] Core Skill Ranks",
+            "[2-3] Warpath Ranks",
+          ],
+          category: "Unique 1H Sword",
+          class: "Barbarian",
+          allowedGear: ["Bludgeoning Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 2024,
+          image: "/gears/shard_of_verathiel.png",
+          label: "Shard of Verathiel",
+          description:
+            "Basic Skills deal [50-150]% increased damage but additionally cost 25 Primary Resource.",
+          point: [
+            "50% Damage",
+            "[63-81] All Stats",
+            "[1-2] to Basic skills",
+            "[20-31]% Basic Attack Speed",
+            "[10-20] Maximum Resource",
+          ],
+          category: "Unique 1H Sword",
+          class: "All",
+          allowedGear: ["Bludgeoning Weapon", "Arme à double usage 1"],
         },
         {
           id: 29,
@@ -18554,6 +18982,40 @@ export const aspectMap = {
           category: "Attaque",
           class: "Tous",
           allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 2025,
+          image: "/gears/the_butchers_cleaver.png",
+          label: "The Butcher's Cleaver",
+          description:
+            "Lucky Hit: Critically Striking an enemy has up to a 100% chance to Fear and Slow them by [61-90]% for 4 seconds.",
+          point: [
+            "175% Damage to Injured Enemies",
+            "[20-31]% Critical Strike Chance Against Feared Enemies",
+            "[21-28]% Movement Speed",
+            "[10-12]% Attack Speed",
+            "[78-106]% Physical Damage",
+          ],
+          category: "Unique 1H Axe",
+          class: "All",
+          allowedGear: ["Bludgeoning Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 2026,
+          image: "/gears/the_third_blade.png",
+          label: "The Third Blade",
+          description:
+            "Your Weapon Mastery Skills are now also Core Skills that have 100% Cooldown Reduction but cost Fury, dealing [50-70]% of normal damage. Fury cost for all Weapon Mastery Skills are reduced by 5.",
+          point: [
+            "65% Damage to Close Enemies",
+            "[50-62]% Vulnerable Damage",
+            "[100-117] Strength",
+            "[71-100]% Weapon Mastery Damage",
+            "[1-2] Fury On Kill",
+          ],
+          category: "Unique 1H Sword",
+          class: "Barbarian",
+          allowedGear: ["Bludgeoning Weapon", "Arme à double usage 1"],
         },
         {
           id: 33,
@@ -18646,6 +19108,23 @@ export const aspectMap = {
           allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
         },
         {
+          id: 2019,
+          image: "/gears/hellhammer.png",
+          label: "Hellhammer",
+          description:
+            "Upheaval deals [75-150]% increased damage to Burning enemies, and also ignites the ground Burning enemies for an additional [x] damage over 4 seconds.",
+          point: [
+            "300% Damage to Burning Enemies",
+            "[65-87]% Upheaval Size",
+            "[5-7] to Upheaval",
+            "[2-5] to Wallop",
+            "[220-255] Strength",
+          ],
+          category: "Unique 2H Mace",
+          class: "Barbarian",
+          allowedGear: ["Bludgeonging Weapon"],
+        },
+        {
           id: 42,
           image: "/gears/offensive.png",
           label: "Aspect du crépuscule",
@@ -18654,6 +19133,23 @@ export const aspectMap = {
           category: "Attaque",
           class: "Tous",
           allowedGear: ["Bludgeonging Weapon", "Arme à double usage 1"],
+        },
+        {
+          id: 2020,
+          image: "/gears/overkill.png",
+          label: "Overkill",
+          description:
+            "Death Blow creates a shockwave, dealing [60-80]% of its Base damage to enemies. Enemies who die to this effect also reset Death Blow's Cooldown.",
+          point: [
+            "350% Damage to Injured Enemies",
+            "[200-235] Strength",
+            "[427-562]% Physical Damage",
+            "[156-212]% Vulnerable Damage",
+            "[5-7] to Death Blow",
+          ],
+          category: "Unique 2H Mace",
+          class: "Barbarian",
+          allowedGear: ["Bludgeonging Weapon"],
         },
         {
           id: 43,
@@ -18988,6 +19484,41 @@ export const aspectMap = {
           allowedGear: ["Amulette"],
         },
         {
+          id: 2028,
+          image: "/gears/banished_lords_talisman.png",
+          label: "Banished Lord's Talisman",
+          description:
+            "After you spend 275 of your Primary Resource, your next Core Skill is guaranteed to Overpower, and your Critical Strikes that Overpower deal [20-60]% increased damage.",
+          point: [
+            "30% Resistance to All Elements",
+            "[530-571] Maximum Life",
+            "[68-81]% Overpower Damage",
+            "[10-12]% Attack Speed",
+            "[1-2] to Core Skills",
+          ],
+          category: "Unique Amulet",
+          class: "All",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 2029,
+          image: "/gears/battle_trance.png",
+          label: "Battle Trance",
+          description:
+            "Increases Frenzy's maximum stacks by 2. While at maximum Frenzy stacks, you deal [30-60]% increased damage and your other Skills gain [35-55]% increased Attack Speed.",
+          point: [
+            "30% Resistance to All Elements",
+            "Lucky Hit: Up to a 20% chance to gain a stack of Frenzy",
+            "[8-10]% Critical Strike Chance",
+            "[14-19] Strength",
+            "[10-20] Maximum Fury",
+            "[5-7] to Frenzy",
+          ],
+          category: "Unique Amulet",
+          class: "Barbarian",
+          allowedGear: ["Amulette"],
+        },
+        {
           id: 30,
           image: "/gears/defensive.png",
           label: "Aspect de coups calculés",
@@ -19188,6 +19719,41 @@ export const aspectMap = {
           allowedGear: ["Amulette"],
         },
         {
+          id: 2030,
+          image: "/gears/lochras_talisman.png",
+          label: "Lochras Talisman",
+          description:
+            "Your skills gain [+0.10-0.40]% Critical Strike Chance bonus per point of Primary Resource you have when cast, up to [+10-40]%. Each point of Primary Resource above 100 grants x0.2% Critical Strike Damage instead, up to 500.",
+          point: [
+            "30% Resistance to All Elements",
+            "[10-12]% Resistance to All Elements",
+            "[2-3] All Stats",
+            "[110-143]% Critical Strike Damage",
+            "[10-20] Maximum Resource",
+          ],
+          category: "Unique Amulet",
+          class: "All",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 2031,
+          image: "/gears/melted_heart_of_selig.png",
+          label: "Melted Heart of Selig",
+          description:
+            "Damage is dealt to your Primary Resource before Life and damage taken this way is drastically reduced. Your Primary Resource is doubled but Maximum Life is reduced by 75%.",
+          point: [
+            "3% Maximum Resistance to All Elements",
+            "30% Resistance to All Elements",
+            "15% Primary Stat",
+            "18% Lucky Hit Chance",
+            "31% Movement Speed",
+            "62% Resource Generation",
+          ],
+          category: "Mythique Unique",
+          class: "All",
+          allowedGear: ["Amulette"],
+        },
+        {
           id: 50,
           image: "/gears/utility.png",
           label: "Aspect de misère partagée",
@@ -19265,6 +19831,23 @@ export const aspectMap = {
             "Chaque point de fureur que vous générez au-delà du maximum augmente les dégâts de votre prochaine compétence principale, lancée dans les 5 s qui suivent, de [1.00 - 3.00]%[x], jusqu'à un maximum de 15 fois.",
           category: "Attaque",
           class: "Barbare",
+          allowedGear: ["Amulette"],
+        },
+        {
+          id: 2032,
+          image: "/gears/unbroken_chain.png",
+          label: "Unbroken Chain",
+          description:
+            "Casting Steel Grasp reduces Iron Maelstrom's Cooldown by [3.3-10] seconds. Enemies damaged by Iron Maelstrom deal [20-40]% less damage for 6 seconds.",
+          point: [
+            "30% Resistance to All Elements",
+            "[14-19] Strength",
+            "[2-3] to Pit Fighter",
+            "[273-375]% Ultimate Damage",
+            "[16-28]% Steel Grasp Cooldown Reduction",
+          ],
+          category: "Unique Amulet",
+          class: "Barbarian",
           allowedGear: ["Amulette"],
         },
         {
@@ -19908,6 +20491,24 @@ export const aspectMap = {
           allowedGear: ["Anneau 1", "Anneau 2"],
         },
         {
+          id: 2033,
+          image: "/gears/mothers_embrace.png",
+          label: "Mother's Embrace",
+          description:
+            "If a Core Skill hits 4 or more enemies, [30-60]% of the Resource is refunded.",
+          point: [
+            "12.5% Resistance to All Elements",
+            "12.5% Shadow Resistance",
+            "[13-18]% Attack Speed",
+            "[8-10]% Critical Strike Chance",
+            "[8-10]% Lucky Hit Chance",
+            "[58-81] All Stats",
+          ],
+          category: "Unique Ring",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
           id: 25,
           image: "/gears/offensive.png",
           label: "Aspect of Shattering Steel",
@@ -19924,6 +20525,78 @@ export const aspectMap = {
           description:
             "Every 20 seconds, your next Upheaval cast is guaranteed to Overpower and deals [50 - 70]%[x] increased damage. Upheaval Critical Strikes against Elites reduce this timer by 1 second.",
           category: "Offensive",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 2033,
+          image: "/gears/mothers_embrace.png",
+          label: "Mother's Embrace",
+          description:
+            "If a Core Skill hits 4 or more enemies, [30-60]% of the Resource is refunded.",
+          point: [
+            "12.5% Resistance to All Elements",
+            "12.5% Shadow Resistance",
+            "[13-18]% Attack Speed",
+            "[8-10]% Critical Strike Chance",
+            "[8-10]% Lucky Hit Chance",
+            "[58-81] All Stats",
+          ],
+          category: "Unique Ring",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 2034,
+          image: "/gears/ring_of_red_fury.png",
+          label: "Ring of Red Fury",
+          description:
+            "After spending 100 Fury within 5 seconds, your next non-Channeled Core or Weapon Mastery Skill Cast within 5 seconds is a guaranteed Critical Strike and deals [50-80]% bonus Critical Strike Damage.",
+          point: [
+            "12.5% Resistance to All Elements",
+            "12.5% Fire Resistance",
+            "[11-18] Maximum Resource",
+            "[10-12]% Attack Speed",
+            "[110-143]% Critical Strike Damage",
+            "[50-62]% Fire Resistance",
+          ],
+          category: "Unique Ring",
+          class: "Barbarian",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 2035,
+          image: "/gears/ring_of_starless_skies.png",
+          label: "Ring of Starless Skies",
+          description:
+            "Spending your Primary Resource reduces the Resource cost of your Skills and increases your damage by x10% for 3 seconds, up to x50%.",
+          point: [
+            "12.5% Resistance to All Elements",
+            "12.5% Resistance to All Elements",
+            "21% Attack Speed",
+            "15% Critical Strike Chance",
+            "15% Lucky Hit Chance",
+            "2 to Core Skills",
+          ],
+          category: "Mythique Unique",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+        {
+          id: 2036,
+          image: "/gears/ring_of_the_ravenous.png",
+          label: "Ring of the Ravenous",
+          description:
+            "Rend's duration is increased by [4-8] seconds. Damaging enemies with Brawling Skills applies 2 stacks of Rend's Bleed. This can only affect each enemy once every 1 second.",
+          point: [
+            "12.5% Resistance to All Elements",
+            "12.5% Shadow Resistance",
+            "[11-13]% Critical Strike Chance",
+            "[58-75]% Vulnerable Damage",
+            "[1-2] to Brawling Skills",
+            "[2-3] to Rend",
+          ],
+          category: "Unique Ring",
           class: "Barbarian",
           allowedGear: ["Anneau 1", "Anneau 2"],
         },
@@ -20245,6 +20918,25 @@ export const aspectMap = {
           class: "Barbarian",
           allowedGear: ["Anneau 1", "Anneau 2"],
         },
+        {
+          id: 2037,
+          image: "/gears/xfals_corroded_signet.png",
+          label: "X'Fal's Corroded Signet",
+          description:
+            "Lucky Hit: Your damage over time effects have up to a 75% chance to erupt, dealing [x] damage of the same type to surrounding enemies.",
+          point: [
+            "12.5% Resistance to All Elements",
+            "12.5% Fire Resistance",
+            "98 All Stats",
+            "[90-118]% Damage Over Time",
+            "[58-75]% Vulnerable Damage",
+            "[6-7]% Lucky Hit Chance",
+          ],
+          category: "Unique Ring",
+          class: "All",
+          allowedGear: ["Anneau 1", "Anneau 2"],
+        },
+
 
         {
           id: 1,
@@ -20256,6 +20948,22 @@ export const aspectMap = {
           class: "Tous",
           allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
         },
+        {
+    id: 2038,
+    image: "/gears/ancients_oath.png",
+    label: "Ancients' Oath",
+    description: "Steel Grasp launches 2 additional chains. Enemies hit by Steel Grasp take x[40-60]% increased damage from you for 5 seconds.",
+    point: [
+      "130% Vulnerable Damage",
+      "[258-383]% Damage to Close Enemies",
+      "[20-22]% Cooldown Reduction",
+      "[200-235] Strength",
+      "[5-7] to Steel Grasp"
+    ],
+    category: "Unique 2H Axe",
+    class: "Barbarian",
+    allowedGear: ["Slashing Weapon"]
+  },
         {
           id: 2,
           image: "/gears/offensive.png",
@@ -20427,6 +21135,22 @@ export const aspectMap = {
           allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
         },
         {
+    id: 2039,
+    image: "/gears/fields_of_crimson.png",
+    label: "Fields of Crimson",
+    description: "While using this weapon, damaging at least one enemy with Rupture creates a blood pool that inflicts [x] Bleeding damage over 6 seconds. Enemies standing in the pool take 70% increased damage.",
+    point: [
+      "130% Vulnerable Damage",
+      "[507-687]% Damage to Bleeding Enemies",
+      "[65-87]% Enhanced Rupture Explosion Size",
+      "[200-235] Strength",
+      "[20-31]% Rupture Cooldown Reduction"
+    ],
+    category: "Unique 2H Sword",
+    class: "Barbarian",
+    allowedGear: ["Slashing Weapon"]
+  },
+        {
           id: 19,
           image: "/gears/offensive.png",
           label: "Aspect de funambule",
@@ -20447,6 +21171,22 @@ export const aspectMap = {
           allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
         },
         {
+    id: 2040,
+    image: "/gears/shattered_vow.png",
+    label: "Shattered Vow",
+    description: "Enemies afflicted by more Damage over Time than remaining Life are Executed.",
+    point: [
+      "111% Damage Over Time Duration",
+      "Lucky Hit: Up to a 55% Chance to Become Berserking",
+      "37% Attack Speed while Berserking",
+      "555% Damage Over Time",
+      "1500 Maximum Life"
+    ],
+    category: "Mythique Unique",
+    class: "All",
+    allowedGear: ["Slashing Weapon", "Arme à double usage 2"]
+  },
+        {
           id: 21,
           image: "/gears/offensive.png",
           label: "Aspect de la fureur déchaînée",
@@ -20466,6 +21206,23 @@ export const aspectMap = {
           class: "Tous",
           allowedGear: ["Slashing Weapon", "Arme à double usage 2"],
         },
+        {
+    id: 2041,
+    image: "/gears/the_grandfather.png",
+    label: "The Grandfather",
+    description: "Increases your Critical Strike Damage by x100%. The other properties of this weapon can roll higher than normal.",
+    point: [
+      "150% Damage",
+      "Ignore Durability Loss",
+      "275 All Stats",
+      "375% Damage",
+      "2250 Maximum Life",
+      "25 Maximum Resource"
+    ],
+    category: "Mythique Unique",
+    class: "All",
+    allowedGear: ["Slashing Weapon"]
+  },
         {
           id: 23,
           image: "/gears/offensive.png",

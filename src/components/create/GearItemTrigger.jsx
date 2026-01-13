@@ -29,10 +29,7 @@ export default function GearItemTrigger({
   );
   const currentGear =
     side === "left" ? gearLeft[position] : gearRight[position];
-  const aspect =
-    gear.aspect_id && Array.isArray(aspects)
-      ? aspects.find((a) => a.id === gear.aspect_id)
-      : null;
+  const aspect = gear.aspect || null;
   const aspectPower1 = currentGear?.aspect_power_id
     ? aspectspower.find((ap) => ap.id === currentGear.aspect_power_id)
     : null;
@@ -113,48 +110,49 @@ export default function GearItemTrigger({
       {gear.image === "empty.png" && !isAspectID ? (
         <div className="w-[65px] h-[65px] bg-[#1f2025] hover:scale-105 rounded-sm"></div>
       ) : (
-        <div className="relative w-[65px] bg-[#26272D] rounded-lg border border-gray-700 h-[65px] text-center">
+        <div className="relative w-[55px] h-[55px] bg-[#26272D] rounded-lg border border-gray-700 flex items-center justify-center">
           <Image
             src={isAspectID ? aspect?.image || gear.image : gear.image}
-            className="object-contain rounded-sm m-auto mt-3"
+            className="w-[40px] h-[40px] object-contain"
             alt={isAspectID ? aspect?.label || gear.label : gear.label}
             width={size}
             height={size}
           />
           {isAspectID && (
             <>
-              <div
-                className="absolute bottom-0 left-0 w-8 h-8 border border-gray-600 bg-[#131416] rounded-full flex items-center justify-center cursor-pointer opacity-80 hover:opacity-100"
-                onClick={handleCircleClick("power1")}
-                role="button"
-                aria-label="Select first aspect power"
-              >
-                {aspectPower1 && (
-                  <Image
-                    src={aspectPower1.image}
-                    className="w-6 h-6 object-contain"
-                    alt={aspectPower1.label}
-                    width={20}
-                    height={20}
-                  />
-                )}
-              </div>
-              <div
-                className="absolute bottom-0 right-0 w-8 h-8 border border-gray-600 bg-[#131416] rounded-full flex items-center justify-center cursor-pointer opacity-80 hover:opacity-100"
-                onClick={handleCircleClick("power2")}
-                role="button"
-                aria-label="Select second aspect power"
-              >
-                {aspectPower2 && (
-                  <Image
-                    src={aspectPower2.image}
-                    className="w-6 h-6 object-contain"
-                    alt={aspectPower2.label}
-                    width={20}
-                    height={20}
-                  />
-                )}
-              </div>
+              {gear.show_power_1 === true && (
+                <div
+                  className="absolute bottom-0 left-0 w-6 h-6 border border-gray-600 bg-[#131416] rounded-full flex items-center justify-center cursor-pointer opacity-80 hover:opacity-100"
+                  onClick={handleCircleClick("power1")}
+                >
+                  {aspectPower1 && (
+                    <Image
+                      src={aspectPower1.image}
+                      className="w-5 h-5 object-contain"
+                      alt=""
+                      width={20}
+                      height={20}
+                    />
+                  )}
+                </div>
+              )}
+
+              {gear.show_power_2 === true && (
+                <div
+                  className="absolute bottom-0 right-0 w-6 h-6 border border-gray-600 bg-[#131416] rounded-full flex items-center justify-center cursor-pointer opacity-80 hover:opacity-100"
+                  onClick={handleCircleClick("power2")}
+                >
+                  {aspectPower2 && (
+                    <Image
+                      src={aspectPower2.image}
+                      className="w-5 h-5 object-contain"
+                      alt=""
+                      width={20}
+                      height={20}
+                    />
+                  )}
+                </div>
+              )}
             </>
           )}
         </div>
@@ -166,7 +164,7 @@ export default function GearItemTrigger({
           {isAspectID ? aspect?.label || gear.label : gear.label}
         </span>
         <span className="text-[#5f6060]">
-          {isAspectID ? aspect?.category || gear.category : gear.category} 
+          {isAspectID ? aspect?.category || gear.category : gear.category}
         </span>
         <span
           className={`${
@@ -247,7 +245,7 @@ export default function GearItemTrigger({
                 </div>
               ))}
             </div>
-            <div className="h-[5vh] mt-36 bg-[#282a36] border-t border-[#444757] flex items-center justify-center">
+            <div className="h-[5vh] bg-[#282a36] border-t border-[#444757] flex items-center justify-center">
               <p className="text-[#a0a3b1] text-sm">
                 Showing {filteredPowers.length} Aspect Power Result
                 {filteredPowers.length !== 1 && "s"}

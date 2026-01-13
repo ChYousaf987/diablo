@@ -75,9 +75,58 @@ export default function GearItem({
   };
 
   const handleUpdate = (aspect) => {
-    onUpdate({ ...gear, aspect_id: aspect.id });
+    const gearName = (gear.label || gear.type || "").toLowerCase().trim();
+
+    // ------------------ 0 circles wale gears (lowercase mein rakho) ------------------
+    const noCirclesGears = ["gloves", "bottes"];
+
+    // ------------------ 1 circle wale gears (sab lowercase) -------------------
+    const oneCircleGears = [
+      "amulette",
+      "amulet",
+      "anneau 1",
+      "anneau 2",
+      "ring 1",
+      "ring 2",
+      "arme à double usage 1",
+      "arme à double usage 2",
+    ];
+
+    let showPower1 = true;
+    let showPower2 = true;
+
+    // Check for 0 circles
+    if (noCirclesGears.some((name) => gearName.includes(name))) {
+      showPower1 = false;
+      showPower2 = false;
+    }
+    // Check for 1 circle
+    else if (oneCircleGears.some((name) => gearName.includes(name))) {
+      showPower1 = true;
+      showPower2 = false;
+    }
+    // Default: 2 circles (weapons, barre, etc.)
+    else {
+      showPower1 = true;
+      showPower2 = true;
+    }
+
+    onUpdate({
+      ...gear,
+      aspect_id: aspect.id,
+      aspect: aspect, // ← add the full object
+      aspect_power_id: null,
+      aspect_power_id_2: null,
+      show_power_1: showPower1,
+      show_power_2: showPower2,
+    });
+
+    // reset powers
     dispatch(
-      updateAspectPower({ index: position, side, aspect_power_id: aspect.id })
+      updateAspectPower({ index: position, side, aspect_power_id: null })
+    );
+    dispatch(
+      updateAspectPower2({ index: position, side, aspect_power_id_2: null })
     );
   };
 
