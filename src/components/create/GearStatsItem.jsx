@@ -34,11 +34,11 @@ export default function GearStatsItem({ gear, mode = "create", onUpdate }) {
           />
         ))}
         <hr
-          className="border-t-[.5px] border-[#424243] my-1 mx-2 "
+          className="border-t-[.5px] border-[#424243]  "
           mode={mode}
         />
 
-        {gear.details?.selects3.slice(0, 2).map((select, index) => (
+        {gear.details?.selects3.slice(0, 1).map((select, index) => (
           <GearStatsRow
             key={index}
             gear={gear}

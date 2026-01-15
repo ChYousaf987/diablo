@@ -121,6 +121,7 @@ const slice = createSlice({
     optionTechs: data[category || "barbarian"].optiontechs,
     elixirs: data[category || "barbarian"].elixirs,
     optionElixirs: data[category].optionElixirs,
+    spiritBoons: data[category || "barbarian"].spiritBoons || [],
     paragon_builds: data[category || "barbarian"].paragon_builds.map(
       (paragon) => ({
         ...paragon,
@@ -288,6 +289,7 @@ const slice = createSlice({
       state.optionTechs = data[newCategory].optiontechs;
       state.elixirs = data[newCategory].elixirs;
       state.optionElixirs = data[newCategory].optionElixirs;
+      state.spiritBoons = data[newCategory].spiritBoons || [];
       state.paragon_builds = data[newCategory].paragon_builds.map(
         (paragon) => ({
           ...paragon,
@@ -420,6 +422,11 @@ const slice = createSlice({
       const { index, newElixir } = action.payload;
       state.elixirs[index] = newElixir;
       state.variants[state.defaultIndex].elixirs = [...state.elixirs];
+    },
+    updateSpiritBoons: (state, action) => {
+      const { index, newBoons } = action.payload;
+      state.spiritBoons[index] = newBoons;
+      state.variants[state.defaultIndex].spiritBoons = [...state.spiritBoons];
     },
     updateDefaultIndex: (state, action) => {
       const index = action.payload;
@@ -887,6 +894,7 @@ export const {
   updateSkills,
   updateTechnique,
   updateElixir,
+  updateSpiritBoons,
   initializeGear,
   updateOptionSkillScore,
   updateParagonBuildDemansion,
@@ -908,6 +916,7 @@ export const selectGems = (state) => state.gear.gems;
 export const selectSkills = (state) => state.gear.skills;
 export const selectTechnique = (state) => state.gear.techniques;
 export const selectElixirs = (state) => state.gear.elixirs;
+export const selectSpiritBoons = (state) => state.gear.spiritBoons;
 export const selectOptionElixirs = (state) => state.gear.optionElixirs;
 export const selectVariants = (state) => state.gear.variants;
 export const selectDefaultIndex = (state) => state.gear.defaultIndex;

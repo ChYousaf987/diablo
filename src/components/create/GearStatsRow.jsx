@@ -8,7 +8,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
-import { set } from "zod";
+import { Star } from "lucide-react";
+
 export default function GearStatsRow({
   onUpdate,
   gear,
@@ -18,13 +19,19 @@ export default function GearStatsRow({
   onlySelect = false,
 }) {
   const select = gear?.details?.[nameField];
-  const [active, setActive] = useState(select ? select[index]?.value : 0);
-  const [selectedValue, setSelectedValue] = useState("");
+  const currentStat = select?.[index] || { value: 0, selectedValue: "" };
+
+  const [active, setActive] = useState(currentStat.value || 0);
+  const [selectedValue, setSelectedValue] = useState(
+    currentStat.selectedValue || ""
+  );
   const [searchValue, setSearchValue] = useState("");
   const [filteredOptions, setFilteredOptions] = useState([]);
+  const [isStarSelected, setIsStarSelected] = useState(false); // ← New: Star favorite state per row
 
-  const handleActive = (key = null, selectedValue = null) => {
+  const handleActive = (key = null, newValue = null) => {
     if (!select) return;
+
     const selects = [
       ...gear.details.selects1,
       ...gear.details.selects2,
@@ -36,18 +43,18 @@ export default function GearStatsRow({
       totalValue += item.value;
     }
 
-    if (key !== null && totalValue - getSelectActive().value + key > 3) {
+    if (key !== null && totalValue - active + key > 3) {
       console.warn("Total value exceeds the limit of 3");
       return;
     }
 
-    const newLevel = key !== null && key === getSelectActive().value ? 0 : key;
+    const newLevel = key !== null && key === active ? 0 : key;
 
     const selectCopy = select.map((item, idx) =>
       idx === index
         ? {
             ...item,
-            ...(selectedValue !== null && { selectedValue }),
+            ...(newValue !== null && { selectedValue: newValue }),
             ...(key !== null && { value: newLevel }),
           }
         : item
@@ -64,12 +71,12 @@ export default function GearStatsRow({
     if (onUpdate && mode !== "guest") {
       onUpdate(updatedGear);
     }
+
+    if (key !== null) setActive(newLevel);
+    if (newValue !== null) setSelectedValue(newValue);
   };
 
-  const getSelectActive = () => {
-    const defaultSelect = { value: 0, selectedValue: "" };
-    return select ? select[index] || defaultSelect : defaultSelect;
-  };
+  const getSelectActive = () => currentStat;
 
   useEffect(() => {
     if (searchValue !== "") {
@@ -92,46 +99,35 @@ export default function GearStatsRow({
         ? `Tempering Stat ${index + 1}`
         : `Stat ${index + 1}`;
 
-    const options = gear?.details?.[nameField] || [];
-    const currentValue = select?.[index]?.selectedValue;
-
     return (
       <Select
-        className="text-white bg-[#15161a] shadow-none border border-transparent !outline-none grow"
         value={selectedValue}
-        onValueChange={(value) => {
-          setSearchValue("");
-          setSelectedValue(value);
-          handleActive(null, value);
-        }}
+        onValueChange={(value) => handleActive(null, value)}
       >
         <SelectTrigger
-          className={`bg-[#26272d] border border-transparent  max-w-[274.66px] ${color}`}
+          className={`bg-[#26272d] border border-transparent flex-1 max-w-full ${color}`}
         >
           <SelectValue
             className={`placeholder:${color} ${color}`}
             placeholder={placeholder}
           />
         </SelectTrigger>
-        <SelectContent className="bg-[#26272d] border border-transparent text-[#9b9c9d]">
-          <Input
-            className="w-full outline-none border border-[#15161a]"
-            type="text"
-            placeholder="Search"
-            value={searchValue || ""}
-            onFocus={() => {}}
-            onBlur={() => {}}
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck="false"
-            autoCapitalize="none"
-            onChange={(e) => setSearchValue(e.target.value)}
-          />
+        <SelectContent className="bg-[#26272d] border border-transparent text-[#9b9c9d] max-h-60 overflow-y-auto">
+          <div className="p-2 sticky top-0 bg-[#26272d] z-10 border-b border-[#3a3b45]">
+            <Input
+              className="w-full outline-none border border-[#15161a] bg-[#1f2025] text-white placeholder:text-gray-500"
+              type="text"
+              placeholder="Search stat..."
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
+            />
+          </div>
+
           {filteredOptions?.map((option, idx) => (
             <SelectItem
               key={idx}
               value={option?.selectedValue || "Strength"}
-              className="hover:!bg-[#15161a] text-[#9b9c9d] hover:!text-white"
+              className="hover:!bg-[#15161a] text-[#9b9c9d] hover:!text-white py-2 px-3"
             >
               {option?.selectedValue || "Strength"}
             </SelectItem>
@@ -142,44 +138,57 @@ export default function GearStatsRow({
   };
 
   const renderIndicators = () => (
-    <div className="flex justify-end items-center gap-2">
-      {[1, 2, 3].map((level) => (
-        <p
+    <div className="flex items-center gap-1.5">
+      {[1].map((level) => (
+        <div
           key={level}
           onClick={() => handleActive(level)}
-          className={`h-5 w-5 rounded-full ${
-            getSelectActive().value >= level
+          className={`w-4 h-4 rounded-full cursor-pointer transition-all ${
+            active === level
               ? indicatorColors[level].bg
-              : "bg-[#dfe1e4]"
-          } hover:${indicatorColors[level].bg} cursor-pointer`}
-        ></p>
+              : "bg-[#3a3b45] hover:bg-[#4a4b55]"
+          }`}
+        />
       ))}
     </div>
   );
 
   const indicatorColors = {
-    1: { bg: "bg-[#6d6ed9]", text: "text-[#6d6ed9]" },
-    2: { bg: "bg-[#f1f25c]", text: "text-[#f1f25c]" },
-    3: { bg: "bg-[#d98c3c]", text: "text-[#d98c3c]" },
+    1: { bg: "bg-[#6d6ed9]" },
   };
 
-  const selectedOption = getSelectActive(); // this gets both value & selectedValue
-  const colorClass =
-    indicatorColors[selectedOption.value]?.text || "text-[#dfe1e4]";
+  const colorClass = indicatorColors[active]?.text || "text-[#dfe1e4]";
 
   return (
-    <div className="flex justify-stretch gap-5 items-center p-2">
-      {mode === "guest" ? (
-        <div
-          className={`h-9 w-full bg-[#15161a] rounded-md text-md text-center font-bold pt-1.5 ${
-            indicatorColors[select[index]?.value]?.text
+    <div className="flex items-center gap-3 px-3 py-2 hover:bg-[#26272d]/50 transition-colors border-b border-[#2a2b35] last:border-b-0">
+      {/* Star icon – clickable */}
+      <button
+        onClick={() => setIsStarSelected(!isStarSelected)}
+        className="focus:outline-none"
+      >
+        <Star
+          className={`w-5 h-5 transition-colors ${
+            isStarSelected
+              ? "text-yellow-400 fill-yellow-400"
+              : "text-gray-600 hover:text-yellow-400"
           }`}
-        >
-          {select ? select[index]?.selectedValue : ""}
-        </div>
-      ) : (
-        renderSelect(colorClass)
-      )}
+        />
+      </button>
+
+      {/* Select input – middle, full width */}
+      <div className="flex-1 min-w-0">
+        {mode === "guest" ? (
+          <div
+            className={`h-9 w-full bg-[#15161a] rounded-md text-md text-center font-bold flex items-center justify-center ${colorClass}`}
+          >
+            {select?.[index]?.selectedValue || "—"}
+          </div>
+        ) : (
+          renderSelect(colorClass)
+        )}
+      </div>
+
+      {/* Circles – only one active at a time */}
       {!onlySelect && mode !== "guest" && renderIndicators()}
     </div>
   );
