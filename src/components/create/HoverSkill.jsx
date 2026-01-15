@@ -45,7 +45,7 @@ export default function HoverSkill({
                 />
                 <span className="text-white text-xs mt-1">{detail.label}</span>
               </HoverCardTrigger>
-              <HoverCardContent className="bg-[#26272d] z-[9999] text-white min-w-[300px] p-3">
+              <HoverCardContent className="bg-[#26272d] z-[99999999] text-white max-w-[300px] p-3">
                 <div>
                   <div className="flex justify-center gap-2 border-b-[.5px] border-[#1f2025] pb-2">
                     <Image

@@ -119,6 +119,8 @@ const slice = createSlice({
     techniques: data[category || "barbarian"].techniques,
     optionSkills: data[category].optionSkills,
     optionTechs: data[category || "barbarian"].optiontechs,
+    elixirs: data[category || "barbarian"].elixirs,
+    optionElixirs: data[category].optionElixirs,
     paragon_builds: data[category || "barbarian"].paragon_builds.map(
       (paragon) => ({
         ...paragon,
@@ -284,6 +286,8 @@ const slice = createSlice({
       state.techniques = data[newCategory].techniques;
       state.optionSkills = data[newCategory].optionSkills;
       state.optionTechs = data[newCategory].optiontechs;
+      state.elixirs = data[newCategory].elixirs;
+      state.optionElixirs = data[newCategory].optionElixirs;
       state.paragon_builds = data[newCategory].paragon_builds.map(
         (paragon) => ({
           ...paragon,
@@ -411,6 +415,11 @@ const slice = createSlice({
       const { index, newTechnique } = action.payload;
       state.techniques[index] = newTechnique;
       state.variants[state.defaultIndex].techniques = [...state.techniques];
+    },
+    updateElixir: (state, action) => {
+      const { index, newElixir } = action.payload;
+      state.elixirs[index] = newElixir;
+      state.variants[state.defaultIndex].elixirs = [...state.elixirs];
     },
     updateDefaultIndex: (state, action) => {
       const index = action.payload;
@@ -877,6 +886,7 @@ export const {
   updateGems,
   updateSkills,
   updateTechnique,
+  updateElixir,
   initializeGear,
   updateOptionSkillScore,
   updateParagonBuildDemansion,
@@ -897,6 +907,8 @@ export const selectGearRight = (state) => state.gear.gearRight;
 export const selectGems = (state) => state.gear.gems;
 export const selectSkills = (state) => state.gear.skills;
 export const selectTechnique = (state) => state.gear.techniques;
+export const selectElixirs = (state) => state.gear.elixirs;
+export const selectOptionElixirs = (state) => state.gear.optionElixirs;
 export const selectVariants = (state) => state.gear.variants;
 export const selectDefaultIndex = (state) => state.gear.defaultIndex;
 export const selectCategory = (state) => state.gear.category;

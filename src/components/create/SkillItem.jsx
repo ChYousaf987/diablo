@@ -45,7 +45,7 @@ export default function SkillItem({ skill, onUpdate, mode = "create" }) {
           <DialogTrigger onClick={() => setIsOpen(true)}>
             <HoverCardSkill skillSelected={skillSelected} skill={skill} />
           </DialogTrigger>
-          <DialogContent className="bg-[#1f2025] dailog-content max-h-[80vh] overflow-y-auto">
+          <DialogContent className="bg-[#1f2025] dailog-content max-h-[80vh] z-50 overflow-y-auto">
             <DialogHeader>
               <DialogTitle className="flex justify-between items-center gap-3">
                 <span className="text-white text-lg font-semibold">
