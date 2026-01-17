@@ -93,6 +93,10 @@ import {
   optiontechsNecromancer,
   skillsNecromancer,
   techniquesNecromancer,
+  optionElixirsnecromancer,
+  elixirsnecromancer,
+  SkeletalWarriors,
+  optionSkeletalWarriors,
 } from "./necromancer";
 
 export const siteTitle = "Next.js Starter Blog";
@@ -659,7 +663,11 @@ export const data = {
     itemState: itemStateNecromancer,
     skills: skillsNecromancer,
     optiontechs: optiontechsNecromancer,
+    SkeletalWarriors: SkeletalWarriors,
+    optionSkeletalWarriors: optionSkeletalWarriors,
     techniques: techniquesNecromancer,
+    elixirs: elixirsnecromancer,
+    optionElixirs: optionElixirsnecromancer,
     optionSkills: optionSkillsNecromancer,
     paragon_builds: optionSParagonNecromancer,
     glyphs: glyphs,

@@ -2238,7 +2238,7 @@ export const skillsDruid = [
 
 export const spiritBoons = [
   {
-    image: "/skill-tech/category_active.webp",
+    image: "/skill-tech/deer.webp",
     label: "Deer Boon",
     details: "...",
   },
@@ -2248,16 +2248,59 @@ export const spiritBoons = [
     label: "Deer Boon",
     details: "...",
   },
-  { image: "/skill-tech/pot-empty.webp", label: "Deer Boon", details: "..." },
-  { image: "/skill-tech/pot-empty.webp", label: "Deer Boon", details: "..." },
-  { image: "/skill-tech/pot-empty.webp", label: "Deer Boon", details: "..." },
-  { image: "/skill-tech/pot-empty.webp", label: "Deer Boon", details: "..." },
-  { image: "/skill-tech/pot-empty.webp", label: "Deer Boon", details: "..." },
-  { image: "/skill-tech/pot-empty.webp", label: "Deer Boon", details: "..." },
-  { image: "/skill-tech/pot-empty.webp", label: "Deer Boon", details: "..." },
-  { image: "/skill-tech/pot-empty.webp", label: "Deer Boon", details: "..." },
-  { image: "/skill-tech/pot-empty.webp", label: "Deer Boon", details: "..." },
-  // ...
+  { image: "/skill-tech/wariness.webp", label: "Deer Boon", details: "..." },
+  {
+    image: "/skill-tech/advantageous_beast.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "/skill-tech/eagle.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "/skill-tech/scythe_talons.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "/skill-tech/iron_feather.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "/skill-tech/swooping_attacks.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  { image: "/skill-tech/avian_wrath.webp", label: "Deer Boon", details: "..." },
+  {
+    image: "/skill-tech/wolf.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  { image: "/skill-tech/packleader.webp", label: "Deer Boon", details: "..." },
+  { image: "/skill-tech/energize.webp", label: "Deer Boon", details: "..." },
+  { image: "/skill-tech/bolster.webp", label: "Deer Boon", details: "..." },
+  { image: "/skill-tech/calamity.webp", label: "Deer Boon", details: "..." },
+  {
+    image: "/skill-tech/snake.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "/skill-tech/obsidian_slam.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  { image: "/skill-tech/overload.webp", label: "Deer Boon", details: "..." },
+  { image: "/skill-tech/masochistic.webp", label: "Deer Boon", details: "..." },
+  {
+    image: "/skill-tech/calm_before_the_storm.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
 ];
 
 export const optionSpiritBoons = [

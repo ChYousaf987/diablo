@@ -1,30 +1,30 @@
-// components/skill-tech/DruidSkillTech.jsx
+// components/skill-tech/NecromancerSkillTech.jsx
 import React from "react";
 import SkillItem from "./SkillItem";
 import ElixirItem from "./ElixirItem";
-import SpiritBoons from "./SpiritBoons"; // ← tumhara Spirit Boons component
+import SkeletalWarriors from "./SkeletalWarriors"; // ← tumhara Spirit Boons component
 import {
   selectSkills,
   selectElixirs,
-  selectSpiritBoons,
+  selectSkeletalWarriors,
   updateSkills,
   updateElixir,
-  updateSpiritBoons,
+  updateSkeletalWarriors,
 } from "@/lib/redux/slice";
 import { useAppSelector, useAppDispatch } from "@/lib/hooks";
 
-export default function DruidSkillTech({ mode = "create" }) {
+export default function NecromancerSkillTech({ mode = "create" }) {
   const skills = useAppSelector(selectSkills);
   const elixirs = useAppSelector(selectElixirs);
-  const spiritBoons = useAppSelector(selectSpiritBoons);
+  const skeletalWarriors = useAppSelector(selectSkeletalWarriors);
   const dispatch = useAppDispatch();
 
   const onUpdateSkills = (index, newSkill) =>
     dispatch(updateSkills({ index, newSkill }));
   const onUpdateElixir = (index, newElixir) =>
     dispatch(updateElixir({ index, newElixir }));
-  const onUpdateSpiritBoons = (newBoons) =>
-    dispatch(updateSpiritBoons({ index: 0, newBoons })); // assuming single slot
+  const onUpdateSkeletalWarriors = (newBoons) =>
+    dispatch(updateSkeletalWarriors({ index: 0, newBoons })); // assuming single slot
 
   return (
     <div className="mx-6 border-y-[.5px] border-[#424243] mt-5 py-5">
@@ -66,16 +66,28 @@ export default function DruidSkillTech({ mode = "create" }) {
         </div>
 
         {/* Spirit Boons – last */}
-        {spiritBoons?.length > 0 && (
-          <div className="w-full md] mx-auto mt-4">
+        {skeletalWarriors?.length > 0 && (
+          <div className="w-full mx-auto mt-4">
             <h3 className="font-bold text-base text-center -mb-6  text-gray-100 ">
-              Spirit Boons
+              Skeletal Warriors
             </h3>
-            <SpiritBoons
-              boons={spiritBoons}
-              onUpdate={onUpdateSpiritBoons}
-              mode={mode}
-            />
+            <div className="flex gap-9">
+              <SkeletalWarriors
+                boons={skeletalWarriors}
+                onUpdate={onUpdateSkeletalWarriors}
+                mode={mode}
+              />
+              <SkeletalWarriors
+                boons={skeletalWarriors}
+                onUpdate={onUpdateSkeletalWarriors}
+                mode={mode}
+              />
+              <SkeletalWarriors
+                boons={skeletalWarriors}
+                onUpdate={onUpdateSkeletalWarriors}
+                mode={mode}
+              />
+            </div>
           </div>
         )}
       </div>

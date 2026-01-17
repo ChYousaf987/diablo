@@ -2242,7 +2242,165 @@ export const skillsNecromancer = [
   },
 ];
 
+export const SkeletalWarriors = [
+  {
+    image: "/skill-tech/skeletal_warriors_skirmishers.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  { image: "/skill-tech/node.webp", label: "Deer Boon", details: "..." },
+  {
+    image: "/skill-tech/node.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  { image: "/skill-tech/sacrifice.webp", label: "Deer Boon", details: "..." },
+  {
+    image: "/skill-tech/skeletal_warriors_defenders.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "/skill-tech/node.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "/skill-tech/node.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "/skill-tech/sacrifice.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "/skill-tech/skeletal_warriors_reapers.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "/skill-tech/node.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "/skill-tech/node.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  { image: "/skill-tech/sacrifice.webp", label: "Deer Boon", details: "..." },
+];
+
+export const optionSkeletalWarriors = [
+  // Your 16 boons data here
+  {
+    image: "skill-tech/incense-empty.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "skill-tech/incense-empty.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "skill-tech/incense-empty.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "skill-tech/incense-empty.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "skill-tech/incense-empty.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "skill-tech/incense-empty.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "skill-tech/incense-empty.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "skill-tech/incense-empty.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "skill-tech/incense-empty.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "skill-tech/incense-empty.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "skill-tech/incense-empty.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "skill-tech/incense-empty.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  {
+    image: "skill-tech/incense-empty.webp",
+    label: "Deer Boon",
+    details: "...",
+  },
+  // ...
+];
+
 export const techniquesNecromancer = [];
+
+export const elixirsnecromancer = [
+  { image: "/skill-tech/pot-empty.webp", option_id: null },
+  { image: "/skill-tech/incense-empty.webp", option_id: null },
+  { image: "/skill-tech/incense-empty.webp", option_id: null },
+  { image: "/skill-tech/incense-empty.webp", option_id: null },
+];
+
+export const optionElixirsnecromancer = [
+  {
+    id: 1,
+    label: "Elixir of Iron Skin",
+    image: "/skill-tech/pot-empty.webp",
+    code: "Iron Skin",
+    details: "Grants +20% armor for 30 minutes. Increases maximum life by 10%.",
+    footer: "Crafted at Alchemist",
+  },
+  {
+    id: 2,
+    label: "Elixir of Precision",
+    image: "/skill-tech/incense-empty.webp",
+    code: "Precision",
+    details:
+      "+15% critical strike chance and +10% attack speed for 30 minutes.",
+    footer: "Requires Rare Herbs",
+  },
+  {
+    id: 3,
+    label: "Elixir of Precision",
+    image: "/skill-tech/incense-empty.webp",
+    code: "Precision",
+    details:
+      "+15% critical strike chance and +10% attack speed for 30 minutes.",
+    footer: "Requires Rare Herbs",
+  },
+  // Add more...
+];
 
 export const optiontechsNecromancer = [
   {

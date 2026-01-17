@@ -122,6 +122,7 @@ const slice = createSlice({
     elixirs: data[category || "barbarian"].elixirs,
     optionElixirs: data[category].optionElixirs,
     spiritBoons: data[category || "barbarian"].spiritBoons || [],
+    SkeletalWarriors: data[category || "barbarian"].SkeletalWarriors || [],
     paragon_builds: data[category || "barbarian"].paragon_builds.map(
       (paragon) => ({
         ...paragon,
@@ -290,6 +291,7 @@ const slice = createSlice({
       state.elixirs = data[newCategory].elixirs;
       state.optionElixirs = data[newCategory].optionElixirs;
       state.spiritBoons = data[newCategory].spiritBoons || [];
+      state.SkeletalWarriors = data[newCategory].SkeletalWarriors || [];
       state.paragon_builds = data[newCategory].paragon_builds.map(
         (paragon) => ({
           ...paragon,
@@ -427,6 +429,13 @@ const slice = createSlice({
       const { index, newBoons } = action.payload;
       state.spiritBoons[index] = newBoons;
       state.variants[state.defaultIndex].spiritBoons = [...state.spiritBoons];
+    },
+    updateSkeletalWarriors: (state, action) => {
+      const { index, newBoons } = action.payload;
+      state.SkeletalWarriors[index] = newBoons;
+      state.variants[state.defaultIndex].SkeletalWarriors = [
+        ...state.SkeletalWarriors,
+      ];
     },
     updateDefaultIndex: (state, action) => {
       const index = action.payload;
@@ -895,6 +904,7 @@ export const {
   updateTechnique,
   updateElixir,
   updateSpiritBoons,
+  updateSkeletalWarriors,
   initializeGear,
   updateOptionSkillScore,
   updateParagonBuildDemansion,
@@ -917,6 +927,7 @@ export const selectSkills = (state) => state.gear.skills;
 export const selectTechnique = (state) => state.gear.techniques;
 export const selectElixirs = (state) => state.gear.elixirs;
 export const selectSpiritBoons = (state) => state.gear.spiritBoons;
+export const selectSkeletalWarriors = (state) => state.gear.SkeletalWarriors;
 export const selectOptionElixirs = (state) => state.gear.optionElixirs;
 export const selectVariants = (state) => state.gear.variants;
 export const selectDefaultIndex = (state) => state.gear.defaultIndex;
